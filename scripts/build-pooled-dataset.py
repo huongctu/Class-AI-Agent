@@ -1,173 +1,210 @@
-#!/usr/bin/env python3
-"""Build pooled WBES dataset from raw .dta files for P3/P4/P5 analysis."""
+"""
+build-pooled-dataset.py
+========================
+Build pooled WBES dataset for I-P analysis across 6 country-waves.
 
-import sys
+Input: Raw .dta files for SGP 2023, VNM 2009/2015/2023, CHN 2012/2024
+Output: data/analysis/pooled_wbes_6waves.csv
+
+Variable harmonization rules:
+- WBES missing codes (-9, -8, -7, -6, -99) -> NaN
+- Binary recoding: 1=Yes -> 1, 2=No -> 0
+- China 2012 legacy item names: CNo1->h1, CNo3->h8 (R&D spending), CNh7->e6
+- Vietnam 2015 h8 special handling: continuous R&D spend -> binary indicator
+- Foreign tech: harmonize h7 (pre-2017) -> e6 (post-2017)
+
+Author: Do Thuy Huong
+Supervisor: PGS.TS. Phan Anh Tu
+"""
+from __future__ import annotations
 import os
-import pandas as pd
+from pathlib import Path
+from typing import Dict, Optional
+
 import numpy as np
-import warnings
+import pandas as pd
 
-warnings.filterwarnings('ignore')
+# =====================================================================
+# CONFIG - EDIT THESE PATHS TO YOUR LOCAL DATA LOCATIONS
+# =====================================================================
+DATA_DIR = Path("data/raw")  # adjust to your local path
+OUTPUT_PATH = Path("data/analysis/pooled_wbes_6waves.csv")
 
-DTA_FILES = {
-    'VNM_2009': 'Vietnam2009fulldata.dta',
-    'VNM_2015': 'Vietnam2015fulldata.dta',
-    'VNM_2023': 'VietNam2023fulldata.dta',
-    'CHN_2012': 'China2012fullESN2700data.dta',
-    'CHN_2024': 'China2024fulldata.dta',
-    'SGP_2023': 'Singapore2023fulldata.dta',
+# Map (country, year) -> relative path to .dta file
+DTA_FILES: Dict[tuple, str] = {
+    ("SGP", 2023): "Singapore-2023-full-data.dta",
+    ("VNM", 2009): "Vietnam-2009-full-data.dta",
+    ("VNM", 2015): "Vietnam-2015-full-data.dta",
+    ("VNM", 2023): "Vietnam-2023-full-data.dta",
+    ("CHN", 2012): "China-2012-full-data.dta",
+    ("CHN", 2024): "China-2024-full-data.dta",
 }
 
-OUTPUT_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'analysis', 'pooled_wbes_6waves.csv')
+WBES_MISSING_CODES = [-9, -8, -7, -6, -99, -66, -77, -88]
 
 
-def clean_binary(series):
-    s = pd.to_numeric(series, errors='coerce').copy()
-    s[s.isin([-9, -7, -99])] = np.nan
-    out = pd.Series(np.nan, index=s.index, dtype=float)
+# =====================================================================
+# UTILITY FUNCTIONS
+# =====================================================================
+def clean_missing(series: pd.Series, codes: list = WBES_MISSING_CODES) -> pd.Series:
+    if pd.api.types.is_numeric_dtype(series):
+        return series.replace(codes, np.nan)
+    return series
+
+
+def yes_no_binary(series: pd.Series) -> pd.Series:
+    """WBES Yes/No (1/2) -> binary (1/0). Other values -> NaN."""
+    s = clean_missing(series)
+    out = pd.Series(np.nan, index=s.index)
     out[s == 1] = 1.0
     out[s == 2] = 0.0
     return out
 
 
-def clean_continuous(series):
-    s = pd.to_numeric(series, errors='coerce').copy()
-    s[s.isin([-9, -7, -99])] = np.nan
-    s[s < 0] = np.nan
-    return s
+def percentage_to_proportion(series: pd.Series) -> pd.Series:
+    s = clean_missing(series)
+    return s / 100.0
 
 
-def find_dta(filename, search_dirs):
-    for d in search_dirs:
-        if not os.path.isdir(d):
-            continue
-        for f in os.listdir(d):
-            if f.endswith(filename) or filename in f:
-                return os.path.join(d, f)
-    return None
+def safe_get(df: pd.DataFrame, col: str) -> pd.Series:
+    if col in df.columns:
+        return df[col]
+    return pd.Series(np.nan, index=df.index)
 
 
-def process_wave(name, raw):
-    n = len(raw)
-    country = name.split('_')[0]
-    year = name.split('_')[1]
+# =====================================================================
+# WAVE-SPECIFIC HARMONIZATION
+# =====================================================================
+def harmonize_wave(df_raw: pd.DataFrame, country: str, year: int) -> pd.DataFrame:
+    df = df_raw.copy()
+    out = pd.DataFrame(index=df.index)
+    out["country"] = country
+    out["year"] = year
 
-    df = pd.DataFrame(index=range(n))
-    df['dataset'] = name
-    df['country'] = country
-    df['year'] = year
+    out["firm_id"] = df.get("idstd", pd.Series(range(len(df)), index=df.index))
 
-    df['website'] = clean_binary(raw['c22b']).values if 'c22b' in raw.columns else np.nan
-    df['foreign_tech'] = clean_binary(raw['e6']).values if 'e6' in raw.columns else np.nan
+    # Outcome
+    out["sales"] = clean_missing(safe_get(df, "d2"))
+    out["employees"] = clean_missing(safe_get(df, "l1"))
+    with np.errstate(divide="ignore", invalid="ignore"):
+        lp = out["sales"] / out["employees"]
+        out["ln_lp"] = np.where(lp > 0, np.log(lp), np.nan)
 
-    if 'h1' in raw.columns:
-        df['product_innov'] = clean_binary(raw['h1']).values
-    elif 'CNo1' in raw.columns:
-        df['product_innov'] = clean_binary(raw['CNo1']).values
+    # Core IV
+    out["fsts"] = percentage_to_proportion(safe_get(df, "d3c"))
+    out["fsts_sq"] = out["fsts"] ** 2
+
+    # TCI items
+    if country == "CHN" and year == 2012:
+        out["foreign_tech"] = yes_no_binary(safe_get(df, "CNh7").fillna(safe_get(df, "h7")))
+    elif year < 2017:
+        out["foreign_tech"] = yes_no_binary(safe_get(df, "h7"))
     else:
-        df['product_innov'] = np.nan
+        out["foreign_tech"] = yes_no_binary(safe_get(df, "e6"))
 
-    df['process_innov'] = clean_binary(raw['h5']).values if 'h5' in raw.columns else np.nan
-
-    if name == 'VNM_2015':
-        h8 = pd.to_numeric(raw['h8'], errors='coerce')
-        h8[h8.isin([-9, -7, -99])] = np.nan
-        h8[h8 < 0] = np.nan
-        rd_vals = np.full(n, np.nan)
-        rd_vals[~h8.isna().values] = np.where(h8.dropna().values > 0, 1.0, 0.0)
-        df['rd_spending'] = rd_vals
-    elif 'h8' in raw.columns:
-        df['rd_spending'] = clean_binary(raw['h8']).values
-    elif 'CNo3' in raw.columns:
-        df['rd_spending'] = clean_binary(raw['CNo3']).values
-    else:
-        df['rd_spending'] = np.nan
-
-    df['quality_cert'] = clean_binary(raw['b8']).values if 'b8' in raw.columns else np.nan
-    df['epayment_pct'] = clean_continuous(raw['k33']).values if 'k33' in raw.columns else np.nan
-    df['epay_supp_pct'] = clean_continuous(raw['k38']).values if 'k38' in raw.columns else np.nan
-
-    sales = clean_continuous(raw['d2']) if 'd2' in raw.columns else pd.Series(np.nan, index=range(n))
-    empl = clean_continuous(raw['l1']) if 'l1' in raw.columns else pd.Series(np.nan, index=range(n))
-    df['total_sales'] = sales.values
-    df['employees'] = empl.values
-
-    sales_v = sales.values.astype(float)
-    empl_v = empl.values.astype(float)
-    with np.errstate(divide='ignore', invalid='ignore'):
-        lp = np.where(
-            (empl_v > 0) & (sales_v > 0) & np.isfinite(empl_v) & np.isfinite(sales_v),
-            sales_v / empl_v, np.nan,
+    if country == "CHN" and year == 2012:
+        out["product_innov"] = yes_no_binary(
+            safe_get(df, "h1").fillna(safe_get(df, "CNo1"))
         )
-        df['ln_labor_prod'] = np.where(np.isfinite(lp) & (lp > 0), np.log(lp), np.nan)
-        df['ln_empl'] = np.where((empl_v > 0) & np.isfinite(empl_v), np.log(empl_v), np.nan)
-
-    if 'd3a' in raw.columns:
-        dom = clean_continuous(raw['d3a']).values.astype(float)
-        exp_pct = 100.0 - dom
-        exp_pct[np.isnan(dom)] = np.nan
-        exp_pct[exp_pct < 0] = np.nan
-        df['export_pct'] = exp_pct
-        df['exporter'] = np.where(np.isnan(exp_pct), np.nan, np.where(exp_pct > 0, 1.0, 0.0))
+    elif country == "VNM" and year == 2009:
+        out["product_innov"] = np.nan
     else:
-        df['export_pct'] = np.nan
-        df['exporter'] = np.nan
+        out["product_innov"] = yes_no_binary(safe_get(df, "h1"))
 
-    df['firm_age'] = clean_continuous(raw['a7']).values if 'a7' in raw.columns else np.nan
-    df['manager_exp'] = clean_continuous(raw['a6a']).values if 'a6a' in raw.columns else np.nan
-    df['foreign_own'] = clean_continuous(raw['b2b']).values if 'b2b' in raw.columns else np.nan
+    if country == "CHN" and year == 2012:
+        out["rd_spending"] = yes_no_binary(
+            safe_get(df, "h8").fillna(safe_get(df, "CNo3"))
+        )
+    elif country == "VNM" and year == 2009:
+        out["rd_spending"] = np.nan
+    elif country == "VNM" and year == 2015:
+        h8_raw = clean_missing(safe_get(df, "h8"))
+        if pd.api.types.is_numeric_dtype(h8_raw) and h8_raw.max() and h8_raw.max() > 1:
+            out["rd_spending"] = (h8_raw > 0).astype(float)
+        else:
+            out["rd_spending"] = yes_no_binary(h8_raw)
+    else:
+        out["rd_spending"] = yes_no_binary(safe_get(df, "h8"))
 
-    return df
+    out["quality_cert"] = yes_no_binary(safe_get(df, "b8"))
+
+    # DAI items
+    out["website"] = yes_no_binary(safe_get(df, "c22b"))
+
+    if (country, year) in [("SGP", 2023), ("VNM", 2023), ("CHN", 2024)]:
+        out["epayment_pct"] = clean_missing(safe_get(df, "k33"))
+        out["epay_supp_pct"] = clean_missing(safe_get(df, "k38"))
+    else:
+        out["epayment_pct"] = np.nan
+        out["epay_supp_pct"] = np.nan
+
+    # Controls
+    with np.errstate(divide="ignore", invalid="ignore"):
+        out["ln_empl"] = np.where(out["employees"] > 0, np.log(out["employees"]), np.nan)
+
+    b5 = clean_missing(safe_get(df, "b5"))
+    if b5.notna().any():
+        out["firm_age"] = year - b5
+        out.loc[out["firm_age"] < 0, "firm_age"] = np.nan
+        out.loc[out["firm_age"] > 200, "firm_age"] = np.nan
+    else:
+        out["firm_age"] = np.nan
+
+    b2b = clean_missing(safe_get(df, "b2b"))
+    out["foreign_dummy"] = (b2b > 0).astype("Int64").where(b2b.notna(), pd.NA).astype(float)
+
+    out["manager_exp"] = clean_missing(safe_get(df, "b6"))
+
+    if "a4b_v4" in df.columns:
+        out["sector"] = clean_missing(df["a4b_v4"])
+    else:
+        out["sector"] = clean_missing(safe_get(df, "a4b"))
+
+    out["female_kdm"] = yes_no_binary(safe_get(df, "b7a"))
+
+    if "k7" in df.columns:
+        out["credit_access"] = yes_no_binary(df["k7"])
+    elif "k8" in df.columns:
+        out["credit_access"] = yes_no_binary(df["k8"])
+    else:
+        out["credit_access"] = np.nan
+
+    return out
 
 
-def build_indices(pooled):
-    pooled['TCI_thin'] = pooled[['foreign_tech', 'quality_cert']].mean(axis=1)
-    pooled['TCI_full'] = pooled[['foreign_tech', 'product_innov', 'rd_spending', 'quality_cert']].mean(axis=1)
-    pooled['DAI_thin'] = pooled[['website', 'foreign_tech']].mean(axis=1)
+def main() -> None:
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    pooled = []
 
-    tmp = pd.DataFrame({
-        'w': pooled['website'].values,
-        'e': (pooled['epayment_pct'] / 100).values,
-        's': (pooled['epay_supp_pct'] / 100).values,
-    })
-    pooled['DAI_rich'] = tmp.mean(axis=1).values
-    return pooled
-
-
-def main():
-    search_dirs = [
-        '/root/.claude/uploads/ee8cf557-3187-40cd-a8f8-78b91d84d086/',
-        '/root/.claude/uploads/ce7c31e1-991b-4902-9cc8-e11349ab817c/',
-        '/root/.claude/uploads/099f45cf-eefb-48d3-ab08-2bc6562f7dca/',
-    ]
-
-    if len(sys.argv) > 1:
-        search_dirs = [sys.argv[1]]
-
-    all_rows = []
-    for name, filename in DTA_FILES.items():
-        path = find_dta(filename, search_dirs)
-        if path is None:
-            print(f'  SKIP {name}: {filename} not found')
+    for (country, year), filename in DTA_FILES.items():
+        full_path = DATA_DIR / filename
+        if not full_path.exists():
+            print(f"[WARN] Missing file: {full_path} - skipping ({country} {year})")
             continue
 
-        raw = pd.read_stata(path, convert_categoricals=False).reset_index(drop=True)
-        df = process_wave(name, raw)
-        all_rows.append(df)
-        print(f'  {name}: {len(df)} rows from {os.path.basename(path)}')
+        print(f"[INFO] Reading {country} {year}: {full_path}")
+        try:
+            df_raw = pd.read_stata(full_path, convert_categoricals=False)
+        except Exception as e:
+            print(f"[ERROR] Failed to read {full_path}: {e}")
+            continue
 
-    if not all_rows:
-        print('ERROR: No .dta files found. Pass directory as argument.')
-        sys.exit(1)
+        print(f"        Raw N = {len(df_raw)}")
+        df_harm = harmonize_wave(df_raw, country, year)
+        print(f"        Harmonized N = {len(df_harm)}")
+        pooled.append(df_harm)
 
-    pooled = pd.concat(all_rows, ignore_index=True)
-    pooled = build_indices(pooled)
+    if not pooled:
+        print("[ERROR] No data loaded. Edit DATA_DIR and re-run.")
+        return
 
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    pooled.to_csv(OUTPUT_PATH, index=False)
-    print(f'\nSaved {len(pooled)} rows to {OUTPUT_PATH}')
-    print(pooled['dataset'].value_counts().to_string())
+    df_pooled = pd.concat(pooled, ignore_index=True)
+    print(f"\n[INFO] Pooled N = {len(df_pooled)}")
+    print(df_pooled.groupby(["country", "year"]).size().to_string())
+
+    df_pooled.to_csv(OUTPUT_PATH, index=False)
+    print(f"\n[INFO] Saved pooled dataset -> {OUTPUT_PATH}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
