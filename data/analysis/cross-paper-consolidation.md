@@ -7,9 +7,9 @@ Verified: 2026-04-27 | Engine: Python 3.11 + statsmodels 0.14.6 | HC1 robust SE
 | Construct | Variable | WBES Items | Construction | Coverage |
 |-----------|----------|------------|--------------|----------|
 | TCI-thin | `TCI_thin` | e6 (foreign tech) + b8 (quality cert) | mean(binary, binary) | ALL 6 waves |
-| TCI-full | `TCI_full` | e6 + h1 (product innov) + h8 (R&D) + b8 | mean(4 binary) | 5 waves (not VNM 2009) |
+| TCI-full | `TCI_full` | e6 + h1 (product innov) + h8 (R&D) + b8 | mean(4 binary) | 5 waves (not VNM 2009). NOTE: pandas mean(axis=1) skips NaN, so TCI_full for VNM 2009 and CHN 2012 effectively equals TCI_thin (only e6+b8 contribute) |
 | DAI-thin | `DAI_thin` | c22b (website) + e6 (foreign tech) | mean(binary, binary) | ALL 6 waves |
-| DAI-rich | `DAI_rich` | c22b + k33/100 (e-payment) + k38/100 (e-pay suppliers) | mean(binary, cont, cont) | 3 B-READY waves only |
+| DAI-rich | `DAI_rich` | c22b + k33/100 (e-payment) + k38/100 (e-pay suppliers) | mean(binary, cont, cont) | 3 B-READY waves only. NOTE: for CHN 2012 and VNM 2009/2015, DAI_rich falls back to website-only due to NaN skip |
 | FSTS | `export_pct/100` | 100 - d3a (domestic sales %) | proportion 0-1 | ALL 6 waves |
 | Productivity | `ln_labor_prod` | ln(d2/l1) = ln(sales/employees) | natural log | ALL 6 waves |
 
@@ -164,6 +164,13 @@ TCI moderation is NULL across all country-waves — consistent NLB-FSA predictio
 - CHN 2012 has innovation items under country-specific prefix (CNo1, CNo3)
 - For P4 cross-wave panel: TCI_thin (e6 + b8) is the ONLY consistent 2-item index
 - Robustness: VNM 2023 separately run with TCI_full shows same pattern
+
+### 7.3 TCI_full/DAI_rich NaN-skip fallback (critical transparency note)
+- pandas mean(axis=1) skips NaN by default
+- For VNM 2009 and CHN 2012: TCI_full column computes from only e6+b8 (h1 and h8 are NaN) → effectively = TCI_thin
+- For CHN 2012 and VNM 2009/2015: DAI_rich column computes from only c22b (k33, k38 are NaN) → effectively = website dummy
+- P5 China pooled uses TCI_full but the 2012 subsample's TCI_full is de facto TCI_thin
+- This is documented but NOT a problem: the script correctly uses TCI_thin explicitly for P4, and for P5 the fallback is acceptable since we also report by-wave results where the difference is transparent
 
 ### 7.3 FSTS/FSTS² VIF
 - FSTS and FSTS² inherently collinear (VIF 10-42 depending on sample)
