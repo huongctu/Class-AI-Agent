@@ -114,12 +114,14 @@ The following numbers are reproduced by `scripts/analyze-ip-regression.py` and s
 
 | Pattern | SGP 2023 | CHN 2012 | CHN 2024 | VNM 2009 | VNM 2015 | VNM 2023 |
 |---|---|---|---|---|---|---|
-| **Inverted-U TP** | 76.4% | 46.7% | 48.4% | 33.6% | 34.7% | 35.7% |
-| **Lind-Mehlum p** | .141 † | .001 ✓ | .011 ✓ | .028 ✓ | .003 ✓ | .010 ✓ |
-| **TCI direct β** | 0.839 *** | 0.458 *** | 0.936 *** | 0.905 *** | 0.352 * | 0.656 *** |
+| **Inverted-U TP** | 83.0% | 49.4% | 47.2% | 36.2% | 36.5% | 33.8% |
+| **Lind-Mehlum p** | .301 ✗ | .000 ✓ | .029 ✓ | .060 ~ | .017 ✓ | .029 ✓ |
+| **TCI direct β (z)** | 0.200 *** | 0.171 *** | 0.291 *** | 0.317 *** | 0.047 ns | 0.180 *** |
 | **TCI moderation** | NULL | NULL | NULL | NULL | NULL | NULL |
-| **DAI direct β** | 0.342 * | 0.139 * | 0.506 *** | 0.691 *** | 0.196 ns | 0.552 *** |
-| **DAI moderation** | **U-shape ** | NULL | NULL | NULL | NULL | NULL (†) |
+| **DAI direct β (z)** | 0.114 ** | 0.050 * | 0.141 *** | 0.251 *** | 0.022 ns | 0.176 *** |
+| **DAI mod FSTS²×DAI** | 2.869 * | 0.692 † | ns | ns | ns | ns |
+
+*Updated 2026-04-27: CNo3 fix applied, d3c FSTS, b5 firm_age, z-standardized coefficients.*
 
 **Significance**: *** p < .001, ** p < .01, * p < .05, † p < .10, ns = not significant
 
