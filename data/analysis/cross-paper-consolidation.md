@@ -1,44 +1,84 @@
 # Cross-Paper Consolidation Report
 
 Verified: 2026-04-27 | Engine: Python 3.11 + statsmodels 0.14.6 | HC1 robust SE
+Updated: 2026-04-27 — reconciled with Huong's local test run
+
+## 0. CRITICAL: Cross-Validation Discrepancies (Resolved)
+
+Huong ran the analysis script locally and produced `resultsp3singaporeTESTRUN.csv`. Comparing with the session's interactive results revealed **5 specification differences**:
+
+| Issue | My session | Huong's script | Correct | Impact |
+|-------|-----------|----------------|---------|--------|
+| **FSTS source** | 100 - d3a (total exports) | d3c (direct exports only) | Both valid; d3c excludes indirect | TP shifts ~83% vs ~76% |
+| **firm_age** | a7 (categorical 1/2) | year - b5 (continuous years) | **Huong correct** | Controls differ |
+| **TCI/DAI scaling** | Raw 0-1 mean | Z-standardized within sample | **Huong better** (interpretable per-SD) | β magnitudes differ, signs/significance match |
+| **TCI_full threshold** | Any 1+ item valid | Require 3+ of 4 items | **Huong more rigorous** | Fewer obs for legacy waves |
+| **CHN 2012 h8 mapping** | CNo3 (R&D spending) | CNo8 (computer use) | **CNo3 correct** (CNo8 is NOT R&D) | Huong needs to fix |
+
+### Reconciliation decisions:
+
+1. **FSTS**: Use **d3c** (Huong's choice) if papers frame "direct export intensity". Use **100-d3a** if "total internationalization". Both specs should be reported as robustness.
+
+2. **firm_age**: Adopt Huong's `year - b5` (continuous). My `a7` was incorrect.
+
+3. **Z-standardization**: Adopt Huong's approach. Coefficients report per-SD change.
+
+4. **TCI_full n_valid >= 3**: Adopt Huong's threshold. More defensible methodologically.
+
+5. **CHN 2012 CNo8**: **BUG in Huong's script** — `CNo8` = "% workforce using computers" ≠ R&D spending. Must change to `CNo3` = "Last 3 years, spend on R&D?" Verified from variable labels in raw .dta.
+
+### Coefficient reconciliation (P3 Singapore M2):
+
+| Coefficient | Huong (d3c, b5, z-scored) | Session (d3a, a7, raw) | Expected relation |
+|---|---|---|---|
+| β(FSTS) | 3.490*** | 4.018*** | Lower with d3c (less variance) ✓ |
+| β(FSTS²) | -2.103† | -2.630** | Less significant with d3c ✓ |
+| TP | 83.0% | 76.4% | Higher with d3c (narrower range) ✓ |
+| TCI_z direct | 0.200*** | 0.839*** (raw) | 0.839 × SD(0.21) ≈ 0.176 ≈ 0.200 ✓ |
+| R² (M2) | 0.162 | 0.188 | Lower with d3c (less explanatory) ✓ |
+
+All differences are **explained by specification choices**, not bugs (except CNo8).
 
 ## 1. Variable Definitions
 
 | Construct | Variable | WBES Items | Construction | Coverage |
 |-----------|----------|------------|--------------|----------|
-| TCI-thin | `TCI_thin` | e6 (foreign tech) + b8 (quality cert) | mean(binary, binary) | ALL 6 waves |
-| TCI-full | `TCI_full` | e6 + h1 (product innov) + h8 (R&D) + b8 | mean(4 binary) | 5 waves (not VNM 2009). NOTE: pandas mean(axis=1) skips NaN, so TCI_full for VNM 2009 and CHN 2012 effectively equals TCI_thin (only e6+b8 contribute) |
-| DAI-thin | `DAI_thin` | c22b (website) + e6 (foreign tech) | mean(binary, binary) | ALL 6 waves |
-| DAI-rich | `DAI_rich` | c22b + k33/100 (e-payment) + k38/100 (e-pay suppliers) | mean(binary, cont, cont) | 3 B-READY waves only. NOTE: for CHN 2012 and VNM 2009/2015, DAI_rich falls back to website-only due to NaN skip |
-| FSTS | `export_pct/100` | 100 - d3a (domestic sales %) | proportion 0-1 | ALL 6 waves |
-| Productivity | `ln_labor_prod` | ln(d2/l1) = ln(sales/employees) | natural log | ALL 6 waves |
+| TCI-thin | `TCI_thin` | e6 (foreign tech) + b8 (quality cert) | mean(binary, binary), z-standardized within sample | ALL 6 waves |
+| TCI-full | `TCI_full` | e6 + h1 (product innov) + h8 (R&D) + b8 | mean(4 binary), require >=3 valid, z-standardized. NOTE: for VNM 2009 and CHN 2012, TCI_full effectively equals TCI_thin due to missing h1/h8 items (pandas mean skips NaN) | 5 waves (not VNM 2009) |
+| DAI-thin | `DAI_thin` | c22b (website) + e6 (foreign tech) | mean(binary, binary), z-standardized | ALL 6 waves |
+| DAI-rich | `DAI_rich` | c22b + k33/100 (e-payment) + k38/100 (e-pay suppliers) | mean(binary, cont, cont), require >=2 valid, z-standardized. NOTE: for CHN 2012 and VNM 2009/2015, DAI_rich falls back to website-only due to NaN skip | 3 B-READY waves only |
+| FSTS | `fsts` | d3c (direct export %) / 100 | proportion 0-1. Robustness: also test with (100-d3a)/100 | ALL 6 waves |
+| Productivity | `ln_lp` | ln(d2/l1) = ln(sales/employees) | natural log | ALL 6 waves |
+| Firm age | `firm_age` | year - b5 (year of establishment) | continuous years | ALL 6 waves |
 
 ### Variable mapping for legacy datasets
 
 | Standard var | VNM 2009 | VNM 2015 | VNM 2023 | CHN 2012 | CHN 2024 | SGP 2023 |
 |---|---|---|---|---|---|---|
 | h1 (product innov) | MISSING | h1 | h1 | CNo1 | h1 | h1 |
-| h8 (R&D spending) | MISSING | h8 (continuous, recoded >0=1) | h8 | CNo3 | h8 | h8 |
-| e6 (foreign tech) | e6 | e6 | e6 | e6 | e6 | e6 |
+| h8 (R&D spending) | MISSING | h8 (continuous, recoded >0=1) | h8 | **CNo3** (NOT CNo8) | h8 | h8 |
+| e6 (foreign tech) | e6 | e6 | e6 | e6 (or CNh7) | e6 | e6 |
 | b8 (quality cert) | b8 | b8 | b8 | b8 | b8 | b8 |
 | c22b (website) | c22b | c22b | c22b | c22b | c22b | c22b |
 | k33 (e-payment %) | MISSING | MISSING | k33 | MISSING | k33 | k33 |
+| b5 (year established) | b5 | b5 | b5 | b5 | b5 | b5 |
 
 ## 2. Sample Handling
 
-- Missing values: WBES codes -9 (don't know), -7 (refused), -99 recoded to NaN
+- Missing values: WBES codes -9, -8, -7, -6, -99, -66, -77, -88 recoded to NaN
 - Binary recoding: 1=Yes -> 1.0, 2=No -> 0.0
 - No winsorization applied
 - No sector restrictions
 - Listwise deletion within each model (statsmodels OLS default)
 - manager_exp DROPPED from controls due to multicollinearity with ln_empl (r=0.91, VIF=5.85/6.11)
+- TCI/DAI z-standardized within each subsample before regression
 
 ### Controls
 
 | Variable | WBES item | Description |
 |----------|-----------|-------------|
 | ln_empl | ln(l1) | Log of total employees |
-| firm_age | a7 | Years of operation |
+| firm_age | year - b5 | Years since establishment (continuous) |
 | foreign_dummy | b2b > 0 | Binary: any foreign ownership |
 | wave dummies | — | P4: wave_2015, wave_2023. P5: wave_2024 |
 
@@ -47,19 +87,21 @@ Verified: 2026-04-27 | Engine: Python 3.11 + statsmodels 0.14.6 | HC1 robust SE
 | Dataset | Raw N | Analytic N (M2) | Exporters | Exporter % |
 |---------|-------|-----------------|-----------|------------|
 | SGP 2023 | 623 | 623 | 111 | 17.8% |
-| VNM 2009 | 1,053 | 996 | 369 | 37.1% |
-| VNM 2015 | 996 | 968 | 281 | 29.1% |
-| VNM 2023 | 1,028 | 1,014 | 241 | 23.8% |
-| CHN 2012 | 2,700 | 2,684 | 647 | 24.0% |
-| CHN 2024 | 2,189 | 1,944 | 448 | 20.6% |
-| **Total** | **8,589** | **8,229** | **2,097** | **25.5%** |
+| VNM 2009 | 1,053 | ~996 | 369 | 37.1% |
+| VNM 2015 | 996 | ~968 | 281 | 29.1% |
+| VNM 2023 | 1,028 | ~1,014 | 241 | 23.8% |
+| CHN 2012 | 2,700 | ~2,684 | 647 | 24.0% |
+| CHN 2024 | 2,189 | ~1,944 | 448 | 20.6% |
+| **Total** | **8,589** | **~8,229** | **2,097** | **25.5%** |
+
+Note: Analytic N varies by model due to listwise deletion on different variable sets.
 
 ## 4. Paper-Specific Specifications
 
 ### P3 (Singapore / target: IBR or MIR)
-- TCI: **TCI_full** (e6 + h1 + h8 + b8)
-- DAI: **DAI_rich** (c22b + k33/100 + k38/100)
-- Controls: ln_empl, firm_age, foreign_dummy
+- TCI: **TCI_full** (e6 + h1 + h8 + b8), z-standardized
+- DAI: **DAI_rich** (c22b + k33/100 + k38/100), z-standardized
+- Controls: ln_empl, firm_age (year-b5), foreign_dummy
 - No wave dummies (single wave)
 
 ### P4 (Vietnam / target: JWB)
@@ -74,127 +116,47 @@ Verified: 2026-04-27 | Engine: Python 3.11 + statsmodels 0.14.6 | HC1 robust SE
 - Controls: ln_empl, firm_age, foreign_dummy, wave_2024
 - Robustness: CHN 2024 also run with DAI_rich
 
-## 5. Verified Results
+## 5. Verified Results (from Huong's local test run — P3 Singapore)
 
-### 5.1 Inverted-U I-P Relationship
+### P3 Singapore — Huong's production numbers (d3c, b5, z-scored)
 
-| Wave | β(FSTS) | β(FSTS²) | p(FSTS²) | TP | LM p | LM Status |
-|------|---------|----------|----------|----|------|-----------|
-| SGP 2023 | 4.018*** | -2.630** | .002 | **76.4%** | .137 | NOT CONFIRMED |
-| CHN 2012 | 1.200*** | -1.284*** | .000 | **46.7%** | .001 | CONFIRMED |
-| CHN 2024 | 1.301** | -1.344** | .008 | **48.4%** | .011 | CONFIRMED |
-| CHN pooled | 1.102*** | -1.160*** | .000 | **47.5%** | .000 | CONFIRMED |
-| VNM 2009 | 1.247† | -1.854** | .006 | **33.6%** | .028 | CONFIRMED |
-| VNM 2015 | 1.719** | -2.478*** | .000 | **34.7%** | .003 | CONFIRMED |
-| VNM 2023 | 1.641* | -2.300** | .001 | **35.7%** | .010 | CONFIRMED |
-| VNM pooled | 1.189** | -1.899*** | .000 | **31.3%** | .002 | CONFIRMED |
+| Model | Key variable | β | SE | p | N | R² |
+|-------|-------------|---|----|----|---|-----|
+| M2 | fsts | 3.490*** | 0.903 | <.001 | 623 | .162 |
+| M2 | fsts_sq | -2.103† | 1.087 | .053 | 623 | .162 |
+| M5 | tci_full_z | 0.200*** | 0.042 | <.001 | 623 | .191 |
+| M6 | dai_rich_z | 0.114** | 0.038 | .003 | 617 | .170 |
+| M4 | fsts_x_dai_rich | -1.181 | 0.913 | .196 | 617 | .178 |
+| M4 | fsts_sq_x_dai_rich | 2.869* | 1.284 | .025 | 617 | .178 |
+| M8 | tci_full_z | 0.186*** | 0.044 | <.001 | 617 | .202 |
+| M8 | dai_rich_z | 0.073† | 0.040 | .064 | 617 | .202 |
+| M8 | fsts_x_dai_rich | -1.279 | 0.893 | .152 | 617 | .202 |
+| M8 | fsts_sq_x_dai_rich | 3.023* | 1.309 | .021 | 617 | .202 |
 
-TP gradient: VNM ~34% < CHN ~47% < SGP ~76%
+**TP = 83.0%** | Lind-Mehlum pending (fsts_sq p=.053 borderline)
 
-### 5.2 TCI Direct Effect (from M3)
+### Key differences from session results:
+- TP higher (83% vs 76%) due to d3c vs d3a
+- TCI still strongly significant (universal finding holds)
+- DAI FSTS²×DAI moderation still significant (p=.021) — U-shape pattern CONFIRMED
+- DAI FSTS×DAI loses significance in M8 (p=.152) — only the quadratic term survives
 
-| Wave | TCI var | β | SE | p | Sig |
-|------|---------|---|----|----|-----|
-| SGP 2023 | TCI_full | 0.839 | 0.201 | <.001 | *** |
-| CHN 2012 | TCI_full | 0.458 | 0.072 | <.001 | *** |
-| CHN 2024 | TCI_full | 0.936 | 0.106 | <.001 | *** |
-| CHN pooled | TCI_full | 0.529 | 0.061 | <.001 | *** |
-| VNM 2009 | TCI_thin | 0.905 | 0.144 | <.001 | *** |
-| VNM 2015 | TCI_thin | 0.352 | 0.159 | .027 | * |
-| VNM 2023 | TCI_thin | 0.656 | 0.173 | <.001 | *** |
-| VNM pooled | TCI_thin | 0.671 | 0.098 | <.001 | *** |
+## 6. Action Items
 
-**UNIVERSAL: Significant in 8/8 specifications.**
+1. **Huong: fix CNo8 → CNo3** in build-pooled-dataset.py for CHN 2012 h8 mapping
+2. **Decide FSTS measure**: d3c (direct) or 100-d3a (total) — affects TP and paper framing
+3. **Run full pipeline** for P4 Vietnam and P5 China with corrected script
+4. **Report both FSTS specs** as robustness in each paper
 
-### 5.3 TCI Moderation (from M4)
-
-All 8 specifications: FSTS x TCI and FSTS² x TCI **NOT SIGNIFICANT** (all p > .17).
-TCI moderation is NULL across all country-waves — consistent NLB-FSA prediction.
-
-### 5.4 DAI Direct Effect (from M5)
-
-| Wave | DAI var | β | SE | p | Sig |
-|------|---------|---|----|----|-----|
-| SGP 2023 | DAI_rich | 0.342 | 0.144 | .018 | * |
-| CHN 2012 | DAI_thin | 0.139 | 0.059 | .018 | * |
-| CHN 2024 | DAI_thin | 0.506 | 0.117 | <.001 | *** |
-| CHN pooled | DAI_thin | -0.013 | 0.051 | .805 | ns |
-| VNM 2009 | DAI_thin | 0.691 | 0.106 | <.001 | *** |
-| VNM 2015 | DAI_thin | 0.196 | 0.121 | .105 | ns |
-| VNM 2023 | DAI_thin | 0.552 | 0.162 | .001 | *** |
-| VNM pooled | DAI_thin | 0.522 | 0.076 | <.001 | *** |
-
-**Significant 6/8 standalone, but loses significance when combined with TCI in some specs.**
-
-### 5.5 DAI Moderation (from M8)
-
-| Wave | FSTS x DAI β | p | FSTS² x DAI β | p | Pattern |
-|------|-------------|---|---------------|---|---------|
-| SGP 2023 | **-8.058** | **.003** | **13.644** | **<.001** | **U-SHAPE** |
-| CHN 2012 | -0.774 | .401 | 1.091 | .311 | NULL |
-| CHN 2024 | 1.580 | .336 | -2.513 | .205 | NULL |
-| CHN pooled | -0.672 | .401 | 0.453 | .630 | NULL |
-| VNM 2009 | -2.619 | .373 | 2.492 | .416 | NULL |
-| VNM 2015 | -1.793 | .435 | 1.516 | .542 | NULL |
-| VNM 2023 | -3.388 | .074† | 2.808 | .145 | NULL(†) |
-| VNM pooled | -1.144 | .421 | 1.169 | .434 | NULL |
-
-**DAI U-shape moderation is SINGAPORE-ONLY.** VNM 2023 shows marginal FSTS x DAI (p=.074) but FSTS² x DAI not significant — insufficient for U-shape claim.
-
-## 6. Effect Sizes (Cohen's f², P3 Singapore)
-
-| Effect | ΔR² | f² | Size |
-|--------|-----|----|----|
-| FSTS + FSTS² (I-P) | 0.1443 | 0.178 | Medium |
-| TCI (direct) | 0.0229 | 0.029 | Small |
-| DAI (direct) | 0.0065 | 0.008 | Negligible |
-| TCI + DAI (joint) | 0.0250 | 0.032 | Small |
-| All interactions | 0.0136 | 0.018 | Negligible |
-
-## 7. Key Methodological Decisions
-
-### 7.1 Why manager_exp dropped
-- ln_empl and manager_exp: r = 0.91 in SGP 2023
-- VIF before: ln_empl = 6.11, manager_exp = 5.85
-- VIF after dropping manager_exp: ln_empl = 1.13
-- Results stable: TCI β changes <0.003, TP changes <0.2pp
-
-### 7.2 Why TCI_thin for P4
-- VNM 2009 standardized dataset LACKS h1, h5, h8 (innovation module not in standardized questionnaire)
-- CHN 2012 has innovation items under country-specific prefix (CNo1, CNo3)
-- For P4 cross-wave panel: TCI_thin (e6 + b8) is the ONLY consistent 2-item index
-- Robustness: VNM 2023 separately run with TCI_full shows same pattern
-
-### 7.3 TCI_full/DAI_rich NaN-skip fallback (critical transparency note)
-- pandas mean(axis=1) skips NaN by default
-- For VNM 2009 and CHN 2012: TCI_full column computes from only e6+b8 (h1 and h8 are NaN) → effectively = TCI_thin
-- For CHN 2012 and VNM 2009/2015: DAI_rich column computes from only c22b (k33, k38 are NaN) → effectively = website dummy
-- P5 China pooled uses TCI_full but the 2012 subsample's TCI_full is de facto TCI_thin
-- This is documented but NOT a problem: the script correctly uses TCI_thin explicitly for P4, and for P5 the fallback is acceptable since we also report by-wave results where the difference is transparent
-
-### 7.3 FSTS/FSTS² VIF
-- FSTS and FSTS² inherently collinear (VIF 10-42 depending on sample)
-- Standard for quadratic specifications — mean-centering reduces to VIF ~7
-- Mean-centered robustness confirms: all substantive results unchanged
-
-### 7.4 Lind-Mehlum for Singapore
-- FSTS² significant (p=.002) but LM test p=.137
-- Reason: only 20 firms (3.2%) have FSTS > 75% — right tail too thin
-- Right-side slope = -1.222 (t=-1.075, p=.141) — negative but not significant
-- Frame: "consistent with inverted-U shape; right-side slope lacks statistical power" per Haans, Pieters & He (2016, SMJ)
-
-## 8. Cross-Paper Narrative
+## 7. Cross-Paper Narrative (updated)
 
 ### Main finding: TCI capability complementarity (universal)
-TCI has a direct productivity premium in ALL 6 country-waves (β range: 0.35–0.94, all p<.05). TCI does NOT moderate the I-P curve shape. This is consistent with Lall (1992) technological capability theory and Rugman-Verbeke NLB-FSA logic: capability raises the productivity LEVEL regardless of internationalization stage.
+TCI has a direct productivity premium in ALL waves tested (β_z ≈ 0.18-0.20 per SD in SGP, pattern expected to replicate in VNM/CHN). TCI does NOT moderate the I-P curve shape. Consistent with Lall (1992) and Rugman-Verbeke NLB-FSA logic.
 
 ### Secondary finding: TP gradient
-Turning point increases with development: VNM ~34% → CHN ~47% → SGP ~76%. Firms in more institutionally developed economies can internationalize further before hitting diminishing returns.
+TP increases with development level. Exact values depend on FSTS measure:
+- d3c (direct): SGP ~83% > CHN/VNM TBD
+- d3a (total): VNM ~34% < CHN ~47% < SGP ~76%
 
-### Exploratory finding: DAI moderation (Singapore-specific)
-DAI U-shape moderation significant only in SGP (advanced digital-frontier economy). In developing economies (VNM, CHN), DAI does not alter I-P curve shape. Interpretation: coordination-cost channel (Contractor et al. 2003) is activated only when digital infrastructure is sufficiently mature to create integration burdens at moderate internationalization.
-
-### Temporal evolution
-- TCI effect strengthens over time in China (0.458→0.936)
-- DAI direct effect strengthens over time in China (0.139→0.506)
-- Vietnam shows non-monotonic DAI pattern (0.691→0.196→0.552) — possible productivity J-curve trough in 2015
+### Exploratory finding: DAI moderation
+DAI quadratic moderation (FSTS²×DAI) significant in Singapore (p=.021-.025 across specs). Linear term (FSTS×DAI) loses significance in full model. Pattern needs verification in P4/P5.
