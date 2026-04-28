@@ -22,7 +22,7 @@ This document consolidates verified empirical results across the three dissertat
 
 1. **Universal capability complementarity (TCI direct).** Technological capability (TCI) exerts a positive and statistically significant direct effect on labor productivity in **6 out of 6 country-waves** with TCI moderation null in **6 out of 6 country-waves**. This cross-institutional invariance is the dissertation's strongest finding and matches the Rugman-Verbeke (2004) NLB-FSA prediction.
 
-2. **Singapore-specific DAI U-shape moderation.** Digital adoption (DAI) U-shape moderation of the I-P relationship is statistically significant only in Singapore (β_FSTS×DAI = −8.10**, β_FSTS²×DAI = +13.70***); the same moderation pattern is null in all other country-waves. This is a boundary condition rather than a general phenomenon.
+2. **Singapore-specific DAI U-shape moderation.** Digital adoption (DAI) quadratic moderation of the I-P relationship is statistically significant only in Singapore (β_z FSTS²×DAI = +3.02*, joint F p = .035); the same moderation pattern is null in all other country-waves. This is a boundary condition rather than a general phenomenon.
 
 3. **Inverted-U turning-point gradient.** The optimal export-intensity threshold rises systematically with the country's digital institutional development: Vietnam ≈ 34%, China ≈ 47%, Singapore ≈ 76%. This gradient maps onto cross-border digital infrastructure maturity and is theoretically informative for the institution-based view.
 
@@ -131,26 +131,31 @@ The following numbers are reproduced by `scripts/analyze-ip-regression.py` and s
 
 ### 3.1 Singapore U-Shape Moderation Detail (P3)
 
-The Singapore-specific U-shape DAI moderation is the only statistically significant moderation pattern in the entire matrix:
+*Updated 2026-04-28: Production spec (d3c FSTS, b5 firm_age, z-standardized TCI/DAI).*
 
-| Coefficient | β | SE | p-value |
+The Singapore DAI moderation shows a significant quadratic interaction term:
+
+| Coefficient | β_z | SE | p-value |
 |---|---|---|---|
-| `fsts × dai_rich` (linear interaction) | −8.104 | 2.74 | .003 |
-| `fsts² × dai_rich` (quadratic interaction) | +13.695 | 2.97 | < .001 |
-| Joint F-test (2, 613) | 4.37 | — | .013 |
+| `fsts × dai_rich_z` (linear interaction) | −1.279 | 0.893 | .152 |
+| `fsts² × dai_rich_z` (quadratic interaction) | +3.023 | 1.309 | .021 |
+| Joint F-test (2, 607) | 3.38 | — | .035 |
 
-Marginal effects of DAI on lnLP across FSTS (Singapore 2023):
-- FSTS = 0%: +0.236 (p = .137) — domestic firms, ns
-- FSTS = 15%: −0.666 (p = .040) — coordination trough begins
-- FSTS = 20%: −0.830 (p = .033) — maximum negative effect
-- FSTS = 30%: −0.953 (p = .049) — still significantly negative
-- FSTS = 50%: −0.382 (p = .499) — emerging from trough
-- FSTS = 80%: +2.522 (p = .015) — scale economies emerging
-- FSTS = 100%: +5.822 (p = .002) — strong positive at full export
+Note: The linear interaction is not significant individually (p = .152), but the quadratic term is significant (p = .021) and the joint F-test confirms overall moderation significance (p = .035).
 
-Zero-crossings at FSTS ≈ 3% and FSTS ≈ 56%. Approximately 78 firms (12.5% of the analytic sample) fall within the 3–56% coordination-trough range.
+Marginal effects of DAI (z) on lnLP across FSTS (Singapore 2023, from M8 full model):
+- FSTS = 0%: +0.073 (p = .064) — domestic firms, marginal positive
+- FSTS = 5%: +0.017 (p = .738) — near zero
+- FSTS = 10%: −0.024 (p = .759) — near zero
+- FSTS = 20%: −0.061 (p = .641) — coordination trough (ns)
+- FSTS = 30%: −0.038 (p = .823) — near zero
+- FSTS = 50%: +0.190 (p = .396) — emerging positive (ns)
+- FSTS = 70%: +0.660 (p = .041) — scale economies emerging
+- FSTS = 100%: +1.818 (p = .009) — strong positive at full export
 
-The DAI U-shape moderation is **robust to dropping k33** (DAI-thin replication: β_FSTS×DAI = −6.370**, β_FSTS²×DAI = +6.411**), confirming it is not an artifact of the k33 ceiling effect.
+Zero-crossings at FSTS ≈ 7% and FSTS ≈ 35%. The coordination trough is shallower than previously reported (max negative effect β ≈ −0.06 at FSTS ≈ 21%) and not individually significant at any point within the trough. The scale-economy tail (FSTS > 70%) is significant.
+
+The DAI U-shape moderation is **robust to dropping k33** (DAI-thin replication: β_FSTS²×DAI_thin = +1.698*, p = .015), confirming it is not an artifact of the k33 ceiling effect.
 
 ---
 
