@@ -1,4 +1,4 @@
-# Cover Letter — P4 (v4.4) submission to Journal of World Business
+# Cover Letter — P4 (v4.4) revised submission to Journal of World Business
 
 [Date]
 
@@ -7,7 +7,7 @@ Editor-in-Chief
 
 Dear Editor,
 
-We are pleased to submit our manuscript, *"Digital Adoption, Technological Capability, and the Internationalisation–Performance Relationship in Vietnam: Evidence from a Transitional Digital Economy,"* for consideration at the *Journal of World Business*. The paper makes three contributions to the digital international-business literature.
+We are pleased to submit the revised manuscript, *"Digital Adoption, Technological Capability, and the Internationalisation–Performance Relationship in Vietnam: Evidence from a Transitional Digital Economy,"* for the second round of review at the *Journal of World Business*, following the Major Revision decision. A point‑by‑point response to the Editor's letter is provided as `response_to_reviewer_v4_4.md` in the accompanying replication package; the eight‑commit revision arc that produced v4.4 is logged in `changelog_v4_3_to_v4_4.md` and visible on pull request #2 of the manuscript repository. The paper makes three contributions to the digital international‑business literature.
 
 First, we **separate two constructs that the digital-IB literature frequently conflates**: a Lall-tradition Technological Capability Index (TCI) anchored in foreign-licensed technology and quality certification, and a Bharadwaj/Verhoef-tradition Digital Adoption Index (DAI) anchored in basic digital presence and electronic-payment intensity. The two constructs deliver materially different productivity signatures across the I–P curve: TCI is both a level shifter and a curvature modifier, while DAI follows a productivity J-curve and — in the most recent (2023) wave — moderates the I–P curvature in a direction that *inverts* the conditional-complement logic dominant in the literature on digital-frontier economies.
 

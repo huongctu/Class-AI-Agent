@@ -1,16 +1,16 @@
 # P4 — Highlights (v4.4)
 
-Each bullet ≤ 85 characters per JWB submission rules. Bullets 1, 2, 5 updated against v4.3; bullets 3 and 4 retained.
+Each bullet ≤ 85 characters per JWB submission rules. v4.4 reflects the editor's Major Revision letter response: associational language, Heckman selection corroborated, Paternoster z‑test added, cross‑country institutional‑maturity framing, verified `-9` missing‑code refinement.
 
-1. Inverted-U I-P confirmed in 2015 and pooled WBES Vietnam samples (LM test). *(76)*
+1. Inverted‑U I‑P association confirmed in 2015 (LM p=.033) and pooled (.041). *(76)*
 
-2. Turning points span 36–44% across waves with overlapping CIs, not knife-edge. *(78)*
+2. Vietnam turning point ~36% sits between China ~48% and Singapore ~89%. *(73)*
 
-3. TCI delivers a positive direct effect across all three Vietnam waves. *(67)*
+3. TCI delivers a positive direct association across all three Vietnam waves. *(72)*
 
-4. DAI shows a productivity J-curve consistent with intangible-investment lag. *(75)*
+4. DAI productivity J‑curve confirmed: positive 2009/2023, attenuated 2015. *(73)*
 
-5. DAI amplifies coordination costs at high export intensity, inverting H4. *(74)*
+5. DAI moderates I‑P curve in 2023 (joint F p=.022); H4 sign empirical. *(70)*
 
 ---
 
