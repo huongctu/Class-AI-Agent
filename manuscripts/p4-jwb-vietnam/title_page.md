@@ -8,10 +8,10 @@
 
 | # | Name | Affiliation | Email | ORCID |
 |---|---|---|---|---|
-| 1 | Do Thuy Huong | School of Economics, Can Tho University, Vietnam | huongp1323001@gstudent.ctu.edu.vn | [ORCID to be added] |
-| 2 | Phan Anh Tu* | School of Economics, Can Tho University, Vietnam | patu@ctu.edu.vn | [ORCID to be added] |
+| 1 | Do Thuy Huong | College of Economics, Can Tho University, Vietnam | huongp1323001@gstudent.ctu.edu.vn | [0000‑0002‑7711‑2487](https://orcid.org/0000-0002-7711-2487) |
+| 2 | Phan Anh Tu* | International Business Department, College of Economics, Can Tho University, Vietnam | patu@ctu.edu.vn | [0000‑0003‑0667‑3137](https://orcid.org/0000-0003-0667-3137) |
 
-\* Corresponding author. Phan Anh Tu, School of Economics, Can Tho University, Campus II, 3/2 Street, Ninh Kieu District, Can Tho City, Vietnam. Email: patu@ctu.edu.vn.
+\* Corresponding author. Phan Anh Tu, College of Economics, Can Tho University, Campus II, 3/2 Street, Ninh Kieu District, Can Tho City, Vietnam. Email: patu@ctu.edu.vn.
 
 ## Abstract
 

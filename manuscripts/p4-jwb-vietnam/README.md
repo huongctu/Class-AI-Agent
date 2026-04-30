@@ -56,11 +56,11 @@ The analysis uses three waves of the World Bank Enterprise Surveys (WBES) for Vi
 
 The WBES public release is freely downloadable from <https://www.enterprisesurveys.org/en/data> after acceptance of the **WBES Data Access Protocol**. The protocol explicitly prohibits redistribution of the `.dta` files to third parties (including journals), and accordingly **this repository does not redistribute the WBES microdata**. Researchers wishing to reproduce the results must download the three Vietnam waves themselves from the WBES portal under the same Data Access Protocol. The 2015 release is encoded in latin‑1; the pipeline transparently falls back to latin‑1 / cp1252 when a UTF‑8 decode fails.
 
-When citing the data per the World Bank's recommended format, use:
+When citing the data, use the format the World Bank Enterprise Analysis Unit specifies on <https://www.enterprisesurveys.org/en/citing-the-data>:
 
-> The World Bank Group. (Year). *Vietnam — World Bank Enterprise Survey (WBES) [Year]* [Microdata, Ref. WBES‑VNM‑YYYY]. Dataset downloaded from <https://www.enterprisesurveys.org/en/data> on [date].
+> Source: World Bank Enterprise Surveys, www.enterprisesurveys.org.
 
-The Acknowledgements paragraph in the manuscript adopts the wording the World Bank Enterprise Analysis Unit recommends for papers that use WBES microdata, including the standard data‑user disclaimer.
+Authors are encouraged to detail the version of the dataset by highlighting its name and date of publication in the citation or in graphs/tables. Per the WB Acknowledgement convention, papers using the data should also include the line: *"We thank the Enterprise Analysis Unit of the Development Economics Global Indicators Group of the World Bank for the data."* The Acknowledgements paragraph in the manuscript adopts this wording verbatim, together with the standard data‑user disclaimer ("the original collector of the data, the authorised distributor of the data, and the relevant funding agency bear no responsibility for use of the data...").
 
 ---
 

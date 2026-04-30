@@ -78,7 +78,7 @@ This restatement preserves theoretical integrity — under the institutional‑s
 
 ## 3.1 Data
 
-The analytic dataset combines three waves of the World Bank Enterprise Survey (WBES) for Vietnam: 2009 (full release, 1,053 firms; The World Bank Group, 2010), 2015 (996 firms; The World Bank Group, 2016), and 2023 (1,028 firms; The World Bank Group, 2024). The WBES microdata are publicly available from <https://www.enterprisesurveys.org/en/data> subject to acceptance of the WBES Data Access Protocol; the protocol prohibits redistribution of the `.dta` files to third parties (including journals), and accordingly the replication package accompanying this manuscript references the WBES download endpoint rather than redistributing the data. After the listwise deletion described in §3.2 (with WBES non‑response codes –9 treated as missing — a methodological refinement against earlier drafts), 734 / 614 / 974 firms enter the wave‑specific regressions and 2,322 firms enter the pooled regression. Variable construction and item availability across waves are summarised in `output/wbes_vn_inspection.md`.
+The analytic dataset combines three waves of the World Bank Enterprise Survey (WBES) for Vietnam: 2009 (full release, 1,053 firms; World Bank, 2010), 2015 (996 firms; World Bank, 2016), and 2023 (1,028 firms; World Bank, 2024). Source: World Bank Enterprise Surveys, www.enterprisesurveys.org. The WBES microdata are publicly available from <https://www.enterprisesurveys.org/en/data> subject to registration with the Enterprise Analysis Unit (DECEA) and acceptance of the WBES Data Access Protocol; the protocol prohibits transfer of the `.dta` files to third parties (including journals), and accordingly the replication package accompanying this manuscript references the WBES download endpoint rather than redistributing the data. After the listwise deletion described in §3.2 (with WBES non‑response codes –9 treated as missing — a methodological refinement against earlier drafts), 734 / 614 / 974 firms enter the wave‑specific regressions and 2,322 firms enter the pooled regression. Variable construction and item availability across waves are summarised in `output/wbes_vn_inspection.md`.
 
 ## 3.2 Variables
 
@@ -198,7 +198,7 @@ This paper has five principal limitations. First and most fundamentally, the WBE
 
 # Acknowledgements
 
-We thank the Enterprise Analysis Unit of the Development Economics Global Indicators Group of the World Bank for the data. The user of the data acknowledges that the original collector of the data, the authorised distributor of the data, and the relevant funding agency bear no responsibility for use of the data or for interpretations or inferences based upon such uses. The findings, interpretations, and conclusions expressed in this paper are entirely those of the authors and do not necessarily represent the views of the World Bank Group, its Executive Directors, or the governments they represent.
+**Source: World Bank Enterprise Surveys, www.enterprisesurveys.org.** We thank the Enterprise Analysis Unit of the Development Economics Global Indicators Group of the World Bank for the data. The user of the data acknowledges that the original collector of the data, the authorised distributor of the data, and the relevant funding agency bear no responsibility for use of the data or for interpretations or inferences based upon such uses. The findings, interpretations, and conclusions expressed in this paper are entirely those of the authors and do not necessarily represent the views of the World Bank Group, its Executive Directors, or the governments they represent.
 
 The authors received no specific grant from any funding agency in the public, commercial, or not‑for‑profit sectors for the research, authorship, or publication of this article. We thank the editorial team and anonymous reviewers of the *Journal of World Business* for searching critique that materially improved the manuscript. The replication package accompanying this submission was developed with the goal of meeting the methodological transparency standards articulated by Antonakis et al. (2010) for IB‑specific causal‑inference work.
 
@@ -248,11 +248,11 @@ Vernon, R. (1979). The product cycle hypothesis in a new international environme
 
 Wagner, J. (2007). Exports and productivity: A survey of the evidence from firm‑level data. *The World Economy*, 30(1), 60–82.
 
-The World Bank Group. (2010). *Vietnam — World Bank Enterprise Survey (WBES) 2009* [Microdata, Ref. WBES‑VNM‑2009]. Dataset downloaded from https://www.enterprisesurveys.org/en/data.
+World Bank. (2010). *Vietnam Enterprise Survey 2009* [data file]. Source: World Bank Enterprise Surveys, www.enterprisesurveys.org.
 
-The World Bank Group. (2016). *Vietnam — World Bank Enterprise Survey (WBES) 2015* [Microdata, Ref. WBES‑VNM‑2015]. Dataset downloaded from https://www.enterprisesurveys.org/en/data.
+World Bank. (2016). *Vietnam Enterprise Survey 2015* [data file]. Source: World Bank Enterprise Surveys, www.enterprisesurveys.org.
 
-The World Bank Group. (2024). *Vietnam — World Bank Enterprise Survey (WBES) 2023* [Microdata, Ref. WBES‑VNM‑2023]. Dataset downloaded from https://www.enterprisesurveys.org/en/data.
+World Bank. (2024). *Vietnam Enterprise Survey 2023* [data file]. Source: World Bank Enterprise Surveys, www.enterprisesurveys.org.
 
 Wooldridge, J. M. (2010). *Econometric Analysis of Cross Section and Panel Data* (2nd ed.). Cambridge, MA: MIT Press.
 
