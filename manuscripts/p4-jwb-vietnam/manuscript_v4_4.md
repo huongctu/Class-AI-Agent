@@ -46,6 +46,26 @@ Empirically, we expect TCI to deliver a *positive level shift* on the productivi
 
 The two constructs share one constituent — foreign‑licensed technology (`e6`) — by virtue of overlapping coverage in the WBES instrument. We retain `e6` in both composites because dropping it from either would produce a single‑item index inappropriate for inferential purposes. We document the resulting within‑wave correlation (r = 0.56–0.65 across waves) in §4.1 and confirm in §4.6 that the substantive findings are robust to alternative composite specifications that exclude the shared item.
 
+## 2.3 Hypotheses
+
+### 2.3.1 H1 — Inverted‑U I‑P relationship
+
+The mechanism we adopt for H1 is the coordination‑cost / scale‑economy trade‑off summarised in §2.1. At low export intensity, the marginal export market is informationally adjacent to the firm's existing customer base; the marginal cost of serving it is low and the productivity dividend is positive. As export intensity rises, the marginal market becomes more institutionally distant, the marginal coordination cost rises, and the productivity dividend shrinks. Beyond a threshold, marginal coordination cost exceeds marginal scale economy and further internationalisation depresses productivity. This generates a curvature in which the relationship between FSTS (direct‑export intensity) and labour productivity is concave with an interior maximum.
+
+> **Hypothesis 1 (H1).** In Vietnamese WBES samples, log labour productivity is associated with direct‑export intensity through an inverted‑U curvature; the relationship is positive at low export intensity, plateaus at an interior turning point, and turns negative at high export intensity.
+
+### 2.3.2 H2 — TCI moderation of the I‑P curvature
+
+If TCI is the firm‑level stock of absorptive capacity articulated in Lall (1992) and Cohen & Levinthal (1990), then capability‑augmented exporters should extract a higher productivity dividend from each unit of export intensity than their less‑capable peers. The resulting moderation could in principle be either a *level shift* (TCI raises productivity uniformly across the FSTS distribution) or a *curvature modification* (the interaction TCI × FSTS reshapes the I‑P curve itself). The literature has historically privileged the level‑shift interpretation, but two arguments point toward curvature modification in transitional settings. First, capability is scarcer and more concentrated in the early‑exporter cohort: high‑TCI firms are observed predominantly at moderate export intensity, where their marginal contribution to productivity is largest. Second, the marginal returns to capability themselves diminish with export intensity, because the absorptive‑capacity advantage that capability confers fades as a firm exhausts the supply of foreign technology its market position can plausibly absorb. The composition of these forces predicts a *negative* FSTS × TCI interaction in transitional Vietnam — capability augments productivity most at moderate FSTS and contributes less at the extreme tails.
+
+> **Hypothesis 2 (H2).** TCI moderates the curvature of the I‑P relationship in Vietnam: the FSTS × TCI interaction is negative and the FSTS² × TCI interaction carries an opposing sign, generating a flatter inverted‑U for high‑capability firms.
+
+### 2.3.3 H3 — DAI direct association with productivity
+
+DAI captures investment in digital infrastructure rather than capability stock; its productivity signature is therefore more sensitive to the implementation lag described in Brynjolfsson, Rock & Syverson (2021). At low DAI, firms have not yet invested and the productivity association is null. At moderate DAI, firms have made the digital‑infrastructure investment but have not yet completed the organisational adjustments — managerial routines, customer relationships, supply‑chain data flows — that monetise the investment; the productivity association is *attenuated* during this implementation period. At high DAI, the integration matures and the productivity association is positive. Across multiple cross‑sections of a single transitional economy, the result is a *productivity J‑curve* in DAI: positive in early adopters, attenuated mid‑adoption, and recovering at maturity. Vietnam's National Digital Transformation Programme (launched 2020) would be expected to depress the 2015 DAI–productivity association — at the height of the implementation lag — relative to both the 2009 and 2023 waves.
+
+> **Hypothesis 3 (H3).** DAI is positively associated with log labour productivity at the cross‑wave pool, with a J‑curve attenuation in the wave (2015) corresponding to the digital‑transformation implementation lag.
+
 ## 2.3.4 H4 — DAI moderation (revised statement)
 
 Earlier drafts framed H4 as a directional prediction that *"the association between digital adoption and firm performance becomes more positive at higher levels of export intensity."* The verified results in §4.5 do not support this framing in the pooled sample but do detect a curvature‑shifting interaction in the 2023 wave (joint F p = .022), with negative FSTS × DAI and positive FSTS² × DAI. Consistent with the conceptual model in Figure 1, we therefore restate H4 as a **two‑sided** moderation hypothesis whose sign is treated as an empirical question:
