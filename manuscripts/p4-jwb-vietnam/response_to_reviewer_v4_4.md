@@ -78,7 +78,7 @@ The TCI_full estimate is reported in §4.6 paragraph 2: TCI_full attenuates by 6
 
 **Reviewer's mandate.** "Bắt buộc báo cáo chi tiết p-value của kiểm định Lind và Mehlum (2010) cho từng làn sóng dữ liệu riêng biệt (yêu cầu đạt ngưỡng: .060 cho 2009, .017 cho 2015, và .029 cho 2023)."
 
-**Response.** Reported. Section 4.2 reports the Lind & Mehlum (2010) U‑test p‑values per wave and pooled, and provides the delta‑method 95% CI for the turning point. The verified specification yields:
+**Response — first part adopted, second part declined.** The wave‑specific Lind & Mehlum (2010) U‑test is reported in Section 4.2, with the delta‑method 95% CI for the turning point in each wave. The verified specification yields:
 
 | Wave | LM p | TP point estimate (raw FSTS %) | 95% CI |
 |---|---|---|---|
@@ -87,11 +87,11 @@ The TCI_full estimate is reported in §4.6 paragraph 2: TCI_full attenuates by 6
 | 2023 | .068 | 40.6% | [26.3%, 55.0%] |
 | Pooled | .041 | 31.4% | [16.4%, 46.4%] |
 
-We must respectfully note that the reviewer's expected thresholds (.060 for 2009, .017 for 2015, and .029 for 2023) reflect the v4.3 listwise convention that retained `-9` codes as data. The verified spec — which we believe better satisfies the methodological transparency standards Antonakis et al. (2010) articulate — yields the values above. We have not reverse‑engineered the analysis to match the v4.3 thresholds; instead we have transparently documented the methodological refinement in §3.2 and let the verified results stand.
+We must respectfully note that the reviewer's expected thresholds (.060 for 2009, .017 for 2015, and .029 for 2023) reflect the v4.3 listwise convention that retained WBES `-9` codes as numeric data. The verified spec — which we believe better satisfies the methodological transparency standards Antonakis et al. (2010) articulate — yields the values above. We have not reverse‑engineered the analysis to match the v4.3 thresholds; instead we have transparently documented the methodological refinement in §3.2 and let the verified results stand.
 
-The cross‑country TP comparison the reviewer requested is provided in §2.1 (theoretical anchoring) and §5.1 / §5.3 (interpretive deployment). The reference values are: Singapore manufacturing TP ~89% (Eckhardt et al. 2018); Chinese manufacturing TP ~48% (Banalieva & Dhanaraj 2019); Vietnamese TP ~36% (this paper, 2015 estimate). Section 5.3 develops the institutional‑maturity argument the reviewer requested: *"The institutional‑maturity gap between Vietnam and the digital‑frontier benchmarks ... is not bridgeable through firm‑level subsidies alone; it requires the institutional scaffolding — ports, trade finance, digital marketplaces, dispute‑resolution mechanisms — that lifts the marginal coordination cost curve uniformly."*
+We have **declined the cross‑country turning‑point comparison** that the reviewer requested. The reasoning is one of empirical hygiene: this paper estimates only on the three Vietnam WBES waves and does not run the equivalent pipeline on any non‑Vietnamese sample, and we are unwilling to import comparison values from prior literature that was estimated under different specifications, on different vintages of WBES data, with different listwise conventions, and to different curvature tests. Citing such values would create a comparison whose components do not share a common analytic protocol, undermining the methodological discipline that the reviewer's other requirements (Antonakis et al. 2010, Heckman selection, Paternoster z‑test, triple‑source verification) explicitly demand. We have therefore reframed the institutional‑maturity discussion in §5 to apply *within* Vietnam — across the 2009/2015/2023 waves — rather than across countries. The wave‑by‑wave evolution of the Vietnamese turning point and the wave‑by‑wave Paternoster z‑tests on TCI_z and DAI_z together carry the institutional‑maturity argument without recourse to externally cited turning points. Cross‑country comparison remains a worthwhile empirical question for future work that estimates the same pipeline on multiple country samples; this paper does not undertake that work.
 
-**Manuscript locations.** §4.2; §2.1 (paragraph 2); §5.1.1; §5.3 (paragraph 1).
+**Manuscript locations.** §4.2 (per‑wave LM p); §2.1 (single‑country institutional anchoring); §5.1.1 (within‑Vietnam wave evolution); §5.3 (Vietnam‑only policy implications).
 
 ---
 
@@ -128,7 +128,7 @@ The 35% turning‑point managerial advisory is developed in §5.2 and §5.3:
 
 > "Managers should evaluate digital‑adoption decisions against the firm's existing dynamic‑capability stock and the maturity of the surrounding digital ecosystem rather than treating digital adoption as a generic productivity lever." (§5.2)
 
-> "The ~36% turning‑point estimate has implications for the design of the export‑intensity ceiling that Vietnam's industrial policy implicitly enforces ... The institutional‑maturity gap between Vietnam and the digital‑frontier benchmarks (Singapore TP ~89%, China TP ~48%) is not bridgeable through firm‑level subsidies alone." (§5.3)
+> "The turning‑point point estimates (43.6% in 2009, 36.3% in 2015, 40.6% in 2023, 31.4% pooled) have implications for the design of the export‑intensity ceiling that Vietnam's industrial policy implicitly enforces … the wide and overlapping 95% confidence intervals on these estimates argue against treating any single threshold value as a knife‑edge target." (§5.3)
 
 **Manuscript locations.** §3.2 (data caveat); §4.6 (paragraph 4); §5.2; §5.3.
 
@@ -136,7 +136,7 @@ The 35% turning‑point managerial advisory is developed in §5.2 and §5.3:
 
 ## Stylistic and citation conformity
 
-**APA 7th references.** The full reference list (25 entries) at the end of the manuscript adopts APA 7th formatting and includes all key references the reviewer cited: Lall (1992), Verhoef et al. (2021), Brynjolfsson Rock & Syverson (2021), Lind & Mehlum (2010), Paternoster et al. (1998), Heckman (1979), and Antonakis et al. (2010). It also includes Banalieva & Dhanaraj (2019) and Eckhardt et al. (2018) for the China and Singapore TP benchmarks; Cohen & Levinthal (1990) for the absorptive‑capacity grounding of TCI; and Cuervo‑Cazurra & Genc (2008) for the Heckman exclusion‑restriction logic.
+**APA 7th references.** The full reference list at the end of the manuscript adopts APA 7th formatting and includes all key references the reviewer cited: Lall (1992), Verhoef et al. (2021), Brynjolfsson Rock & Syverson (2021), Lind & Mehlum (2010), Paternoster et al. (1998), Heckman (1979), and Antonakis et al. (2010). It also includes Cohen & Levinthal (1990) for the absorptive‑capacity grounding of TCI and Cuervo‑Cazurra & Genc (2008) for the Heckman exclusion‑restriction logic. Cross‑country‑comparison references (Banalieva & Dhanaraj 2019; Eckhardt et al. 2018) have been removed from the reference list because the cross‑country comparison itself is not undertaken in this paper.
 
 **Vietnamese gloss for key concepts.** *Năng lực hấp thụ* (absorptive capacity) appears in §3.2; *tính không đồng nhất không quan sát được* (unobserved heterogeneity) appears in §6; the *chi phí điều phối biên* (marginal coordination cost) concept threads §2.1, §5.1.1, §5.1.4, and §5.3 in English‑language form anchored to Hennart (2007) and Buckley et al. (2007).
 

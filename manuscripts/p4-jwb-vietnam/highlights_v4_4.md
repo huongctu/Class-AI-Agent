@@ -4,7 +4,7 @@ Each bullet ≤ 85 characters per JWB submission rules. v4.4 reflects the editor
 
 1. Inverted‑U I‑P association confirmed in 2015 (LM p=.033) and pooled (.041). *(76)*
 
-2. Vietnam turning point ~36% sits between China ~48% and Singapore ~89%. *(73)*
+2. Turning points span 31–44% raw FSTS across Vietnam waves with wide CIs. *(72)*
 
 3. TCI delivers a positive direct association across all three Vietnam waves. *(72)*
 
