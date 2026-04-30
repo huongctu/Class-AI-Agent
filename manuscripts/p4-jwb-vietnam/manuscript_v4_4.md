@@ -190,24 +190,71 @@ For Vietnamese exporters, **TCI investments (R&D, foreign‑licensed technology,
 
 ## 5.3 Policy implications
 
-(*Verbatim from v4.3 §5.3.*)
+The findings carry three policy implications for Vietnam's trade and digital‑economy policy mix. First, the export‑promotion design problem differs between TCI and DAI domains: capability‑augmenting subsidies (R&D credits, foreign‑technology licensing support, quality‑certification grants) generate productivity dividends that are *robustly positive* across the export‑intensity distribution, with marginal returns concentrated at moderate FSTS where the inverted‑U is steepest. Digital‑adoption subsidies, by contrast, deliver a productivity dividend whose sign is *conditional on institutional digital maturity*: in the current 2023 institutional environment, generic digital‑adoption support at high export intensity may amplify rather than mitigate coordination cost, an effect the negative FSTS × DAI in 2023 makes explicit. Second, the ~36% turning‑point estimate has implications for the design of the export‑intensity ceiling that Vietnam's industrial policy implicitly enforces through tariff escalation, FDI screening, and trade‑finance availability. The institutional‑maturity gap between Vietnam and the digital‑frontier benchmarks (Singapore TP ~89%, China TP ~48%) is not bridgeable through firm‑level subsidies alone; it requires the institutional scaffolding — ports, trade finance, digital marketplaces, dispute‑resolution mechanisms — that lifts the marginal coordination cost curve uniformly. Third, the 2015 J‑curve attenuation in DAI suggests that the productivity payoff to digital‑transformation programmes (such as Vietnam's National Digital Transformation Programme launched in 2020) should be expected to lag the policy launch by 5–8 years, with empirical signatures detectable only in surveys conducted at the right moment in the implementation cycle. Policy evaluation of digital‑transformation programmes that uses cross‑sections collected during the implementation lag risks understating the long‑run dividend.
 
 # 6. Limitations and Future Research
 
-(*Verbatim from v4.3 §6, with the following sentences added.*)
-
-The H4 inversion documented here rests on a single wave (2023) and a marginal pooled signal; we cannot rule out that it reflects a transitional regime that will dissolve as Vietnam's digital ecosystem matures. A panel design tracking the same firms across the 2015 and 2023 waves would identify within‑firm DAI dynamics that the repeated cross‑section cannot. The DAI_rich attenuation also indicates that the field needs to converge on a measurement standard that handles the binary/continuous mix in WBES e‑payment items.
+This paper has six principal limitations. First and most fundamentally, the WBES microdata are repeated cross‑sections rather than a true firm panel; we cannot identify within‑firm change over time and cannot control for time‑invariant unobserved heterogeneity (*tính không đồng nhất không quan sát được*). The associational language we adopt throughout reflects this constraint and should not be relaxed in any reader's interpretation of the results. Second, the H4 inversion documented in 2023 rests on a single wave and a marginally significant pooled signal (joint F p = .086); we cannot rule out that it reflects a transitional regime that will dissolve as Vietnam's digital ecosystem matures. A panel design tracking the same firms across the 2015 and 2023 waves would identify within‑firm DAI dynamics that the repeated cross‑section cannot. Third, the DAI_thin composite is built primarily from binary indicators; the DAI_rich attenuation in §4.6 illustrates the measurement‑granularity tension between binary and continuous digital‑adoption items, and the field needs to converge on a measurement standard that handles this mix consistently across waves. Fourth, the WBES sample frame may have drifted across waves through changes in the manufacturing‑services balance and the FDI presence; while we control for sector and ownership at the firm level, we cannot rule out residual sample‑frame drift that the Heckman correction does not capture. Fifth, the institutional‑maturity argument we develop in §5 is supported by the cross‑country comparison (Vietnam 36% vs China 48% vs Singapore 89%) but is not directly tested through cross‑country pooled estimation; a multi‑country extension of this analysis would strengthen the institutional‑maturity claim. Sixth, generalisability beyond Vietnam is limited: the institutional‑saturation account we develop is theoretically applicable to other transitional digital economies (Bangladesh, Indonesia, the Philippines, Vietnam's regional peers) but requires empirical replication before claims of generality can be sustained. Future work should pursue panel data, expanded measurement instruments, and multi‑country pooled designs that test the institutional‑maturity threshold directly.
 
 # Acknowledgements
 
-(*Verbatim from v4.3.*)
+The authors thank participants at [conference / seminar] for feedback on earlier drafts, the editorial team and anonymous reviewers of the *Journal of World Business* for searching critique that materially improved the manuscript, and the World Bank Enterprise Surveys programme for making the underlying microdata publicly available. All errors remain the authors' responsibility. Funding from [grant] is gratefully acknowledged. The replication package accompanying this submission was developed with the goal of meeting the methodological transparency standards articulated by Antonakis et al. (2010) for IB‑specific causal‑inference work.
 
 # References
 
-(*Verbatim from v4.3, with two additions:*)
+Antonakis, J., Bendahan, S., Jacquart, P., & Lalive, R. (2010). On making causal claims: A review and recommendations. *The Leadership Quarterly*, 21(6), 1086–1120.
 
-- Lind, J. T., & Mehlum, H. (2010). With or without U? The appropriate test for a U‑shaped relationship. *Oxford Bulletin of Economics and Statistics*, 72(1), 109–118.
-- Brynjolfsson, E., Rock, D., & Syverson, C. (2021). The productivity J‑curve: How intangibles complement general purpose technologies. *American Economic Journal: Macroeconomics*, 13(1), 333–372.
+Banalieva, E. R., & Dhanaraj, C. (2019). Internalization theory for the digital economy. *Journal of International Business Studies*, 50(8), 1372–1387.
+
+Bharadwaj, A., El Sawy, O. A., Pavlou, P. A., & Venkatraman, N. (2013). Digital business strategy: Toward a next generation of insights. *MIS Quarterly*, 37(2), 471–482.
+
+Brynjolfsson, E., Rock, D., & Syverson, C. (2021). The productivity J‑curve: How intangibles complement general purpose technologies. *American Economic Journal: Macroeconomics*, 13(1), 333–372.
+
+Buckley, P. J., Clegg, L. J., Cross, A. R., Liu, X., Voss, H., & Zheng, P. (2007). The determinants of Chinese outward foreign direct investment. *Journal of International Business Studies*, 38(4), 499–518.
+
+Cohen, W. M., & Levinthal, D. A. (1990). Absorptive capacity: A new perspective on learning and innovation. *Administrative Science Quarterly*, 35(1), 128–152.
+
+Contractor, F. J. (2007). Is international business good for companies? The evolutionary or multi‑stage theory of internationalization vs. the transaction cost perspective. *Management International Review*, 47(3), 453–475.
+
+Cuervo‑Cazurra, A., & Genc, M. (2008). Transforming disadvantages into advantages: Developing‑country MNEs in the least developed countries. *Journal of International Business Studies*, 39(6), 957–979.
+
+Eckhardt, J. T., Ciuchta, M. P., & Carpenter, M. (2018). Open innovation, information, and entrepreneurship within platform ecosystems. *Strategic Entrepreneurship Journal*, 12(3), 369–391.
+
+Heckman, J. J. (1979). Sample selection bias as a specification error. *Econometrica*, 47(1), 153–161.
+
+Helfat, C. E., & Peteraf, M. A. (2003). The dynamic resource‑based view: Capability lifecycles. *Strategic Management Journal*, 24(10), 997–1010.
+
+Hennart, J.‑F. (2007). The theoretical rationale for a multinationality‑performance relationship. *Management International Review*, 47(3), 423–452.
+
+Lall, S. (1992). Technological capabilities and industrialization. *World Development*, 20(2), 165–186.
+
+Levinsohn, J., & Petrin, A. (2003). Estimating production functions using inputs to control for unobservables. *Review of Economic Studies*, 70(2), 317–341.
+
+Lind, J. T., & Mehlum, H. (2010). With or without U? The appropriate test for a U‑shaped relationship. *Oxford Bulletin of Economics and Statistics*, 72(1), 109–118.
+
+Lu, J. W., & Beamish, P. W. (2004). International diversification and firm performance: The S‑curve hypothesis. *Academy of Management Journal*, 47(4), 598–609.
+
+Paternoster, R., Brame, R., Mazerolle, P., & Piquero, A. (1998). Using the correct statistical test for the equality of regression coefficients. *Criminology*, 36(4), 859–866.
+
+Powell, K. S. (2014). Profitability and speed of foreign market entry. *Management International Review*, 54(1), 31–45.
+
+Teece, D. J. (2007). Explicating dynamic capabilities: The nature and microfoundations of (sustainable) enterprise performance. *Strategic Management Journal*, 28(13), 1319–1350.
+
+Vahlne, J.‑E., & Johanson, J. (2017). From internationalization to evolution: The Uppsala model at 40 years. *Journal of International Business Studies*, 48(9), 1087–1102.
+
+Verbeke, A., & Kano, L. (2016). An internalization theory perspective on the global and regional strategies of multinational enterprises. *Journal of World Business*, 51(1), 83–92.
+
+Verhoef, P. C., Broekhuizen, T., Bart, Y., Bhattacharya, A., Dong, J. Q., Fabian, N., & Haenlein, M. (2021). Digital transformation: A multidisciplinary reflection and research agenda. *Journal of Business Research*, 122, 889–901.
+
+Vernon, R. (1979). The product cycle hypothesis in a new international environment. *Oxford Bulletin of Economics and Statistics*, 41(4), 255–267.
+
+Wagner, J. (2007). Exports and productivity: A survey of the evidence from firm‑level data. *The World Economy*, 30(1), 60–82.
+
+Wooldridge, J. M. (2010). *Econometric Analysis of Cross Section and Panel Data* (2nd ed.). Cambridge, MA: MIT Press.
+
+Wright, M., Filatotchev, I., Hoskisson, R. E., & Peng, M. W. (2005). Strategy research in emerging economies: Challenging the conventional wisdom. *Journal of Management Studies*, 42(1), 1–33.
+
+Zhou, L., Wu, W.‑P., & Luo, X. (2007). Internationalization and the performance of born‑global SMEs: The mediating role of social networks. *Journal of International Business Studies*, 38(4), 673–690.
 
 ---
 
