@@ -1,9 +1,14 @@
 # Cover Letter — P4 (v4.4) revised submission to Journal of World Business
 
-[Date]
+30 April 2026
 
-Editor-in-Chief
+Editor‑in‑Chief
 *Journal of World Business*
+
+**From:**
+Do Thuy Huong (huongp1323001@gstudent.ctu.edu.vn)
+Phan Anh Tu, corresponding author (patu@ctu.edu.vn)
+School of Economics, Can Tho University, Can Tho, Vietnam
 
 Dear Editor,
 
@@ -21,14 +26,17 @@ Relative to the v4.3 manuscript circulated for internal review, v4.4 incorporate
 - The H1 inverted-U is reported as confirmed in the 2015 wave (LM p = .033) and pooled sample (p = .041), marginal in 2023 (p = .068), and not statistically significant in 2009 (p = .128), against a previous "confirmed in all three waves" framing.
 - The H2 TCI moderation is reported as significant in three of four panels (joint F p = .030 / .046 / .027 in 2009 / 2023 / pooled), reversing a previous "level-shift only" framing; the H4 DAI moderation is reported as significant in 2023 (joint F p = .022) with a negative FSTS × DAI consistent with the institutional-saturation interpretation, against a previous "null" framing.
 
-The manuscript is approximately 9,500 words excluding references, two figures (a conceptual model and the predicted I–P curves by wave), and three CSV tables exported by the replication pipeline. The paper has not been published or submitted elsewhere. All authors have reviewed and approved the submitted version.
+The manuscript is approximately 7,400 words excluding references, two figures (a conceptual model and the predicted I–P curves by wave), and the regression tables exported by the replication pipeline. The paper has not been published or submitted elsewhere. Both authors have reviewed and approved the submitted version. The authors received no specific grant from any funding agency in the public, commercial, or not‑for‑profit sectors for this work and declare no conflicts of interest.
+
+The data underlying this manuscript are drawn from the World Bank Enterprise Surveys (WBES) and were used in compliance with the WBES Data Access Protocol; per that protocol, the replication package does not redistribute the WBES `.dta` files. The Acknowledgements include the wording the World Bank Enterprise Analysis Unit recommends for studies that use WBES microdata.
 
 We thank you for considering our work and look forward to your editorial assessment.
 
 Sincerely,
 
-[Corresponding author name]
-[Affiliation]
-[Email]
+**Phan Anh Tu** (corresponding author)
+School of Economics, Can Tho University
+Campus II, 3/2 Street, Ninh Kieu District, Can Tho City, Vietnam
+Email: patu@ctu.edu.vn
 
-On behalf of the co-author team.
+On behalf of the co‑author team.

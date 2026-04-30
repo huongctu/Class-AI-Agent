@@ -54,7 +54,13 @@ The analysis uses three waves of the World Bank Enterprise Surveys (WBES) for Vi
 | 2015 | `Vietnam2015fulldata.dta`         | 996   | 614        |
 | 2023 | `VietNam2023fulldata.dta`         | 1,028 | 974        |
 
-The WBES public release is freely downloadable from <https://www.enterprisesurveys.org>. Files are **not redistributed in this repository**; users must download them under the WBES Terms of Use. The 2015 release is encoded in latin-1; the pipeline transparently falls back to latin-1 / cp1252 when a UTF-8 decode fails.
+The WBES public release is freely downloadable from <https://www.enterprisesurveys.org/en/data> after acceptance of the **WBES Data Access Protocol**. The protocol explicitly prohibits redistribution of the `.dta` files to third parties (including journals), and accordingly **this repository does not redistribute the WBES microdata**. Researchers wishing to reproduce the results must download the three Vietnam waves themselves from the WBES portal under the same Data Access Protocol. The 2015 release is encoded in latin‑1; the pipeline transparently falls back to latin‑1 / cp1252 when a UTF‑8 decode fails.
+
+When citing the data per the World Bank's recommended format, use:
+
+> The World Bank Group. (Year). *Vietnam — World Bank Enterprise Survey (WBES) [Year]* [Microdata, Ref. WBES‑VNM‑YYYY]. Dataset downloaded from <https://www.enterprisesurveys.org/en/data> on [date].
+
+The Acknowledgements paragraph in the manuscript adopts the wording the World Bank Enterprise Analysis Unit recommends for papers that use WBES microdata, including the standard data‑user disclaimer.
 
 ---
 
