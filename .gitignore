@@ -22,6 +22,8 @@ out/
 logs/
 *.log
 npm-debug.log*
+# ...except replication artefacts in academic manuscript packages
+!manuscripts/**/*.log
 
 # OS
 .DS_Store

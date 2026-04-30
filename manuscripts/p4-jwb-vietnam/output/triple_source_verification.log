@@ -1,0 +1,27 @@
+# P4 triple-source verification log
+
+Sample size      : n = 2322
+Parameter count  : k = 16
+Outcome variable : lnLP
+
+Pairwise coefficient max-abs differences:
+  statsmodels vs linearmodels : 3.773e-13
+  statsmodels vs numpy        : 4.061e-13
+  linearmodels vs numpy       : 1.216e-13
+  MAX                         : 4.061e-13
+
+Pairwise standard-error max-abs differences:
+  statsmodels vs linearmodels : 1.543e-14
+  statsmodels vs numpy        : 1.799e-14
+  linearmodels vs numpy       : 7.438e-15
+  MAX                         : 1.799e-14
+
+PASS — all three estimators agree to within 1e-09.
+
+## Coefficient table (4 hypothesis-relevant rows)
+| param | statsmodels | linearmodels | numpy |
+|---|---|---|---|
+| fsts_c | 0.2996928581 | 0.2996928581 | 0.2996928581 |
+| fsts_c2 | -1.0048684906 | -1.0048684906 | -1.0048684906 |
+| tci_z | 0.1915959787 | 0.1915959787 | 0.1915959787 |
+| dai_z | 0.0846791984 | 0.0846791984 | 0.0846791984 |

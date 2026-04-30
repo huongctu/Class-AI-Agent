@@ -1,0 +1,47 @@
+
+[1/6] Loading and applying listwise deletion ...
+  Wave 2009: 1053 -> 734 after listwise on ['d2', 'l1', 'd3c', 'b8', 'e6', 'c22b', 'b5', 'b2b', 'a4b']
+  Wave 2015: 996 -> 614 after listwise on ['d2', 'l1', 'd3c', 'b8', 'e6', 'c22b', 'b5', 'b2b', 'a4b']
+  Wave 2023: 1028 -> 974 after listwise on ['d2', 'l1', 'd3c', 'b8', 'e6', 'c22b', 'b5', 'b2b', 'a4a']
+
+[2/6] Building variables ...
+/home/user/Class-AI-Agent/manuscripts/p4-jwb-vietnam/code/p4_python_check.py:593: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  pool["tci_z"] = zstd_within_wave(pool, "tci_thin")
+/home/user/Class-AI-Agent/manuscripts/p4-jwb-vietnam/code/p4_python_check.py:594: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  pool["dai_z"] = zstd_within_wave(pool, "dai_thin")
+  Saved analytic dataset -> output/p4_python_baseline.csv
+
+[3/6] Baseline OLS-HC1 + Lind-Mehlum ...
+  Baseline coefficients (TCI_z, DAI_z) by wave:
+    2009: TCI_z = 0.224, DAI_z = 0.122, N = 734
+    2015: TCI_z = 0.168, DAI_z = 0.007, N = 614
+    2023: TCI_z = 0.089, DAI_z = 0.108, N = 974
+    pooled: TCI_z = 0.192, DAI_z = 0.085, N = 2322
+
+[4/6] Heckman 2-step ...
+/usr/local/lib/python3.11/dist-packages/statsmodels/base/model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+/usr/local/lib/python3.11/dist-packages/statsmodels/base/model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+/usr/local/lib/python3.11/dist-packages/statsmodels/base/model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+/usr/local/lib/python3.11/dist-packages/statsmodels/base/model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+
+[5/6] Control Function ...
+/usr/local/lib/python3.11/dist-packages/statsmodels/base/model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+/usr/local/lib/python3.11/dist-packages/statsmodels/base/model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+/usr/local/lib/python3.11/dist-packages/statsmodels/base/model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+/usr/local/lib/python3.11/dist-packages/statsmodels/base/model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+
+[6/6] Robustness specifications ...
+
+[done] Report written to output/p4_python_check.md
+       Analytic dataset to output/p4_python_baseline.csv
+
+Next step: cross-check Block 1 baseline vs paper Table 2.
+If TCI_z or DAI_z gaps > 0.05, debug listwise/z-std before trusting later blocks.
