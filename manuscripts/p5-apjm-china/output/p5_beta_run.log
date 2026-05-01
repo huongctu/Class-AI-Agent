@@ -1,0 +1,81 @@
+======================================================================
+P5 Option β V2 — Plan B1 execution
+======================================================================
+
+[load] 2012: /root/.claude/uploads/dc8321ff-3a71-4dcf-a64c-b978cd7a489b/0918305d-China2012fullESN2700data.dta
+  raw rows=2700 cols=287
+
+--- Building wave 2012 ---
+  After essentials drop (['d2', 'l1', 'd3c'] > 0): 2691 of 2700
+  Final wave 2012: 2691 rows; TCI_full n=1686; DAI_thin n=1675; overdraft n=2603; line_credit n=2582; k3a n=2638; k30 n=2665
+
+[load] 2024: /root/.claude/uploads/dc8321ff-3a71-4dcf-a64c-b978cd7a489b/56768710-China2024fulldata.dta
+  raw rows=2189 cols=339
+
+--- Building wave 2024 ---
+  After essentials drop (['d2', 'l1', 'd3c'] > 0): 1949 of 2189
+  Final wave 2024: 1949 rows; TCI_full n=1934; DAI_thin n=1930; overdraft n=1897; line_credit n=1890; k3a n=1880; k30 n=1627
+
+[pool] total rows=4640
+
+======================================================================
+M0 — Threshold core (FSTS + FSTS² + controls)
+======================================================================
+  CHN_2012: n=2619 TP=49.39% LM_p=0.0000  FSTS β=+2.060 (p=0.0000); FSTS² β=-2.085 (p=0.0000)
+  CHN_2024: n=1940 TP=47.55% LM_p=0.0374  FSTS β=+1.428 (p=0.0135); FSTS² β=-1.502 (p=0.0345)
+  CHN_pooled: n=4559 TP=48.93% LM_p=0.0000  FSTS β=+1.782 (p=0.0000); FSTS² β=-1.821 (p=0.0000)
+
+======================================================================
+Threshold core + TCI + DAI direct (P5 baseline structure)
+======================================================================
+  CHN_2012: n=1633 TCI β=+0.206 (p=0.0000); DAI β=-0.064 (p=0.0440)
+  CHN_2024: n=1915 TCI β=+0.286 (p=0.0000); DAI β=+0.005 (p=0.8707)
+  CHN_pooled: n=3548 TCI β=+0.266 (p=0.0000); DAI β=-0.064 (p=0.0043)
+
+======================================================================
+M1/M3 — WC × FSTS² interactions (item + block)
+Spec note: TCI/DAI dropped from WC interaction models so 2012 runs.
+Joint WC + Digital diagnostic reported separately below.
+======================================================================
+sample       wc           block                                            β_inter        p     n
+CHN_2012     overdraft    Block A — Liquidity Access (item)                 +0.268   0.0495  2531
+CHN_2012     line_credit  Block A — Liquidity Access (item)                 -0.086   0.5049  2511
+CHN_2012     LA_idx       Block A — Liquidity Access (block)                +0.115   0.3947  2590
+CHN_2012     k3a          Block C — Financing (internal)                    +0.008   0.1298  2566
+CHN_2012     k3bc         Block C — Financing (bank)                        -0.006   0.4406  2559
+CHN_2012     k3f          Block C — Financing (trade credit)                -0.017   0.0094  2559
+CHN_2012     k30          Block D — Access obstacle (Likert)                -0.007   0.9682  2593
+CHN_2024     overdraft    Block A — Liquidity Access (item)                 -0.384   0.0809  1888
+CHN_2024     line_credit  Block A — Liquidity Access (item)                 -0.243   0.3396  1881
+CHN_2024     LA_idx       Block A — Liquidity Access (block)                -0.352   0.1358  1924
+CHN_2024     k3a          Block C — Financing (internal)                    +0.005   0.3527  1873
+CHN_2024     k3bc         Block C — Financing (bank)                        -0.005   0.6749  1872
+CHN_2024     k3f          Block C — Financing (trade credit)                -0.003   0.6597  1883
+CHN_2024     k30          Block D — Access obstacle (Likert)                +1.639   0.0008  1620
+CHN_pooled   overdraft    Block A — Liquidity Access (item)                 +0.183   0.1348  4419
+CHN_pooled   line_credit  Block A — Liquidity Access (item)                 -0.143   0.2233  4392
+CHN_pooled   LA_idx       Block A — Liquidity Access (block)                +0.001   0.9940  4514
+CHN_pooled   k3a          Block C — Financing (internal)                    +0.007   0.0595  4439
+CHN_pooled   k3bc         Block C — Financing (bank)                        -0.007   0.2750  4431
+CHN_pooled   k3f          Block C — Financing (trade credit)                -0.010   0.0545  4442
+CHN_pooled   k30          Block D — Access obstacle (Likert)                +0.091   0.5955  4213
+
+======================================================================
+M4 — Composite WC stress index (higher = more stress)
+======================================================================
+  CHN_2012: wc_stress_index × FSTS² β=+0.058 (p=0.6122) n=2619
+  CHN_2024: wc_stress_index × FSTS² β=+0.259 (p=0.1684) n=1934
+  CHN_pooled: wc_stress_index × FSTS² β=+0.119 (p=0.2485) n=4553
+
+======================================================================
+Block B (2012-only robustness): k1c / k2c × FSTS²
+======================================================================
+  k1c × FSTS² β=-0.004 (p=0.9781) n=2556
+  k2c × FSTS² β=+0.129 (p=0.3102) n=2565
+
+======================================================================
+Paternoster cross-wave z-tests
+======================================================================
+
+[done] wrote /home/user/Class-AI-Agent/manuscripts/p5-apjm-china/output/p5_beta_results.csv (260 rows)
+[done] wrote /home/user/Class-AI-Agent/manuscripts/p5-apjm-china/output/p5_beta_paternoster.csv (0 rows)
