@@ -87,7 +87,7 @@ def main():
              "TCI — technological capability\n(Lall 1992; Cohen-Levinthal 1990)",
              fc="#FFF1E0", bold=True, fontsize=8)
     draw_box(ax, (0.3, 2.05), 2.2, 0.55,
-             "DAI — digital adoption (thin)\n(Bharadwaj 2013; Verhoef 2021)",
+             "DAI — digital adoption (core: c22b)\n(Bharadwaj 2013; Verhoef 2021)",
              fc="#E5F4E5", bold=True, fontsize=8)
 
     # ---- MIDDLE column: H3 working-capital conditioning (secondary, dashed border) ----

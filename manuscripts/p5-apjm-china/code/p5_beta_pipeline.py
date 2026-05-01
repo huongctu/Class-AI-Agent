@@ -14,7 +14,8 @@ Spec discipline (matches em P4 and P5 do-file conventions):
   - Treat WBES `-9` as missing
   - Listwise on focal vars (d2, l1, d3c, b8, e6, c22b)
   - TCI_full = mean(b8, e6, h1, h8) require >=3 of 4 items
-  - DAI_thin = mean(c22b, e6) require >=1 of 2 items
+  - DAI_core = c22b only (e6 reserved for TCI to avoid construct
+                          contamination per third-party advisory)
   - Z-standardize within wave
   - OLS with HC1 robust SE
   - Interactions: focal is FSTS_sq × WC
@@ -131,12 +132,18 @@ def build_wave(year: int, raw: pd.DataFrame) -> pd.DataFrame:
     df["TCI_full"] = df[tci_dum_cols].mean(axis=1, skipna=True)
     df.loc[df["tci_n_valid"] < 3, "TCI_full"] = np.nan
 
-    # DAI_thin = mean(c22b, e6) require >=1
-    dai_items = ["c22b", "e6"]
+    # DAI_core = c22b only. e6 (foreign-licensed tech) excluded to keep
+    # TCI/DAI orthogonal: e6 is a Lall (1992) capability proxy, not a
+    # Bharadwaj (2013)/Verhoef (2021) digital-presence proxy. Cf. §3.2.
+    dai_items = ["c22b"]
+    for v in dai_items:
+        if v in df.columns:
+            df[f"{v}_d"] = (df[v] == 1).astype("float")
+            df.loc[df[v].isna(), f"{v}_d"] = np.nan
     dai_dum_cols = [f"{v}_d" for v in dai_items if f"{v}_d" in df.columns]
     df["dai_n_valid"] = df[dai_dum_cols].notna().sum(axis=1)
-    df["DAI_thin"] = df[dai_dum_cols].mean(axis=1, skipna=True)
-    df.loc[df["dai_n_valid"] < 1, "DAI_thin"] = np.nan
+    df["DAI_core"] = df[dai_dum_cols].mean(axis=1, skipna=True)
+    df.loc[df["dai_n_valid"] < 1, "DAI_core"] = np.nan
 
     # Working-capital variables per Plan B1
     # Block A: Liquidity Access (binary 1 = yes)
@@ -185,7 +192,7 @@ def build_wave(year: int, raw: pd.DataFrame) -> pd.DataFrame:
 
     log(f"  Final wave {year}: {len(df)} rows; "
         f"TCI_full n={df['TCI_full'].notna().sum()}; "
-        f"DAI_thin n={df['DAI_thin'].notna().sum()}; "
+        f"DAI_core n={df['DAI_core'].notna().sum()}; "
         f"overdraft n={df['overdraft'].notna().sum() if 'overdraft' in df else 0}; "
         f"line_credit n={df['line_credit'].notna().sum() if 'line_credit' in df else 0}; "
         f"k3a n={df['k3a'].notna().sum() if 'k3a' in df else 0}; "
@@ -277,7 +284,7 @@ def main():
     # Pooled z-standardize TCI / DAI / financing-structure for pooled models
     def zscore(s):
         return (s - s.mean()) / s.std(ddof=1)
-    for v in ["TCI_full", "DAI_thin", "overdraft", "line_credit",
+    for v in ["TCI_full", "DAI_core", "overdraft", "line_credit",
               "k3a", "k3bc", "k3f", "k30", "LA_idx"]:
         if v in pool.columns:
             pool[f"{v}_zp"] = zscore(pool[v])
@@ -317,9 +324,9 @@ def main():
     log("Threshold core + TCI + DAI direct (P5 baseline structure)")
     log("=" * 70)
     for label, sub, tci_col, dai_col in [
-        ("CHN_2012", waves[2012], "TCI_full_z", "DAI_thin_z"),
-        ("CHN_2024", waves[2024], "TCI_full_z", "DAI_thin_z"),
-        ("CHN_pooled", pool, "TCI_full_zp", "DAI_thin_zp"),
+        ("CHN_2012", waves[2012], "TCI_full_z", "DAI_core_z"),
+        ("CHN_2024", waves[2024], "TCI_full_z", "DAI_core_z"),
+        ("CHN_pooled", pool, "TCI_full_zp", "DAI_core_zp"),
     ]:
         # Within-wave z columns; for pooled we already created _zp
         # For 2012/2024 individual waves, the *_z used above were built per-wave
@@ -328,7 +335,7 @@ def main():
         if tci_col not in sub.columns:
             sub[tci_col] = (sub["TCI_full"] - sub["TCI_full"].mean()) / sub["TCI_full"].std(ddof=1)
         if dai_col not in sub.columns:
-            sub[dai_col] = (sub["DAI_thin"] - sub["DAI_thin"].mean()) / sub["DAI_thin"].std(ddof=1)
+            sub[dai_col] = (sub["DAI_core"] - sub["DAI_core"].mean()) / sub["DAI_core"].std(ddof=1)
 
         rhs = ["FSTS", "FSTS_sq", tci_col, dai_col, "lnemp", "firm_age", "foreign_dummy"]
         if label == "CHN_pooled":
@@ -473,15 +480,15 @@ def main():
     pat_rows = []
     for spec in ["M0p_TCI_DAI_direct"]:
         for var, var_2024 in [("TCI_full_z", "TCI_full_z"),
-                                ("DAI_thin_z", "DAI_thin_z"),
+                                ("DAI_core_z", "DAI_core_z"),
                                 ("FSTS", "FSTS"),
                                 ("FSTS_sq", "FSTS_sq")]:
-            r12 = df_rows[(df_rows.sample == "CHN_2012") &
-                          (df_rows.model == spec) &
-                          (df_rows.variable == var)]
-            r24 = df_rows[(df_rows.sample == "CHN_2024") &
-                          (df_rows.model == spec) &
-                          (df_rows.variable == var_2024)]
+            r12 = df_rows[(df_rows["sample"] == "CHN_2012") &
+                          (df_rows["model"] == spec) &
+                          (df_rows["variable"] == var)]
+            r24 = df_rows[(df_rows["sample"] == "CHN_2024") &
+                          (df_rows["model"] == spec) &
+                          (df_rows["variable"] == var_2024)]
             if r12.empty or r24.empty:
                 continue
             b12, se12 = float(r12.beta.iloc[0]), float(r12.se.iloc[0])

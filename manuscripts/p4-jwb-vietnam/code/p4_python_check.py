@@ -17,7 +17,8 @@ PRINCIPLES (must match Stata do-file)
    baseline AND every robustness specification.
 2. Composites are computed BEFORE z-standardization:
        TCI_thin = mean(b8, e6)
-       DAI_thin = mean(c22b, e6)
+       DAI_core = c22b (own-website presence only; e6 reserved for TCI to
+                       avoid construct contamination flagged by reviewer)
    Then z-standardized WITHIN-WAVE (not pooled).
 3. Controls: lnemp = ln(l1), firmage = survey_year - b5,
    foreign_owned = (b2b > 0). Manager experience excluded (multicollinearity).
@@ -173,7 +174,7 @@ def build_variables(df: pd.DataFrame, wave: str) -> pd.DataFrame:
     df["fsts_c"] = df["fsts"] - df["fsts"].mean()
     df["fsts_c2"] = df["fsts_c"] ** 2
 
-    # Composite TCI_thin and DAI_thin (BEFORE z-standardization)
+    # Composite TCI_thin and DAI_core (BEFORE z-standardization)
     # b8 and c22b are typically 1/2 (Yes/No) in WBES; convert to binary 0/1
     for v in ["b8", "e6", "c22b"]:
         if v in df.columns:
@@ -181,7 +182,10 @@ def build_variables(df: pd.DataFrame, wave: str) -> pd.DataFrame:
             df[v + "_dum"] = (df[v] == 1).astype(int)
 
     df["tci_thin"] = (df["b8_dum"] + df["e6_dum"]) / 2.0
-    df["dai_thin"] = (df["c22b_dum"] + df["e6_dum"]) / 2.0
+    # DAI_core = c22b only. e6 is excluded to keep TCI/DAI orthogonal: e6
+    # (foreign-licensed technology) is a Lall (1992) capability proxy, not a
+    # Bharadwaj (2013)/Verhoef (2021) digital-presence proxy. Cf. §2.2 / §3.2.
+    df["dai_core"] = df["c22b_dum"].astype(float)
 
     # Controls
     df["lnemp"] = np.log(df["l1"])
@@ -404,7 +408,11 @@ def robustness_tci_full(df: pd.DataFrame, wave: str
 
 def robustness_dai_rich(df: pd.DataFrame, mode: str = "continuous"
                         ) -> sm.regression.linear_model.RegressionResultsWrapper | None:
-    """DAI_rich for 2023: c22b, e6, k33, k38 (continuous % or binary)."""
+    """DAI_rich for 2023: c22b, k33, k38 (continuous % or binary).
+
+    e6 (foreign-licensed tech) excluded to avoid construct contamination
+    with TCI (which retains e6 as a Lall 1992 capability proxy).
+    """
     if not all(v in df.columns for v in EPAYMENT_VARS):
         return None
     df = df.copy()
@@ -416,8 +424,7 @@ def robustness_dai_rich(df: pd.DataFrame, mode: str = "continuous"
         df["k33_use"] = (df["k33"] > 0).astype(float)
         df["k38_use"] = (df["k38"] > 0).astype(float)
 
-    df["dai_rich"] = (df["c22b_dum"] + df["e6_dum"] +
-                      df["k33_use"] + df["k38_use"]) / 4.0
+    df["dai_rich"] = (df["c22b_dum"] + df["k33_use"] + df["k38_use"]) / 3.0
     df["dai_z"] = zstd_within_wave(df, "dai_rich")  # overwrite dai_z
     return run_ols(df, sector_var="sector_broad")
 
@@ -591,12 +598,12 @@ def main():
 
     # Within-wave z-standardisation
     pool["tci_z"] = zstd_within_wave(pool, "tci_thin")
-    pool["dai_z"] = zstd_within_wave(pool, "dai_thin")
+    pool["dai_z"] = zstd_within_wave(pool, "dai_core")
 
     # Save analytic dataset
     pool_out = pool[[c for c in pool.columns if c in
                      ["wave", "lnLP", "fsts", "fsts_c", "fsts_c2",
-                      "tci_thin", "dai_thin", "tci_z", "dai_z",
+                      "tci_thin", "dai_core", "tci_z", "dai_z",
                       "lnemp", "firmage", "foreign_owned",
                       "sector_broad", "sector_2d"]]]
     pool_out.to_csv(outdir / "p4_python_baseline.csv", index=False)

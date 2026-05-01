@@ -51,11 +51,11 @@ def fit_TCI_DAI(df: pd.DataFrame, suffix: str, with_wave_fe: bool = False):
     """Return M0p model with TCI/DAI z + controls. suffix '_z' (within-wave) or '_zp' (pooled)."""
     sub = df.copy()
     # Build z columns if absent
-    for v in ["TCI_full", "DAI_thin"]:
+    for v in ["TCI_full", "DAI_core"]:
         col = f"{v}{suffix}"
         if col not in sub.columns:
             sub[col] = (sub[v] - sub[v].mean()) / sub[v].std(ddof=1)
-    rhs = ["FSTS", "FSTS_sq", f"TCI_full{suffix}", f"DAI_thin{suffix}",
+    rhs = ["FSTS", "FSTS_sq", f"TCI_full{suffix}", f"DAI_core{suffix}",
            "lnemp", "firm_age", "foreign_dummy"]
     if with_wave_fe and "wave_2024" in sub.columns:
         rhs += ["wave_2024"]
@@ -142,7 +142,7 @@ def main():
     pool = pd.concat(waves.values(), ignore_index=False, sort=False)
     pool["wave_2024"] = (pool["wave"] == 2024).astype(int)
     # Pooled z columns for TCI / DAI
-    for v in ["TCI_full", "DAI_thin"]:
+    for v in ["TCI_full", "DAI_core"]:
         pool[f"{v}_zp"] = (pool[v] - pool[v].mean()) / pool[v].std(ddof=1)
 
     # ============================================
@@ -185,7 +185,7 @@ def main():
     ]:
         m, s = fit_TCI_DAI(df, suffix, with_wave_fe=with_wave_fe)
         tci_dai_models[label] = (m, s, suffix)
-        for v in [f"TCI_full{suffix}", f"DAI_thin{suffix}"]:
+        for v in [f"TCI_full{suffix}", f"DAI_core{suffix}"]:
             if v in m.params.index:
                 coef_rows.append({"sample": label, "var": v.replace(suffix, ""),
                                   "beta": m.params[v], "se": m.bse[v],
@@ -210,7 +210,7 @@ def main():
     # TCI / DAI from M0p
     m12 = tci_dai_models["CHN_2012"][0]
     m24 = tci_dai_models["CHN_2024"][0]
-    for var_short in ["TCI_full", "DAI_thin"]:
+    for var_short in ["TCI_full", "DAI_core"]:
         v12 = f"{var_short}_z"  # within-wave z
         v24 = f"{var_short}_z"
         if v12 in m12.params.index and v24 in m24.params.index:
@@ -318,9 +318,9 @@ def main():
                  for s in ["CHN_2012", "CHN_2024", "CHN_pooled"]]
     tci_ses = [df_coef.loc[(df_coef["sample"] == s) & (df_coef["var"] == "TCI_full"), "se"].iloc[0]
                for s in ["CHN_2012", "CHN_2024", "CHN_pooled"]]
-    dai_betas = [df_coef.loc[(df_coef["sample"] == s) & (df_coef["var"] == "DAI_thin"), "beta"].iloc[0]
+    dai_betas = [df_coef.loc[(df_coef["sample"] == s) & (df_coef["var"] == "DAI_core"), "beta"].iloc[0]
                  for s in ["CHN_2012", "CHN_2024", "CHN_pooled"]]
-    dai_ses = [df_coef.loc[(df_coef["sample"] == s) & (df_coef["var"] == "DAI_thin"), "se"].iloc[0]
+    dai_ses = [df_coef.loc[(df_coef["sample"] == s) & (df_coef["var"] == "DAI_core"), "se"].iloc[0]
                for s in ["CHN_2012", "CHN_2024", "CHN_pooled"]]
 
     bars1 = ax.bar(xs - width / 2, tci_betas, width,
@@ -328,7 +328,7 @@ def main():
                    color="#1F4E79", label="TCI_full β_z (technological capability)")
     bars2 = ax.bar(xs + width / 2, dai_betas, width,
                    yerr=[1.96 * s for s in dai_ses], capsize=4,
-                   color="#2E7D32", label="DAI_thin β_z (digital adoption)")
+                   color="#2E7D32", label="DAI_core β_z (digital adoption)")
 
     for b, val in zip(bars1, tci_betas):
         ax.text(b.get_x() + b.get_width() / 2, val + (0.01 if val > 0 else -0.03),
@@ -348,8 +348,8 @@ def main():
 
     z_TCI = df_pat.loc[df_pat["variable"] == "TCI_full", "z"].iloc[0]
     p_TCI = df_pat.loc[df_pat["variable"] == "TCI_full", "p"].iloc[0]
-    z_DAI = df_pat.loc[df_pat["variable"] == "DAI_thin", "z"].iloc[0]
-    p_DAI = df_pat.loc[df_pat["variable"] == "DAI_thin", "p"].iloc[0]
+    z_DAI = df_pat.loc[df_pat["variable"] == "DAI_core", "z"].iloc[0]
+    p_DAI = df_pat.loc[df_pat["variable"] == "DAI_core", "p"].iloc[0]
     ax.text(0.02, 0.97,
             f"Paternoster z (2012 vs 2024):\nTCI z={z_TCI:+.2f} (p={p_TCI:.3f})\nDAI z={z_DAI:+.2f} (p={p_DAI:.3f})",
             ha="left", va="top", transform=ax.transAxes, fontsize=8, color="#444444",

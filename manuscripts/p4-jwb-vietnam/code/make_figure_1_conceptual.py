@@ -76,7 +76,7 @@ def main():
 
     # DAI block
     draw_box(ax, (0.3, 1.45), 2.0, 0.55,
-             "DAI\n(c22b, e6 — Bharadwaj/Verhoef)", fc="#E5F4E5", bold=True)
+             "DAI\n(c22b — Bharadwaj/Verhoef)", fc="#E5F4E5", bold=True)
 
     # Interactions block
     draw_box(ax, (3.4, 4.05), 2.6, 0.7,
