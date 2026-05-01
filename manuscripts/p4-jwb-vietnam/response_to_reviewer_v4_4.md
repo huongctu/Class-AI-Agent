@@ -14,7 +14,7 @@ We thank the Editor and the anonymous Reviewer team for the rigorous and constru
 
 A summary of the eight‑commit incremental revision arc that produced the v4.4 manuscript is logged in `changelog_v4_3_to_v4_4.md` and visible in the timeline of pull request #2 on the manuscript repository. Throughout this response we adopt the linguistic and inferential discipline the review mandated: all claims about predictor–outcome relationships are stated as *associations* rather than *effects*, and we report verified numerical results rather than the v4.3 values referenced in the review letter.
 
-A note on numerical consistency. Several of the reviewer's expected p‑values and coefficients (LM p = .060/.017/.029; exporter share 28.2% → 18.9%; DAI 2009 β = 0.251, DAI 2015 β = 0.022, DAI 2023 β = 0.176) reflect the v4.3 listwise convention that retained WBES non‑response code `-9` as numeric data. The verified spec adopted in v4.4 treats `-9` as missing, an alignment with WBES codebook guidance that we believe materially strengthens the integrity of the analysis. The verified spec yields different numbers (LM p = .128 / .018 / .051; exporter share 36.0% → 18.3%; DAI 2009 β = 0.122, DAI 2015 β = 0.007, DAI 2023 β = 0.108). The §3.2 transparency paragraph explains the refinement, and where the reviewer asked us to "achieve" specific p‑values we have transparently reported the verified values rather than reverse‑engineering the analysis to match the v4.3 numbers.
+A note on numerical consistency. Several of the reviewer's expected p‑values and coefficients (LM p = .060/.017/.029; exporter share 28.2% → 18.9%; DAI 2009 β = 0.251, DAI 2015 β = 0.022, DAI 2023 β = 0.176) reflect the v4.3 listwise convention that retained WBES non‑response code `-9` as numeric data. The verified spec adopted in v4.4 treats `-9` as missing, an alignment with WBES codebook guidance that we believe materially strengthens the integrity of the analysis. A second refinement, undertaken in response to a third‑party advisory between earlier internal review and the present submission, retired the two‑item DAI composite (`c22b` + `e6`) used in v4.3 and earlier v4.4 drafts in favour of a single‑item DAI_core operationalised by `c22b` (own‑website presence) only. The motivation is construct‑separation: `e6` (foreign‑licensed technology) is a Lall (1992) capability indicator and belongs theoretically in the TCI composite rather than in the digital‑adoption index, and its inclusion in DAI mechanically inflated the within‑wave TCI–DAI correlation (~0.6 under the two‑item composite, ~0.32 under DAI_core; see §4.1). Under the verified + decontaminated specification, DAI 2009 β = 0.175, DAI 2015 β = 0.008, DAI 2023 β = 0.113, DAI pooled β = 0.108. The §3.2 transparency paragraph explains both refinements, and where the reviewer asked us to "achieve" specific p‑values we have transparently reported the verified values rather than reverse‑engineering the analysis to match the v4.3 numbers.
 
 ---
 
@@ -63,8 +63,8 @@ The DAI_rich estimate is reported in §4.6 with full transparency:
 
 | Specification | β_z | SE | p | Cf. DAI_thin (2023) |
 |---|---|---|---|---|
-| DAI_rich continuous | +0.058 | 0.055 | .285 | β_z = 0.108, p = .045 |
-| DAI_rich binary | +0.049 | 0.047 | .297 | β_z = 0.108, p = .045 |
+| DAI_rich continuous (`c22b` + `k33` + `k38`; e6 dropped) | +0.049 | 0.050 | .327 | β_z = 0.113, p = .021 |
+| DAI_rich binary (`c22b` + `k33` + `k38`; e6 dropped) | +0.042 | 0.044 | .336 | β_z = 0.113, p = .021 |
 
 The DAI_rich attenuation below significance is itself a contribution: it documents the measurement‑granularity tension between binary and continuous digital‑adoption items (k33/k38 are continuous percentages; c22b/e6 are binary), and it argues for a field‑level convergence on a measurement standard that handles the binary/continuous mix consistently. Section 6 includes this point as a principal limitation.
 
@@ -106,9 +106,9 @@ We have **declined the cross‑country turning‑point comparison** that the rev
 | TCI_z | 2009 vs 2015 | +0.224 | +0.168 | +0.60 | .545 |
 | TCI_z | 2009 vs 2023 | +0.224 | +0.090 | **+1.67** | **.095** |
 | TCI_z | 2015 vs 2023 | +0.168 | +0.090 | +0.89 | .375 |
-| DAI_z | 2009 vs 2015 | +0.122 | +0.007 | +1.28 | .201 |
-| DAI_z | 2009 vs 2023 | +0.122 | +0.108 | +0.17 | .862 |
-| DAI_z | 2015 vs 2023 | +0.007 | +0.108 | −1.14 | .253 |
+| DAI_z | 2009 vs 2015 | +0.175 | +0.008 | +2.15 | .032 |
+| DAI_z | 2009 vs 2023 | +0.175 | +0.113 | +0.88 | .379 |
+| DAI_z | 2015 vs 2023 | +0.008 | +0.113 | −1.36 | .173 |
 
 The marginal TCI_z 2009‑vs‑2023 z‑test (z = +1.67, p = .095) provides scientific support for the capability‑convergence narrative in §5.1.2: the productivity association of capability declines over the 14‑year window, consistent with foreign technology becoming more readily accessible through global digital marketplaces and reducing the relative scarcity premium that high‑capability firms commanded in the early window.
 
@@ -120,7 +120,7 @@ The marginal TCI_z 2009‑vs‑2023 z‑test (z = +1.67, p = .095) provides scie
 
 **Reviewer's mandate.** "Bổ sung hiệu ứng cố định ngành (Sector Fixed Effects) ở mức chi tiết 2 chữ số ISIC ... Doanh nghiệp cần hiểu rằng vượt qua ngưỡng này [35%] mà không có sự đầu tư tương xứng vào năng lực động số sẽ dẫn đến sự sụt giảm năng suất do chi phí điều phối tăng vọt."
 
-**Response.** Implemented. The 2‑digit ISIC FE robustness is reported in §4.6 (paragraph 4): *"Replacing the broad‑sector FE with 2‑digit ISIC FE shifts the four hypothesis‑relevant coefficients by between −53% and +135% in individual waves, but the pooled coefficients remain in the same direction with TCI_z attenuating by 37% and DAI_z by 4%. The wave‑specific volatility reflects sparse 2‑digit cells in the smaller wave samples; the pooled estimate is the relevant inferential object."*
+**Response.** Implemented. The 2‑digit ISIC FE robustness is reported in §4.6 (paragraph 4): *"Replacing the broad‑sector FE with 2‑digit ISIC FE shifts the four hypothesis‑relevant coefficients by between −91% and +156% in individual waves, but the pooled coefficients remain in the same direction with TCI_z attenuating by 31% and DAI_z by 12%. The wave‑specific volatility reflects sparse 2‑digit cells in the smaller wave samples; the pooled estimate is the relevant inferential object."*
 
 A data‑access caveat noted in §3.2: the public release of the 2023 Vietnam WBES wave does not include the `a4b` (2‑digit ISIC) variable; the wave is shipped with `a4a` only, which carries 1‑digit ISIC granularity. The pipeline falls back to `a4a` for 2023 sector FE, so the reported "2‑digit ISIC" robustness in fact uses 2‑digit FE for 2009 and 2015 and 1‑digit FE for 2023. We document this transparently and treat it as a reason to weight the pooled estimate over wave‑specific 2‑digit panels.
 

@@ -74,7 +74,7 @@ internationalisation–performance, export intensity, optimal threshold, working
 
 **§3 Data and Methods**
 - 3.1 Data — WBES China 2012 (N = 2,612 after listwise on focal vars) + 2024 (N = 1,920). Pooled analytic sample 4,532 firm-year observations after standard controls. TCI_full requires ≥ 3 of 4 items, dropping 2012 N to 1,613 for TCI-inclusive specifications (CNo3 fix per the 2026-04-28 update patch)
-- 3.2 Variables — TCI_full = mean(`foreign_tech`, `product_innov`, `rd_spending`, `quality_cert`); DAI_thin = mean(`website`, `foreign_tech`); FSTS = `d3c / 100`. Within-wave z-standardisation. Note that working-capital-relevant items (`k4`, `k5`, `k7`, `k8`, `k9`, `k14`) are not used in the primary specification; their use is proposed as future work
+- 3.2 Variables — TCI_full = mean(`foreign_tech`, `product_innov`, `rd_spending`, `quality_cert`); DAI_core = `website` (`c22b`) only — `foreign_tech` (`e6`) reserved for TCI to avoid construct contamination per third‑party advisory; FSTS = `d3c / 100`. Within-wave z-standardisation. Note that working-capital-relevant items (`k4`, `k5`, `k7`, `k8`, `k9`, `k14`) are not used in the primary specification; their use is proposed as future work
 - 3.3 Estimation — OLS with HC1 robust SE; Lind–Mehlum (2010) U-test for inverted-U; Paternoster (1998) z-test for cross-wave equality of FSTS and FSTS² coefficients
 
 **§4 Results**
