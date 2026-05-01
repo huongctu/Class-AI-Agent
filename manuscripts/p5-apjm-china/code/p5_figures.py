@@ -266,8 +266,8 @@ def main():
     ax.grid(alpha=0.3, axis="y")
     ax.legend(loc="upper right", fontsize=8)
     fig.tight_layout()
-    fig.savefig(FIGURES / "figure_1_threshold_stability.pdf", bbox_inches="tight")
-    fig.savefig(FIGURES / "figure_1_threshold_stability.png", bbox_inches="tight", dpi=200)
+    fig.savefig(FIGURES / "figure_2_threshold_stability.pdf", bbox_inches="tight")
+    fig.savefig(FIGURES / "figure_2_threshold_stability.png", bbox_inches="tight", dpi=200)
     plt.close(fig)
     print("[ok] Figure 1")
 
@@ -301,8 +301,8 @@ def main():
     ax.grid(alpha=0.3)
     ax.legend(loc="lower center", fontsize=9)
     fig.tight_layout()
-    fig.savefig(FIGURES / "figure_2_ip_curves_overlay.pdf", bbox_inches="tight")
-    fig.savefig(FIGURES / "figure_2_ip_curves_overlay.png", bbox_inches="tight", dpi=200)
+    fig.savefig(FIGURES / "figure_3_ip_curves_overlay.pdf", bbox_inches="tight")
+    fig.savefig(FIGURES / "figure_3_ip_curves_overlay.png", bbox_inches="tight", dpi=200)
     plt.close(fig)
     print("[ok] Figure 2")
 
@@ -358,8 +358,8 @@ def main():
     ax.legend(loc="upper right", fontsize=8)
     ax.grid(alpha=0.3, axis="y")
     fig.tight_layout()
-    fig.savefig(FIGURES / "figure_3_level_shifts.pdf", bbox_inches="tight")
-    fig.savefig(FIGURES / "figure_3_level_shifts.png", bbox_inches="tight", dpi=200)
+    fig.savefig(FIGURES / "figure_4_level_shifts.pdf", bbox_inches="tight")
+    fig.savefig(FIGURES / "figure_4_level_shifts.png", bbox_inches="tight", dpi=200)
     plt.close(fig)
     print("[ok] Figure 3")
 
