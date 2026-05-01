@@ -80,7 +80,7 @@ for tbl in list(doc.tables):
 add_para(doc, 
     "Digital Capabilities as a Double-Edged Sword: A Lifecycle Analysis of "
     "Internationalisation and Firm Performance in Vietnam", "Title")
-add_para(doc, "v4.5.3 — submission-ready manuscript (Vietnam, three-wave lifecycle)", "Subtitle")
+add_para(doc, "v4.6 — submission-ready manuscript with re-estimated Vietnam evidence", "Subtitle")
 add_para(doc, "2026-05-01", "Date")
 
 # Authors and affiliations (placeholders — replace before submission) ----------
@@ -113,19 +113,24 @@ add_para(doc,
     "deeper technological capability and foundational digital adoption capture different "
     "dimensions of firm heterogeneity (Cohen & Levinthal, 1990; Lall, 1992; Verhoef et "
     "al., 2021).", FP)
-add_para(doc, 
-    "Using three waves of harmonised firm-level evidence from the World Bank Enterprise "
-    "Survey for Vietnam (2009, 2015, 2023), we distinguish a Technological Capability "
-    "Index (TCI_z) from a Digital Adoption Index (DAI_z) and evaluate their roles in "
-    "both pooled and wave-specific OLS specifications with HC1 robust covariance. The "
-    "findings indicate that the internationalisation–performance relationship is "
-    "nonlinear in the pooled evidence and is especially visible in the later waves. In "
-    "the pooled full model, both TCI_z and DAI_z are positively associated with firm "
-    "performance, indicating that both deeper capability stocks and foundational digital "
-    "adoption are beneficial on average. However, the wave-specific evidence reveals "
-    "substantial temporal heterogeneity: both TCI and DAI are strongly positive in 2009, "
-    "lose salience in 2015, and re-emerge in 2023, when digital adoption also becomes "
-    "more tightly connected to export intensity.", BT)
+add_para(doc,
+    "Using three waves of harmonised firm-level evidence from the World Bank "
+    "Enterprise Survey for Vietnam (2009, 2015, 2023; analytic N = 989, 958, "
+    "1,013, pooled 2,960), we distinguish a Technological Capability Index "
+    "(TCI_z) from a Digital Adoption Index (DAI_z) and evaluate their roles in "
+    "both pooled and wave-specific OLS specifications with HC1 robust "
+    "covariance. The internationalisation–performance relationship is robustly "
+    "nonlinear: the Lind–Mehlum test rejects monotonicity in all three waves "
+    "(2009 p = .006, 2015 p = .009, 2023 p = .012) and in the pooled sample "
+    "(p < .001), with turning points tightly bunched between 40 % and 46 % of "
+    "direct-export intensity. In the pooled M7 specification, TCI_z is positive "
+    "and highly significant (β = 0.169, p < .001) and DAI_z is positive and "
+    "significant (β = 0.063, p = .036). Wave-specific estimates show that TCI_z "
+    "matters in all three waves (β = 0.204, 0.129, 0.091) while DAI_z is "
+    "strongest in 2009 (β = 0.127, p = .005), null in 2015 (β = −0.032), and "
+    "marginal in 2023 (β = 0.099). The DAI moderation channel emerges only in "
+    "the 2023 wave (M4 joint p = .043; full-model M8 joint p = .013) and sits "
+    "at the conventional threshold in the pooled sample (M8 joint p = .050).", BT)
 add_para(doc, 
     "These findings suggest that digital capability in a transitional economy should "
     "not be interpreted as a universal premium. Instead, its performance value varies "
@@ -154,21 +159,26 @@ add_para(doc,
 # Highlights (Elsevier-style) --------------------------------------------------
 add_para(doc, "Highlights", H1)
 add_para(doc,
-    "• The internationalisation–performance relationship in Vietnam is nonlinear "
-    "and most clearly visible in the 2015 and 2023 waves and the pooled sample.", FP)
+    "• The I–P relationship in Vietnam is robustly nonlinear: the Lind–Mehlum "
+    "test rejects monotonicity in all three waves (2009 p = .006, 2015 p = "
+    ".009, 2023 p = .012) and pooled (p < .001).", FP)
 add_para(doc,
-    "• Technological capability and foundational digital adoption show different "
-    "empirical signatures and should not be treated as a single construct.", BT)
+    "• Turning points cluster between 40 % and 46 % of direct-export intensity "
+    "(2015: 39.6 %; pooled: 39.8 %; 2023: 41.6 %; 2009: 46.2 %).", BT)
 add_para(doc,
-    "• Both capability dimensions are positive on average but their salience "
-    "varies sharply across the 2009 / 2015 / 2023 lifecycle.", BT)
+    "• TCI_z is positive in all three waves but its magnitude declines over "
+    "time (2009: β = 0.204 ***; 2015: β = 0.129 *; 2023: β = 0.091, marginal); "
+    "pooled TCI_z = 0.169, p < .001.", BT)
 add_para(doc,
-    "• In 2023, foundational digital adoption becomes more conditional on export "
-    "intensity (FSTS_c × DAI_z = −1.072, p = .050).", BT)
+    "• DAI_z direct effect is positive in 2009 (β = 0.127, p = .005), null in "
+    "2015 (β = −0.032), marginal in 2023 (β = 0.099); pooled DAI_z = 0.063, "
+    "p = .036 in M7 but indistinguishable from zero once interactions enter "
+    "M8.", BT)
 add_para(doc,
-    "• Pooled average effects mask substantial wave-specific heterogeneity, with "
-    "implications for the design and evaluation of digital-economy policy in "
-    "transitional economies.", BT)
+    "• DAI moderation is concentrated in the 2023 wave (M4 joint p = .043; "
+    "M8 joint p = .013; FSTS_c × DAI_z = −0.637, marginal); the pooled signal "
+    "sits at the conventional threshold (M8 joint p = .050) and is driven "
+    "entirely by 2023.", BT)
 
 # 1. Introduction --------------------------------------------------------------
 add_para(doc, "1. Introduction", H1)
@@ -469,8 +479,8 @@ add_para(doc,
 add_para(doc, 
     "The effective estimation sample varies across model specifications because of "
     "missing values in the capability variables. In the full wave-specific models, "
-    "the usable samples are 977 observations for 2009, 964 for 2015, and 1,013 for "
-    "2023. The pooled full model contains 2,954 observations. This structure provides "
+    "the usable samples are 989 observations for 2009, 958 for 2015, and 1,013 for "
+    "2023. The pooled full model contains 2,960 observations. This structure provides "
     "sufficient variation to compare direct effects and conditional patterns across "
     "stages.", BT)
 
@@ -525,8 +535,8 @@ add_para(doc,
     "refused responses as −9. We treat −9 as missing before any composite is built "
     "and apply listwise deletion on the focal variable set (lnLP, lnEmp, FirmAge, "
     "ForeignOwned, FSTS, TCI_thin, DAI_thin, sector1). The resulting analytic "
-    "samples are 977, 964, and 1,013 observations for 2009, 2015, and 2023 "
-    "respectively; pooled N is 2,954.", BT)
+    "samples are 989, 958, and 1,013 observations for 2009, 2015, and 2023 "
+    "respectively; pooled N is 2,960.", BT)
 
 add_para(doc, "3.3 Model sequence", H2)
 add_para(doc, 
@@ -564,86 +574,122 @@ add_para(doc,
 add_para(doc, "4. Results", H1)
 
 add_para(doc, "4.1 Wave-specific findings", H2)
-add_para(doc, 
-    "The wave-specific evidence reveals clear temporal heterogeneity. In 2009, both "
-    "capability constructs are strongly and positively associated with performance. "
-    "In the full 2009 model, TCI_z is positive and highly significant (β = 0.274, p < "
-    ".001), and DAI_z is also positive and highly significant (β = 0.210, p < .001). "
-    "However, the interaction terms involving DAI_z are not significant in that wave. "
-    "This indicates that, in the earlier phase, both technological capability and "
-    "foundational digital adoption operate primarily as direct "
-    "performance-enhancing resources rather than as robust moderators of the I–P "
-    "relationship.", FP)
-add_para(doc, 
-    "The 2015 wave shows a different configuration. The I–P relationship becomes more "
-    "clearly nonlinear in that period: in the full model, the linear FSTS_c term is "
-    "positive and significant (β = 1.653, p = .041), while the quadratic FSTS_c² term "
-    "is negative and significant (β = −2.175, p = .010). At the same time, both "
-    "capability measures lose direct salience. TCI_z becomes statistically "
-    "insignificant (β = 0.071, p = .297), and DAI_z is likewise insignificant (β = "
-    "0.006, p = .928). The interaction terms involving DAI_z also remain "
-    "insignificant. This suggests a transitional phase in which export intensity "
-    "matters, but the performance payoff from capability variables becomes more "
-    "muted.", BT)
-add_para(doc, 
-    "The 2023 evidence reveals another shift. The nonlinear structure remains "
-    "visible, with a positive linear FSTS_c term (β = 1.338, p = .112) and a negative "
-    "quadratic FSTS_c² term that is statistically significant (β = −1.942, p = .023). "
-    "More importantly, both capability measures regain direct significance: TCI_z is "
-    "positive (β = 0.140, p = .013) and DAI_z is positive (β = 0.161, p = .012). In "
-    "addition, the linear interaction between FSTS_c and DAI_z is negative and "
-    "reaches the conventional significance threshold (β = −1.072, p = .050), "
-    "suggesting that the performance relevance of digital adoption becomes more "
-    "conditional on export intensity in the later wave.", BT)
 add_para(doc,
-    "Taken together, the wave-specific results suggest a lifecycle pattern rather "
-    "than a stable cross-period rule. The direct payoff from both TCI_z and DAI_z is "
-    "strong in 2009, weak in 2015, and positive again in 2023, with digital adoption "
-    "becoming more conditional in the later wave.", BT)
+    "The 2009 wave is characterised by a clearly nonlinear I–P relationship and "
+    "strong direct capability effects. The inverted-U specification (M2) yields a "
+    "positive linear term (β = 1.045, p = .015) and a negative quadratic term "
+    "(β = −1.774, p = .009); the Lind–Mehlum test rejects the monotonicity null at "
+    "p = .006. In the dual-direct specification (M7) both TCI_z (β = 0.204, p < "
+    ".001) and DAI_z (β = 0.127, p = .005) are positive and significant. The TCI "
+    "moderation joint test is significant in 2009 (M3 joint p = .040, with "
+    "FSTS_c × TCI_z = −0.579, p = .087), but the DAI moderation tests are not (M4 "
+    "joint p = .728; full-model M8 joint p = .435). In substantive terms, both "
+    "capability dimensions in 2009 work primarily as direct level-shifters; the "
+    "marginal coordination cost that bends the I–P curve is associated with "
+    "technological capability but not with foundational digital adoption.", FP)
+add_para(doc,
+    "The 2015 wave shows the curvature most cleanly but the weakest digital "
+    "channel. M2 produces FSTS_c β = 1.151 (p = .030) and FSTS_c² β = −2.082 "
+    "(p = .005), with a Lind–Mehlum p = .009. TCI_z retains a positive direct "
+    "association in the dual-direct model (β = 0.129, p = .016) but its magnitude "
+    "is roughly two-thirds of the 2009 estimate. DAI_z loses direct salience "
+    "entirely (β = −0.032, p = .574). Neither TCI moderation (M3 joint p = .665) "
+    "nor DAI moderation (M4 joint p = .298; M8 joint p = .160) is statistically "
+    "distinguishable from zero in this wave. Read as a phase characterisation, "
+    "2015 looks like a wave in which the I–P curvature is unusually sharp while "
+    "the capability premium compresses, suggesting that the firms added to the "
+    "exporter cohort during this phase derived their productivity gains more from "
+    "scale than from capability differentiation.", BT)
+add_para(doc,
+    "The 2023 wave is where the digital-moderation signal emerges. M2 again "
+    "indicates a clear inverted-U (FSTS_c β = 0.962, p = .039; FSTS_c² β = −1.686, "
+    "p = .008; Lind–Mehlum p = .012). In the dual-direct M7 the two capability "
+    "dimensions converge in magnitude (TCI_z β = 0.091, p = .075, marginal; DAI_z "
+    "β = 0.099, p = .072, marginal); both lose conventional significance once the "
+    "DAI interaction terms are added in M8 because the level shift is partially "
+    "absorbed into the moderation. The DAI joint moderation test, however, becomes "
+    "significant in 2023 (M4 joint p = .043; full-model M8 joint p = .013), driven "
+    "by a negative linear interaction (FSTS_c × DAI_z = −0.637, p = .074, "
+    "marginal) and a positive quadratic interaction (FSTS_c² × DAI_z = 0.509, "
+    "p = .322). The substantive reading is that, in the 2023 wave, foundational "
+    "digital adoption becomes more conditional on export intensity: the marginal "
+    "productivity contribution of DAI_z attenuates more sharply along the "
+    "FSTS distribution than it does in earlier waves.", BT)
+add_para(doc,
+    "Taken together, the wave-specific results suggest two distinct lifecycle "
+    "patterns rather than a single one. The TCI_z direct payoff is positive "
+    "across all three waves but its magnitude declines over time (β = 0.204 → "
+    "0.129 → 0.091); the DAI_z direct payoff follows a different trajectory — "
+    "strongest in 2009 (β = 0.127, p = .005), null in 2015 (β = −0.032), and "
+    "marginal in 2023 (β = 0.099). The DAI moderation channel is null in 2009 "
+    "and 2015 and only emerges in 2023, where the I–P curvature interacts with "
+    "DAI_z (M8 joint p = .013).", BT)
 add_para(doc,
     "The wave-specific pattern carries an institutional reading. The 2009 wave "
-    "captures the early aftermath of WTO accession, when the marginal exporter was "
-    "still in the entry-cost zone of the I–P curve, when capability stocks were the "
-    "scarce resource, and when foundational digital tools — even at the website-only "
-    "layer — generated direct gains because the alternative was paper-based "
-    "transaction processing. The 2015 wave captures a transitional phase in which "
-    "export expansion continued but the productivity payoff from capability resources "
-    "compressed: the curvature of the I–P relationship became visible precisely "
-    "when the direct returns to TCI_z and DAI_z faded, suggesting that the firms "
-    "added to the exporter cohort during this period derived their productivity "
-    "gains primarily from scale rather than from capability differentiation. The "
-    "2023 wave captures a re-emergence: the post-NDTP digital infrastructure makes "
-    "foundational digital adoption complementary to internal capability stocks "
-    "again, and the negative FSTS_c × DAI_z interaction shows that this complementarity "
-    "is concentrated at higher export intensity rather than uniformly distributed "
-    "across the export-intensity range.", BT)
+    "captures the early aftermath of WTO accession, when the marginal exporter "
+    "was still in the entry-cost zone of the I–P curve, when capability stocks "
+    "were the scarce resource, and when foundational digital tools — even at "
+    "the website-only layer — generated direct gains because the alternative "
+    "was paper-based transaction processing. The 2015 wave captures a "
+    "transitional phase in which the I–P curvature is unusually sharp (FSTS_c² "
+    "= −2.082, p = .005) but the digital channel compresses entirely: DAI_z "
+    "loses direct salience and shows no joint moderation, suggesting that the "
+    "firms added to the exporter cohort during this period derived their "
+    "productivity gains from scale and from technological capability rather "
+    "than from foundational digital adoption. The 2023 wave captures the "
+    "re-emergence of the digital channel as a moderator rather than as a "
+    "uniform direct premium: the post-NDTP digital infrastructure makes "
+    "foundational digital adoption interact with export intensity, and the "
+    "negative FSTS_c × DAI_z interaction shows that this conditional channel "
+    "binds primarily at higher export intensity rather than uniformly across "
+    "the export-intensity range.", BT)
 
 add_para(doc, "4.2 Pooled findings", H2)
-add_para(doc, 
-    "The pooled results confirm that the I–P relationship is nonlinear on average. In "
-    "the pooled nonlinear model, the linear FSTS_c term is positive and significant "
-    "(β = 1.207, p = .003), while the quadratic FSTS_c² term is negative and "
-    "significant (β = −1.714, p < .001). This pattern remains in the pooled full "
-    "model, where the linear term is positive (β = 1.036, p = .023) and the "
-    "quadratic term remains negative and significant (β = −1.487, p = .002). This "
-    "supports H1 and aligns with the broader nonlinear logic emphasised in prior "
+add_para(doc,
+    "The pooled results confirm that the I–P relationship is nonlinear on "
+    "average. In the pooled nonlinear M2, the linear FSTS_c term is positive and "
+    "significant (β = 0.981, p = .001) while the quadratic FSTS_c² term is "
+    "negative and significant (β = −1.898, p < .001); the Lind–Mehlum test "
+    "rejects monotonicity at p < .001. The curvature persists in the full M8 "
+    "(FSTS_c β = 0.820, p = .007; FSTS_c² β = −1.612, p < .001), supporting H1 "
+    "and aligning with the broader nonlinear logic emphasised in prior "
     "international business research (Marano et al., 2016).", FP)
-add_para(doc, 
-    "The pooled evidence also shows that both capability dimensions are positively "
-    "associated with firm performance on average. In the pooled full model, TCI_z is "
-    "positive and statistically significant (β = 0.138, p < .001), and DAI_z is also "
-    "positive and statistically significant (β = 0.125, p < .001). These estimates "
-    "indicate that, when averaged across waves, both deeper technological capability "
-    "and foundational digital adoption are performance enhancing, supporting H2 and "
-    "H3.", BT)
-add_para(doc, 
-    "The pooled interaction terms involving DAI_z, however, are not statistically "
-    "significant. The linear interaction between FSTS_c and DAI_z is negative but "
-    "insignificant (β = −0.573, p = .170), and the quadratic interaction is positive "
-    "but insignificant (β = 0.460, p = .298). This matters because it shows that the "
-    "pooled average should not be interpreted as evidence of a stable moderation "
-    "effect across time. Instead, the pooled model masks meaningful stage-specific "
-    "heterogeneity.", BT)
+add_para(doc,
+    "The pooled evidence shows that both capability dimensions are positively "
+    "associated with firm performance on average, but their magnitudes differ. "
+    "In the pooled M7 dual-direct specification, TCI_z is positive and highly "
+    "significant (β = 0.169, p < .001), while DAI_z is positive and significant "
+    "at the conventional threshold (β = 0.063, p = .036). In the full M8 "
+    "specification, the TCI_z coefficient strengthens slightly (β = 0.182, p < "
+    ".001) while the DAI_z direct coefficient becomes statistically "
+    "indistinguishable from zero (β = 0.028, p = .588) once the interaction terms "
+    "are entered. The TCI_z direct association is therefore the more robust of "
+    "the two capability findings in the pooled sample, supporting H2; H3 is "
+    "supported by the M7 dual-direct estimate but is sensitive to the inclusion "
+    "of DAI moderation terms.", BT)
+add_para(doc,
+    "The pooled interaction terms involving DAI_z carry a marginal joint signal. "
+    "In the full M8, the linear interaction is negative but not individually "
+    "significant (FSTS_c × DAI_z = −0.375, p = .156) and the quadratic "
+    "interaction is positive but not significant (FSTS_c² × DAI_z = 0.311, "
+    "p = .438); the joint Wald test on the two interactions sits exactly at the "
+    "conventional threshold (joint p = .050). This pooled signal is driven "
+    "primarily by the 2023 wave: the M4 joint moderation test on DAI is null in "
+    "2009 (p = .728) and 2015 (p = .298), and only becomes significant in 2023 "
+    "(M4 joint p = .043; M8 joint p = .013). Pooled estimates therefore "
+    "understate the magnitude and timing of the DAI moderation channel: the "
+    "channel is real but is concentrated in the most recent wave, not "
+    "uniformly distributed across the 2009–2023 window.", BT)
+add_para(doc,
+    "TCI moderation, by contrast, is more uniformly distributed: the M3 joint "
+    "test on FSTS_c × TCI_z and FSTS_c² × TCI_z is significant in three of four "
+    "panels (2009 p = .040, 2023 p = .027, pooled p = .003) and null only in "
+    "2015 (p = .665). Pooled, the linear interaction is negative (FSTS_c × TCI_z "
+    "= −0.568, p = .004) and the quadratic is positive (FSTS_c² × TCI_z = 0.616, "
+    "p = .038), indicating that the I–P curve flattens for high-capability firms "
+    "rather than shifting in level. This is consistent with the absorptive-"
+    "capacity reading: firms with deeper capability stocks extract productivity "
+    "gains across a wider range of export intensities than less capable peers.", BT)
 add_para(doc, 
     "If the analysis stopped at pooled estimation, one might conclude that "
     "digitalisation provides a broadly positive but structurally simple performance "
@@ -653,20 +699,29 @@ add_para(doc,
     "clearly only in the later wave.", BT)
 
 add_para(doc, "4.3 Interpretation of the hypothesis tests", H2)
-add_para(doc, 
-    "H1 is supported because the pooled evidence indicates a nonlinear relationship "
-    "between internationalisation and firm performance, and the later waves display "
-    "the same logic more clearly. H2 is supported because TCI_z is positively "
-    "associated with performance in the pooled evidence and in two of the three "
-    "wave-specific periods. H3 is also supported because DAI_z is positively "
-    "associated with performance on average and in two of the three waves.", FP)
-add_para(doc, 
-    "H4 receives partial but meaningful support. The pooled interaction terms do not "
-    "indicate a stable conditional role for DAI_z across all periods. However, the "
-    "wave-specific analysis shows that the role of DAI_z changes over time and "
-    "becomes more conditionally linked to export intensity in 2023. This is "
-    "consistent with the broader claim that digital capability is stage contingent "
-    "rather than uniformly valuable in the same way across all phases.", BT)
+add_para(doc,
+    "H1 is strongly supported. The Lind–Mehlum test rejects the monotonicity "
+    "null in all three waves (2009 p = .006, 2015 p = .009, 2023 p = .012) and "
+    "in the pooled sample (p < .001), and the implied turning points are tightly "
+    "bunched between 39.6 % (2015) and 46.2 % (2009) of direct-export intensity, "
+    "with the pooled estimate at 39.8 %. H2 is supported by the positive direct "
+    "TCI_z association in the pooled sample and in two of three wave-specific "
+    "periods (2009 p < .001; 2015 p = .016; 2023 p = .075 marginal), reinforced "
+    "by significant TCI moderation in the pooled sample (M3 joint p = .003) and "
+    "in 2009 (p = .040) and 2023 (p = .027). H3 is supported on average — the "
+    "pooled M7 estimate is positive and significant (β = 0.063, p = .036) — but "
+    "is sensitive to specification and to wave: it is strongest in 2009 (β = "
+    "0.127, p = .005) and is statistically null in 2015 (β = −0.032, p = .574).", FP)
+add_para(doc,
+    "H4 receives focused but meaningful support. The DAI joint moderation test "
+    "is null in 2009 (M4 p = .728) and 2015 (M4 p = .298), and only becomes "
+    "significant in 2023 (M4 joint p = .043; full-model M8 joint p = .013). The "
+    "pooled M8 joint test sits exactly at the conventional threshold (p = .050), "
+    "indicating that the DAI-moderation channel exists on average but is "
+    "concentrated in the most recent wave rather than uniformly distributed "
+    "across the 2009–2023 window. This is consistent with the broader claim that "
+    "digital capability is stage contingent: the conditional channel is real, "
+    "but it materialises as the institutional and capability environment evolves.", BT)
 
 add_para(doc, "4.4 Main empirical pattern", H2)
 add_para(doc, 
@@ -693,26 +748,26 @@ header[3].text = "DAI_z direct"
 header[4].text = "DAI_z interaction"
 
 rows = [
-    ("2009 full model",
-     "Not clearly supported in full model",
-     "0.274 (p < .001)",
-     "0.210 (p < .001)",
-     "Not significant"),
-    ("2015 full model",
-     "FSTS_c positive (1.653, p = .041); FSTS_c² negative (−2.175, p = .010)",
-     "0.071 (p = .297) n.s.",
-     "0.006 (p = .928) n.s.",
-     "Not significant"),
-    ("2023 full model",
-     "FSTS_c² negative and significant (−1.942, p = .023)",
-     "0.140 (p = .013)",
-     "0.161 (p = .012)",
-     "FSTS_c × DAI_z = −1.072 (p = .050)"),
-    ("Pooled full model",
-     "FSTS_c positive (1.036, p = .023); FSTS_c² negative (−1.487, p = .002)",
-     "0.138 (p < .001)",
-     "0.125 (p < .001)",
-     "Not significant"),
+    ("2009",
+     "Inverted-U: FSTS_c 1.045** / FSTS_c² −1.774**; LM p = .006",
+     "0.204 *** (M7)",
+     "0.127 ** (M7)",
+     "M4 joint p = .728 n.s.; M8 joint p = .435 n.s."),
+    ("2015",
+     "Inverted-U: FSTS_c 1.151* / FSTS_c² −2.082**; LM p = .009",
+     "0.129 * (M7)",
+     "−0.032 (p = .574) n.s.",
+     "M4 joint p = .298 n.s.; M8 joint p = .160 n.s."),
+    ("2023",
+     "Inverted-U: FSTS_c 0.962* / FSTS_c² −1.686**; LM p = .012",
+     "0.091 † (M7, marginal)",
+     "0.099 † (M7, marginal)",
+     "M4 joint p = .043 *; M8 joint p = .013 *; FSTS_c × DAI_z = −0.637 †"),
+    ("Pooled",
+     "Inverted-U: FSTS_c 0.981** / FSTS_c² −1.898***; LM p < .001",
+     "0.169 *** (M7)",
+     "0.063 * (M7); 0.028 n.s. (M8)",
+     "M4 joint p = .417 n.s.; M8 joint p = .050"),
 ]
 for i, row in enumerate(rows, start=1):
     cells = table.rows[i].cells
