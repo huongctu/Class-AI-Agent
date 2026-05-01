@@ -1,0 +1,9 @@
+# Pinned dependencies for the P4 v4.4 replication pipeline.
+# Versions verified on a fresh Linux 6.18 environment (April 2026).
+pandas>=2.2,<3.1
+numpy>=1.26,<2.5
+statsmodels>=0.14,<0.16
+scipy>=1.13,<1.18
+pyreadstat>=1.2,<1.4
+linearmodels>=6.0,<8.0
+matplotlib>=3.8,<3.12

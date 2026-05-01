@@ -1,0 +1,42 @@
+# Cover Letter — P4 (v4.4) revised submission to Journal of World Business
+
+30 April 2026
+
+Editor‑in‑Chief
+*Journal of World Business*
+
+**From:**
+Do Thuy Huong (huongp1323001@gstudent.ctu.edu.vn)
+Phan Anh Tu, corresponding author (patu@ctu.edu.vn)
+School of Economics, Can Tho University, Can Tho, Vietnam
+
+Dear Editor,
+
+We are pleased to submit the revised manuscript, *"Digital Adoption, Technological Capability, and the Internationalisation–Performance Relationship in Vietnam: Evidence from a Transitional Digital Economy,"* for the second round of review at the *Journal of World Business*, following the Major Revision decision. A point‑by‑point response to the Editor's letter is provided as `response_to_reviewer_v4_4.md` in the accompanying replication package; the eight‑commit revision arc that produced v4.4 is logged in `changelog_v4_3_to_v4_4.md` and visible on pull request #2 of the manuscript repository. The paper makes three contributions to the digital international‑business literature.
+
+First, we **separate two constructs that the IB literature frequently conflates**: a Lall-tradition Technological Capability Index (TCI) anchored in foreign-licensed technology and quality certification, and a Bharadwaj/Verhoef-tradition Digital Adoption Index (DAI) operationalised — under the v4.4 decontamination convention — by own-website presence (`c22b`) only, with `e6` (foreign-licensed technology) reserved for TCI where it belongs theoretically as a Lall capability item. The two constructs deliver materially different productivity signatures across the I–P curve in the three Vietnam WBES waves: TCI is both a level shifter and a curvature modifier, while DAI follows a productivity J-curve (positive 2009/2023/pooled, attenuated in 2015 with a statistically significant Paternoster z = 2.15, p = .032) and — in the most recent (2023) wave — marginally moderates the I–P curvature with a significantly negative FSTS × DAI in a direction that qualifies the conditional-complement reading of digital adoption.
+
+Second, we **provide evidence consistent with an institutional-saturation interpretation** of the 2023 negative DAI moderation within the Vietnam sample (the empirical evidence we present on Proposition P1, §2.3.4). Where digital adoption is concentrated at Tier 1–2 (presence rather than dynamic capability), basic digitalisation appears to *amplify* rather than substitute for the coordination costs that bend the I–P curve downward at high export intensity. This pattern is internally consistent with our reading of Brynjolfsson, Rock & Syverson's (2021) productivity J-curve. We do not claim the pattern generalises beyond the Vietnam WBES sample; whether it obtains in other settings is an empirical question for separate work.
+
+Third, we **provide a verified, reproducible analytic pipeline**. We re-implemented the analytic pipeline as an independent Python script and verified numerical reproducibility using three OLS estimators — `statsmodels` with HC1 robust covariance, `linearmodels` `IV2SLS` with `cov_type='robust', debiased=True`, and a pure-NumPy closed-form OLS with manual HC1 robust covariance V = (X′X)⁻¹ X′ diag(ê²) X (X′X)⁻¹ · n / (n − k). The three implementations agree to machine precision (maximum coefficient difference 4.06 × 10⁻¹³, maximum standard-error difference 1.80 × 10⁻¹⁴) on the pooled outcome equation. A Stata do-file mirroring the same specification is included in the replication package for independent third-party verification; it has not been executed by the authors. The replication package is hosted on the corresponding author's GitHub repository under `manuscripts/p4-jwb-vietnam/`.
+
+Relative to the v4.3 manuscript circulated for internal review, v4.4 incorporates three substantive corrections that emerged from this verification protocol:
+
+- WBES non-response codes (`-9`) are treated as missing rather than as numeric data, restoring methodological alignment with Enterprise Survey codebook guidance.
+- The H1 inverted-U is reported as confirmed in the 2015 wave (LM p = .033) and pooled sample (p = .041), marginal in 2023 (p = .068), and not statistically significant in 2009 (p = .128), against a previous "confirmed in all three waves" framing.
+- The H2 TCI moderation is reported as significant in the 2009 and pooled samples (joint F p = .028 and .036) and null in 2015 and 2023 (.581 and .542) under the decontaminated DAI_core control, reversing a previous "level-shift only" framing; the DAI moderation finding (Proposition P1) is reported as marginal in 2023 (joint F p = .079) with a significantly negative FSTS × DAI (β = −1.200, p = .028) consistent with the institutional-saturation interpretation, against a previous "null" framing. The decontamination of DAI from `e6`-shared variance with TCI shifts the joint F-test for P1 from significant under the earlier two-item composite (p = .022) to marginal (.079); we report the marginal joint result as primary inference and the significant individual FSTS × DAI sign as a corroborating signal. We deliberately downgrade what earlier drafts had labelled "Hypothesis 4" to "Proposition P1" because the digital-transformation literature does not, in our reading, supply a directional prediction that survives the verified specification.
+
+The manuscript is approximately 7,400 words excluding references, two figures (a conceptual model and the predicted I–P curves by wave), and the regression tables exported by the replication pipeline. The paper has not been published or submitted elsewhere. Both authors have reviewed and approved the submitted version. The authors received no specific grant from any funding agency in the public, commercial, or not‑for‑profit sectors for this work and declare no conflicts of interest.
+
+The data underlying this manuscript are drawn from the World Bank Enterprise Surveys (WBES) and were used in compliance with the WBES Data Access Protocol; per that protocol, the replication package does not redistribute the WBES `.dta` files. The Acknowledgements include the wording the World Bank Enterprise Analysis Unit recommends for studies that use WBES microdata.
+
+We thank you for considering our work and look forward to your editorial assessment.
+
+Sincerely,
+
+**Phan Anh Tu** (corresponding author)
+School of Economics, Can Tho University
+Campus II, 3/2 Street, Ninh Kieu District, Can Tho City, Vietnam
+Email: patu@ctu.edu.vn
+
+On behalf of the co‑author team.
