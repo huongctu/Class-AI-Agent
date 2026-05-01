@@ -10,7 +10,7 @@ Each bullet ≤ 85 characters per JWB submission rules. v4.4 reflects the editor
 
 4. DAI productivity J‑curve confirmed: positive 2009/2023, attenuated 2015. *(73)*
 
-5. DAI moderates I‑P curve in 2023 (joint F p=.022); H4 sign empirical. *(70)*
+5. DAI moderates I‑P curve in 2023 (joint F p=.022); sign treated empirically. *(75)*
 
 ---
 
