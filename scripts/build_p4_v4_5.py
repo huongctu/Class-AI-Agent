@@ -117,7 +117,14 @@ add_para(doc,
     "of the internationalisation–performance relationship, improving construct clarity "
     "between technological capability and foundational digital adoption, and showing "
     "that pooled average effects can obscure important lifecycle heterogeneity.", BT)
-add_para(doc, 
+add_para(doc,
+    "From an applied perspective, the results imply that policy and managerial "
+    "investments aimed at digitalisation should be calibrated to the firm’s position "
+    "along the export-intensity distribution and to the broader phase of economic "
+    "transition in which the firm operates. Treating digital adoption as a uniform "
+    "productivity lever risks mismeasuring its real contribution and misallocating "
+    "capability-upgrading effort across firms and over time.", BT)
+add_para(doc,
     "Keywords: internationalisation–performance relationship; digital adoption; "
     "technological capability; Vietnam; firm performance; lifecycle heterogeneity.", BT)
 
@@ -159,6 +166,31 @@ add_para(doc,
     "study: does digital capability in Vietnam function as a stable "
     "performance-enhancing asset, or does it operate as a stage-contingent resource "
     "whose value changes over the lifecycle of internationalisation?", BT)
+add_para(doc,
+    "Three institutional turning points shape the observation window. Vietnam acceded "
+    "to the World Trade Organization in early 2007, which opened the period preceding "
+    "the 2009 wave and converted a domestically oriented exporter cohort into one with "
+    "broader market exposure but limited absorptive infrastructure. The 2015 wave "
+    "captures the middle of a second phase, in which expanding manufacturing exports "
+    "coexisted with under-developed digital trade infrastructure, weak cross-border "
+    "logistics integration, and an exporter cohort still concentrated in "
+    "labour-intensive segments. The 2023 wave follows the launch of the National "
+    "Digital Transformation Programme in 2020, the rapid expansion of cross-border "
+    "e-payment and e-commerce platforms, and the rebalancing of foreign direct "
+    "investment toward digitally-mediated and services-linked production. The three "
+    "waves therefore observe firms under structurally different combinations of "
+    "internationalisation pressure and digital infrastructure availability, which is "
+    "what makes the lifecycle reading testable rather than purely conceptual.", BT)
+add_para(doc,
+    "These shifts are not cosmetic. The composition of the exporter cohort itself "
+    "evolves across the three waves: the share of firms reporting any positive "
+    "direct-export intensity declines as services and FDI-linked supply-chain firms "
+    "enter the sample, while the average level of foundational digital adoption rises "
+    "with the diffusion of websites, electronic payment systems, and digital "
+    "transaction interfaces. Reading the I–P relationship and the digital-adoption "
+    "channel as fixed structural facts across this fourteen-year window misses the "
+    "fact that the underlying firm population, the binding coordination costs, and "
+    "the institutional scaffolding for cross-border trade all change materially.", BT)
 
 add_para(doc, "1.2 Research gap", H2)
 add_para(doc, 
@@ -245,7 +277,20 @@ add_para(doc,
     "sooner. The relevant expectation is therefore not a uniformly positive slope, "
     "but a nonlinear relationship in which gains from internationalisation become "
     "progressively more difficult to sustain.", BT)
-add_para(doc, 
+add_para(doc,
+    "Two opposing forces underpin the curvature. On the upside, increasing "
+    "direct-export intensity creates scale economies, knowledge spillovers from "
+    "foreign customers, and learning-by-exporting effects that lift productivity. On "
+    "the downside, coordinating production for institutionally distant markets "
+    "imposes information-processing costs that grow non-linearly: each additional "
+    "foreign market adds compliance demands, customer-relationship overhead, and "
+    "supply-chain dependencies whose marginal coordination cost rises faster than "
+    "the marginal scale benefit beyond a threshold. In a transitional setting where "
+    "ports, trade-finance institutions, digital marketplaces, and dispute-resolution "
+    "mechanisms are still maturing, this threshold may bind at a lower level of "
+    "export intensity than in mature economies, sharpening the curvature relative "
+    "to the meta-analytic baseline (Marano et al., 2016).", BT)
+add_para(doc,
     "H1. The relationship between internationalisation and firm performance in Vietnam "
     "is nonlinear.", BX)
 
@@ -265,12 +310,23 @@ add_para(doc,
     "quickly, and cope better with the operational demands created by export activity. "
     "Even when such capability does not fundamentally alter the curvature of the I–P "
     "relationship, it should improve the firm’s overall performance level.", BT)
-add_para(doc, 
+add_para(doc,
     "This implies a positive direct association between technological capability and "
     "firm performance in Vietnam. Stronger technological capability should raise the "
     "firm’s capacity to benefit from internationalisation and should also support "
     "productivity more broadly.", BT)
-add_para(doc, 
+add_para(doc,
+    "Operationally, technological capability in the Lall (1992) tradition is built "
+    "from items that capture the firm’s ability to absorb, deploy, and improve "
+    "foreign technology: foreign-licensed technology indicates direct technology "
+    "transfer; internationally recognised quality certification indicates the "
+    "organisational ability to meet foreign quality standards; product-innovation "
+    "and R&D activity indicate the absorptive capacity (năng lực hấp thụ in the "
+    "Cohen & Levinthal sense) needed to convert external knowledge into productivity "
+    "gains. The constructed TCI_z therefore captures stock rather than flow: it "
+    "indexes the firm’s accumulated capability to engage with foreign technology "
+    "and standards, not the volume of any one digital transaction.", BT)
+add_para(doc,
     "H2. Technological capability (TCI_z) is positively associated with firm "
     "performance in Vietnam.", BX)
 
@@ -292,12 +348,27 @@ add_para(doc,
     "gains. At the same time, those gains are unlikely to be automatic. Their value "
     "depends on whether the firm has the scale, routines, and managerial capacity "
     "needed to use digital tools effectively.", BT)
-add_para(doc, 
+add_para(doc,
     "Because of this, foundational digital adoption should be expected to show a "
     "positive average association with performance, but not necessarily one that is "
     "uniform across all contexts and periods. The average effect may be positive even "
     "if the realised payoff varies across stages of internationalisation.", BT)
-add_para(doc, 
+add_para(doc,
+    "It is useful at this point to be precise about what the DAI_z composite captures "
+    "and what it does not. Following Verhoef et al. (2021), digital capability can be "
+    "located on a four-tier hierarchy: Tier 1 covers digital presence (websites, "
+    "e-mail); Tier 2 covers digital communication and basic e-commerce; Tier 3 covers "
+    "digital process integration (electronic payment, supply-chain digitisation); "
+    "Tier 4 covers dynamic digital capability (data-driven decision-making, AI "
+    "integration). The cross-wave-comparable DAI_z used in this paper is anchored in "
+    "Tier 1–2 indicators (website presence, foreign-licensed technology) rather than "
+    "the Tier 3–4 dynamic-capability layer; richer Tier 3 items are introduced as a "
+    "2023-only robustness extension in §4.5. This deliberate restriction prevents "
+    "us from conflating the basic digital-adoption channel — which is what the "
+    "construct can identify across the 2009–2023 window — with the deeper "
+    "digital-transformation layer that the WBES instrument cannot consistently "
+    "measure across waves.", BT)
+add_para(doc,
     "H3. Foundational digital adoption (DAI_z) is positively associated with firm "
     "performance in Vietnam on average.", BX)
 
@@ -318,12 +389,27 @@ add_para(doc,
     "phases, digital adoption may operate mainly as a direct performance-enhancing "
     "factor. In others, it may weaken, disappear, or become conditional on the firm’s "
     "level of internationalisation.", BT)
-add_para(doc, 
+add_para(doc,
     "This expectation is particularly relevant in Vietnam, where firms operate in an "
     "environment of transition rather than full institutional and capability "
     "stability. A lifecycle interpretation is therefore more appropriate than a "
     "uniform premium interpretation.", BT)
-add_para(doc, 
+add_para(doc,
+    "Two further considerations sharpen the prediction. First, when the exporter "
+    "cohort is concentrated in low-export-intensity manufacturing, foundational "
+    "digital tools mainly perform a market-access role: they help the firm find "
+    "customers, communicate prices and product information, and process simple "
+    "transactions. The marginal productivity gain from this role is positive but "
+    "broadly distributed across the export-intensity range. Second, when the "
+    "exporter cohort shifts toward firms that operate at higher export intensity "
+    "and engage in tighter cross-border coordination, the same Tier 1–2 digital "
+    "tools begin to interact with the marginal coordination cost of additional "
+    "foreign markets. Whether this interaction is substitutive (digital tools lower "
+    "coordination cost and amplify the productivity dividend) or complementary "
+    "with diminishing returns (digital tools at high intensity reveal the absence "
+    "of deeper integration and amplify coordination strain) is fundamentally an "
+    "empirical question that this paper treats as the test of H4.", BT)
+add_para(doc,
     "H4. The performance relevance of foundational digital adoption (DAI_z) in Vietnam "
     "varies across stages of internationalisation and becomes more conditional in "
     "later phases of transition.", BX)
@@ -363,12 +449,42 @@ add_para(doc,
     "Each composite is z-standardised within wave so that the reported coefficients "
     "are comparable in magnitude. This separation is deliberate because the study is "
     "interested in whether the two domains exhibit different empirical roles.", BT)
-add_para(doc, 
-    "The models also include standard firm-level controls: firm size (lnEmp), firm "
-    "age (FirmAge), and foreign ownership (ForeignOwned). Sector fixed effects use the "
-    "broad ISIC classification. In pooled specifications, wave fixed effects are "
-    "added to absorb broad period differences. Listwise deletion is applied on the "
-    "focal variable set, with WBES non-response codes treated as missing.", BT)
+add_para(doc,
+    "Item-level construction is as follows. Outcome lnLP = ln(d2 / l1) where d2 is "
+    "total annual sales and l1 is permanent full-time employees. Internationalisation "
+    "FSTS = d3c / 100, mean-centred within wave (FSTS_c) and squared (FSTS_c²). "
+    "TCI_thin is the within-wave mean of b8 (internationally recognised quality "
+    "certification) and e6 (foreign-licensed technology) recoded from WBES 1/2 to "
+    "1/0 binary indicators, then z-standardised within wave to give TCI_z. DAI_thin "
+    "is the within-wave mean of c22b (own website) and e6, constructed identically "
+    "to give DAI_z. The two composites share e6 by virtue of overlapping coverage "
+    "in the WBES instrument; this overlap is documented in §4.5 and the substantive "
+    "findings are robust to alternative composites that exclude the shared item.", BT)
+add_para(doc,
+    "Two enriched composites are used in the §4.5 robustness panel where item "
+    "availability allows. TCI_full adds h1 (introduced new or significantly improved "
+    "product) and h8 (R&D expenditure indicator) to the TCI_thin items; this richer "
+    "composite is constructed for the 2015 and 2023 waves where h1 and h8 are "
+    "present. DAI_rich adds k33 (sales received via electronic payment) and k38 "
+    "(supplier payments via electronic payment) to the DAI_thin items, in both "
+    "continuous (k33/100, k38/100) and binary (k33 > 0, k38 > 0) variants; this "
+    "richer composite is constructed for the 2023 wave only because the payment "
+    "items are not present in the earlier releases.", BT)
+add_para(doc,
+    "Controls are standard. Firm size lnEmp = ln(l1). Firm age FirmAge = survey "
+    "year minus b5 (year established). Foreign ownership ForeignOwned = 1 if b2b "
+    "(percentage of equity owned by private foreign individuals or firms) > 0. "
+    "Sector fixed effects use the first digit of a4b (broad ISIC code) for the "
+    "2009 and 2015 waves and the first digit of a4a for the 2023 wave, where a4b "
+    "is not in the public release. Pooled specifications add wave fixed effects to "
+    "absorb broad period differences in the productivity baseline.", BT)
+add_para(doc,
+    "A note on missing-code handling. The WBES instrument codes don’t-know and "
+    "refused responses as −9. We treat −9 as missing before any composite is built "
+    "and apply listwise deletion on the focal variable set (lnLP, lnEmp, FirmAge, "
+    "ForeignOwned, FSTS, TCI_thin, DAI_thin, sector1). The resulting analytic "
+    "samples are 977, 964, and 1,013 observations for 2009, 2015, and 2023 "
+    "respectively; pooled N is 2,954.", BT)
 
 add_para(doc, "3.3 Model sequence", H2)
 add_para(doc, 
@@ -437,11 +553,28 @@ add_para(doc,
     "reaches the conventional significance threshold (β = −1.072, p = .050), "
     "suggesting that the performance relevance of digital adoption becomes more "
     "conditional on export intensity in the later wave.", BT)
-add_para(doc, 
+add_para(doc,
     "Taken together, the wave-specific results suggest a lifecycle pattern rather "
     "than a stable cross-period rule. The direct payoff from both TCI_z and DAI_z is "
     "strong in 2009, weak in 2015, and positive again in 2023, with digital adoption "
     "becoming more conditional in the later wave.", BT)
+add_para(doc,
+    "The wave-specific pattern carries an institutional reading. The 2009 wave "
+    "captures the early aftermath of WTO accession, when the marginal exporter was "
+    "still in the entry-cost zone of the I–P curve, when capability stocks were the "
+    "scarce resource, and when foundational digital tools — even at the website-only "
+    "layer — generated direct gains because the alternative was paper-based "
+    "transaction processing. The 2015 wave captures a transitional phase in which "
+    "export expansion continued but the productivity payoff from capability resources "
+    "compressed: the curvature of the I–P relationship became visible precisely "
+    "when the direct returns to TCI_z and DAI_z faded, suggesting that the firms "
+    "added to the exporter cohort during this period derived their productivity "
+    "gains primarily from scale rather than from capability differentiation. The "
+    "2023 wave captures a re-emergence: the post-NDTP digital infrastructure makes "
+    "foundational digital adoption complementary to internal capability stocks "
+    "again, and the negative FSTS_c × DAI_z interaction shows that this complementarity "
+    "is concentrated at higher export intensity rather than uniformly distributed "
+    "across the export-intensity range.", BT)
 
 add_para(doc, "4.2 Pooled findings", H2)
 add_para(doc, 
@@ -647,6 +780,38 @@ add_para(doc,
     "relatively basic digital adoption into more meaningful outcomes. This "
     "distinction is especially important in transitional economies, where firms move "
     "through uneven stages of capability development.", BT)
+
+add_para(doc, "5.5 Policy implications", H2)
+add_para(doc,
+    "We frame the policy reading as tentative considerations rather than directive "
+    "prescriptions. The associational nature of the evidence, the breadth of the "
+    "wave-specific heterogeneity, and the single-economy scope all weigh against "
+    "converting the findings into firm policy targets. With those caveats kept "
+    "explicit, three considerations follow for Vietnam’s trade and digital-economy "
+    "policy design.", FP)
+add_para(doc,
+    "First, export-promotion instruments designed around a uniformly positive "
+    "internationalisation premium will overshoot in transitional periods such as "
+    "the 2015 wave, when capability payoffs were compressed even as export intensity "
+    "remained productivity-relevant. Targeting export support at firms positioned in "
+    "the entry-cost zone, rather than at firms already operating at high export "
+    "intensity, is consistent with the curvature documented in the pooled and "
+    "later-wave samples. Second, digital-economy programmes that treat foundational "
+    "adoption (websites, basic e-payment) as a sufficient policy lever are likely to "
+    "be attenuated by the implementation lag and by the conditional nature of the "
+    "digital channel at higher export intensity. Programmes that bundle Tier 1–2 "
+    "digital adoption with deeper capability upgrading — quality certification, "
+    "absorptive-capacity investment, organisational routines for cross-border "
+    "coordination — will be more consistent with the pattern that emerges in 2023.", BT)
+add_para(doc,
+    "Third, the lifecycle reading suggests that policy evaluation windows matter. "
+    "A digital-transformation programme assessed only against a 2015-style "
+    "transitional baseline would understate its long-run productivity contribution; "
+    "a programme assessed against a 2009-style or 2023-style baseline would "
+    "overstate it relative to the in-between phase. Policy evaluation that takes "
+    "the lifecycle structure seriously will couple short-window outcome measurement "
+    "with sustained measurement of the capability and infrastructure environment "
+    "in which firms operate.", BT)
 
 # 6. Limitations and future research ------------------------------------------
 add_para(doc, "6. Limitations and future research", H1)
