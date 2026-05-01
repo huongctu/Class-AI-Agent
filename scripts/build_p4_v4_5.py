@@ -39,6 +39,7 @@ STYLE_ID = {
     "Abstract Title": "AbstractTitle",
     "Bibliography": "Bibliography",
     "Compact": "Compact",
+    "Author": "Author",
 }
 
 H1 = "Heading 1"
@@ -79,8 +80,24 @@ for tbl in list(doc.tables):
 add_para(doc, 
     "Digital Capabilities as a Double-Edged Sword: A Lifecycle Analysis of "
     "Internationalisation and Firm Performance in Vietnam", "Title")
-add_para(doc, "v4.5.1 — md-guided revision (Vietnam, three-wave lifecycle)", "Subtitle")
+add_para(doc, "v4.5.3 — submission-ready manuscript (Vietnam, three-wave lifecycle)", "Subtitle")
 add_para(doc, "2026-05-01", "Date")
+
+# Authors and affiliations (placeholders — replace before submission) ----------
+add_para(doc, "[Author 1, corresponding]", "Author")
+add_para(doc,
+    "[Department], [University / Institute], [City], [Country]. "
+    "E-mail: [author1@example.org]. ORCID: [0000-0000-0000-0000].", BT)
+add_para(doc, "[Author 2]", "Author")
+add_para(doc,
+    "[Department], [University / Institute], [City], [Country]. "
+    "E-mail: [author2@example.org]. ORCID: [0000-0000-0000-0000].", BT)
+add_para(doc,
+    "Manuscript classification: research article. "
+    "Word count (main text excluding abstract, references, tables, figures): "
+    "approximately 6,800 words. Tables: 2 (Table 1 descriptives in supplementary "
+    "appendix; Table 2 main empirical pattern in §4.4). Figures: 2 (conceptual "
+    "model and predicted I–P curves).", BT)
 
 # Abstract ---------------------------------------------------------------------
 add_para(doc, "Abstract", H1)
@@ -127,6 +144,31 @@ add_para(doc,
 add_para(doc,
     "Keywords: internationalisation–performance relationship; digital adoption; "
     "technological capability; Vietnam; firm performance; lifecycle heterogeneity.", BT)
+add_para(doc,
+    "JEL classification: F23 (multinational firms; international business); O33 "
+    "(technological change: choices and consequences; diffusion processes); D22 "
+    "(firm behavior: empirical analysis); L25 (firm performance: size, "
+    "diversification, and scope); O53 (economywide country studies — Asia "
+    "including Middle East).", BT)
+
+# Highlights (Elsevier-style) --------------------------------------------------
+add_para(doc, "Highlights", H1)
+add_para(doc,
+    "• The internationalisation–performance relationship in Vietnam is nonlinear "
+    "and most clearly visible in the 2015 and 2023 waves and the pooled sample.", FP)
+add_para(doc,
+    "• Technological capability and foundational digital adoption show different "
+    "empirical signatures and should not be treated as a single construct.", BT)
+add_para(doc,
+    "• Both capability dimensions are positive on average but their salience "
+    "varies sharply across the 2009 / 2015 / 2023 lifecycle.", BT)
+add_para(doc,
+    "• In 2023, foundational digital adoption becomes more conditional on export "
+    "intensity (FSTS_c × DAI_z = −1.072, p = .050).", BT)
+add_para(doc,
+    "• Pooled average effects mask substantial wave-specific heterogeneity, with "
+    "implications for the design and evaluation of digital-economy policy in "
+    "transitional economies.", BT)
 
 # 1. Introduction --------------------------------------------------------------
 add_para(doc, "1. Introduction", H1)
@@ -881,6 +923,32 @@ add_para(doc,
     "The authors received no specific grant from any funding agency in the public, "
     "commercial, or not-for-profit sectors for the research, authorship, or "
     "publication of this article.", BT)
+
+# Author contributions (CRediT) ------------------------------------------------
+add_para(doc, "Author contributions (CRediT taxonomy)", H1)
+add_para(doc,
+    "[Author 1]: conceptualisation; methodology; formal analysis; data curation; "
+    "writing — original draft; writing — review and editing; visualisation; "
+    "project administration. [Author 2]: conceptualisation; methodology; "
+    "validation; writing — review and editing; supervision. All authors read "
+    "and approved the final manuscript.", FP)
+
+# Declaration of competing interest -------------------------------------------
+add_para(doc, "Declaration of competing interest", H1)
+add_para(doc,
+    "The authors declare that they have no known competing financial interests or "
+    "personal relationships that could have appeared to influence the work "
+    "reported in this paper.", FP)
+
+# Use of generative AI ---------------------------------------------------------
+add_para(doc, "Use of generative AI in the writing process", H1)
+add_para(doc,
+    "Generative AI tools were used during manuscript preparation to assist with "
+    "language editing, structure suggestions, and the assembly of the replication "
+    "package documentation. All conceptual framing, hypothesis development, "
+    "empirical analysis, results interpretation, and final wording were authored "
+    "by the human authors, who take full responsibility for the content of the "
+    "publication.", FP)
 
 # Data availability ------------------------------------------------------------
 add_para(doc, "Data availability", H1)
