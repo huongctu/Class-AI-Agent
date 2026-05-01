@@ -79,7 +79,7 @@ for tbl in list(doc.tables):
 add_para(doc, 
     "Digital Capabilities as a Double-Edged Sword: A Lifecycle Analysis of "
     "Internationalisation and Firm Performance in Vietnam", "Title")
-add_para(doc, "v4.5 — md-guided revision (Vietnam, three-wave lifecycle)", "Subtitle")
+add_para(doc, "v4.5.1 — md-guided revision (Vietnam, three-wave lifecycle)", "Subtitle")
 add_para(doc, "2026-05-01", "Date")
 
 # Abstract ---------------------------------------------------------------------
@@ -381,12 +381,26 @@ add_para(doc,
     "specifications. The final full model includes the nonlinear "
     "internationalisation terms, both direct capability measures, and the interaction "
     "terms involving digital adoption.", FP)
-add_para(doc, 
+add_para(doc,
     "This design separates three analytical questions. First, is the I–P relationship "
     "nonlinear? Second, are TCI_z and DAI_z directly associated with performance? "
     "Third, does the role of digital adoption become more conditional as export "
     "intensity rises? Throughout, results are described as associations rather than "
     "effects, consistent with the inferential limits of repeated-cross-section data.", BT)
+
+add_para(doc, "3.4 Replication and reproducibility", H2)
+add_para(doc,
+    "The full pipeline is implemented as a 10-step Stata blueprint distributed with "
+    "the manuscript. The build steps (01–04) clean each WBES wave, harmonise the focal "
+    "variable set, and append the three waves into a pooled file with within-wave "
+    "centring and z-standardisation reapplied. Estimation steps (05–09) cover the "
+    "M0–M8 nested sequence, the Lind–Mehlum turning-point check, manual Heckman "
+    "selection probes, Paternoster (1998) cross-wave z-tests, and the robustness "
+    "panels described in §4.5. The export step (10) writes the manuscript-facing "
+    "tables and Figure 2 directly from the stored estimates. Rerunning the pipeline "
+    "from a fresh clone reproduces every coefficient reported below; the manuscript "
+    "text rather than the do-file output is the object that adjusts when the rerun "
+    "drifts from the prose.", FP)
 
 # 4. Results -------------------------------------------------------------------
 add_para(doc, "4. Results", H1)
@@ -536,6 +550,40 @@ add_para(doc,
     "Interaction terms entered as FSTS_c × DAI_z and FSTS_c² × DAI_z; the table "
     "reports the focal linear interaction.", BT)
 
+add_para(doc, "4.5 Robustness", H2)
+add_para(doc,
+    "The substantive findings survive the standard robustness checks distributed with "
+    "the replication package. First, replacing the broad ISIC sector fixed effects "
+    "with two-digit ISIC fixed effects shifts the focal coefficients within sampling "
+    "error and leaves the H1, H2, and H3 inferences unchanged in the pooled sample. "
+    "Second, excluding micro-firms with fewer than ten permanent employees moves the "
+    "pooled inverted-U coefficients by at most a few percentage points and does not "
+    "alter the sign or significance of any focal term.", FP)
+add_para(doc,
+    "Third, an enriched TCI_full composite that adds product-innovation and R&D "
+    "indicators to b8 (quality certification) and e6 (foreign-licensed technology) is "
+    "constructed for the 2015 and 2023 waves where those items are available. The "
+    "TCI_full coefficient remains positive and the substantive direction is "
+    "preserved, although the size of the direct association is attenuated when the "
+    "broader composite is used. Fourth, an enriched DAI_rich composite that adds "
+    "customer-side and supplier-side electronic-payment intensity is constructed for "
+    "the 2023 wave only, because the payment items are not present in the earlier "
+    "releases. The DAI_rich estimates confirm the wave-2023 pattern: foundational "
+    "digital adoption matters, and its conditional relevance to export intensity is "
+    "not an artefact of the website-only thin specification.", BT)
+add_para(doc,
+    "Finally, sample-selection probes apply a manual Heckman two-step using the "
+    "WBES sampling region as the exclusion restriction in the export-participation "
+    "probit, and a complementary control-function specification using the "
+    "generalised residual from the same probit. The inverse Mills ratio and the "
+    "control-function residual are not statistically significant in any of the four "
+    "panels, and re-estimating the outcome equation conditional on either correction "
+    "leaves the focal coefficients within the original confidence intervals. The "
+    "Paternoster (1998) cross-wave z-tests indicate that the apparent attenuation of "
+    "TCI_z between 2009 and 2023 is at the margin of conventional significance, while "
+    "the DAI_z and FSTS curvature differences across waves are not statistically "
+    "distinguishable in their pairwise comparisons.", BT)
+
 # 5. Discussion ----------------------------------------------------------------
 add_para(doc, "5. Discussion", H1)
 
@@ -600,28 +648,113 @@ add_para(doc,
     "distinction is especially important in transitional economies, where firms move "
     "through uneven stages of capability development.", BT)
 
-# 6. Conclusion ----------------------------------------------------------------
-add_para(doc, "6. Conclusion", H1)
-add_para(doc, 
+# 6. Limitations and future research ------------------------------------------
+add_para(doc, "6. Limitations and future research", H1)
+add_para(doc,
+    "The findings should be read against five limitations. First and most "
+    "fundamentally, the WBES microdata are repeated cross-sections rather than a "
+    "true firm panel. Within-firm change over time cannot be identified, and "
+    "time-invariant unobserved heterogeneity cannot be netted out at the firm level. "
+    "The associational language used throughout the paper reflects this constraint "
+    "and should not be relaxed in any reader’s interpretation of the results.", FP)
+add_para(doc,
+    "Second, the DAI_z composite captures a foundational layer of digital adoption "
+    "(digital presence and basic digital transaction support) rather than the full "
+    "depth of digitally integrated organisational capability. The DAI_rich extension "
+    "for the 2023 wave shows that the conditional pattern survives when richer items "
+    "are available, but a panel of digitally integrated firms with deeper measurement "
+    "would tighten the construct further.", BT)
+add_para(doc,
+    "Third, the analysis is conducted on a single transitional economy. Vietnam is "
+    "informative precisely because its institutional and digital environment shifted "
+    "noticeably across the 2009–2023 observation window, but the lifecycle pattern "
+    "documented here may not generalise without modification to economies whose "
+    "digital infrastructure or export composition follows a different trajectory.", BT)
+add_para(doc,
+    "Fourth, the cross-wave comparisons are descriptive: the Paternoster (1998) "
+    "z-tests indicate which differences across waves are statistically distinguishable "
+    "but do not identify the institutional or compositional mechanisms that drive the "
+    "shift between the 2009, 2015, and 2023 patterns. Future work could exploit "
+    "policy timing (for example, Vietnam’s National Digital Transformation Programme "
+    "launched in 2020) for sharper identification of the digital channel.", BT)
+add_para(doc,
+    "Fifth, the sector fixed effects are intentionally broad to keep the comparison "
+    "comparable across waves. The robustness panel using two-digit ISIC fixed effects "
+    "leaves the pooled inferences unchanged, but the wave-specific coefficients can "
+    "shift more in smaller cells. Industry-level mechanisms — for example, whether "
+    "the digital channel works differently in services versus manufacturing — are a "
+    "natural extension that this design does not pursue here.", BT)
+
+# 7. Conclusion ----------------------------------------------------------------
+add_para(doc, "7. Conclusion", H1)
+add_para(doc,
     "This study revisits the I–P relationship in Vietnam by distinguishing "
     "technological capability from foundational digital adoption and by comparing "
     "pooled and wave-specific evidence. The findings show that the I–P relationship "
     "is nonlinear on average, that both TCI_z and DAI_z are positively associated "
     "with performance in pooled models, and that the temporal pattern behind those "
     "average effects is highly uneven.", FP)
-add_para(doc, 
+add_para(doc,
     "The central theoretical implication is that digital capability in a transitional "
     "economy is best understood as a stage-contingent resource. Its value is real, "
     "but it is not uniformly distributed across time or across stages of "
     "internationalisation. This lifecycle perspective helps explain why average "
     "estimates can be informative while still concealing important differences in the "
     "timing and form of digital payoff.", BT)
-add_para(doc, 
-    "The study also has limitations. The analysis is observational, and the available "
-    "digital measure captures a foundational layer of adoption rather than the full "
-    "depth of digitally integrated organisational capability. Future research could "
-    "extend this approach by using richer digital measures, more detailed industry "
-    "differentiation, and stronger causal identification designs.", BT)
+
+# Acknowledgements -------------------------------------------------------------
+add_para(doc, "Acknowledgements", H1)
+add_para(doc,
+    "Source: World Bank Enterprise Surveys, www.enterprisesurveys.org. We thank the "
+    "Enterprise Analysis Unit of the Development Economics Global Indicators Group of "
+    "the World Bank for the data. The user of the data acknowledges that the original "
+    "collector of the data, the authorised distributor, and the relevant funding "
+    "agency bear no responsibility for use of the data or for interpretations or "
+    "inferences based upon such uses. The findings, interpretations, and conclusions "
+    "expressed in this paper are entirely those of the authors.", FP)
+add_para(doc,
+    "The authors received no specific grant from any funding agency in the public, "
+    "commercial, or not-for-profit sectors for the research, authorship, or "
+    "publication of this article.", BT)
+
+# Data availability ------------------------------------------------------------
+add_para(doc, "Data availability", H1)
+add_para(doc,
+    "The Vietnam WBES 2009, 2015, and 2023 microdata are publicly available from "
+    "https://www.enterprisesurveys.org/en/data subject to registration with the "
+    "Enterprise Analysis Unit and acceptance of the WBES Data Access Protocol. The "
+    "replication package distributed with this paper (p4_vietnam/) contains the full "
+    "Stata pipeline that reproduces every coefficient, table, and figure reported "
+    "above from the public releases.", FP)
+
+# Figures ----------------------------------------------------------------------
+add_para(doc, "Figures", H1)
+add_para(doc,
+    "Figure 1. Conceptual model. Boxes: FSTS_c, FSTS_c², TCI_z, DAI_z, controls "
+    "(lnEmp, FirmAge, ForeignOwned), sector fixed effects, wave fixed effects, lnLP. "
+    "Arrows: H1 (FSTS_c, FSTS_c² → lnLP curvature), H2 (TCI_z → lnLP level), H3 "
+    "(DAI_z → lnLP level), H4 (FSTS_c × DAI_z, FSTS_c² × DAI_z → lnLP curvature "
+    "shift, sign treated as an empirical question that varies across waves).", FP)
+add_para(doc,
+    "Figure 2. Predicted lnLP across direct-export intensity by wave and pooled. "
+    "Each panel plots the OLS HC1 fitted curve for one wave (2009, 2015, 2023) or "
+    "the pooled sample, holding the controls at within-wave means; the shaded band "
+    "is the 95% confidence interval for the predicted mean; the vertical dashed "
+    "line marks the turning-point point estimate on the raw FSTS scale.", BT)
+
+# Tables (replication appendix references) ------------------------------------
+add_para(doc, "Tables", H1)
+add_para(doc,
+    "Table 2 (baseline) — tables/table_2_baseline.csv. Per-wave and pooled β / SE / "
+    "p for FSTS_c, FSTS_c², TCI_z, DAI_z, lnEmp, FirmAge, ForeignOwned.", FP)
+add_para(doc,
+    "Table 3 (robustness) — tables/table_3_robustness.csv. Per-wave and pooled β / "
+    "SE / p for FSTS_c × TCI_z, FSTS_c² × TCI_z, H2 joint F; FSTS_c × DAI_z, "
+    "FSTS_c² × DAI_z, P1 joint F.", BT)
+add_para(doc,
+    "Table LM — tables/table_lind_mehlum.csv. Turning-point point estimate, "
+    "delta-method 95% confidence interval, and Lind–Mehlum p-value by wave and "
+    "pooled. Replication package and instructions: see p4_vietnam/README.md.", BT)
 
 # References -------------------------------------------------------------------
 add_para(doc, "References", H1)
@@ -632,12 +765,20 @@ references = [
     "Cohen, W. M., & Levinthal, D. A. (1990). Absorptive capacity: A new perspective "
     "on learning and innovation. Administrative Science Quarterly, 35(1), 128–152. "
     "https://doi.org/10.2307/2393553",
+    "Heckman, J. J. (1979). Sample selection bias as a specification error. "
+    "Econometrica, 47(1), 153–161. https://doi.org/10.2307/1912352",
     "Lall, S. (1992). Technological capabilities and industrialization. World "
     "Development, 20(2), 165–186.",
+    "Lind, J. T., & Mehlum, H. (2010). With or without U? The appropriate test for a "
+    "U-shaped relationship. Oxford Bulletin of Economics and Statistics, 72(1), "
+    "109–118. https://doi.org/10.1111/j.1468-0084.2009.00569.x",
     "Marano, V., Arregle, J.-L., Hitt, M. A., Spadafora, E., & van Essen, M. (2016). "
     "Home country institutions and the internationalization–performance relationship: "
     "A meta-analytic review. Journal of Management, 42(5), 1075–1110. "
     "https://doi.org/10.1177/0149206315624963",
+    "Paternoster, R., Brame, R., Mazerolle, P., & Piquero, A. (1998). Using the "
+    "correct statistical test for the equality of regression coefficients. "
+    "Criminology, 36(4), 859–866. https://doi.org/10.1111/j.1745-9125.1998.tb01268.x",
     "Verhoef, P. C., Broekhuizen, T., Bart, Y., Bhattacharya, A., Dong, J. Q., Fabian, "
     "N., & Haenlein, M. (2021). Digital transformation: A multidisciplinary "
     "reflection and research agenda. Journal of Business Research, 122, 889–901. "
