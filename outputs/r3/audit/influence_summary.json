@@ -1,0 +1,12 @@
+{
+  "n": 617,
+  "k_params": 12,
+  "n_obs_cooksD_gt_4_over_n": 32,
+  "n_obs_cooksD_gt_4_over_n_minus_k": 32,
+  "n_obs_high_leverage_hat_gt_2k_over_n": 41,
+  "n_firms_FSTS_gt_50pct": 18,
+  "n_firms_FSTS_gt_70pct": 11,
+  "mean_FSTS_in_top20_cooksD": 0.08,
+  "max_cooksD": 0.12432607277272224,
+  "median_cooksD": 0.00046321801304196534
+}
