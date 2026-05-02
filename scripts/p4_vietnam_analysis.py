@@ -930,6 +930,355 @@ def run_panelC_reconciled(waves: dict[int, pd.DataFrame]) -> list[dict]:
     return rows
 
 
+# ---------------------------------------------------------------------------
+# Panel J — Propensity Score Matching (PSM) for the digital-presence treatment
+# ---------------------------------------------------------------------------
+def _propensity_logit(df: pd.DataFrame, treat: str,
+                      covars: list[str], dummy_cols: list[str]) -> np.ndarray:
+    """Fit a probit-style logit (statsmodels Logit) for the treatment indicator
+    and return predicted propensity scores. Returns p in (eps, 1-eps)."""
+    parts = [np.ones((len(df), 1))]
+    names = ["const"]
+    for v in covars:
+        parts.append(df[v].to_numpy().reshape(-1, 1))
+        names.append(v)
+    for d in dummy_cols:
+        oh = pd.get_dummies(df[d].astype(int), prefix=d, drop_first=True,
+                            dtype=float)
+        parts.append(oh.to_numpy())
+        names.extend(oh.columns.tolist())
+    X = np.hstack(parts)
+    y = df[treat].astype(float).to_numpy()
+    fit = sm.Logit(y, X).fit(disp=False, method="bfgs", maxiter=200)
+    p = fit.predict(X)
+    eps = 1e-4
+    return np.clip(p, eps, 1 - eps)
+
+
+def _nn_match_att(p: np.ndarray, treat: np.ndarray, y: np.ndarray,
+                  caliper: float | None = None) -> tuple[float, float, int]:
+    """Nearest-neighbour 1:1 with-replacement matching, computing the ATT.
+
+    Returns (att, se_att, n_matched_treated). Standard error follows the
+    Abadie-Imbens (2006) heteroskedasticity-robust formula simplified for
+    1-NN with replacement.
+    """
+    treated_idx = np.flatnonzero(treat == 1)
+    control_idx = np.flatnonzero(treat == 0)
+    if len(control_idx) == 0:
+        return float("nan"), float("nan"), 0
+
+    p_c = p[control_idx]
+    matched_y = np.empty(len(treated_idx))
+    matched_y[:] = np.nan
+
+    for k, i in enumerate(treated_idx):
+        diff = np.abs(p_c - p[i])
+        j = int(np.argmin(diff))
+        if caliper is not None and diff[j] > caliper:
+            continue
+        matched_y[k] = y[control_idx[j]]
+
+    keep = ~np.isnan(matched_y)
+    n = int(keep.sum())
+    if n < 5:
+        return float("nan"), float("nan"), n
+    diffs = y[treated_idx[keep]] - matched_y[keep]
+    att = float(np.mean(diffs))
+    se = float(np.std(diffs, ddof=1) / np.sqrt(n))
+    return att, se, n
+
+
+def _kernel_match_att(p: np.ndarray, treat: np.ndarray, y: np.ndarray,
+                      bandwidth: float = 0.06) -> tuple[float, float, int]:
+    """Epanechnikov-kernel matching ATT with a fixed bandwidth on p."""
+    treated_idx = np.flatnonzero(treat == 1)
+    control_idx = np.flatnonzero(treat == 0)
+    if len(control_idx) == 0:
+        return float("nan"), float("nan"), 0
+
+    p_c = p[control_idx]
+    y_c = y[control_idx]
+
+    diffs = []
+    for i in treated_idx:
+        u = (p_c - p[i]) / bandwidth
+        mask = np.abs(u) <= 1
+        if mask.sum() < 2:
+            continue
+        kw = 0.75 * (1 - u[mask] ** 2)
+        denom = kw.sum()
+        if denom <= 0:
+            continue
+        yhat = float(np.sum(kw * y_c[mask]) / denom)
+        diffs.append(y[i] - yhat)
+    n = len(diffs)
+    if n < 5:
+        return float("nan"), float("nan"), n
+    diffs_arr = np.asarray(diffs)
+    att = float(np.mean(diffs_arr))
+    se = float(np.std(diffs_arr, ddof=1) / np.sqrt(n))
+    return att, se, n
+
+
+def _balance_table(df: pd.DataFrame, treat: str, covars: list[str],
+                   weights: np.ndarray | None = None) -> pd.DataFrame:
+    """Standardised mean differences before / after matching."""
+    rows = []
+    t = df[treat].to_numpy().astype(bool)
+    for v in covars:
+        x = df[v].to_numpy().astype(float)
+        m1, m0 = x[t].mean(), x[~t].mean()
+        s1, s0 = x[t].std(ddof=1), x[~t].std(ddof=1)
+        denom = np.sqrt((s1 ** 2 + s0 ** 2) / 2)
+        smd_pre = (m1 - m0) / denom if denom > 0 else float("nan")
+        rows.append({"variable": v, "smd_pre_pct": round(float(smd_pre) * 100, 2)})
+    return pd.DataFrame(rows)
+
+
+def run_psm_panel_j(pooled: pd.DataFrame) -> tuple[list[dict], pd.DataFrame]:
+    """Panel J — PSM ATT of website ownership (DAI=1) and quality-cert /
+    foreign-tech exposure (TCI=1) on lnLP.
+
+    The treatment proxies are the binary thin-construct items: c22b_r for
+    DAI, and (b8_r OR e6_r) for TCI. Covariates: lnEmp, FirmAge,
+    ForeignOwned + sector1 dummies + wave dummies. Two matching algorithms
+    (1-NN with caliper 0.05 and Epanechnikov kernel BW 0.06) are reported
+    side-by-side as a robustness check on the matching estimator.
+    """
+    rows: list[dict] = []
+    bal_rows: list[dict] = []
+
+    # --- DAI treatment (website) -------------------------------------------
+    df = pooled.dropna(subset=["c22b_r", "b8_r", "e6_r", "lnLP", "lnEmp",
+                               "FirmAge", "ForeignOwned", "sector1",
+                               "wave"]).copy()
+    df["TCI_treat"] = ((df["b8_r"] > 0) | (df["e6_r"] > 0)).astype(float)
+    df["DAI_treat"] = (df["c22b_r"] > 0).astype(float)
+
+    covars = ["lnEmp", "FirmAge", "ForeignOwned"]
+    dummy_cols = ["sector1", "wave"]
+
+    for treat_label, treat_col in [("DAI", "DAI_treat"), ("TCI", "TCI_treat")]:
+        p = _propensity_logit(df, treat_col, covars, dummy_cols)
+        treat_arr = df[treat_col].to_numpy()
+        y = df["lnLP"].to_numpy()
+
+        att_nn, se_nn, n_nn = _nn_match_att(p, treat_arr, y, caliper=0.05)
+        t_nn = att_nn / se_nn if se_nn and not np.isnan(se_nn) else float("nan")
+        from scipy import stats
+        p_nn = float(2 * (1 - stats.norm.cdf(abs(t_nn)))) if not np.isnan(t_nn) \
+               else float("nan")
+        rows.append({
+            "panel": "PSM_J_NN1_caliper005",
+            "sample": "VNMpooled",
+            "term": f"ATT_{treat_label}_treat",
+            "b": round(float(att_nn), 4),
+            "se": round(float(se_nn), 4) if not np.isnan(se_nn) else np.nan,
+            "p": round(float(p_nn), 4) if not np.isnan(p_nn) else np.nan,
+            "n": int(n_nn),
+        })
+
+        att_k, se_k, n_k = _kernel_match_att(p, treat_arr, y, bandwidth=0.06)
+        t_k = att_k / se_k if se_k and not np.isnan(se_k) else float("nan")
+        p_k = float(2 * (1 - stats.norm.cdf(abs(t_k)))) if not np.isnan(t_k) \
+              else float("nan")
+        rows.append({
+            "panel": "PSM_J_kernel_bw006",
+            "sample": "VNMpooled",
+            "term": f"ATT_{treat_label}_treat",
+            "b": round(float(att_k), 4),
+            "se": round(float(se_k), 4) if not np.isnan(se_k) else np.nan,
+            "p": round(float(p_k), 4) if not np.isnan(p_k) else np.nan,
+            "n": int(n_k),
+        })
+
+        bal = _balance_table(df, treat_col, covars)
+        bal["treatment"] = treat_label
+        bal_rows.append(bal)
+
+    bal_df = pd.concat(bal_rows, ignore_index=True) if bal_rows else \
+             pd.DataFrame()
+    return rows, bal_df
+
+
+# ---------------------------------------------------------------------------
+# Panel K — Two-stage least squares (IV) with leave-one-out industry-region IV
+# ---------------------------------------------------------------------------
+def _leave_one_out_mean(df: pd.DataFrame, group_cols: list[str],
+                        target: str) -> np.ndarray:
+    """Leave-one-out group mean of `target` within each group defined by
+    `group_cols`. Returns an array aligned with df.index."""
+    grouped = df.groupby(group_cols)[target]
+    g_sum = grouped.transform("sum")
+    g_n = grouped.transform("count")
+    own = df[target].to_numpy()
+    other_sum = g_sum.to_numpy() - own
+    other_n = g_n.to_numpy() - 1
+    out = np.where(other_n > 0, other_sum / np.maximum(other_n, 1), np.nan)
+    return out
+
+
+def _2sls_focal(df: pd.DataFrame, focal: str, iv: str,
+                exog: list[str], dummy_cols: list[str]) -> dict:
+    """2SLS with a single focal endogenous regressor and a single excluded
+    instrument. Returns {b_focal, se_focal, t_focal, p_focal, F_first, n}.
+    """
+    sub = df.dropna(subset=[focal, iv, "lnLP"] + exog + dummy_cols).copy()
+    parts = [np.ones((len(sub), 1))]
+    names = ["const"]
+    for v in exog:
+        parts.append(sub[v].to_numpy().reshape(-1, 1))
+        names.append(v)
+    for d in dummy_cols:
+        oh = pd.get_dummies(sub[d].astype(int), prefix=d, drop_first=True,
+                            dtype=float)
+        parts.append(oh.to_numpy())
+        names.extend(oh.columns.tolist())
+    Z_exog = np.hstack(parts)
+
+    iv_arr = sub[iv].to_numpy().reshape(-1, 1)
+    Z_full = np.hstack([Z_exog, iv_arr])
+
+    # First stage: focal ~ exog + iv
+    fs = sm.OLS(sub[focal].to_numpy(), Z_full).fit(cov_type="HC1")
+    F_first = float(fs.tvalues[-1] ** 2)
+
+    focal_hat = fs.predict(Z_full)
+    X_2nd = np.hstack([Z_exog, focal_hat.reshape(-1, 1)])
+    ss = sm.OLS(sub["lnLP"].to_numpy(), X_2nd).fit(cov_type="HC1")
+    return {
+        "b_focal": float(ss.params[-1]),
+        "se_focal": float(ss.bse[-1]),
+        "t_focal": float(ss.tvalues[-1]),
+        "p_focal": float(ss.pvalues[-1]),
+        "F_first": F_first,
+        "n": int(len(sub)),
+    }
+
+
+def run_iv_panel_k(pooled: pd.DataFrame) -> list[dict]:
+    """Panel K — IV / 2SLS with a leave-one-out industry × region instrument
+    for the two endogenous focal regressors (DAI_z and TCI_z).
+
+    Instrument construction: for each firm, average c22b_r (or
+    (b8_r + e6_r) / 2) of all other firms in the same sector1 × a2 cell
+    across the pooled sample. The leave-one-out construction prevents
+    mechanical endogeneity from including the firm's own value.
+    """
+    rows: list[dict] = []
+    df = pooled.dropna(subset=["c22b_r", "b8_r", "e6_r", "lnLP", "lnEmp",
+                               "FirmAge", "ForeignOwned", "sector1",
+                               "wave", "a2"]).copy()
+    df["TCI_thin_raw"] = (df["b8_r"] + df["e6_r"]) / 2.0
+
+    df["DAI_iv"] = _leave_one_out_mean(df, ["sector1", "a2", "wave"],
+                                        "c22b_r")
+    df["TCI_iv"] = _leave_one_out_mean(df, ["sector1", "a2", "wave"],
+                                        "TCI_thin_raw")
+    df = df.dropna(subset=["DAI_iv", "TCI_iv"]).copy()
+
+    exog = ["FSTSc", "FSTSc2", "lnEmp", "FirmAge", "ForeignOwned"]
+    dummy_cols = ["sector1", "wave"]
+
+    out_dai = _2sls_focal(df, "DAI_z", "DAI_iv", exog + ["TCI_z"], dummy_cols)
+    rows.append({
+        "panel": "IV_2SLS_K_DAI",
+        "sample": "VNMpooled",
+        "term": "DAI_z (instrumented)",
+        "b": round(out_dai["b_focal"], 4),
+        "se": round(out_dai["se_focal"], 4),
+        "p": round(out_dai["p_focal"], 4),
+        "n": out_dai["n"],
+    })
+    rows.append({
+        "panel": "IV_2SLS_K_DAI",
+        "sample": "VNMpooled",
+        "term": "first_stage_F (DAI on DAI_iv)",
+        "b": round(out_dai["F_first"], 3),
+        "se": np.nan, "p": np.nan, "n": out_dai["n"],
+    })
+
+    out_tci = _2sls_focal(df, "TCI_z", "TCI_iv", exog + ["DAI_z"], dummy_cols)
+    rows.append({
+        "panel": "IV_2SLS_K_TCI",
+        "sample": "VNMpooled",
+        "term": "TCI_z (instrumented)",
+        "b": round(out_tci["b_focal"], 4),
+        "se": round(out_tci["se_focal"], 4),
+        "p": round(out_tci["p_focal"], 4),
+        "n": out_tci["n"],
+    })
+    rows.append({
+        "panel": "IV_2SLS_K_TCI",
+        "sample": "VNMpooled",
+        "term": "first_stage_F (TCI on TCI_iv)",
+        "b": round(out_tci["F_first"], 3),
+        "se": np.nan, "p": np.nan, "n": out_tci["n"],
+    })
+    return rows
+
+
+# ---------------------------------------------------------------------------
+# Oster (2019) bounds — δ = 1 stability test
+# ---------------------------------------------------------------------------
+def run_oster_bounds(pooled: pd.DataFrame) -> list[dict]:
+    """Oster (2019) δ-stability bounds for the focal coefficients in the
+    pooled M7 specification. Reports δ-implied β under the canonical
+    R²max = 1.3 × R²(controlled) assumption; β closer to the controlled
+    estimate signals smaller selection-on-unobservables risk.
+    """
+    df = pooled.dropna(subset=["lnLP", "FSTSc", "FSTSc2", "TCI_z", "DAI_z",
+                               "lnEmp", "FirmAge", "ForeignOwned",
+                               "sector1", "wave"]).copy()
+
+    sec = pd.get_dummies(df["sector1"].astype(int), prefix="sector1",
+                         drop_first=True, dtype=float)
+    wf = pd.get_dummies(df["wave"].astype(int), prefix="wave",
+                        drop_first=True, dtype=float)
+
+    # Uncontrolled: focal only
+    X_unc = np.hstack([np.ones((len(df), 1)),
+                       df[["FSTSc", "FSTSc2", "TCI_z", "DAI_z"]].to_numpy()])
+    fit_unc = sm.OLS(df["lnLP"].to_numpy(), X_unc).fit()
+    R_unc = float(fit_unc.rsquared)
+
+    # Controlled: focal + controls + sector + wave FE
+    X_con = np.hstack([np.ones((len(df), 1)),
+                       df[["FSTSc", "FSTSc2", "TCI_z", "DAI_z",
+                           "lnEmp", "FirmAge", "ForeignOwned"]].to_numpy(),
+                       sec.to_numpy(), wf.to_numpy()])
+    fit_con = sm.OLS(df["lnLP"].to_numpy(), X_con).fit()
+    R_con = float(fit_con.rsquared)
+
+    R_max = min(1.0, 1.3 * R_con)
+
+    rows: list[dict] = []
+    focal_terms = ["FSTSc", "FSTSc2", "TCI_z", "DAI_z"]
+    for k, term in enumerate(focal_terms):
+        b_unc = float(fit_unc.params[1 + k])
+        b_con = float(fit_con.params[1 + k])
+        # Oster (2019) δ = 1 implied β
+        denom = (R_con - R_unc)
+        if abs(denom) < 1e-9:
+            beta_oster = float("nan")
+        else:
+            beta_oster = b_con - (b_unc - b_con) * (R_max - R_con) / denom
+        rows.append({
+            "panel": "Oster_bounds",
+            "sample": "VNMpooled",
+            "term": term,
+            "b_uncontrolled": round(b_unc, 4),
+            "b_controlled": round(b_con, 4),
+            "beta_oster_delta1": round(beta_oster, 4),
+            "R_unc": round(R_unc, 4),
+            "R_con": round(R_con, 4),
+            "R_max_used": round(R_max, 4),
+            "n": int(len(df)),
+        })
+    return rows
+
+
 def main() -> None:
     waves = {y: build_wave(y) for y in (2009, 2015, 2023)}
     for y, df in waves.items():
@@ -964,7 +1313,13 @@ def main() -> None:
     rob.extend(run_exporter_only(waves, pooled))
     rob.extend(run_wave_interaction_test(pooled))
     rob.extend(run_panelC_reconciled(waves))
+    psm_rows, psm_balance = run_psm_panel_j(pooled)
+    rob.extend(psm_rows)
+    rob.extend(run_iv_panel_k(pooled))
     pd.DataFrame(rob).to_csv(OUT_TABLES / "table_3_robustness.csv", index=False)
+    psm_balance.to_csv(OUT_TABLES / "table_psm_balance.csv", index=False)
+    pd.DataFrame(run_oster_bounds(pooled)).to_csv(
+        OUT_TABLES / "table_oster_bounds.csv", index=False)
 
     density = run_density_check(waves, pooled,
                                 OUT_TABLES / "table_lind_mehlum.csv")

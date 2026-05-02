@@ -10,7 +10,7 @@ are reproducible from the scripts in the parent repository.
   and Digital Adoption*
 - **Corresponding author:** Phan Anh Tu (patu@ctu.edu.vn)
 - **Co-author:** Do Thuy Huong (huongp1323001@gstudent.ctu.edu.vn)
-- **Last refresh:** 2026-05-02 (v5.7 — reviewer-driven revision)
+- **Last refresh:** 2026-05-03 (v5.8 — round-2 revision: H1 dual-mechanism, PSM, IV/2SLS, Oster bounds, macro-context)
 
 ## What to upload to Editorial Manager
 
@@ -19,7 +19,8 @@ are reproducible from the scripts in the parent repository.
 | `manuscript_full_with_authors.docx` | *Title page* (or "Manuscript with author info") |
 | `manuscript_blinded.docx` | *Main document* (anonymous review copy) |
 | `cover_letter_ijoem.docx` | *Cover letter* |
-| `response_letter_to_reviewer.docx` | *Response to reviewer* (point-by-point) |
+| `response_letter_to_reviewer.docx` | *Response to reviewer* (round-1, point-by-point) |
+| `response_letter_round2.docx` | *Response to reviewer* (round-2, dual-mechanism + PSM/IV/Oster) |
 | `figures/figure_1_conceptual_model.{pdf,png}` | *Figure 1* |
 | `figures/figure_2a.{pdf,png}` … `figure_2d.{pdf,png}` | *Figures 2a–2d* |
 | `figures/figure_3_moderator_marginals.{pdf,png}` | *Figure 3* (predicted curves at low/high DAI/TCI) |

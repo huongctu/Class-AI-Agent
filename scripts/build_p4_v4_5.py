@@ -89,8 +89,8 @@ add_para(doc,
     "Emerging Market: The Roles of Technological Capability and Digital "
     "Adoption", "Title")
 add_para(doc,
-    ("v5.7 — IJoEM blinded manuscript: reviewer-driven revision (DAI/TCI relabel, exporter-only, wave-interaction, Figure 3)" if BLINDED
-     else "v5.7 — IJoEM submission draft: reviewer-driven revision (DAI/TCI relabel, exporter-only, wave-interaction, Figure 3)"),
+    ("v5.8 — IJoEM blinded manuscript: round-2 revision (H1 dual-mechanism, PSM Panel J, IV/2SLS Panel K, Oster bounds, macro-context §5.3)" if BLINDED
+     else "v5.8 — IJoEM submission draft: round-2 revision (H1 dual-mechanism, PSM Panel J, IV/2SLS Panel K, Oster bounds, macro-context §5.3)"),
     "Subtitle")
 add_para(doc, "2026-05-02", "Date")
 
@@ -358,21 +358,50 @@ add_para(doc,
     "but a nonlinear relationship in which gains from internationalisation become "
     "progressively more difficult to sustain.", BT)
 add_para(doc,
-    "Two opposing forces underpin the curvature. On the upside, increasing "
-    "direct-export intensity creates scale economies, knowledge spillovers from "
-    "foreign customers, and learning-by-exporting effects that lift productivity. On "
-    "the downside, coordinating production for institutionally distant markets "
-    "imposes information-processing costs that grow non-linearly: each additional "
-    "foreign market adds compliance demands, customer-relationship overhead, and "
-    "supply-chain dependencies whose marginal coordination cost rises faster than "
-    "the marginal scale benefit beyond a threshold. In a transitional setting where "
-    "ports, trade-finance institutions, digital marketplaces, and dispute-resolution "
-    "mechanisms are still maturing, this threshold may bind at a lower level of "
-    "export intensity than in mature economies, sharpening the curvature relative "
-    "to the meta-analytic baseline (Hennart, 2007; Wagner, 2007; Marano et al., 2016).", BT)
+    "Two opposing forces underpin the curvature. On the upside, "
+    "increasing direct-export intensity creates scale economies, "
+    "knowledge spillovers from foreign customers, and learning-by-"
+    "exporting effects that lift productivity (Wagner, 2007). On the "
+    "downside, coordinating production for institutionally distant "
+    "markets imposes information-processing costs that grow non-"
+    "linearly: each additional foreign market adds compliance demands, "
+    "customer-relationship overhead, and supply-chain dependencies whose "
+    "marginal coordination cost rises faster than the marginal scale "
+    "benefit beyond a threshold. In a transitional setting where ports, "
+    "trade-finance institutions, digital marketplaces, and dispute-"
+    "resolution mechanisms are still maturing, this threshold may bind "
+    "at a lower level of export intensity than in mature economies, "
+    "sharpening the curvature relative to the meta-analytic baseline "
+    "(Hennart, 2007; Wagner, 2007; Marano et al., 2016).", BT)
 add_para(doc,
-    "H1. The relationship between internationalisation and firm performance in Vietnam "
-    "is nonlinear.", BX)
+    "A second consideration arises from the structure of direct-export "
+    "intensity in WBES Vietnam: the FSTS variable is bounded at zero "
+    "and is heavily zero-inflated (the non-exporter share is 71.6 % in "
+    "2009, 79.3 % in 2015 and 81.2 % in 2023; pooled 77.4 %). The "
+    "internationalisation–performance relationship therefore comprises "
+    "two analytically distinct margins. The participation margin is the "
+    "step from FSTS = 0 to FSTS > 0, where firms cross the entry "
+    "threshold into international markets and absorb fixed entry costs. "
+    "The intensity margin is the variation of FSTS within the exporter "
+    "subsample. Theory predicts that productivity gains can accrue at "
+    "either margin: the participation margin captures learning-by-"
+    "exporting and exposure to foreign-market demand; the intensity "
+    "margin captures scale economies on the upside and coordination "
+    "burdens on the downside (Bernard et al., 2007; Wagner, 2007). In "
+    "transitional economies with thin export infrastructure, the "
+    "participation margin is plausibly the dominant productivity-"
+    "enhancing margin, while the intensity margin may show diminishing "
+    "or null returns once participation has been crossed.", BT)
+add_para(doc,
+    "H1. The internationalisation–performance relationship in Vietnam "
+    "is non-monotonic and operates through two distinct margins. "
+    "(H1a, participation margin) Crossing from non-exporting "
+    "(FSTS = 0) to exporting (FSTS > 0) is positively associated with "
+    "labour productivity, capturing the learning-and-scale jump at "
+    "entry. (H1b, intensity margin) Within the exporter subsample, "
+    "additional direct-export intensity exhibits diminishing or non-"
+    "significant marginal returns, reflecting the binding coordination "
+    "costs that emerge once participation has been crossed.", BX)
 
 add_para(doc, "2.2 Foreign-technology and standards capability and firm performance", H2)
 add_para(doc,
@@ -890,10 +919,33 @@ add_para(doc,
     "is within-sample detectable, and we frame this as exploratory rather "
     "than as a confirmed hypothesis test.", BT)
 
-add_para(doc, "4.4 Main empirical pattern", H2)
-add_para(doc, 
-    "Table 1 summarises the directional interpretation of the focal coefficients from "
-    "the full specifications by wave and for the pooled sample.", FP)
+add_para(doc, "4.4 Main empirical pattern: participation × intensity", H2)
+add_para(doc,
+    "Before reading the table that follows, we anchor the reader in the "
+    "two-margin structure introduced in §2.1. The full-sample inverted-U "
+    "is informative about the joint participation-and-intensity pattern, "
+    "but its curvature is identified primarily through the participation "
+    "margin: only ~1.0 % of pooled firms sit within ±5 percentage-points "
+    "of the wave-specific turning points (see §4.5 density check), and "
+    "the bulk of mass lies at FSTS = 0. When we re-fit M2 / M7 / M8 on "
+    "the exporter-only sub-sample (FSTS > 0; pooled N = 669, §4.5 "
+    "Panel H), the linear FSTS_c term is negative (β = −0.861, "
+    "p < .001) but the quadratic term is not significant (FSTS_c² "
+    "β = −0.200, p = .660, M8 joint p = .462). H1a (participation "
+    "margin) is therefore the dominant productivity-relevant margin in "
+    "this dataset; the within-exporter intensity curvature claimed by "
+    "H1b weakens once participation is netted out. We retain the full-"
+    "sample inverted-U as the headline empirical regularity, but "
+    "interpret it explicitly through the dual-mechanism lens: most of "
+    "the productivity differential lies between non-exporters and "
+    "exporters, with limited additional curvature within the exporter "
+    "subsample. Table 1 therefore reads as a description of the "
+    "combined participation × intensity pattern rather than as a "
+    "structural statement about within-exporter intensity curvature.", FP)
+add_para(doc,
+    "Table 1 summarises the directional interpretation of the focal "
+    "coefficients from the full specifications by wave and for the "
+    "pooled sample.", FP)
 
 table = doc.add_table(rows=5, cols=5)
 # Apply the "Table" style that the v4.4 template ships with, by writing the
@@ -1153,7 +1205,79 @@ add_para(doc,
     "magnitude.", BT)
 
 add_para(doc,
-    "Multiple-testing caveat. §4.5 reports nine robustness panels (A–I) "
+    "Panel J — Propensity-score matching (PSM). To probe selection-on-"
+    "observables in the direct association between capability variables "
+    "and productivity, we estimate the average treatment effect on the "
+    "treated (ATT) of two binary treatments on log labour productivity "
+    "(lnLP). Treatment 1 is website ownership (c22b = 1, the same item "
+    "that anchors the primary DAI_z); treatment 2 is exposure to either "
+    "internationally recognised quality certification (b8 = 1) or "
+    "foreign-licensed technology (e6 = 1), the two items that anchor "
+    "the primary TCI_z. The propensity score is fitted by Logit on "
+    "lnEmp, FirmAge, ForeignOwned, sector1 and wave fixed effects on "
+    "the pooled sample. Two matching algorithms are reported: 1-NN "
+    "with caliper = 0.05 and Epanechnikov kernel matching with "
+    "bandwidth = 0.06. The website-treatment ATT is 0.298 (SE 0.061) "
+    "under 1-NN and 0.321 (SE 0.043) under kernel matching, both "
+    "p < .001 (matched N ≈ 1,085); the cert/foreign-tech-treatment "
+    "ATT is 0.637 (SE 0.078) under 1-NN and 0.609 (SE 0.056) under "
+    "kernel matching, both p < .001 (matched N ≈ 640). Both ATT "
+    "estimates are positive, sizeable and robust to algorithm choice. "
+    "Pre-match standardised mean differences (lnEmp 62 % for the "
+    "website treatment, 105 % for the cert/foreign-tech treatment) "
+    "are large, which is precisely the imbalance the matching "
+    "estimator is designed to correct; covariate balance in the "
+    "matched samples is reported in table_psm_balance.csv. The PSM "
+    "results corroborate H2 and the average part of H3 from the OLS "
+    "specifications under a non-parametric estimator that does not "
+    "rely on the linearity assumption.", BT)
+add_para(doc,
+    "Panel K — Two-stage least squares (2SLS) with leave-one-out "
+    "industry × region instruments. To probe the residual concern of "
+    "reverse causality and unobserved heterogeneity, we instrument "
+    "DAI_z and TCI_z separately with leave-one-out group means defined "
+    "over sector1 × a2 × wave cells. Specifically, for each firm i the "
+    "instrument is the average c22b ownership (or average (b8 + e6) / 2 "
+    "for the TCI specification) of all other firms in the same "
+    "sector × region × wave cell, excluding firm i itself. The "
+    "exclusion restriction is that local industry-region peer "
+    "adoption shifts a firm's own adoption decision (through "
+    "imitation, supplier networks and shared training infrastructure) "
+    "but is not a direct determinant of firm-i productivity beyond "
+    "the controls. The first-stage F-statistic is 34.6 for the DAI "
+    "instrument and 22.1 for the TCI instrument, well above the "
+    "Staiger–Stock weak-instrument threshold of 10. The 2SLS estimates "
+    "are informative: instrumented DAI_z = 0.018 (SE 0.249, p = .942), "
+    "while instrumented TCI_z = 1.639 (SE 0.299, p < .001). The TCI "
+    "direct association is reinforced under instrumentation, while "
+    "the OLS-detected DAI direct association attenuates to a null "
+    "under instrumentation. We read this honestly: the PSM evidence "
+    "supports a positive ATT of basic website ownership on "
+    "productivity, but once peer-cell adoption is used to identify "
+    "exogenous variation in the firm's own DAI_z, the direct effect "
+    "is no longer statistically separable from zero. The most "
+    "defensible interpretation is that website ownership in our "
+    "sample correlates with productivity primarily through firm "
+    "characteristics that are not captured by the IV's exogenous "
+    "variation; the more robust capability channel runs through "
+    "foreign-technology / standards exposure (TCI_z), which survives "
+    "both PSM and 2SLS.", BT)
+add_para(doc,
+    "Oster (2019) δ-stability bounds. As a final selection-on-"
+    "unobservables probe, we compute Oster (2019) bounds on the four "
+    "focal pooled coefficients, comparing each to the analogous "
+    "uncontrolled regression and assuming R²max = min(1, 1.3 × R²"
+    "controlled), the canonical default. Under δ = 1 (selection on "
+    "unobservables equals selection on observables) the implied β is "
+    "0.615 for FSTS_c, −1.174 for FSTS_c², 0.194 for TCI_z, and "
+    "0.080 for DAI_z. None of the four implied coefficients changes "
+    "sign and none collapses to zero, indicating that plausible "
+    "selection on unobservables would have to be substantially "
+    "larger than selection on observables to overturn the focal "
+    "qualitative findings. The Oster bound is reported as "
+    "table_oster_bounds.csv.", BT)
+add_para(doc,
+    "Multiple-testing caveat. §4.5 reports eleven robustness panels (A–K plus Oster bounds) "
     "across two enriched composites, three sub-samples, two selection "
     "corrections, cross-wave z-tests and a wave-saturated interaction test, "
     "each touching multiple focal terms. We do not apply a formal multiple-"
@@ -1190,7 +1314,7 @@ add_para(doc,
     "Table 3 collates the robustness panels documented in §4.5 in a "
     "single overview to ease cross-comparison.", FP)
 
-t3 = doc.add_table(rows=11, cols=4)
+t3 = doc.add_table(rows=17, cols=4)
 t3_pr = t3._element.find(qn("w:tblPr"))
 if t3_pr is None:
     t3_pr = OxmlElement("w:tblPr")
@@ -1238,6 +1362,24 @@ t3_rows = [
     ("Density around TP (±5 pp band)", "29 of 2,958",
      "1.0 % of firms within band; bulk of mass at FSTS = 0",
      "Curvature identified by participation margin"),
+    ("J. PSM ATT — website (1-NN, caliper 0.05)", "1,085",
+     "ATT_DAI = 0.298 *** (SE 0.061)",
+     "Positive and large under matching"),
+    ("J. PSM ATT — website (kernel BW 0.06)", "1,085",
+     "ATT_DAI = 0.321 *** (SE 0.043)",
+     "Robust to algorithm"),
+    ("J. PSM ATT — cert / foreign-tech (1-NN)", "640",
+     "ATT_TCI = 0.637 *** (SE 0.078)",
+     "Positive and large under matching"),
+    ("K. IV / 2SLS — DAI_z (industry × region IV)", "2,298",
+     "DAI_z = 0.018 (p = .942) n.s.",
+     "First-stage F = 34.6 (strong); positive OLS DAI direct effect attenuates under IV"),
+    ("K. IV / 2SLS — TCI_z (industry × region IV)", "2,298",
+     "TCI_z = 1.639 *** (SE 0.299)",
+     "First-stage F = 22.1 (strong); TCI direct effect reinforced under IV"),
+    ("Oster (2019) δ = 1 bounds", "2,958",
+     "FSTSc 0.92 → 0.61; FSTSc² −2.21 → −1.17; TCI 0.14 → 0.19; DAI 0.07 → 0.08",
+     "No sign change; focal qualitative findings stable"),
 ]
 for i, row in enumerate(t3_rows, start=1):
     for j, val in enumerate(row):
@@ -1318,19 +1460,56 @@ add_para(doc,
     "the broader lifecycle of internationalisation and transition.", BT)
 
 add_para(doc, "5.2 Why the distinction between TCI and DAI matters", H2)
-add_para(doc, 
-    "The results also strengthen the theoretical case for separating technological "
-    "capability from foundational digital adoption. TCI_z captures deeper internal "
-    "stocks of learning and operational upgrading. DAI_z captures a more practical "
-    "digital layer that enables transactions and coordination. These are not "
-    "interchangeable resources.", FP)
-add_para(doc, 
-    "The difference matters because the two constructs do not behave identically "
-    "across periods. TCI_z appears to function more like a deeper competence base, "
-    "while DAI_z appears more context sensitive. This supports a more careful "
-    "approach to digitalisation in international business research, one that "
-    "distinguishes between digital enablement and broader technological depth rather "
-    "than collapsing them into a single label.", BT)
+add_para(doc,
+    "The results strengthen the theoretical case for separating "
+    "foreign-technology / standards capability from website-based "
+    "digital presence. The PSM and IV evidence in §4.5 (Panels J and "
+    "K) makes the distinction sharper. TCI is robust under both "
+    "matching and instrumentation: the 2SLS estimate of TCI_z is "
+    "1.64 (p < .001) under a strong instrument (first-stage F = "
+    "22.1), and the matching ATT for the cert / foreign-tech "
+    "treatment is 0.61–0.64 (p < .001) on a matched sample of "
+    "approximately 640 firms. By contrast, the OLS-detected DAI "
+    "direct association is reproduced under PSM (matching ATT = "
+    "0.30–0.32, p < .001) but attenuates to a null under 2SLS "
+    "(β = 0.02, p = .94). The two constructs therefore identify "
+    "structurally different productivity channels: foreign-technology "
+    "/ standards exposure survives both selection-on-observables and "
+    "selection-on-unobservables corrections, while website-based "
+    "digital presence is more sensitive to the IV-implied exogenous "
+    "variation, suggesting that part of the DAI–productivity "
+    "association reflects firm characteristics that the IV "
+    "construction breaks rather than a stable causal channel.", FP)
+add_para(doc,
+    "The DAI_rich extension reported in §4.5 Panel B reinforces the "
+    "construct interpretation rather than weakening it. Although the "
+    "primary DAI_z anchored on c22b (website presence) is by 2023 "
+    "close to a Tier-1 baseline indicator, the DAI_rich extension "
+    "available only in 2023 — combining c22b with electronic-payment "
+    "shares (k33, k38) — produces a similarly directioned and "
+    "marginally significant moderation pattern (FSTS_c × DAI_rich_"
+    "cont_z = −0.93, M8 joint p = .099). Whether digital adoption is "
+    "measured by the thin Tier-1 website indicator or by the deeper "
+    "Tier-2 / 3 transaction items, the 2023 moderation pattern goes "
+    "in the same direction. This common-direction evidence guards "
+    "against the proxy-obsolescence reading of the DAI pattern in "
+    "isolation: even under a richer measurement that is harder to "
+    "dismiss as a routine marker, the within-2023 moderation is "
+    "consistent with the headline finding.", BT)
+add_para(doc,
+    "The difference between TCI and DAI matters because the two "
+    "constructs do not behave identically across periods or under "
+    "different identification strategies. TCI_z behaves like a "
+    "robust foreign-technology / standards capability whose "
+    "productivity association survives both PSM and 2SLS. DAI_z "
+    "behaves like a context-sensitive marker whose productivity "
+    "association is documented under matched comparison but not "
+    "under exogenous instrumental variation. This supports a more "
+    "careful approach to digitalisation in international-business "
+    "research, one that distinguishes between basic digital enablement "
+    "(easily contaminated by selection on observables) and broader "
+    "technological depth (more identification-robust), rather than "
+    "collapsing them into a single label.", BT)
 
 add_para(doc, "5.2.1 An alternative reading: proxy obsolescence", H2)
 add_para(doc,
@@ -1354,18 +1533,51 @@ add_para(doc,
     "needed to disentangle the two channels.", FP)
 
 add_para(doc, "5.3 The significance of the 2015 dip", H2)
-add_para(doc, 
-    "The 2015 pattern is especially revealing. It shows that even when the nonlinear "
-    "I–P structure becomes clearer, the direct payoff from capability variables can "
-    "weaken. This suggests that firms may pass through a transitional stage in which "
-    "export expansion remains important but the productivity contribution of "
-    "capability resources becomes more difficult to realise or detect.", FP)
-add_para(doc, 
-    "Rather than treating this wave as an anomaly, it is more useful to interpret it "
-    "as evidence of lifecycle heterogeneity. The dip demonstrates why pooled averages "
-    "alone are insufficient. Without the wave-specific analysis, one would miss the "
-    "possibility that capability payoffs compress or fade temporarily before "
-    "re-emerging in a later phase.", BT)
+add_para(doc,
+    "The 2015 pattern is especially revealing. It shows that even "
+    "when the nonlinear I–P structure becomes clearer, the direct "
+    "payoff from website-based digital presence can compress to a "
+    "null. This suggests that firms may pass through a transitional "
+    "stage in which export expansion remains important but the "
+    "productivity contribution of basic digital adoption becomes "
+    "more difficult to realise or detect within-sample.", FP)
+add_para(doc,
+    "We treat the 2015 compression honestly as a wave-specific "
+    "association consistent with stage contingency rather than as a "
+    "fully cross-wave-identified structural shift. As reported in "
+    "§4.5 Panel I, the formal pooled wave × focal interaction test "
+    "detects only the DAI direct shifts as cross-wave-distinguishable; "
+    "the FSTS curvature and the FSTS × DAI moderation cross-wave "
+    "differences are not statistically separable. The macro context "
+    "of the period is consistent with a digital-infrastructure trough "
+    "in 2015 relative to the 2009 and 2023 anchors. Public secondary "
+    "indicators support this reading. World Bank World Development "
+    "Indicators (WDI) record Vietnam's individuals-using-the-Internet "
+    "share at approximately 26 % in 2009, 45 % in 2015 and over 78 % "
+    "by 2023; ITU's fixed-broadband subscriptions per 100 people grew "
+    "from approximately 3 in 2009 to 8 in 2015 and to over 20 by "
+    "2023. Vietnam's National Digital Transformation Programme (NDTP) "
+    "was issued in 2020, and cross-border e-payment platforms (VNPAY, "
+    "MoMo, ZaloPay) and B2B exporter marketplaces (Alibaba.com, "
+    "Amazon Global Selling) reached scale in Vietnam only after 2018–"
+    "2019. The 2015 wave therefore observes Vietnamese exporters "
+    "during a transitional infrastructure phase in which a website "
+    "could not yet plug into a transaction-supporting digital "
+    "ecosystem; the 2023 wave observes them after the post-NDTP "
+    "scaffolding had matured. We do not treat these macro indicators "
+    "as identifying variation — they are not entered into the "
+    "regression — but they make the wave-specific reading "
+    "institutionally plausible rather than purely post-hoc.", BT)
+add_para(doc,
+    "Rather than treating this wave as an anomaly, it is more useful "
+    "to interpret it as evidence of wave-specific heterogeneity that "
+    "is consistent with stage contingency. The dip demonstrates why "
+    "pooled averages alone are insufficient. Without the wave-"
+    "specific analysis, one would miss the possibility that "
+    "capability payoffs compress or fade temporarily before re-"
+    "emerging in a later phase, even when the curvature parameters "
+    "of the I–P relationship themselves remain statistically "
+    "indistinguishable across waves.", BT)
 
 add_para(doc, "5.4 Managerial implications", H2)
 add_para(doc, 

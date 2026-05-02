@@ -145,3 +145,11 @@ common_N_reconciled_2023,M8,DAI_z,-0.0111,0.073,0.8796,1013
 common_N_reconciled_2023,M8,FSTSc_DAIz,-0.9121,0.4503,0.0428,1013
 common_N_reconciled_2023,M8,FSTSc2_DAIz,1.0428,0.633,0.0995,1013
 common_N_reconciled_2023,VNM2023,joint_F_DAI_M8,2.7833,,0.0623,1013
+PSM_J_NN1_caliper005,VNMpooled,ATT_DAI_treat,0.2982,0.0611,0.0,1085
+PSM_J_kernel_bw006,VNMpooled,ATT_DAI_treat,0.3214,0.0431,0.0,1085
+PSM_J_NN1_caliper005,VNMpooled,ATT_TCI_treat,0.6372,0.0775,0.0,644
+PSM_J_kernel_bw006,VNMpooled,ATT_TCI_treat,0.609,0.0555,0.0,639
+IV_2SLS_K_DAI,VNMpooled,DAI_z (instrumented),0.0181,0.2493,0.9421,2298
+IV_2SLS_K_DAI,VNMpooled,first_stage_F (DAI on DAI_iv),34.622,,,2298
+IV_2SLS_K_TCI,VNMpooled,TCI_z (instrumented),1.6392,0.2992,0.0,2298
+IV_2SLS_K_TCI,VNMpooled,first_stage_F (TCI on TCI_iv),22.088,,,2298
