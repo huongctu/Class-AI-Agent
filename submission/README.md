@@ -44,6 +44,13 @@ submission/
 │   ├── figure_2d.{pdf,png}   ← pooled
 │   ├── figure_2_main_results.{pdf,png}   ← legacy combined
 │   └── figure_3_moderator_marginals.{pdf,png}   ← v5.7 moderator marginals
+├── figures_excel/                         ← data + native chart + embedded PNG
+│   ├── figure_1_conceptual_model.xlsx     (README + diagram + hypothesis table)
+│   ├── figure_2a.xlsx                     (Data / Chart / Image sheets — 2009)
+│   ├── figure_2b.xlsx                     (… 2015)
+│   ├── figure_2c.xlsx                     (… 2023)
+│   ├── figure_2d.xlsx                     (… pooled)
+│   └── figure_3_moderator_marginals.xlsx  (Data 3a/Chart 3a/Data 3b/Chart 3b/Image)
 └── tables/
     ├── table_1_descriptives.csv
     ├── coefs_main_models.csv
