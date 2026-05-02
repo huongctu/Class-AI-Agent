@@ -10,7 +10,7 @@ are reproducible from the scripts in the parent repository.
   and Digital Adoption*
 - **Corresponding author:** Phan Anh Tu (patu@ctu.edu.vn)
 - **Co-author:** Do Thuy Huong (huongp1323001@gstudent.ctu.edu.vn)
-- **Last refresh:** 2026-05-02 (v5.3)
+- **Last refresh:** 2026-05-02 (v5.7 — reviewer-driven revision)
 
 ## What to upload to Editorial Manager
 
@@ -19,8 +19,10 @@ are reproducible from the scripts in the parent repository.
 | `manuscript_full_with_authors.docx` | *Title page* (or "Manuscript with author info") |
 | `manuscript_blinded.docx` | *Main document* (anonymous review copy) |
 | `cover_letter_ijoem.docx` | *Cover letter* |
+| `response_letter_to_reviewer.docx` | *Response to reviewer* (point-by-point) |
 | `figures/figure_1_conceptual_model.{pdf,png}` | *Figure 1* |
-| `figures/figure_2_main_results.{pdf,png}` | *Figure 2* |
+| `figures/figure_2a.{pdf,png}` … `figure_2d.{pdf,png}` | *Figures 2a–2d* |
+| `figures/figure_3_moderator_marginals.{pdf,png}` | *Figure 3* (predicted curves at low/high DAI/TCI) |
 | `tables/*.csv` | *Supplementary materials* (optional) |
 | `SUBMISSION_CHECKLIST.md` | Internal checklist (do not upload) |
 
@@ -32,18 +34,23 @@ submission/
 ├── manuscript_full_with_authors.docx      ← title-page version (with authors)
 ├── manuscript_blinded.docx                ← anonymous review copy
 ├── cover_letter_ijoem.docx                ← editor cover letter
+├── response_letter_to_reviewer.docx       ← point-by-point reviewer response
 ├── SUBMISSION_CHECKLIST.md                ← pre-upload checklist
 ├── figures/
-│   ├── figure_1_conceptual_model.pdf
-│   ├── figure_1_conceptual_model.png
-│   ├── figure_2_main_results.pdf
-│   └── figure_2_main_results.png
+│   ├── figure_1_conceptual_model.{pdf,png}
+│   ├── figure_2a.{pdf,png}   ← 2009
+│   ├── figure_2b.{pdf,png}   ← 2015
+│   ├── figure_2c.{pdf,png}   ← 2023
+│   ├── figure_2d.{pdf,png}   ← pooled
+│   ├── figure_2_main_results.{pdf,png}   ← legacy combined
+│   └── figure_3_moderator_marginals.{pdf,png}   ← v5.7 moderator marginals
 └── tables/
     ├── table_1_descriptives.csv
     ├── coefs_main_models.csv
     ├── joint_tests_main_models.csv
     ├── table_lind_mehlum.csv
     ├── table_3_robustness.csv
+    ├── table_density_around_tp.csv         ← v5.7 density around TP
     ├── selection_checks.csv
     └── table_paternoster.csv
 ```
