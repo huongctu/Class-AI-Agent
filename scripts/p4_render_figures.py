@@ -347,11 +347,129 @@ def render_figure_1():
     plt.close(fig)
 
 
+def render_figure_3(pooled):
+    """Figure 3 — Predicted I–P curves at low and high values of DAI_z and
+    TCI_z. Two stacked panels (3a for DAI, 3b for TCI), each comparing the
+    predicted ln(labour productivity) curve at the 25th-percentile and the
+    75th-percentile of the moderator, with all other controls held at the
+    pooled within-wave mean. Helps reviewers see whether moderation
+    changes the height, the steepness, or the location of the curve.
+    """
+    import pandas as pd
+    base = ["lnEmp", "FirmAge", "ForeignOwned"]
+
+    def fit_full_M8(df):
+        df = df.copy()
+        df["FSTSc_DAIz"] = df["FSTSc"] * df["DAI_z"]
+        df["FSTSc2_DAIz"] = df["FSTSc2"] * df["DAI_z"]
+        parts = [np.ones((len(df), 1))]
+        names = ["const"]
+        for v in ["FSTSc", "FSTSc2", "TCI_z", "DAI_z",
+                  "FSTSc_DAIz", "FSTSc2_DAIz", "lnEmp", "FirmAge",
+                  "ForeignOwned"]:
+            parts.append(df[v].to_numpy().reshape(-1, 1))
+            names.append(v)
+        sec = pd.get_dummies(df["sector1"].astype(int), prefix="sector1",
+                             drop_first=True, dtype=float)
+        parts.append(sec.to_numpy())
+        names.extend(sec.columns.tolist())
+        wf = pd.get_dummies(df["wave"].astype(int), prefix="wave",
+                            drop_first=True, dtype=float)
+        parts.append(wf.to_numpy())
+        names.extend(wf.columns.tolist())
+        X = np.hstack(parts)
+        fit = sm.OLS(df["lnLP"].to_numpy(), X).fit(cov_type="HC1")
+        return fit, names
+
+    fit, names = fit_full_M8(pooled)
+
+    fig, axes = plt.subplots(1, 2, figsize=(11.5, 4.8), sharey=True)
+    fmean = pooled["FSTS"].mean()
+    f_max = min(1.0, pooled["FSTS"].max())
+    grid = np.linspace(0, f_max, 100)
+    fsts_c = grid - fmean
+    fsts_c2 = fsts_c ** 2
+
+    means = {v: pooled[v].mean() for v in ["lnEmp", "FirmAge", "ForeignOwned",
+                                            "TCI_z", "DAI_z"]}
+    sector_mode = int(pooled["sector1"].mode().iloc[0])
+    wave_mode = int(pooled["wave"].mode().iloc[0])
+
+    def x_row(f_c, f_c2, dai_z, tci_z):
+        x = np.zeros(len(names))
+        x[names.index("const")] = 1.0
+        x[names.index("FSTSc")] = f_c
+        x[names.index("FSTSc2")] = f_c2
+        x[names.index("TCI_z")] = tci_z
+        x[names.index("DAI_z")] = dai_z
+        x[names.index("FSTSc_DAIz")] = f_c * dai_z
+        x[names.index("FSTSc2_DAIz")] = f_c2 * dai_z
+        x[names.index("lnEmp")] = means["lnEmp"]
+        x[names.index("FirmAge")] = means["FirmAge"]
+        x[names.index("ForeignOwned")] = means["ForeignOwned"]
+        for n in names:
+            if n.startswith("sector1_") and int(n.split("_")[1]) == sector_mode:
+                x[names.index(n)] = 1.0
+            if n.startswith("wave_") and int(n.split("_")[1]) == wave_mode:
+                x[names.index(n)] = 1.0
+        return x
+
+    p25_dai, p75_dai = pooled["DAI_z"].quantile([0.25, 0.75])
+    p25_tci, p75_tci = pooled["TCI_z"].quantile([0.25, 0.75])
+
+    # Panel 3a — vary DAI, hold TCI at mean
+    ax = axes[0]
+    for label, dz, color, ls in [
+        (f"Low DAI_z (p25 = {p25_dai:.2f})",  p25_dai, "black", "--"),
+        (f"High DAI_z (p75 = {p75_dai:.2f})", p75_dai, "black", "-"),
+    ]:
+        yhat = np.array([float(x_row(fc, fc2, dz, means["TCI_z"]) @ fit.params)
+                         for fc, fc2 in zip(fsts_c, fsts_c2)])
+        ax.plot(grid * 100, yhat, color=color, linestyle=ls, linewidth=2.0,
+                label=label)
+    ax.set_title("Figure 3a. Predicted ln(LP) by FSTS at low / high DAI_z",
+                 fontsize=10.5, fontweight="bold")
+    ax.set_xlabel("Direct-export intensity, FSTS (%)")
+    ax.set_ylabel("Predicted ln(labour productivity)")
+    ax.grid(True, alpha=0.25, linestyle=":")
+    ax.legend(fontsize=8, loc="best", frameon=False)
+
+    # Panel 3b — vary TCI, hold DAI at mean
+    ax = axes[1]
+    for label, tz, color, ls in [
+        (f"Low TCI_z (p25 = {p25_tci:.2f})",  p25_tci, "black", "--"),
+        (f"High TCI_z (p75 = {p75_tci:.2f})", p75_tci, "black", "-"),
+    ]:
+        yhat = np.array([float(x_row(fc, fc2, means["DAI_z"], tz) @ fit.params)
+                         for fc, fc2 in zip(fsts_c, fsts_c2)])
+        ax.plot(grid * 100, yhat, color=color, linestyle=ls, linewidth=2.0,
+                label=label)
+    ax.set_title("Figure 3b. Predicted ln(LP) by FSTS at low / high TCI_z",
+                 fontsize=10.5, fontweight="bold")
+    ax.set_xlabel("Direct-export intensity, FSTS (%)")
+    ax.grid(True, alpha=0.25, linestyle=":")
+    ax.legend(fontsize=8, loc="best", frameon=False)
+
+    fig.suptitle("Figure 3. Marginal-effect view of capability and digital "
+                 "moderators on the I–P curve (pooled M8, OLS HC1)",
+                 fontsize=11.5, fontweight="bold")
+    fig.text(0.5, 0.01,
+             "Source: World Bank Enterprise Surveys "
+             "(https://www.enterprisesurveys.org); authors' calculations on "
+             "Vietnam 2009/2015/2023 pooled (N = 2,958).",
+             ha="center", va="bottom", fontsize=7, style="italic")
+    fig.tight_layout(rect=(0, 0.04, 1, 0.93))
+    fig.savefig(OUT_FIGS / "figure_3_moderator_marginals.pdf")
+    fig.savefig(OUT_FIGS / "figure_3_moderator_marginals.png", dpi=300)
+    plt.close(fig)
+
+
 def main():
     waves = {y: build_wave(y) for y in (2009, 2015, 2023)}
     pooled = build_pooled(waves)
     render_figure_1()
     render_figure_2(waves, pooled)
+    render_figure_3(pooled)
     print(f"Figures written to {OUT_FIGS}")
 
 

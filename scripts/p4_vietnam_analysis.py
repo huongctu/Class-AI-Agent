@@ -744,6 +744,192 @@ def run_sector_split(pooled: pd.DataFrame) -> list[dict]:
     return rows
 
 
+def run_exporter_only(waves: dict[int, pd.DataFrame], pooled: pd.DataFrame) -> list[dict]:
+    """Panel H — refit M2 / M7 / M8 on the exporter sub-sample (FSTS > 0).
+
+    Tests whether the inverted-U survives once non-exporters (FSTS = 0) are
+    removed, addressing the reviewer concern that the curvature could be
+    driven by the zero/non-zero contrast on a zero-inflated FSTS.
+    """
+    rows: list[dict] = []
+    base = ["lnEmp", "FirmAge", "ForeignOwned"]
+
+    samples = [
+        ("VNM2009_exp", waves[2009][waves[2009]["FSTS"] > 0].copy(), ["sector1"]),
+        ("VNM2015_exp", waves[2015][waves[2015]["FSTS"] > 0].copy(), ["sector1"]),
+        ("VNM2023_exp", waves[2023][waves[2023]["FSTS"] > 0].copy(), ["sector1"]),
+        ("VNMpooled_exp", pooled[pooled["FSTS"] > 0].copy(), ["sector1", "wave"]),
+    ]
+
+    for label, df, dummies in samples:
+        if len(df) < 30:
+            continue
+        # Re-center FSTSc within the exporter sub-sample
+        df["FSTSc"] = df["FSTS"] - df["FSTS"].mean()
+        df["FSTSc2"] = df["FSTSc"] ** 2
+        df["FSTSc_DAIz"] = df["FSTSc"] * df["DAI_z"]
+        df["FSTSc2_DAIz"] = df["FSTSc2"] * df["DAI_z"]
+
+        m2 = fit_ols_hc1(df, ["FSTSc", "FSTSc2"] + base, dummies)
+        rows.extend(extract_focal(m2, ["FSTSc", "FSTSc2"], "exporter_only", "M2"))
+
+        m7 = fit_ols_hc1(df, ["FSTSc", "FSTSc2", "TCI_z", "DAI_z"] + base, dummies)
+        rows.extend(extract_focal(m7, ["FSTSc", "FSTSc2", "TCI_z", "DAI_z"],
+                                  "exporter_only", "M7"))
+
+        m8 = fit_ols_hc1(
+            df,
+            ["FSTSc", "FSTSc2", "TCI_z", "DAI_z", "FSTSc_DAIz", "FSTSc2_DAIz"] + base,
+            dummies,
+        )
+        F, p = joint_test(m8, ["FSTSc_DAIz", "FSTSc2_DAIz"])
+        rows.extend(extract_focal(
+            m8,
+            ["FSTSc", "FSTSc2", "TCI_z", "DAI_z", "FSTSc_DAIz", "FSTSc2_DAIz"],
+            "exporter_only", "M8",
+        ))
+        rows.append({
+            "panel": "exporter_only",
+            "sample": label,
+            "term": "joint_F_DAI_M8",
+            "b": round(float(F), 4), "se": np.nan,
+            "p": round(float(p), 4), "n": len(df),
+        })
+        rows.append({
+            "panel": "exporter_only",
+            "sample": label,
+            "term": "N",
+            "b": float(len(df)), "se": np.nan, "p": np.nan, "n": len(df),
+        })
+    return rows
+
+
+def run_wave_interaction_test(pooled: pd.DataFrame) -> list[dict]:
+    """Panel I — pooled wave × focal interaction joint Wald test.
+
+    Adds (FSTSc, FSTSc2, DAIz, TCIz) × wave dummy interactions to the
+    pooled M8 specification and reports whether the cross-wave
+    heterogeneity in those focal terms is jointly distinguishable from
+    zero. This is the formal counterpart to Panel F's pairwise z-tests.
+    """
+    rows: list[dict] = []
+    base = ["lnEmp", "FirmAge", "ForeignOwned"]
+    df = pooled.copy()
+    waves_present = sorted(df["wave"].unique().astype(int).tolist())
+    drop_w = waves_present[0]
+
+    interaction_cols = []
+    for v in ["FSTSc", "FSTSc2", "DAI_z", "TCI_z"]:
+        for w in waves_present[1:]:
+            colname = f"{v}_x_w{w}"
+            df[colname] = df[v] * (df["wave"] == w).astype(float)
+            interaction_cols.append(colname)
+
+    df["FSTSc_DAIz"] = df["FSTSc"] * df["DAI_z"]
+    df["FSTSc2_DAIz"] = df["FSTSc2"] * df["DAI_z"]
+    base_focal = ["FSTSc", "FSTSc2", "TCI_z", "DAI_z", "FSTSc_DAIz", "FSTSc2_DAIz"]
+
+    fit = fit_ols_hc1(df, base_focal + interaction_cols + base, ["sector1", "wave"])
+
+    blocks = {
+        "FSTSc_x_wave":  [c for c in interaction_cols if c.startswith("FSTSc_x_")],
+        "FSTSc2_x_wave": [c for c in interaction_cols if c.startswith("FSTSc2_x_")],
+        "DAIz_x_wave":   [c for c in interaction_cols if c.startswith("DAI_z_x_")],
+        "TCIz_x_wave":   [c for c in interaction_cols if c.startswith("TCI_z_x_")],
+    }
+    for block_name, terms in blocks.items():
+        if not terms:
+            continue
+        F, p = joint_test(fit, terms)
+        rows.append({
+            "panel": "wave_interaction_pooled",
+            "sample": "VNMpooled",
+            "term": f"joint_F_{block_name}",
+            "b": round(float(F), 4), "se": np.nan,
+            "p": round(float(p), 4), "n": fit["n"],
+        })
+    F_all, p_all = joint_test(fit, interaction_cols)
+    rows.append({
+        "panel": "wave_interaction_pooled",
+        "sample": "VNMpooled",
+        "term": "joint_F_all_wave_interactions",
+        "b": round(float(F_all), 4), "se": np.nan,
+        "p": round(float(p_all), 4), "n": fit["n"],
+    })
+    return rows
+
+
+def run_density_check(waves: dict[int, pd.DataFrame], pooled: pd.DataFrame,
+                      tp_table_path: Path) -> list[dict]:
+    """Density-around-turning-point check.
+
+    Reports the count and share of firms in the FSTS interval [tp − 5pp,
+    tp + 5pp] for each wave + pooled, using the turning points already
+    estimated and stored in table_lind_mehlum.csv.
+    """
+    tp = pd.read_csv(tp_table_path)
+    rows: list[dict] = []
+    samples = [
+        ("VNM2009", waves[2009]),
+        ("VNM2015", waves[2015]),
+        ("VNM2023", waves[2023]),
+        ("VNMpooled", pooled),
+    ]
+    for sample, df in samples:
+        match = tp[tp["sample"] == sample]
+        if match.empty:
+            continue
+        tp_raw = float(match["tp_raw"].iloc[0])
+        n_total = len(df)
+        n_below = int((df["FSTS"] < tp_raw - 0.05).sum())
+        n_around = int(((df["FSTS"] >= tp_raw - 0.05) &
+                        (df["FSTS"] <= tp_raw + 0.05)).sum())
+        n_above = int((df["FSTS"] > tp_raw + 0.05).sum())
+        n_zero = int((df["FSTS"] == 0).sum())
+        rows.append({
+            "sample": sample,
+            "tp_raw": round(tp_raw, 4),
+            "n_total": n_total,
+            "n_zero_FSTS": n_zero,
+            "n_below_tp_minus_5pp": n_below,
+            "n_within_5pp_of_tp": n_around,
+            "n_above_tp_plus_5pp": n_above,
+            "share_within_5pp_of_tp": round(n_around / n_total, 4),
+        })
+    return rows
+
+
+def run_panelC_reconciled(waves: dict[int, pd.DataFrame]) -> list[dict]:
+    """Reconciled Panel C — DAI_z M8 moderation re-estimated on the exact
+    same N = 1,013 sample as the main 2023 M8, so the joint F and p must
+    match the main result by construction.
+    """
+    rows: list[dict] = []
+    base = ["lnEmp", "FirmAge", "ForeignOwned"]
+    df = waves[2023].copy()
+    df["FSTSc_DAIz"] = df["FSTSc"] * df["DAI_z"]
+    df["FSTSc2_DAIz"] = df["FSTSc2"] * df["DAI_z"]
+    fit = fit_ols_hc1(
+        df,
+        ["FSTSc", "FSTSc2", "TCI_z", "DAI_z", "FSTSc_DAIz", "FSTSc2_DAIz"] + base,
+        ["sector1"],
+    )
+    F, p = joint_test(fit, ["FSTSc_DAIz", "FSTSc2_DAIz"])
+    rows.extend(extract_focal(
+        fit,
+        ["FSTSc", "FSTSc2", "TCI_z", "DAI_z", "FSTSc_DAIz", "FSTSc2_DAIz"],
+        "common_N_reconciled_2023", "M8",
+    ))
+    rows.append({
+        "panel": "common_N_reconciled_2023",
+        "sample": "VNM2023",
+        "term": "joint_F_DAI_M8",
+        "b": round(float(F), 4), "se": np.nan,
+        "p": round(float(p), 4), "n": fit["n"],
+    })
+    return rows
+
+
 def main() -> None:
     waves = {y: build_wave(y) for y in (2009, 2015, 2023)}
     for y, df in waves.items():
@@ -775,7 +961,15 @@ def main() -> None:
 
     rob = run_robustness(waves, pooled)
     rob.extend(run_sector_split(pooled))
+    rob.extend(run_exporter_only(waves, pooled))
+    rob.extend(run_wave_interaction_test(pooled))
+    rob.extend(run_panelC_reconciled(waves))
     pd.DataFrame(rob).to_csv(OUT_TABLES / "table_3_robustness.csv", index=False)
+
+    density = run_density_check(waves, pooled,
+                                OUT_TABLES / "table_lind_mehlum.csv")
+    pd.DataFrame(density).to_csv(OUT_TABLES / "table_density_around_tp.csv",
+                                 index=False)
     print(f"\nrobustness panels written: {len(rob)} rows")
 
     summary = {

@@ -89,8 +89,8 @@ add_para(doc,
     "Emerging Market: The Roles of Technological Capability and Digital "
     "Adoption", "Title")
 add_para(doc,
-    ("v5.6 — IJoEM blinded manuscript with audited references and recent IB literature (Vietnam 2009/2015/2023)" if BLINDED
-     else "v5.6 — IJoEM submission draft with audited references and recent IB literature (Vietnam 2009/2015/2023)"),
+    ("v5.7 — IJoEM blinded manuscript: reviewer-driven revision (DAI/TCI relabel, exporter-only, wave-interaction, Figure 3)" if BLINDED
+     else "v5.7 — IJoEM submission draft: reviewer-driven revision (DAI/TCI relabel, exporter-only, wave-interaction, Figure 3)"),
     "Subtitle")
 add_para(doc, "2026-05-02", "Date")
 
@@ -157,13 +157,13 @@ add_para(doc,
 add_para(doc,
     "Originality/value — The study contributes to research on emerging markets "
     "by showing that the productivity returns to internationalisation depend "
-    "not only on export intensity but also on how firms combine deeper "
-    "capability accumulation with basic digital adoption under transitional "
-    "institutional conditions. It also offers a cleaner measurement strategy "
-    "by separating technological capability from a harmonised website-based "
-    "digital-adoption proxy with no shared items, and shows that the sign of "
-    "digital moderation is not theoretically fixed but contingent on the stage "
-    "of digital transition.", BT)
+    "not only on export intensity but also on how firms combine foreign-"
+    "technology / standards capability with foundational website-based "
+    "digital adoption under transitional institutional conditions. It also "
+    "offers a cleaner measurement strategy by separating these two domains "
+    "with no shared items, and shows that the wave-specific pattern of "
+    "digital moderation is consistent with stage contingency, with detectable "
+    "moderation concentrated in 2023.", BT)
 add_para(doc,
     "Keywords: internationalisation–performance; emerging markets; digital "
     "adoption; technological capability; Vietnam; firm productivity.", BT)
@@ -374,83 +374,95 @@ add_para(doc,
     "H1. The relationship between internationalisation and firm performance in Vietnam "
     "is nonlinear.", BX)
 
-add_para(doc, "2.2 Technological capability and firm performance", H2)
-add_para(doc, 
-    "Technological capability refers to deeper firm-internal stocks of learning, "
-    "knowledge integration, process improvement, and problem-solving capacity. It is "
-    "central to the firm’s ability to upgrade operations, adapt to changing market "
-    "demands, and absorb external knowledge and adapt routines under changing conditions (Cohen and Levinthal, 1990; Lall, 1992; Helfat and Peteraf, 2003; Teece, 2007). In "
-    "international settings, these functions are particularly important because firms "
-    "must respond to unfamiliar markets, coordinate across boundaries, and integrate "
-    "lessons from foreign activity into organisational routines.", FP)
-add_para(doc, 
-    "A firm with stronger technological capability is more likely to transform "
-    "international exposure into productivity gains. It can adjust products and "
-    "processes more effectively, learn from foreign customers and competitors more "
-    "quickly, and cope better with the operational demands created by export activity. "
-    "Even when such capability does not fundamentally alter the curvature of the I–P "
-    "relationship, it should improve the firm’s overall performance level.", BT)
+add_para(doc, "2.2 Foreign-technology and standards capability and firm performance", H2)
 add_para(doc,
-    "This implies a positive direct association between technological capability and "
-    "firm performance in Vietnam. Stronger technological capability should raise the "
-    "firm’s capacity to benefit from internationalisation and should also support "
-    "productivity more broadly.", BT)
+    "Following the Lall (1992) tradition for emerging-market firms, this paper uses "
+    "a measurement-tight reading of technological capability: a foreign-technology "
+    "and standards capability that captures a firm's exposure to externally "
+    "validated technological inputs — internationally recognised quality "
+    "certification and foreign-licensed technology. This is one observable "
+    "facet of the broader Cohen-Levinthal (1990) absorptive-capacity construct "
+    "and the dynamic-capability construct of Teece (2007), but the present "
+    "measure does not claim to identify the full absorptive-capacity stock; it "
+    "captures the externally facing component of that stock. In international "
+    "settings, this externally facing capability is particularly important "
+    "because firms must respond to unfamiliar markets, meet foreign quality "
+    "standards, and integrate externally licensed technology into "
+    "organisational routines.", FP)
 add_para(doc,
-    "Operationally, technological capability in the Lall (1992) tradition is built "
-    "from items that capture the firm’s ability to absorb, deploy, and improve "
-    "foreign technology: foreign-licensed technology indicates direct technology "
-    "transfer; internationally recognised quality certification indicates the "
-    "organisational ability to meet foreign quality standards; product-innovation "
-    "and R&D activity indicate the absorptive capacity (năng lực hấp thụ in the "
-    "Cohen and Levinthal sense) needed to convert external knowledge into productivity "
-    "gains. The constructed TCI_z therefore captures stock rather than flow: it "
-    "indexes the firm’s accumulated capability to engage with foreign technology "
-    "and standards, not the volume of any one digital transaction.", BT)
+    "A firm with stronger foreign-technology / standards capability is more "
+    "likely to transform international exposure into productivity gains. It "
+    "can adjust products and processes to meet foreign requirements more "
+    "effectively, integrate licensed foreign technology into production, and "
+    "cope better with the operational demands created by export activity. "
+    "Even when this capability does not fundamentally alter the curvature of "
+    "the I–P relationship, it should improve the firm's overall performance "
+    "level by raising the productivity floor among exposed firms.", BT)
 add_para(doc,
-    "H2. Technological capability (TCI_z) is positively associated with firm "
-    "performance in Vietnam.", BX)
+    "This implies a positive direct association between foreign-technology / "
+    "standards capability and firm performance in Vietnam. We treat it here "
+    "as a construct that should raise the firm's capacity to benefit from "
+    "internationalisation and should also support productivity more broadly, "
+    "without assuming that it indexes the full innovation-and-R&D dimension.", BT)
+add_para(doc,
+    "Operationally, the primary TCI_z is built from two items: internationally "
+    "recognised quality certification (b8) and foreign-licensed technology "
+    "(e6). These items measure exposure to foreign-technology and standards "
+    "channels rather than internal R&D effort or patent activity. A broader "
+    "innovation-augmented composite (TCI_full, adding product innovation h1 "
+    "and R&D activity h8) is reported in §4.5 Panel A as a boundary condition: "
+    "if direct effects attenuate when innovation items are added, this "
+    "indicates that the primary measure is informative specifically about the "
+    "foreign-technology / standards channel, not the broader absorptive-"
+    "capacity stock.", BT)
+add_para(doc,
+    "H2. Foreign-technology / standards capability (TCI_z) is positively "
+    "associated with firm performance in Vietnam.", BX)
 
-add_para(doc, "2.3 Foundational digital adoption and firm performance", H2)
-add_para(doc, 
-    "Foundational digital adoption captures a more basic layer of digital readiness "
-    "than technological capability. It reflects the presence and use of digitally "
-    "enabled interfaces, transaction-supporting tools, and practical digital "
-    "mechanisms that help firms communicate, transact, and coordinate. While this "
-    "digital layer may not represent the full depth of digitally integrated "
-    "organisational capability, it can still matter for firm performance by reducing "
-    "information frictions and improving process speed (Bharadwaj et al., 2013; "
-    "Verhoef et al., 2021; Banalieva and Dhanaraj, 2019).", FP)
-add_para(doc, 
-    "For firms participating in foreign markets, foundational digital adoption may be "
-    "especially valuable. Exporting requires timely information exchange, coordination "
-    "with customers and partners, and efficient processing of transactions across "
-    "distance. Digital tools can lower these frictions and create direct performance "
-    "gains. At the same time, those gains are unlikely to be automatic. Their value "
-    "depends on whether the firm has the scale, routines, and managerial capacity "
-    "needed to use digital tools effectively.", BT)
+add_para(doc, "2.3 Website-based digital presence and firm performance", H2)
 add_para(doc,
-    "Because of this, foundational digital adoption should be expected to show a "
-    "positive average association with performance, but not necessarily one that is "
-    "uniform across all contexts and periods. The average effect may be positive even "
-    "if the realised payoff varies across stages of internationalisation.", BT)
+    "The primary DAI_z used in this paper is a website-based digital "
+    "presence measure: a binary indicator of whether the firm has its own "
+    "website. This is a foundational and cross-wave-comparable marker of "
+    "digital adoption — it does not measure transaction-level digital "
+    "integration, electronic payment infrastructure, or digital "
+    "transformation in the Bharadwaj et al. (2013) / Verhoef et al. (2021) / "
+    "Vial (2019) sense. We use it here precisely because it is the only "
+    "digital indicator the WBES instrument carries comparably across the "
+    "2009 / 2015 / 2023 waves; transaction-level items such as electronic-"
+    "payment shares appear only in the 2023 questionnaire.", FP)
 add_para(doc,
-    "It is useful at this point to be precise about what the DAI_z composite captures "
-    "and what it does not. Following Verhoef et al. (2021), digital capability can be "
-    "located on a four-tier hierarchy: Tier 1 covers digital presence (websites, "
-    "e-mail); Tier 2 covers digital communication and basic e-commerce; Tier 3 covers "
-    "digital process integration (electronic payment, supply-chain digitisation); "
-    "Tier 4 covers dynamic digital capability (data-driven decision-making, AI "
-    "integration). The cross-wave-comparable DAI_z used in this paper is anchored in "
-    "Tier 1–2 indicators (website presence, foreign-licensed technology) rather than "
-    "the Tier 3–4 dynamic-capability layer; richer Tier 3 items are introduced as a "
-    "2023-only robustness extension in §4.5. This deliberate restriction prevents "
-    "us from conflating the basic digital-adoption channel — which is what the "
-    "construct can identify across the 2009–2023 window — with the deeper "
-    "digital-transformation layer that the WBES instrument cannot consistently "
-    "measure across waves.", BT)
+    "For firms participating in foreign markets, even foundational website "
+    "adoption may be valuable. A website lowers the cost at which foreign "
+    "customers can locate the firm, supports asynchronous communication "
+    "across time zones, and signals basic legitimacy in international "
+    "transactions. The scope of these gains is bounded — a website does not "
+    "by itself integrate transactions, supply chains, or decision-making — "
+    "and the realised payoff depends on whether the firm has the scale and "
+    "routines to translate online visibility into export business.", BT)
 add_para(doc,
-    "H3. Foundational digital adoption (DAI_z) is positively associated with firm "
-    "performance in Vietnam on average.", BX)
+    "Website-based digital presence should therefore show a positive average "
+    "association with performance, but not necessarily one that is uniform "
+    "across waves and stages. The information value of a website may have "
+    "shifted across the 2009–2023 window: in 2009 a website was a "
+    "distinguishing market interface; by 2023 it is closer to a routine "
+    "marker of basic digital presence. The §5 discussion takes this proxy "
+    "obsolescence reading seriously as one alternative to a pure stage-"
+    "contingency story.", BT)
+add_para(doc,
+    "Following Verhoef et al. (2021), digital capability can be located on "
+    "a four-tier hierarchy: Tier 1 — digital presence (websites, e-mail); "
+    "Tier 2 — digital communication and basic e-commerce; Tier 3 — digital "
+    "process integration (electronic payment, supply-chain digitisation); "
+    "Tier 4 — dynamic digital capability (data-driven decision-making, AI "
+    "integration). The primary DAI_z anchors at Tier 1 only. A Tier 3-style "
+    "extension (DAI_rich) is reported in §4.5 Panel B for the 2023 wave, "
+    "where electronic-payment items become available. The label \"foundational "
+    "website adoption\" therefore tracks what the construct can actually "
+    "identify across the 2009–2023 window.", BT)
+add_para(doc,
+    "H3. Website-based digital presence (DAI_z) is positively associated "
+    "with firm performance in Vietnam on average.", BX)
 
 add_para(doc, "2.4 Stage-contingent digital value", H2)
 add_para(doc, 
@@ -490,9 +502,11 @@ add_para(doc,
     "of deeper integration and amplify coordination strain) is fundamentally an "
     "empirical question that this paper treats as the test of H4.", BT)
 add_para(doc,
-    "H4. The performance relevance of foundational digital adoption (DAI_z) in Vietnam "
-    "varies across stages of internationalisation and becomes more conditional in "
-    "later phases of transition.", BX)
+    "H4 (exploratory). The performance relevance of website-based digital "
+    "presence (DAI_z) in Vietnam varies across stages of internationalisation; "
+    "we treat the within-wave moderation as exploratory and concentrate the "
+    "test on 2023, where the post-NDTP environment plausibly enables a "
+    "moderation channel.", BX)
 
 # Conceptual model (embedded in body, just after H4) ---------------------------
 _FIG_DIR = Path("/home/user/Class-AI-Agent/p4_vietnam/output/figures")
@@ -525,8 +539,8 @@ add_para(doc,
 add_para(doc, 
     "The effective estimation sample varies across model specifications because of "
     "missing values in the capability variables. In the full wave-specific models, "
-    "the usable samples are 989 observations for 2009, 958 for 2015, and 1,013 for "
-    "2023. The pooled full model contains 2,960 observations. This structure provides "
+    "the usable samples are 989 observations for 2009, 956 for 2015, and 1,013 for "
+    "2023. The pooled full model contains 2,958 observations. This structure provides "
     "sufficient variation to compare direct effects and conditional patterns across "
     "stages.", BT)
 
@@ -538,15 +552,20 @@ add_para(doc,
     "can be entered jointly to test for nonlinearity.", FP)
 add_para(doc, 
     "The analysis uses two distinct capability constructs. The Technological "
-    "Capability Index (TCI_z) captures deeper capability stocks related to learning, "
-    "upgrading, and internal competence accumulation, anchored in Lall (1992) and "
-    "Cohen and Levinthal (1990). The Digital Adoption Index (DAI_z) captures a "
-    "foundational layer of digital adoption — digital presence and basic digital "
-    "transaction support — rather than higher-order digitally integrated "
-    "organisational transformation (Bharadwaj et al., 2013; Verhoef et al., 2021; Nambisan et al., 2019). "
-    "Each composite is z-standardised within wave so that the reported coefficients "
-    "are comparable in magnitude. This separation is deliberate because the study is "
-    "interested in whether the two domains exhibit different empirical roles.", BT)
+    "Capability Index (TCI_z) is interpreted narrowly as a foreign-technology "
+    "and standards capability measure — international quality certification "
+    "and foreign-licensed technology — that proxies a firm's exposure to "
+    "external technological standards rather than the full Cohen-Levinthal "
+    "absorptive-capacity stock (Lall, 1992; Cohen and Levinthal, 1990). The "
+    "Digital Adoption Index (DAI_z) is interpreted narrowly as website-based "
+    "digital presence — foundational website adoption — and not as a measure "
+    "of transaction-level digital integration or digital transformation "
+    "(Bharadwaj et al., 2013; Verhoef et al., 2021; Nambisan et al., 2019). "
+    "Each composite is z-standardised within wave so that the reported "
+    "coefficients are comparable in magnitude. This separation is deliberate "
+    "because the study is interested in whether the two domains exhibit "
+    "different empirical roles, while keeping the construct labels tight "
+    "against what the underlying WBES items actually measure.", BT)
 add_para(doc,
     "Item-level construction is as follows. The outcome is "
     "lnLP = ln(d2 / l1), where d2 is total annual sales and l1 is permanent "
@@ -591,8 +610,8 @@ add_para(doc,
     "refused responses as −9. We treat −9 as missing before any composite is built "
     "and apply listwise deletion on the focal variable set (lnLP, lnEmp, FirmAge, "
     "ForeignOwned, FSTS, TCI_thin, DAI_thin, sector1). The resulting analytic "
-    "samples are 989, 958, and 1,013 observations for 2009, 2015, and 2023 "
-    "respectively; pooled N is 2,960.", BT)
+    "samples are 989, 956, and 1,013 observations for 2009, 2015, and 2023 "
+    "respectively; pooled N is 2,958.", BT)
 
 add_para(doc, "3.3 Model sequence", H2)
 add_para(doc, 
@@ -659,9 +678,9 @@ tbl_style.set(qn("w:val"), "Table")
 desc_header = desc_table.rows[0].cells
 desc_header[0].text = "Variable"
 desc_header[1].text = "2009 (N = 989)"
-desc_header[2].text = "2015 (N = 958)"
+desc_header[2].text = "2015 (N = 956)"
 desc_header[3].text = "2023 (N = 1,013)"
-desc_header[4].text = "Pooled (N = 2,960)"
+desc_header[4].text = "Pooled (N = 2,958)"
 
 desc_rows = [
     ("lnLP (log labour productivity)",     "19.41 (1.31)", "20.04 (1.46)", "20.55 (1.47)", "20.00 (1.49)"),
@@ -738,18 +757,24 @@ add_para(doc,
     "transaction-enabling and process-integrating digital capability is "
     "still maturing.", BT)
 add_para(doc,
-    "Taken together, the wave-specific results trace two distinct lifecycle "
-    "trajectories. Technological capability is positive across all three "
-    "waves with a modestly attenuating magnitude (TCI_z = 0.215 → 0.128 → "
-    "0.123) but with moderation that survives in the 2009, 2023 and pooled "
-    "panels. Digital adoption follows a non-monotonic trajectory — strong in "
+    "Taken together, the wave-specific results trace two wave-specific "
+    "associations consistent with stage contingency. Foreign-technology / "
+    "standards capability is positive across all three waves with a modestly "
+    "attenuating magnitude (TCI_z = 0.215 → 0.128 → 0.123) but with "
+    "moderation that survives in the 2009, 2023 and pooled panels. Website-"
+    "based digital presence follows a non-monotonic trajectory — strong in "
     "2009 (β = 0.175 ***), null in 2015 (β = −0.044 n.s.), and re-emerging "
     "in 2023 (β = 0.095 *) — and its moderation channel materialises only "
     "in 2023. The Paternoster cross-wave z-tests reported in §4.5 confirm "
     "that the 2009-to-2015 fall in DAI (z = 3.353, p < .001) and the "
-    "2015-to-2023 recovery (z = −2.051, p = .040) are both statistically "
-    "distinguishable shifts, supporting the lifecycle reading rather than "
-    "treating the wave-specific pattern as sampling noise.", BT)
+    "2015-to-2023 recovery (z = −2.051, p = .040) are statistically "
+    "distinguishable. A formal pooled wave × focal interaction test "
+    "(reported as Panel I in §4.5) confirms that only the DAI direct shifts "
+    "are cross-wave-distinguishable; the FSTS curvature and the FSTS × DAI "
+    "moderation differences across waves are not statistically separable in "
+    "the pooled saturated specification. We therefore read the pattern as "
+    "wave-specific associations consistent with stage contingency, not as a "
+    "fully cross-wave-identified structural shift.", BT)
 add_para(doc,
     "The wave-specific pattern carries an institutional reading. The 2009 wave "
     "captures the early aftermath of WTO accession, when the marginal exporter "
@@ -758,11 +783,12 @@ add_para(doc,
     "the website-only layer — generated direct gains because the alternative "
     "was paper-based transaction processing. The 2015 wave captures a "
     "transitional phase in which the I–P curvature is unusually sharp (FSTS_c² "
-    "= −2.082, p = .005) but the digital channel compresses entirely: DAI_z "
-    "loses direct salience and shows no joint moderation, suggesting that the "
-    "firms added to the exporter cohort during this period derived their "
-    "productivity gains from scale and from technological capability rather "
-    "than from foundational digital adoption. The 2023 wave captures the "
+    "= −2.115, p = .004 in M2) but the digital channel compresses entirely: "
+    "DAI_z loses direct salience and shows no joint moderation, suggesting "
+    "that the differences in exporter composition across waves are reflected "
+    "in productivity gains coming primarily from scale and from foreign-"
+    "technology / standards capability rather than from foundational digital "
+    "adoption in this wave. The 2023 wave captures the "
     "re-emergence of the digital channel as a moderator rather than as a "
     "uniform direct premium: the post-NDTP digital infrastructure makes "
     "foundational digital adoption interact with export intensity, and the "
@@ -850,18 +876,19 @@ add_para(doc,
     "p < .001) and the 2015-to-2023 recovery (z = −2.051, p = .040) are "
     "both statistically distinguishable shifts.", FP)
 add_para(doc,
-    "H4 receives focused but meaningful support. The DAI joint moderation "
-    "test is null in 2009 (M4 p = .825) and only marginal in 2015 (M4 "
-    "p = .125). It reaches its strongest expression in 2023, where the "
-    "individual interaction FSTS_c × DAI_z = −0.912 (p = .043) is "
-    "statistically distinguishable from zero and the joint test is at the "
-    "edge of conventional significance (M4 p = .102; M8 p = .062). The "
-    "pooled M8 joint test (p = .083) is also at marginal significance, "
-    "driven by the 2023 wave rather than by a stable cross-period "
-    "moderation. The substantive reading is that the conditional digital "
-    "channel materialises only when the institutional and digital "
-    "environment is sufficiently mature for basic adoption to interact "
-    "with cross-border coordination demands.", BT)
+    "H4 receives exploratory support concentrated in the 2023 wave. The DAI "
+    "joint moderation test is null in 2009 (M4 p = .825), null in 2015 "
+    "(M4 p = .125) and reaches the edge of significance in 2023 with the "
+    "individual interaction FSTS_c × DAI_z = −0.912 (p = .043) and the "
+    "joint test at M4 p = .102, M8 p = .062. The pooled M8 joint test "
+    "(p = .083) is also at marginal significance, driven by the 2023 wave "
+    "rather than by a stable cross-period moderation. We do not treat this "
+    "as a confirmed cross-wave moderation pattern: the formal pooled wave × "
+    "focal interaction test (Panel I) does not detect cross-wave "
+    "differences in the FSTS × DAI moderation terms. The substantive "
+    "reading is that 2023 is the only wave in which the digital moderation "
+    "is within-sample detectable, and we frame this as exploratory rather "
+    "than as a confirmed hypothesis test.", BT)
 
 add_para(doc, "4.4 Main empirical pattern", H2)
 add_para(doc, 
@@ -981,9 +1008,12 @@ add_para(doc,
 add_para(doc,
     "Panel C — Common-N comparison (2023). The primary DAI_z and DAI_rich "
     "specifications are estimated on the same N = 1,013 sample, so the "
-    "differences in Panel B reflect measurement rather than sample. This "
-    "rules out the alternative explanation that DAI_rich attenuates because "
-    "of selective missingness on k33 / k38, and supports retaining the "
+    "differences in Panel B reflect measurement rather than sample. The "
+    "reconciled M8 joint test for the primary specification on this common-N "
+    "sample yields F(3, 998) ≈ 2.50, p = .062 — matching the main 2023 M8 "
+    "result, and confirming that the Panel B DAI_rich attenuation is not an "
+    "artefact of selective missingness on k33 / k38. This rules out a "
+    "missingness-driven alternative explanation and supports retaining the "
     "harmonised website-based DAI as the primary cross-wave specification.", BT)
 add_para(doc,
     "Panel D — Micro-firm exclusion (l1 ≥ 10). Excluding firms with fewer "
@@ -999,25 +1029,29 @@ add_para(doc,
     "small firms.", BT)
 add_para(doc,
     "Panel E — Sample-selection probes (Heckman, 1979; Wooldridge, 2010). "
-    "The selection equation is a probit of export_any on lnEmp, "
-    "FirmAge, ForeignOwned, sector fixed effects and the WBES sampling "
-    "region a2, with a2 supplying the exclusion restriction (sampling "
-    "region affects export selection through differential logistical "
-    "access but is plausibly uncorrelated with the productivity outcome "
-    "conditional on the other controls). The inverse Mills ratio added to "
-    "the outcome equation estimated on exporters (FSTS > 0) is "
-    "statistically insignificant in all four panels: λ = −0.111 (p = .846) "
-    "in 2009, λ = −0.833 (p = .259) in 2015, λ = 0.665 (p = .399) in 2023, "
-    "and λ = −0.462 (p = .347) pooled, indicating no significant selection "
-    "bias along the IMR-detected channel. A complementary control-function "
-    "specification using the generalised residual yields a significant "
-    "residual in 2009 (β = 0.510, p < .001) and pooled (β = 0.304, "
-    "p < .001), a marginal residual in 2023 (β = 0.259, p = .092) and a "
-    "null residual in 2015 (β = −0.112, p = .357). The control-function "
-    "signal indicates a degree of selection structure that the standard "
-    "IMR does not pick up but does not overturn the H1, H2 or H3 "
-    "substantive inferences when the focal coefficients are re-estimated "
-    "with either correction.", BT)
+    "The selection equation is a probit of export_any on lnEmp, FirmAge, "
+    "ForeignOwned, sector fixed effects and the WBES sampling region a2, "
+    "with a2 supplying the exclusion restriction (sampling region affects "
+    "export selection through differential logistical access but is "
+    "plausibly uncorrelated with the productivity outcome conditional on "
+    "the other controls). The inverse Mills ratio added to the outcome "
+    "equation estimated on exporters (FSTS > 0) is statistically "
+    "insignificant in all four panels: λ = −0.111 (p = .846) in 2009, "
+    "λ = −0.833 (p = .259) in 2015, λ = 0.665 (p = .399) in 2023, and "
+    "λ = −0.462 (p = .347) pooled, indicating no detectable selection "
+    "bias on the exporter sub-sample. We also report a control-function "
+    "specification estimated on the full sample using the probit-based "
+    "generalised residual, which yields a significant residual pooled "
+    "(β = 0.304, p < .001) and in 2009 (β = 0.510, p < .001), a marginal "
+    "residual in 2023 (β = 0.259, p = .092) and a null residual in 2015 "
+    "(β = −0.112, p = .357). We do not interpret this gap as evidence of a "
+    "different selection channel: in a probit, the generalised residual "
+    "coincides with the inverse Mills ratio for selected observations, so "
+    "the difference in significance reflects the larger estimation sample "
+    "(non-exporters are included in the control-function regression) and "
+    "the slightly different specification, not a substantively distinct "
+    "selection mechanism. Either way, the focal H1 / H2 / H3 inferences "
+    "survive both corrections.", BT)
 add_para(doc,
     "Panel F — Paternoster (1998) cross-wave z-tests. To assess whether "
     "the cross-wave differences in the focal M7 / M8 coefficients are "
@@ -1068,12 +1102,95 @@ add_para(doc,
     "tradable-goods sectors than in service-oriented or domestically "
     "oriented sectors of the Vietnamese economy.", BT)
 
+add_para(doc,
+    "Panel H — Exporter-only sub-sample (FSTS > 0). Because the exporter "
+    "share is 28.4 %, 20.7 % and 18.8 % across waves, the inverted-U fitted "
+    "on the full sample is partly identified by the participation margin "
+    "between FSTS = 0 and FSTS > 0. We re-fit M2 / M7 / M8 on the exporter-"
+    "only sub-sample (N ≈ 281 in 2009, 198 in 2015, 190 in 2023, and 669 "
+    "pooled). The pooled exporter-only specification yields a negative "
+    "linear FSTS_c term (β = −0.861, p < .001) but a non-significant "
+    "quadratic term (FSTS_c² β = −0.200, p = .660), and the joint M8 test "
+    "of the curvature plus moderation block is not significant (joint "
+    "F p = .462). The wave-specific exporter-only estimates are similarly "
+    "noisier and individually weaker than the full-sample counterparts. "
+    "We read this as showing that the inverted-U documented in the main "
+    "specification is meaningfully identified by the participation margin "
+    "rather than purely by within-exporter intensity variation; this is "
+    "consistent with the §3.1 descriptive evidence that direct-export "
+    "intensity is a zero-inflated variable in Vietnamese WBES data, with "
+    "limited mass between the participation margin and the implied turning "
+    "point. The substantive H1 claim is therefore best read as a non-"
+    "monotonic association between participation-and-intensity in exporting "
+    "and productivity, not as a strict within-exporter intensity-curvature "
+    "claim.", FP)
+add_para(doc,
+    "Panel I — Pooled wave × focal interaction test. To formally test "
+    "whether the wave-specific patterns of curvature and moderation are "
+    "statistically separable from the pooled estimates, we re-estimate the "
+    "pooled M8 with a saturated set of wave interactions on the focal "
+    "terms (FSTS_c × wave, FSTS_c² × wave, DAI_z × wave, TCI_z × wave). "
+    "The joint Wald tests show that only DAI_z × wave is statistically "
+    "distinguishable from the pooled average (joint p = .016); the FSTS_c, "
+    "FSTS_c² and TCI_z direct-effect cross-wave differences are not "
+    "statistically separable (all joint p > .25), and the FSTS_c × DAI_z "
+    "and FSTS_c² × DAI_z cross-wave differences are not separable either "
+    "(joint p > .55). This formal test confirms the descriptive Paternoster "
+    "result: only the DAI direct shifts are cross-wave-distinguishable, "
+    "while the curvature parameters and the FSTS × DAI moderation terms "
+    "share a common pooled magnitude across waves.", BT)
+add_para(doc,
+    "Density-around-turning-point check. We also report the within-sample "
+    "mass of firms in the curvature zone. Defining a ±5 percentage-point "
+    "band around the wave-specific turning point (TP), the share of firms "
+    "with FSTS within the band is 0.6 % (6 of 989) in 2009, 1.2 % (11 of "
+    "956) in 2015, 0.9 % (9 of 1,013) in 2023 and 1.0 % (29 of 2,958) "
+    "pooled. The bulk of mass lies at FSTS = 0; the turning-point "
+    "estimates are identified primarily through the contrast between "
+    "non-exporters and exporters and the right tail above the TP, not "
+    "through dense within-band variation. Readers should bear this density "
+    "structure in mind when interpreting the precise turning-point "
+    "magnitude.", BT)
+
+add_para(doc,
+    "Multiple-testing caveat. §4.5 reports nine robustness panels (A–I) "
+    "across two enriched composites, three sub-samples, two selection "
+    "corrections, cross-wave z-tests and a wave-saturated interaction test, "
+    "each touching multiple focal terms. We do not apply a formal multiple-"
+    "testing correction because the panels probe different identification "
+    "concerns rather than testing the same hypothesis repeatedly, but "
+    "readers should weight any single marginal panel result accordingly. "
+    "Our substantive inferences in §5 rely on the pattern across panels "
+    "and the directional consistency of the focal estimates rather than on "
+    "the significance of any single robustness panel.", BT)
+
+# Figure 3 — Predicted I-P curves at low/high DAI and TCI (inline) -----------
+if (_FIG_DIR / "figure_3_moderator_marginals.png").exists():
+    from docx.enum.text import WD_ALIGN_PARAGRAPH as _WD_ALIGN
+    add_para(doc, "", BT)
+    fig3_p = doc.add_paragraph()
+    fig3_p.alignment = _WD_ALIGN.CENTER
+    fig3_p.add_run().add_picture(
+        str(_FIG_DIR / "figure_3_moderator_marginals.png"),
+        width=Inches(6.5),
+    )
+    add_para(doc,
+        "Figure 3. Predicted log labour productivity along the FSTS export-"
+        "intensity range, evaluated at the 25th vs 75th percentile of the "
+        "moderator. Panel 3a shows the FSTS curve at low (p25) vs high "
+        "(p75) DAI_z; Panel 3b shows the FSTS curve at low (p25) vs high "
+        "(p75) TCI_z. Curves are obtained from the pooled M8 specification "
+        "with controls and wave + sector fixed effects fixed at their "
+        "sample modes / means; predictions are reported on the within-"
+        "sample FSTS support. Source: World Bank Enterprise Surveys "
+        "(https://www.enterprisesurveys.org); authors' calculations.", BT)
+
 # Table 3 — Robustness summary embedded -----------------------------------
 add_para(doc,
     "Table 3 collates the robustness panels documented in §4.5 in a "
     "single overview to ease cross-comparison.", FP)
 
-t3 = doc.add_table(rows=8, cols=4)
+t3 = doc.add_table(rows=11, cols=4)
 t3_pr = t3._element.find(qn("w:tblPr"))
 if t3_pr is None:
     t3_pr = OxmlElement("w:tblPr")
@@ -1103,15 +1220,24 @@ t3_rows = [
     ("B. DAI_rich binary (2023)", "1,013",
      "FSTS_c × DAI_rich_bin_z = −0.893 (p = .169) n.s.",
      "M8 joint p = .243 n.s."),
-    ("C. Common-N comparison (2023)", "1,013",
-     "DAI_z moderation re-estimated on DAI_rich sample",
-     "M8 joint p = .013 *"),
+    ("C. Common-N reconciled (2023)", "1,013",
+     "DAI_z moderation re-estimated on identical 2023 sample",
+     "M8 joint p = .062 † (matches main 2023 M8)"),
     ("D. Micro-firm exclusion (l1 ≥ 10)", "2,473",
      "TCI_z = 0.188 ***; DAI_z = 0.054 n.s.",
      "M8 joint p = .167 n.s."),
     ("G. Manufacturing (sector1 ∈ {1,2,3})", "1,854",
      "TCI_z = 0.223 ***; DAI_z = 0.087 **; FSTS_c × DAI_z = −0.543 †",
      "M8 joint p = .103 †"),
+    ("H. Exporter-only (FSTS > 0, pooled)", "669",
+     "FSTS_c = −0.861 ***; FSTS_c² = −0.200 n.s.",
+     "M8 joint p = .462 n.s."),
+    ("I. Wave × focal interaction (pooled)", "2,958",
+     "DAI_z × wave detectable (p = .016); FSTS_c, FSTS_c², TCI_z × wave n.s.",
+     "Only DAI direct shifts cross-wave-separable"),
+    ("Density around TP (±5 pp band)", "29 of 2,958",
+     "1.0 % of firms within band; bulk of mass at FSTS = 0",
+     "Curvature identified by participation margin"),
 ]
 for i, row in enumerate(t3_rows, start=1):
     for j, val in enumerate(row):
@@ -1205,6 +1331,27 @@ add_para(doc,
     "approach to digitalisation in international business research, one that "
     "distinguishes between digital enablement and broader technological depth rather "
     "than collapsing them into a single label.", BT)
+
+add_para(doc, "5.2.1 An alternative reading: proxy obsolescence", H2)
+add_para(doc,
+    "A purely stage-contingency interpretation is not the only reading of "
+    "the wave-specific DAI pattern. An alternative — and to a degree "
+    "complementary — explanation is proxy obsolescence: the c22b indicator "
+    "of website ownership measures something different in 2009, 2015 and "
+    "2023 even though the question text is identical across waves. In 2009, "
+    "having a corporate website was a relatively distinguishing market "
+    "interface that signalled basic digital legitimacy in international "
+    "transactions; by 2023, a website is closer to a routine marker of "
+    "basic digital presence shared across exporting and non-exporting firms "
+    "alike. Under this reading, the falling DAI direct association across "
+    "waves partly reflects the shrinking informational content of c22b "
+    "rather than a structural change in the productivity payoff to "
+    "foundational digital adoption itself. We do not view proxy "
+    "obsolescence and stage contingency as mutually exclusive: both can be "
+    "operating jointly. We flag the proxy-obsolescence reading because it "
+    "is not testable within the cross-wave-comparable WBES instrument and "
+    "future work using waves with richer Tier 2–3 digital items will be "
+    "needed to disentangle the two channels.", FP)
 
 add_para(doc, "5.3 The significance of the 2015 dip", H2)
 add_para(doc, 
