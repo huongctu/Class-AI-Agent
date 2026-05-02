@@ -119,123 +119,213 @@ def fit_m8(df):
 
 
 # ============================================================
-# Figure 1 — Conceptual model (no "digital-frontier")
+# Figure 1 — Conceptual model (IV / DV / Moderators / Controls layout)
 # ============================================================
 def fig1_conceptual(out: Path):
-    fig, ax = plt.subplots(figsize=(13, 7.5))
-    ax.set_xlim(0, 130)
-    ax.set_ylim(0, 70)
+    """Standard IB conceptual-model layout:
+         IV (Internationalization, FSTS) → DV (Firm Performance)
+         Moderators (TCI, DAI) act on the IV→DV path from above
+         Controls feed DV from below
+       Direct effects of moderators on DV are listed in a hypothesis
+       legend below the diagram (cleaner than crossing arrows).
+    """
+    fig, ax = plt.subplots(figsize=(13, 9))
+    ax.set_xlim(0, 100)
+    ax.set_ylim(0, 100)
     ax.axis("off")
 
-    def box(x, y, w, h, color, label_main, label_sub=""):
+    COL_IV   = "#555555"
+    COL_DV   = "#2ca02c"
+    COL_MOD  = "#7b3294"
+    COL_TCI  = "#1f77b4"
+    COL_DAI  = "#e07b00"
+    COL_CTRL = "#8c564b"
+    COL_MAIN = "#222222"
+
+    def box(x, y, w, h, color, label_main, label_sub="",
+            alpha=0.18, lw=2.0, label_size=11.5):
         rect = FancyBboxPatch(
             (x, y), w, h,
-            boxstyle="round,pad=0.4,rounding_size=1.8",
-            linewidth=1.8, edgecolor=color, facecolor=color,
-            alpha=0.20,
+            boxstyle="round,pad=0.5,rounding_size=2.0",
+            linewidth=lw, edgecolor=color, facecolor=color, alpha=alpha,
         )
         ax.add_patch(rect)
-        ax.text(x + w/2, y + h/2 + (1.6 if label_sub else 0),
+        ax.text(x + w/2, y + h/2 + (1.4 if label_sub else 0),
                 label_main, ha="center", va="center",
-                fontsize=11, fontweight="bold", color=color)
+                fontsize=label_size, fontweight="bold", color=color)
         if label_sub:
-            ax.text(x + w/2, y + h/2 - 2.0, label_sub,
-                    ha="center", va="center", fontsize=8.5, style="italic",
-                    color="#444444")
+            ax.text(x + w/2, y + h/2 - 2.6, label_sub,
+                    ha="center", va="center",
+                    fontsize=8.8, style="italic", color="#444")
 
     def arrow(x1, y1, x2, y2, *, dashed=False, color="#222",
-              connectionstyle="arc3,rad=0"):
-        ls = "--" if dashed else "-"
+              lw=2.0, mut=18, connectionstyle="arc3,rad=0"):
         a = FancyArrowPatch((x1, y1), (x2, y2),
-                            arrowstyle="-|>", mutation_scale=16,
-                            linewidth=2.0, linestyle=ls, color=color,
-                            connectionstyle=connectionstyle)
+                            arrowstyle="-|>", mutation_scale=mut,
+                            linewidth=lw, linestyle="--" if dashed else "-",
+                            color=color, connectionstyle=connectionstyle)
         ax.add_patch(a)
 
-    def label_at(x, y, text, color="#222", fontsize=9.5):
-        ax.text(x, y, text, ha="center", va="center", fontsize=fontsize,
-                fontweight="bold", color=color,
-                bbox=dict(boxstyle="round,pad=0.30",
-                          facecolor="white", edgecolor=color, alpha=0.95,
-                          linewidth=0.8))
+    def hyp_label(x, y, text, color, fontsize=9.0):
+        ax.text(x, y, text, ha="center", va="center",
+                fontsize=fontsize, fontweight="bold", color=color,
+                bbox=dict(boxstyle="round,pad=0.28",
+                          facecolor="white", edgecolor=color,
+                          alpha=0.97, linewidth=1.0))
 
+    def role_tag(x, y, text, color):
+        """Small role tag placed ABOVE a box (no overlap with content)."""
+        ax.text(x, y, text, ha="left", va="bottom",
+                fontsize=8.5, fontweight="bold", color=color,
+                bbox=dict(boxstyle="round,pad=0.22",
+                          facecolor="white", edgecolor=color,
+                          linewidth=0.9, alpha=0.97))
+
+    # =========================================================
     # Title
-    ax.text(65, 66,
-            "Figure 1. Conceptual model",
-            ha="center", fontsize=13, fontweight="bold")
-    ax.text(65, 62.5,
-            "Technological capability, digital adoption, and the "
-            "internationalization–performance relationship",
-            ha="center", fontsize=10.5)
+    # =========================================================
+    ax.text(50, 96.5, "Figure 1. Conceptual model",
+            ha="center", fontsize=14, fontweight="bold")
+    ax.text(50, 93.5,
+            "Internationalization → Firm Performance, moderated by "
+            "technological capability and digital adoption",
+            ha="center", fontsize=10.5, color="#333")
 
-    # Box layout — wider, no overlaps
-    # Left column: TCI (top), DAI (bottom)
-    box(3,  44, 28, 11, "#1f77b4",
-        "Technological\nCapability (TCI)",
-        "Lall 1992; Cohen & Levinthal 1990")
-    box(3,  10, 28, 11, "#ff7f0e",
-        "Digital Adoption\n(DAI)",
-        "Bharadwaj et al. 2013; Verhoef et al. 2021")
-    # Middle: Internationalization
-    box(53, 27, 26, 12, "#7f7f7f",
-        "Internationalization\n(FSTS, FSTS²)",
-        "foreign sales / total sales")
-    # Right: Productivity
-    box(99, 27, 28, 12, "#2ca02c",
-        "Firm Productivity",
-        "ln(labour productivity)")
+    # =========================================================
+    # MODERATORS (top — TCI and DAI as separate boxes)
+    # =========================================================
+    role_tag(15, 86.5, "MODERATORS", COL_MOD)
+    box(15, 73, 33, 11, COL_TCI,
+        "Technological Capability (TCI)",
+        "Lall 1992; Cohen & Levinthal 1990",
+        label_size=11.5)
+    box(52, 73, 33, 11, COL_DAI,
+        "Digital Adoption (DAI)",
+        "Bharadwaj et al. 2013; Verhoef et al. 2021",
+        label_size=11.5)
 
-    # Arrows + labels
-    # H1 TCI → Productivity direct (long arrow over the top)
-    arrow(31, 50, 99, 39, color="#1f77b4",
-          connectionstyle="arc3,rad=-0.20")
-    label_at(67, 56, "H1: TCI → Productivity (+ direct)", color="#1f77b4")
+    # =========================================================
+    # IV → DV (middle row, larger boxes with role tags ABOVE)
+    # =========================================================
+    role_tag(8, 56, "INDEPENDENT VARIABLE", COL_IV)
+    box(8, 38, 36, 17, COL_IV,
+        "Internationalization",
+        "FSTS = foreign sales / total sales\n(linear and quadratic terms)",
+        label_size=12.5)
 
-    # H3 DAI → Productivity direct (long arrow under the bottom)
-    arrow(31, 15, 99, 28, color="#ff7f0e",
-          connectionstyle="arc3,rad=0.20")
-    label_at(67, 9, "H3: DAI → Productivity (conditional on FSTS)",
-             color="#ff7f0e")
+    role_tag(56, 56, "DEPENDENT VARIABLE", COL_DV)
+    box(56, 38, 36, 17, COL_DV,
+        "Firm Performance",
+        "ln(labour productivity)",
+        label_size=12.5)
 
-    # H2 TCI → moderates I-P arrow (dashed, into mid-arrow)
-    arrow(20, 44, 60, 39.5, dashed=True, color="#1f77b4")
-    label_at(40, 47.5, "H2: TCI moderation\n(open empirical question)",
-             color="#1f77b4", fontsize=8.5)
+    # Main IV → DV arrow
+    arrow(44, 46.5, 56, 46.5, color=COL_MAIN, lw=2.8, mut=22)
+    hyp_label(50, 50.5,
+              "H_IP: inverted-U\n(descriptive, full sample)",
+              COL_MAIN, fontsize=8.8)
 
-    # H4 DAI → moderates I-P arrow (dashed)
-    arrow(20, 21, 60, 27, dashed=True, color="#ff7f0e")
-    label_at(40, 23.5, "H4: DAI moderation\n(stronger at high FSTS)",
-             color="#ff7f0e", fontsize=8.5)
+    # =========================================================
+    # Moderation arrows (Moderators → IV→DV main arrow)
+    # =========================================================
+    # TCI → moderates path
+    arrow(31.5, 73, 46, 48.5, dashed=True, color=COL_TCI, lw=1.9)
+    hyp_label(31, 64,
+              "H2: TCI × FSTS\n(open empirical question)",
+              COL_TCI, fontsize=8.6)
+    # DAI → moderates path
+    arrow(68.5, 73, 54, 48.5, dashed=True, color=COL_DAI, lw=1.9)
+    hyp_label(69, 64,
+              "H4: DAI × FSTS\n(stronger at high FSTS)",
+              COL_DAI, fontsize=8.6)
 
-    # Internationalization → Productivity (descriptive inverted-U)
-    arrow(79, 33, 99, 33, color="#666")
-    label_at(89, 36.5, "Inverted-U (descriptive,\nfull sample)",
-             color="#444", fontsize=8.5)
+    # =========================================================
+    # CONTROLS (bottom row)
+    # =========================================================
+    role_tag(8, 30, "CONTROLS", COL_CTRL)
 
-    # Legend (top-left)
-    legend_y = 59
-    ax.plot([3, 9], [legend_y, legend_y], color="black", lw=1.8)
-    ax.text(10, legend_y, "Direct association",
-            fontsize=9, va="center")
-    ax.plot([29, 35], [legend_y, legend_y],
-            color="black", lw=1.8, ls="--")
-    ax.text(36, legend_y, "Moderation association",
-            fontsize=9, va="center")
+    # Outer light background
+    ctrl_bg = FancyBboxPatch(
+        (8, 16), 84, 13,
+        boxstyle="round,pad=0.4,rounding_size=2.0",
+        linewidth=1.4, edgecolor=COL_CTRL, facecolor=COL_CTRL, alpha=0.08,
+    )
+    ax.add_patch(ctrl_bg)
 
-    # Bottom scope-condition box (replaces old "Digital-frontier" wording)
+    ctrl_items = [
+        ("Firm size",     "ln(employees)"),
+        ("Firm age",      "2023 − founded"),
+        ("Foreign-owned", "≥10% foreign equity"),
+        ("Sector FE",     "manufacturing /\nretail / construction"),
+    ]
+    box_w = 19.0
+    gap = 1.5
+    start_x = 9.5
+    for i, (main, sub) in enumerate(ctrl_items):
+        x = start_x + i * (box_w + gap)
+        rect = FancyBboxPatch(
+            (x, 17.5), box_w, 9.5,
+            boxstyle="round,pad=0.3,rounding_size=1.4",
+            linewidth=1.2, edgecolor=COL_CTRL, facecolor="white", alpha=0.97,
+        )
+        ax.add_patch(rect)
+        ax.text(x + box_w/2, 23.5, main, ha="center", va="center",
+                fontsize=10, fontweight="bold", color=COL_CTRL)
+        ax.text(x + box_w/2, 20.0, sub, ha="center", va="center",
+                fontsize=8.0, style="italic", color="#666")
+
+    # Control → DV arrow (single arrow up to DV box)
+    arrow(74, 29.5, 74, 38, dashed=False, color=COL_CTRL, lw=1.6, mut=14)
+
+    # =========================================================
+    # Legend (top-right)
+    # =========================================================
+    leg_x = 65
+    leg_y = 89.5
+    ax.plot([leg_x, leg_x + 4], [leg_y, leg_y], color="black", lw=2.0)
+    ax.text(leg_x + 5, leg_y, "Direct association",
+            fontsize=8.8, va="center")
+    ax.plot([leg_x + 17, leg_x + 21], [leg_y, leg_y],
+            color="black", lw=2.0, ls="--")
+    ax.text(leg_x + 22, leg_y, "Moderation association",
+            fontsize=8.8, va="center")
+
+    # =========================================================
+    # Hypothesis legend (between controls and scope) — covers
+    # H1, H3 direct effects WITHOUT cluttering the diagram with
+    # crossing arrows.
+    # =========================================================
+    hyp_box = FancyBboxPatch(
+        (8, 8.5), 84, 5.5,
+        boxstyle="round,pad=0.4,rounding_size=1.5",
+        linewidth=1.0, edgecolor="#444", facecolor="#fafafa",
+    )
+    ax.add_patch(hyp_box)
+    ax.text(10, 12.3, "Direct effects of moderators on the DV "
+            "(also estimated, not drawn as arrows for clarity):",
+            ha="left", va="center", fontsize=8.5,
+            fontweight="bold", color="#333")
+    ax.text(10, 9.8,
+            "H1: TCI → ln(labour productivity), positive direct effect.   "
+            "H3: DAI → ln(labour productivity), conditional on FSTS.",
+            ha="left", va="center", fontsize=8.3, color="#444")
+
+    # =========================================================
+    # Bottom scope strip
+    # =========================================================
     scope = FancyBboxPatch(
-        (4, 1), 122, 5,
-        boxstyle="round,pad=0.5,rounding_size=2",
+        (8, 0.5), 84, 6.5,
+        boxstyle="round,pad=0.4,rounding_size=2.0",
         linewidth=1.2, edgecolor="#555", facecolor="#f7f7f7",
         linestyle=(0, (4, 3)),
     )
     ax.add_patch(scope)
-    ax.text(65, 4.3,
+    ax.text(50, 5.0,
             "Scope: extreme-case, within-context evidence from Singapore",
             ha="center", fontsize=10.5, fontweight="bold", color="#333")
-    ax.text(65, 2.0,
-            "WBES 2023, N = 623; FSTS = 0 in 82.2% of firms; "
-            "FSTS > 70% in 3.2% of firms — see Section 7 for scope conditions.",
+    ax.text(50, 2.3,
+            "WBES 2023, N = 623 (full) / 617 (DAI sample); FSTS = 0 in "
+            "82.2% of firms; FSTS > 70% in 3.2% of firms — see Section 7.",
             ha="center", fontsize=8.5, style="italic", color="#666")
 
     fig.savefig(out, dpi=200, bbox_inches="tight", facecolor="white")
