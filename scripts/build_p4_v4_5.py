@@ -19,7 +19,14 @@ TEMPLATE = Path(
     "/root/.claude/uploads/baf64a94-2e13-4dbf-8dcc-22587a547e56/"
     "1f16255e-manuscript_v4_4_1.docx"
 )
-OUTPUT = Path(__file__).resolve().parents[1] / "manuscript_v4_5.docx"
+import os
+
+BLINDED = os.environ.get("BLINDED", "0") == "1"
+OUTPUT = (
+    Path(__file__).resolve().parents[1] / "manuscript_blinded.docx"
+    if BLINDED
+    else Path(__file__).resolve().parents[1] / "manuscript_v4_5.docx"
+)
 
 # The pandoc-generated v4.4 template stores style names with capitalised first
 # letter (e.g. "Heading 1"), but python-docx's BabelFish.ui2internal lowercases
@@ -81,20 +88,23 @@ add_para(doc,
     "Revisiting the Internationalisation–Performance Relationship in an "
     "Emerging Market: The Roles of Technological Capability and Digital "
     "Adoption", "Title")
-add_para(doc, "v5.2 — IJoEM submission draft (Phan Anh Tu corresponding; Vietnam 2009/2015/2023)", "Subtitle")
+add_para(doc,
+    ("v5.3 — IJoEM blinded manuscript (Vietnam 2009/2015/2023)" if BLINDED
+     else "v5.3 — IJoEM submission draft, full title page (Vietnam 2009/2015/2023)"),
+    "Subtitle")
 add_para(doc, "2026-05-02", "Date")
 
-# Authors and affiliations (placeholders — replace before submission) ----------
-add_para(doc, "Do Thuy Huong", "Author")
-add_para(doc,
-    "PhD Candidate, College of Economics, Can Tho University, Can Tho, Vietnam. "
-    "E-mail: huongp1323001@gstudent.ctu.edu.vn. "
-    "ORCID: https://orcid.org/0000-0002-7711-2487.", BT)
-add_para(doc, "Phan Anh Tu (corresponding author)", "Author")
-add_para(doc,
-    "School of Economics (International Business), Can Tho University, Can Tho, "
-    "Vietnam. E-mail: patu@ctu.edu.vn. "
-    "ORCID: https://orcid.org/0000-0003-0667-3137.", BT)
+if not BLINDED:
+    add_para(doc, "Do Thuy Huong", "Author")
+    add_para(doc,
+        "PhD Candidate, College of Economics, Can Tho University, Can Tho, Vietnam. "
+        "E-mail: huongp1323001@gstudent.ctu.edu.vn. "
+        "ORCID: https://orcid.org/0000-0002-7711-2487.", BT)
+    add_para(doc, "Phan Anh Tu (corresponding author)", "Author")
+    add_para(doc,
+        "School of Economics (International Business), Can Tho University, Can Tho, "
+        "Vietnam. E-mail: patu@ctu.edu.vn. "
+        "ORCID: https://orcid.org/0000-0003-0667-3137.", BT)
 add_para(doc,
     "Manuscript classification: research article. "
     "Word count (main text excluding abstract, references, tables, figures): "
@@ -1137,15 +1147,16 @@ add_para(doc,
     "estimates can be informative while still concealing important differences in the "
     "timing and form of digital payoff.", BT)
 
-# Author contributions ---------------------------------------------------------
-add_para(doc, "Author contributions", H1)
-add_para(doc,
-    "Do Thuy Huong contributed to conceptualisation, data curation, formal "
-    "analysis, investigation, methodology, visualisation, and drafting of "
-    "the manuscript. Phan Anh Tu contributed to conceptualisation, "
-    "supervision, methodology, validation, review and editing, and overall "
-    "guidance of the study. Both authors approved the final version of the "
-    "manuscript.", FP)
+# Author contributions (suppressed in blinded version) -----------------------
+if not BLINDED:
+    add_para(doc, "Author contributions", H1)
+    add_para(doc,
+        "Do Thuy Huong contributed to conceptualisation, data curation, formal "
+        "analysis, investigation, methodology, visualisation, and drafting of "
+        "the manuscript. Phan Anh Tu contributed to conceptualisation, "
+        "supervision, methodology, validation, review and editing, and overall "
+        "guidance of the study. Both authors approved the final version of the "
+        "manuscript.", FP)
 
 # Conflict of interest --------------------------------------------------------
 add_para(doc, "Conflict of interest", H1)
