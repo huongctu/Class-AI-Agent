@@ -403,6 +403,148 @@ def emit_descriptives(waves: dict[int, pd.DataFrame], pooled: pd.DataFrame, path
     pd.DataFrame(rows).to_csv(path, index=False)
 
 
+def fit_with(df: pd.DataFrame, focal: list[str], dummies: list[str]) -> dict:
+    fit = fit_ols_hc1(df, focal, dummies)
+    return fit
+
+
+def extract_focal(fit: dict, terms: list[str], panel: str, sample: str) -> list[dict]:
+    rows = []
+    for t in terms:
+        if t not in fit["names"]:
+            continue
+        j = fit["names"].index(t)
+        b = float(fit["b"][j])
+        se = float(fit["se"][j])
+        rows.append({
+            "panel": panel,
+            "sample": sample,
+            "term": t,
+            "b": round(b, 4),
+            "se": round(se, 4),
+            "p": round(float(fit["p"][j]), 4),
+            "n": fit["n"],
+        })
+    return rows
+
+
+def run_robustness(waves: dict[int, pd.DataFrame], pooled: pd.DataFrame) -> list[dict]:
+    rows: list[dict] = []
+    base = ["lnEmp", "FirmAge", "ForeignOwned"]
+
+    for y in (2015, 2023):
+        df = waves[y].dropna(subset=["TCI_full_z"]).copy()
+        df["FSTSc_TCIfull"] = df["FSTSc"] * df["TCI_full_z"]
+        df["FSTSc2_TCIfull"] = df["FSTSc2"] * df["TCI_full_z"]
+        fit_direct = fit_with(df, ["FSTSc", "FSTSc2", "TCI_full_z", "DAI_z"] + base, ["sector1"])
+        rows.extend(extract_focal(
+            fit_direct,
+            ["FSTSc", "FSTSc2", "TCI_full_z", "DAI_z"],
+            "TCI_full_direct",
+            f"VNM{y}",
+        ))
+        fit_mod = fit_with(
+            df,
+            ["FSTSc", "FSTSc2", "TCI_full_z", "FSTSc_TCIfull", "FSTSc2_TCIfull"] + base,
+            ["sector1"],
+        )
+        F, p = joint_test(fit_mod, ["FSTSc_TCIfull", "FSTSc2_TCIfull"])
+        rows.extend(extract_focal(
+            fit_mod,
+            ["FSTSc", "FSTSc2", "TCI_full_z", "FSTSc_TCIfull", "FSTSc2_TCIfull"],
+            "TCI_full_moderation",
+            f"VNM{y}",
+        ))
+        rows.append({
+            "panel": "TCI_full_moderation",
+            "sample": f"VNM{y}",
+            "term": "joint_F_TCI_full_interactions",
+            "b": round(float(F), 4),
+            "se": np.nan,
+            "p": round(float(p), 4),
+            "n": fit_mod["n"],
+        })
+
+    df23 = waves[2023]
+    for spec, label in [("DAI_rich_cont_z", "DAI_rich_cont"), ("DAI_rich_bin_z", "DAI_rich_bin")]:
+        sub = df23.dropna(subset=[spec]).copy()
+        sub[f"FSTSc_{label}"] = sub["FSTSc"] * sub[spec]
+        sub[f"FSTSc2_{label}"] = sub["FSTSc2"] * sub[spec]
+        fit_full = fit_with(
+            sub,
+            ["FSTSc", "FSTSc2", "TCI_z", spec, f"FSTSc_{label}", f"FSTSc2_{label}"] + base,
+            ["sector1"],
+        )
+        F, p = joint_test(fit_full, [f"FSTSc_{label}", f"FSTSc2_{label}"])
+        rows.extend(extract_focal(
+            fit_full,
+            ["FSTSc", "FSTSc2", "TCI_z", spec, f"FSTSc_{label}", f"FSTSc2_{label}"],
+            f"DAI_rich_2023_{label}",
+            "VNM2023",
+        ))
+        rows.append({
+            "panel": f"DAI_rich_2023_{label}",
+            "sample": "VNM2023",
+            "term": "joint_F_DAI_rich_interactions",
+            "b": round(float(F), 4),
+            "se": np.nan,
+            "p": round(float(p), 4),
+            "n": fit_full["n"],
+        })
+
+    common = df23.dropna(subset=["DAI_rich_cont_z"]).copy()
+    common["FSTSc_DAIz"] = common["FSTSc"] * common["DAI_z"]
+    common["FSTSc2_DAIz"] = common["FSTSc2"] * common["DAI_z"]
+    fit_common = fit_with(
+        common,
+        ["FSTSc", "FSTSc2", "TCI_z", "DAI_z", "FSTSc_DAIz", "FSTSc2_DAIz"] + base,
+        ["sector1"],
+    )
+    F, p = joint_test(fit_common, ["FSTSc_DAIz", "FSTSc2_DAIz"])
+    rows.extend(extract_focal(
+        fit_common,
+        ["FSTSc", "FSTSc2", "TCI_z", "DAI_z", "FSTSc_DAIz", "FSTSc2_DAIz"],
+        "DAI_thin_on_rich_sample_2023",
+        "VNM2023",
+    ))
+    rows.append({
+        "panel": "DAI_thin_on_rich_sample_2023",
+        "sample": "VNM2023",
+        "term": "joint_F_DAI_thin_interactions",
+        "b": round(float(F), 4),
+        "se": np.nan,
+        "p": round(float(p), 4),
+        "n": fit_common["n"],
+    })
+
+    macro = pooled[np.exp(pooled["lnEmp"]) >= 10].copy()
+    macro["FSTSc_DAIz"] = macro["FSTSc"] * macro["DAI_z"]
+    macro["FSTSc2_DAIz"] = macro["FSTSc2"] * macro["DAI_z"]
+    fit_macro = fit_with(
+        macro,
+        ["FSTSc", "FSTSc2", "TCI_z", "DAI_z", "FSTSc_DAIz", "FSTSc2_DAIz"] + base,
+        ["sector1", "wave"],
+    )
+    F, p = joint_test(fit_macro, ["FSTSc_DAIz", "FSTSc2_DAIz"])
+    rows.extend(extract_focal(
+        fit_macro,
+        ["FSTSc", "FSTSc2", "TCI_z", "DAI_z", "FSTSc_DAIz", "FSTSc2_DAIz"],
+        "micro_excluded_pooled",
+        "VNMpooled_l1ge10",
+    ))
+    rows.append({
+        "panel": "micro_excluded_pooled",
+        "sample": "VNMpooled_l1ge10",
+        "term": "joint_F_DAI_interactions",
+        "b": round(float(F), 4),
+        "se": np.nan,
+        "p": round(float(p), 4),
+        "n": fit_macro["n"],
+    })
+
+    return rows
+
+
 def main() -> None:
     waves = {y: build_wave(y) for y in (2009, 2015, 2023)}
     for y, df in waves.items():
@@ -421,6 +563,10 @@ def main() -> None:
     emit_joint_F(results, OUT_TABLES / "joint_tests_main_models.csv")
     emit_lm(results, OUT_TABLES / "table_lind_mehlum.csv")
     emit_descriptives(waves, pooled, OUT_TABLES / "table_1_descriptives.csv")
+
+    rob = run_robustness(waves, pooled)
+    pd.DataFrame(rob).to_csv(OUT_TABLES / "table_3_robustness.csv", index=False)
+    print(f"\nrobustness panels written: {len(rob)} rows")
 
     summary = {
         "samples": {k: r["n"] for k, r in results.items()},

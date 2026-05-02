@@ -80,18 +80,20 @@ for tbl in list(doc.tables):
 add_para(doc, 
     "Digital Capabilities as a Double-Edged Sword: A Lifecycle Analysis of "
     "Internationalisation and Firm Performance in Vietnam", "Title")
-add_para(doc, "v4.6 — submission-ready manuscript with re-estimated Vietnam evidence", "Subtitle")
+add_para(doc, "v4.7 — submission-ready: real authors, embedded Table 1, real robustness", "Subtitle")
 add_para(doc, "2026-05-01", "Date")
 
 # Authors and affiliations (placeholders — replace before submission) ----------
-add_para(doc, "[Author 1, corresponding]", "Author")
+add_para(doc, "Do Thuy Huong (corresponding author)", "Author")
 add_para(doc,
-    "[Department], [University / Institute], [City], [Country]. "
-    "E-mail: [author1@example.org]. ORCID: [0000-0000-0000-0000].", BT)
-add_para(doc, "[Author 2]", "Author")
+    "PhD Candidate, College of Economics, Can Tho University, Can Tho, Vietnam. "
+    "E-mail: huongp1323001@gstudent.ctu.edu.vn. "
+    "ORCID: https://orcid.org/0000-0002-7711-2487.", BT)
+add_para(doc, "Phan Anh Tu", "Author")
 add_para(doc,
-    "[Department], [University / Institute], [City], [Country]. "
-    "E-mail: [author2@example.org]. ORCID: [0000-0000-0000-0000].", BT)
+    "School of Economics (International Business), Can Tho University, Can Tho, "
+    "Vietnam. E-mail: patu@ctu.edu.vn. "
+    "ORCID: https://orcid.org/0000-0003-0667-3137.", BT)
 add_para(doc,
     "Manuscript classification: research article. "
     "Word count (main text excluding abstract, references, tables, figures): "
@@ -573,6 +575,64 @@ add_para(doc,
 # 4. Results -------------------------------------------------------------------
 add_para(doc, "4. Results", H1)
 
+add_para(doc,
+    "Table 1 reports analytic-sample summary statistics by wave. Three patterns "
+    "are worth noting before the inferential analysis. The share of firms "
+    "reporting any positive direct-export intensity declines from 28.4 % in 2009 "
+    "to 20.8 % in 2015 to 18.8 % in 2023, reflecting the rebalancing of the "
+    "Vietnamese exporter cohort away from labour-intensive manufacturing toward "
+    "services and FDI-linked supply-chain firms during the observation window. "
+    "The within-wave mean of foundational digital adoption (DAI_thin) is "
+    "essentially flat across the three waves (0.301 / 0.359 / 0.307), suggesting "
+    "that what changes across waves is not the level of basic digital adoption "
+    "but the composition of firms that adopt and the export-coordination "
+    "context in which those firms operate. The mean of log labour productivity "
+    "rises monotonically (19.41 / 20.04 / 20.55), consistent with broader "
+    "Vietnamese productivity convergence over the period.", FP)
+
+# Embedded Table 1 ------------------------------------------------------------
+desc_table = doc.add_table(rows=11, cols=5)
+tbl_pr = desc_table._element.find(qn("w:tblPr"))
+if tbl_pr is None:
+    tbl_pr = OxmlElement("w:tblPr")
+    desc_table._element.insert(0, tbl_pr)
+tbl_style = tbl_pr.find(qn("w:tblStyle"))
+if tbl_style is None:
+    tbl_style = OxmlElement("w:tblStyle")
+    tbl_pr.insert(0, tbl_style)
+tbl_style.set(qn("w:val"), "Table")
+
+desc_header = desc_table.rows[0].cells
+desc_header[0].text = "Variable"
+desc_header[1].text = "2009 (N = 989)"
+desc_header[2].text = "2015 (N = 958)"
+desc_header[3].text = "2023 (N = 1,013)"
+desc_header[4].text = "Pooled (N = 2,960)"
+
+desc_rows = [
+    ("lnLP (log labour productivity)",     "19.41 (1.31)", "20.04 (1.46)", "20.55 (1.47)", "20.00 (1.49)"),
+    ("FSTS (direct-export share)",         "0.168 (0.337)", "0.120 (0.284)", "0.131 (0.311)", "0.140 (0.312)"),
+    ("Exporter (FSTS > 0) share",          "0.284", "0.208", "0.188", "0.226"),
+    ("TCI_thin (mean of b8, e6 recoded)",  "0.169 (0.305)", "0.141 (0.295)", "0.146 (0.276)", "0.152 (0.292)"),
+    ("DAI_thin (mean of c22b, e6 recoded)","0.301 (0.373)", "0.359 (0.397)", "0.307 (0.316)", "0.322 (0.363)"),
+    ("lnEmp (log permanent employees)",    "4.07 (1.49)", "3.63 (1.48)", "3.58 (1.54)", "3.76 (1.52)"),
+    ("FirmAge (years since b5)",           "11.9 (11.3)", "12.8 (9.6)", "14.1 (7.9)", "12.9 (9.7)"),
+    ("ForeignOwned (b2b > 0) share",       "0.142", "0.090", "0.125", "0.119"),
+    ("",                                   "", "", "", ""),
+    ("ISIC sector FE",                     "a4b 1-digit", "a4b 1-digit", "a4a 1-digit", "wave + a4b/a4a 1-digit"),
+]
+for i, row in enumerate(desc_rows, start=1):
+    cells = desc_table.rows[i].cells
+    for j, val in enumerate(row):
+        cells[j].text = val
+
+add_para(doc,
+    "Notes. Cell entries are mean (standard deviation) for continuous variables "
+    "and proportion for binary indicators. Listwise deletion is applied on the "
+    "focal variable set with WBES non-response codes (−9) treated as missing. "
+    "Source: replication script p4_vietnam/output/tables/table_1_descriptives."
+    "csv.", BT)
+
 add_para(doc, "4.1 Wave-specific findings", H2)
 add_para(doc,
     "The 2009 wave is characterised by a clearly nonlinear I–P relationship and "
@@ -782,37 +842,59 @@ add_para(doc,
 
 add_para(doc, "4.5 Robustness", H2)
 add_para(doc,
-    "The substantive findings survive the standard robustness checks distributed with "
-    "the replication package. First, replacing the broad ISIC sector fixed effects "
-    "with two-digit ISIC fixed effects shifts the focal coefficients within sampling "
-    "error and leaves the H1, H2, and H3 inferences unchanged in the pooled sample. "
-    "Second, excluding micro-firms with fewer than ten permanent employees moves the "
-    "pooled inverted-U coefficients by at most a few percentage points and does not "
-    "alter the sign or significance of any focal term.", FP)
+    "Four robustness panels test whether the central inferences depend on "
+    "measurement choices, sample composition, or the cross-wave alignment of the "
+    "DAI construct. The panels are estimated on the same OLS HC1 design as the "
+    "main models and are written to "
+    "p4_vietnam/output/tables/table_3_robustness.csv.", FP)
 add_para(doc,
-    "Third, an enriched TCI_full composite that adds product-innovation and R&D "
-    "indicators to b8 (quality certification) and e6 (foreign-licensed technology) is "
-    "constructed for the 2015 and 2023 waves where those items are available. The "
-    "TCI_full coefficient remains positive and the substantive direction is "
-    "preserved, although the size of the direct association is attenuated when the "
-    "broader composite is used. Fourth, an enriched DAI_rich composite that adds "
-    "customer-side and supplier-side electronic-payment intensity is constructed for "
-    "the 2023 wave only, because the payment items are not present in the earlier "
-    "releases. The DAI_rich estimates confirm the wave-2023 pattern: foundational "
-    "digital adoption matters, and its conditional relevance to export intensity is "
-    "not an artefact of the website-only thin specification.", BT)
+    "Panel A — Enriched TCI_full composite (2015 and 2023, where h1 product "
+    "innovation and h8 R&D indicators are available). Adding h1 and h8 to the "
+    "TCI items produces an attenuated direct effect: the TCI_full_z direct "
+    "coefficient is 0.048 (p = .353) in 2015 and 0.067 (p = .161) in 2023 — both "
+    "non-significant against the TCI_thin estimates of 0.129 and 0.091. The "
+    "moderation joint test is not significant in either wave (2015 joint F p = "
+    ".473; 2023 joint F p = .152). Read together with the main TCI_thin results, "
+    "this attenuation is consistent with the interpretation that the TCI_thin "
+    "items (b8 quality certification and e6 foreign-licensed technology) capture "
+    "a sharper foreign-capability content than the broader product-innovation "
+    "and R&D items add. The TCI_thin specification is therefore retained as the "
+    "primary measurement throughout the paper.", BT)
 add_para(doc,
-    "Finally, sample-selection probes apply a manual Heckman two-step using the "
-    "WBES sampling region as the exclusion restriction in the export-participation "
-    "probit, and a complementary control-function specification using the "
-    "generalised residual from the same probit. The inverse Mills ratio and the "
-    "control-function residual are not statistically significant in any of the four "
-    "panels, and re-estimating the outcome equation conditional on either correction "
-    "leaves the focal coefficients within the original confidence intervals. The "
-    "Paternoster (1998) cross-wave z-tests indicate that the apparent attenuation of "
-    "TCI_z between 2009 and 2023 is at the margin of conventional significance, while "
-    "the DAI_z and FSTS curvature differences across waves are not statistically "
-    "distinguishable in their pairwise comparisons.", BT)
+    "Panel B — Enriched DAI_rich composite (2023 only). Adding k33 and k38 "
+    "(customer-side and supplier-side electronic-payment intensity) to c22b "
+    "and e6 produces a continuous DAI_rich_cont_z and a binary DAI_rich_bin_z. "
+    "In the 2023 full specification, the DAI_rich_cont moderation joint test is "
+    "significant (joint F p = .041, with FSTS_c × DAI_rich_cont_z = −0.769, "
+    "p = .108); the binary version is marginal (joint F p = .101). The 2023 DAI "
+    "moderation channel therefore survives when the construct is enriched with "
+    "Tier 3 payment indicators, indicating that the DAI_z moderation finding in "
+    "the main results is not an artefact of the website-only thin specification.", BT)
+add_para(doc,
+    "Panel C — Common-N comparison (2023). To distinguish a measurement effect "
+    "from a sample-composition effect, we re-estimate the DAI_thin moderation "
+    "specification on the same N = 1,013 sample used for DAI_rich. The DAI_z "
+    "joint moderation test remains significant on this restricted sample "
+    "(joint F p = .013), confirming that the cross-specification difference "
+    "between Panels B and the main results is driven by measurement choice "
+    "rather than by sample restriction.", BT)
+add_para(doc,
+    "Panel D — Micro-firm exclusion (l1 ≥ 10). Excluding firms with fewer than "
+    "ten permanent employees reduces the pooled sample to N = 2,475 and leaves "
+    "the substantive inferences intact. The inverted-U is preserved (FSTS_c "
+    "β = 0.787, p = .008; FSTS_c² β = −1.634, p < .001), the TCI_z direct "
+    "association is essentially unchanged (β = 0.180, p < .001), and the DAI "
+    "moderation joint test in the full M8 specification (joint F p = .072, "
+    "marginal) is comparable to the main pooled M8 estimate (p = .050). The "
+    "Lind–Mehlum monotonicity rejection and the lifecycle reading therefore do "
+    "not depend on the inclusion of very small firms.", BT)
+add_para(doc,
+    "Two robustness directions identified in the replication package — Heckman "
+    "selection corrections using the WBES sampling region as an exclusion "
+    "restriction, and Paternoster (1998) cross-wave z-tests on the focal "
+    "coefficients — are implemented in the Stata pipeline (do/07_selection_"
+    "checks.do and do/08_crosswave_tests.do) but were not re-estimated in the "
+    "Python rerun reported here. They are flagged as future-revision tasks.", BT)
 
 # 5. Discussion ----------------------------------------------------------------
 add_para(doc, "5. Discussion", H1)
@@ -933,12 +1015,16 @@ add_para(doc,
     "documented here may not generalise without modification to economies whose "
     "digital infrastructure or export composition follows a different trajectory.", BT)
 add_para(doc,
-    "Fourth, the cross-wave comparisons are descriptive: the Paternoster (1998) "
-    "z-tests indicate which differences across waves are statistically distinguishable "
-    "but do not identify the institutional or compositional mechanisms that drive the "
-    "shift between the 2009, 2015, and 2023 patterns. Future work could exploit "
-    "policy timing (for example, Vietnam’s National Digital Transformation Programme "
-    "launched in 2020) for sharper identification of the digital channel.", BT)
+    "Fourth, the cross-wave comparisons in this version are descriptive rather "
+    "than tested with the Paternoster (1998) z-statistic on focal coefficients; "
+    "the Stata pipeline includes the cross-wave test as do/08_crosswave_tests.do "
+    "for the next revision. The current evidence therefore documents that the "
+    "TCI_z magnitudes decline across waves and that the DAI moderation channel "
+    "emerges in 2023, but does not formally test whether each cross-wave "
+    "difference is statistically distinguishable. Future work could also exploit "
+    "policy timing (for example, Vietnam’s National Digital Transformation "
+    "Programme launched in 2020) for sharper identification of the digital "
+    "channel.", BT)
 add_para(doc,
     "Fifth, the sector fixed effects are intentionally broad to keep the comparison "
     "comparable across waves. The robustness panel using two-digit ISIC fixed effects "
@@ -982,11 +1068,11 @@ add_para(doc,
 # Author contributions (CRediT) ------------------------------------------------
 add_para(doc, "Author contributions (CRediT taxonomy)", H1)
 add_para(doc,
-    "[Author 1]: conceptualisation; methodology; formal analysis; data curation; "
-    "writing — original draft; writing — review and editing; visualisation; "
-    "project administration. [Author 2]: conceptualisation; methodology; "
-    "validation; writing — review and editing; supervision. All authors read "
-    "and approved the final manuscript.", FP)
+    "Do Thuy Huong: conceptualisation; methodology; formal analysis; data "
+    "curation; writing — original draft; writing — review and editing; "
+    "visualisation; project administration. Phan Anh Tu: conceptualisation; "
+    "methodology; validation; writing — review and editing; supervision. All "
+    "authors read and approved the final manuscript.", FP)
 
 # Declaration of competing interest -------------------------------------------
 add_para(doc, "Declaration of competing interest", H1)
