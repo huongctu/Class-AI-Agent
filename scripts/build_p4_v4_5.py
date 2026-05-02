@@ -89,8 +89,8 @@ add_para(doc,
     "Emerging Market: The Roles of Technological Capability and Digital "
     "Adoption", "Title")
 add_para(doc,
-    ("v5.5 — IJoEM blinded manuscript with embedded tables and split figures (Vietnam 2009/2015/2023)" if BLINDED
-     else "v5.5 — IJoEM submission draft with embedded tables and split figures (Vietnam 2009/2015/2023)"),
+    ("v5.6 — IJoEM blinded manuscript with audited references and recent IB literature (Vietnam 2009/2015/2023)" if BLINDED
+     else "v5.6 — IJoEM submission draft with audited references and recent IB literature (Vietnam 2009/2015/2023)"),
     "Subtitle")
 add_para(doc, "2026-05-02", "Date")
 
@@ -220,7 +220,7 @@ add_para(doc,
     "gain access to larger markets, benefit from learning, and diversify revenue "
     "streams, but they may also face rising coordination costs, information-processing "
     "burdens, and organisational strain as their foreign involvement deepens "
-    "(Cuervo-Cazurra and Genc, 2008; Wright et al., 2005).", FP)
+    "(Wright et al., 2005; Cuervo-Cazurra and Genc, 2008; Wu et al., 2016).", FP)
 add_para(doc, 
     "This tension lies at the heart of the I–P literature. A long tradition of research "
     "has argued that internationalisation can improve performance at lower and "
@@ -228,14 +228,14 @@ add_para(doc,
     "generating diminishing or negative returns at higher levels because of complexity "
     "and coordination burdens. Meta-analytic evidence strongly supports the view that "
     "nonlinearity is a central feature of this relationship rather than an empirical "
-    "anomaly (Vernon, 1979; Lu and Beamish, 2004; Hennart, 2007; Marano et al., 2016).", BT)
+    "anomaly (Vernon, 1979; Lu and Beamish, 2004; Hennart, 2007; Coviello et al., 2017; Marano et al., 2016).", BT)
 add_para(doc, 
     "Digitalisation adds a further layer of complexity to this debate. Digital tools "
     "can reduce communication frictions, accelerate transactions, and support "
     "coordination across borders. Yet those benefits do not arise automatically. Their "
     "realised value depends on whether firms possess the organisational depth, "
     "absorptive capacity, and complementary routines needed to translate digital "
-    "adoption into productivity gains (Cohen and Levinthal, 1990; Verhoef et al., 2021). "
+    "adoption into productivity gains (Cohen and Levinthal, 1990; Vial, 2019; Verhoef et al., 2021). "
     "For this reason, digital capability should not be treated as a universally "
     "beneficial resource whose payoff is constant across firms and over time.", BT)
 add_para(doc, 
@@ -287,7 +287,7 @@ add_para(doc,
     "stocks of learning, problem-solving, process improvement, and innovation capacity "
     "(Lall, 1992). Foundational digital adoption, by contrast, reflects a more basic "
     "layer of digital readiness and digitally enabled interfaces or transaction "
-    "mechanisms (Bharadwaj et al., 2013; Verhoef et al., 2021). Although these "
+    "mechanisms (Bharadwaj et al., 2013; Verhoef et al., 2021; Hanelt et al., 2021). Although these "
     "constructs are related, they should not be treated as interchangeable. Collapsing "
     "them into a single umbrella variable can reduce construct clarity and blur the "
     "mechanisms linking digitalisation to performance.", BT)
@@ -419,7 +419,7 @@ add_para(doc,
     "digital layer may not represent the full depth of digitally integrated "
     "organisational capability, it can still matter for firm performance by reducing "
     "information frictions and improving process speed (Bharadwaj et al., 2013; "
-    "Verhoef et al., 2021).", FP)
+    "Verhoef et al., 2021; Banalieva and Dhanaraj, 2019).", FP)
 add_para(doc, 
     "For firms participating in foreign markets, foundational digital adoption may be "
     "especially valuable. Exporting requires timely information exchange, coordination "
@@ -543,7 +543,7 @@ add_para(doc,
     "Cohen and Levinthal (1990). The Digital Adoption Index (DAI_z) captures a "
     "foundational layer of digital adoption — digital presence and basic digital "
     "transaction support — rather than higher-order digitally integrated "
-    "organisational transformation (Bharadwaj et al., 2013; Verhoef et al., 2021). "
+    "organisational transformation (Bharadwaj et al., 2013; Verhoef et al., 2021; Nambisan et al., 2019). "
     "Each composite is z-standardised within wave so that the reported coefficients "
     "are comparable in magnitude. This separation is deliberate because the study is "
     "interested in whether the two domains exhibit different empirical roles.", BT)
@@ -1417,6 +1417,9 @@ references = [
     'Antonakis, J., Bendahan, S., Jacquart, P. and Lalive, R. (2010), '
     '"On making causal claims: A review and recommendations", '
     'The Leadership Quarterly, Vol. 21 No. 6, pp. 1086-1120.',
+    'Banalieva, E.R. and Dhanaraj, C. (2019), "Internalization theory '
+    'for the digital economy", Journal of International Business Studies, '
+    'Vol. 50 No. 8, pp. 1372-1387.',
     'Bharadwaj, A., El Sawy, O.A., Pavlou, P.A. and Venkatraman, N. (2013), '
     '"Digital business strategy: Toward a next generation of insights", '
     'MIS Quarterly, Vol. 37 No. 2, pp. 471-482.',
@@ -1427,12 +1430,19 @@ references = [
     'Cohen, W.M. and Levinthal, D.A. (1990), "Absorptive capacity: A new '
     'perspective on learning and innovation", Administrative Science '
     'Quarterly, Vol. 35 No. 1, pp. 128-152.',
+    'Coviello, N., Kano, L. and Liesch, P.W. (2017), "Adapting the '
+    'Uppsala model to a modern world: Macro-context and microfoundations", '
+    'Journal of International Business Studies, Vol. 48 No. 9, pp. 1151-1164.',
     'Cuervo-Cazurra, A. and Genc, M. (2008), "Transforming disadvantages '
     'into advantages: Developing-country MNEs in the least developed '
     'countries", Journal of International Business Studies, Vol. 39 No. 6, '
     'pp. 957-979.',
     'Heckman, J.J. (1979), "Sample selection bias as a specification '
     'error", Econometrica, Vol. 47 No. 1, pp. 153-161.',
+    'Hanelt, A., Bohnsack, R., Marz, D. and Antunes Marante, C. (2021), '
+    '"A systematic review of the literature on digital transformation: '
+    'Insights and implications for strategy and organizational change", '
+    'Journal of Management Studies, Vol. 58 No. 5, pp. 1159-1197.',
     'Helfat, C.E. and Peteraf, M.A. (2003), "The dynamic resource-based '
     'view: Capability lifecycles", Strategic Management Journal, Vol. 24 '
     'No. 10, pp. 997-1010.',
@@ -1451,6 +1461,10 @@ references = [
     'M. (2016), "Home country institutions and the internationalization–'
     'performance relationship: A meta-analytic review", Journal of '
     'Management, Vol. 42 No. 5, pp. 1075-1110.',
+    'Nambisan, S., Wright, M. and Feldman, M. (2019), "The digital '
+    'transformation of innovation and entrepreneurship: Progress, '
+    'challenges and key themes", Research Policy, Vol. 48 No. 8, '
+    'article 103773.',
     'Paternoster, R., Brame, R., Mazerolle, P. and Piquero, A. (1998), '
     '"Using the correct statistical test for the equality of regression '
     'coefficients", Criminology, Vol. 36 No. 4, pp. 859-866.',
@@ -1461,6 +1475,9 @@ references = [
     'J.Q., Fabian, N. and Haenlein, M. (2021), "Digital transformation: A '
     'multidisciplinary reflection and research agenda", Journal of '
     'Business Research, Vol. 122, pp. 889-901.',
+    'Vial, G. (2019), "Understanding digital transformation: A review '
+    'and a research agenda", Journal of Strategic Information Systems, '
+    'Vol. 28 No. 2, pp. 118-144.',
     'Vernon, R. (1979), "The product cycle hypothesis in a new '
     'international environment", Oxford Bulletin of Economics and '
     'Statistics, Vol. 41 No. 4, pp. 255-267.',
@@ -1482,6 +1499,10 @@ references = [
     '"Strategy research in emerging economies: Challenging the '
     'conventional wisdom", Journal of Management Studies, Vol. 42 No. 1, '
     'pp. 1-33.',
+    'Wu, J., Wang, C., Hong, J., Piperopoulos, P. and Zhuo, S. (2016), '
+    '"Internationalization and innovation performance of emerging market '
+    'enterprises: The role of host-country institutional development", '
+    'Journal of World Business, Vol. 51 No. 2, pp. 251-263.',
 ]
 for ref in references:
     add_para(doc, ref, BT)
