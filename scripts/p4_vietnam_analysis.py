@@ -665,6 +665,85 @@ def run_robustness(waves: dict[int, pd.DataFrame], pooled: pd.DataFrame) -> list
     return rows
 
 
+def run_sector_split(pooled: pd.DataFrame) -> list[dict]:
+    """Estimate the M2 / M7 / M8 specifications separately on manufacturing
+    (sector1 in {1, 2, 3} — ISIC 15-37) and non-manufacturing (sector1 in
+    {4, 5, 6, 7} — utilities, construction, wholesale/retail, transport,
+    finance and other services). Both subsets retain wave fixed effects.
+    Reports the focal coefficients plus the joint F-tests for TCI and DAI
+    moderation so reviewers can compare the two sub-samples directly.
+    """
+    rows: list[dict] = []
+    base = ["lnEmp", "FirmAge", "ForeignOwned"]
+
+    splits = {
+        "manufacturing": pooled[pooled["sector1"].isin([1, 2, 3])].copy(),
+        "non_manufacturing": pooled[pooled["sector1"].isin([4, 5, 6, 7])].copy(),
+    }
+
+    for label, df in splits.items():
+        n = len(df)
+        for v in ["FSTSc_TCIz", "FSTSc2_TCIz", "FSTSc_DAIz", "FSTSc2_DAIz"]:
+            df[v] = df["FSTSc"] * df["TCI_z"] if "TCIz" in v else df["FSTSc"] * df["DAI_z"]
+        df["FSTSc_TCIz"]  = df["FSTSc"]  * df["TCI_z"]
+        df["FSTSc2_TCIz"] = df["FSTSc2"] * df["TCI_z"]
+        df["FSTSc_DAIz"]  = df["FSTSc"]  * df["DAI_z"]
+        df["FSTSc2_DAIz"] = df["FSTSc2"] * df["DAI_z"]
+
+        # M2 inverted-U
+        m2 = fit_ols_hc1(df, ["FSTSc", "FSTSc2"] + base, ["sector1", "wave"])
+        rows.extend(extract_focal(m2, ["FSTSc", "FSTSc2"], f"sector_split_{label}", "M2"))
+
+        # M7 dual direct
+        m7 = fit_ols_hc1(df, ["FSTSc", "FSTSc2", "TCI_z", "DAI_z"] + base,
+                         ["sector1", "wave"])
+        rows.extend(extract_focal(m7, ["FSTSc", "FSTSc2", "TCI_z", "DAI_z"],
+                                  f"sector_split_{label}", "M7"))
+
+        # M8 with DAI interactions
+        m8 = fit_ols_hc1(
+            df,
+            ["FSTSc", "FSTSc2", "TCI_z", "DAI_z", "FSTSc_DAIz", "FSTSc2_DAIz"] + base,
+            ["sector1", "wave"],
+        )
+        F_dai, p_dai = joint_test(m8, ["FSTSc_DAIz", "FSTSc2_DAIz"])
+        rows.extend(extract_focal(
+            m8,
+            ["FSTSc", "FSTSc2", "TCI_z", "DAI_z", "FSTSc_DAIz", "FSTSc2_DAIz"],
+            f"sector_split_{label}", "M8",
+        ))
+        rows.append({
+            "panel": f"sector_split_{label}",
+            "sample": "VNMpooled",
+            "term": "joint_F_DAI_interactions_M8",
+            "b": round(float(F_dai), 4), "se": np.nan,
+            "p": round(float(p_dai), 4), "n": n,
+        })
+
+        # Optional: TCI moderation joint F
+        m3 = fit_ols_hc1(
+            df,
+            ["FSTSc", "FSTSc2", "TCI_z", "FSTSc_TCIz", "FSTSc2_TCIz"] + base,
+            ["sector1", "wave"],
+        )
+        F_tci, p_tci = joint_test(m3, ["FSTSc_TCIz", "FSTSc2_TCIz"])
+        rows.append({
+            "panel": f"sector_split_{label}",
+            "sample": "VNMpooled",
+            "term": "joint_F_TCI_interactions_M3",
+            "b": round(float(F_tci), 4), "se": np.nan,
+            "p": round(float(p_tci), 4), "n": n,
+        })
+        rows.append({
+            "panel": f"sector_split_{label}",
+            "sample": "VNMpooled",
+            "term": "N",
+            "b": float(n), "se": np.nan, "p": np.nan, "n": n,
+        })
+
+    return rows
+
+
 def main() -> None:
     waves = {y: build_wave(y) for y in (2009, 2015, 2023)}
     for y, df in waves.items():
@@ -695,6 +774,7 @@ def main() -> None:
     emit_paternoster_csv(results, OUT_TABLES / "table_paternoster.csv")
 
     rob = run_robustness(waves, pooled)
+    rob.extend(run_sector_split(pooled))
     pd.DataFrame(rob).to_csv(OUT_TABLES / "table_3_robustness.csv", index=False)
     print(f"\nrobustness panels written: {len(rob)} rows")
 

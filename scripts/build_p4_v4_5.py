@@ -89,8 +89,8 @@ add_para(doc,
     "Emerging Market: The Roles of Technological Capability and Digital "
     "Adoption", "Title")
 add_para(doc,
-    ("v5.3 — IJoEM blinded manuscript (Vietnam 2009/2015/2023)" if BLINDED
-     else "v5.3 — IJoEM submission draft, full title page (Vietnam 2009/2015/2023)"),
+    ("v5.4 — IJoEM blinded manuscript with sector split (Vietnam 2009/2015/2023)" if BLINDED
+     else "v5.4 — IJoEM submission draft with sector split (Vietnam 2009/2015/2023)"),
     "Subtitle")
 add_para(doc, "2026-05-02", "Date")
 
@@ -992,6 +992,38 @@ add_para(doc,
     "and the DAI moderation patterns are best read as a common curvature "
     "with wave-specific magnitudes rather than as cross-period structural "
     "shifts in the curvature parameters.", BT)
+add_para(doc,
+    "Panel G — Sector split (manufacturing versus non-manufacturing). To "
+    "test whether the digital and capability channels operate uniformly "
+    "across the broad sectoral composition of the Vietnamese exporter "
+    "cohort, we re-estimate the pooled M2 / M7 / M8 specifications "
+    "separately on manufacturing firms (sector1 ∈ {1, 2, 3} — ISIC 15–37, "
+    "N = 1,854) and non-manufacturing firms (utilities, construction, "
+    "wholesale and retail, transport, finance and other services; "
+    "sector1 ∈ {4, 5, 6, 7}; N = 1,104). The inverted-U is preserved in "
+    "both subsets but is sharper in manufacturing (FSTS_c β = 0.971, "
+    "p = .001; FSTS_c² β = −1.883, p < .001) than in non-manufacturing "
+    "(FSTS_c β = 1.615, p = .064, marginal; FSTS_c² β = −2.479, p = .046).", FP)
+add_para(doc,
+    "More substantively, the capability and digital-adoption channels "
+    "operate primarily in manufacturing. In the M7 dual-direct "
+    "specification, manufacturing firms display a strong TCI_z direct "
+    "association (β = 0.223, p < .001) and a positive DAI_z direct "
+    "association (β = 0.087, p = .009), while non-manufacturing firms "
+    "show only a marginal TCI_z effect (β = 0.090, p = .096) and a null "
+    "DAI_z effect (β = 0.068, p = .133). The DAI moderation channel is "
+    "concentrated in manufacturing (M8 joint p = .103, marginal; "
+    "FSTS_c × DAI_z = −0.543, p = .079) and is uniformly null in "
+    "non-manufacturing (M8 joint p = .280). TCI moderation, by contrast, "
+    "is statistically distinguishable from zero in both subsets (M3 joint "
+    "p = .011 in manufacturing and p = .007 in non-manufacturing), "
+    "indicating that the curvature-flattening effect of capability "
+    "operates broadly while the digital channel remains specific to the "
+    "manufacturing exporter base. Substantively, this pattern is "
+    "consistent with the view that basic digital adoption interacts with "
+    "cross-border production-coordination demands more strongly in "
+    "tradable-goods sectors than in service-oriented or domestically "
+    "oriented sectors of the Vietnamese economy.", BT)
 
 # 5. Discussion ----------------------------------------------------------------
 add_para(doc, "5. Discussion", H1)
@@ -1123,12 +1155,19 @@ add_para(doc,
     "in 2020 — for sharper identification of the digital channel through a "
     "policy-evaluation design rather than a cross-wave comparison.", BT)
 add_para(doc,
-    "Fifth, the sector fixed effects are intentionally broad to keep the comparison "
-    "comparable across waves. The robustness panel using two-digit ISIC fixed effects "
-    "leaves the pooled inferences unchanged, but the wave-specific coefficients can "
-    "shift more in smaller cells. Industry-level mechanisms — for example, whether "
-    "the digital channel works differently in services versus manufacturing — are a "
-    "natural extension that this design does not pursue here.", BT)
+    "Fifth, the sector fixed effects in the main models are intentionally "
+    "broad to keep the cross-wave specification comparable. Section 4.5 "
+    "Panel G addresses one natural extension by re-estimating the pooled "
+    "M2 / M7 / M8 specifications on manufacturing (sector1 ∈ {1, 2, 3}; "
+    "N = 1,854) versus non-manufacturing (sector1 ∈ {4, 5, 6, 7}; N = "
+    "1,104) subsets, and shows that the digital-adoption channel "
+    "operates primarily in manufacturing while the technological-"
+    "capability channel is present in both. Finer industry-level "
+    "mechanisms — for example, contrasting digitally intensive services "
+    "with traditional services, or contrasting export-oriented with "
+    "domestically oriented manufacturing sub-sectors — would benefit "
+    "from a research design that exploits richer industry classification "
+    "than the WBES one-digit codes allow.", BT)
 
 # 7. Conclusion ----------------------------------------------------------------
 add_para(doc, "7. Conclusion", H1)
