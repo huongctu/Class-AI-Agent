@@ -47,7 +47,9 @@ R2 reviewer raised five framing/identification concerns and two factual errors. 
 - [x] Corresponding author = Phan Anh Tu — **confirmed**.
 - [x] Funding = "The authors did not receive support from any organization for the submitted work" — **confirmed (no funding)**.
 - [x] Acknowledgments updated to thank the World Bank for making the WBES Singapore 2023 microdata publicly available, plus seminar participants and colleagues — **confirmed**.
-- [ ] Verify postal address on Title Page: "Campus II, 3/2 Street, Ninh Kieu District, Can Tho City 900000" — **still pending**, please confirm or provide the exact office address for Phan Anh Tu.
+- [x] Postal address on Title Page: "Campus II, 3/2 Street, Ninh Kieu District, Can Tho City 900000, Vietnam" — **confirmed**.
+
+**All four items confirmed. Manuscript package is ready for submission pending the two outstanding tasks in Section 7 (regenerate embedded figures + portal upload).**
 
 ## 7. Outstanding work
 
