@@ -143,14 +143,24 @@ def main():
     else:
         passes.append("✓ All in-text citations use MIR style (Author Year)")
 
-    # 7. Hypothesis numbering
+    # 7. Hypothesis numbering — H1, H3, H4 are formal hypotheses; H2 was
+    #    intentionally demoted to a research question per Pass 3 review,
+    #    so it appears as the "open empirical question" phrasing in §2.3.2
+    #    rather than as a numbered hypothesis statement.
     h_present = []
-    for h in ("H1", "H2", "H3", "H4"):
-        if re.search(rf"Hypothesis {h[1]} \({h}\)", text_doc) or \
+    for h in ("H1", "H3", "H4"):
+        if re.search(rf"Hypothesis \d+ \({h}\)", text_doc) or \
            re.search(rf"\b{h}\b", text_doc):
             h_present.append(h)
-    if len(h_present) == 4:
-        passes.append(f"✓ All four hypotheses (H1–H4) present")
+    h2_demoted = ("treated as an open empirical question" in text_doc
+                  and "supplementary specification" in text_doc.lower())
+    if len(h_present) == 3 and h2_demoted:
+        passes.append("✓ H1/H3/H4 present; H2 demoted to research question "
+                      "(open empirical question, supplementary spec)")
+    elif len(h_present) == 3:
+        issues.append(f"✗ H2 demotion phrasing missing — expected "
+                      f"'open empirical question' + 'supplementary "
+                      f"specification' wording")
     else:
         issues.append(f"✗ Hypothesis coverage incomplete: only {h_present}")
 
