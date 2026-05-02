@@ -81,16 +81,16 @@ add_para(doc,
     "Revisiting the Internationalisation–Performance Relationship in an "
     "Emerging Market: The Roles of Technological Capability and Digital "
     "Adoption", "Title")
-add_para(doc, "v5.1 — IJoEM submission draft, Emerald Harvard refs (Vietnam 2009/2015/2023)", "Subtitle")
+add_para(doc, "v5.2 — IJoEM submission draft (Phan Anh Tu corresponding; Vietnam 2009/2015/2023)", "Subtitle")
 add_para(doc, "2026-05-02", "Date")
 
 # Authors and affiliations (placeholders — replace before submission) ----------
-add_para(doc, "Do Thuy Huong (corresponding author)", "Author")
+add_para(doc, "Do Thuy Huong", "Author")
 add_para(doc,
     "PhD Candidate, College of Economics, Can Tho University, Can Tho, Vietnam. "
     "E-mail: huongp1323001@gstudent.ctu.edu.vn. "
     "ORCID: https://orcid.org/0000-0002-7711-2487.", BT)
-add_para(doc, "Phan Anh Tu", "Author")
+add_para(doc, "Phan Anh Tu (corresponding author)", "Author")
 add_para(doc,
     "School of Economics (International Business), Can Tho University, Can Tho, "
     "Vietnam. E-mail: patu@ctu.edu.vn. "
@@ -1137,56 +1137,67 @@ add_para(doc,
     "estimates can be informative while still concealing important differences in the "
     "timing and form of digital payoff.", BT)
 
-# Acknowledgements -------------------------------------------------------------
-add_para(doc, "Acknowledgements", H1)
+# Author contributions ---------------------------------------------------------
+add_para(doc, "Author contributions", H1)
 add_para(doc,
-    "Source: World Bank Enterprise Surveys, www.enterprisesurveys.org. We thank the "
-    "Enterprise Analysis Unit of the Development Economics Global Indicators Group of "
-    "the World Bank for the data. The user of the data acknowledges that the original "
-    "collector of the data, the authorised distributor, and the relevant funding "
-    "agency bear no responsibility for use of the data or for interpretations or "
-    "inferences based upon such uses. The findings, interpretations, and conclusions "
-    "expressed in this paper are entirely those of the authors.", FP)
-add_para(doc,
-    "The authors received no specific grant from any funding agency in the public, "
-    "commercial, or not-for-profit sectors for the research, authorship, or "
-    "publication of this article.", BT)
+    "Do Thuy Huong contributed to conceptualisation, data curation, formal "
+    "analysis, investigation, methodology, visualisation, and drafting of "
+    "the manuscript. Phan Anh Tu contributed to conceptualisation, "
+    "supervision, methodology, validation, review and editing, and overall "
+    "guidance of the study. Both authors approved the final version of the "
+    "manuscript.", FP)
 
-# Author contributions (CRediT) ------------------------------------------------
-add_para(doc, "Author contributions (CRediT taxonomy)", H1)
-add_para(doc,
-    "Do Thuy Huong: conceptualisation; methodology; formal analysis; data "
-    "curation; writing — original draft; writing — review and editing; "
-    "visualisation; project administration. Phan Anh Tu: conceptualisation; "
-    "methodology; validation; writing — review and editing; supervision. All "
-    "authors read and approved the final manuscript.", FP)
+# Conflict of interest --------------------------------------------------------
+add_para(doc, "Conflict of interest", H1)
+add_para(doc, "The authors declare no conflict of interest.", FP)
 
-# Declaration of competing interest -------------------------------------------
-add_para(doc, "Declaration of competing interest", H1)
+# Funding ---------------------------------------------------------------------
+add_para(doc, "Funding", H1)
 add_para(doc,
-    "The authors declare that they have no known competing financial interests or "
-    "personal relationships that could have appeared to influence the work "
-    "reported in this paper.", FP)
+    "This research received no specific grant from any funding agency in "
+    "the public, commercial, or not-for-profit sectors.", FP)
+
+# Data availability statement -------------------------------------------------
+add_para(doc, "Data availability statement", H1)
+add_para(doc,
+    "The data that support the findings of this study are from the World "
+    "Bank Enterprise Surveys and are available from the World Bank "
+    "Enterprise Surveys portal, subject to registration and compliance "
+    "with the World Bank Enterprise Surveys Data Access Protocol. Because "
+    "the protocol restricts redistribution of the original .dta files to "
+    "third parties, the authors do not redistribute the raw survey files. "
+    "Replication materials, including variable-construction details, "
+    "model specifications, and computational outputs, are available from "
+    "the authors upon reasonable request and may be shared to the extent "
+    "permitted by the data-access terms.", FP)
 
 # Use of generative AI ---------------------------------------------------------
 add_para(doc, "Use of generative AI in the writing process", H1)
 add_para(doc,
-    "Generative AI tools were used during manuscript preparation to assist with "
-    "language editing, structure suggestions, and the assembly of the replication "
-    "package documentation. All conceptual framing, hypothesis development, "
-    "empirical analysis, results interpretation, and final wording were authored "
-    "by the human authors, who take full responsibility for the content of the "
-    "publication.", FP)
+    "Generative AI tools were used during manuscript preparation to assist "
+    "with language editing, structure suggestions, and the assembly of the "
+    "replication package documentation. All conceptual framing, hypothesis "
+    "development, empirical analysis, results interpretation, and final "
+    "wording were authored by the human authors, who take full "
+    "responsibility for the content of the publication.", FP)
 
-# Data availability ------------------------------------------------------------
-add_para(doc, "Data availability", H1)
+# Acknowledgements -------------------------------------------------------------
+add_para(doc, "Acknowledgements", H1)
 add_para(doc,
-    "The Vietnam WBES 2009, 2015, and 2023 microdata are publicly available from "
-    "https://www.enterprisesurveys.org/en/data subject to registration with the "
-    "Enterprise Analysis Unit and acceptance of the WBES Data Access Protocol. The "
-    "replication package distributed with this paper (p4_vietnam/) contains the full "
-    "Stata pipeline that reproduces every coefficient, table, and figure reported "
-    "above from the public releases.", FP)
+    "This study uses data from the World Bank Enterprise Surveys. We thank "
+    "the Enterprise Analysis Unit of the Development Economics Global "
+    "Indicators Group of the World Bank for providing access to the data. "
+    "The original collector of the data, the authorised distributor, and "
+    "the relevant funding agency bear no responsibility for the use of the "
+    "data or for interpretations based on such use. The findings, "
+    "interpretations, and conclusions expressed in this article are those "
+    "of the authors and do not necessarily represent the views of the "
+    "World Bank Group, its Executive Directors, or the governments they "
+    "represent. The authors received no specific grant from any funding "
+    "agency in the public, commercial, or not-for-profit sectors. The "
+    "replication package accompanying this manuscript was developed to "
+    "support methodological transparency and computational "
+    "reproducibility.", FP)
 
 # Figures ----------------------------------------------------------------------
 add_para(doc, "Figures", H1)
