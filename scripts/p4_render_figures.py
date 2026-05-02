@@ -154,63 +154,105 @@ def render_figure_2(waves, pooled):
 
 
 def render_figure_1():
-    fig, ax = plt.subplots(figsize=(11, 6))
-    ax.set_xlim(0, 12)
-    ax.set_ylim(0, 7)
+    """Conceptual model: black-and-white box diagram for IJoEM-style print.
+
+    Independent variable (Internationalisation, FSTS) on the left, dependent
+    variable (Firm performance, lnLP) on the right, both with thick borders.
+    Moderators (TCI, DAI) sit above and below the IV-DV spine with thinner
+    borders. Controls run across the top in a thin dashed box. All shapes are
+    monochrome (black borders, white fill) for greyscale-safe print.
+    """
+    fig, ax = plt.subplots(figsize=(11.0, 6.6))
+    ax.set_xlim(0, 14)
+    ax.set_ylim(0, 8)
     ax.axis("off")
 
-    boxes = {
-        "FSTS_c, FSTS_c²":     (1.0, 4.5, "#cfe2f3"),
-        "TCI_z":               (1.0, 2.8, "#d9ead3"),
-        "DAI_z":               (1.0, 1.1, "#fce5cd"),
-        "lnLP\n(log labour\nproductivity)": (8.5, 3.0, "#ead1dc"),
-    }
-    box_w, box_h = 2.8, 1.1
-    for label, (x, y, color) in boxes.items():
-        ax.add_patch(mpatches.FancyBboxPatch(
-            (x, y), box_w, box_h, boxstyle="round,pad=0.06",
-            linewidth=1.2, edgecolor="#333333", facecolor=color))
-        ax.text(x + box_w / 2, y + box_h / 2, label,
-                ha="center", va="center", fontsize=10, fontweight="bold")
-
-    ctrl_x, ctrl_y = 4.4, 5.6
+    iv_x, iv_y, iv_w, iv_h = 0.5, 3.4, 3.6, 1.6
+    dv_x, dv_y, dv_w, dv_h = 9.9, 3.4, 3.6, 1.6
     ax.add_patch(mpatches.FancyBboxPatch(
-        (ctrl_x, ctrl_y), 4.0, 0.7, boxstyle="round,pad=0.05",
-        linewidth=1.0, edgecolor="#666666", facecolor="#f3f3f3", linestyle="dashed"))
-    ax.text(ctrl_x + 2.0, ctrl_y + 0.35,
-            "Controls: lnEmp, FirmAge, ForeignOwned, sector FE, wave FE (pooled)",
+        (iv_x, iv_y), iv_w, iv_h, boxstyle="square,pad=0.05",
+        linewidth=2.6, edgecolor="black", facecolor="white"))
+    ax.text(iv_x + iv_w / 2, iv_y + iv_h / 2 + 0.18,
+            "Internationalisation",
+            ha="center", va="center", fontsize=12, fontweight="bold")
+    ax.text(iv_x + iv_w / 2, iv_y + iv_h / 2 - 0.32,
+            "(FSTS_c, FSTS_c²)\nIndependent variable",
+            ha="center", va="center", fontsize=9, style="italic")
+
+    ax.add_patch(mpatches.FancyBboxPatch(
+        (dv_x, dv_y), dv_w, dv_h, boxstyle="square,pad=0.05",
+        linewidth=2.6, edgecolor="black", facecolor="white"))
+    ax.text(dv_x + dv_w / 2, dv_y + dv_h / 2 + 0.18,
+            "Firm performance",
+            ha="center", va="center", fontsize=12, fontweight="bold")
+    ax.text(dv_x + dv_w / 2, dv_y + dv_h / 2 - 0.32,
+            "(ln LP)\nDependent variable",
+            ha="center", va="center", fontsize=9, style="italic")
+
+    ax.annotate("", xy=(dv_x, dv_y + dv_h / 2),
+                xytext=(iv_x + iv_w, iv_y + iv_h / 2),
+                arrowprops=dict(arrowstyle="-|>", lw=2.4, color="black",
+                                mutation_scale=20, shrinkA=4, shrinkB=4))
+    ax.text((iv_x + iv_w + dv_x) / 2, iv_y + iv_h / 2 + 0.32,
+            "H1 (nonlinear, inverted-U)",
+            ha="center", va="center", fontsize=10, fontweight="bold",
+            bbox=dict(boxstyle="square,pad=0.20", facecolor="white",
+                      edgecolor="white"))
+
+    tci_x, tci_y, tci_w, tci_h = 5.6, 6.0, 2.8, 1.0
+    dai_x, dai_y, dai_w, dai_h = 5.6, 0.9, 2.8, 1.0
+    moderators = [
+        (tci_x, tci_y, tci_w, tci_h, "Technological Capability",
+         "(TCI_z) — moderator (H2)"),
+        (dai_x, dai_y, dai_w, dai_h, "Digital Adoption",
+         "(DAI_z) — moderator (H3, H4)"),
+    ]
+    for (x, y, w, h, label, sublabel) in moderators:
+        ax.add_patch(mpatches.FancyBboxPatch(
+            (x, y), w, h, boxstyle="square,pad=0.04",
+            linewidth=1.2, edgecolor="black", facecolor="white"))
+        ax.text(x + w / 2, y + h / 2 + 0.16, label,
+                ha="center", va="center", fontsize=10, fontweight="bold")
+        ax.text(x + w / 2, y + h / 2 - 0.22, sublabel,
+                ha="center", va="center", fontsize=8, style="italic")
+
+    ax.annotate("", xy=((iv_x + iv_w + dv_x) / 2, iv_y + iv_h - 0.15),
+                xytext=(tci_x + tci_w / 2, tci_y),
+                arrowprops=dict(arrowstyle="->", lw=1.0, color="black",
+                                mutation_scale=14))
+    ax.annotate("", xy=((iv_x + iv_w + dv_x) / 2, iv_y + 0.15),
+                xytext=(dai_x + dai_w / 2, dai_y + dai_h),
+                arrowprops=dict(arrowstyle="->", lw=1.0, color="black",
+                                mutation_scale=14))
+
+    ax.text(tci_x + tci_w / 2, tci_y - 0.40,
+            "moderates curvature", ha="center", va="center",
+            fontsize=8, style="italic")
+    ax.text(dai_x + dai_w / 2, dai_y + dai_h + 0.40,
+            "moderates curvature", ha="center", va="center",
+            fontsize=8, style="italic")
+
+    ctrl_x, ctrl_y, ctrl_w, ctrl_h = 0.5, 7.1, 13.0, 0.6
+    ax.add_patch(mpatches.FancyBboxPatch(
+        (ctrl_x, ctrl_y), ctrl_w, ctrl_h, boxstyle="square,pad=0.04",
+        linewidth=0.9, edgecolor="black", facecolor="white",
+        linestyle="dashed"))
+    ax.text(ctrl_x + ctrl_w / 2, ctrl_y + ctrl_h / 2,
+            "Control variables: firm size (lnEmp), firm age (FirmAge), "
+            "foreign ownership (ForeignOwned), sector FE; pooled adds wave FE",
+            ha="center", va="center", fontsize=9, style="italic")
+
+    ax.text(7.0, 0.10,
+            "All paths estimated as OLS HC1 robust associations on three Vietnam "
+            "WBES waves\n(2009 N = 989, 2015 N = 956, 2023 N = 1,013, pooled "
+            "N = 2,958).",
             ha="center", va="center", fontsize=8, style="italic")
 
-    arrow_kw = dict(arrowstyle="->", lw=1.4, color="#333333",
-                    mutation_scale=14, connectionstyle="arc3,rad=0.0")
-
-    def arrow(p0, p1, label, lpos, **kw):
-        ax.annotate("", xy=p1, xytext=p0, arrowprops={**arrow_kw, **kw})
-        ax.text(lpos[0], lpos[1], label, fontsize=9, fontweight="bold",
-                color=kw.get("color", "#333333"),
-                ha="center", va="center",
-                bbox=dict(boxstyle="round,pad=0.18", facecolor="white",
-                          edgecolor="white", alpha=0.95))
-
-    arrow((1.0 + box_w, 5.05), (8.5, 3.7),
-          "H1 (curvature)", (4.7, 4.7), color="#1f4e79")
-    arrow((1.0 + box_w, 3.35), (8.5, 3.3),
-          "H2 (level + moderation of curvature)", (4.9, 3.6), color="#2e7d32")
-    arrow((1.0 + box_w, 1.65), (8.5, 2.95),
-          "H3 (direct, on average)", (4.9, 2.4), color="#bf6b04")
-
-    arrow((2.4, 1.65), (2.4, 4.45),
-          "H4 (FSTS_c × DAI_z, FSTS_c² × DAI_z)", (4.9, 1.4),
-          color="#7b1fa2", connectionstyle="arc3,rad=-0.5")
-
-    ax.text(6.0, 0.4,
-            "All effects estimated as OLS HC1 robust associations on three Vietnam WBES waves\n"
-            "(2009 N = 989, 2015 N = 958, 2023 N = 1,013, pooled N = 2,960).",
-            ha="center", va="center", fontsize=8, style="italic", color="#444444")
-
-    fig.suptitle("Figure 1. Conceptual model and prediction map",
-                 fontsize=12, fontweight="bold", y=0.97)
-    fig.tight_layout(rect=(0, 0, 1, 0.92))
+    fig.suptitle("Figure 1. Conceptual model: technological capability and digital "
+                 "adoption as moderators\nof the internationalisation–firm "
+                 "performance relationship",
+                 fontsize=11.5, fontweight="bold", y=0.97)
+    fig.tight_layout(rect=(0, 0.02, 1, 0.93))
     fig.savefig(OUT_FIGS / "figure_1_conceptual_model.pdf")
     fig.savefig(OUT_FIGS / "figure_1_conceptual_model.png", dpi=300)
     plt.close(fig)

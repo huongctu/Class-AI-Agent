@@ -88,7 +88,7 @@ def build_wave(year: int) -> pd.DataFrame:
     df["e6_r"] = recode_yesno(df["e6"])
     df["c22b_r"] = recode_yesno(df["c22b"])
     df["TCI_thin"] = df[["b8_r", "e6_r"]].mean(axis=1)
-    df["DAI_thin"] = df[["c22b_r", "e6_r"]].mean(axis=1)
+    df["DAI_thin"] = df["c22b_r"]
 
     if year in (2015, 2023):
         df["h1_r"] = recode_yesno(df["h1"])
@@ -106,8 +106,8 @@ def build_wave(year: int) -> pd.DataFrame:
         df.loc[df["k38"].isna(), "k38b"] = np.nan
         df["k33c"] = df["k33"] / 100.0
         df["k38c"] = df["k38"] / 100.0
-        df["DAI_rich_cont"] = df[["c22b_r", "e6_r", "k33c", "k38c"]].mean(axis=1)
-        df["DAI_rich_bin"] = df[["c22b_r", "e6_r", "k33b", "k38b"]].mean(axis=1)
+        df["DAI_rich_cont"] = df[["c22b_r", "k33c", "k38c"]].mean(axis=1)
+        df["DAI_rich_bin"] = df[["c22b_r", "k33b", "k38b"]].mean(axis=1)
 
     if "a4b" in df.columns and year in (2009, 2015):
         df["sector1"] = df["a4b"].apply(first_digit)
