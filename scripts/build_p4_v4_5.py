@@ -89,8 +89,8 @@ add_para(doc,
     "Emerging Market: The Roles of Technological Capability and Digital "
     "Adoption", "Title")
 add_para(doc,
-    ("v5.4 — IJoEM blinded manuscript with sector split (Vietnam 2009/2015/2023)" if BLINDED
-     else "v5.4 — IJoEM submission draft with sector split (Vietnam 2009/2015/2023)"),
+    ("v5.5 — IJoEM blinded manuscript with embedded tables and split figures (Vietnam 2009/2015/2023)" if BLINDED
+     else "v5.5 — IJoEM submission draft with embedded tables and split figures (Vietnam 2009/2015/2023)"),
     "Subtitle")
 add_para(doc, "2026-05-02", "Date")
 
@@ -494,6 +494,24 @@ add_para(doc,
     "varies across stages of internationalisation and becomes more conditional in "
     "later phases of transition.", BX)
 
+# Conceptual model (embedded in body, just after H4) ---------------------------
+_FIG_DIR = Path("/home/user/Class-AI-Agent/p4_vietnam/output/figures")
+from docx.shared import Inches  # local import (kept idempotent)
+if (_FIG_DIR / "figure_1_conceptual_model.png").exists():
+    doc.add_picture(str(_FIG_DIR / "figure_1_conceptual_model.png"),
+                    width=Inches(6.5))
+add_para(doc,
+    "Figure 1. Conceptual model. The independent variable "
+    "(internationalisation, FSTS_c and FSTS_c²) and the dependent variable "
+    "(firm performance, ln labour productivity) anchor the IV–DV spine. "
+    "Technological capability (TCI_z) and digital adoption (DAI_z) operate "
+    "as moderators of the curvature; controls are firm size (lnEmp), firm "
+    "age (FirmAge), foreign ownership (ForeignOwned), broad sector fixed "
+    "effects, and wave fixed effects in the pooled specification. "
+    "Source: World Bank Enterprise Surveys "
+    "(https://www.enterprisesurveys.org); authors’ calculations on the "
+    "2009, 2015 and 2023 Vietnam waves.", BT)
+
 # 3. Data and methods ----------------------------------------------------------
 add_para(doc, "3. Data, variables, and empirical strategy", H1)
 
@@ -663,11 +681,13 @@ for i, row in enumerate(desc_rows, start=1):
         cells[j].text = val
 
 add_para(doc,
-    "Notes. Cell entries are mean (standard deviation) for continuous variables "
-    "and proportion for binary indicators. Listwise deletion is applied on the "
-    "focal variable set with WBES non-response codes (−9) treated as missing. "
-    "Source: replication script p4_vietnam/output/tables/table_1_descriptives."
-    "csv.", BT)
+    "Notes. Cell entries are mean (standard deviation) for continuous "
+    "variables and proportion for binary indicators. Listwise deletion is "
+    "applied on the focal variable set with WBES non-response codes (−9) "
+    "treated as missing. Source: World Bank Enterprise Surveys "
+    "(https://www.enterprisesurveys.org); authors’ calculations on the "
+    "Vietnam 2009, 2015 and 2023 waves. Replication output: "
+    "p4_vietnam/output/tables/table_1_descriptives.csv.", BT)
 
 add_para(doc, "4.1 Wave-specific findings", H2)
 add_para(doc,
@@ -894,11 +914,34 @@ for i, row in enumerate(rows, start=1):
     for j, val in enumerate(row):
         cells[j].text = val
 
-add_para(doc, 
+add_para(doc,
     "Notes. Cell entries report β coefficients with HC1-robust p-values from the full "
     "specifications. n.s. = not statistically significant at conventional thresholds. "
     "Interaction terms entered as FSTS_c × DAI_z and FSTS_c² × DAI_z; the table "
-    "reports the focal linear interaction.", BT)
+    "reports the focal linear interaction. "
+    "Source: World Bank Enterprise Surveys (https://www.enterprisesurveys.org); "
+    "authors’ calculations.", BT)
+
+# Predicted I–P curves embedded as four standalone sub-figures ----------------
+for tag, label in [
+    ("2a", "Vietnam 2009 (N = 989)"),
+    ("2b", "Vietnam 2015 (N = 956)"),
+    ("2c", "Vietnam 2023 (N = 1,013)"),
+    ("2d", "Pooled Vietnam 2009/2015/2023 (N = 2,958)"),
+]:
+    fpath = _FIG_DIR / f"figure_{tag}.png"
+    if fpath.exists():
+        doc.add_picture(str(fpath), width=Inches(6.0))
+    add_para(doc,
+        f"Figure {tag}. Predicted ln(labour productivity) across direct-export "
+        f"intensity, {label}. The fitted curve comes from the M2 inverted-U "
+        "OLS specification with HC1 robust standard errors, holding controls "
+        "(lnEmp, FirmAge, ForeignOwned, sector fixed effects, and wave fixed "
+        "effects in the pooled panel) at within-wave means. The shaded band "
+        "is the 95 % confidence interval for the predicted mean; the vertical "
+        "dashed line marks the turning-point point estimate on the raw FSTS "
+        "scale. Source: World Bank Enterprise Surveys "
+        "(https://www.enterprisesurveys.org); authors’ calculations.", BT)
 
 add_para(doc, "4.5 Robustness", H2)
 add_para(doc,
@@ -1024,6 +1067,110 @@ add_para(doc,
     "cross-border production-coordination demands more strongly in "
     "tradable-goods sectors than in service-oriented or domestically "
     "oriented sectors of the Vietnamese economy.", BT)
+
+# Table 3 — Robustness summary embedded -----------------------------------
+add_para(doc,
+    "Table 3 collates the robustness panels documented in §4.5 in a "
+    "single overview to ease cross-comparison.", FP)
+
+t3 = doc.add_table(rows=8, cols=4)
+t3_pr = t3._element.find(qn("w:tblPr"))
+if t3_pr is None:
+    t3_pr = OxmlElement("w:tblPr")
+    t3._element.insert(0, t3_pr)
+t3_style = t3_pr.find(qn("w:tblStyle"))
+if t3_style is None:
+    t3_style = OxmlElement("w:tblStyle")
+    t3_pr.insert(0, t3_style)
+t3_style.set(qn("w:val"), "Table")
+
+hdr = t3.rows[0].cells
+hdr[0].text = "Panel / Sample"
+hdr[1].text = "N"
+hdr[2].text = "Focal coefficient"
+hdr[3].text = "Joint test"
+
+t3_rows = [
+    ("A. TCI_full direct (2015)", "956",
+     "TCI_full_z = 0.056 (p = .253) n.s.; DAI_z = −0.033 n.s.",
+     "M3 joint p = .492 n.s."),
+    ("A. TCI_full direct (2023)", "1,013",
+     "TCI_full_z = 0.096 (p = .024) *; DAI_z = 0.097 (p = .037) *",
+     "M3 joint p = .152 n.s."),
+    ("B. DAI_rich continuous (2023)", "1,013",
+     "FSTS_c × DAI_rich_cont_z = −0.933 (p = .076) †",
+     "M8 joint p = .099 †"),
+    ("B. DAI_rich binary (2023)", "1,013",
+     "FSTS_c × DAI_rich_bin_z = −0.893 (p = .169) n.s.",
+     "M8 joint p = .243 n.s."),
+    ("C. Common-N comparison (2023)", "1,013",
+     "DAI_z moderation re-estimated on DAI_rich sample",
+     "M8 joint p = .013 *"),
+    ("D. Micro-firm exclusion (l1 ≥ 10)", "2,473",
+     "TCI_z = 0.188 ***; DAI_z = 0.054 n.s.",
+     "M8 joint p = .167 n.s."),
+    ("G. Manufacturing (sector1 ∈ {1,2,3})", "1,854",
+     "TCI_z = 0.223 ***; DAI_z = 0.087 **; FSTS_c × DAI_z = −0.543 †",
+     "M8 joint p = .103 †"),
+]
+for i, row in enumerate(t3_rows, start=1):
+    for j, val in enumerate(row):
+        t3.rows[i].cells[j].text = val
+
+add_para(doc,
+    "Notes. Each row summarises one robustness panel from §4.5 estimated "
+    "by OLS with HC1 robust standard errors. Significance markers: *** "
+    "p < .001, ** p < .01, * p < .05, † p < .10, n.s. = not significant. "
+    "Panel E (Heckman / control function) and Panel F (Paternoster "
+    "cross-wave z-tests) are reported in the prose because their natural "
+    "presentation is per-sample rather than per-row. Source: World Bank "
+    "Enterprise Surveys (https://www.enterprisesurveys.org); authors’ "
+    "calculations. Full coefficient output: "
+    "p4_vietnam/output/tables/table_3_robustness.csv.", BT)
+
+# Table LM — turning points + Lind–Mehlum p-values ------------------------
+add_para(doc,
+    "Table LM reports the implied turning points of the inverted-U "
+    "specification (M2) and the Lind–Mehlum p-values for each wave and "
+    "the pooled sample.", FP)
+
+tLM = doc.add_table(rows=5, cols=5)
+tLM_pr = tLM._element.find(qn("w:tblPr"))
+if tLM_pr is None:
+    tLM_pr = OxmlElement("w:tblPr")
+    tLM._element.insert(0, tLM_pr)
+tLM_style = tLM_pr.find(qn("w:tblStyle"))
+if tLM_style is None:
+    tLM_style = OxmlElement("w:tblStyle")
+    tLM_pr.insert(0, tLM_style)
+tLM_style.set(qn("w:val"), "Table")
+
+lm_hdr = tLM.rows[0].cells
+lm_hdr[0].text = "Sample"
+lm_hdr[1].text = "N"
+lm_hdr[2].text = "Turning point (raw FSTS)"
+lm_hdr[3].text = "95 % delta-method CI"
+lm_hdr[4].text = "Lind–Mehlum p"
+
+lm_rows = [
+    ("VNM 2009",   "989",   "46.2 %", "[37.4 %, 55.1 %]", ".006"),
+    ("VNM 2015",   "956",   "39.3 %", "[30.3 %, 48.4 %]", ".009"),
+    ("VNM 2023", "1,013",   "41.6 %", "[31.7 %, 51.5 %]", ".013"),
+    ("VNM pooled", "2,958", "39.7 %", "[34.0 %, 45.5 %]", "< .001"),
+]
+for i, row in enumerate(lm_rows, start=1):
+    for j, val in enumerate(row):
+        tLM.rows[i].cells[j].text = val
+
+add_para(doc,
+    "Notes. Turning points are derived from the M2 inverted-U "
+    "specification (lnLP = β₀ + β₁ FSTS_c + β₂ FSTS_c² + controls + sector "
+    "FE [+ wave FE in pooled]) and back-transformed to the raw FSTS scale. "
+    "95 % confidence intervals use the delta method on the within-sample "
+    "FSTSc range. Lind–Mehlum p-values follow the Sasabuchi-style endpoint "
+    "test for an inverted-U over the observed FSTS range. Source: World "
+    "Bank Enterprise Surveys (https://www.enterprisesurveys.org); authors’ "
+    "calculations.", BT)
 
 # 5. Discussion ----------------------------------------------------------------
 add_para(doc, "5. Discussion", H1)
@@ -1249,52 +1396,20 @@ add_para(doc,
     "support methodological transparency and computational "
     "reproducibility.", FP)
 
-# Figures ----------------------------------------------------------------------
-add_para(doc, "Figures", H1)
-
-FIG_DIR = Path("/home/user/Class-AI-Agent/p4_vietnam/output/figures")
-from docx.shared import Inches  # local import to avoid hoisting
-
-if (FIG_DIR / "figure_1_conceptual_model.png").exists():
-    doc.add_picture(str(FIG_DIR / "figure_1_conceptual_model.png"), width=Inches(6.5))
+# Supplementary CSV outputs (replication package pointers) ---------------------
+add_para(doc, "Supplementary materials", H1)
 add_para(doc,
-    "Figure 1. Conceptual model and prediction map. Boxes: FSTS_c and FSTS_c² "
-    "(direct-export intensity, mean-centred and squared within wave); TCI_z "
-    "(Technological Capability Index, z-standardised within wave); DAI_z "
-    "(foundational Digital Adoption Index, z-standardised within wave); lnLP "
-    "(log labour productivity); controls (lnEmp, FirmAge, ForeignOwned, sector "
-    "fixed effects, wave fixed effects in pooled specifications). Arrows label "
-    "the four hypotheses tested in §4: H1 (curvature), H2 (TCI_z direct level "
-    "and moderation of curvature), H3 (DAI_z direct association on average), "
-    "H4 (FSTS_c × DAI_z and FSTS_c² × DAI_z reshape the curvature; sign is an "
-    "empirical question that varies across waves).", FP)
-
-if (FIG_DIR / "figure_2_main_results.png").exists():
-    doc.add_picture(str(FIG_DIR / "figure_2_main_results.png"), width=Inches(6.5))
-add_para(doc,
-    "Figure 2. Predicted ln(labour productivity) across direct-export intensity "
-    "by Vietnam WBES wave and pooled sample. Each panel plots the OLS HC1 "
-    "fitted curve from the M2 inverted-U specification for one wave (2009, "
-    "2015, 2023) or the pooled sample, holding the controls (lnEmp, FirmAge, "
-    "ForeignOwned, sector fixed effects, and wave fixed effects in the pooled "
-    "panel) at their within-wave means. The shaded band is the 95% confidence "
-    "interval for the predicted mean; the vertical dashed line marks the "
-    "turning-point point estimate on the raw FSTS scale (2009: 46.2 %; 2015: "
-    "39.6 %; 2023: 41.6 %; pooled: 39.8 %).", BT)
-
-# Tables (replication appendix references) ------------------------------------
-add_para(doc, "Tables", H1)
-add_para(doc,
-    "Table 2 (baseline) — tables/table_2_baseline.csv. Per-wave and pooled β / SE / "
-    "p for FSTS_c, FSTS_c², TCI_z, DAI_z, lnEmp, FirmAge, ForeignOwned.", FP)
-add_para(doc,
-    "Table 3 (robustness) — tables/table_3_robustness.csv. Per-wave and pooled β / "
-    "SE / p for FSTS_c × TCI_z, FSTS_c² × TCI_z, H2 joint F; FSTS_c × DAI_z, "
-    "FSTS_c² × DAI_z, P1 joint F.", BT)
-add_para(doc,
-    "Table LM — tables/table_lind_mehlum.csv. Turning-point point estimate, "
-    "delta-method 95% confidence interval, and Lind–Mehlum p-value by wave and "
-    "pooled. Replication package and instructions: see p4_vietnam/README.md.", BT)
+    "All figures and tables in the manuscript are embedded inline. The "
+    "underlying coefficient outputs are also distributed as plain CSV files "
+    "in the replication package for downstream re-analysis: "
+    "tables/table_1_descriptives.csv (Table 1), "
+    "tables/coefs_main_models.csv (M0–M8 long-format coefficient table), "
+    "tables/joint_tests_main_models.csv (H2 and P1 joint F-tests), "
+    "tables/table_lind_mehlum.csv (Table LM source), "
+    "tables/table_3_robustness.csv (Table 3 panels A–D + G), "
+    "tables/selection_checks.csv (Heckman / control function), and "
+    "tables/table_paternoster.csv (cross-wave z-tests). Replication "
+    "package and instructions: see p4_vietnam/README.md.", FP)
 
 # References -------------------------------------------------------------------
 add_para(doc, "References", H1)

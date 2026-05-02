@@ -89,19 +89,25 @@ def predict_curve(fit, names, df, fsts_grid):
 
 
 def render_figure_2(waves, pooled):
-    fig, axes = plt.subplots(2, 2, figsize=(11, 8.5), sharey=True)
-    panels = [(2009, axes[0, 0]), (2015, axes[0, 1]), (2023, axes[1, 0])]
-
-    for year, ax in panels:
-        df = waves[year]
-        fit, names = fit_inverted_u(df, with_wave_fe=False)
+    """Render Figure 2 as four standalone panels (2a, 2b, 2c, 2d) plus the
+    legacy combined 2x2 grid for backward compatibility."""
+    sub_panels = [
+        ("2a", "VNM 2009", waves[2009], False, "#1f77b4"),
+        ("2b", "VNM 2015", waves[2015], False, "#1f77b4"),
+        ("2c", "VNM 2023", waves[2023], False, "#1f77b4"),
+        ("2d", "Pooled VNM 2009/2015/2023", pooled, True, "#2ca02c"),
+    ]
+    for tag, label, df, with_wave_fe, color in sub_panels:
+        fig, ax = plt.subplots(figsize=(7.5, 5.0))
+        fit, names = fit_inverted_u(df, with_wave_fe=with_wave_fe)
         f_max = min(1.0, df["FSTS"].max())
         grid = np.linspace(0, f_max, 100)
         yhat, se = predict_curve(fit, names, df, grid)
 
-        ax.plot(grid * 100, yhat, color="#1f77b4", linewidth=2.0, label="Predicted lnLP")
+        ax.plot(grid * 100, yhat, color=color, linewidth=2.0,
+                label="Predicted ln(labour productivity)")
         ax.fill_between(grid * 100, yhat - 1.96 * se, yhat + 1.96 * se,
-                        color="#1f77b4", alpha=0.18, label="95% CI")
+                        color=color, alpha=0.18, label="95% confidence interval")
 
         b1 = fit.params[names.index("FSTSc")]
         b2 = fit.params[names.index("FSTSc2")]
@@ -109,45 +115,128 @@ def render_figure_2(waves, pooled):
             tp_c = -b1 / (2 * b2)
             tp_raw = tp_c + df["FSTS"].mean()
             if 0 <= tp_raw <= f_max:
-                ax.axvline(tp_raw * 100, color="#d62728", linestyle="--", linewidth=1.2,
-                           label=f"Turning point ≈ {tp_raw*100:.1f}%")
+                ax.axvline(tp_raw * 100, color="black", linestyle="--",
+                           linewidth=1.4,
+                           label="Turning point ≈ " + f"{tp_raw*100:.1f}%")
 
-        ax.set_title(f"VNM {year}  (N = {len(df):,})", fontsize=11)
+        title = ("Figure " + tag + ". Predicted ln(labour productivity) "
+                 "across direct-export intensity, " + label +
+                 "  (N = " + format(len(df), ",") + ")")
+        ax.set_title(title, fontsize=10.5, fontweight="bold")
         ax.set_xlabel("Direct-export intensity, FSTS (%)")
         ax.set_ylabel("Predicted ln(labour productivity)")
         ax.grid(True, alpha=0.25, linestyle=":")
-        ax.legend(fontsize=8, loc="best", frameon=False)
+        ax.legend(fontsize=9, loc="best", frameon=False)
 
-    # Pooled panel ----------------------------------------------------------
+        fig.text(0.5, 0.01,
+                 "Source: World Bank Enterprise Surveys "
+                 "(https://www.enterprisesurveys.org); authors’ calculations.",
+                 ha="center", va="bottom", fontsize=7, style="italic")
+
+        fig.tight_layout(rect=(0, 0.04, 1, 1))
+        fig.savefig(OUT_FIGS / ("figure_" + tag + ".pdf"))
+        fig.savefig(OUT_FIGS / ("figure_" + tag + ".png"), dpi=300)
+        plt.close(fig)
+
+    fig, axes = plt.subplots(2, 2, figsize=(11, 8.5), sharey=True)
+    panels = [(2009, axes[0, 0]), (2015, axes[0, 1]), (2023, axes[1, 0])]
+    for year, ax in panels:
+        df = waves[year]
+        fit, names = fit_inverted_u(df, with_wave_fe=False)
+        f_max = min(1.0, df["FSTS"].max())
+        grid = np.linspace(0, f_max, 100)
+        yhat, se = predict_curve(fit, names, df, grid)
+        ax.plot(grid * 100, yhat, color="#1f77b4", linewidth=2.0)
+        ax.fill_between(grid * 100, yhat - 1.96 * se, yhat + 1.96 * se,
+                        color="#1f77b4", alpha=0.18)
+        b1 = fit.params[names.index("FSTSc")]
+        b2 = fit.params[names.index("FSTSc2")]
+        if b2 < 0:
+            tp_raw = -b1 / (2 * b2) + df["FSTS"].mean()
+            if 0 <= tp_raw <= f_max:
+                ax.axvline(tp_raw * 100, color="black", linestyle="--", linewidth=1.2)
+        ax.set_title("VNM " + str(year) + "  (N = " + format(len(df), ",") + ")", fontsize=11)
+        ax.set_xlabel("FSTS (%)")
+        ax.set_ylabel("Predicted lnLP")
+        ax.grid(True, alpha=0.25, linestyle=":")
+
     ax = axes[1, 1]
     fit, names = fit_inverted_u(pooled, with_wave_fe=True)
     f_max = min(1.0, pooled["FSTS"].max())
     grid = np.linspace(0, f_max, 100)
     yhat, se = predict_curve(fit, names, pooled, grid)
-
-    ax.plot(grid * 100, yhat, color="#2ca02c", linewidth=2.0, label="Predicted lnLP")
+    ax.plot(grid * 100, yhat, color="#2ca02c", linewidth=2.0)
     ax.fill_between(grid * 100, yhat - 1.96 * se, yhat + 1.96 * se,
-                    color="#2ca02c", alpha=0.18, label="95% CI")
-
+                    color="#2ca02c", alpha=0.18)
     b1 = fit.params[names.index("FSTSc")]
     b2 = fit.params[names.index("FSTSc2")]
-    tp_c = -b1 / (2 * b2)
-    tp_raw = tp_c + pooled["FSTS"].mean()
-    ax.axvline(tp_raw * 100, color="#d62728", linestyle="--", linewidth=1.2,
-               label=f"Turning point ≈ {tp_raw*100:.1f}%")
-
-    ax.set_title(f"Pooled VNM 2009/2015/2023  (N = {len(pooled):,})", fontsize=11)
-    ax.set_xlabel("Direct-export intensity, FSTS (%)")
-    ax.set_ylabel("Predicted ln(labour productivity)")
+    tp_raw = -b1 / (2 * b2) + pooled["FSTS"].mean()
+    ax.axvline(tp_raw * 100, color="black", linestyle="--", linewidth=1.2)
+    ax.set_title("Pooled VNM (N = " + format(len(pooled), ",") + ")", fontsize=11)
+    ax.set_xlabel("FSTS (%)")
+    ax.set_ylabel("Predicted lnLP")
     ax.grid(True, alpha=0.25, linestyle=":")
-    ax.legend(fontsize=8, loc="best", frameon=False)
 
-    fig.suptitle(
-        "Figure 2. Predicted ln(labour productivity) across direct-export intensity\n"
-        "by Vietnam WBES wave and pooled sample (M2 inverted-U specification, HC1 robust)",
-        fontsize=12, fontweight="bold",
-    )
-    fig.tight_layout(rect=(0, 0, 1, 0.94))
+    fig.suptitle("Figure 2 (combined). Predicted ln(labour productivity) "
+                 "across direct-export intensity by Vietnam WBES wave and "
+                 "pooled sample", fontsize=11.5, fontweight="bold")
+    fig.text(0.5, 0.01,
+             "Source: World Bank Enterprise Surveys; authors’ calculations.",
+             ha="center", va="bottom", fontsize=7, style="italic")
+    fig.tight_layout(rect=(0, 0.03, 1, 0.94))
+    fig.savefig(OUT_FIGS / "figure_2_main_results.pdf")
+    fig.savefig(OUT_FIGS / "figure_2_main_results.png", dpi=300)
+    plt.close(fig)
+
+    # Legacy combined file (kept for backward compatibility) ----------------
+    fig, axes = plt.subplots(2, 2, figsize=(11, 8.5), sharey=True)
+    panels = [(2009, axes[0, 0]), (2015, axes[0, 1]), (2023, axes[1, 0])]
+    for year, ax in panels:
+        df = waves[year]
+        fit, names = fit_inverted_u(df, with_wave_fe=False)
+        f_max = min(1.0, df["FSTS"].max())
+        grid = np.linspace(0, f_max, 100)
+        yhat, se = predict_curve(fit, names, df, grid)
+        ax.plot(grid * 100, yhat, color="#1f77b4", linewidth=2.0)
+        ax.fill_between(grid * 100, yhat - 1.96 * se, yhat + 1.96 * se,
+                        color="#1f77b4", alpha=0.18)
+        b1 = fit.params[names.index("FSTSc")]
+        b2 = fit.params[names.index("FSTSc2")]
+        if b2 < 0:
+            tp_raw = -b1 / (2 * b2) + df["FSTS"].mean()
+            if 0 <= tp_raw <= f_max:
+                ax.axvline(tp_raw * 100, color="black", linestyle="--",
+                           linewidth=1.2)
+        ax.set_title(f"VNM {year}  (N = {len(df):,})", fontsize=11)
+        ax.set_xlabel("FSTS (%)")
+        ax.set_ylabel("Predicted lnLP")
+        ax.grid(True, alpha=0.25, linestyle=":")
+
+    ax = axes[1, 1]
+    fit, names = fit_inverted_u(pooled, with_wave_fe=True)
+    f_max = min(1.0, pooled["FSTS"].max())
+    grid = np.linspace(0, f_max, 100)
+    yhat, se = predict_curve(fit, names, pooled, grid)
+    ax.plot(grid * 100, yhat, color="#2ca02c", linewidth=2.0)
+    ax.fill_between(grid * 100, yhat - 1.96 * se, yhat + 1.96 * se,
+                    color="#2ca02c", alpha=0.18)
+    b1 = fit.params[names.index("FSTSc")]
+    b2 = fit.params[names.index("FSTSc2")]
+    tp_raw = -b1 / (2 * b2) + pooled["FSTS"].mean()
+    ax.axvline(tp_raw * 100, color="black", linestyle="--", linewidth=1.2)
+    ax.set_title(f"Pooled VNM (N = {len(pooled):,})", fontsize=11)
+    ax.set_xlabel("FSTS (%)")
+    ax.set_ylabel("Predicted lnLP")
+    ax.grid(True, alpha=0.25, linestyle=":")
+
+    fig.suptitle("Figure 2 (combined). Predicted ln(labour productivity) "
+                 "across direct-export intensity by Vietnam WBES wave and "
+                 "pooled sample",
+                 fontsize=11.5, fontweight="bold")
+    fig.text(0.5, 0.01,
+             "Source: World Bank Enterprise Surveys; authors’ calculations.",
+             ha="center", va="bottom", fontsize=7, style="italic")
+    fig.tight_layout(rect=(0, 0.03, 1, 0.94))
     fig.savefig(OUT_FIGS / "figure_2_main_results.pdf")
     fig.savefig(OUT_FIGS / "figure_2_main_results.png", dpi=300)
     plt.close(fig)
