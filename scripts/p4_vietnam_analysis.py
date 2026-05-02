@@ -408,6 +408,126 @@ def fit_with(df: pd.DataFrame, focal: list[str], dummies: list[str]) -> dict:
     return fit
 
 
+def heckman_two_step(df: pd.DataFrame, focal: list[str], dummies: list[str],
+                     selection_extra: str = "a2") -> dict:
+    """Manual Heckman two-step with WBES sampling region as exclusion restriction.
+
+    Selection probit: export_any ~ lnEmp + FirmAge + ForeignOwned + sector1 + a2
+    Outcome (selected sample, FSTS > 0): focal terms + IMR.
+
+    Returns dict with both the IMR-augmented OLS and the control-function
+    variant (generalised residual), plus the selection probit summary.
+    """
+    sub = df.dropna(subset=["export_any", "lnEmp", "FirmAge", "ForeignOwned",
+                            "sector1", selection_extra]).copy()
+
+    parts = [np.ones((len(sub), 1)),
+             sub["lnEmp"].to_numpy().reshape(-1, 1),
+             sub["FirmAge"].to_numpy().reshape(-1, 1),
+             sub["ForeignOwned"].to_numpy().reshape(-1, 1)]
+    sec = pd.get_dummies(sub["sector1"].astype(int), prefix="sector1",
+                         drop_first=True, dtype=float).reset_index(drop=True)
+    parts.append(sec.to_numpy())
+    a2 = pd.get_dummies(sub[selection_extra].astype(int), prefix=selection_extra,
+                        drop_first=True, dtype=float).reset_index(drop=True)
+    parts.append(a2.to_numpy())
+    if "wave" in dummies:
+        wf = pd.get_dummies(sub["wave"].astype(int), prefix="wave",
+                            drop_first=True, dtype=float).reset_index(drop=True)
+        parts.append(wf.to_numpy())
+    Z = np.hstack(parts)
+
+    try:
+        probit = sm.Probit(sub["export_any"].to_numpy(), Z).fit(disp=False)
+    except Exception:  # singular sector cell or perfect prediction
+        return {"status": "selection_probit_failed"}
+
+    xb = Z @ probit.params
+    phi = stats.norm.pdf(xb)
+    Phi = stats.norm.cdf(xb)
+    Phi = np.clip(Phi, 1e-9, 1 - 1e-9)
+    sub["imr"] = phi / Phi
+    sub["gres"] = (sub["export_any"].to_numpy() * (phi / Phi)
+                   - (1 - sub["export_any"].to_numpy()) * (phi / (1 - Phi)))
+
+    selected = sub[sub["export_any"] == 1].copy()
+    if len(selected) < 30:
+        return {"status": "too_few_exporters"}
+    fit_imr = fit_ols_hc1(selected, focal + ["imr"], dummies)
+    fit_cf = fit_ols_hc1(sub, focal + ["gres"], dummies)
+
+    return {
+        "status": "ok",
+        "n_total": len(sub),
+        "n_selected": len(selected),
+        "imr_b": float(fit_imr["b"][fit_imr["names"].index("imr")]),
+        "imr_se": float(fit_imr["se"][fit_imr["names"].index("imr")]),
+        "imr_p": float(fit_imr["p"][fit_imr["names"].index("imr")]),
+        "gres_b": float(fit_cf["b"][fit_cf["names"].index("gres")]),
+        "gres_se": float(fit_cf["se"][fit_cf["names"].index("gres")]),
+        "gres_p": float(fit_cf["p"][fit_cf["names"].index("gres")]),
+        "fit_imr": fit_imr,
+        "fit_cf": fit_cf,
+    }
+
+
+def emit_selection_csv(per_sample_results: dict, path: Path) -> None:
+    rows = []
+    for sample, res in per_sample_results.items():
+        h = res.get("Heckman")
+        if h is None or h.get("status") != "ok":
+            continue
+        rows.append({
+            "sample": sample,
+            "n_total": h["n_total"],
+            "n_selected": h["n_selected"],
+            "imr_b": round(h["imr_b"], 4),
+            "imr_se": round(h["imr_se"], 4),
+            "imr_p": round(h["imr_p"], 4),
+            "gres_b": round(h["gres_b"], 4),
+            "gres_se": round(h["gres_se"], 4),
+            "gres_p": round(h["gres_p"], 4),
+        })
+    pd.DataFrame(rows).to_csv(path, index=False)
+
+
+def emit_paternoster_csv(per_sample_results: dict, path: Path) -> None:
+    """Pairwise Paternoster (1998) z-tests on focal M7/M8 coefficients."""
+    pairs = [("VNM2009", "VNM2015"), ("VNM2009", "VNM2023"), ("VNM2015", "VNM2023")]
+    targets = [
+        ("M7", "FSTSc"), ("M7", "FSTSc2"), ("M7", "TCI_z"), ("M7", "DAI_z"),
+        ("M8", "FSTSc_DAIz"), ("M8", "FSTSc2_DAIz"),
+    ]
+    rows = []
+    for a, b in pairs:
+        for model, term in targets:
+            ra = per_sample_results.get(a, {}).get(model)
+            rb = per_sample_results.get(b, {}).get(model)
+            if ra is None or rb is None:
+                continue
+            if term not in ra["names"] or term not in rb["names"]:
+                continue
+            ja, jb = ra["names"].index(term), rb["names"].index(term)
+            b_a = float(ra["b"][ja])
+            se_a = float(ra["se"][ja])
+            b_b = float(rb["b"][jb])
+            se_b = float(rb["se"][jb])
+            z = (b_a - b_b) / np.sqrt(se_a**2 + se_b**2)
+            p = 2 * (1 - stats.norm.cdf(abs(z)))
+            rows.append({
+                "model": model,
+                "term": term,
+                "pair": f"{a}_vs_{b}",
+                "b_a": round(b_a, 4),
+                "se_a": round(se_a, 4),
+                "b_b": round(b_b, 4),
+                "se_b": round(se_b, 4),
+                "z": round(float(z), 4),
+                "p": round(float(p), 4),
+            })
+    pd.DataFrame(rows).to_csv(path, index=False)
+
+
 def extract_focal(fit: dict, terms: list[str], panel: str, sample: str) -> list[dict]:
     rows = []
     for t in terms:
@@ -559,10 +679,20 @@ def main() -> None:
         results[f"VNM{y}"] = run_models(df, f"VNM{y}", dummies=sector_dummies)
     results["VNMpooled"] = run_models(pooled, "VNMpooled", dummies=["sector1", "wave"])
 
+    base = ["lnEmp", "FirmAge", "ForeignOwned"]
+    focal_for_heckman = ["FSTSc", "FSTSc2", "TCI_z", "DAI_z"] + base
+    for y, df in waves.items():
+        results[f"VNM{y}"]["Heckman"] = heckman_two_step(df, focal_for_heckman, ["sector1"])
+    results["VNMpooled"]["Heckman"] = heckman_two_step(
+        pooled, focal_for_heckman, ["sector1", "wave"]
+    )
+
     emit_long_coef_csv(results, OUT_TABLES / "coefs_main_models.csv")
     emit_joint_F(results, OUT_TABLES / "joint_tests_main_models.csv")
     emit_lm(results, OUT_TABLES / "table_lind_mehlum.csv")
     emit_descriptives(waves, pooled, OUT_TABLES / "table_1_descriptives.csv")
+    emit_selection_csv(results, OUT_TABLES / "selection_checks.csv")
+    emit_paternoster_csv(results, OUT_TABLES / "table_paternoster.csv")
 
     rob = run_robustness(waves, pooled)
     pd.DataFrame(rob).to_csv(OUT_TABLES / "table_3_robustness.csv", index=False)

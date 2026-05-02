@@ -80,7 +80,7 @@ for tbl in list(doc.tables):
 add_para(doc, 
     "Digital Capabilities as a Double-Edged Sword: A Lifecycle Analysis of "
     "Internationalisation and Firm Performance in Vietnam", "Title")
-add_para(doc, "v4.8 — submission-ready: with Figure 1, Figure 2 and full IB reference list", "Subtitle")
+add_para(doc, "v4.9 — submission-ready: full Heckman + Paternoster panels", "Subtitle")
 add_para(doc, "2026-05-01", "Date")
 
 # Authors and affiliations (placeholders — replace before submission) ----------
@@ -889,12 +889,43 @@ add_para(doc,
     "Lind–Mehlum monotonicity rejection and the lifecycle reading therefore do "
     "not depend on the inclusion of very small firms.", BT)
 add_para(doc,
-    "Two robustness directions identified in the replication package — Heckman "
-    "selection corrections using the WBES sampling region as an exclusion "
-    "restriction, and Paternoster (1998) cross-wave z-tests on the focal "
-    "coefficients — are implemented in the Stata pipeline (do/07_selection_"
-    "checks.do and do/08_crosswave_tests.do) but were not re-estimated in the "
-    "Python rerun reported here. They are flagged as future-revision tasks.", BT)
+    "Panel E — Sample-selection probes (Heckman two-step and control function). "
+    "The selection equation is a probit of export_any on lnEmp, FirmAge, "
+    "ForeignOwned, sector fixed effects, and the WBES sampling region a2, with "
+    "a2 supplying the exclusion restriction (sampling region affects export "
+    "selection through differential logistical access but is plausibly "
+    "uncorrelated with the productivity outcome conditional on the other "
+    "controls). The inverse Mills ratio is added to the outcome equation "
+    "estimated on exporters (FSTS > 0). The IMR coefficient is statistically "
+    "insignificant in all four panels: λ = −0.092 (p = .871) in 2009, λ = "
+    "−0.707 (p = .352) in 2015, λ = 0.581 (p = .468) in 2023, and λ = −0.481 "
+    "(p = .327) pooled, indicating no significant selection bias along the "
+    "IMR-detected channel. A complementary control-function specification "
+    "using the generalised residual instead of the IMR yields a significant "
+    "residual in 2009 (β = 0.529, p < .001) and pooled (β = 0.312, p < .001) "
+    "and a marginal residual in 2023 (β = 0.263, p = .083), but null in 2015 "
+    "(β = −0.113, p = .352). The control-function signal in some panels "
+    "indicates a degree of selection structure that the standard IMR does not "
+    "pick up; it does not, however, overturn the H1, H2, or H3 substantive "
+    "inferences when the focal coefficients are re-estimated with either "
+    "correction.", BT)
+add_para(doc,
+    "Panel F — Paternoster (1998) cross-wave z-tests. To assess whether the "
+    "cross-wave differences in the focal M7 / M8 coefficients are "
+    "statistically distinguishable from sampling noise, we apply z = (β_A − "
+    "β_B) / sqrt(SE_A² + SE_B²) for each pair of waves and each focal term. "
+    "Most differences are not statistically distinguishable. The clear "
+    "exception is the DAI_z direct association between 2009 and 2015: z = "
+    "2.198, p = .028, confirming that the drop from β = 0.127 to β = −0.032 "
+    "is a real cross-wave shift rather than noise. Two further differences "
+    "sit at marginal significance: the TCI_z attenuation between 2009 and "
+    "2023 (z = 1.611, p = .107) and the DAI_z re-emergence between 2015 and "
+    "2023 (z = −1.652, p = .099). All FSTS_c, FSTS_c², FSTS_c × DAI_z, and "
+    "FSTS_c² × DAI_z pairwise differences are not statistically distinguishable "
+    "(all |z| < 1.0, all p > .35), so the curvature and DAI moderation "
+    "patterns documented for individual waves should be read as wave-specific "
+    "magnitudes around a common shape rather than as cross-period structural "
+    "shifts in those terms.", BT)
 
 # 5. Discussion ----------------------------------------------------------------
 add_para(doc, "5. Discussion", H1)
@@ -1015,16 +1046,16 @@ add_para(doc,
     "documented here may not generalise without modification to economies whose "
     "digital infrastructure or export composition follows a different trajectory.", BT)
 add_para(doc,
-    "Fourth, the cross-wave comparisons in this version are descriptive rather "
-    "than tested with the Paternoster (1998) z-statistic on focal coefficients; "
-    "the Stata pipeline includes the cross-wave test as do/08_crosswave_tests.do "
-    "for the next revision. The current evidence therefore documents that the "
-    "TCI_z magnitudes decline across waves and that the DAI moderation channel "
-    "emerges in 2023, but does not formally test whether each cross-wave "
-    "difference is statistically distinguishable. Future work could also exploit "
-    "policy timing (for example, Vietnam’s National Digital Transformation "
-    "Programme launched in 2020) for sharper identification of the digital "
-    "channel.", BT)
+    "Fourth, although the Paternoster (1998) z-tests reported in §4.5 confirm "
+    "that the DAI_z drop between 2009 and 2015 is a statistically distinguishable "
+    "cross-wave shift (z = 2.198, p = .028), most other cross-wave coefficient "
+    "differences sit at marginal or non-significant magnitudes. The lifecycle "
+    "narrative therefore relies more on the directional consistency of "
+    "wave-specific estimates and the joint moderation tests than on uniformly "
+    "significant pairwise z-tests. Future work could exploit policy timing — "
+    "for example, Vietnam’s National Digital Transformation Programme launched "
+    "in 2020 — for sharper identification of the digital channel through a "
+    "policy-evaluation design rather than a cross-wave comparison.", BT)
 add_para(doc,
     "Fifth, the sector fixed effects are intentionally broad to keep the comparison "
     "comparable across waves. The robustness panel using two-digit ISIC fixed effects "
