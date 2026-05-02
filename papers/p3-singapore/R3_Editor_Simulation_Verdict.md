@@ -1,10 +1,20 @@
 # R3 Editor Simulation — Submission Readiness Verdict
 
-**Date:** 2 May 2026
+**Date:** 3 May 2026
 **Manuscript:** Technological Capability, Digital Adoption, and the Internationalization–Performance Relationship: A Firm-Level Study of Singapore
-**Branch / PR:** `claude/p3-r3-revision` · GitHub PR #6 (18 commits)
+**Branch / PR:** `claude/p3-r3-revision` · GitHub PR #6 (19 commits)
 **Audit:** 13 / 13 pass · 0 issues
-**Length:** 28 pages PDF · 7,925 manuscript words · Section 7 = 375 words (down from 730)
+**Length:** 28 pages PDF · 8,140 manuscript words · Section 7 = 430 words
+
+## Pass 5 enhancements (per NotebookLM editor review)
+
+Three substantive additions, ~215 words total, all responsive to specific reviewer points:
+
+| Section | Enhancement | Outcome |
+|---|---|---|
+| §4.5 (+89 w) | **Item-swap falsification disclosure** | "Joint F drops from 4.56 [p=.011] to 1.88 [p=.154] when c22b is reassigned from DAI to TCI" — quantifies the construct boundary, addresses reviewer's "ultimate weapon" point. |
+| §5.1 (+71 w) | **Transaction-cost-economics framing** | Coase (1937) / Williamson (1985) explicit citation; the conditional DAI pattern now grounded in TCE: marginal benefit < fixed costs at low FSTS, super-linear coordination cost absorption at high FSTS. |
+| §7 (+55 w) | **Concrete IV strategies for future research** | Names four candidate instruments — firm-to-port distance, customs-clearance times, regional broadband-coverage shares, within-sector peer-adoption rates — paired with Wolfolds & Siegel (2019) caveat about first-stage strength and exclusion restrictions. |
 
 ---
 
