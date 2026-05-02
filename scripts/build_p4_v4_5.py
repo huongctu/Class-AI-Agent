@@ -80,7 +80,7 @@ for tbl in list(doc.tables):
 add_para(doc, 
     "Digital Capabilities as a Double-Edged Sword: A Lifecycle Analysis of "
     "Internationalisation and Firm Performance in Vietnam", "Title")
-add_para(doc, "v4.7 — submission-ready: real authors, embedded Table 1, real robustness", "Subtitle")
+add_para(doc, "v4.8 — submission-ready: with Figure 1, Figure 2 and full IB reference list", "Subtitle")
 add_para(doc, "2026-05-01", "Date")
 
 # Authors and affiliations (placeholders — replace before submission) ----------
@@ -1103,18 +1103,36 @@ add_para(doc,
 
 # Figures ----------------------------------------------------------------------
 add_para(doc, "Figures", H1)
+
+FIG_DIR = Path("/home/user/Class-AI-Agent/p4_vietnam/output/figures")
+from docx.shared import Inches  # local import to avoid hoisting
+
+if (FIG_DIR / "figure_1_conceptual_model.png").exists():
+    doc.add_picture(str(FIG_DIR / "figure_1_conceptual_model.png"), width=Inches(6.5))
 add_para(doc,
-    "Figure 1. Conceptual model. Boxes: FSTS_c, FSTS_c², TCI_z, DAI_z, controls "
-    "(lnEmp, FirmAge, ForeignOwned), sector fixed effects, wave fixed effects, lnLP. "
-    "Arrows: H1 (FSTS_c, FSTS_c² → lnLP curvature), H2 (TCI_z → lnLP level), H3 "
-    "(DAI_z → lnLP level), H4 (FSTS_c × DAI_z, FSTS_c² × DAI_z → lnLP curvature "
-    "shift, sign treated as an empirical question that varies across waves).", FP)
+    "Figure 1. Conceptual model and prediction map. Boxes: FSTS_c and FSTS_c² "
+    "(direct-export intensity, mean-centred and squared within wave); TCI_z "
+    "(Technological Capability Index, z-standardised within wave); DAI_z "
+    "(foundational Digital Adoption Index, z-standardised within wave); lnLP "
+    "(log labour productivity); controls (lnEmp, FirmAge, ForeignOwned, sector "
+    "fixed effects, wave fixed effects in pooled specifications). Arrows label "
+    "the four hypotheses tested in §4: H1 (curvature), H2 (TCI_z direct level "
+    "and moderation of curvature), H3 (DAI_z direct association on average), "
+    "H4 (FSTS_c × DAI_z and FSTS_c² × DAI_z reshape the curvature; sign is an "
+    "empirical question that varies across waves).", FP)
+
+if (FIG_DIR / "figure_2_main_results.png").exists():
+    doc.add_picture(str(FIG_DIR / "figure_2_main_results.png"), width=Inches(6.5))
 add_para(doc,
-    "Figure 2. Predicted lnLP across direct-export intensity by wave and pooled. "
-    "Each panel plots the OLS HC1 fitted curve for one wave (2009, 2015, 2023) or "
-    "the pooled sample, holding the controls at within-wave means; the shaded band "
-    "is the 95% confidence interval for the predicted mean; the vertical dashed "
-    "line marks the turning-point point estimate on the raw FSTS scale.", BT)
+    "Figure 2. Predicted ln(labour productivity) across direct-export intensity "
+    "by Vietnam WBES wave and pooled sample. Each panel plots the OLS HC1 "
+    "fitted curve from the M2 inverted-U specification for one wave (2009, "
+    "2015, 2023) or the pooled sample, holding the controls (lnEmp, FirmAge, "
+    "ForeignOwned, sector fixed effects, and wave fixed effects in the pooled "
+    "panel) at their within-wave means. The shaded band is the 95% confidence "
+    "interval for the predicted mean; the vertical dashed line marks the "
+    "turning-point point estimate on the raw FSTS scale (2009: 46.2 %; 2015: "
+    "39.6 %; 2023: 41.6 %; pooled: 39.8 %).", BT)
 
 # Tables (replication appendix references) ------------------------------------
 add_para(doc, "Tables", H1)
@@ -1133,30 +1151,120 @@ add_para(doc,
 # References -------------------------------------------------------------------
 add_para(doc, "References", H1)
 references = [
+    "Antonakis, J., Bendahan, S., Jacquart, P., & Lalive, R. (2010). On making causal "
+    "claims: A review and recommendations. The Leadership Quarterly, 21(6), 1086–1120. "
+    "https://doi.org/10.1016/j.leaqua.2010.10.010",
+    "Anwar, S., & Nguyen, L. P. (2010). Foreign direct investment and economic growth "
+    "in Vietnam. Asia Pacific Business Review, 16(1–2), 183–202. "
+    "https://doi.org/10.1080/13602380802364943",
     "Bharadwaj, A., El Sawy, O. A., Pavlou, P. A., & Venkatraman, N. (2013). Digital "
     "business strategy: Toward a next generation of insights. MIS Quarterly, 37(2), "
     "471–482. https://doi.org/10.25300/MISQ/2013/37:2.3",
+    "Brynjolfsson, E., Rock, D., & Syverson, C. (2021). The productivity J-curve: How "
+    "intangibles complement general purpose technologies. American Economic Journal: "
+    "Macroeconomics, 13(1), 333–372. https://doi.org/10.1257/mac.20180386",
+    "Buckley, P. J., Clegg, L. J., Cross, A. R., Liu, X., Voss, H., & Zheng, P. "
+    "(2007). The determinants of Chinese outward foreign direct investment. Journal "
+    "of International Business Studies, 38(4), 499–518. "
+    "https://doi.org/10.1057/palgrave.jibs.8400277",
+    "Cassiman, B., & Veugelers, R. (2006). In search of complementarity in innovation "
+    "strategy: Internal R&D and external knowledge acquisition. Management Science, "
+    "52(1), 68–82. https://doi.org/10.1287/mnsc.1050.0470",
     "Cohen, W. M., & Levinthal, D. A. (1990). Absorptive capacity: A new perspective "
     "on learning and innovation. Administrative Science Quarterly, 35(1), 128–152. "
     "https://doi.org/10.2307/2393553",
+    "Contractor, F. J. (2007). Is international business good for companies? The "
+    "evolutionary or multi-stage theory of internationalization vs. the transaction "
+    "cost perspective. Management International Review, 47(3), 453–475. "
+    "https://doi.org/10.1007/s11575-007-0024-2",
+    "Cuervo-Cazurra, A., & Genc, M. (2008). Transforming disadvantages into "
+    "advantages: Developing-country MNEs in the least developed countries. Journal "
+    "of International Business Studies, 39(6), 957–979. "
+    "https://doi.org/10.1057/palgrave.jibs.8400390",
+    "Eden, L., & Miller, S. R. (2004). Distance matters: Liability of foreignness, "
+    "institutional distance and ownership strategy. In M. A. Hitt & J. L. C. Cheng "
+    "(Eds.), Theories of the multinational enterprise: Diversity, complexity and "
+    "relevance (Advances in International Management, Vol. 16, pp. 187–221). Emerald.",
+    "Goldfarb, A., & Tucker, C. (2019). Digital economics. Journal of Economic "
+    "Literature, 57(1), 3–43. https://doi.org/10.1257/jel.20171452",
     "Heckman, J. J. (1979). Sample selection bias as a specification error. "
     "Econometrica, 47(1), 153–161. https://doi.org/10.2307/1912352",
+    "Helfat, C. E., & Peteraf, M. A. (2003). The dynamic resource-based view: "
+    "Capability lifecycles. Strategic Management Journal, 24(10), 997–1010. "
+    "https://doi.org/10.1002/smj.332",
+    "Hennart, J.-F. (2007). The theoretical rationale for a multinationality–"
+    "performance relationship. Management International Review, 47(3), 423–452. "
+    "https://doi.org/10.1007/s11575-007-0023-3",
+    "Johanson, J., & Vahlne, J.-E. (2009). The Uppsala internationalization process "
+    "model revisited: From liability of foreignness to liability of outsidership. "
+    "Journal of International Business Studies, 40(9), 1411–1431. "
+    "https://doi.org/10.1057/jibs.2009.24",
+    "Kafouros, M., & Aliyev, M. (2016). Institutional development and firm "
+    "profitability in transition economies. Journal of World Business, 51(3), "
+    "369–378. https://doi.org/10.1016/j.jwb.2015.06.002",
     "Lall, S. (1992). Technological capabilities and industrialization. World "
-    "Development, 20(2), 165–186.",
+    "Development, 20(2), 165–186. https://doi.org/10.1016/0305-750X(92)90097-F",
+    "Levinsohn, J., & Petrin, A. (2003). Estimating production functions using inputs "
+    "to control for unobservables. Review of Economic Studies, 70(2), 317–341. "
+    "https://doi.org/10.1111/1467-937X.00246",
     "Lind, J. T., & Mehlum, H. (2010). With or without U? The appropriate test for a "
     "U-shaped relationship. Oxford Bulletin of Economics and Statistics, 72(1), "
     "109–118. https://doi.org/10.1111/j.1468-0084.2009.00569.x",
+    "Lu, J. W., & Beamish, P. W. (2004). International diversification and firm "
+    "performance: The S-curve hypothesis. Academy of Management Journal, 47(4), "
+    "598–609. https://doi.org/10.5465/20159604",
     "Marano, V., Arregle, J.-L., Hitt, M. A., Spadafora, E., & van Essen, M. (2016). "
-    "Home country institutions and the internationalization–performance relationship: "
-    "A meta-analytic review. Journal of Management, 42(5), 1075–1110. "
+    "Home country institutions and the internationalization–performance "
+    "relationship: A meta-analytic review. Journal of Management, 42(5), 1075–1110. "
     "https://doi.org/10.1177/0149206315624963",
+    "Nguyen, T. T., Mia, L., Winata, L., & Chong, V. K. (2017). Effect of transformational "
+    "leadership style and management control system on managerial performance. "
+    "Journal of Business Research, 70, 202–213. "
+    "https://doi.org/10.1016/j.jbusres.2016.08.018",
     "Paternoster, R., Brame, R., Mazerolle, P., & Piquero, A. (1998). Using the "
     "correct statistical test for the equality of regression coefficients. "
-    "Criminology, 36(4), 859–866. https://doi.org/10.1111/j.1745-9125.1998.tb01268.x",
-    "Verhoef, P. C., Broekhuizen, T., Bart, Y., Bhattacharya, A., Dong, J. Q., Fabian, "
-    "N., & Haenlein, M. (2021). Digital transformation: A multidisciplinary "
+    "Criminology, 36(4), 859–866. "
+    "https://doi.org/10.1111/j.1745-9125.1998.tb01268.x",
+    "Penrose, E. (1959). The theory of the growth of the firm. Oxford University "
+    "Press.",
+    "Powell, K. S. (2014). Profitability and speed of foreign market entry. "
+    "Management International Review, 54(1), 31–45. "
+    "https://doi.org/10.1007/s11575-013-0184-1",
+    "Teece, D. J. (2007). Explicating dynamic capabilities: The nature and micro­"
+    "foundations of (sustainable) enterprise performance. Strategic Management "
+    "Journal, 28(13), 1319–1350. https://doi.org/10.1002/smj.640",
+    "Vahlne, J.-E., & Johanson, J. (2017). From internationalization to evolution: "
+    "The Uppsala model at 40 years. Journal of International Business Studies, "
+    "48(9), 1087–1102. https://doi.org/10.1057/s41267-017-0107-7",
+    "Verbeke, A., & Kano, L. (2016). An internalization theory perspective on the "
+    "global and regional strategies of multinational enterprises. Journal of World "
+    "Business, 51(1), 83–92. https://doi.org/10.1016/j.jwb.2015.08.014",
+    "Verhoef, P. C., Broekhuizen, T., Bart, Y., Bhattacharya, A., Dong, J. Q., "
+    "Fabian, N., & Haenlein, M. (2021). Digital transformation: A multidisciplinary "
     "reflection and research agenda. Journal of Business Research, 122, 889–901. "
     "https://doi.org/10.1016/j.jbusres.2019.09.022",
+    "Vernon, R. (1979). The product cycle hypothesis in a new international "
+    "environment. Oxford Bulletin of Economics and Statistics, 41(4), 255–267. "
+    "https://doi.org/10.1111/j.1468-0084.1979.mp41004002.x",
+    "Wagner, J. (2007). Exports and productivity: A survey of the evidence from "
+    "firm-level data. The World Economy, 30(1), 60–82. "
+    "https://doi.org/10.1111/j.1467-9701.2007.00872.x",
+    "Wooldridge, J. M. (2010). Econometric analysis of cross section and panel data "
+    "(2nd ed.). MIT Press.",
+    "World Bank. (2010). Vietnam Enterprise Survey 2009 [data file]. World Bank "
+    "Enterprise Surveys. https://www.enterprisesurveys.org",
+    "World Bank. (2016). Vietnam Enterprise Survey 2015 [data file]. World Bank "
+    "Enterprise Surveys. https://www.enterprisesurveys.org",
+    "World Bank. (2024). Vietnam Enterprise Survey 2023 [data file]. World Bank "
+    "Enterprise Surveys. https://www.enterprisesurveys.org",
+    "Wright, M., Filatotchev, I., Hoskisson, R. E., & Peng, M. W. (2005). Strategy "
+    "research in emerging economies: Challenging the conventional wisdom. Journal "
+    "of Management Studies, 42(1), 1–33. "
+    "https://doi.org/10.1111/j.1467-6486.2005.00487.x",
+    "Zhou, L., Wu, W.-P., & Luo, X. (2007). Internationalization and the performance "
+    "of born-global SMEs: The mediating role of social networks. Journal of "
+    "International Business Studies, 38(4), 673–690. "
+    "https://doi.org/10.1057/palgrave.jibs.8400282",
 ]
 for ref in references:
     add_para(doc, ref, BT)
