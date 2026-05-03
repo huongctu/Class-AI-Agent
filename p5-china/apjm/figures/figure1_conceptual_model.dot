@@ -1,0 +1,39 @@
+// Graphviz DOT source for Figure 1 — P5 China conceptual model
+// Render: dot -Tpng figure1_conceptual_model.dot -o figure1.png
+//   or:   dot -Tpdf figure1_conceptual_model.dot -o figure1.pdf
+//   or:   dot -Tsvg figure1_conceptual_model.dot -o figure1.svg
+
+digraph P5_conceptual_model {
+    rankdir=LR;
+    nodesep=0.4;
+    ranksep=1.0;
+    fontname="Helvetica";
+    node [fontname="Helvetica", fontsize=11, shape=box, style="filled,rounded", fillcolor="white", color="black", margin="0.18,0.10"];
+    edge [fontname="Helvetica", fontsize=10];
+
+    // ---- nodes ----
+    EI [label=<<b>Export Intensity</b><br/><i>FSTS, FSTS²</i>>, penwidth=1.5];
+    TCI [label=<<b>Technological Capability</b><br/><i>TCI_full</i><br/><font point-size="9">(e6, b8, h1/CNo1, h8/CNo3)</font>>, penwidth=1.5];
+    DAI [label=<<b>Digital Adoption</b><br/><i>DAI_core</i><br/><font point-size="9">(c22b own-website)</font>>, penwidth=1.5];
+    CTRL [label=<<b>Controls</b><br/><font point-size="9">lnEmp, firmage,<br/>foreign-ownership, sector (a4a)</font>>, penwidth=1.5];
+    WC [label=<<b>Working-Capital Condition</b><br/><font point-size="9">Liquidity (k7, k8/k82)<br/>Financing (k3a, k3bc, k3f)<br/>A2F obstacle (k30)</font>>, style="filled,rounded,dashed", color="#666666", penwidth=1.5];
+    LP [label=<<b>Firm Performance</b><br/><i>ln(LP) = ln(d2/l1)</i>>, fillcolor="#EFEFEF", penwidth=2.0];
+    H2 [label=<<b>H2: Cross-wave threshold stability</b><br/><font point-size="9">2012 ↔ 2024<br/>Paternoster (1998) z-test</font>>, shape=note, fillcolor="#FFF5CC", color="#888888", penwidth=1.0];
+
+    // ---- ranks (column layout) ----
+    { rank=same; EI; TCI; DAI; CTRL; WC; }
+
+    // ---- solid primary arrows (H1, H4a, H4b) ----
+    EI  -> LP [label="H1: inverted U-shape", penwidth=2.2, color="black"];
+    TCI -> LP [label="H4a: level shift",     penwidth=2.2, color="black"];
+    DAI -> LP [label="H4b: level shift",     penwidth=2.2, color="black"];
+
+    // ---- thin control arrow ----
+    CTRL -> LP [penwidth=1.0, color="#666666"];
+
+    // ---- dashed exploratory arrow (H3 moderation) ----
+    WC -> LP [label=<H3: post-threshold<br/>conditioning (exploratory)>, style="dashed", penwidth=1.5, color="#666666"];
+
+    // ---- dotted double-headed link (H2 cross-wave annotation) ----
+    EI -> H2 [style="dotted", dir="both", penwidth=1.0, color="#888888", constraint=false];
+}
