@@ -4,6 +4,7 @@
 > Outline tham chiếu: `thesis/12_chuyen_de_1_outline_vi.md`.
 > Phần 2 (Chương 4): `thesis/15_cd1_part2_findings_vi.md`.
 > Phần 3 (Chương 5–7 + TLTK): `thesis/16_cd1_part3_cases_conclusion_vi.md`.
+> **Phiên bản 2.2 (cập nhật ngày 04/05/2026)**: Mốc thời gian phân tích đã mở rộng từ **2007–2024** thành **2009–2025**, phản ánh việc pool đã có 5 đợt khảo sát năm 2025 (Brunei, Thái Lan, Sri Lanka, Afghanistan, Nepal — 3.736 doanh nghiệp).
 
 ---
 
@@ -49,7 +50,7 @@ Tôi xin cam đoan chuyên đề tiến sĩ số 1 với tiêu đề "Thực tr�
 
 ## TÓM TẮT
 
-Chuyên đề này thực hiện phân tích mô tả – chẩn đoán thực trạng hiệu quả hoạt động kinh doanh của doanh nghiệp ở các quốc gia châu Á trong giai đoạn 2007–2024, dựa trên dữ liệu World Bank Enterprise Surveys (WBES) ở 25 nền kinh tế châu Á cùng sáu nền kinh tế đảo nhỏ Thái Bình Dương (SIDS). Phương pháp chủ đạo là thống kê mô tả đa chiều, kết hợp đồ thị, bảng so sánh xuyên quốc gia – xuyên ngành và phân tích bivariate. Hiệu quả hoạt động kinh doanh được tiếp cận theo bốn chiều: năng suất lao động, lợi nhuận và biên lợi nhuận, tăng trưởng, đổi mới sáng tạo và cấu trúc doanh nghiệp. Kết quả cho thấy hiệu quả doanh nghiệp châu Á có dispersion lớn và không hội tụ; bốn mẫu hình điển hình tồn tại đồng thời (Singapore – Việt Nam – Trung Quốc – emerging Asia) với điểm mạnh hiệu quả khác nhau; tương quan giữa các yếu tố giải thích sơ bộ với hiệu quả thay đổi dấu và cường độ giữa các nhóm nước, gợi ý sự cần thiết của các mô hình phi tuyến và điều tiết trong các nghiên cứu tiếp theo. Chuyên đề khẳng định khoảng trống thực tiễn cho luận án và Chuyên đề 2.
+Chuyên đề này thực hiện phân tích mô tả – chẩn đoán thực trạng hiệu quả hoạt động kinh doanh của doanh nghiệp ở các quốc gia châu Á trong giai đoạn **2009–2025**, dựa trên dữ liệu World Bank Enterprise Surveys (WBES) ở 25 nền kinh tế châu Á cùng sáu nền kinh tế đảo nhỏ Thái Bình Dương (SIDS). Phương pháp chủ đạo là thống kê mô tả đa chiều, kết hợp đồ thị, bảng so sánh xuyên quốc gia – xuyên ngành và phân tích bivariate. Hiệu quả hoạt động kinh doanh được tiếp cận theo bốn chiều: năng suất lao động, lợi nhuận và biên lợi nhuận, tăng trưởng, đổi mới sáng tạo và cấu trúc doanh nghiệp. Kết quả cho thấy hiệu quả doanh nghiệp châu Á có dispersion lớn và không hội tụ; bốn mẫu hình điển hình tồn tại đồng thời (Singapore – Việt Nam – Trung Quốc – emerging Asia) với điểm mạnh hiệu quả khác nhau; tương quan giữa các yếu tố giải thích sơ bộ với hiệu quả thay đổi dấu và cường độ giữa các nhóm nước, gợi ý sự cần thiết của các mô hình phi tuyến và điều tiết trong các nghiên cứu tiếp theo. Chuyên đề khẳng định khoảng trống thực tiễn cho luận án và Chuyên đề 2.
 
 **Từ khóa**: hiệu quả doanh nghiệp; châu Á; WBES; thực trạng; năng suất lao động; doanh nghiệp vừa và nhỏ.
 
@@ -57,7 +58,7 @@ Chuyên đề này thực hiện phân tích mô tả – chẩn đoán thực t
 
 ## ABSTRACT
 
-This specialty essay conducts a descriptive-diagnostic analysis of the firm performance landscape across Asian economies during 2007–2024, drawing on the World Bank Enterprise Surveys (WBES) for 25 Asian economies and six Pacific small island developing states (SIDS). Adopting multidimensional descriptive statistics, charts, cross-country–cross-industry comparison tables and bivariate analyses, the study examines firm performance along four axes: labor productivity, profitability and margins, growth, and innovation and structural composition. Findings indicate substantial and persistent dispersion in firm performance across Asian economies with no convergence pattern; four salient archetypes (Singapore, Vietnam, China, broader emerging Asia) coexist with distinct performance strengths; bivariate correlations between candidate explanatory factors and performance vary in sign and magnitude across country groups, suggesting that subsequent studies require nonlinear and moderation models. The essay defines an empirical gap that motivates the dissertation and Specialty Essay 2.
+This specialty essay conducts a descriptive-diagnostic analysis of the firm performance landscape across Asian economies during **2009–2025**, drawing on the World Bank Enterprise Surveys (WBES) for 25 Asian economies and six Pacific small island developing states (SIDS). Adopting multidimensional descriptive statistics, charts, cross-country–cross-industry comparison tables and bivariate analyses, the study examines firm performance along four axes: labor productivity, profitability and margins, growth, and innovation and structural composition. Findings indicate substantial and persistent dispersion in firm performance across Asian economies with no convergence pattern; four salient archetypes (Singapore, Vietnam, China, broader emerging Asia) coexist with distinct performance strengths; bivariate correlations between candidate explanatory factors and performance vary in sign and magnitude across country groups, suggesting that subsequent studies require nonlinear and moderation models. The essay defines an empirical gap that motivates the dissertation and Specialty Essay 2.
 
 **Keywords**: firm performance; Asia; WBES; landscape; labor productivity; SMEs.
 
@@ -74,14 +75,13 @@ This specialty essay conducts a descriptive-diagnostic analysis of the firm perf
 - Bảng 2.1 — Tỷ lệ sử dụng các thước đo hiệu quả trong các meta-analysis lớn 1980–2024
 - Bảng 3.1 — Khung phân loại 5 nhóm nền kinh tế châu Á + SIDS láng giềng
 - Bảng 3.2 — Đặc điểm thể chế và đổi mới của 5 nhóm
-- Bảng 4.1 — Năng suất lao động trung vị và trung bình theo nhóm nước
-- Bảng 4.2 — ROS trung bình và biên lợi nhuận gộp theo nhóm và ngành
-- Bảng 4.3 — Tỷ lệ tăng trưởng doanh thu, việc làm, xuất khẩu
-- Bảng 4.4 — Tỷ lệ doanh nghiệp đổi mới sáng tạo
+- Bảng 4.1 — Dispersion năng suất lao động theo regime ICRV
+- Bảng 4.3 — Cường độ quốc tế hóa, exporter, tăng trưởng việc làm
+- Bảng 4.4 — Tỷ lệ doanh nghiệp đổi mới sáng tạo và áp dụng số
 - Bảng 4.5 — Tỷ trọng SME, doanh nghiệp xuất khẩu, FDI
-- Bảng 4.6 — So sánh trước – sau COVID-19
-- Bảng 5.1 — Ma trận so sánh đa chiều 4 tiểu cảnh điển hình
-- Bảng 6.1 — Heatmap tương quan giữa yếu tố giải thích và chiều hiệu quả
+- Bảng 4.6 — Δ điểm phần trăm khi so sánh 2018–2025 với 2009–2012
+- Bảng 5.1 — Ma trận so sánh đa chiều bốn tiểu cảnh điển hình + Myanmar + Mongolia
+- Bảng 6.1 — Tương quan Pearson với log năng suất theo regime ICRV
 
 ## DANH MỤC HÌNH
 
@@ -90,11 +90,11 @@ This specialty essay conducts a descriptive-diagnostic analysis of the firm perf
 - Hình 4.1 — Heatmap năng suất × quốc gia × ngành
 - Hình 4.2 — Phân phối năng suất theo nhóm nước
 - Hình 4.3 — Phân phối ROS và kiểm tra outlier
-- Hình 4.4 — Pathway tăng trưởng 2007–2012 vs 2018–2024
+- Hình 4.4 — Pathway tăng trưởng 2009–2012 vs 2018–2025
 - Hình 4.5 — Heatmap đổi mới × ngành × nhóm
 - Hình 4.6 — Phân phối quy mô doanh nghiệp
 - Hình 4.7 — Spider chart 5 chiều hiệu quả ở 2 mốc thời gian
-- Hình 5.1 — Định vị 4 tiểu cảnh trên hệ trục năng suất – tăng trưởng
+- Hình 5.1 — Định vị các tiểu cảnh trên hệ trục dispersion × exporter
 - Hình 6.1 — Scatter plot các cặp biến nổi bật
 
 ## DANH MỤC TỪ VIẾT TẮT
@@ -102,6 +102,7 @@ This specialty essay conducts a descriptive-diagnostic analysis of the firm perf
 | Viết tắt | Diễn giải |
 |---|---|
 | ADB | Asian Development Bank |
+| AI | Artificial Intelligence |
 | BEE | Business Environment and Enterprise (WBES module) |
 | BREADY | Business REAdy diagnostic (WBES module) |
 | DAI | Digital Adoption Index |
@@ -136,13 +137,13 @@ This specialty essay conducts a descriptive-diagnostic analysis of the firm perf
 
 Khu vực châu Á đã trở thành đầu kéo tăng trưởng của kinh tế thế giới trong gần hai thập niên qua. Theo Asian Development Bank (ADB, 2024), châu Á đóng góp khoảng 60% tăng trưởng GDP toàn cầu giai đoạn 2010–2023, với tổng quy mô kinh tế chiếm xấp xỉ 40% GDP toàn cầu (World Bank, 2024). Bên trong khu vực, hiệu quả hoạt động của doanh nghiệp – đơn vị tế bào của nền kinh tế – là yếu tố quyết định mức độ chuyển hoá tăng trưởng quốc gia thành phồn vinh và năng lực cạnh tranh dài hạn (Cusolito & Maloney, 2018). Chính vì vậy, đánh giá thực trạng hiệu quả hoạt động kinh doanh của doanh nghiệp ở châu Á có ý nghĩa lý luận lẫn chính sách.
 
-Bức tranh hiệu quả doanh nghiệp châu Á trong giai đoạn 2007–2024 được định hình bởi bốn lớp bối cảnh chồng lấn: (i) hậu khủng hoảng tài chính toàn cầu 2008–2009 với tác động kéo dài đến đầu tư và thương mại quốc tế; (ii) tái cấu trúc chuỗi giá trị toàn cầu sau chiến tranh thương mại Mỹ – Trung 2018 (UNCTAD, 2023); (iii) đại dịch COVID-19 2020–2022 gây gián đoạn cung – cầu – lao động chưa từng có (World Bank, 2023); và (iv) làn sóng chuyển đổi số tăng tốc, đặc biệt từ năm 2018 trở đi cùng sự lan rộng của thương mại điện tử, hạ tầng đám mây và trí tuệ nhân tạo (Verhoef et al., 2021; Banalieva & Dhanaraj, 2019). Bốn lớp bối cảnh này tác động không đồng đều đến các nhóm nền kinh tế châu Á – từ Singapore và Hàn Quốc với hệ thể chế và năng lực số hoàn thiện, đến Việt Nam và Bangladesh đang hội nhập sâu, đến Lào và Campuchia mới ở giai đoạn đầu của hành trình công nghiệp hóa.
+Bức tranh hiệu quả doanh nghiệp châu Á trong giai đoạn **2009–2025** được định hình bởi **năm lớp bối cảnh chồng lấn**: (i) hậu khủng hoảng tài chính toàn cầu 2008–2009 với tác động kéo dài đến đầu tư và thương mại quốc tế; (ii) tái cấu trúc chuỗi giá trị toàn cầu sau chiến tranh thương mại Mỹ – Trung 2018 (UNCTAD, 2023); (iii) đại dịch COVID-19 2020–2022 gây gián đoạn cung – cầu – lao động chưa từng có (World Bank, 2023); (iv) làn sóng chuyển đổi số tăng tốc, đặc biệt từ năm 2018 trở đi cùng sự lan rộng của thương mại điện tử, hạ tầng đám mây và trí tuệ nhân tạo (Verhoef et al., 2021; Banalieva & Dhanaraj, 2019); và (v) **giai đoạn AI bùng nổ và củng cố hậu COVID 2023–2025** với sự xuất hiện của các mô hình AI tạo sinh ở quy mô doanh nghiệp, tái định hình năng suất dịch vụ và sản xuất (Stallkamp & Schotter, 2021; Yang et al., 2025). Năm lớp bối cảnh này tác động không đồng đều đến các nhóm nền kinh tế châu Á – từ Singapore và Hàn Quốc với hệ thể chế và năng lực số hoàn thiện, đến Việt Nam và Bangladesh đang hội nhập sâu, đến Lào và Campuchia mới ở giai đoạn đầu của hành trình công nghiệp hóa.
 
-Trong bối cảnh đó, hệ thống thông tin về hiệu quả doanh nghiệp châu Á còn phân mảnh. World Bank Enterprise Surveys (WBES) là cơ sở dữ liệu vi mô tin cậy và có tính so sánh xuyên quốc gia tốt nhất hiện có (World Bank, n.d.), nhưng các nghiên cứu sử dụng WBES cho châu Á thường giới hạn ở từng quốc gia hoặc một vài cặp quốc gia, ít có tổng hợp xuyên 25 nền kinh tế trên giai đoạn dài 2007–2024 sau khi hòa hợp ba thế hệ schema khác nhau (PICS3, WBES Standardized, BREADY/BEE). Vì vậy, chuyên đề này lấp khoảng trống thực tiễn bằng việc cập nhật stylized facts đa chiều về hiệu quả doanh nghiệp châu Á và đối chiếu với các tổng quan hiện hành để định vị nghiên cứu tiếp theo của luận án.
+Trong bối cảnh đó, hệ thống thông tin về hiệu quả doanh nghiệp châu Á còn phân mảnh. World Bank Enterprise Surveys (WBES) là cơ sở dữ liệu vi mô tin cậy và có tính so sánh xuyên quốc gia tốt nhất hiện có (World Bank, n.d.), nhưng các nghiên cứu sử dụng WBES cho châu Á thường giới hạn ở từng quốc gia hoặc một vài cặp quốc gia, ít có tổng hợp xuyên 25 nền kinh tế trên giai đoạn dài **2009–2025** sau khi hòa hợp ba thế hệ schema khác nhau (PICS3, WBES Standardized, BREADY/BEE). Vì vậy, chuyên đề này lấp khoảng trống thực tiễn bằng việc cập nhật stylized facts đa chiều về hiệu quả doanh nghiệp châu Á và đối chiếu với các tổng quan hiện hành để định vị nghiên cứu tiếp theo của luận án. Đặc biệt, **giai đoạn 2023–2025 chiếm hơn một nửa pool dữ liệu** (45,2% với 37.870 doanh nghiệp) — cung cấp bằng chứng thời sự hiếm có về thực trạng doanh nghiệp châu Á trong kỷ nguyên AI và hậu COVID-19.
 
 ### 1.2 Mục tiêu chuyên đề
 
-**Mục tiêu chung**: Hệ thống hóa và phân tích mô tả thực trạng hiệu quả hoạt động kinh doanh của các doanh nghiệp ở các quốc gia châu Á trong giai đoạn 2007–2024.
+**Mục tiêu chung**: Hệ thống hóa và phân tích mô tả thực trạng hiệu quả hoạt động kinh doanh của các doanh nghiệp ở các quốc gia châu Á trong giai đoạn **2009–2025**.
 
 **Mục tiêu cụ thể**:
 
@@ -156,9 +157,9 @@ Trong bối cảnh đó, hệ thống thông tin về hiệu quả doanh nghiệ
 
 **Đối tượng nghiên cứu**: doanh nghiệp đang hoạt động ở các nền kinh tế châu Á đáp ứng tiêu chí mẫu của WBES (chủ yếu là doanh nghiệp khu vực ngoài quốc doanh, có ít nhất 5 lao động, thuộc các ngành phi nông nghiệp).
 
-**Phạm vi không gian**: 25 nền kinh tế châu Á có dữ liệu WBES, gồm: (i) Đông Á: Trung Quốc, Mông Cổ; (ii) Đông Nam Á: Việt Nam, Indonesia, Philippines, Malaysia, Thái Lan, Lào, Campuchia, Myanmar, Timor-Leste; (iii) Nam Á: Ấn Độ, Bangladesh, Pakistan, Nepal, Sri Lanka, Bhutan, Afghanistan, Maldives; (iv) Trung Á: Kazakhstan, Uzbekistan, Kyrgyzstan, Tajikistan, Turkmenistan; và (v) Tây Á (Trung Đông): Jordan, Lebanon, một số đợt khảo sát riêng. Bổ sung sáu nền kinh tế đảo nhỏ Thái Bình Dương láng giềng (Fiji, Samoa, Tonga, Vanuatu, Solomon Islands, Papua New Guinea) làm trường hợp đối chiếu cực biên.
+**Phạm vi không gian**: 25 nền kinh tế châu Á có dữ liệu WBES, gồm: (i) Đông Á: Trung Quốc, Mông Cổ; (ii) Đông Nam Á: Việt Nam, Indonesia, Philippines, Malaysia, Thái Lan, Lào, Campuchia, Myanmar, Timor-Leste, Brunei; (iii) Nam Á: Ấn Độ, Bangladesh, Pakistan, Nepal, Sri Lanka, Bhutan, Afghanistan, Maldives; (iv) Trung Á: Kazakhstan, Uzbekistan, Kyrgyzstan, Tajikistan, Turkmenistan; và (v) Tây Á (Trung Đông): Jordan, Bahrain, Israel, Iraq, Lebanon (đợt khảo sát có sẵn). Bổ sung sáu nền kinh tế đảo nhỏ Thái Bình Dương láng giềng (Fiji, Samoa, Tonga, Vanuatu, Solomon Islands, Papua New Guinea) làm trường hợp đối chiếu cực biên.
 
-**Phạm vi thời gian**: 2007–2024, bao trùm ba thế hệ schema WBES.
+**Phạm vi thời gian**: **2009–2025** (15 năm × 12 mốc khảo sát có sẵn trong pool: 2009, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025), bao trùm ba thế hệ schema WBES — PICS3 (2007–2012), Standardized (2013–2017), Standardized 2018+ với BREADY/BEE/EAP Core (2018–2025).
 
 **Phạm vi nội dung**: hiệu quả hoạt động kinh doanh đa chiều, tập trung vào năng suất lao động, lợi nhuận, tăng trưởng, đổi mới sáng tạo và cấu trúc doanh nghiệp.
 
@@ -168,7 +169,7 @@ Chuyên đề tiếp cận theo lối **mô tả – chẩn đoán** (descriptiv
 
 ### 1.5 Đóng góp dự kiến của chuyên đề
 
-**Về học thuật**, chuyên đề cập nhật stylized facts đa chiều về hiệu quả doanh nghiệp châu Á 2007–2024 dựa trên WBES sau khi hòa hợp ba thế hệ schema – một bộ stylized facts chưa có tương đương trong các tổng quan tiếng Việt gần đây.
+**Về học thuật**, chuyên đề cập nhật stylized facts đa chiều về hiệu quả doanh nghiệp châu Á **2009–2025** dựa trên WBES sau khi hòa hợp ba thế hệ schema – một bộ stylized facts chưa có tương đương trong các tổng quan tiếng Việt gần đây. Đặc biệt, **việc bao gồm dữ liệu năm 2025** cho năm quốc gia (Brunei, Thái Lan, Sri Lanka, Afghanistan, Nepal) đặt chuyên đề ở vị trí cập nhật nhất so với các tổng quan IB hiện hành (Wu et al., 2022 dừng ở 2020; Arte & Larimo, 2022 dừng ở 2019).
 
 **Về thực tiễn**, kết quả cung cấp bằng chứng so sánh xuyên quốc gia hỗ trợ hoạch định chính sách hỗ trợ doanh nghiệp, đặc biệt trong giai đoạn phục hồi sau COVID-19 và chuyển đổi số.
 
@@ -176,7 +177,7 @@ Chuyên đề tiếp cận theo lối **mô tả – chẩn đoán** (descriptiv
 
 ### 1.6 Kết cấu chuyên đề
 
-Chuyên đề gồm bảy chương: Chương 1 giới thiệu vấn đề và mục tiêu; Chương 2 hệ thống hóa cơ sở lý luận về hiệu quả hoạt động kinh doanh; Chương 3 trình bày khung phân loại các nền kinh tế châu Á; Chương 4 phân tích thực trạng hiệu quả từ dữ liệu WBES; Chương 5 trình bày bốn tiểu cảnh điển hình (Singapore – Việt Nam – Trung Quốc – emerging Asia tổng hợp); Chương 6 phân tích các yếu tố giải thích sơ bộ ở mức bivariate; và Chương 7 thảo luận khoảng trống thực tiễn và kết luận.
+Chuyên đề gồm bảy chương: Chương 1 giới thiệu vấn đề và mục tiêu; Chương 2 hệ thống hóa cơ sở lý luận về hiệu quả hoạt động kinh doanh; Chương 3 trình bày khung phân loại các nền kinh tế châu Á; Chương 4 phân tích thực trạng hiệu quả từ dữ liệu WBES; Chương 5 trình bày bốn tiểu cảnh điển hình (Singapore – Việt Nam – Trung Quốc – emerging Asia tổng hợp) bổ sung Myanmar và Mongolia; Chương 6 phân tích các yếu tố giải thích sơ bộ ở mức bivariate; và Chương 7 thảo luận khoảng trống thực tiễn và kết luận.
 
 ---
 
@@ -228,11 +229,11 @@ Bốn vấn đề lớn cần xử lý khi so sánh hiệu quả doanh nghiệp 
 
 *Thứ nhất, sự khác biệt chuẩn mực kế toán*: doanh nghiệp ở Singapore, Malaysia, Hong Kong áp dụng IFRS; ở Việt Nam tuân theo VAS (chuẩn riêng có hiệu chỉnh từ IFRS); một số quốc gia Trung Á và Nam Á sử dụng chuẩn cũ hơn. Vì vậy, các thước đo lợi nhuận có thể không hoàn toàn so sánh nguyên trạng (Penman, 2013).
 
-*Thứ hai, hiệu chỉnh PPP, lạm phát và tỷ giá*: số liệu doanh thu và lợi nhuận cần chuyển về USD PPP 2017 để so sánh được. Lạm phát cao ở một số quốc gia (Pakistan, Sri Lanka, Lào trong giai đoạn 2022–2024) đòi hỏi deflate cẩn thận.
+*Thứ hai, hiệu chỉnh PPP, lạm phát và tỷ giá*: số liệu doanh thu và lợi nhuận cần chuyển về USD PPP 2017 để so sánh được. Lạm phát cao ở một số quốc gia (Pakistan, Sri Lanka, Lào trong giai đoạn **2022–2025**) đòi hỏi deflate cẩn thận.
 
-*Thứ ba, định danh và bám đuôi doanh nghiệp xuyên năm*: WBES không phải dữ liệu panel chuẩn; phần lớn các đợt khảo sát là cross-section lặp với mẫu mới. Một số quốc gia (Trung Quốc, Việt Nam) có panel ngắn 2 chu kỳ.
+*Thứ ba, định danh và bám đuôi doanh nghiệp xuyên năm*: WBES không phải dữ liệu panel chuẩn; phần lớn các đợt khảo sát là cross-section lặp với mẫu mới. Một số quốc gia (Trung Quốc, Việt Nam, Mongolia) có panel ngắn 2–3 chu kỳ.
 
-*Thứ tư, hài hòa schema xuyên ba thế hệ WBES*: schema PICS3 (2007–2012), Standardized (2013–2017), và BREADY/BEE (2018–2024) khác biệt về tên biến và cách hỏi. Giao thức hòa hợp được trình bày chi tiết trong tài liệu nội bộ `thesis/08_p7_data_harmonization_protocol_vi.md`.
+*Thứ tư, hài hòa schema xuyên ba thế hệ WBES*: schema PICS3 (2007–2012), Standardized (2013–2017), và BREADY/BEE (**2018–2025**) khác biệt về tên biến và cách hỏi. Giao thức hòa hợp được trình bày chi tiết trong tài liệu nội bộ `thesis/08_p7_data_harmonization_protocol_vi.md`.
 
 ### 2.5 Khung lý thuyết hỗ trợ phân tích thực trạng
 
@@ -262,10 +263,10 @@ Châu Á là khu vực có dân số khoảng 4,7 tỷ người (2024), chiếm 
 
 | Nhóm | Định nghĩa | Đại diện châu Á | Đại diện SIDS |
 |---|---|---|---|
-| **Advanced** | Thu nhập cao (>$13.205/đầu người 2023), thể chế hoàn thiện, GII top 30 | Singapore, Hàn Quốc, Nhật Bản, Hong Kong, Đài Loan, Israel | – |
-| **Upper-middle** | Thu nhập trung bình cao ($4.256–13.205), thể chế trung bình – cao | Malaysia, Thái Lan, Trung Quốc, Kazakhstan | – |
-| **Emerging** | Thu nhập trung bình thấp ($1.086–4.255), hội nhập sâu | Việt Nam, Indonesia, Philippines, Ấn Độ, Sri Lanka | Fiji |
-| **Frontier** | Thu nhập trung bình thấp – thấp, đang phát triển nhanh | Bangladesh, Pakistan, Lào, Campuchia, Myanmar, Nepal, Mông Cổ, Bhutan, Maldives, Uzbekistan, Tajikistan, Kyrgyzstan, Turkmenistan, Afghanistan, Timor-Leste, Jordan, Lebanon | Samoa, Tonga, Vanuatu |
+| **Advanced** | Thu nhập cao (>$13.205/đầu người 2023), thể chế hoàn thiện, GII top 30 | Singapore, Hàn Quốc, Nhật Bản, Hong Kong, Đài Loan, Israel, Bahrain, Brunei, Cyprus | – |
+| **Upper-middle** | Thu nhập trung bình cao ($4.256–13.205), thể chế trung bình – cao | Malaysia, Thái Lan, Trung Quốc, Kazakhstan, Armenia, Georgia | – |
+| **Emerging** | Thu nhập trung bình thấp ($1.086–4.255), hội nhập sâu | Việt Nam, Indonesia, Philippines, Ấn Độ, Sri Lanka, Jordan, Mongolia | Fiji |
+| **Frontier** | Thu nhập trung bình thấp – thấp, đang phát triển nhanh | Bangladesh, Pakistan, Lào, Campuchia, Myanmar, Nepal, Bhutan, Maldives, Uzbekistan, Tajikistan, Kyrgyzstan, Turkmenistan, Afghanistan, Timor-Leste, Iraq | Samoa, Tonga, Vanuatu |
 | **SIDS láng giềng** | Đảo nhỏ Thái Bình Dương, đặc thù forced internationalization, thể chế hạn chế | – | Solomon Islands, Papua New Guinea, [Fiji, Samoa, Tonga, Vanuatu cũng được phân loại trong nhóm này khi phân tích boundary case] |
 
 *Nguồn: Tổng hợp của tác giả từ World Bank (2024); ADB (2024); WIPO (2024); Kaufmann, Kraay & Mastruzzi (2011).*
