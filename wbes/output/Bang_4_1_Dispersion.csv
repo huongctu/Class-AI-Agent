@@ -1,6 +1,6 @@
 icrv_regime,n_country_years,n_firms,sd_log_w,p90_p10_w,p75_p25_w
 Advanced,10,4289,1.00,13.29,3.64
 Upper-middle,18,15174,1.29,27.70,5.35
-Emerging,18,34344,1.37,37.43,5.69
-Frontier,34,15676,1.36,38.82,6.04
+Emerging,19,44823,1.24,30.79,5.11
+Frontier,37,17090,1.36,38.52,6.18
 SIDS,2,196,1.35,42.06,5.55
