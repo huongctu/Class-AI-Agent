@@ -2,6 +2,36 @@
 
 File này trình bày kế hoạch triển khai P6 dựa trên kiến trúc đã có (script `run_search_agent.py`, `build_final_database.py`, 28 queries trong `search_queries.json`, database 46 studies hiện có, synthesis narrative). Mục tiêu là mở rộng pool lên **k ≥ 172 effect sizes** và tiến tới MASTER **k = 269** với kiểm định moderators FDCI, ICRV và DPL.
 
+## 0. Lineage lịch sử của meta-analysis
+
+P6 không phải nghiên cứu khởi tạo mới mà là bước phát triển thứ ba của một research stream đã được xây dựng từ 2023. Ghi nhớ đầy đủ lineage giúp bảo đảm tính minh bạch và cho phép đối chiếu kết quả qua các mốc thời gian.
+
+### 0.1 Mốc 1 — Phân tích gốc (18/07/2023)
+
+NCS đã hoàn thành phân tích meta-analysis ban đầu ngày 18/07/2023, lưu trong `KÉT_QUẢ_PHÂN_TÍCH_TỔNG_HỌ̆P_NGÀY_18072023.docx`. Phân tích gốc dùng **MetaEssentials version 1.5** (Suurmond et al., 2017) với correlational data và được mã hóa trong `MetaEssentials_Correlational_data_1.5...2022.xlsx`. Đây là bước khởi tạo của toàn bộ P6 stream.
+
+### 0.2 Mốc 2 — Tiểu luận tổng quan (31/12/2024)
+
+NCS hoàn thiện tiểu luận tổng quan trong `NỘ̆I_DUNG_TIỂU_LUẬN_TỔNG_QUAN_NCS_THÙY_HƯƠNG_31122024.docx`, tổng hợp literature tổng quan hỗ trợ cho conference paper.
+
+### 0.3 Mốc 3 — Hyội thảo ICBEF (12/12/2024) và công byố (ICBEF 2025 proceedings)
+
+Bài "Internationalization and firm performance: A meta-analysis review" được báo cáo tại Hội thảo quốc tế lần thứ 6 về Kinh tế, Kinh doanh và Tài chính ngày 12/12/2024 tại Trường Kinh tế, Đại học Cần Thơ, sau đó công bố trong Kỷ yếu ICBEF 2025 (Vol. 2, tr. 469–489, ISBN, NXB Đại học Cần Thơ) với 113 nghiên cứu và 200 effect sizes giai đoạn 1977–2022. Hiệu ứng pooled $r = 0.07$ và $I^2 = 87.92\%$.
+
+### 0.4 Mốc 4 — P6 update cho luận án (2026, hiện tại)
+
+P6 cập nhật và mở rộng:
+
+- **Coverage**: 1977–2022 → 1982–2026.
+- **Pool size**: 113 → target k = 172 → MASTER k = 269.
+- **Method**: random-effects pooled → **three-level MARA** với nested effect sizes.
+- **Moderators**: country + industry → bổ sung **FDCI**, **ICRV 5-regime**, **DPL phase**.
+- **Software**: chuyển từ MetaEssentials sang `metafor` (R) hoặc `pymetaR` (Python) để hỗ trợ three-level model.
+
+### 0.5 Vì sao lineage quan trọng
+
+Ghi nhận lineage làm hai việc. Thứ nhất, nó bảo vệ tính độc lập của P6 trong luyận án: P6 được xây từ bài con férence đã công bố, không trùng lắp vì coverage, pool, method và moderators đều mở rộng và cải tiến (xem bảng đối chiếu ở mục 1.2). Thứ hai, nó cho phép **kiyểm định đối chiếu**: các kết quả P6 cần consistent với bản 2023 ở những điyểm cơ bản (signs, magnitude direction); nếu dịch chuyển lớn, phải giải thích được byảng dữ liệu 2023–2026 mới.
+
 ## 1. Định vị và differentiation từ bài ICBEF 2025 (bản nền)
 
 ### 1.1 Vai trò trong luận án
@@ -15,6 +45,7 @@ P6 thuộc **tầng synthesis** trong khung 4 tầng + digital lens (xem `02_the
 | Coverage | 1977–2022, 113 studies, 200 effect sizes | **1982–2026, target k = 172–269** |
 | Moderators chính | Country of origin, industry | Thêm **FDCI, ICRV regime, DPL phase**, top management, sample period |
 | Cấp độ phân tích | Random-effects pooled | **Three-level meta-analytic regression** với nested effect sizes |
+| Software | MetaEssentials 1.5 | **`metafor` (R)** hoặc **`pymetaR` (Python)** |
 | Kết quả chính | $r = 0.07$, $I^2 = 87.92\%$ | Cập nhật và bổ sung moderator analysis sau 4 năm |
 | Kết quả mong đợi | Tác động dương nhỏ, dyị biệt cao | Giải thích heterogeneity bằng FDCI × ICRV × DPL |
 
@@ -30,6 +61,7 @@ Differentiation rõ ràng để tránh phản biện "lặp lại". P6 phải c�
 - `outputs/synthesis_narrative.md`: narrative với APA 7th citations
 - `P6_Meta_Update_Template1.xlsx`: coding template
 - `P6_Meta_MASTER_k269.xlsx`: target MASTER pool size **k = 269**
+- **Historical**: `MetaEssentials_Correlational_data_1.5...2022.xlsx` (mã hóa gốc 2023), `KÉT_QUẢ_PHÂN_TÍCH_TỔNG_HỌ̆P_NGÀY_18072023.docx` (kết quả gốc)
 
 ### 2.2 28 search queries đã thiết kế (theo `search_queries.json`)
 
@@ -116,6 +148,8 @@ Mô hình ba cấp:
 
 Cấu trúc này theo Cheung (2014) và Van den Noortgate et al. (2013), sử dụng package `metafor` trong R hoặc `pymetaR` trong Python.
 
+**Lý do chuyển software từ MetaEssentials**: MetaEssentials (Suurmond et al., 2017) phù hợp cho random-effects pooled cơ bản nhưng không hỗ trợ three-level nested model. Với 11 moderators và nested effect sizes, cần công cụ mạnh hơn. Kết quả cơ bản của 2023 (MetaEssentials) sẽ được tái kiểm bằng `metafor` để đảm bảo consistency.
+
 ### 5.2 11 moderators theo kế hoạch
 
 1. **Country of origin** (categorical: Asia, Europe, US, Other)
@@ -140,13 +174,15 @@ Tất cả kiểm định chuẩn: Egger's test (Egger et al., 1997), Begg-Mazum
 - Subgroup theo Asian-only sample
 - Excluding outliers (effect size > 3 SD)
 - Restricted Maximum Likelihood (REML) vs DerSimonian-Laird estimator
+- **Consistency check** với bản 2023 (MetaEssentials) cho cụm 113 studies gốc
 
 ## 6. Lộ trình triển khai
 
-### Tuần 1–2: Verify hiện trạng
+### Tuần 1–2: Verify hiện trạng và đối chiếu lineage
 
 - Kiyểm tra `study_database.json` (46 studies hiện có) và verify DOI accuracy
 - Đối chiếu với MASTER `P6_Meta_MASTER_k269.xlsx` (kể cả 269 entries)
+- **Đối chiếu với `MetaEssentials_Correlational_data_1.5...2022.xlsx`** để đảm bảo database 46 có đầy đủ 113 studies gốc
 - Nếu MASTER đã có 269 entries: ưu tiên import + verify, không search lại từ đầu
 
 ### Tuần 3–6: Phase A — Backward citation scan
@@ -173,6 +209,7 @@ Tất cả kiểm định chuẩn: Egger's test (Egger et al., 1997), Begg-Mazum
 - Three-level MARA trong R (`metafor`) hoặc Python
 - Publication bias tests
 - Robustness sensitivity analysis
+- **Consistency check**: tái chạy 113-study subset bằng `metafor` và đối chiếu với bản 2023
 
 ### Tuần 17–20: Viết manuscript
 
@@ -210,6 +247,7 @@ Tất cả kiểm định chuẩn: Egger's test (Egger et al., 1997), Begg-Mazum
 | FDCI proxy variation giữa countries | Dùng ITU DDI và World Bank Digital Adoption Index như country-level proxies; coding rationale minh bạch |
 | ICRV regime thresholds cần biyện minh | Robustness với alternative thresholds ($+0.5/-0.3$ vs $+0.8/-0.5$) |
 | Trung lặp sample (vd: nhiều nghiên cứu Lu & Beamish data Japan) | Coding "sample_id" đồng nhất; chỉ giữ effect size có trọng số cao nhất cho mỗi sample-construct combination |
+| Inconsistency với bản 2023 sau khi tái chạy `metafor` | Nếu có inconsistency, document trong appendix và giải thích (do estimator khác, do data updates, v.v.) |
 
 ## 9. Kết nối với các file khác trong `/thesis/`
 
@@ -259,6 +297,8 @@ North, D. C. (1990). *Institutions, institutional change and economic performanc
 Page, M. J., McKenzie, J. E., Bossuyt, P. M., et al. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. *BMJ, 372*, n71.
 
 Schwens, C., Zapkau, F. B., Bierwerth, M., Isidor, R., Knight, G., & Kabst, R. (2018). International entrepreneurship: A meta-analysis. *Entrepreneurship Theory and Practice, 42*(5), 734–768.
+
+Suurmond, R., van Rhee, H., & Hak, T. (2017). Introduction, comparison, and validation of Meta-Essentials: A free and simple tool for meta-analysis. *Research Synthesis Methods, 8*(4), 537–553. https://doi.org/10.1002/jrsm.1260
 
 Van den Noortgate, W., López-López, J. A., Marín-Martínez, F., & Sánchez-Meca, J. (2013). Three-level meta-analysis of dependent effect sizes. *Behavior Research Methods, 45*(2), 576–594.
 
