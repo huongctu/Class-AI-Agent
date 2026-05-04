@@ -1,0 +1,5 @@
+label,n_firms,country_years,fsts_mean_pct,exporter_pct,rd_active_pct,innov_product_pct,website_pct,iso_cert_pct,fdi10_pct,sme_pct,log_prod_sd,p90_p10_ratio
+SGP,623,1,7.14,17.82,7.54,18.62,66.13,23.30,31.46,83.31,1.03,14.04
+VNM,3077,3,19.13,30.07,5.10,20.80,46.96,n/a,11.35,70.11,1.45,43.48
+CHN,4889,2,9.95,22.45,39.36,48.46,58.72,n/a,6.02,66.75,1.22,21.67
+EmAsia(IDN+PHL+IND+BGD),31799,9,9.76,16.39,21.84,21.25,50.03,n/a,4.65,74.66,2.18,222.30
