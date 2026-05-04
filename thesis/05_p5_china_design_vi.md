@@ -6,25 +6,25 @@ File này trình bày thiết kế chi tiết cho bản thảo P5 về Trung Qu�
 
 ### 1.1 Vai trò trong luận án
 
-P5 thuộc **tầng hýnh dạng quan hệ** trong khung 4 tầng (xem `02_theoretical_framework_vi.md`). Nó đóng vai trò bằng chứng country-level cho **temporal heterogeneity** trong bối cảnh Trung Quốc, kiểm định H6 và bổ sung bằng chứng cho H1–H3.
+P5 thuộc **tầng hình dạng quan hệ** trong khung 4 tầng (xem `02_theoretical_framework_vi.md`). Nó đóng vai trò bằng chứng country-level cho **temporal heterogeneity** trong bối cảnh Trung Quốc, kiểm định H6 và bổ sung bằng chứng cho H1–H3.
 
 ### 1.2 Differentiation từ P2 (bài China đã công bố, JFAR 2026)
 
-| Yếu tố | P2 (đã công bố) | P5 (sỹ viết tiếp) |
+| Yếu tố | P2 (đã công bố) | P5 (sẽ viết tiếp) |
 |---|---|---|
-| Câu hỏi | **What shape**: mối quan hệ I–P trong Chinese manufacturing SMEs có phi tuyến không | **Whether shape shifts over time**: hýnh dạng đó có ổn định giữa 2012 và 2024 không |
+| Câu hỏi | **What shape**: mối quan hệ I–P trong Chinese manufacturing SMEs có phi tuyến không | **Whether shape shifts over time**: hình dạng đó có ổn định giữa 2012 và 2024 không |
 | Coverage thời gian | Một wave duy nhất | Hai wave (2012 và 2024) |
-| Trọng tâm lý thuyết | Phi tuyến tính của quan hệ I–P | Tuớng tác FSTS × Year và dỹ nh chuyển của turning point |
+| Trọng tâm lý thuyết | Phi tuyến tính của quan hệ I–P | Tương tác FSTS × Year và dịch chuyển của turning point |
 | Thước đo performance | (theo P2 gốc) | $\ln$(labor productivity) đồng nhất với P1 |
-| Đóng góp chính | Cơ chế phi tuyến | Độ bền của cơ chế qua thời gian |
+| Đóng góp chính | Cơ chế phi tuyến | Độ bền của cơ chế qua thời gian |
 
-Differentiation này rất quan trọng để hý đồng đỹ ng tránh phản biện "trung lặp P2". P5 phải có một section rõ ràng về "Differentiation from Do & Phan (2026)" trong introduction.
+Differentiation này rất quan trọng để hội đồng tránh phản biện "trùng lặp P2". P5 phải có một section rõ ràng về "Differentiation from Do & Phan (2026)" trong introduction.
 
-## 2. Cuớ sở kế thừa
+## 2. Cơ sở kế thừa
 
 ### 2.1 Literature về China I–P relationship
 
-Nghiên cứu China về internationalization–performance đã phát triển qua nhiều hướng. Xiao et al. (2013) cho thấy muới quan hệ I–P trong doanh nghiệp Trung Quốc có dý ng S-curve và phụ thuộc vào governance structure cỹng degree of centralized control. Chen và Tan (2012) chỷ ng minh hiệu quả của quyốc tế hyóa khác nhau theo region effects, trong đyó muở rộng trong Greater China cho lợi ích cao hơn. Feng et al. (2019) thấy rằng hý nh dạng quan hệ trong Yangtze River Delta region không đng nhất với national pattern. Các nghiên cứu gần hơn như Li et al. (2022), Zhang và Wei (2022), Liu và Zhang (2024) tiếp tục mở rộng theo hướng social networks, proprietary assets, geopolitical risk.
+Nghiên cứu China về internationalization–performance đã phát triển qua nhiều hướng. Xiao et al. (2013) cho thấy mối quan hệ I–P trong doanh nghiệp Trung Quốc có dạng S-curve và phụ thuộc vào governance structure cùng degree of centralized control. Chen và Tan (2012) chứng minh hiệu quả của quốc tế hóa khác nhau theo region effects, trong đó mở rộng trong Greater China cho lợi ích cao hơn. Feng et al. (2019) thấy rằng hình dạng quan hệ trong Yangtze River Delta region không đồng nhất với national pattern. Các nghiên cứu gần hơn như Li et al. (2022), Zhang và Wei (2022), Liu và Zhang (2024) tiếp tục mở rộng theo hướng social networks, proprietary assets, geopolitical risk.
 
 ### 2.2 Luận điểm kế thừa chính
 
@@ -37,79 +37,79 @@ Nghiên cứu China về internationalization–performance đã phát triển q
 
 ### 3.1 RQ trung tâm
 
-Myối quan hệ giữa mýc đỷ quyốc tế hyóa và hiệu quả hyổat đỷng cỷ a doanh nghiệp Trung Quýc đỹ thay đỷi nhyư thyế nuào giữa 2012 và 2024, và syử thay đỷi đyó chyịu ỷ nh hyưủ ng nhuư thyế nuào byở i nyăng lyử c công nghệ và nyăng lyử c syố?
+Mối quan hệ giữa mức độ quốc tế hóa và hiệu quả hoạt động của doanh nghiệp Trung Quốc đã thay đổi như thế nào giữa 2012 và 2024, và sự thay đổi đó chịu ảnh hưởng như thế nào bởi năng lực công nghệ và năng lực số?
 
 ### 3.2 Sub-RQs
 
-- **RQ-P5-1**: Quan hệ FSTS–firm performance có dý ng phi tuyến (chữ U nguưủ c) trong Cả hai wave 2012 và 2024 hay không?
-- **RQ-P5-2**: Turning point cỷ a duyờng cong có dyởich chuyển giyữ a hai wave không?
-- **RQ-P5-3**: Technological capability và digital adoption có điyều tiyết muối quan hệ nuày khyác nhau khuông giyữ a hai wave?
+- **RQ-P5-1**: Quan hệ FSTS–firm performance có dạng phi tuyến (chữ U ngược) trong cả hai wave 2012 và 2024 hay không?
+- **RQ-P5-2**: Turning point của đường cong có dịch chuyển giữa hai wave không?
+- **RQ-P5-3**: Technological capability và digital adoption có điều tiết mối quan hệ này khác nhau giữa hai wave không?
 
-## 4. Hyệ giyả thuyết
+## 4. Hệ giả thuyết
 
 ### H1-P5: Phi tuyến quan hệ FSTS–performance
 
-Myối quan hệ FSTS–$\ln$(LP) cyủa doanh nghiệp Trung Quýc có dyàng phi tuyến (chyưỡ U ngyưủ c), vyới $\beta_1 > 0$ và $\beta_2 < 0$ (Lu & Beamish, 2004; Hitt et al., 1997).
+Mối quan hệ FSTS–$\ln$(LP) của doanh nghiệp Trung Quốc có dạng phi tuyến (chữ U ngược), với $\beta_1 > 0$ và $\beta_2 < 0$ (Lu & Beamish, 2004; Hitt et al., 1997).
 
-### H2-P5: Dyịch chuyển turning point
+### H2-P5: Dịch chuyển turning point
 
-Turning point $-\beta_1/(2\beta_2)$ khác biệt có ý nghyăy thống kyê giyữ a 2012 và 2024, phản yánh syử tryưuởng thyành cyủa thyị truuờng và nyăng lyưủ c doanh nghiệp (Wu et al., 2022; Xiao et al., 2013).
+Turning point $-\beta_1/(2\beta_2)$ khác biệt có ý nghĩa thống kê giữa 2012 và 2024, phản ánh sự trưởng thành của thị trường và năng lực doanh nghiệp (Wu et al., 2022; Xiao et al., 2013).
 
-### H3-P5: Technological capability nhyư level shifter
+### H3-P5: Technological capability như level shifter
 
-Technological capability nyâng myặt byằng performance chung myà khuông nhuuơũng nhyâng đổi huình dyạng cyủa duyơùng cong I–P (Barney, 1991; Bhandari et al., 2023).
+Technological capability nâng mặt bằng performance chung mà không nhất thiết thay đổi hình dạng của đường cong I–P (Barney, 1991; Bhandari et al., 2023).
 
-### H4-P5: Digital adoption nhyư shape modifier
+### H4-P5: Digital adoption như shape modifier
 
-Digital adoption điyều tiyết duyơùng cong I–P theo huyưủng giyảm chi phyí phyối hyợp uở muýc FSTS cao, byằng nyó luàm thay đổi đyộ dyốc hoyặc đyộ cong (Verhoef et al., 2021; Stallkamp & Schotter, 2021).
+Digital adoption điều tiết đường cong I–P theo hướng giảm chi phí phối hợp ở mức FSTS cao, bằng cách làm thay đổi độ dốc hoặc độ cong (Verhoef et al., 2021; Stallkamp & Schotter, 2021).
 
-### H5-P5: Tuơuơng tuác ba chiyều
+### H5-P5: Tương tác ba chiều
 
-Tuơuơng tuác $FSTS \times \text{DAI} \times Year_{2024}$ có yuí nghyũa, chuyủ ng tuoủ rằng vai truò cuyủa digital adoption tang cuyưuơùng theo thoơùi gian khi nuyền kinh tuyế Trung Quuốc chuyuyển ỷuỏuyển suyố (Banalieva & Dhanaraj, 2019; Yang et al., 2025).
+Tương tác $FSTS \times \text{DAI} \times Year_{2024}$ có ý nghĩa, cho thấy vai trò của digital adoption tăng cường theo thời gian khi nền kinh tế Trung Quốc chuyển đổi số (Banalieva & Dhanaraj, 2019; Yang et al., 2025).
 
-## 5. Duữ liuệu
+## 5. Dữ liệu
 
-### 5.1 Nguuồn duữ liuệu
+### 5.1 Nguồn dữ liệu
 
-WBES China — hai wave 2012 và 2024 (World Bank, n.d., 2019). Theo P1, mainland China đu01b0uơủc khuảo syát ỷ hai wave nuày trong nghiên cuyyúuu emerging Asia.
+WBES China — hai wave 2012 và 2024 (World Bank, n.d., 2019). Theo P1, mainland China được khảo sát ở hai wave này trong nghiên cứu emerging Asia.
 
-### 5.2 Cyấu truuúc muyẫu
+### 5.2 Cấu trúc mẫu
 
-- Repeated cross-sections (khyông phyyải panel theo cyyùng doanh nghiyyệp).
-- Lyọc: doanh nghiyyệp chyính thyức, phải có duữ liyyệu về sales và employment.
-- Mẫu dự kiyến: vyài tryyăm đyến vyài nghyìn doanh nghiyệp muỗi wave (theo cyấu truúc WBES China).
+- Repeated cross-sections (không phải panel theo cùng doanh nghiệp).
+- Lọc: doanh nghiệp chính thức, phải có dữ liệu về sales và employment.
+- Mẫu dự kiến: vài trăm đến vài nghìn doanh nghiệp mỗi wave (theo cấu trúc WBES China).
 
-## 6. Đo luưuơùng biuyến
+## 6. Đo lường biến
 
-### 6.1 Biuyến phuyụ thuuyộc
+### 6.1 Biến phụ thuộc
 
 $\ln(LP) = \ln(\text{annual sales} / \text{permanent full-time employees})$
 
-### 6.2 Biuyến đuyộc luập
+### 6.2 Biến độc lập
 
-- $FSTS$: tuyỉ luệ doanh thu xuyất khuẩu tryyên tuyổng doanh thu.
-- $FSTS^2$: byyình phuyưuơng cuyủa FSTS đuyể kiuểm đuyịnh phi tuyuến.
-- $Year_{2024}$: dummy = 1 nuyếu wave 2024, = 0 nuyếu wave 2012.
+- $FSTS$: tỉ lệ doanh thu xuất khẩu trên tổng doanh thu.
+- $FSTS^2$: bình phương của FSTS để kiểm định phi tuyến.
+- $Year_{2024}$: dummy = 1 nếu wave 2024, = 0 nếu wave 2012.
 
 ### 6.3 Moderators
 
 - $TCI$: technological capability index (foreign tech licensing, R&D, quality cert).
 - $DAI$: digital adoption index (website, email, online sales).
-- Tuyưuơng tuyác: $FSTS \times Year_{2024}$, $FSTS^2 \times Year_{2024}$, $FSTS \times TCI$, $FSTS \times DAI$, $FSTS \times DAI \times Year_{2024}$.
+- Tương tác: $FSTS \times Year_{2024}$, $FSTS^2 \times Year_{2024}$, $FSTS \times TCI$, $FSTS \times DAI$, $FSTS \times DAI \times Year_{2024}$.
 
-### 6.4 Biuyến kiuyểm soyyát
+### 6.4 Biến kiểm soát
 
 $\ln$(employment), firm age, foreign ownership, sector dummy, region dummy, year fixed effect.
 
-## 7. Mouô huyình phyyân tuyích
+## 7. Mô hình phân tích
 
 ### M0: Controls only
 $$\ln(LP)_i = \beta_0 + \boldsymbol{\gamma} \mathbf{X}_i + Year_{2024,i} + \varepsilon_i$$
 
-### M1: Tuyuyến tuyính
+### M1: Tuyến tính
 $$\ln(LP)_i = \beta_0 + \beta_1 FSTS_i + \boldsymbol{\gamma} \mathbf{X}_i + Year_{2024,i} + \varepsilon_i$$
 
-### M2: Phi tuyuyến (testing H1-P5)
+### M2: Phi tuyến (testing H1-P5)
 $$\ln(LP)_i = \beta_0 + \beta_1 FSTS_i + \beta_2 FSTS_i^2 + \boldsymbol{\gamma} \mathbf{X}_i + Year_{2024,i} + \varepsilon_i$$
 
 ### M3: Temporal interaction (testing H2-P5)
@@ -124,69 +124,69 @@ $$\ln(LP)_i = \beta_0 + \beta_1 FSTS_i + \beta_2 FSTS_i^2 + \beta_3 DAI_i + \bet
 ### M6: Three-way (testing H5-P5)
 $$\ln(LP)_i = \beta_0 + \beta_1 FSTS_i + \beta_2 FSTS_i^2 + \beta_3 DAI_i + \beta_4 Year_{2024,i} + \beta_5 (FSTS_i \times DAI_i) + \beta_6 (FSTS_i \times Year_{2024,i}) + \beta_7 (FSTS_i \times DAI_i \times Year_{2024,i}) + \boldsymbol{\gamma} \mathbf{X}_i + \varepsilon_i$$
 
-Tất cuả muyô huyình duyùng HC1 robust SE (Long & Ervin, 2000; White, 1980).
+Tất cả mô hình dùng HC1 robust SE (Long & Ervin, 2000; White, 1980).
 
-## 8. Luộ trinh ruyà souyát vuyà chuyạy model
+## 8. Lộ trình rà soát và chạy model
 
-### Buuưuơúc 1: Ruà souyát literature (1–2 tuyuần)
+### Bước 1: Rà soát literature (1–2 tuần)
 
-Tuập trung 4 nhuyóm buài: (i) China-specific I–P; (ii) nonlinearity in IB; (iii) digital capabilities; (iv) temporal evolution. Kiểm soyyát cyyủa các buài 2023–2025 yyđuyể đyyảm byảo tyuính cập nhyật.
+Tập trung 4 nhóm bài: (i) China-specific I–P; (ii) nonlinearity in IB; (iii) digital capabilities; (iv) temporal evolution. Kiểm soát các bài 2023–2025 để đảm bảo tính cập nhật.
 
-### Buuưuơúc 2: Concept-to-variable mapping (1 tuyuần)
+### Bước 2: Concept-to-variable mapping (1 tuần)
 
-Luập byảng đyyối chiyuếu muô â byắng kyuái niuệm → byiuến WBES → cyông thyuôuc → kyuỳ vyọng dyấu → nguyồn.
+Lập bảng đối chiếu: khái niệm → biến WBES → công thức → kỳ vọng dấu → nguồn.
 
-### Buuưuơúc 3: Descriptive analysis (3–5 nguuầy)
+### Bước 3: Descriptive analysis (3–5 ngày)
 
-- Phyuân phyối FSTS, $\ln$(LP), TCI, DAI.
-- Ma tryuận tuưuơng quan.
+- Phân phối FSTS, $\ln$(LP), TCI, DAI.
+- Ma trận tương quan.
 - Histogram, scatter plot FSTS vs $\ln$(LP).
 - VIF.
 
-### Buuưuơúc 4: Chyuạy muyô hyuình tuyần tyuử M0–M6 (1 tuyuần)
+### Bước 4: Chạy mô hình tuần tự M0–M6 (1 tuần)
 
-- Soyuát tyuừng myuô hyuình.
-- Soyuánh AIC/BIC.
-- Vyuẽ margins plot cho M2 và M3.
+- Soát từng mô hình.
+- So sánh AIC/BIC.
+- Vẽ margins plot cho M2 và M3.
 
-### Buuưuơúc 5: Lind–Mehlum U-test (3 nguuầy)
+### Bước 5: Lind–Mehlum U-test (3 ngày)
 
-Xyuác nhyận inverted-U ỷ tyuừng wave (Lind & Mehlum, 2010).
+Xác nhận inverted-U ở từng wave (Lind & Mehlum, 2010).
 
-### Buuưuơúc 6: Robustness (1–2 tuyuần)
+### Bước 6: Robustness (1–2 tuần)
 
-Thay đyuổi thyuưuớc đo, lyuọc micro firms, winsorization, subset chyuỉ manufacturing.
+Thay đổi thước đo, lọc micro firms, winsorization, subset chỉ manufacturing.
 
-### Buuưuơúc 7: Margins plot và vyẽ biyuểu đyuồ (3 nguuầy)
+### Bước 7: Margins plot và vẽ biểu đồ (3 ngày)
 
-Minh hyuọa turning point shift giữa 2012 và 2024.
+Minh họa turning point shift giữa 2012 và 2024.
 
-### Buuưuơúc 8: Vyuẽ manuscript (4–6 tuyuần)
+### Bước 8: Viết manuscript (4–6 tuần)
 
-Introduction (mạnh về differentiation tyuừ P2), literature, hypotheses, method, results, discussion.
+Introduction (mạnh về differentiation từ P2), literature, hypotheses, method, results, discussion.
 
-## 9. Đyuóng gyuóp kyuỳ vyuọng
+## 9. Đóng góp kỳ vọng
 
-- **Tyuầng China stream**: chuyyuển nhuyánh China cyuủa luuận yuán tyuừ static nonlinear sang dynamic nonlinear.
-- **Tyuầng luuận yuán tyuổng thyuể**: cung cyuấp byuằng chyuứng cho temporal heterogeneity (H6).
-- **Tyuầng literature**: byuổ sung evidence cho tranh luyận vyuề tyuính đyuộng cyuủa I–P relationship trong emerging markets.
+- **Tầng China stream**: chuyển nhánh China của luận án từ static nonlinear sang dynamic nonlinear.
+- **Tầng luận án tổng thể**: cung cấp bằng chứng cho temporal heterogeneity (H6).
+- **Tầng literature**: bổ sung evidence cho tranh luận về tính động của I–P relationship trong emerging markets.
 
 ## 10. Risks và mitigation
 
 | Risk | Mitigation |
 |---|---|
-| Repeated cross-sections khuông phyuải panel → khyuó suy luyuận nhyuân quyuả | Khyuẳng đyuịnh ryuõ trong limitations; gyuắn nyuó nhyuư evidence vyuề trend-level chyuứ khyuông phyuải firm-level causation |
-| 2012 và 2024 có thuyể khyuác vyuề sample composition | So syuánh sample profile, byuáo cyuáo chi tiyuết trong methodology |
-| TCI và DAI thiyuếu cyuông cyuụ đo trong 2012 vs 2024 | Lyuựa chyuọn items chung giữa hai wave; byuất kyuỳ differences phải đu01b0ơủc minh byạch |
-| Phyuân biệt vyuới P2 chuưa đyuủ thuyyuết phyuục | Vyẽ huyyẳn một section rõ ryuàng "Differentiation from Do & Phan (2026)" |
+| Repeated cross-sections không phải panel → khó suy luận nhân quả | Khẳng định rõ trong limitations; gắn nó như evidence về trend-level chứ không phải firm-level causation |
+| 2012 và 2024 có thể khác về sample composition | So sánh sample profile, báo cáo chi tiết trong methodology |
+| TCI và DAI thiếu công cụ đo trong 2012 vs 2024 | Lựa chọn items chung giữa hai wave; bất kỳ differences phải được minh bạch |
+| Phân biệt với P2 chưa đủ thuyết phục | Viết hẳn một section rõ ràng "Differentiation from Do & Phan (2026)" |
 
-## 11. Tyuóm tyuắt
+## 11. Tóm tắt
 
-P5 đuưuơủc thiuết kyuế nhuư buyưuơúc phyuát triuển tuưú P2: tyuừ "shape" sang "shape over time". Bói cyảnh China giai đoyạn 2012–2024 cho phyuép kiuểm điuịnh syưủ yuổn điuịnh cuủa inverted-U cyùng vyới syưủ dyuịch chuyuển cyủa turning point dyuưuới tyuác đyuộng cyủa digital capability.
+P5 được thiết kế như bước phát triển tự P2: từ "shape" sang "shape over time". Bối cảnh China giai đoạn 2012–2024 cho phép kiểm định sự ổn định của inverted-U cùng với sự dịch chuyển của turning point dưới tác động của digital capability.
 
-## Tham khyảo (chyuứ chuưa liệt kyuê hyuết — xem `04_references_apa7.md`)
+## Tham khảo (chứ chưa liệt kê hết — xem `04_references_apa7.md`)
 
-Bhandari, K. R., Zyuámborskyuý, P., Ranta, M., & Salo, J. (2023). Digitalization, internationalization, and firm performance. *International Business Review, 32*(4), 102027.
+Bhandari, K. R., Zámborský, P., Ranta, M., & Salo, J. (2023). Digitalization, internationalization, and firm performance. *International Business Review, 32*(4), 102027.
 
 Chen, S., & Tan, H. (2012). Region effects in the internationalization–performance relationship in Chinese firms. *Journal of World Business, 47*(1), 73–80.
 
