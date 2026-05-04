@@ -2,17 +2,19 @@
 
 > Tiếp nối `thesis/14_cd1_part1_intro_theory_vi.md`.
 > Phần 3 (Chương 5–7 + TLTK): `thesis/16_cd1_part3_cases_conclusion_vi.md`.
-> **Phiên bản 2.1 (cập nhật ngày 04/05/2026 — sau bổ sung Myanmar 2014/2016 + Mongolia 2019)**: Pool tăng từ 81.957 lên **83.778 doanh nghiệp** ở **36 nền kinh tế** với **87 cặp quốc gia × năm**.
+> **Phiên bản 2.2 (cập nhật ngày 04/05/2026)**: Pool **83.778 doanh nghiệp** ở **36 nền kinh tế** với **87 cặp quốc gia × năm** giai đoạn **2009–2025** (bao gồm 5 đợt khảo sát năm 2025).
 
 ---
 
-## CHƯƠNG 4 — THỰC TRẠNG HIỆU QUẢ DOANH NGHIỆP CHÂU Á 2007–2024
+## CHƯƠNG 4 — THỰC TRẠNG HIỆU QUẢ DOANH NGHIỆP CHÂU Á 2009–2025
 
 ### 4.1 Nguồn dữ liệu World Bank Enterprise Surveys
 
-**Phạm vi pool**. Sau hòa hợp 88 file WBES, pool dữ liệu bao gồm **83.778 doanh nghiệp** thuộc **36 nền kinh tế** châu Á và 1 nền kinh tế đảo nhỏ Thái Bình Dương (Vanuatu — đại diện SIDS), trải khắp **87 đơn vị quốc gia × năm khảo sát** trong giai đoạn 2009–2025. Phân bố theo regime ICRV: Emerging 36.723 (44%), Frontier 25.115 (30%), Upper-middle 16.693 (20%), Advanced 5.008 (6%), SIDS 239 (0,3%). So với phiên bản 2.0 đã thêm Myanmar 2014 (632 doanh nghiệp), Myanmar 2016 (607 doanh nghiệp) và Mongolia 2019 (582 doanh nghiệp từ panel). Coverage chi tiết: xem **Phụ lục A**.
+**Phạm vi pool**. Sau hòa hợp 88 file WBES, pool dữ liệu bao gồm **83.778 doanh nghiệp** thuộc **36 nền kinh tế** châu Á và 1 nền kinh tế đảo nhỏ Thái Bình Dương (Vanuatu — đại diện SIDS), trải khắp **87 đơn vị quốc gia × năm khảo sát** trong giai đoạn **2009–2025**. Phân bố theo regime ICRV: Emerging 36.723 (44%), Frontier 25.115 (30%), Upper-middle 16.693 (20%), Advanced 5.008 (6%), SIDS 239 (0,3%). Đặc biệt, pool đã bao gồm **5 đợt khảo sát năm 2025** với 3.736 doanh nghiệp: Brunei (n=150), Thái Lan (n=813), Sri Lanka (n=607), Afghanistan (n=426), Nepal (n=1.740) — đặt chuyên đề ở vị trí cập nhật nhất so với các tổng quan IB hiện hành. Coverage chi tiết: xem **Phụ lục A**.
 
-**Ba thế hệ schema**. Dữ liệu WBES qua giai đoạn 2009–2025 có ba thế hệ schema không hoàn toàn trùng tên biến: (i) Thế hệ 1 (2007–2012) với schema PICS3 và BREADY ban đầu; (ii) Thế hệ 2 (2013–2017) với WBES Standardized chính thức; (iii) Thế hệ 3 (2018–2025) với Standardized 2018+, BREADY 2023/2024/2025, BEE 2023, TGS Followup, EAP Core. Mặc dù ba thế hệ khác nhau, các biến cốt lõi (`d2` doanh thu, `l1` số lao động thường xuyên, `d3b`/`d3c` cường độ xuất khẩu, `b5` năm thành lập, `b2b` tỷ trọng sở hữu nước ngoài, `h1`/`h8` đổi mới và R&D, `b8` chứng nhận ISO, `c22b` website) duy trì tính nhất quán đủ tốt cho phân tích so sánh xuyên thế hệ.
+**Phân bố thời gian**. Pool có 12 mốc khảo sát từ 2009 đến 2025: 2009 (n=8.881), 2011 (n=1.366), 2012 (n=3.079), 2013 (n=7.219), 2014 (n=10.323), 2015 (n=3.695), 2016 (n=2.348), 2018 (n=332), 2019 (n=6.983), 2020 (n=546), 2021 (n=238), 2022 (n=12.693), 2023 (n=7.782), 2024 (n=14.557), 2025 (n=3.736). Phân bố theo ba giai đoạn schema: 2009–2012 (15.939 doanh nghiệp), 2013–2017 (23.585 doanh nghiệp), 2018–2025 (44.254 doanh nghiệp — chiếm 53% pool).
+
+**Ba thế hệ schema**. Dữ liệu WBES qua giai đoạn 2009–2025 có ba thế hệ schema không hoàn toàn trùng tên biến: (i) Thế hệ 1 (2007–2012) với schema PICS3 và BREADY ban đầu; (ii) Thế hệ 2 (2013–2017) với WBES Standardized chính thức; (iii) Thế hệ 3 (**2018–2025**) với Standardized 2018+, BREADY 2023/2024/2025, BEE 2023, TGS Followup, EAP Core. Mặc dù ba thế hệ khác nhau, các biến cốt lõi (`d2` doanh thu, `l1` số lao động thường xuyên, `d3b`/`d3c` cường độ xuất khẩu, `b5` năm thành lập, `b2b` tỷ trọng sở hữu nước ngoài, `h1`/`h8` đổi mới và R&D, `b8` chứng nhận ISO, `c22b` website) duy trì tính nhất quán đủ tốt cho phân tích so sánh xuyên thế hệ.
 
 **Hòa hợp**. Giao thức hòa hợp được mô tả chi tiết ở `thesis/08_p7_data_harmonization_protocol_vi.md` và thực thi qua pipeline Python (`wbes/02_harmonize.py`). Quy trình gồm: (i) đọc 88 file `.dta` với fallback mã hoá Latin-1/CP1252 cho file lỗi UTF-8; (ii) crosswalk biến; (iii) loại các giá trị WBES "missing-by-design" ({-9,…,-1}); (iv) tính FSTS = `d3b + d3c` (xuất khẩu gián tiếp + trực tiếp); (v) winsorize log năng suất lao động trong từng cặp quốc gia × năm ở mức 1%/99%; (vi) loại doanh nghiệp có lao động ≤ 0 hoặc doanh thu ≤ 0. Mongolia panel 2009/2013/2019 được tách thành ba lát cross-section bằng filter `year == YYYY`.
 
@@ -124,48 +126,49 @@ Bốn phát hiện:
 
 (4) *Tỷ trọng FDI ở Emerging (5,6%) thấp hơn Frontier (6,4%)* — Emerging chứa Ấn Độ (n=18.657) với FDI thấp do thị trường nội địa lớn; Frontier chứa các nước nhỏ phụ thuộc đầu tư khu vực.
 
-### 4.6 Bức tranh thay đổi theo thời gian — so sánh ba giai đoạn
+### 4.6 Bức tranh thay đổi theo thời gian — so sánh ba giai đoạn 2009–2025
 
-Pool dữ liệu được phân thành ba giai đoạn theo thế hệ schema: 2007–2012, 2013–2017, 2018–2024.
+Pool dữ liệu được phân thành ba giai đoạn theo thế hệ schema: **2009–2012** (n=15.939), **2013–2017** (n=23.585), **2018–2025** (n=44.254). Tính trung bình từng chỉ số trong từng giai đoạn và regime, sau đó tính độ chênh giữa giai đoạn cuối (2018–2025) và giai đoạn đầu (2009–2012).
 
-**Bảng 4.6**. *Δ điểm phần trăm các chỉ số khi so sánh 2018–2024 với 2007–2012.*
+**Bảng 4.6**. *Δ điểm phần trăm các chỉ số khi so sánh giai đoạn 2018–2025 với 2009–2012.*
 
 | Nhóm regime | Δ Website | Δ Exporter | Δ FDI ≥10% | Δ R&D | Δ ISO | Δ Innov product |
 |---|---|---|---|---|---|---|
 | Advanced | n/a* | n/a* | n/a* | n/a* | n/a* | n/a* |
 | Upper-middle | -9,9 | +1,4 | +2,3 | +21,5** | -25,4 | n/a* |
-| Emerging | +20,3 | -3,0 | -10,3 | -39,2 | +2,2 | -22,8 |
+| Emerging | +20,3 | -6,8 | -10,3 | -39,2 | +2,2 | -22,8 |
 | Frontier | +22,1 | +1,5 | -6,5 | -18,9 | +18,5 | n/a* |
 | SIDS | +42,9 | +11,3 | -10,0 | n/a* | -24,3 | n/a* |
 
 *Nguồn: Tính toán của tác giả từ pool WBES.*
 
-\* n/a: thiếu dữ liệu giai đoạn 2007–2012 cho regime đó.
+\* n/a: thiếu dữ liệu giai đoạn 2009–2012 cho regime đó (Advanced chưa có khảo sát WBES trước 2013; một số chỉ số như `h1` chưa được đo nhất quán ở schema cũ).
+
 \** Upper-middle Δ R&D dựa trên Trung Quốc 2012 vs 2024 nên có biến động lớn do thay đổi mẫu chứ không phải biến động thực.
 
-Năm phát hiện:
+Năm phát hiện chính:
 
-(1) *Số hoá tăng vọt ở Frontier, Emerging và SIDS*: tỷ lệ doanh nghiệp có website tăng 20–43 điểm phần trăm trong vòng 12 năm — hiện tượng "leapfrog" phù hợp với Banalieva & Dhanaraj (2019).
+(1) *Số hoá tăng vọt ở Frontier, Emerging và SIDS*: tỷ lệ doanh nghiệp có website tăng 20–43 điểm phần trăm trong giai đoạn 2009–2025 — hiện tượng "leapfrog" phù hợp với Banalieva & Dhanaraj (2019). Sự bùng nổ AI và hạ tầng số 2023–2025 gia tăng tốc độ leapfrog này.
 
-(2) *R&D giảm mạnh ở Emerging và Frontier* (Δ = −39 và −19 điểm phần trăm) — chủ yếu do thay đổi cấu trúc mẫu: giai đoạn 2007–2012 có Indonesia, Mongolia với R&D cao; giai đoạn 2018–2024 mở rộng sang Ấn Độ với R&D thấp hơn. Sau khi bổ sung Myanmar 2014/2016 và Mongolia 2019, pattern này dịu nhẹ một chút (Δ R&D Emerging từ −39,2 không thay đổi đáng kể).
+(2) *R&D giảm mạnh ở Emerging và Frontier* (Δ = −39 và −19 điểm phần trăm) — chủ yếu do thay đổi cấu trúc mẫu: giai đoạn 2009–2012 có Indonesia, Mongolia với R&D cao; giai đoạn 2018–2025 mở rộng sang Ấn Độ, Nepal với R&D thấp hơn.
 
-(3) *Tỷ trọng exporter giảm 3 điểm phần trăm ở Emerging* — phản ánh chuyển dịch về thị trường nội địa.
+(3) *Tỷ trọng exporter giảm 6,8 điểm phần trăm ở Emerging* — phản ánh chuyển dịch về thị trường nội địa giai đoạn hậu chiến tranh thương mại Mỹ-Trung 2018+ và đứt gãy chuỗi cung ứng COVID-19. Pattern này có thể tiếp tục được củng cố ở dữ liệu 2025+.
 
-(4) *Tăng tỷ lệ ISO ở Frontier (+18,5 điểm phần trăm)* — bằng chứng quá trình chính thức hoá doanh nghiệp.
+(4) *Tăng tỷ lệ ISO ở Frontier (+18,5 điểm phần trăm)* — bằng chứng quá trình chính thức hoá doanh nghiệp ở các nước thu nhập thấp, có thể nhờ áp lực chuỗi giá trị toàn cầu yêu cầu chứng nhận chất lượng.
 
 (5) *SIDS tăng exporter (+11,3 điểm phần trăm) và website (+42,9 điểm phần trăm) song hành với giảm ISO (−24,3 điểm phần trăm)* — pattern phức tạp phản ánh tái cấu trúc kinh tế Vanuatu hậu COVID.
 
 ### 4.7 Tổng hợp Chương 4
 
-Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **83.778 doanh nghiệp ở 36 nền kinh tế châu Á (87 cặp quốc gia × năm) trong giai đoạn 2009–2025**. Bốn kết luận chính:
+Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **83.778 doanh nghiệp ở 36 nền kinh tế châu Á (87 cặp quốc gia × năm) trong giai đoạn 2009–2025** từ pool WBES sau hòa hợp. Bốn kết luận chính:
 
 (i) *Dispersion năng suất nội bộ tăng từ Advanced (sd=1,00) lên plateau 1,35–1,37 ở Emerging/Frontier/SIDS*; P90/P10 từ 13,3 lên 42,1 lần. Pattern khẳng định mạnh hypothesis misallocation và là cơ sở thực tiễn cho hypothesis institutional moderation H5.
 
-(ii) *Quốc tế hóa là hiện tượng phân cực ở mọi nhóm*: hơn 50% doanh nghiệp KHÔNG xuất khẩu; chỉ 10–28% tham gia xuất khẩu. SIDS có tỷ trọng exporter thấp nhất phù hợp với forced internationalization penalty.
+(ii) *Quốc tế hóa là hiện tượng phân cực ở mọi nhóm*: hơn 50% doanh nghiệp KHÔNG xuất khẩu; chỉ 10–28% tham gia xuất khẩu. SIDS có tỷ trọng exporter thấp nhất (9,7%) phù hợp với forced internationalization penalty.
 
 (iii) *Năng lực thể chế hoá (ISO), năng lực số (website) và năng lực R&D có pattern khác nhau theo regime* — khẳng định cần tách bạch TCI và DAI trong mô hình Chuyên đề 2.
 
-(iv) *Số hoá tăng vọt giai đoạn 2018–2024 ở Frontier, Emerging và SIDS* (+20–43 điểm phần trăm) — bằng chứng "leapfrog".
+(iv) *Số hoá tăng vọt giai đoạn 2018–2025 ở Frontier, Emerging và SIDS* (+20–43 điểm phần trăm tỷ lệ website) — bằng chứng "leapfrog" hỗ trợ luận điểm tái định vị Uppsala cho kỷ nguyên số (Banalieva & Dhanaraj, 2019). Dữ liệu 2025 (Brunei, Thái Lan, Sri Lanka, Afghanistan, Nepal) củng cố thêm pattern này.
 
 ---
 
