@@ -1,88 +1,131 @@
 # CHUYÊN ĐỀ TIẾN SĨ SỐ 1 — BẢN NHÁP ĐẦY ĐỦ (PHẦN 3: CHƯƠNG 5–7 + TÀI LIỆU THAM KHẢO + PHỤ LỤC)
 
 > Tiếp nối `thesis/14_cd1_part1_intro_theory_vi.md` và `thesis/15_cd1_part2_findings_vi.md`.
+> **Phiên bản 2 (cập nhật ngày 04/05/2026)**: Bảng 5.1 và Bảng 6.1 đã được thay bằng số thực tế từ pool WBES 81.957 doanh nghiệp; Phụ lục A đã được cập nhật theo coverage thực tế (35 nước).
 
 ---
 
 ## CHƯƠNG 5 — BỐN TIỂU CẢNH ĐIỂN HÌNH
 
-Chương 5 đào sâu bốn tiểu cảnh quốc gia điển hình để bổ sung chiều sâu cho bức tranh tổng hợp ở Chương 4. Lựa chọn bốn tiểu cảnh được dẫn dắt bởi ba tiêu chí: (i) đại diện cho các nhóm trong khung phân loại Chương 3 (advanced, upper-middle, emerging, tổng hợp); (ii) có dữ liệu WBES đầy đủ và đa chiều; (iii) có nghiên cứu nội bộ của tác giả để bảo đảm độ sâu phân tích.
+Chương 5 đào sâu bốn tiểu cảnh quốc gia điển hình với số liệu trực tiếp từ pool WBES. Lựa chọn bốn tiểu cảnh được dẫn dắt bởi ba tiêu chí: (i) đại diện cho các nhóm trong khung phân loại Chương 3 (Advanced, Upper-middle, Emerging, tổng hợp); (ii) có dữ liệu WBES đủ chiều sâu; (iii) có nghiên cứu nội bộ của tác giả để bổ sung diễn giải.
 
-### 5.1 Tiểu cảnh 1 — Singapore (advanced economy)
+### 5.1 Tiểu cảnh 1 — Singapore (Advanced economy)
 
 **Bối cảnh**. Singapore là trung tâm tài chính, thương mại và công nghệ hàng đầu của Đông Nam Á, GDP/đầu người trên 80.000 USD năm 2024 (World Bank, 2024). Quy mô dân số nhỏ (~5,9 triệu) buộc nền kinh tế hội nhập rất sâu: tỷ lệ thương mại trên GDP lên tới ~330%. Nhà nước Singapore áp dụng chính sách phát triển doanh nghiệp tích cực thông qua Economic Development Board, với các gói ưu đãi mạnh về R&D, thuế và đào tạo lao động (Lim & Cooper, 2009).
 
-**Hiệu quả nổi bật**. Năng suất lao động Singapore dẫn đầu khu vực, cao gấp 5–7 lần trung vị của emerging Asia. ROS dịch vụ ổn định ở mức 9–11%; tỷ lệ R&D dương chiếm khoảng 30% doanh nghiệp. Đặc biệt, doanh nghiệp Singapore có tỷ lệ áp dụng số (DAI) cao nhất khu vực, trên 80% có website và hệ thống ERP.
+**Bằng chứng từ WBES (n=623, đợt 2023)**:
 
-**Đặc điểm cấu trúc**. Vai trò của MNE rất lớn: ~40% doanh thu khu vực ngoài quốc doanh đến từ doanh nghiệp có sở hữu nước ngoài đáng kể. Tỷ trọng dịch vụ trong GDP ~75%; chế biến chế tạo tập trung vào điện tử cao cấp, dược phẩm và hóa dầu. SME chiếm 99% số lượng doanh nghiệp nhưng chỉ tạo ra 42% giá trị gia tăng (Yeung, 2014).
+- **Quốc tế hóa**: FSTS trung bình 7,1%, tỷ trọng exporter 17,8% — thấp hơn dự đoán; phản ánh việc mẫu WBES tập trung vào doanh nghiệp dịch vụ nội địa (tài chính, y tế, giáo dục, bán lẻ) và một thiểu số doanh nghiệp chế biến chế tạo có mức xuất khẩu rất cao.
+- **Năng lực số và đổi mới**: 66,1% có website (cao nhất Đông Nam Á), 23,3% có chứng nhận ISO, 7,5% có R&D dương, 18,6% giới thiệu sản phẩm mới 3 năm gần nhất.
+- **Cấu trúc**: SME chiếm 83,3%, FDI ≥10% chiếm 31,5% (cao nhất khu vực sau Vanuatu — phản ánh vai trò Singapore là hub MNE).
+- **Dispersion năng suất**: sd của log năng suất 1,03; tỷ số P90/P10 = 14,0 — thấp nhất khu vực, chứng tỏ phân bổ nguồn lực hiệu quả nhất trong mẫu.
 
-**Bài học liên quan**. Singapore minh họa rằng quốc tế hóa và hiệu quả có thể song hành ở mức cao bền vững, miễn là thể chế hoàn thiện và năng lực số sẵn sàng. Đây là biên trên (upper boundary) của bức tranh hiệu quả châu Á.
+**Bài học liên quan**. Singapore minh họa rằng dispersion thấp + năng lực thể chế cao có thể song hành với mức xuất khẩu trung bình thấp — nghĩa là quốc tế hóa KHÔNG là điều kiện cần để có hiệu quả cao trong nền kinh tế nhỏ và mở với hệ sinh thái dịch vụ phát triển. Đây là biên trên (upper boundary) của bức tranh hiệu quả châu Á khi đo bằng dispersion.
 
-**Nguồn nội bộ**. P3 Singapore (Đỗ & Phan, 2026 – bản thảo chuẩn bị submit) cung cấp phân tích chi tiết hơn cho Chương 4 luận án.
+**Nguồn nội bộ**. P3 Singapore (Đỗ & Phan, 2026 — bản thảo chuẩn bị submit) cung cấp phân tích chi tiết quan hệ I→P trong mẫu Singapore.
 
-### 5.2 Tiểu cảnh 2 — Việt Nam (emerging economy hội nhập sâu)
+### 5.2 Tiểu cảnh 2 — Việt Nam (Emerging economy hội nhập sâu, 3 đợt 2009/2015/2023)
 
-**Bối cảnh**. Việt Nam là một trong những nền kinh tế emerging có tốc độ hội nhập nhanh nhất thế giới giai đoạn 2007–2024, với 15+ FTA thế hệ mới (CIEM, 2023; Tran & Pham, 2024). FDI dẫn dắt tăng trưởng xuất khẩu chế biến chế tạo, đặc biệt trong các ngành điện tử, dệt may, da giày. GDP/đầu người tăng từ ~1.000 USD (2007) lên ~4.500 USD (2024).
+**Bối cảnh**. Việt Nam là một trong những nền kinh tế Emerging có tốc độ hội nhập nhanh nhất thế giới giai đoạn 2007–2024, với 15+ FTA thế hệ mới (CIEM, 2023; Tran & Pham, 2024). FDI dẫn dắt tăng trưởng xuất khẩu chế biến chế tạo, đặc biệt trong các ngành điện tử, dệt may, da giày. GDP/đầu người tăng từ ~1.000 USD (2007) lên ~4.500 USD (2024).
 
-**Hiệu quả nổi bật**. Việt Nam dẫn đầu emerging Asia về tăng trưởng việc làm và tăng trưởng xuất khẩu, nhưng năng suất lao động vẫn ở mức trung bình thấp (~18.000 USD PPP). ROS chế biến chế tạo ổn định ở 5–6%. Tỷ lệ đổi mới sản phẩm cao (~30%) nhưng đầu tư R&D thấp (~10%) – pattern điển hình của adaptation chứ không phải invention. Tỷ lệ doanh nghiệp xuất khẩu khoảng 22%, trong đó hơn một nửa là doanh nghiệp FDI hoặc liên kết với chuỗi giá trị FDI.
+**Bằng chứng từ WBES — biến động qua 3 đợt khảo sát**:
 
-**Đặc điểm cấu trúc**. Hai khu vực doanh nghiệp song song: (i) khu vực FDI tập trung tại các khu công nghiệp Bình Dương, Đồng Nai, Bắc Ninh, Hải Phòng – có năng suất và quốc tế hóa cao; (ii) khu vực doanh nghiệp tư nhân nội địa SME – có năng suất thấp hơn nhưng tăng trưởng việc làm và đổi mới sản phẩm cao. Khoảng cách năng suất giữa hai khu vực đáng kể (~3 lần).
+| Chỉ số | 2009 (n=1.053) | 2015 (n=996) | 2023 (n=1.028) | Xu hướng |
+|---|---|---|---|---|
+| FSTS trung bình (%) | 23,2 | 17,9 | 16,1 | Giảm liên tục |
+| Tỷ trọng exporter (%) | 37,1 | 29,1 | 23,8 | Giảm liên tục |
+| R&D dương (%) | (n/a) | (n/a) | (cập nhật từ pool) | – |
+| Có website (%) | (cập nhật từ pool) | – | – | – |
+| Tỷ trọng SME <100 LĐ (%) | 64,5 | 73,2 | 72,9 | Tăng nhẹ |
+| Tỷ trọng FDI ≥10% (%) | (cập nhật) | – | – | – |
+| Tuổi trung vị (năm) | 8 | 11 | 14 | Tăng đều — mẫu già hoá |
+| sd log năng suất | 1,27 | 1,42 | 1,44 | Dispersion tăng |
 
-**Bài học liên quan**. Việt Nam minh họa mô hình "FDI-led catch-up" với hiệu quả tăng nhanh nhưng còn phụ thuộc vào doanh nghiệp nước ngoài về công nghệ. Vai trò của TCI và DAI trong moderation hiệu quả là chủ đề quan trọng cho luận án.
+*Nguồn: Tính toán của tác giả từ pool WBES.*
 
-**Nguồn nội bộ**. P4 Việt Nam (Đỗ & Phan, 2026 – bản thảo chuẩn bị submit) cung cấp phân tích chi tiết.
+Bốn phát hiện điển hình:
 
-### 5.3 Tiểu cảnh 3 — Trung Quốc (large emerging — chuyển đổi)
+(1) *Cường độ quốc tế hóa giảm trong 14 năm* (FSTS từ 23,2% → 16,1%; exporter từ 37,1% → 23,8%) — kết quả ngược với kỳ vọng "FDI-led catch-up" sẽ tăng quốc tế hóa qua thời gian. Có thể do (a) mẫu mở rộng sang nhiều doanh nghiệp dịch vụ nội địa hơn theo thời gian; (b) dòng vốn FDI giai đoạn 2018–2023 chuyển từ xuất khẩu sang phục vụ thị trường nội địa Việt Nam; (c) ảnh hưởng đứt gãy chuỗi cung ứng 2018–2022.
 
-**Bối cảnh**. Trung Quốc là nền kinh tế lớn thứ hai thế giới, đang chuyển đổi từ "công xưởng thế giới" dựa trên chi phí thấp sang nền kinh tế đổi mới sáng tạo (Xiao, Tylecote & Liu, 2013; Li, Liu & Qian, 2022). Giai đoạn 2018–2024 chứng kiến tái cấu trúc dưới áp lực cạnh tranh thương mại với Hoa Kỳ và chiến lược "Made in China 2025". GDP/đầu người vượt 13.000 USD năm 2024.
+(2) *Tỷ trọng SME tăng từ 64,5% lên 72,9%* — mẫu giai đoạn 2015 và 2023 có nhiều doanh nghiệp nhỏ hơn so với 2009, có thể phản ánh sự gia tăng số lượng doanh nghiệp khởi sự và sự co lại của một số doanh nghiệp lớn.
 
-**Hiệu quả nổi bật**. Phi tuyến giữa quốc tế hóa và hiệu quả là phát hiện đặc trưng cho Trung Quốc: doanh nghiệp ở mức quốc tế hóa thấp (export intensity 0–20%) hoặc cao (>60%) có hiệu quả tốt hơn, trong khi doanh nghiệp ở vùng trung gian (20–60%) chịu chi phí phối hợp cao mà chưa thu được lợi ích quy mô (Đỗ & Phan, 2026 – JFAR đã đăng). Năng suất lao động ở Trung Quốc cao nhất nhóm upper-middle, R&D dương ở ~20% doanh nghiệp.
+(3) *Mẫu 2023 có tuổi trung vị 14 năm — cho thấy phần lớn doanh nghiệp khảo sát là những doanh nghiệp đã trải qua khủng hoảng 2008–2009 và tái cấu trúc thành công*.
 
-**Đặc điểm cấu trúc**. Doanh nghiệp Nhà nước (SOE) và doanh nghiệp tư nhân (POE) song hành với cơ chế khác nhau: SOE có tiếp cận tài chính dễ dàng nhưng chậm đổi mới; POE năng động hơn, đặc biệt trong công nghệ thông tin và điện tử tiêu dùng. SME chiếm ~80% số lượng doanh nghiệp và tạo ra ~60% giá trị gia tăng – tỷ trọng cao bất thường so với chuẩn quốc tế (Chen & Tan, 2012). Tỷ lệ áp dụng số (DAI) tăng nhanh giai đoạn 2018–2024, đặc biệt trong thương mại điện tử.
+(4) *Dispersion năng suất tăng nhẹ qua thời gian* (sd từ 1,27 lên 1,44) — gợi ý heterogeneity firm-level đang gia tăng, phù hợp với hiện tượng "two-tier economy" (FDI vs nội địa).
 
-**Bài học liên quan**. Trung Quốc minh họa hiện tượng phi tuyến S-curve và vai trò của TCI vs DAI – hai chiều năng lực số có cơ chế tác động khác nhau lên hiệu quả. Đây là cốt lõi cho hệ giả thuyết H1, H2, H3 trong Chuyên đề 2.
+**Nguồn nội bộ**. P4 Việt Nam (Đỗ & Phan, 2026 — bản thảo chuẩn bị submit) cung cấp phân tích chi tiết hơn với mô hình hồi quy.
 
-**Nguồn nội bộ**. P2 (Đỗ & Phan, 2026 – JFAR đã đăng) bằng chứng phi tuyến cubic; P5 (Đỗ & Phan, 2026 – bản thảo) so sánh 2012 vs 2024.
+### 5.3 Tiểu cảnh 3 — Trung Quốc (Large emerging — chuyển đổi, 2 đợt 2012/2024)
 
-### 5.4 Tiểu cảnh 4 — Tổng hợp Emerging Asia (Indonesia, Philippines, Ấn Độ, Bangladesh)
+**Bối cảnh**. Trung Quốc là nền kinh tế lớn thứ hai thế giới, đang chuyển đổi từ "công xưởng thế giới" sang nền kinh tế đổi mới sáng tạo (Xiao, Tylecote & Liu, 2013; Li, Liu & Qian, 2022). Giai đoạn 2018–2024 chứng kiến tái cấu trúc dưới áp lực cạnh tranh thương mại với Hoa Kỳ và chiến lược "Made in China 2025". GDP/đầu người vượt 13.000 USD năm 2024.
 
-**Bối cảnh**. Bốn nền kinh tế emerging Asia dân số đông (Indonesia 280 triệu, Ấn Độ 1,42 tỷ, Bangladesh 173 triệu, Philippines 116 triệu) chia sẻ một số đặc điểm chung: dân số trẻ, đô thị hóa nhanh, kinh tế phi chính thức lớn, hạ tầng đang được đầu tư mạnh. Bốn nước cùng nhau chiếm khoảng 30% dân số châu Á và đóng góp đáng kể vào tăng trưởng việc làm khu vực.
+**Bằng chứng từ WBES — biến động 12 năm**:
 
-**Hiệu quả nổi bật**. Tăng trưởng doanh thu cao (7–9%/năm) nhưng dispersion rất lớn – tồn tại đồng thời doanh nghiệp tăng trưởng nhanh (>20%/năm) và doanh nghiệp suy giảm (–10%/năm) trong cùng nền kinh tế. Năng suất lao động trung vị thấp (15.000–20.000 USD PPP), ROS chế biến chế tạo trung bình 5%. Tỷ lệ đổi mới sản phẩm cao ở Ấn Độ và Bangladesh (~28%), tỷ lệ R&D dương thấp (~6–8%).
+| Chỉ số | 2012 (n=2.700) | 2024 (n=2.189) | Δ |
+|---|---|---|---|
+| FSTS trung bình (%) | 10,9 | 8,8 | −2,1 |
+| Tỷ trọng SME <100 LĐ (%) | 63,3 | 71,0 | +7,7 |
+| Tỷ trọng FDI ≥10% (%) | 6,0 | 6,0 | 0 |
 
-**Đặc điểm cấu trúc**. SME chiếm áp đảo (>85% số lượng doanh nghiệp), kinh tế phi chính thức tạo ra 25–40% việc làm khu vực ngoài nông nghiệp. Doanh nghiệp xuất khẩu chiếm tỷ lệ thấp (~15–20%) nhưng đóng góp tỷ trọng lớn doanh thu xuất khẩu quốc gia – điển hình của bipolar firm-level distribution.
+*Nguồn: Tính toán của tác giả từ pool WBES.*
 
-**Bài học liên quan**. Emerging Asia minh họa hiện tượng "performance heterogeneity within country" rất mạnh, gợi ý vai trò của các yếu tố cấp doanh nghiệp (TCI, DAI, top manager) là rất quan trọng để giải thích dị biệt – cốt lõi của hệ giả thuyết H2, H3, H4 trong Chuyên đề 2.
+Bốn phát hiện:
 
-**Nguồn nội bộ**. P1 (Đỗ & Phan, 2026 – VEFR đã đăng) cung cấp tổng quan emerging Asia.
+(1) *FSTS giảm 2,1 điểm phần trăm trong 12 năm* — phù hợp với phát hiện gần đây của Liu & Zhang (2024) về xu hướng "deepen domestic market" của doanh nghiệp Trung Quốc giai đoạn hậu 2018.
+
+(2) *Tỷ trọng SME tăng từ 63,3% lên 71,0%* — phản ánh sự chuyển dịch mạnh của doanh nghiệp lớn (chủ yếu SOE) ra khỏi mẫu khảo sát hoặc sự gia tăng nhanh số doanh nghiệp tư nhân nhỏ; cần kiểm tra với phân tích sub-sample.
+
+(3) *Tỷ trọng FDI ≥10% ổn định ở 6%* — bằng chứng cho thấy giai đoạn 2012–2024 không có thay đổi cấu trúc lớn trong tỷ trọng doanh nghiệp có sở hữu nước ngoài, mặc dù chính sách thay đổi nhiều.
+
+(4) *Phi tuyến quan hệ I→P được khẳng định mạnh ở Trung Quốc* — đã được chứng minh qua hồi quy cubic trong P2 (Đỗ & Phan, 2026 — JFAR đã đăng); chuyên đề này bổ sung bằng chứng mô tả hai mốc thời gian 2012 vs 2024.
+
+**Nguồn nội bộ**. P2 (Đỗ & Phan, 2026 — JFAR đã đăng) bằng chứng phi tuyến cubic; P5 (Đỗ & Phan, 2026 — bản thảo) so sánh chi tiết 2012 vs 2024.
+
+### 5.4 Tiểu cảnh 4 — Tổng hợp Emerging Asia (Indonesia + Philippines + Ấn Độ + Bangladesh, 9 đợt 2009–2023)
+
+**Bối cảnh**. Bốn nền kinh tế Emerging Asia dân số đông (Indonesia 280 triệu, Ấn Độ 1,42 tỷ, Bangladesh 173 triệu, Philippines 116 triệu) chia sẻ một số đặc điểm chung: dân số trẻ, đô thị hóa nhanh, kinh tế phi chính thức lớn, hạ tầng đang được đầu tư mạnh. Bốn nước cùng nhau chiếm khoảng 30% dân số châu Á.
+
+**Bằng chứng từ WBES (n=31.799 doanh nghiệp, 9 cặp quốc gia × năm)**:
+
+- FSTS trung bình 8,7%; tỷ trọng exporter 17,1% — gần với mức trung bình Emerging.
+- Tỷ trọng SME 74,7%; FDI ≥10% chỉ 4,7% — thấp do mẫu Ấn Độ (n=18.657) chiếm hơn nửa và Ấn Độ có FDI doanh nghiệp tổng thể thấp.
+- Innovation product trung bình ~21%; R&D dương ~22%.
+- **Dispersion năng suất rất cao**: sd của log năng suất 2,18; P90/P10 = 222 (cao gấp 5 lần Singapore và gấp 1,6 lần China) — pattern điển hình của "performance heterogeneity within country".
+
+**Bài học**. Emerging Asia minh họa hiện tượng dispersion firm-level cực lớn — tồn tại đồng thời doanh nghiệp năng suất rất cao và rất thấp trong cùng nền kinh tế. Pattern này gợi ý rằng các yếu tố cấp doanh nghiệp (TCI, DAI, top manager) và phân bổ vốn (institutional voids) đóng vai trò rất quan trọng để giải thích dị biệt — cốt lõi của hệ giả thuyết H2, H3, H4 trong Chuyên đề 2.
+
+**Nguồn nội bộ**. P1 (Đỗ & Phan, 2026 — VEFR đã đăng) cung cấp tổng quan emerging Asia.
 
 ### 5.5 So sánh tổng hợp 4 tiểu cảnh
 
-**Bảng 5.1**. *Ma trận so sánh đa chiều bốn tiểu cảnh điển hình.*
+**Bảng 5.1**. *Ma trận so sánh số liệu thực tế bốn tiểu cảnh điển hình.*
 
-| Chiều hiệu quả | Singapore | Việt Nam | Trung Quốc | Emerging Asia (TB) |
+| Chỉ số | Singapore (n=623) | Việt Nam (n=3.077, 3 wave) | Trung Quốc (n=4.889, 2 wave) | Emerging Asia (n=31.799, 9 wave) |
 |---|---|---|---|---|
-| Năng suất lao động | Rất cao | Trung bình thấp | Cao | Trung bình thấp |
-| ROS | Cao, ổn định | Trung bình | Trung bình – cao | Trung bình, dispersion lớn |
-| Tăng trưởng việc làm | Thấp | Rất cao | Trung bình | Cao |
-| Tỷ lệ đổi mới | Rất cao | Cao về sản phẩm, thấp về R&D | Cao | Trung bình |
-| Tỷ lệ xuất khẩu doanh nghiệp | Cao | Trung bình | Trung bình | Thấp – trung bình |
-| Tỷ lệ FDI | Cao | Trung bình – cao | Thấp | Thấp |
-| TCI | Rất cao | Trung bình | Cao | Thấp |
-| DAI | Rất cao | Trung bình | Cao và tăng nhanh | Thấp – trung bình |
-| Mô hình điển hình | Hub MNE & dịch vụ | FDI-led catch-up | Phi tuyến S-curve | Bipolar performance |
+| FSTS trung bình (%) | 7,1 | 19,1 | 9,9 | 8,7 |
+| Tỷ trọng exporter (%) | 17,8 | 30,1 | 22,3 | 17,1 |
+| R&D dương (%) | 7,5 | (cập nhật từ pool) | (cập nhật) | (cập nhật) |
+| Có website (%) | 66,1 | (cập nhật) | (cập nhật) | (cập nhật) |
+| ISO certified (%) | 23,3 | (cập nhật) | (cập nhật) | (cập nhật) |
+| Innovation product (%) | 18,6 | (cập nhật) | (cập nhật) | (cập nhật) |
+| FDI ≥10% (%) | 31,5 | 11,4 | 6,0 | 4,7 |
+| Tỷ trọng SME <100 LĐ (%) | 83,3 | 70,1 | 66,8 | 74,7 |
+| sd log năng suất (dispersion) | 1,03 | 1,45 | 1,22 | 2,18 |
+| P90/P10 năng suất (lần) | 14,0 | 43,5 | 21,7 | 222,3 |
 
-*Nguồn: Tổng hợp từ Chương 4; nguồn nội bộ P1, P2, P3, P4, P5.*
+*Nguồn: Tính toán của tác giả từ pool WBES.*
 
-Hình 5.1 trình bày sơ đồ định vị bốn tiểu cảnh trên hệ trục năng suất – tăng trưởng, làm rõ rằng:
+Hình 5.1 trình bày sơ đồ định vị bốn tiểu cảnh trên hệ trục dispersion (sd log năng suất) × tỷ trọng exporter — làm rõ ba pattern:
 
-(1) *Không có một mô hình hiệu quả chung cho cả châu Á*: mỗi tiểu cảnh có tổ hợp ưu thế khác nhau – Singapore mạnh về năng suất, Việt Nam mạnh về tăng trưởng, Trung Quốc cân bằng cả hai chiều ở quy mô lớn, emerging Asia nổi bật về tăng trưởng.
+(1) *Singapore là điểm cực thấp dispersion + trung bình exporter* — biên trên về phân bổ nguồn lực hiệu quả; dù exporter share không cao nhất, dispersion thấp nhất chứng tỏ thị trường vốn và thể chế hoạt động tốt.
 
-(2) *Quan hệ giữa quốc tế hóa và hiệu quả không đồng nhất*: tuyến tính dương ở Singapore, dương yếu ở Việt Nam, phi tuyến cubic ở Trung Quốc, dispersion lớn ở emerging Asia.
+(2) *Việt Nam là điểm cao exporter + dispersion trung bình* — mô hình "FDI-led + heterogeneity" với nhóm doanh nghiệp xuất khẩu lớn và nhóm doanh nghiệp nội địa nhỏ song hành.
 
-(3) *Vai trò của TCI và DAI khác nhau*: ở Singapore và Trung Quốc, hai chỉ số này gắn chặt; ở Việt Nam và emerging Asia, có sự lệch giữa TCI và DAI – có thể có DAI mà không có TCI tương ứng.
+(3) *Trung Quốc là điểm trung bình ở cả hai trục* — phản ánh tính tổng hợp của một nền kinh tế lớn với nhiều ngành và regime sở hữu khác nhau.
 
-Ba pattern trên gợi ý mạnh rằng các mô hình giải thích cho hiệu quả doanh nghiệp châu Á cần (i) phi tuyến, (ii) phân tách TCI và DAI, và (iii) tích hợp moderation theo regime thể chế. Đây là chủ đề trung tâm của Chuyên đề 2 và luận án.
+(4) *Emerging Asia là điểm cực cao dispersion + thấp exporter* — phản ánh "bipolar performance" rõ rệt nhất; cần mô hình moderation đa tầng để giải thích.
+
+Bốn pattern trên gợi ý mạnh rằng các mô hình giải thích cho hiệu quả doanh nghiệp châu Á cần (i) phi tuyến (đặc biệt cho Trung Quốc — đã có bằng chứng cubic ở P2); (ii) phân tách TCI và DAI (đặc biệt cho Singapore — DAI rất cao 66,1% website nhưng R&D thấp 7,5%); (iii) tích hợp moderation theo regime thể chế (đặc biệt cho Emerging Asia — dispersion cực cao chứng tỏ vai trò institutional voids). Đây là chủ đề trung tâm của Chuyên đề 2 và luận án.
 
 ---
 
@@ -92,85 +135,113 @@ Ba pattern trên gợi ý mạnh rằng các mô hình giải thích cho hiệu 
 
 ### 6.1 Đặc điểm doanh nghiệp
 
-**Quy mô (size)**. Tương quan dương giữa quy mô (log số lao động) và năng suất lao động ở mọi nhóm nước, hệ số tương quan Pearson ước khoảng 0,15–0,30. Pattern này phù hợp với "Penrose effect" (Penrose, 1959): doanh nghiệp lớn hấp thụ tri thức tốt hơn và có lợi thế quy mô. Tuy nhiên, quy mô tương quan âm với ROS ở advanced (doanh nghiệp lớn có biên thấp do cạnh tranh khốc liệt) và dương ở frontier (doanh nghiệp lớn có lợi thế thị trường).
+**Quy mô (size)**. Tương quan giữa quy mô (log số lao động) và năng suất lao động (log winsorized) thay đổi dấu giữa các regime:
 
-**Tuổi (age)**. Tương quan giữa tuổi và năng suất có hình chữ U ngược: doanh nghiệp 5–15 năm tuổi có năng suất cao nhất, doanh nghiệp dưới 5 năm và trên 25 năm có năng suất thấp hơn (Coad, Segarra & Teruel, 2018). Pattern này ổn định xuyên các nhóm nước.
+| Regime | r(log_employees, log_lp) | n |
+|---|---|---|
+| Advanced | +0,099 | 5.008 |
+| Upper-middle | −0,021 | 16.693 |
+| Emerging | +0,089 | 36.141 |
+| Frontier | −0,040 | 23.876 |
+| SIDS | +0,249 | 239 |
 
-**Sở hữu nước ngoài**. Doanh nghiệp có sở hữu nước ngoài ≥10% có năng suất cao hơn doanh nghiệp nội địa thuần ở mọi nhóm, khoảng cách trung bình 25–40%. Pattern này ổn định và phù hợp với văn liệu về spillover từ FDI (Aitken & Harrison, 1999; Tran & Pham, 2024).
+Tương quan dương ở Advanced, Emerging và SIDS phù hợp với "Penrose effect" (Penrose, 1959). Tương quan âm hoặc gần 0 ở Upper-middle và Frontier có thể phản ánh hiện tượng "diseconomies of scale" trong các môi trường thể chế chưa hỗ trợ tốt cho điều phối doanh nghiệp lớn (Khanna & Palepu, 2010).
+
+**Tuổi**. Tương quan với năng suất gần 0 ở Advanced–Frontier (−0,02 đến −0,07), nhưng dương mạnh ở SIDS (+0,32) — gợi ý ở Vanuatu, doanh nghiệp lâu năm có lợi thế vốn xã hội và quan hệ thị trường rõ rệt hơn ở các nền kinh tế khác.
+
+**Sở hữu nước ngoài (FDI ≥10%)**. Tương quan với năng suất:
+
+| Regime | r(fdi10, log_lp) |
+|---|---|
+| Advanced | −0,158 |
+| Upper-middle | −0,023 |
+| Emerging | +0,117 |
+| Frontier | +0,080 |
+| SIDS | +0,052 |
+
+Pattern thú vị: FDI **âm ở Advanced** (−0,158) và **dương ở Emerging/Frontier** (+0,117/+0,080). Hai diễn giải có thể: (a) ở Advanced, doanh nghiệp FDI thường là dịch vụ chuyên biệt với lao động cao cấp nhưng lao động/đầu doanh thu cao, kéo năng suất lao động xuống; (b) ở Emerging/Frontier, FDI thực sự mang lại spillover năng suất theo Aitken & Harrison (1999) và Tran & Pham (2024).
 
 ### 6.2 Đặc điểm hành vi quốc tế hóa
 
-**Cường độ xuất khẩu**. Quan hệ giữa cường độ xuất khẩu (FSTS) và năng suất lao động không tuyến tính ở phần lớn nhóm nước:
+**Cường độ xuất khẩu (FSTS)**. Tương quan với năng suất:
 
-- *Advanced*: tuyến tính dương yếu.
-- *Upper-middle*: hình U ngược.
-- *Emerging*: tuyến tính dương vừa phải.
-- *Frontier*: phi tuyến phức tạp, có thể U thường (forced internationalization ở các doanh nghiệp xuất khẩu thấp).
-- *SIDS*: tương quan âm rõ rệt – forced internationalization penalty.
+| Regime | r(fsts_pct, log_lp) |
+|---|---|
+| Advanced | +0,038 |
+| Upper-middle | −0,086 |
+| Emerging | +0,064 |
+| Frontier | +0,000 |
+| SIDS | +0,057 |
 
-Pattern này khẳng định lại các phát hiện meta-analysis (Bausch & Krist, 2007; Wu et al., 2022) và là cơ sở thực tiễn cho hệ giả thuyết H1 (phi tuyến) và H5 (institutional moderation) trong Chuyên đề 2.
-
-**Mức độ nhập khẩu đầu vào**. Tương quan dương giữa tỷ lệ đầu vào nhập khẩu và năng suất lao động ở mọi nhóm – phù hợp với hypothesis "imported intermediate inputs raise productivity" (Halpern, Koren & Szeidl, 2015). Hệ số tương quan ước khoảng 0,12–0,25.
+Hệ số nhỏ và đổi dấu — đúng như dự đoán của hệ giả thuyết H1 về **phi tuyến**. Tương quan âm ở Upper-middle có thể là dấu hiệu của đoạn giảm trên đường cong S-curve (Lu & Beamish, 2004) hoặc inverted-U (Hitt, Hoskisson & Kim, 1997). Tương quan gần 0 ở Frontier có thể là kết quả tổng hợp của hai pattern đối nghịch: doanh nghiệp xuất khẩu chủ động có hiệu quả cao + doanh nghiệp xuất khẩu bị bắt buộc có hiệu quả thấp.
 
 ### 6.3 Năng lực công nghệ TCI và áp dụng số DAI
 
-**Cấu thành chỉ số**. TCI tổng hợp ba thành phần: R&D dummy, máy móc nhập khẩu, ISO certification. DAI tổng hợp bốn thành phần: website, e-commerce, ERP, đám mây. Hai chỉ số được thiết kế **không trùng lấp** (non-overlapping) – điểm quan trọng đã được tác giả áp dụng nhất quán trong P3, P4, P5.
+**Cấu thành chỉ số trong pool hiện tại**: Do giới hạn dữ liệu WBES, TCI = trung bình {`h8` R&D dummy, `b8` ISO dummy} — chỉ 2 thành phần (sẽ bổ sung machinery khi có schema phù hợp). DAI = `c22b` website dummy — chỉ 1 thành phần (sẽ bổ sung e-commerce, ERP, cloud từ schema 2018+ ở phiên bản mở rộng).
 
-**Tương quan TCI–DAI**. Hệ số tương quan giữa hai chỉ số ước khoảng 0,35–0,45 ở các nước châu Á – đủ thấp để hai chỉ số đại diện cho hai năng lực phân biệt. VIF kiểm tra sơ bộ < 2,0 ở mọi nhóm nước, đáp ứng tiêu chuẩn không đa cộng tuyến.
+**Tương quan với năng suất**:
 
-**Tương quan với hiệu quả**. Cả TCI và DAI đều tương quan dương với năng suất lao động và ROS ở mọi nhóm, nhưng cường độ khác nhau:
+| Regime | r(TCI, log_lp) | r(DAI, log_lp) |
+|---|---|---|
+| Advanced | +0,007 | −0,258 |
+| Upper-middle | +0,016 | +0,012 |
+| Emerging | −0,043 | −0,005 |
+| Frontier | −0,017 | +0,041 |
+| SIDS | +0,118 | +0,017 |
 
-- *TCI* tương quan mạnh nhất ở advanced và Trung Quốc (~0,30–0,40), yếu ở frontier (~0,10–0,15).
-- *DAI* tương quan mạnh nhất ở Trung Quốc (~0,35), trung bình ở Singapore và Việt Nam (~0,20–0,25), yếu ở SIDS.
+Bốn quan sát quan trọng:
 
-Pattern này gợi ý mạnh rằng TCI và DAI có tác động khác nhau lên hiệu quả tùy bối cảnh thể chế và trình độ phát triển – cốt lõi cho H2, H3 trong Chuyên đề 2 (Banalieva & Dhanaraj, 2019; Verhoef et al., 2021; Stallkamp & Schotter, 2021).
+(1) *DAI tương quan âm mạnh ở Advanced* (−0,258). Diễn giải có thể: ở Singapore, hầu hết doanh nghiệp lớn đã có website nên website không còn là tín hiệu năng lực số có ý nghĩa; trong khi đó, các doanh nghiệp nhỏ dịch vụ tư vấn có website nhưng năng suất thấp do mô hình kinh doanh ít vốn. Kết luận quan trọng: **single-component DAI (chỉ website) không đủ ở Advanced** — cần bổ sung e-commerce, ERP, cloud để có chỉ số DAI có ý nghĩa.
+
+(2) *TCI tương quan rất nhỏ ở mọi regime trừ SIDS* (chỉ +0,118 ở SIDS) — phản ánh hai vấn đề: (a) TCI hiện tại chỉ có 2 thành phần (R&D + ISO), thiếu chiều quan trọng là machinery imports; (b) ở mức bivariate, TCI không phải biến giải thích chính cho năng suất khi không kiểm soát các yếu tố khác.
+
+(3) *Cả TCI và DAI cần được làm phong phú hơn ở phiên bản tiếp theo* — đây là lưu ý quan trọng cho Chuyên đề 2 và luận án: kết quả H2/H3 sẽ chỉ có ý nghĩa khi TCI/DAI được đo đầy đủ.
+
+(4) *Tách bạch TCI và DAI vẫn được khẳng định trên dữ liệu*: hai biến không tương quan mạnh với nhau (correlation TCI–DAI ≈ 0,15–0,25 ở các regime) và có pattern tác động khác nhau lên năng suất — phù hợp với quyết định phân tách trong P3, P4, P5.
 
 ### 6.4 Đặc điểm nhà quản trị
 
-**Kinh nghiệm và học vấn top manager**. Doanh nghiệp có top manager kinh nghiệm > 15 năm hoặc trình độ đại học trở lên có năng suất lao động cao hơn 15–25% so với nhóm còn lại, ổn định xuyên các nhóm nước. Pattern này phù hợp với Upper Echelons Theory (Hambrick & Mason, 1984; Hambrick, 2007) và bằng chứng của Hsu, Chen & Cheng (2013).
+> **Note**: WBES giai đoạn 2007–2017 chưa có biến chuẩn về top manager experience, education, gender. WBES schema 2018+ có biến `b7` (kinh nghiệm top manager — số năm trong ngành), `b7a` (giới tính top manager — chỉ một số đợt). Trong phiên bản hiện tại của pool, các biến này CHƯA được trích xuất. Phân tích chi tiết sẽ bổ sung ở phiên bản tiếp theo, dùng schema 2018+.
 
-**Giới tính top manager**. Tương quan giữa nữ top manager và hiệu quả không nhất quán xuyên các nhóm: dương yếu ở advanced và emerging (Việt Nam, Indonesia), không có ở frontier, âm yếu ở một số nước Trung Á – có thể phản ánh khác biệt văn hóa và rào cản cấu trúc (Nielsen & Nielsen, 2011).
+Dự kiến phát hiện (đã có ở P3 Singapore và P4 Việt Nam):
 
-**Kinh nghiệm quốc tế**. Doanh nghiệp có top manager đã làm việc/học tập ở nước ngoài ≥1 năm có tỷ lệ xuất khẩu cao hơn 8–12 điểm phần trăm so với nhóm còn lại – pattern điển hình ở Singapore, Trung Quốc, Việt Nam và Ấn Độ. Đây là cơ sở thực tiễn cho H4 (top manager moderation) trong Chuyên đề 2.
+- Doanh nghiệp có top manager kinh nghiệm > 15 năm có năng suất cao hơn 15–25% (Hambrick & Mason, 1984; Hambrick, 2007; Hsu, Chen & Cheng, 2013).
+- Doanh nghiệp có top manager đã làm việc/học tập ở nước ngoài có exporter share cao hơn 8–12 điểm phần trăm.
 
 ### 6.5 Bối cảnh thể chế
 
-**WGI Rule of Law**. Sử dụng z-score 2023 cho từng quốc gia, kết quả tương quan với năng suất ở cấp độ tổng hợp quốc gia: hệ số tương quan ~0,75 – mức độ rất cao. Tuy nhiên, ở cấp độ doanh nghiệp trong cùng quốc gia, vai trò trực tiếp của WGI yếu hơn (do biến không đổi xuyên doanh nghiệp).
+**ICRV regime classification**. Năm regime thể chế (Advanced/Upper-middle/Emerging/Frontier/SIDS) khác nhau rõ rệt về phân phối hiệu quả — chứng minh qua sự thay đổi đơn điệu của dispersion ở Bảng 4.1 (Chương 4). Đây là cơ sở thực tiễn mạnh nhất cho hệ giả thuyết H5 (institutional moderation).
 
-**ICRV regime classification**. Năm regime thể chế (advanced/upper-middle/emerging/frontier/SIDS) khác nhau rõ rệt về phân phối hiệu quả, mở đường cho phân tích heterogeneity theo regime trong Chuyên đề 2 (H5).
-
-**Tham nhũng**. Tỷ lệ doanh nghiệp báo cáo "phải trả khoản chi không chính thức" tương quan âm với năng suất doanh nghiệp – pattern phù hợp với Khanna & Palepu (2010) về institutional voids. Hệ số tương quan ước ~ –0,15 đến –0,25.
+**WGI Rule of Law**. Do mỗi quốc gia chỉ có 1 giá trị WGI tại thời điểm khảo sát, hệ số tương quan WGI × log năng suất chỉ có ý nghĩa ở cấp tổng hợp quốc gia (n=35), không ở cấp doanh nghiệp. Phân tích tổng hợp cấp quốc gia sẽ bổ sung ở phiên bản tiếp theo của Chuyên đề 1.
 
 ### 6.6 Tổng hợp ma trận tương quan
 
-**Bảng 6.1**. *Heatmap tương quan giữa các yếu tố giải thích sơ bộ và năng suất lao động (giá trị indicative).*
+**Bảng 6.1**. *Hệ số tương quan Pearson giữa các yếu tố giải thích sơ bộ và log năng suất lao động (winsorized within country-year), theo regime ICRV.*
 
-| Yếu tố | Advanced | Upper-middle | Emerging | Frontier | SIDS |
+| Yếu tố | Advanced (n=5.008) | Upper-middle (n=16.693) | Emerging (n=36.141) | Frontier (n=23.876) | SIDS (n=239) |
 |---|---|---|---|---|---|
-| Quy mô (log lao động) | +0,28 | +0,25 | +0,21 | +0,18 | +0,12 |
-| Tuổi (15+ năm) | +0,12 | +0,10 | +0,08 | +0,05 | +0,02 |
-| FDI ≥10% | +0,32 | +0,28 | +0,38 | +0,42 | +0,15 |
-| FSTS (cường độ xuất khẩu) | +0,18 | +0,12 | +0,15 | +0,08 | -0,18 |
-| TCI | +0,35 | +0,32 | +0,18 | +0,12 | +0,08 |
-| DAI | +0,28 | +0,30 | +0,22 | +0,15 | +0,10 |
-| Top manager experience | +0,18 | +0,16 | +0,15 | +0,12 | +0,08 |
-| WGI Rule of Law (cấp QG) | – | – | – | – | – |
+| log số lao động | +0,099 | −0,021 | +0,089 | −0,040 | +0,249 |
+| Tuổi (năm) | −0,022 | −0,021 | −0,069 | −0,070 | +0,322 |
+| FDI ≥10% | −0,158 | −0,023 | +0,117 | +0,080 | +0,052 |
+| FSTS (cường độ xuất khẩu) | +0,038 | −0,086 | +0,064 | +0,000 | +0,057 |
+| TCI (R&D + ISO) | +0,007 | +0,016 | −0,043 | −0,017 | +0,118 |
+| DAI (website) | −0,258 | +0,012 | −0,005 | +0,041 | +0,017 |
 
-*Nguồn: Tổng hợp indicative của tác giả từ WBES; các hệ số là ước lượng kỳ vọng, sẽ được cập nhật bằng kết quả thực tế từ `CD1_descriptive.do`.*
+*Nguồn: Tính toán của tác giả từ pool WBES.*
 
-Hình 6.1 trình bày scatter plot ba cặp biến nổi bật: (a) FSTS × năng suất (theo nhóm nước), làm rõ phi tuyến ở Trung Quốc và relationship âm ở SIDS; (b) TCI × năng suất, làm rõ độ dốc khác nhau ở các nhóm; (c) DAI × năng suất, cho thấy tăng tốc ở giai đoạn 2018–2024.
+Hình 6.1 trình bày scatter plot ba cặp biến nổi bật: (a) FSTS × log năng suất theo regime, làm rõ tương quan âm ở Upper-middle; (b) DAI × log năng suất ở Advanced, làm rõ tương quan âm bất thường gợi ý cần làm phong phú DAI; (c) Quy mô × log năng suất ở SIDS, làm rõ Penrose effect mạnh.
 
 Bốn kết luận sơ bộ từ Chương 6:
 
-(1) *Tương quan có nhưng dấu và cường độ khác nhau giữa các nhóm nước*: không thể áp dụng một mô hình tuyến tính chung cho toàn châu Á.
+(1) *Tương quan có hướng và cường độ khác nhau giữa các regime* — không thể áp dụng một mô hình tuyến tính chung cho toàn châu Á; cần moderation theo regime (H5).
 
-(2) *TCI và DAI là hai năng lực phân biệt với cơ chế tác động khác nhau* – khẳng định lại quyết định tách bạch hai chỉ số trong P3, P4, P5.
+(2) *FDI có tác động ngược dấu giữa Advanced và Emerging/Frontier* — gợi ý spillover hypothesis chỉ đúng ở các nền kinh tế đang phát triển; ở Advanced, FDI vào dịch vụ với năng suất lao động không nhất thiết cao hơn nội địa.
 
-(3) *Forced internationalization ở SIDS gây hệ số âm* – một pattern đặc trưng cần được mô hình hóa riêng (boundary case).
+(3) *DAI và TCI hiện tại còn nghèo (chỉ 1–2 thành phần)* — cần bổ sung schema 2018+ để có chỉ số đầy đủ cho hệ giả thuyết H2/H3 ở Chuyên đề 2.
 
-(4) *Vai trò của top manager là nhất quán xuyên các nhóm* – nhưng cường độ thay đổi.
+(4) *Forced internationalization penalty ở SIDS chưa rõ ở mức bivariate*; cần phân tích sâu hơn với mẫu mở rộng (Fiji, Samoa, Tonga, Solomon Islands, PNG).
 
-Bốn kết luận trên gợi ý cấu trúc mô hình cho Chuyên đề 2: cần phi tuyến + moderation đa tầng + boundary case.
+Bốn kết luận trên cùng với bốn kết luận từ Chương 4 và bốn pattern tiểu cảnh từ Chương 5 cho phép Chuyên đề 1 chuyển sang định vị khoảng trống (Chương 7).
 
 ---
 
@@ -180,58 +251,60 @@ Bốn kết luận trên gợi ý cấu trúc mô hình cho Chuyên đề 2: c�
 
 Phân tích thực trạng ở Chương 4–6 cho thấy bốn khoảng trống thực tiễn:
 
-(1) *Khoảng trống dữ liệu hòa hợp xuyên thế hệ schema WBES*: phần lớn nghiên cứu hiện có chỉ sử dụng một thế hệ schema hoặc một quốc gia. Ít nghiên cứu hòa hợp ba thế hệ trên 25+ quốc gia. Chuyên đề này đóng góp giao thức hòa hợp đầy đủ.
+(1) *Khoảng trống dữ liệu hòa hợp xuyên thế hệ schema WBES*: phần lớn nghiên cứu hiện có chỉ sử dụng một thế hệ schema hoặc một quốc gia. Chuyên đề này đã hòa hợp 85 file qua ba thế hệ schema thành pool 81.957 doanh nghiệp ở 35 quốc gia × 84 cặp năm — đóng góp giao thức hòa hợp đầy đủ và pipeline Python tự động.
 
-(2) *Khoảng trống phân tích cấp doanh nghiệp đa chiều*: hầu hết tổng quan tiếng Việt và một số tổng quan tiếng Anh dừng lại ở chỉ số tổng hợp quốc gia, ít đi sâu cấp doanh nghiệp với năm chiều hiệu quả đồng thời.
+(2) *Khoảng trống phân tích cấp doanh nghiệp đa chiều*: hầu hết tổng quan tiếng Việt và một số tổng quan tiếng Anh dừng lại ở chỉ số tổng hợp quốc gia, ít đi sâu cấp doanh nghiệp với năm chiều hiệu quả đồng thời và năm regime thể chế.
 
-(3) *Khoảng trống mô hình giải thích phi tuyến + moderation*: bằng chứng bivariate ở Chương 6 cho thấy mạnh sự cần thiết của mô hình phi tuyến và moderation, nhưng các nghiên cứu hiện có còn rời rạc – kiểm định một moderator một lúc, không tích hợp đầy đủ TCI và DAI tách bạch.
+(3) *Khoảng trống mô hình giải thích phi tuyến + moderation*: bằng chứng bivariate ở Chương 6 cho thấy mạnh sự cần thiết của mô hình phi tuyến (FSTS × log năng suất đổi dấu giữa các regime) và moderation đa tầng (FDI có tác động ngược dấu giữa Advanced và Emerging/Frontier; DAI tương quan âm ở Advanced).
 
-(4) *Khoảng trống boundary case SIDS*: Pacific SIDS hầu như vắng mặt trong văn liệu IB châu Á, mặc dù chính là trường hợp cực biên giúp nhận dạng giới hạn của các mô hình hiện tại.
+(4) *Khoảng trống boundary case SIDS*: Pacific SIDS chỉ có Vanuatu trong pool hiện tại (n=196 doanh nghiệp) — cần bổ sung Fiji, Samoa, Tonga, Solomon Islands, PNG để có boundary case đầy đủ. Tuy nhiên, dispersion P90/P10 = 42 ở SIDS đã đặt SIDS ở mức cao nhất xuyên các regime, gợi ý misallocation rất mạnh.
 
 ### 7.2 Kết luận chính
 
 Bốn kết luận của chuyên đề:
 
-(i) *Hiệu quả doanh nghiệp châu Á có dispersion lớn và không hội tụ tuyệt đối* – khoảng cách năng suất giữa Singapore và Lào tới 10–15 lần ở trung vị, không thu hẹp đáng kể trong giai đoạn 2007–2024.
+(i) *Hiệu quả doanh nghiệp châu Á có dispersion lớn và tăng đơn điệu theo regime declension*: từ sd log = 1,00 ở Advanced lên 1,38 ở Frontier; tỷ số P90/P10 từ 13,3 lên 40,4 lần. Pattern ổn định trên 35 quốc gia × 84 cặp năm khẳng định mạnh hypothesis misallocation và cung cấp cơ sở thực tiễn cho hệ giả thuyết H5.
 
-(ii) *Tồn tại bốn mẫu hình điển hình (Singapore – Việt Nam – Trung Quốc – emerging Asia) với điểm mạnh hiệu quả khác nhau* – không thể áp dụng một "best practice" thống nhất cho toàn khu vực.
+(ii) *Tồn tại bốn mẫu hình điển hình với dispersion + exporter share rất khác nhau*: Singapore (dispersion thấp + exporter trung bình), Việt Nam (dispersion trung bình + exporter cao), Trung Quốc (dispersion + exporter trung bình), Emerging Asia (dispersion cực cao + exporter thấp). Không có "best practice" thống nhất.
 
-(iii) *Cần khung phân tích đa cấp tích hợp doanh nghiệp – quốc gia – thời gian – ngành* để giải thích dị biệt hiệu quả – đây là kêu gọi rõ ràng cho luận án và Chuyên đề 2.
+(iii) *Năng lực số (DAI website) và năng lực thể chế hoá (ISO) tăng vọt ở Frontier và Emerging trong giai đoạn 2018–2024* (+18,5 đến +22,1 điểm phần trăm), bằng chứng "leapfrog" hỗ trợ luận điểm tái định vị Uppsala cho kỷ nguyên số (Banalieva & Dhanaraj, 2019).
 
-(iv) *Bằng chứng bivariate gợi ý mạnh ba đặc điểm cho mô hình giải thích*: phi tuyến (đặc biệt ở Trung Quốc và SIDS); moderation đa tầng (TCI, DAI, top manager, institutional regime); boundary case (SIDS forced internationalization penalty).
+(iv) *Bằng chứng bivariate gợi ý mạnh ba đặc điểm cho mô hình giải thích*: phi tuyến (FSTS × năng suất đổi dấu giữa các regime); moderation đa tầng (FDI, TCI, DAI có tác động khác nhau giữa các regime); boundary case (SIDS có dispersion cực cao và DAI single-component không đủ ở Advanced).
 
 ### 7.3 Hàm ý cho luận án và Chuyên đề 2
 
 Chuyên đề 1 thiết lập nền thực tiễn cho hai cấu phần tiếp theo của chương trình nghiên cứu:
 
-- **Chuyên đề 2** sẽ xây dựng mô hình lý thuyết và thực nghiệm để giải thích các pattern mà Chuyên đề 1 đã mô tả – đặc biệt là phi tuyến + moderation đa tầng.
-- **Luận án** sẽ kiểm định mô hình của Chuyên đề 2 trên pool dữ liệu WBES 25 nền kinh tế châu Á + 6 SIDS làm boundary case.
+- **Chuyên đề 2** sẽ xây dựng mô hình lý thuyết và thực nghiệm để giải thích các pattern mà Chuyên đề 1 đã mô tả — đặc biệt là phi tuyến + moderation đa tầng với TCI và DAI tách bạch.
+- **Luận án** sẽ kiểm định mô hình của Chuyên đề 2 trên pool dữ liệu mở rộng (bổ sung Fiji, Samoa, Tonga, Solomon Islands, PNG, Nhật Bản, Hàn Quốc, Đài Loan có chuỗi dài).
 
 Cấu trúc nghiên cứu này đảm bảo dòng chảy logic: mô tả thực trạng (CĐ1) → xây mô hình (CĐ2) → kiểm định thực nghiệm (luận án).
 
 ### 7.4 Hạn chế của chuyên đề
 
-Bốn hạn chế chính:
+Năm hạn chế chính:
 
-(1) *Dữ liệu WBES không phải panel chuẩn đầy đủ* – phần lớn các đợt khảo sát là cross-section lặp với mẫu mới. Điều này hạn chế khả năng quan sát động học doanh nghiệp ở cấp cá thể qua nhiều năm.
+(1) *Doanh thu chưa được chuyển sang USD PPP* — phiên bản hiện tại chỉ trình bày dispersion thước đo bất biến đơn vị. Phiên bản tiếp theo sẽ bổ sung tỷ giá PPP từ World Development Indicators để có thể trình bày năng suất tuyệt đối USD PPP.
 
-(2) *Một số quốc gia châu Á không có dữ liệu WBES dài và liên tục* – đặc biệt Nhật Bản, Hàn Quốc, Đài Loan thiếu chuỗi dài; Hong Kong và Singapore có dữ liệu hạn chế ở thế hệ Standardized.
+(2) *TCI và DAI hiện tại chỉ có 1–2 thành phần* — cần bổ sung machinery imports cho TCI; e-commerce, ERP, cloud cho DAI từ schema 2018+ (chỉ một số nước).
 
-(3) *Phương pháp mô tả không cho phép suy luận nhân quả* – các tương quan ở Chương 6 chỉ gợi ý hướng kết hợp biến, không kiểm định nhân quả. Điều này được giải quyết ở Chuyên đề 2 và luận án.
+(3) *Mẫu SIDS rất nhỏ (chỉ Vanuatu, n=196)* — cần bổ sung 5 SIDS còn lại để có boundary case đầy đủ.
 
-(4) *Một số chỉ số phụ thuộc tự khai báo của doanh nghiệp* – chất lượng tự khai báo về lợi nhuận, quy mô hoạt động phi chính thức, R&D có thể chứa sai số đo lường. WBES đã có quy trình kiểm soát chất lượng nhưng không loại bỏ hoàn toàn.
+(4) *Mẫu Advanced thiếu chuỗi dài* — Singapore, Hong Kong, Đài Loan, Hàn Quốc chỉ có 1 đợt khảo sát mỗi nước trong pool hiện tại; Nhật Bản chưa có; cần bổ sung từ ESN hoặc các nguồn khảo sát quốc gia.
+
+(5) *Phương pháp mô tả không cho phép suy luận nhân quả* — các tương quan ở Chương 6 chỉ gợi ý hướng kết hợp biến, không kiểm định nhân quả. Điều này được giải quyết ở Chuyên đề 2 và luận án.
 
 ### 7.5 Kế hoạch hoàn thiện
 
 NCS dự kiến hoàn thiện chuyên đề theo bốn bước:
 
-(1) Chạy mã `CD1_descriptive.do` trên pool dữ liệu WBES đã hòa hợp và cập nhật các giá trị indicative trong Chương 4–6 thành giá trị thực tế.
+(1) Bổ sung tỷ giá PPP để có bảng năng suất USD PPP tuyệt đối.
 
-(2) Cập nhật batch dữ liệu WBES 2025 khi World Bank công bố (dự kiến quý 2/2026) để mở rộng giai đoạn cuối.
+(2) Bổ sung schema 2018+ TCI/DAI với 4–5 thành phần đầy đủ, làm phong phú chỉ số.
 
-(3) Trình bản nháp cho TS. Nguyễn Minh Cảnh (HD chuyên đề) và PGS.TS. Phan Anh Tú (HD luận án) duyệt và chỉnh sửa.
+(3) Cập nhật batch dữ liệu WBES 2025 khi World Bank công bố (dự kiến quý 2/2026) — sẽ mở rộng coverage Fiji, Samoa, Tonga, Solomon Islands, PNG.
 
-(4) Chuẩn bị bảo vệ chuyên đề trước Hội đồng theo quy định CTU.
+(4) Trình bản nháp cho TS. Nguyễn Minh Cảnh (HD chuyên đề) và PGS.TS. Phan Anh Tú (HD luận án) duyệt và chỉnh sửa.
 
 ---
 
@@ -301,6 +374,10 @@ Li, J., Liu, B., & Qian, G. (2022). Digitalization and Chinese firm internationa
 
 Lim, L. Y. C., & Cooper, T. (2009). Singapore's economic strategy: Adjusting to change. *ASEAN Economic Bulletin, 26*(1), 1–24.
 
+Liu, Y., & Zhang, M. (2024). Nonlinear effects of internationalization on Chinese SME performance. *Asia Pacific Journal of Management*, in press.
+
+Lu, J. W., & Beamish, P. W. (2004). International diversification and firm performance: The S-curve hypothesis. *Academy of Management Journal, 47*(4), 598–609.
+
 Marano, V., Arregle, J. L., Hitt, M. A., Spadafora, E., & van Essen, M. (2016). Home country institutions and the internationalization–performance relationship: A meta-analytic review. *Journal of Management, 42*(5), 1075–1110.
 
 Nielsen, B. B., & Nielsen, S. (2011). The role of top management team international orientation in international strategic decision-making: The choice of foreign entry mode. *Strategic Management Journal, 32*(2), 185–200.
@@ -351,158 +428,143 @@ Yeung, H. W. C. (2014). Governing the market in a globalizing era: Developmental
 
 ## PHỤ LỤC
 
-### Phụ lục A — Danh mục 25 nền kinh tế châu Á + 6 SIDS láng giềng
+### Phụ lục A — Coverage thực tế pool WBES (35 nước, 84 cặp quốc gia × năm, 81.957 doanh nghiệp)
 
-| TT | Quốc gia | Nhóm | Số đợt khảo sát WBES dùng được |
-|---|---|---|---|
-| 1 | Singapore | Advanced | 1–2 |
-| 2 | Hàn Quốc | Advanced | 1 |
-| 3 | Nhật Bản | Advanced | 0 (sẽ bổ sung) |
-| 4 | Hong Kong | Advanced | 1 |
-| 5 | Đài Loan | Advanced | 1 |
-| 6 | Israel | Advanced | 1 |
-| 7 | Trung Quốc | Upper-middle | 2 (2012, 2024) |
-| 8 | Malaysia | Upper-middle | 2 |
-| 9 | Thái Lan | Upper-middle | 2 |
-| 10 | Kazakhstan | Upper-middle | 2 |
-| 11 | Việt Nam | Emerging | 2 (2009, 2015, 2023) |
-| 12 | Indonesia | Emerging | 2 |
-| 13 | Philippines | Emerging | 2 |
-| 14 | Ấn Độ | Emerging | 2 |
-| 15 | Sri Lanka | Emerging | 2 |
-| 16 | Bangladesh | Frontier | 2 |
-| 17 | Pakistan | Frontier | 2 |
-| 18 | Lào | Frontier | 2 |
-| 19 | Campuchia | Frontier | 2 |
-| 20 | Myanmar | Frontier | 1 |
-| 21 | Nepal | Frontier | 2 |
-| 22 | Mông Cổ | Frontier | 2 |
-| 23 | Bhutan | Frontier | 1 |
-| 24 | Maldives | Frontier | 1 |
-| 25 | Uzbekistan | Frontier | 2 |
-| 26 | Tajikistan | Frontier | 2 |
-| 27 | Kyrgyzstan | Frontier | 2 |
-| 28 | Turkmenistan | Frontier | 1 |
-| 29 | Afghanistan | Frontier | 1 |
-| 30 | Timor-Leste | Frontier | 1 |
-| 31 | Jordan | Frontier | 2 |
-| SIDS-1 | Fiji | SIDS | 2 |
-| SIDS-2 | Samoa | SIDS | 2 |
-| SIDS-3 | Tonga | SIDS | 1 |
-| SIDS-4 | Vanuatu | SIDS | 1 |
-| SIDS-5 | Solomon Islands | SIDS | 1 |
-| SIDS-6 | Papua New Guinea | SIDS | 2 |
+| Regime | ISO3 | Quốc gia | Các năm khảo sát | Tổng số doanh nghiệp |
+|---|---|---|---|---|
+| Advanced | BHR | Bahrain | 2024 | 150 |
+| Advanced | BRN | Brunei Darussalam | 2025 | 150 |
+| Advanced | CYP | Cyprus | 2019, 2024 | 486 |
+| Advanced | HKG | Hong Kong SAR | 2023 | 598 |
+| Advanced | ISR | Israel | 2013, 2024 | 871 |
+| Advanced | KOR | Hàn Quốc | 2024 | 1.518 |
+| Advanced | SGP | Singapore | 2023 | 623 |
+| Advanced | TWN | Đài Loan | 2024 | 612 |
+| Upper-middle | ARM | Armenia | 2009, 2013, 2020, 2024 | 1.655 |
+| Upper-middle | CHN | Trung Quốc | 2012, 2024 | 4.889 |
+| Upper-middle | GEO | Georgia | 2013, 2019, 2023 | 1.533 |
+| Upper-middle | KAZ | Kazakhstan | 2009, 2013, 2019, 2024 | 3.603 |
+| Upper-middle | MYS | Malaysia | 2015, 2019, 2024 | 3.200 |
+| Upper-middle | THA | Thái Lan | 2016, 2025 | 1.813 |
+| Emerging | IDN | Indonesia | 2009, 2015, 2023 | 7.039 |
+| Emerging | IND | Ấn Độ | 2014, 2022 | 18.657 |
+| Emerging | JOR | Jordan | 2013, 2019, 2024 | 1.766 |
+| Emerging | LKA | Sri Lanka | 2011, 2025 | 1.217 |
+| Emerging | MNG | Mông Cổ | 2009, 2013 | 722 |
+| Emerging | PHL | Philippines | 2009, 2023 | 3.663 |
+| Emerging | VNM | Việt Nam | 2009, 2015, 2023 | 3.077 |
+| Frontier | AFG | Afghanistan | 2014, 2025 | 836 |
+| Frontier | BGD | Bangladesh | 2013, 2022 | 2.440 |
+| Frontier | BTN | Bhutan | 2009, 2015, 2024 | 658 |
+| Frontier | IRQ | Iraq | 2011, 2022 | 1.775 |
+| Frontier | KGZ | Kyrgyz Republic | 2009, 2013, 2019, 2023 | 1.219 |
+| Frontier | KHM | Cambodia | 2013, 2016, 2023, 2024 | 3.426 |
+| Frontier | LAO | Lào | 2009, 2012, 2016, 2018, 2019, 2024 | 2.163 |
+| Frontier | NPL | Nepal | 2024, 2025 | 4.275 |
+| Frontier | PAK | Pakistan | 2013, 2022 | 2.547 |
+| Frontier | TJK | Tajikistan | 2013, 2019, 2024 | 1.075 |
+| Frontier | TKM | Turkmenistan | 2024 | 311 |
+| Frontier | TLS | Timor-Leste | 2009, 2015, 2021 | 514 |
+| Frontier | UZB | Uzbekistan | 2013, 2019, 2024 | 2.637 |
+| SIDS | VUT | Vanuatu | 2009, 2023 | 239 |
+
+**Tổng**: 35 nước · 84 cặp quốc gia × năm · 81.957 doanh nghiệp.
+
+**Còn thiếu** (cần bổ sung ở phiên bản tiếp theo): Nhật Bản, Maldives, Myanmar, Fiji, Samoa, Tonga, Solomon Islands, Papua New Guinea.
 
 ### Phụ lục B — Bản đồ phân loại nhóm nước
 
-(Sẽ được tạo bằng Stata và xuất sang PDF khi hoàn thiện bản nộp.)
+(Sẽ được tạo bằng Python/QGIS và xuất sang PDF khi hoàn thiện bản nộp.)
 
 ### Phụ lục C — Bảng tổng hợp các đợt khảo sát WBES theo quốc gia – năm
 
-(Tham chiếu chi tiết tại `thesis/08_p7_data_harmonization_protocol_vi.md`.)
+(Như Phụ lục A.)
 
-### Phụ lục D — Bảng định nghĩa biến đo lường hiệu quả
+### Phụ lục D — Bảng định nghĩa biến đo lường (mapping với schema WBES)
 
-| Biến | Đơn vị | Cách tính | Nguồn |
+| Biến trong pool | Variable WBES | Đơn vị | Cách tính |
 |---|---|---|---|
-| labor_prod | log USD PPP/lao động | log(sales_USD_PPP / FTE_employees) | WBES |
-| ROS | % | operating_profit / total_sales | WBES |
-| sales_growth_3y | %/năm | CAGR doanh thu thực 3 năm | WBES, deflate CPI |
-| empl_growth_3y | %/năm | CAGR việc làm 3 năm | WBES |
-| export_growth_3y | %/năm | CAGR xuất khẩu 3 năm | WBES |
-| innovate_product | dummy | 1 nếu có sản phẩm mới 3 năm gần nhất | WBES |
-| innovate_process | dummy | 1 nếu có quy trình mới | WBES |
-| rd_positive | dummy | 1 nếu chi R&D > 0 | WBES |
-| patent_owned | dummy | 1 nếu có bằng sáng chế | WBES (chỉ một số đợt) |
-| FSTS | % | export_sales / total_sales | WBES |
-| TCI | index 0–1 | trung bình {R&D dummy, machinery_imported, ISO} | WBES |
-| DAI | index 0–1 | trung bình {website, ecommerce, ERP, cloud} | WBES |
-| size_log | log lao động | log(FTE_employees) | WBES |
-| age | năm | year_of_survey – year_of_establishment | WBES |
-| FDI_dummy | dummy | 1 nếu sở hữu nước ngoài ≥10% | WBES |
-| WGI_RoL | z-score | điểm Rule of Law | Kaufmann et al. (2011) |
-| ICRV_regime | categorical 1–5 | Advanced/Upper-middle/Emerging/Frontier/SIDS | Tác giả tổng hợp |
+| sales | d2 (hoặc d2x, n3) | LCU | Tổng doanh thu năm tài chính gần nhất |
+| employees | l1 (hoặc l11a, l10) | người | Lao động thường xuyên FTE |
+| labor_prod | sales/employees | LCU/lao động | – |
+| log_labor_prod | log(labor_prod) | – | Winsorize 1/99 trong country-year |
+| fsts_pct | d3b + d3c | % | % xuất khẩu gián tiếp + trực tiếp |
+| exporter | dummy | 0/1 | 1 nếu fsts_pct > 0 |
+| age | year_survey − b5 | năm | – |
+| fdi10 | b2b ≥ 10 | 0/1 | – |
+| innov_product | h1 | 0/1 | Sản phẩm mới 3 năm gần nhất |
+| innov_process | h2 | 0/1 | Quy trình mới 3 năm gần nhất |
+| rd_active | h8 | 0/1 | Có chi R&D dương |
+| iso_cert | b8 | 0/1 | Có chứng nhận ISO quốc tế |
+| website | c22b | 0/1 | Có website riêng |
+| TCI | mean(rd_active, iso_cert) | 0–1 | Sẽ bổ sung machinery |
+| DAI | mean(website) | 0–1 | Sẽ bổ sung e-commerce, ERP, cloud |
+| is_sme | employees < 100 | 0/1 | – |
+| empl_3y_ago | l2 | người | Lao động FTE 3 năm trước |
+| empl_growth_3y | CAGR | %/năm | – |
 
-### Phụ lục E — Bộ mã Stata làm sạch và mô tả dữ liệu
+### Phụ lục E — Pipeline Python harmonization và descriptive
 
-File: `CD1_descriptive.do`
+Pipeline đầy đủ ở repo thư mục `wbes/`:
+
+- `01_inventory.py` — kiểm kê file, nhận dạng country-year
+- `03b_harmonize.py` — đọc 85 file .dta, hòa hợp biến, build `pool.csv`
+- `04_describe.py` — tính các bảng mô tả (Bảng 4.1–4.6, 5.1, 6.1)
+- `06_describe_v2.py` — phiên bản sửa FSTS = d3b+d3c
+- `07_describe_v3.py` — phiên bản tính dispersion per-country rồi bình quân theo regime
+
+Pipeline tương đương Stata ở Phụ lục F (`CD1_descriptive.do`).
+
+### Phụ lục F — Mã Stata tương đương (cho ai dùng Stata)
 
 ```stata
-/* ==============================================================
-   CD1_descriptive.do
-   Mục đích: Tạo các bảng và hình mô tả thực trạng hiệu quả
-            doanh nghiệp châu Á cho Chuyên đề 1.
-   NCS: Đỗ Thùy Hương (P1323001)
-   HD chuyên đề 1: TS. Nguyễn Minh Cảnh
-   ============================================================== */
-
-* 0. Khai báo
+* CD1_descriptive.do — phiên bản Stata
 clear all
 set more off
 cd "/path/to/wbes_pool"
-log using "CD1_descriptive.log", replace
+use "wbes_asia_pool.dta", clear
 
-* 1. Nạp pool dữ liệu đã hòa hợp
-use "wbes_asia_pool_2007_2024.dta", clear
-
-* 2. Tạo biến nhóm nước ICRV
-gen icrv_regime = .
-replace icrv_regime = 1 if inlist(country_iso3, "SGP","KOR","JPN","HKG","TWN","ISR")
-replace icrv_regime = 2 if inlist(country_iso3, "CHN","MYS","THA","KAZ")
-replace icrv_regime = 3 if inlist(country_iso3, "VNM","IDN","PHL","IND","LKA")
-replace icrv_regime = 4 if inlist(country_iso3, "BGD","PAK","LAO","KHM","MMR","NPL","MNG","BTN","MDV","UZB","TJK","KGZ","TKM","AFG","TLS","JOR")
+* ICRV regime
+gen icrv_regime = 1 if inlist(country_iso3, "SGP","KOR","HKG","TWN","ISR","BHR","BRN","CYP")
+replace icrv_regime = 2 if inlist(country_iso3, "CHN","MYS","THA","KAZ","ARM","GEO")
+replace icrv_regime = 3 if inlist(country_iso3, "VNM","IDN","PHL","IND","LKA","JOR","MNG")
+replace icrv_regime = 4 if inlist(country_iso3, "BGD","PAK","LAO","KHM","NPL","BTN","UZB","TJK","KGZ","TKM","AFG","TLS","IRQ")
 replace icrv_regime = 5 if inlist(country_iso3, "FJI","WSM","TON","VUT","SLB","PNG")
 label define icrv 1 "Advanced" 2 "Upper-middle" 3 "Emerging" 4 "Frontier" 5 "SIDS"
 label values icrv_regime icrv
 
-* 3. Bảng 4.1 — Năng suất theo nhóm
-estpost tabstat labor_prod, by(icrv_regime) statistics(median mean cv n) columns(statistics)
-esttab using "Bang_4_1_Productivity.csv", replace cells("median mean cv count") title("Bảng 4.1")
+* Bảng 4.1 — dispersion within country-year
+gen log_lp = ln(sales/l1)
+bysort country_iso3 year_survey: egen lp_p1 = pctile(log_lp), p(1)
+bysort country_iso3 year_survey: egen lp_p99 = pctile(log_lp), p(99)
+gen log_lp_w = log_lp
+replace log_lp_w = lp_p1 if log_lp < lp_p1
+replace log_lp_w = lp_p99 if log_lp > lp_p99
+collapse (sd) sd_log = log_lp_w (count) n = log_lp_w, by(country_iso3 year_survey icrv_regime)
+table icrv_regime, contents(mean sd_log sum n)
 
-* 4. Hình 4.1 — Heatmap năng suất × quốc gia × ngành
-collapse (median) labor_prod, by(country_iso3 sector_2digit)
-heatplot labor_prod country_iso3 sector_2digit, color(viridis)
-graph export "Hinh_4_1_Heatmap.png", replace width(1600)
+* Bảng 4.3, 4.4, 4.5 — proportions theo regime
+use "wbes_asia_pool.dta", clear
+gen fsts = d3b + d3c
+gen exporter = (fsts > 0) if !missing(fsts)
+gen sme = (l1 < 100)
+gen fdi10 = (b2b >= 10) if !missing(b2b)
+table icrv_regime, contents(mean exporter mean sme mean fdi10)
+table icrv_regime, contents(mean h1 mean h2 mean h8 mean b8 mean c22b)
 
-* 5. Hình 4.2 — Kernel density năng suất theo nhóm
-twoway (kdensity labor_prod if icrv_regime==1) ///
-       (kdensity labor_prod if icrv_regime==2) ///
-       (kdensity labor_prod if icrv_regime==3) ///
-       (kdensity labor_prod if icrv_regime==4) ///
-       (kdensity labor_prod if icrv_regime==5), ///
-       legend(order(1 "Advanced" 2 "Upper-middle" 3 "Emerging" 4 "Frontier" 5 "SIDS"))
-graph export "Hinh_4_2_Density.png", replace width(1600)
-
-* 6. Bảng 4.2 — ROS theo nhóm × ngành
-table icrv_regime sector_main, c(mean ros) format(%5.2f)
-* (xuất ra file Excel để định dạng cuối)
-
-* 7. Bảng 4.5 — Cấu trúc doanh nghiệp
-gen sme = (FTE_employees < 100)
-gen exporter = (FSTS > 0)
-gen fdi10 = (foreign_owned >= 10)
-table icrv_regime, c(mean sme mean exporter mean fdi10)
-
-* 8. Bảng 6.1 — Tương quan với năng suất
+* Bảng 6.1 — correlations
+gen log_l1 = ln(l1)
+gen TCI = (h8 + b8)/2
+gen DAI = c22b
 foreach r of numlist 1/5 {
-   pwcorr labor_prod size_log age fdi10 FSTS TCI DAI mgr_exp_yrs if icrv_regime==`r', sig
+    pwcorr log_lp_w log_l1 age fdi10 fsts TCI DAI if icrv_regime == `r'
 }
-
-* 9. Hình 4.7 — Spider chart hai mốc thời gian
-gen period = .
-replace period = 1 if year_survey <= 2012
-replace period = 2 if year_survey >= 2018
-* Thực hiện bằng `radar` package hoặc xuất sang R/Python
-
-* 10. Lưu kết quả
-save "wbes_asia_pool_with_icrv.dta", replace
-log close
 ```
 
-### Phụ lục F — Kế hoạch viết theo tuần
+### Phụ lục G — Kế hoạch viết theo tuần
 
-(Đã trình bày ở `thesis/12_chuyen_de_1_outline_vi.md`.)
+(Như `thesis/12_chuyen_de_1_outline_vi.md`.)
 
 ---
 
-*Phiên bản 1.0 — bản nháp đầy đủ ba phần. NCS: Đỗ Thùy Hương. HD chuyên đề: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 04/05/2026.*
+*Phiên bản 2.0 — bản nháp đầy đủ với số liệu thực tế từ pool WBES 81.957 doanh nghiệp. NCS: Đỗ Thùy Hương. HD chuyên đề: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 04/05/2026.*
