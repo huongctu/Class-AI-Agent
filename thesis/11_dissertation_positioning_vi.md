@@ -1,14 +1,72 @@
-# Định vị luận án trong literature quốc tế và châu Á — tài liệu demo cho GVHD
+<div align="center">
 
-File này đối chiếu luận án của NCS Đỗ Thùy Hương với các dissertations và research programs tương đương trên thế giới và trong châu Á, làm cơ sở để demonstrate **tính mới và đóng góp độc đáo** trong buổi báo cáo GVHD.
+**BỘ GIÁO DỤC VÀ ĐÀO TẠO**
 
-## 1. Phenomenon-based positioning — vì sao luận án này khác
+**TRƯỜNG ĐẠI HỌC CẦN THƠ**
 
-Luận án của NCS là **cumulative dissertation** với **8 papers** (P1–P8), **multi-country WBES ≈3–36 economies**, **institutional gradient narrative** từ Singapore (regime I) đến Pacific SIDS (regime IV/V). Trong 1,745 papers sử dụng WBES đã công bố, **không có** dissertation nào có cấu trúc tương đương.
+**TRƯỜNG KINH TẾ**
 
-## 2. So sánh với 6 research programs comparable
 
-### 2.1 Marano et al. (2016) — *Journal of Management*
+
+────────────
+
+
+**ĐỖ THÙY HƯƠNG**
+
+
+# TỔNG LUẬN TỔNG QUAN
+
+## ĐỊNH VỊ NGHIÊN CỨU VỀ MỐI QUAN HỆ GIỮA QUỐC TẾ HÓA VÀ HIỆU QUẢ HOẠT ĐỘNG KINH DOANH CỦA DOANH NGHIỆP TẠI CHÂU Á VÀ KHU VỰC LÂN CẬN: SO SÁNH VỚI CÁC CÔNG TRÌNH NGHIÊN CỨU QUỐC TẾ TƯƠNG ĐƯƠNG
+
+
+
+
+**Ngành:** Quản trị kinh doanh
+
+**Mã ngành:** 9 34 01 01
+
+**Mã nghiên cứu sinh:** P1323001
+
+
+
+**NGƯỜI HƯỚNG DẪN KHOA HỌC**
+
+**PGS.TS. PHAN ANH TÚ**
+
+
+
+
+**Cần Thơ, năm 2026**
+
+</div>
+
+---
+
+# MỤC LỤC
+
+1. Phenomenon-based positioning — vì sao luận án này khác
+2. So sánh với 6 research programs comparable
+3. So sánh với 4 dissertations cổ điển trong I–P literature
+4. So sánh với dissertations ở châu Á
+5. Dissertation Việt Nam cùng chủ đề
+6. Differentiation matrix
+7. Talking points cho buổi demo GVHD
+8. Câu hỏi thường được hỏi và câu trả lời chuẩn bị sẵn
+9. Tài liệu tham khảo (APA 7th)
+10. Tóm tắt một trang cho buổi demo
+11. File kèm theo để demo GVHD
+
+---
+
+# 1. Phenomenon-based positioning — vì sao luận án này khác
+
+Luận án của NCS là **cumulative dissertation** với **8 papers** (P1–P8), **multi-country WBES ≈25–36 economies**, **institutional gradient narrative** từ Singapore (regime I) đến Pacific SIDS (regime IV/V). Trong 1,745 papers sử dụng WBES đã công bố, **không có** dissertation nào có cấu trúc tương đương.
+
+Tông luận này đối chiếu luận án với các công trình nghiên cứu quốc tế và châu Á tương đương để chứng minh **tính mới và đóng góp độc đáo** trong bối cảnh học thuật quốc tế hiện nay.
+
+# 2. So sánh với 6 research programs comparable
+
+## 2.1 Marano et al. (2016) — *Journal of Management*
 
 | Khu0103a cạnh | Marano et al. (2016) | NCS dissertation |
 |---|---|---|
@@ -21,7 +79,7 @@ Luận án của NCS là **cumulative dissertation** với **8 papers** (P1–P8
 
 **Điểm khác biệt**: Marano dyừng lại ở "institutional moderation" — luận án của NCS đi xa hơn sắc biết "institutional dependency" (sign reversal khi regime extreme).
 
-### 2.2 Wu, Fan, & Chen (2022) — *Management International Review*
+## 2.2 Wu, Fan, & Chen (2022) — *Management International Review*
 
 | Khu0103a cạnh | Wu et al. (2022) | NCS dissertation |
 |---|---|---|
@@ -33,7 +91,7 @@ Luận án của NCS là **cumulative dissertation** với **8 papers** (P1–P8
 
 **Điểm khác biệt**: Wu focus EMNEs broadly; NCS focus **Asia + Pacific** với **boundary cases** Pacific SIDS (Wu không cover).
 
-### 2.3 Kirca, Roth, Hult, & Cavusgil (2012) — *Global Strategy Journal*
+## 2.3 Kirca, Roth, Hult, & Cavusgil (2012) — *Global Strategy Journal*
 
 | Khu0103a cạnh | Kirca et al. (2012) | NCS dissertation |
 |---|---|---|
@@ -44,7 +102,7 @@ Luận án của NCS là **cumulative dissertation** với **8 papers** (P1–P8
 
 **Điểm khác biệt**: Kirca established context-dependent; NCS extended sang context-conditional với sign reversal evidence.
 
-### 2.4 Cuervo-Cazurra, Ciravegna, Melgarejo, & Lopez (2018) — *Journal of World Business*
+## 2.4 Cuervo-Cazurra, Ciravegna, Melgarejo, & Lopez (2018) — *Journal of World Business*
 
 | Khu0103a cạnh | Cuervo-Cazurra et al. (2018) | NCS dissertation |
 |---|---|---|
@@ -54,7 +112,7 @@ Luận án của NCS là **cumulative dissertation** với **8 papers** (P1–P8
 
 **Điểm khác biệt**: Cuervo-Cazurra single country; NCS multi-country với institutional gradient.
 
-### 2.5 Bhandari, Zámborský, Ranta, & Salo (2023) — *International Business Review*
+## 2.5 Bhandari, Zámborský, Ranta, & Salo (2023) — *International Business Review*
 
 | Khu0103a cạnh | Bhandari et al. (2023) | NCS dissertation |
 |---|---|---|
@@ -65,7 +123,7 @@ Luận án của NCS là **cumulative dissertation** với **8 papers** (P1–P8
 
 **Điểm khác biệt**: Bhandari single-country USA + FDCI composite; NCS **multi-country emerging** + **TCI/DAI separated** (theoretically stronger).
 
-### 2.6 Chen & Meng (2022) — *Managerial and Decision Economics*
+## 2.6 Chen & Meng (2022) — *Managerial and Decision Economics*
 
 | Khu0103a cạnh | Chen & Meng (2022) | NCS dissertation |
 |---|---|---|
@@ -75,9 +133,9 @@ Luận án của NCS là **cumulative dissertation** với **8 papers** (P1–P8
 
 **Điểm khác biệt**: Chen & Meng analyze China alone; NCS positions China within broader gradient.
 
-## 3. So sánh với 4 dissertations cổ điển trong I-P literature
+# 3. So sánh với 4 dissertations cổ điển trong I-P literature
 
-### 3.1 Lu & Beamish (Japanese MNCs, multiple papers 2001–2004)
+## 3.1 Lu & Beamish (Japanese MNCs, multiple papers 2001–2004)
 
 | Khu0103a cạnh | Lu & Beamish | NCS dissertation |
 |---|---|---|
@@ -88,7 +146,7 @@ Luận án của NCS là **cumulative dissertation** với **8 papers** (P1–P8
 
 **Điểm kết thừa**: NCS kế thừa S-curve framework, mở rộng sang multiple Asian contexts + Pacific extreme.
 
-### 3.2 Contractor, Kumar, & Kundu (2007) — *Journal of World Business*
+## 3.2 Contractor, Kumar, & Kundu (2007) — *Journal of World Business*
 
 | Khu0103a cạnh | Contractor et al. (2007) | NCS dissertation |
 |---|---|---|
@@ -96,11 +154,11 @@ Luận án của NCS là **cumulative dissertation** với **8 papers** (P1–P8
 | Theory | Three-stage S-curve in EMNE | **Multi-tier including extreme boundary** |
 | Time | 1994–2003 | 1982–2026 |
 
-### 3.3 Hitt, Hoskisson, & Kim (1997) — *Academy of Management Journal*
+## 3.3 Hitt, Hoskisson, & Kim (1997) — *Academy of Management Journal*
 
 **Foundational inverted-U paper** (US firms). NCS kế thừa framework, **test boundary conditions** trong bối cảnh châu Á + Pacific.
 
-### 3.4 Verbeke & Brugman (2018) — *Journal of International Business Studies*
+## 3.4 Verbeke & Brugman (2018) — *Journal of International Business Studies*
 
 | Khu0103a cạnh | Verbeke & Brugman (2018) | NCS dissertation |
 |---|---|---|
@@ -110,18 +168,18 @@ Luận án của NCS là **cumulative dissertation** với **8 papers** (P1–P8
 
 **Điểm kết thừa**: Verbeke challenged positive DOI-FP. NCS **explains heterogeneity** that produces both positive and negative results across institutional gradient.
 
-## 4. So sánh với dissertations ở châu Á
+# 4. So sánh với dissertations ở châu Á
 
 Tìm kiếm ProQuest Dissertations + JIBS + AMJ archives cho "internationalization performance Asia dissertation":
 
-### 4.1 Asian dissertations cùng chủ đề — typical pattern
+## 4.1 Asian dissertations cùng chủ đề — typical pattern
 
 - **Pattern**: 1 country focus (China/Korea/Taiwan), 1–3 papers, single methodology
 - **Sample size**: 100–1,500 firms
 - **Theory**: 1–2 frameworks (RBV hoặc Institutional Theory)
 - **Contribution**: Country-specific findings
 
-### 4.2 NCS dissertation differentiation
+## 4.2 NCS dissertation differentiation
 
 | Dimension | Typical Asian dissertation | NCS dissertation |
 |---|---|---|
@@ -133,7 +191,7 @@ Tìm kiếm ProQuest Dissertations + JIBS + AMJ archives cho "internationalizati
 | **Boundary cases** | Hiếm có | **Pacific SIDS (Forced Penalty)** |
 | **Publication track** | 0–1 paper công bố | **2 đã công bố + 1 ICBEF proceedings + 5 manuscripts** |
 
-## 5. Dissertation Việt Nam cùng chủ đề (giám sát đối thủ)
+# 5. Dissertation Việt Nam cùng chủ đề
 
 Tìm trong cơ sở dữ liệu Luận án CTU, NEU, UEH, Foreign Trade University:
 
@@ -148,7 +206,7 @@ Tìm trong cơ sở dữ liệu Luận án CTU, NEU, UEH, Foreign Trade Universi
 - Đầu tiên **integrated 4-tier framework + digital lens**
 - Đầu tiên **named theoretical contribution** (Forced Internationalization Penalty)
 
-## 6. Differentiation matrix — luận án của NCS so với 7 reference points
+# 6. Differentiation matrix — luận án của NCS so với 7 reference points
 
 | Dimension | Marano (2016) | Wu (2022) | Kirca (2012) | Bhandari (2023) | Cuervo (2018) | Lu&Beamish (2004) | Vietnamese typical | **NCS** |
 |---|---|---|---|---|---|---|---|---|
@@ -161,15 +219,15 @@ Tìm trong cơ sở dữ liệu Luận án CTU, NEU, UEH, Foreign Trade Universi
 | **Multi-method** | Single (meta) | Single (meta) | Single (meta) | Single | Single | Single (panel) | Single | **Mixed (meta + empirical + boundary)** |
 | **Time span** | 40 years | 23 years | 32 years | 21 years | 6 years | 11 years | 5–9 years | **44 years (1982–2026)** |
 
-## 7. Talking points cho buổi demo GVHD
+# 7. Talking points cho buổi demo GVHD
 
-### 7.1 "Vì sao luận án này khác và có đóng góp"
+## 7.1 "Vì sao luận án này khác và có đóng góp"
 
 Mở bằng phenomenon-based pitch:
 
 > "Trong 50 năm nghiên cứu về quan hệ internationalization–firm performance, có một khoảng trống cơ bản: chu0103uê ai test xem **inverted-U có phải universal law hay là conditional relationship**? Luận án này test điuều đó bằng cách có mạch institutional gradient từ Singapore (regime I) đến Pacific SIDS (regime extreme), và phát hiện inverted-U **không phải universal**, nó đảo dấu khi 3 prerequisites không có."
 
-### 7.2 "Đóng góp chính ở đâu"
+## 7.2 "Đóng góp chính ở đâu"
 
 3 contributions chu0103a từng có trong literature:
 
@@ -177,14 +235,14 @@ Mở bằng phenomenon-based pitch:
 2. **Methodological**: TCI/DAI separation (không FDCI composite) đảm bảo construct purity
 3. **Empirical**: First multi-country evidence cho Pacific SIDS WBES (1,745 papers, 0 covers Pacific I–P)
 
-### 7.3 "Vì sao chu0103u yếu vu0102i việc có 8 papers"
+## 7.3 "Vì sao chu0103u yếu vu0102i việc có 8 papers"
 
 - 2 papers đã công bố (P1 VEFR, P2 JFAR) demonstrate publication track record
 - 1 paper đã có trong ICBEF 2025 proceedings (P6 baseline)
 - 5 papers manuscripts ở various stages (P3, P4, P5, P7, P8)
 - Cấu trúc cumulative thesis quy chu1ea9n quy nuôi ở châu Âu và Bắc Mỹ, phù hợp với quy chu1ea9n VN
 
-### 7.4 "Vấn đề về công bố"
+## 7.4 "Vấn đề về công bố"
 
 - P1 (VEFR 2026), P2 (JFAR 2026): đã công bố
 - P6 baseline (ICBEF 2025): đã published
@@ -198,28 +256,28 @@ Potential **2027 graduation timeline**:
 - 2027 H1: Submit P3, P4, P5, P7, P8 — tôi thiểu 1 paper accepted
 - 2027 H2: Defense
 
-## 8. Mạc cách đề bảo vu1ec7 và nhữã nu0103m câu hỏi thường được hỏi
+# 8. Câu hỏi thường được hỏi và câu trả lời chuẩn bị sẵn
 
-### 8.1 GVHD có thể hỏi: "Why so many countries (~36)?"
+## 8.1 GVHD có thể hỏi: "Why so many countries (~36)?"
 
 **Answer**: Tính mới của luận án nằm ở chu1ee9ng minh **inverted-U có boundary conditions**. Mu1ed7i institutional regime cu1ea7n it nhu1ea5t 3 countries đu1ec3 statistical power (Marano 2016 chuu1ea9n: 5+ countries per regime). 36 countries chia 5 regimes → 7 countries/regime trung bình — đu1ee7 statistical power.
 
-### 8.2 GVHD có thể hỏi: "Vì sao không dyụng panel?"
+## 8.2 GVHD có thể hỏi: "Vì sao không dyụng panel?"
 
 **Answer**: WBES không phu1ea3i panel theo cùng doanh nghu1ec7p (là repeated cross-sections). Tu0103ng đểng bảo nhu1ea5n cho NCS dissertation: Lu nên có panel future work tu1ea1i 4 countries có 2+ waves (Cambodia, India, Bangladesh, Pakistan, etc.).
 
-### 8.3 GVHD có thể hỏi: "Vì sao bỏ P7 FDCI?"
+## 8.3 GVHD có thể hỏi: "Vì sao bỏ P7 FDCI?"
 
 **Answer**: FDCI composite có Cronbach alpha = 0.23 (rl ot reliability), và theoretically conflict với P3-P5 đã dyụng TCI/DAI separated. Đu1ec3 đu1eb3m bảo cumulative thesis coherence, NCS bu1ed5 P7 FDCI và dyụng Asian capstone với TCI+DAI × institutional × top manager.
 
-### 8.4 GVHD có thể hỏi: "P8 Pacific không phu1ea3i Asia, sao trong dissertation?"
+## 8.4 GVHD có thể hỏi: "P8 Pacific không phu1ea3i Asia, sao trong dissertation?"
 
 **Answer**: 3 lyý do:
 1. **Empirical**: Pacific SIDS là institutional regime extreme — cu1ea7n nó đu1ec3 demonstrate inverted-U **fails** at boundary
 2. **Theoretical**: "Asian and adjacent regions" là framing chu1ea5p nhu1eadn đu1ee5 trong literature (vd: Asian Development Bank covers Pacific)
 3. **Methodological**: Pacific sử dyụng cu0103ng WBES instrument — datasố comparable
 
-## 9. References APA 7 (để dyụng trong demo)
+# 9. References APA 7 (để dyụng trong demo)
 
 Marano, V., Arregle, J. L., Hitt, M. A., Spadafora, E., & van Essen, M. (2016). Home country institutions and the internationalization–performance relationship. *Journal of Management, 42*(5), 1075–1110.
 
@@ -241,7 +299,7 @@ Lu, J. W., & Beamish, P. W. (2004). International diversification and firm perfo
 
 Verbeke, A., & Brugman, M. (2018). Internationalization and performance: Degree, duration, and scale of operations. *Journal of International Business Studies, 49*(7).
 
-## 10. Tóm tắt 1-trang cho buy0103i demo GVHD
+# 10. Tóm tắt 1-trang cho buy0103i demo GVHD
 
 ```
 NCS Đỗ Thùy Hương — Luận án tiến sĩ
@@ -264,9 +322,9 @@ heterogeneity?
 
 INSTITUTIONAL GRADIENT:
 Singapore (regime I) → Inverted-U classic, 71% optimum
-Vietnam (regime II) → Resource Diversion Trap, 37-44% optimum
-China (regime II→I) → Vanishing inverted-U over time
-Asian capstone → Heterogeneous moderation
+Vietnam (regime II)  → Resource Diversion Trap, 37-44% optimum
+China (regime II→I)  → Vanishing inverted-U over time
+Asian capstone       → Heterogeneous moderation
 Pacific SIDS (regime IV/V) → REVERSED slope (Forced Penalty)
 
 TÍNH MỚI:
@@ -282,7 +340,7 @@ DISTINCTIVE VS. WORLD LITERATURE:
 → Vietnamese typical: 1–3 papers. NCS = 8 papers.
 ```
 
-## 11. File kèm theo đu1ec3 demo GVHD
+# 11. File kèm theo đyể demo GVHD
 
 - `00_optimal_plan_vi.md` — tính mới và đóng góp chi tiết
 - `01_chapter_outline_vi.md` — dyàn yu0102 5 chu0103uơng
