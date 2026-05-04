@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
-# P5 China v1.7 — one-shot manuscript .docx builder
+# P5 China v1.8 — one-shot manuscript .docx builder
 #
-# Generates manuscript_v1_7.docx with all 4 figures embedded inline.
-# Output: manuscript_v1_7.docx (~770 KB) ready for journal upload.
+# Generates manuscript_v1_8.docx with all 4 figures embedded inline.
+# Output: manuscript_v1_8.docx (~770 KB) ready for journal upload.
+# v1.8 patch: corrected Demir & Javorcik (2018) JIE citation
+#             from vol. 117 / pp. 11-22 to vol. 111 / pp. 177-189
+#             (single Tier-C citation correction; see VERIFICATION_RESULTS.md)
 #
 # Prerequisites (one-time install):
 #   macOS:    brew install pandoc graphviz && pip install matplotlib numpy
@@ -16,7 +19,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-VERSION="v1_7"
+VERSION="v1_8"
 OUTPUT="manuscript_${VERSION}.docx"
 
 echo "[1/4] Rendering Figure 1 (conceptual model) via Graphviz..."
@@ -35,19 +38,19 @@ else
   echo "      [SKIP] matplotlib not installed; Figures 2/3/4 will be missing"
 fi
 
-echo "[3/4] Assembling 6 v1.7 manuscript parts + injecting figure references..."
+echo "[3/4] Assembling 6 v1.8 manuscript parts + injecting figure references..."
 cat \
-    manuscript_v1_7_part1_frontmatter_intro.md \
-    manuscript_v1_7_part2_theory.md \
-    manuscript_v1_7_part3_data_methods.md \
-    manuscript_v1_7_part4_results.md \
-    manuscript_v1_7_part5_discussion.md \
-    manuscript_v1_7_part6_limits_refs.md \
-    > manuscript_v1_7_complete.md
+    manuscript_v1_8_part1_frontmatter_intro.md \
+    manuscript_v1_8_part2_theory.md \
+    manuscript_v1_8_part3_data_methods.md \
+    manuscript_v1_8_part4_results.md \
+    manuscript_v1_8_part5_discussion.md \
+    manuscript_v1_8_part6_limits_refs.md \
+    > manuscript_v1_8_complete.md
 
 python3 - <<'PY'
 import re
-with open('manuscript_v1_7_complete.md') as f: t = f.read()
+with open('manuscript_v1_8_complete.md') as f: t = f.read()
 for pat, rep in [
     (r'(> \*\*Figure 1\.\*\*)', r'![Figure 1: Conceptual model](figures/figure1_v1_4.png)\n\n\1'),
     (r'(> \*\*Figure 2\.\*\*)', r'![Figure 2: Threshold forest plot](figures/figure2_threshold_forest.png)\n\n\1'),
@@ -55,13 +58,13 @@ for pat, rep in [
     (r'(> \*\*Figure 4\.\*\*)', r'![Figure 4: Level-shift bars](figures/figure4_level_shift_bars.png)\n\n\1'),
 ]:
     t = re.sub(pat, rep, t, count=1)
-with open('manuscript_v1_7_with_figures.md','w') as f: f.write(t)
-print('      saved manuscript_v1_7_with_figures.md')
+with open('manuscript_v1_8_with_figures.md','w') as f: f.write(t)
+print('      saved manuscript_v1_8_with_figures.md')
 PY
 
 echo "[4/4] Converting to .docx via pandoc..."
 if command -v pandoc &>/dev/null; then
-  pandoc manuscript_v1_7_with_figures.md \
+  pandoc manuscript_v1_8_with_figures.md \
     --resource-path=. \
     -o "${OUTPUT}"
   echo ""
@@ -75,7 +78,7 @@ if command -v pandoc &>/dev/null; then
   echo "   - 4 figures embedded (conceptual, threshold forest, predicted curves, level-shift bars)"
   echo "   - All empirical claims verified against data (see CLAIMS_AUDIT.md)"
   echo ""
-  echo "   ⚠️  Before submission: verify Tier C references in CITATION_AUDIT.md"
+  echo "   ✅ All Tier-C references verified (see VERIFICATION_RESULTS.md)"
 else
   echo "      [ERROR] pandoc not installed. Install via:"
   echo "        macOS:    brew install pandoc"
