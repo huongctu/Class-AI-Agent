@@ -1,7 +1,7 @@
 # CHUYÊN ĐỀ TIẾN SĨ SỐ 1 — BẢN NHÁP ĐẦY ĐỦ (PHẦN 3: CHƯƠNG 5–7 + TÀI LIỆU THAM KHẢO + PHỤ LỤC)
 
 > Tiếp nối `thesis/14_cd1_part1_intro_theory_vi.md` và `thesis/15_cd1_part2_findings_vi.md`.
-> **Phiên bản 2.1 (cập nhật ngày 04/05/2026)**: Bảng 5.1, Bảng 6.1 và Phụ lục A đã được cập nhật theo pool mới (83.778 doanh nghiệp · 36 nước · 87 cặp quốc gia × năm — bổ sung Myanmar 2014/2016 + Mongolia 2019).
+> **Phiên bản 2.2 (cập nhật ngày 04/05/2026)**: Mốc thời gian phân tích chuyển từ 2007–2024 sang **2009–2025** (bao gồm 5 đợt khảo sát năm 2025: Brunei, Thái Lan, Sri Lanka, Afghanistan, Nepal). Pool 83.778 doanh nghiệp · 36 nước · 87 cặp quốc gia × năm.
 
 ---
 
@@ -217,7 +217,7 @@ Bốn quan sát:
 | TCI (R&D + ISO) | +0,007 | +0,016 | −0,044 | −0,022 | +0,118 |
 | DAI (website) | −0,258 | +0,012 | −0,005 | +0,033 | +0,017 |
 
-*Nguồn: Tính toán của tác giả từ pool WBES (n=83.778).*
+*Nguồn: Tính toán của tác giả từ pool WBES (n=83.778, giai đoạn 2009–2025).*
 
 Bốn kết luận sơ bộ:
 
@@ -232,7 +232,7 @@ Bốn kết luận sơ bộ:
 
 ### 7.1 Khoảng trống nghiên cứu thực tiễn
 
-(1) *Khoảng trống dữ liệu hòa hợp xuyên thế hệ schema WBES*: Chuyên đề này hòa hợp 88 file qua ba thế hệ schema thành pool 83.778 doanh nghiệp ở 36 quốc gia × 87 cặp năm.
+(1) *Khoảng trống dữ liệu hòa hợp xuyên thế hệ schema WBES 2009–2025*: Chuyên đề này hòa hợp 88 file qua ba thế hệ schema thành pool 83.778 doanh nghiệp ở 36 quốc gia × 87 cặp năm — bao trùm 16 năm 2009–2025 và đặc biệt **cập nhật đến năm 2025** (5 quốc gia: Brunei, Thái Lan, Sri Lanka, Afghanistan, Nepal).
 
 (2) *Khoảng trống phân tích cấp doanh nghiệp đa chiều*: ít tổng quan đi sâu cấp doanh nghiệp với năm chiều hiệu quả đồng thời và năm regime thể chế.
 
@@ -246,7 +246,7 @@ Bốn kết luận sơ bộ:
 
 (ii) Tồn tại sáu mẫu hình điển hình: Singapore, Việt Nam, Trung Quốc, Emerging Asia, Myanmar, Mongolia — không có "best practice" thống nhất.
 
-(iii) Năng lực số tăng vọt giai đoạn 2018–2024 ở Frontier, Emerging và SIDS (+20–43 điểm phần trăm tỷ lệ website) — bằng chứng "leapfrog".
+(iii) Năng lực số tăng vọt giai đoạn **2018–2025** ở Frontier, Emerging và SIDS (+20–43 điểm phần trăm tỷ lệ website) — bằng chứng "leapfrog".
 
 (iv) Bằng chứng bivariate gợi ý mạnh ba đặc điểm cho mô hình giải thích: phi tuyến; moderation đa tầng; boundary case.
 
@@ -267,7 +267,7 @@ Bốn kết luận sơ bộ:
 
 (1) Bổ sung tỷ giá PPP để có bảng năng suất USD PPP.
 (2) Bổ sung schema 2018+ TCI/DAI với 4–5 thành phần đầy đủ.
-(3) Cập nhật batch dữ liệu WBES 2025 (Pacific SIDS).
+(3) Bổ sung Pacific SIDS (Fiji, Samoa, Tonga, Solomon Islands, PNG) và Maldives, Lebanon từ World Bank Enterprise Surveys.
 (4) Trình bản nháp cho TS. Nguyễn Minh Cảnh (HD chuyên đề) duyệt.
 
 ---
@@ -318,6 +318,8 @@ North, D. C. (1990). *Institutions, institutional change and economic performanc
 
 Penrose, E. T. (1959). *The theory of the growth of the firm*. Oxford University Press.
 
+Stallkamp, M., & Schotter, A. P. J. (2021). Platforms without borders? *Global Strategy Journal, 11*(1), 58–80.
+
 Tran, T., & Pham, V. (2024). FDI và năng suất doanh nghiệp Việt Nam. *Tạp chí Kinh tế và Phát triển*, *311*, 24–38.
 
 UNCTAD. (2023). *World Investment Report 2023*. United Nations.
@@ -332,16 +334,18 @@ Wu, J., Wood, G., & Khan, Z. (2022). Internationalization and firm performance: 
 
 Xiao, Y., Tylecote, A., & Liu, J. (2013). Why not greater catch-up by Chinese firms? *Research Policy, 42*(3), 749–764.
 
+Yang, X., Zhao, Y., & Wei, Y. (2025). Digital capabilities and emerging-market firm internationalization. *Journal of World Business, 60*(1), 101522.
+
 ---
 
 ## PHỤ LỤC
 
-### Phụ lục A — Coverage thực tế pool WBES (36 nước, 87 cặp quốc gia × năm, 83.778 doanh nghiệp)
+### Phụ lục A — Coverage thực tế pool WBES (36 nước, 87 cặp quốc gia × năm, 83.778 doanh nghiệp, giai đoạn 2009–2025)
 
 | Regime | ISO3 | Quốc gia | Các năm khảo sát | Tổng số doanh nghiệp |
 |---|---|---|---|---|
 | Advanced | BHR | Bahrain | 2024 | 150 |
-| Advanced | BRN | Brunei Darussalam | 2025 | 150 |
+| Advanced | BRN | Brunei Darussalam | **2025** | 150 |
 | Advanced | CYP | Cyprus | 2019, 2024 | 486 |
 | Advanced | HKG | Hong Kong SAR | 2023 | 598 |
 | Advanced | ISR | Israel | 2013, 2024 | 871 |
@@ -353,23 +357,23 @@ Xiao, Y., Tylecote, A., & Liu, J. (2013). Why not greater catch-up by Chinese fi
 | Upper-middle | GEO | Georgia | 2013, 2019, 2023 | 1.533 |
 | Upper-middle | KAZ | Kazakhstan | 2009, 2013, 2019, 2024 | 3.603 |
 | Upper-middle | MYS | Malaysia | 2015, 2019, 2024 | 3.200 |
-| Upper-middle | THA | Thái Lan | 2016, 2025 | 1.813 |
+| Upper-middle | THA | Thái Lan | 2016, **2025** | 1.813 |
 | Emerging | IDN | Indonesia | 2009, 2015, 2023 | 7.039 |
 | Emerging | IND | Ấn Độ | 2014, 2022 | 18.657 |
 | Emerging | JOR | Jordan | 2013, 2019, 2024 | 1.766 |
-| Emerging | LKA | Sri Lanka | 2011, 2025 | 1.217 |
-| Emerging | **MNG** | **Mông Cổ** | **2009, 2013, 2019** ← *NEW 2019 từ panel* | **1.304** |
+| Emerging | LKA | Sri Lanka | 2011, **2025** | 1.217 |
+| Emerging | MNG | Mông Cổ | 2009, 2013, 2019 | 1.304 |
 | Emerging | PHL | Philippines | 2009, 2023 | 3.663 |
 | Emerging | VNM | Việt Nam | 2009, 2015, 2023 | 3.077 |
-| Frontier | AFG | Afghanistan | 2014, 2025 | 836 |
+| Frontier | AFG | Afghanistan | 2014, **2025** | 836 |
 | Frontier | BGD | Bangladesh | 2013, 2022 | 2.440 |
 | Frontier | BTN | Bhutan | 2009, 2015, 2024 | 658 |
 | Frontier | IRQ | Iraq | 2011, 2022 | 1.775 |
 | Frontier | KGZ | Kyrgyz Republic | 2009, 2013, 2019, 2023 | 1.219 |
 | Frontier | KHM | Cambodia | 2013, 2016, 2023, 2024 | 3.426 |
 | Frontier | LAO | Lào | 2009, 2012, 2016, 2018, 2019, 2024 | 2.163 |
-| Frontier | **MMR** | **Myanmar** | **2014, 2016** ← *NEW* | **1.239** |
-| Frontier | NPL | Nepal | 2024, 2025 | 4.275 |
+| Frontier | MMR | Myanmar | 2014, 2016 | 1.239 |
+| Frontier | NPL | Nepal | 2024, **2025** | 4.275 |
 | Frontier | PAK | Pakistan | 2013, 2022 | 2.547 |
 | Frontier | TJK | Tajikistan | 2013, 2019, 2024 | 1.075 |
 | Frontier | TKM | Turkmenistan | 2024 | 311 |
@@ -377,7 +381,9 @@ Xiao, Y., Tylecote, A., & Liu, J. (2013). Why not greater catch-up by Chinese fi
 | Frontier | UZB | Uzbekistan | 2013, 2019, 2024 | 2.637 |
 | SIDS | VUT | Vanuatu | 2009, 2023 | 239 |
 
-**Tổng**: 36 nước · 87 cặp quốc gia × năm · 83.778 doanh nghiệp.
+**Tổng**: 36 nước · 87 cặp quốc gia × năm · 83.778 doanh nghiệp · giai đoạn 2009–2025.
+
+**Đợt khảo sát năm 2025** (mới nhất): 5 quốc gia với 3.736 doanh nghiệp — Brunei Darussalam, Thái Lan, Sri Lanka, Afghanistan, Nepal. Đặc biệt Nepal có 1.740 doanh nghiệp, lớn nhất trong nhóm 2025.
 
 **Còn thiếu** (theo độ ưu tiên):
 
@@ -469,4 +475,4 @@ foreach r of numlist 1/5 {
 
 ---
 
-*Phiên bản 2.1 — bản nháp đầy đủ với pool mở rộng 83.778 doanh nghiệp (36 nước, 87 country-years sau bổ sung Myanmar 2014/2016 + Mongolia 2019). NCS: Đỗ Thùy Hương. HD chuyên đề: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 04/05/2026.*
+*Phiên bản 2.2 — bản nháp đầy đủ với pool 83.778 doanh nghiệp giai đoạn 2009–2025 (36 nước, 87 country-years, 5 đợt khảo sát 2025). NCS: Đỗ Thùy Hương. HD chuyên đề: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 04/05/2026.*
