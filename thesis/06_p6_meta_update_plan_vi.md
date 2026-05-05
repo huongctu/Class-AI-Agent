@@ -1,6 +1,6 @@
 # Kế hoạch chi tiết P6 — Meta-Analytic Regression Analysis (MARA) update 1982–2026
 
-File này trình bày kế hoạch triển khai P6 dựa trên kiến trúc đã có (script `run_search_agent.py`, `build_final_database.py`, 28 queries trong `search_queries.json`, database 46 studies hiện có, synthesis narrative). Mục tiêu là cập nhật phân tích meta-analytic và bổ sung **3 moderator độc đáo** (ICRV, FDCI, DPL) so với bản nền 2023.
+File này trình bày kế hoạch triển khai P6 dựa trên kiến trúc đã có (script `run_search_agent.py`, `build_final_database.py`, 28 queries trong `search_queries.json`, database 46 studies hiện có, synthesis narrative). Mục tiêu là cập nhật phân tích meta-analytic và bổ sung **3 moderator độc đáo** (ICRV, cDAI, DPL) so với bản nền 2023.
 
 > **Quan trọng về pool size**: các con số *k = 172* (target) và *k = 269* (MASTER) chỉ là **ước lượng tham khảo**, không phải hard deliverable. P6 được đánh giá bởi chất lượng coding 3 moderator mới và phương pháp three-level MARA, không phải số lượng paper thuần túy.
 
@@ -10,7 +10,7 @@ P6 không phải nghiên cứu khởi tạo mới mà là bước phát triển 
 
 ### 0.1 Mốc 1 — Phân tích gốc (18/07/2023)
 
-NCS đã hoàn thành phân tích meta-analysis ban đầu ngày 18/07/2023 (`KÉT_QUẢ_PHÂN_TÍCH_TỔNG_HỌ̆P_NGÀY_18072023.docx`), sử dụng **MetaEssentials version 1.5** (Suurmond et al., 2017) với correlational data trong `MetaEssentials_Correlational_data_1.5...2022.xlsx`.
+NCS đã hoàn thành phân tích meta-analysis ban đầu ngày 18/07/2023 (`KÉT_QUẢ_PHÂN_TÍCH_TỔNG_HỌ̆P_NGÀY_18072023.docx`), sử dụng **MetaEssentials version 1.5** (Suurmond et al., 2017) với correlational data trong `MetaEssentials_Correlational_data_1.5...2022.xlsx`.
 
 ### 0.2 Mốc 2 — Tiểu luận tổng quan (31/12/2024)
 
@@ -25,7 +25,7 @@ Bài "Internationalization and firm performance: A meta-analysis review" đượ
 - **Coverage**: 1977–2022 → 1982–2026.
 - **Pool**: 113 baseline + bổ sung (ước lượng tham khảo ~130–172, MASTER ~269; **không bắt buộc phải đạt**).
 - **Method**: random-effects pooled → **three-level MARA** với nested effect sizes.
-- **Moderators mới**: **FDCI**, **ICRV 5-regime**, **DPL phase** (đây là đóng góp chính).
+- **Moderators mới**: **cDAI**, **ICRV 5-regime**, **DPL phase** (đây là đóng góp chính).
 - **Software**: chuyển từ MetaEssentials sang `metafor` (R) hoặc `pymetaR` (Python).
 
 ### 0.5 Vì sao lineage quan trọng
@@ -43,7 +43,7 @@ P6 thuộc **tầng synthesis** trong khung 4 tầng + digital lens. Kết quả
 | Yếu tố | ICBEF 2025 (đã công bố) | P6 (cho luận án) |
 |---|---|---|
 | Coverage | 1977–2022, 113 studies, 200 effect sizes | **1982–2026, pool linh hoạt** |
-| Moderators | Country of origin, industry | Thêm **FDCI, ICRV regime, DPL phase** (đóng góp chính) |
+| Moderators | Country of origin, industry | Thêm **cDAI, ICRV regime, DPL phase** (đóng góp chính) |
 | Cấp độ | Random-effects pooled | **Three-level meta-analytic regression** |
 | Software | MetaEssentials 1.5 | **`metafor` (R)** hoặc **`pymetaR` (Python)** |
 | Kết quả chính | $r = 0.07$, $I^2 = 87.92\%$ | Cập nhật + moderator analysis cho 3 nhánh mới |
@@ -60,12 +60,12 @@ Differentiation rõ ràng để tránh phản biện "lặp lại". P6 phải c�
 - `outputs/synthesis_narrative.md`: narrative với APA 7th citations
 - `P6_Meta_Update_Template1.xlsx`: coding template
 - `P6_Meta_MASTER_k269.xlsx`: MASTER pool size **k = 269** (ước lượng tham khảo, không bắt buộc)
-- **Historical**: `MetaEssentials_Correlational_data_1.5...2022.xlsx`, `KÉT_QUẢ_PHÂN_TÍCH_TỔNG_HỌ̆P_NGÀY_18072023.docx`
+- **Historical**: `MetaEssentials_Correlational_data_1.5...2022.xlsx`, `KÉT_QUẢ_PHÂN_TÍCH_TỔNG_HỌ̆P_NGÀY_18072023.docx`
 - **OSF Package** (chuẩn bị pre-registration): `P6_OSF_Preregistration_Template.md`, `P6_Outline_Master_Detailed.md`, `P6_Section_by_Section_Guide.md`, `P6_Abstract_Template.md`, `P6_Cover_Letter_Template.md`, `P6_Citation_Verification_Log.md`, `P6_References_APA7_Verified.md`
 
 ### 2.2 28 search queries (theo `search_queries.json`)
 
-Linh hoạt sử dụng — ưu tiên những nhóm query có liên quan đến 3 moderator mới (FDCI/Phase 3, Institutional/Phase 4) trước.
+Linh hoạt sử dụng — ưu tiên những nhóm query có liên quan đến 3 moderator mới (cDAI/Phase 3, Institutional/Phase 4) trước.
 
 ### 2.3 Inclusion/Exclusion criteria (theo `CLAUDE.md`)
 
@@ -73,9 +73,9 @@ Giữ nguyên 7 tiêu chí include + 6 tiêu chí exclude.
 
 ## 3. Ba khoảng trống nghiên cứu chưa có meta nào lấp
 
-### Gap 1: FDCI moderator
+### Gap 1: country-level Digital Adoption (cDAI) moderator
 
-**Foundational Digital Capabilities Index (FDCI)** chưa từng được kiểm định meta-analytic dù Bhandari et al. (2023) chứng minh interaction. P6 là meta đầu tiên (Bhandari et al., 2023; Bustamante et al., 2022; Chen & Meng, 2022; Verhoef et al., 2021).
+**Country-level digital adoption (cDAI)** — proxied bằng World Bank Digital Adoption Index hoặc ITU Digital Development Index — chưa từng được kiểm định meta-analytic như country-level moderator của quan hệ I→P, dù Bhandari et al. (2023) chứng minh resource-orchestration interaction ở firm level và Verhoef et al. (2021) đặt nền cho phân tầng năng lực số (digitization → digitalization → digital transformation). cDAI tương ứng tier "digitalization" trong Verhoef framework, khác với firm-level technological capability (TCI) theo truyền thống Lall (1992) và Cohen & Levinthal (1990). P6 là meta đầu tiên kiểm định cDAI ở cấp quốc gia (Bharadwaj et al., 2013; Bhandari et al., 2023; Bustamante et al., 2022; Chen & Meng, 2022; Verhoef et al., 2021).
 
 ### Gap 2: Asian institutional heterogeneity
 
@@ -91,7 +91,7 @@ Mã hóa study theo **precede / span / follow** mốc 2009 inflection point (Bry
 
 | Ưu tiên | Công việc | Tại sao |
 |---|---|---|
-| **P0 — cao nhất** | Verify + recode 113 baseline studies + 17 new = ~130 với 3 moderator mới (ICRV, FDCI, DPL) | Công việc cốt lõi; tạo ra đóng góp lý thuyết mới |
+| **P0 — cao nhất** | Verify + recode 113 baseline studies + 17 new = ~130 với 3 moderator mới (ICRV, cDAI, DPL) | Công việc cốt lõi; tạo ra đóng góp lý thuyết mới |
 | **P1 — trung buình** | Three-level MARA + consistency check vs bản 2023 | Methodological upgrade |
 | **P2 — tùy điều kiện** | Backward citation scan của 6 meta trước để tăng pool | Chỉ luùc thời gian cho phép |
 | **P3 — tùy điều kiện** | Run 28 queries qua Consensus + web supplemental | Optional, làm sau defense nếu muốn journal version |
@@ -118,7 +118,7 @@ Theo Cheung (2014) và Van den Noortgate et al. (2013), `metafor` package R.
 
 ### 5.2 Moderators ưu tiên (giảm từ 11 → 7)
 
-**Core 3 (mới, bắt buộc)**: ICRV regime, FDCI level, DPL phase.
+**Core 3 (mới, bắt buộc)**: ICRV regime, cDAI level, DPL phase.
 
 **Bổ sung 4 (chuẩn)**: country of origin, industry, DOI measure type, FP measure type.
 
@@ -142,7 +142,7 @@ Bỏ bớt cho versión dễ thuức hiện: sample size, publication year, digi
 ### Tuần 3–6: Recode 3 moderator mới cho ~130 studies
 
 - **ICRV regime**: lấy WGI Rule of Law theo year cho mỗi country, classify I/II/III/SIDS/Frontier theo thresholds $+0.80/-0.50$
-- **FDCI level**: lấy ITU DDI hoặc WB Digital Adoption Index theo country-year, classify high/medium/low
+- **cDAI level**: lấy ITU DDI hoặc WB Digital Adoption Index theo country-year, classify high/medium/low
 - **DPL phase**: mã hóa precede/span/follow theo mốc 2009
 - ~3–4 tuần nếu có RA giúp; 5–6 tuần nếu solo
 - **Inter-coder reliability**: double-code 20% subset, tính Cohen's $\kappa \geq 0.7$
@@ -156,7 +156,7 @@ Bỏ bớt cho versión dễ thuức hiện: sample size, publication year, digi
 ### Tuần 9–10: Moderator analysis
 
 - ICRV subgroup (5 regimes)
-- FDCI moderation (continuous và categorical)
+- cDAI moderation (continuous và categorical)
 - DPL phase comparison (pre-/span-/post-2009)
 - Three-way interaction nếu dữ liệu cho phép
 - Publication bias tests
@@ -166,7 +166,7 @@ Bỏ bớt cho versión dễ thuức hiện: sample size, publication year, digi
 
 - **Tuần 11**: Introduction (mạnh về differentiation từ ICBEF 2025) + Method (PRISMA flow, three-level MARA detail)
 - **Tuần 12**: Results (forest plot, funnel plot, moderator tables)
-- **Tuần 13**: Discussion (đối thoại với 6 meta trước, FDCI gap, ICRV gap, DPL gap)
+- **Tuần 13**: Discussion (đối thoại với 6 meta trước, cDAI gap, ICRV gap, DPL gap)
 - **Tuần 14**: Conclusion + finalize cover letter + abstract template + verify all citations
 
 ### Pre-registration trên OSF (Tuần 1, làm song song)
@@ -183,7 +183,7 @@ Lấy `P6_OSF_Preregistration_Template.md`, fill ngay với:
 ### 7.1 Methodological
 
 - Meta-analysis đầu tiên trên DOI–FP sử dụng **three-level MARA**.
-- Lần đầu kiểm định **FDCI** như country-level moderator.
+- Lần đầu kiểm định **cDAI** như country-level moderator.
 - Lần đầu opérer **ICRV 5-regime classification**.
 
 ### 7.2 Theoretical
@@ -204,7 +204,7 @@ Lấy `P6_OSF_Preregistration_Template.md`, fill ngay với:
 |---|---|
 | Pool không đạt k=172 | **Không vấn đề**: pool size flexible; chấp nhận k=130 với quality coding cao |
 | Reverse causality (Schmuck et al., 2022) | Coding biến study design (cross-section vs panel) và lag structure |
-| FDCI proxy variation giữa countries | Dùng ITU DDI và WB DAI như country-level proxies; coding rationale minh bạch |
+| cDAI proxy variation giữa countries | Dùng ITU DDI và WB DAI như country-level proxies; coding rationale minh bạch |
 | ICRV regime thresholds cần biện minh | Robustness với alternative thresholds ($+0.5/-0.3$ vs $+0.8/-0.5$) |
 | Trùng lặp sample | Coding "sample_id" đồng nhất; chỉ giữ effect size có trọng số cao nhất |
 | Inconsistency với bản 2023 sau khi tái chạy `metafor` | Document trong appendix; giải thích (estimator, data updates, v.v.) |
@@ -290,11 +290,11 @@ Liệt kê công việc cụ thể cho từng tuần. NCS có thể cập nhật
 - [ ] Tạo coding sheet thống nhất (bằng `P6_Meta_Update_Template1.xlsx`)
 - [ ] Tách ~130 studies vào 3 nhóm: "đã có effect size + moderators" (nên ~90), "cần re-extract effect size" (nên ~30), "cần lấy full text + extract" (nên ~10)
 - [ ] Setup R environment với `metafor`, `dplyr`, `ggplot2`
-- [ ] Tải WGI Rule of Law data (World Bank); ITU DDI hoặc WB DAI cho FDCI
+- [ ] Tải WGI Rule of Law data (World Bank); ITU DDI hoặc WB DAI cho cDAI
 
 ### Tuần 3 — Recode batch 1 (40 studies)
 
-- [ ] Coder 1 (NCS): 40 studies — ICRV + FDCI + DPL
+- [ ] Coder 1 (NCS): 40 studies — ICRV + cDAI + DPL
 - [ ] Coder 2 (RA nếu có): double-code 8/40 (20%)
 - [ ] Tính Cohen's $\kappa$ cho double-coded subset
 - [ ] Resolve disagreements
@@ -315,7 +315,7 @@ Liệt kê công việc cụ thể cho từng tuần. NCS có thể cập nhật
 ### Tuần 6 — Recode batch 4 (bổ sung) + verify hoàn thiện
 
 - [ ] Recode ~10 studies khó (full text extraction)
-- [ ] Final verify tất cả 130 studies có đủ 4 fields: effect_size, ICRV, FDCI, DPL
+- [ ] Final verify tất cả 130 studies có đủ 4 fields: effect_size, ICRV, cDAI, DPL
 - [ ] Update `study_database.json`
 
 ### Tuần 7 — Convert sang `metafor`
@@ -335,7 +335,7 @@ Liệt kê công việc cụ thể cho từng tuần. NCS có thể cập nhật
 ### Tuần 9 — Moderator analysis
 
 - [ ] ICRV regime subgroup (5 regimes)
-- [ ] FDCI moderation (continuous và categorical)
+- [ ] cDAI moderation (continuous và categorical)
 - [ ] DPL phase comparison (pre/span/post 2009)
 - [ ] Two-way interactions nếu dữ liệu cho phép
 
@@ -362,7 +362,7 @@ Liệt kê công việc cụ thể cho từng tuần. NCS có thể cập nhật
 ### Tuần 13 — Viết Discussion
 
 - [ ] Đối thoại với 6 meta trước (Kirca, Yang, Marano, Schwens, Wu, Arte)
-- [ ] FDCI gap discussion
+- [ ] cDAI gap discussion
 - [ ] ICRV gap discussion
 - [ ] DPL gap discussion
 - [ ] Limitations + future research
@@ -380,7 +380,7 @@ Liệt kê công việc cụ thể cho từng tuần. NCS có thể cập nhật
 
 P6 được đánh giá bởi:
 
-1. **Chất lượng coding 3 moderator mới** (ICRV, FDCI, DPL) — đây là đóng góp khoa học.
+1. **Chất lượng coding 3 moderator mới** (ICRV, cDAI, DPL) — đây là đóng góp khoa học.
 2. **Methodological upgrade**: three-level MARA thay vì pooled random-effects.
 3. **Consistency với bản 2023**: bảo vệ lineage research stream.
 4. **OSF preregistration**: trước khi phân tích để transparency.
