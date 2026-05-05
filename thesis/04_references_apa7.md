@@ -182,6 +182,32 @@ World Bank. (2026). *Indicator descriptions*. World Bank Enterprise Surveys.
 
 Yang, B., Bai, W., Chen, Y., & Rong, K. (2025). Internationalization of digital firms: A systematic review and research agenda. *Journal of Business Research*. *(Trước khi trích dẫn chính thức trong bản nộp, cần xác minh volume, issue, pages, DOI trên trang nhà xuất bản.)*
 
+## M. Công trình của tác giả luận án (NCS Đỗ Thùy Hương)
+
+> Bốn công trình đã công bố / chấp nhận xuất bản, làm cơ sở dữ liệu/bằng chứng nội bộ cho luận án. Tham chiếu chi tiết kết quả ở thư mục `manuscripts/` (`p1_emerging_asia_results.md`, `p2_china_smes_results.md`, `p_india_book_chapter_results.md`, `p_meta_analysis_kyyeu_results.md`).
+
+### Đã xuất bản
+
+Đỗ, T. H., & Phan, A. T. (2025). Internationalization and firm performance of firms in India: The role of top management. In B. Bartekova (Ed.), *International Business Research — Traditional and Creative Approaches*. IntechOpen. https://doi.org/10.5772/intechopen.1011012
+
+Đỗ, T. H., & Phan, A. T. (2026). Firm performance heterogeneity in emerging Asia: Evidence from World Bank Enterprise Surveys. *Vietnam Economic and Financial Review*. *(Cần cập nhật volume, issue, pages khi có thông tin xuất bản chính thức.)*
+
+Đỗ, T. H., & Phan, A. T. (2026). Unveiling the impact of Chinese manufacturing SMEs' internationalization on performance. *Journal of Finance & Accounting Research, 02*(39), 287–291.
+
+### Đã chấp nhận (in press)
+
+Đỗ, T. H., & Phan, A. T. (2024). Internationalization and firm performance: A meta-analysis review. In *Proceedings of the 6th International Conference on Economics, Business, and Finance* (in press, ISBN). College of Economics, Can Tho University.
+
+### Bản thảo đang chuẩn bị (under preparation)
+
+Đỗ, T. H., & Phan, A. T. (in preparation). Technological capability, digital adoption, and the internationalization–performance relationship: A firm-level study of Singapore. *(P3 Singapore manuscript — `manuscripts/p4_singapore_*.md`.)*
+
+Đỗ, T. H., & Phan, A. T. (in preparation). Technological capability, digital adoption, and the internationalization–performance relationship in Vietnam: A three-wave analysis (2009, 2015, 2023). *(P4 Vietnam manuscript — `manuscripts/p3_vietnam_*.md`.)*
+
+Đỗ, T. H., & Phan, A. T. (in preparation). China internationalization–performance: Temporal heterogeneity 2012–2024. *(P5 manuscript.)*
+
+Đỗ, T. H., & Phan, A. T. (in preparation). Forced internationalization penalty: Evidence from six Pacific Small Island Developing States. *(P8 manuscript.)*
+
 ---
 
 ## Hướng dẫn sử dụng
@@ -192,9 +218,11 @@ Yang, B., Bai, W., Chen, Y., & Rong, K. (2025). Internationalization of digital 
 - Khi trích nhiều nghiên cứu trong cùng ngoặc, sắp xếp theo alphabet hoặc theo logic lập luận: "(Bausch & Krist, 2007; Kirca et al., 2012; Marano et al., 2016; Wu et al., 2022)".
 - 2 tác giả: giữ đủ hai tên ("Arte and Larimo, 2022" / "(Arte & Larimo, 2022)").
 - 3+ tác giả: dùng *et al.* ngay từ trích dẫn đầu tiên.
+- **Trích dẫn công trình của tác giả luận án**: dùng dạng "Đỗ và Phan (2025 — IntechOpen)", "Đỗ và Phan (2026 — VEFR)", "Đỗ và Phan (2026 — JFAR)", "Đỗ và Phan (2024 — Kỷ yếu CTU)" để phân biệt rõ giữa các công trình cùng tác giả ở cùng năm.
 
 ### Khi nộp bản cuối
 
-- Xác minh DOI trên Crossref hoặc trang publisher cho các entry không quen thuộc, đặc biệt Yang et al. (2025).
+- Xác minh DOI trên Crossref hoặc trang publisher cho các entry không quen thuộc, đặc biệt Yang et al. (2025) và Đỗ & Phan (2026 — VEFR — cần volume/issue/pages chính thức).
 - Kiểm tra nhất quán italic và punctuation theo APA 7th.
 - Nếu trường yêu cầu tên tác giả tiếng Việt ở các công trình của NCS, phải chuyển "Do, T. H., & Phan, A. T." sang "Đỗ Thùy Hương & Phan Anh Tú" một cách nhất quán.
+- Cần phân biệt rõ năm xuất bản giữa 4 công trình của NCS để tránh lẫn lộn citation: 2024 (Kỷ yếu CTU — meta-analysis), 2025 (IntechOpen India — top management), 2026 (VEFR emerging Asia + JFAR China cubic).
