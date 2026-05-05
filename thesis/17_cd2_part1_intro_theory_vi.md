@@ -4,6 +4,7 @@
 > Outline tham chiếu: `thesis/13_chuyen_de_2_outline_vi.md`.
 > Phần 2 (Chương 3–5): `thesis/18_cd2_part2_review_framework_hypotheses_vi.md`.
 > Phần 3 (Chương 6–9 + TLTK): `thesis/19_cd2_part3_models_data_conclusion_vi.md`.
+> **Phiên bản 1.1 (cập nhật ngày 05/05/2026)**: Fix mã ngành thành **9340101** (liền) theo QĐ 4768/QĐ-ĐHCT chính thức.
 
 ---
 
@@ -25,7 +26,7 @@ CỦA QUỐC TẾ HÓA ĐẾN HIỆU QUẢ HOẠT ĐỘNG
 KINH DOANH CÁC DOANH NGHIỆP Ở CHÂU Á
 
 Ngành: Quản trị kinh doanh
-Mã ngành: 9 34 01 01
+Mã ngành: 9340101
 Mã nghiên cứu sinh: P1323001
 
 NGƯỜI HƯỚNG DẪN KHOA HỌC
