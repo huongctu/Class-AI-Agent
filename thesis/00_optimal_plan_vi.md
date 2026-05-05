@@ -2,8 +2,8 @@
 
 ## Thông tin chung
 
-- **Tên đề tài (VI)**: Quốc tế hóa và hiệu quả hoạt động kinh doanh của doanh nghiệp ở các quốc gia châu Á: Vai trò điều tiết của thể chế, năng lực số và đặc điểm nhà quản trị
-- **Tên đề tài (EN)**: Internationalization and Firm Performance in Asian Countries: The Moderating Roles of Institutions, Digital Capability, and Top Manager Characteristics
+- **Tên đề tài (VI)**: Quốc tế hóa và hiệu quả hoạt động kinh doanh của doanh nghiệp ở các quốc gia châu Á và Pacific: Vai trò điều tiết của thể chế, năng lực số và đặc điểm nhà quản trị
+- **Tên đề tài (EN)**: Internationalization and Firm Performance in Asian and Adjacent Economies: The Moderating Roles of Institutions, Digital Capability, and Top Manager Characteristics
 - **NCS**: Đỗ Thùy Hương (Mã NCS: P1323001)
 - **GVHD**: PGS.TS. Phan Anh Tú
 - **Đơn vị đào tạo**: Trường Kinh tế, Đại học Cần Thơ
@@ -12,7 +12,7 @@
 
 ## 1. Câu hỏi nghiên cứu trung tâm
 
-Quốc tế hóa ảnh hưởng đến hiệu quả hoạt động của doanh nghiệp ở các quốc gia châu Á như thế nào, và những điều kiện thể chế, năng lực số cùng đặc điểm nhà quản trị nào giải thích sự không đồng nhất (heterogeneity) của mối quan hệ này?
+Quốc tế hóa ảnh hưởng đến hiệu quả hoạt động của doanh nghiệp ở các quốc gia châu Á và Pacific như thế nào, và những điều kiện thể chế, năng lực số cùng đặc điểm nhà quản trị nào giải thích sự không đồng nhất (heterogeneity) của mối quan hệ này?
 
 Câu hỏi trên được phát triển trên cơ sở bằng chứng meta-analysis hiện có cho thấy tác động tổng hợp của quốc tế hóa lên firm performance là dương nhưng nhỏ và có mức dị biệt rất cao giữa các nghiên cứu (Bausch & Krist, 2007; Kirca et al., 2012; Marano et al., 2016; Wu et al., 2022). Điều này hàm ý rằng nghiên cứu không nên dừng ở việc xác nhận "có hay không có tác động", mà phải chuyển sang giải thích "trong điều kiện nào, cơ chế nào, và bối cảnh nào".
 
@@ -26,19 +26,19 @@ Một đóng góp lý thuyết đặc biệt là **tái định vị Uppsala mod
 
 ### 2.2 Tính mới về phương pháp
 
-Luận án kết hợp **meta-analytic synthesis** (cập nhật 1982–2026, mục tiêu ~172 effect sizes) với **multi-country empirical analysis** sử dụng dữ liệu của 25 nền kinh tế châu Á từ World Bank Enterprise Surveys. Thiết kế nghiên cứu mixed synthesis-empirical này là hiếm gặp trong literature IB về châu Á và cho phép đối thoại đồng thời giữa bằng chứng tổng hợp ở cấp literature và bằng chứng thực nghiệm trực tiếp ở cấp doanh nghiệp (Borenstein et al., 2009; Hunter & Schmidt, 2004).
+Luận án kết hợp **meta-analytic synthesis** (cập nhật 1982–2026, mục tiêu ~172 effect sizes) với **multi-country empirical analysis** sử dụng dữ liệu vi mô của **47 nền kinh tế châu Á và Pacific (101.035 doanh nghiệp · 107 cặp quốc gia × năm · giai đoạn 2009–2025)** từ World Bank Enterprise Surveys, kế thừa và mở rộng từ pool 17 nước châu Á mới nổi đã được tác giả công bố trước đó (Đỗ & Phan, 2026 — VEFR). Thiết kế nghiên cứu mixed synthesis-empirical này là hiếm gặp trong literature IB về châu Á và cho phép đối thoại đồng thời giữa bằng chứng tổng hợp ở cấp literature và bằng chứng thực nghiệm trực tiếp ở cấp doanh nghiệp (Borenstein et al., 2009; Hunter & Schmidt, 2004).
 
 ### 2.3 Tính mới về thực nghiệm
 
 Luận án cung cấp ba đóng góp thực nghiệm mới:
 
-- **Phân tách hai construct số**: technological capability và digital adoption được xử lý như hai construct riêng biệt, không đồng nhất về nội hàm hay cơ chế vận hành, khắc phục hạn chế của các nghiên cứu trước đây gộp chúng thành một FDCI (Bhandari et al., 2023).
-- **Temporal heterogeneity test**: kiểm định liệu cấu trúc phi tuyến của quan hệ I–P có ổn định giữa hai mốc 2012 và 2024 trong bối cảnh Trung Quốc (Xiao et al., 2013; Wu et al., 2022).
+- **Phân tách hai construct số**: technological capability (TCI) và digital adoption (DAI) được xử lý như hai construct riêng biệt, không đồng nhất về nội hàm hay cơ chế vận hành, khắc phục hạn chế của các nghiên cứu trước đây gộp chúng thành một FDCI (Bhandari et al., 2023).
+- **Temporal heterogeneity test**: kiểm định liệu cấu trúc phi tuyến của quan hệ I–P có ổn định giữa hai mốc 2012 và 2024 trong bối cảnh Trung Quốc, kế thừa bằng chứng cubic inverted-U (Đỗ & Phan, 2026 — JFAR; Xiao et al., 2013; Wu et al., 2022).
 - **Three-way moderation**: kiểm định tương tác giữa digital capability × institutional regime × top manager characteristics — cấu hình chưa được kiểm định tổng thể trong literature IB về châu Á.
 
 ### 2.4 Tính mới về bối cảnh
 
-Luận án tập trung vào **emerging Asia** với 25 nền kinh tế đa dạng về thể chế và mức phát triển số, là bối cảnh underrepresented trong các meta-analyses quốc tế trước đây (Marano et al., 2016; Wu et al., 2022; Arte & Larimo, 2022). Khu vực này đặc biệt phù hợp để kiểm định khung lý thuyết đa tầng vì institutional voids cao hơn OECD (Khanna & Palepu, 2010), đồng thời tốc độ chuyển đổi số của doanh nghiệp không đồng đều, tạo ra dataset lý tưởng để quan sát heterogeneity.
+Luận án tập trung vào **47 nền kinh tế châu Á và Pacific** với 6 sub-regime ICRV (Advanced innovation-driven, Advanced resource-driven, Upper-middle, Emerging, Frontier, Pacific SIDS), bao trùm phạm vi địa lý đa dạng nhất từng có cho khu vực — vượt xa 17 nước trong P1 (Đỗ & Phan, 2026 — VEFR) và underrepresented trong các meta-analyses quốc tế trước đây (Marano et al., 2016; Wu et al., 2022; Arte & Larimo, 2022). Khu vực này đặc biệt phù hợp để kiểm định khung lý thuyết đa tầng vì institutional voids cao hơn OECD (Khanna & Palepu, 2010), đồng thời tốc độ chuyển đổi số của doanh nghiệp không đồng đều, tạo ra dataset lý tưởng để quan sát heterogeneity. Bao gồm boundary case Pacific SIDS (6 nước đầy đủ) cho phép kiểm định "forced internationalization penalty" — một pattern cực đoan chưa được khai thác trong literature.
 
 ## 3. Đóng góp dự kiến
 
@@ -51,17 +51,19 @@ Luận án tập trung vào **emerging Asia** với 25 nền kinh tế đa dạn
 ### 3.2 Đóng góp thực nghiệm
 
 - Cập nhật bằng chứng meta-analytic của literature I–P đến 2026 với pool nghiên cứu mở rộng.
-- Bằng chứng cross-country trên 25 nền kinh tế châu Á — quy mô lớn nhất cho khu vực.
-- Bằng chứng về **digital shield effect**: công nghệ làm suy giảm tác động bất lợi của institutional obstacles đối với năng suất doanh nghiệp (Barney, 1991; Bhandari et al., 2023; North, 1990).
+- Bằng chứng cross-country trên **47 nền kinh tế châu Á và Pacific** — quy mô lớn nhất cho khu vực, mở rộng từ pool 17 nước trong Đỗ & Phan (2026 — VEFR) lên 47 nước/101.035 doanh nghiệp.
+- Bằng chứng về **digital shield effect**: công nghệ làm suy giảm tác động bất lợi của institutional obstacles đối với năng suất doanh nghiệp — pattern đã được nhận diện ở 17 nước châu Á mới nổi (Đỗ & Phan, 2026 — VEFR) và sẽ được kiểm định mở rộng trên 47 nước (Barney, 1991; Bhandari et al., 2023; North, 1990).
+- Bằng chứng phi tuyến cubic ở Trung Quốc với turning point ~47,8% FSTS (Đỗ & Phan, 2026 — JFAR) — làm baseline cho temporal heterogeneity test China 2012–2024.
 
 ### 3.3 Đóng góp phương pháp
 
 - **Measurement harmonization protocol** cho digital constructs xuyên các bối cảnh quốc gia, giúp bảo đảm tính so sánh của các kết quả thực nghiệm giữa các nghiên cứu theo quốc gia và nghiên cứu multi-country.
 - **Mixed synthesis-empirical design** kết hợp meta-analysis và multi-country analysis trong cùng một luận án, tăng sức mạnh đối thoại với literature quốc tế.
+- **Pipeline hòa hợp 3 thế hệ schema WBES** (PICS3 2009–2012, Standardized 2013–2017, BREADY/BEE 2018–2025) cho 47 nước × 107 country-years.
 
 ### 3.4 Đóng góp thực tiễn
 
-- **Đối với doanh nghiệp**: xác định ngưỡng tối ưu của internationalization (~47.8% FSTS theo bằng chứng China); gợi ý đầu tư vào digital capability như một cơ chế vượt qua institutional friction.
+- **Đối với doanh nghiệp**: xác định ngưỡng tối ưu của internationalization (~47,8% FSTS theo bằng chứng China JFAR 2026); gợi ý đầu tư vào digital capability như một cơ chế vượt qua institutional friction.
 - **Đối với nhà hoạch định chính sách**: ưu tiên cải cách thể chế song song với hỗ trợ chuyển đổi số doanh nghiệp để thu được lợi ích tổng hợp từ quốc tế hóa.
 - **Đối với nhà quản trị**: làm rõ vai trò của managerial experience và gender diversity trong leadership quốc tế, nhất là tại emerging Asia.
 
@@ -69,8 +71,8 @@ Luận án tập trung vào **emerging Asia** với 25 nền kinh tế đa dạn
 
 - **Đối tượng nghiên cứu**: mối quan hệ giữa quốc tế hóa và hiệu quả hoạt động của doanh nghiệp, cùng các yếu tố điều tiết thuộc ba tầng (thể chế, năng lực, quản trị) cộng với lớp digital.
 - **Đơn vị phân tích**: doanh nghiệp cấp vi mô (firm-level).
-- **Phạm vi không gian**: 25 nền kinh tế châu Á có dữ liệu WBES phù hợp; Nhật Bản hiện chưa có dữ liệu thực nghiệm trong khuôn khổ luận án nên không thuộc empirical scope.
-- **Phạm vi thời gian**: literature pool 1982–2026 cho meta-analysis; WBES waves tùy theo quốc gia, tập trung 2009–2024 cho phase thực nghiệm.
+- **Phạm vi không gian**: **47 nền kinh tế châu Á và Pacific** có dữ liệu WBES phù hợp, tổ chức theo 6 sub-regime ICRV (Advanced innovation-driven, Advanced resource-driven, Upper-middle, Emerging, Frontier, Pacific SIDS); Nhật Bản hiện chưa có dữ liệu thực nghiệm trong khuôn khổ luận án nên không thuộc empirical scope.
+- **Phạm vi thời gian**: literature pool 1982–2026 cho meta-analysis; **WBES 2009–2025** (16 năm × 14 mốc khảo sát, 107 cặp quốc gia × năm) cho phase thực nghiệm.
 
 ## 5. Nguồn dữ liệu và bản thảo nội bộ
 
@@ -78,13 +80,14 @@ Các bản thảo sau được sử dụng như **nguồn dữ liệu/bằng ch�
 
 | Mã | Vai trò trong luận án | Tình trạng |
 |---|---|---|
-| P1 | Thực trạng emerging Asia (đi vào Ch.2.4) | Đã công bố (VEFR 2026) |
-| P2 | Bằng chứng phi tuyến China (đi vào Ch.4.2) | Đã công bố (JFAR 2026) |
-| P3 Singapore | Bằng chứng country-level ASEAN benchmark (Ch.4.2) | Bản thảo đã viết |
-| P4 Vietnam | Bằng chứng country-level transitional economy (Ch.4.2) | Bản thảo đã viết |
-| P5 China 2012–2024 | Bằng chứng temporal heterogeneity (Ch.4.2) | Bản thảo đã viết |
-| P6 Meta-analysis update | Backbone tổng quan literature (Ch.4.1) | Sẽ viết tiếp |
-| P7 25-country capstone | Kết quả nghiên cứu chính (Ch.4.3) | Sẽ viết tiếp |
+| P1 (Đỗ & Phan, 2026 — VEFR) | Thực trạng emerging Asia 17 nước; digital shield effect (Ch.2.4, Ch.4.1 benchmark) | Đã công bố |
+| P2 (Đỗ & Phan, 2026 — JFAR) | Bằng chứng phi tuyến cubic China với turning point ~47,8% FSTS (Ch.4.2, Ch.4.5 robustness) | Đã công bố |
+| P3 Singapore | Bằng chứng country-level ASEAN benchmark với TCI + DAI (Ch.4.2) | Bản thảo đã viết |
+| P4 Vietnam | Bằng chứng country-level transitional economy với TCI + DAI (Ch.4.2) | Bản thảo đã viết |
+| P5 China 2012–2024 | Bằng chứng temporal heterogeneity (Ch.4.5) | Bản thảo đã viết |
+| P6 Meta-analysis update | Backbone tổng quan literature 1982–2026 (Ch.4.1) | Sẽ viết tiếp |
+| P7 47-country capstone | Kết quả nghiên cứu chính multi-country (Ch.4.3) | Sẽ viết tiếp |
+| P8 Pacific SIDS | Forced internationalization penalty boundary case (Ch.4.4) | Bản thảo REVISED v2 |
 
 Các công trình liên quan khác của tác giả (bài India tại IntechOpen 2025; bài Turkey; bài Poland) được tham chiếu như bằng chứng cho quá trình tích lũy nghiên cứu, không tích hợp làm cấu phần lập luận chính của luận án.
 
