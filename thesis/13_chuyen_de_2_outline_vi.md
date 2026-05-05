@@ -1,6 +1,7 @@
 # CHUYÊN ĐỀ TIẾN SĨ SỐ 2 — DÀN Ý CHI TIẾT
 
 > Căn cứ Quyết định số 4768/QĐ-ĐHCT ngày 15/10/2024 của Hiệu trưởng Trường Đại học Cần Thơ về việc giao chuyên đề và tiểu luận tổng quan tiến sĩ.
+> **Phiên bản 1.1 (cập nhật ngày 05/05/2026)**: Đồng bộ phạm vi với CĐ1 v2.5 — pool **47 nền kinh tế châu Á và Pacific** (101.035 doanh nghiệp, 107 country-years, 2009–2025); bổ sung citation P1 (Đỗ & Phan, 2026 — VEFR) tại §3.3, §5.5; thêm dòng P2 (Đỗ & Phan, 2026 — JFAR cubic) vào Bảng 4.2.
 
 ---
 
@@ -46,8 +47,8 @@ Cần Thơ, năm 2026
 
 ## TÓM TẮT (Tiếng Việt + English Abstract) — 2 trang
 
-- Mục tiêu, khung lý thuyết, mô hình thực nghiệm, dữ liệu, kế hoạch ước lượng, đóng góp về mô hình.
-- Từ khóa: quốc tế hóa; hiệu quả hoạt động kinh doanh; châu Á; mô hình phi tuyến; điều tiết; năng lực số; thể chế.
+- Mục tiêu, khung lý thuyết, mô hình thực nghiệm, dữ liệu (WBES 47 nước Asia + Pacific, 101.035 firms), kế hoạch ước lượng, đóng góp về mô hình.
+- Từ khóa: quốc tế hóa; hiệu quả hoạt động kinh doanh; châu Á và Pacific; mô hình phi tuyến; điều tiết; năng lực số; thể chế; ICRV.
 
 ---
 
@@ -55,16 +56,16 @@ Cần Thơ, năm 2026
 
 ### 1.1 Đặt vấn đề và bối cảnh
 - Quốc tế hóa (internationalization) là chiến lược then chốt nhưng đem lại hiệu quả không đồng nhất (Hennart, 2007; Verbeke & Brugman, 2009).
-- Châu Á: nơi diễn ra ít nhất 4 mô hình I→P khác nhau cùng lúc — linear, inverted-U, S-curve, forced penalty (Lu & Beamish, 2004; Contractor et al., 2003; Đỗ & Phan, 2026 — JFAR).
-- Sự xuất hiện của AI và digital infrastructure 2018–2024 làm thay đổi nền tảng "psychic distance" của Uppsala (Banalieva & Dhanaraj, 2019; Stallkamp & Schotter, 2021).
+- Châu Á: nơi diễn ra ít nhất 4 mô hình I→P khác nhau cùng lúc — linear, inverted-U, S-curve, forced penalty (Lu & Beamish, 2004; Contractor et al., 2003; Đỗ & Phan, 2026 — JFAR; Đỗ & Phan, 2026 — P8 SIDS manuscript).
+- Sự xuất hiện của AI và digital infrastructure 2018–2025 làm thay đổi nền tảng "psychic distance" của Uppsala (Banalieva & Dhanaraj, 2019; Stallkamp & Schotter, 2021); pattern "digital shield effect" được nhận diện trên 17 nước châu Á mới nổi (Đỗ & Phan, 2026 — VEFR).
 
 ### 1.2 Vấn đề nghiên cứu
 - Vì sao cùng một mức độ quốc tế hóa, doanh nghiệp ở Singapore và doanh nghiệp ở Bangladesh thu được hiệu quả khác nhau?
-- Các điều kiện thể chế, năng lực số, đặc điểm nhà quản trị giải thích heterogeneity ở mức nào?
-- Mô hình nào phù hợp để kiểm định đồng thời các giả thuyết phi tuyến + moderation trong bối cảnh dữ liệu WBES châu Á?
+- Các điều kiện thể chế (6 sub-regime ICRV), năng lực số (TCI vs DAI), đặc điểm nhà quản trị giải thích heterogeneity ở mức nào?
+- Mô hình nào phù hợp để kiểm định đồng thời các giả thuyết phi tuyến + moderation trong bối cảnh dữ liệu WBES châu Á và Pacific?
 
 ### 1.3 Mục tiêu chuyên đề
-- **Mục tiêu chung**: Xây dựng mô hình nghiên cứu lý thuyết và thực nghiệm về ảnh hưởng của quốc tế hóa đến hiệu quả doanh nghiệp châu Á, có khả năng kiểm định bằng dữ liệu WBES.
+- **Mục tiêu chung**: Xây dựng mô hình nghiên cứu lý thuyết và thực nghiệm về ảnh hưởng của quốc tế hóa đến hiệu quả doanh nghiệp châu Á và Pacific, có khả năng kiểm định bằng dữ liệu WBES 47 nước.
 - **Mục tiêu cụ thể**:
   1. Hệ thống hóa khung lý thuyết tích hợp 4 tầng + Digital Capability Lens.
   2. Lược khảo các mô hình I→P trên thế giới và châu Á.
@@ -74,15 +75,15 @@ Cần Thơ, năm 2026
   6. Khẳng định tính mới về mô hình.
 
 ### 1.4 Phạm vi và đối tượng
-- **Phạm vi không gian**: 25 nền kinh tế châu Á có dữ liệu WBES.
-- **Phạm vi thời gian**: 2007–2024.
-- **Đối tượng**: doanh nghiệp đang hoạt động đáp ứng tiêu chí WBES.
+- **Phạm vi không gian**: **47 nền kinh tế châu Á và Pacific** có dữ liệu WBES, tổ chức theo 6 sub-regime ICRV (đồng bộ với CĐ1 v2.5).
+- **Phạm vi thời gian**: **2009–2025** (14 mốc khảo sát, 107 country-years).
+- **Đối tượng**: doanh nghiệp đang hoạt động đáp ứng tiêu chí WBES (101.035 quan sát).
 - **Phạm vi nội dung**: mô hình hóa quan hệ I→P và các điều tiết.
 
 ### 1.5 Đóng góp dự kiến của chuyên đề
-- **Lý thuyết**: tích hợp 4 lý thuyết nền với Digital Capability Lens — chưa có khung tương đương cho châu Á.
+- **Lý thuyết**: tích hợp 4 lý thuyết nền với Digital Capability Lens — chưa có khung tương đương cho châu Á và Pacific.
 - **Mô hình**: tách bạch TCI vs DAI (non-overlapping), đề xuất mô hình ba chiều moderation M7.
-- **Phương pháp**: chiến lược nhận dạng kết hợp HC3 robust SE + multi-country fixed effects + nonlinear specifications.
+- **Phương pháp**: chiến lược nhận dạng kết hợp HC3 robust SE + multi-country fixed effects + nonlinear specifications cubic.
 - **Định hướng**: là xương sống cho Chương 2, 3 và mục 4.3–4.4 luận án.
 
 ### 1.6 Phương pháp tiếp cận
@@ -112,7 +113,7 @@ Cần Thơ, năm 2026
 - Thể chế chính thức (luật, hợp đồng) và phi chính thức (văn hóa, chuẩn mực).
 - "Institutional voids" ở emerging markets.
 - "Strategy tripod" (Peng, Wang & Jiang, 2008): industry – resources – institutions.
-- **Vai trò trong CĐ2**: giải thích heterogeneity xuyên quốc gia (institutional regime ICRV là biến điều tiết).
+- **Vai trò trong CĐ2**: giải thích heterogeneity xuyên quốc gia (institutional regime ICRV với 6 sub-groups là biến điều tiết).
 
 ### 2.4 Tầng 4 — Lý thuyết Upper Echelons (Hambrick & Mason, 1984; Hambrick, 2007)
 - Quyết định chiến lược phản ánh đặc điểm nhân khẩu học của top managers.
@@ -143,9 +144,9 @@ Cần Thơ, năm 2026
 ### 3.1 Năm dạng hàm đã được đề xuất
 1. **Linear** (Hsu & Boggs, 2003): I→P tuyến tính, dấu dương.
 2. **Inverted-U** (Hitt, Hoskisson & Kim, 1997; Gomes & Ramaswamy, 1999): tăng rồi giảm, có điểm tối ưu.
-3. **S-curve** (Lu & Beamish, 2004; Contractor et al., 2003): 3 giai đoạn — chi phí ban đầu, lợi ích quy mô, chi phí phối hợp quá mức.
+3. **S-curve / Cubic** (Lu & Beamish, 2004; Contractor et al., 2003; Đỗ & Phan, 2026 — JFAR): 3 giai đoạn — chi phí ban đầu, lợi ích quy mô, chi phí phối hợp quá mức; được xác nhận bằng cubic specification ở China với turning point ~47,8% FSTS.
 4. **M-curve** (Riahi-Belkaoui, 1998): 5 giai đoạn — biến thể của S-curve.
-5. **Forced penalty** (Glaum & Oesterle, 2007; Đỗ & Phan, 2026 — manuscript P8 SIDS): quốc tế hóa do bắt buộc, không phải chủ động → hiệu quả âm.
+5. **Forced penalty** (Glaum & Oesterle, 2007; Đỗ & Phan, 2026 — manuscript P8 SIDS): quốc tế hóa do bắt buộc, không phải chủ động → hiệu quả âm; xác nhận trên 6 nước Pacific SIDS.
 
 ### 3.2 Bằng chứng meta-analysis
 - **Bausch & Krist (2007)**: k=87, hiệu ứng tổng dương yếu, dị biệt mạnh theo biến điều tiết.
@@ -154,8 +155,9 @@ Cần Thơ, năm 2026
 - **Wu, Wood & Khan (2022)**: hiệu ứng giảm dần qua thời gian; vai trò emerging-market firms tăng.
 - **Arte & Larimo (2022)**: vai trò product diversification.
 
-### 3.3 Bằng chứng riêng cho châu Á
-- **Trung Quốc**: Xiao et al. (2013) — catch-up bị giới hạn; Chen & Tan (2012) — vai trò chính phủ; Li et al. (2022) — digitalization moderation; Liu & Zhang (2024) — phi tuyến.
+### 3.3 Bằng chứng riêng cho châu Á và Pacific
+- **Châu Á mở rộng (17 nước → 47 nước)**: Đỗ & Phan (2026 — VEFR) — pattern "digital shield effect" (technology adoption làm suy giảm tác động bất lợi của institutional obstacles) nhận diện trên 17 nước châu Á mới nổi với ~40.633 firms; CĐ1 v2.5 mở rộng pool lên 47 nước/101.035 firms làm dữ liệu kiểm định cho luận án.
+- **Trung Quốc**: Xiao et al. (2013) — catch-up bị giới hạn; Chen & Tan (2012) — vai trò chính phủ; Li et al. (2022) — digitalization moderation; Liu & Zhang (2024) — phi tuyến; Đỗ & Phan (2026 — JFAR) — cubic inverted-U với turning point ~47,8% FSTS.
 - **Đông Nam Á**: Yiu & Lau (2008) — Singapore; Ang (2008) — Malaysia.
 - **Ấn Độ**: Contractor et al. (2007) — S-curve được xác nhận; Bhandari et al. (2023) — institutional voids.
 - **Việt Nam**: Tran (2014); Tran & Pham (2024).
@@ -166,11 +168,11 @@ Cần Thơ, năm 2026
 - **Hình 3.1**: Sơ đồ tiến hóa các mô hình từ 1980 → 2025.
 
 ### 3.5 Khoảng trống mô hình
-- Ít nghiên cứu kiểm định **đồng thời** non-linear + moderation trên dữ liệu nhiều quốc gia châu Á.
+- Ít nghiên cứu kiểm định **đồng thời** non-linear + moderation trên dữ liệu nhiều quốc gia châu Á và Pacific (47 nước).
 - Ít tách bạch TCI vs DAI.
-- Ít so sánh xuyên thế hệ schema WBES.
+- Ít so sánh xuyên thế hệ schema WBES (PICS3, Standardized, BREADY/BEE).
 
-**Citation chính**: Ang (2008); Arte & Larimo (2022); Bausch & Krist (2007); Bhandari et al. (2023); Chen & Tan (2012); Contractor et al. (2003, 2007); Đỗ & Phan (2026 a–e); Glaum & Oesterle (2007); Gomes & Ramaswamy (1999); Hitt, Hoskisson & Kim (1997); Hsu & Boggs (2003); Kirca et al. (2012); Li et al. (2022); Liu & Zhang (2024); Lu & Beamish (2004); Marano et al. (2016); Riahi-Belkaoui (1998); Tran (2014); Tran & Pham (2024); Wu, Wood & Khan (2022); Xiao et al. (2013); Yiu & Lau (2008).
+**Citation chính**: Ang (2008); Arte & Larimo (2022); Bausch & Krist (2007); Bhandari et al. (2023); Chen & Tan (2012); Contractor et al. (2003, 2007); Đỗ & Phan (2026 — VEFR; 2026 — JFAR; 2026 — P8 SIDS manuscript; 2026 a–e); Glaum & Oesterle (2007); Gomes & Ramaswamy (1999); Hitt, Hoskisson & Kim (1997); Hsu & Boggs (2003); Kirca et al. (2012); Li et al. (2022); Liu & Zhang (2024); Lu & Beamish (2004); Marano et al. (2016); Riahi-Belkaoui (1998); Tran (2014); Tran & Pham (2024); Wu, Wood & Khan (2022); Xiao et al. (2013); Yiu & Lau (2008).
 
 ---
 
@@ -184,7 +186,7 @@ Cần Thơ, năm 2026
     - M1: TCI (năng lực công nghệ).
     - M2: DAI (mức độ áp dụng số).
     - M3: Top manager characteristics.
-    - M4: Institutional regime (ICRV 5 nhóm).
+    - M4: Institutional regime (ICRV 6 sub-groups).
   - **Biến kiểm soát**: size, age, foreign ownership, sector, country, year.
 
 ### 4.2 Logic tổng hợp giữa các tầng lý thuyết và biến số
@@ -196,16 +198,24 @@ Cần Thơ, năm 2026
 - **TCI**: Index gồm R&D, máy nhập khẩu, ISO certification (Hsieh & Klenow, 2009; Cusolito & Maloney, 2018).
 - **DAI**: Index gồm website, e-commerce, ERP, đám mây (Banalieva & Dhanaraj, 2019; Verhoef et al., 2021).
 - **Top manager**: tuổi, giáo dục, kinh nghiệm, giới tính (Hambrick & Mason, 1984).
-- **Institutional regime**: ICRV 5 nhóm dựa trên WGI Rule of Law quartiles + SIDS (Kaufmann et al., 2011).
+- **Institutional regime**: ICRV 6 sub-groups dựa trên WGI Rule of Law quartiles + Advanced sub-grouping (innovation/resource) + SIDS (Kaufmann et al., 2011).
 
 ### 4.4 Phân biệt với các khung hiện có
-- **Bảng 4.2**: So sánh khung CĐ2 với:
-  - Marano et al. (2016) — chỉ moderation thể chế.
-  - Banalieva & Dhanaraj (2019) — chỉ digital lens.
-  - Wu et al. (2022) — chỉ meta theo thời gian.
-- Khung CĐ2 tích hợp 4 tầng + Digital lens cùng lúc — đó là điểm mới.
 
-**Citation chính**: Banalieva & Dhanaraj (2019); Bausch & Krist (2007); Cusolito & Maloney (2018); Hambrick & Mason (1984); Hsieh & Klenow (2009); Hsu et al. (2013); Kaufmann et al. (2011); Marano et al. (2016); Verhoef et al. (2021); Wu et al. (2022).
+**Bảng 4.2**. *So sánh khung CĐ2 với các tham chiếu hiện có.*
+
+| Khung tham chiếu | Phạm vi | Đặc điểm | Khoảng trống |
+|---|---|---|---|
+| Marano et al. (2016) | meta 359 studies | Chỉ moderation thể chế | Không có digital lens; không có Asia subgroup |
+| Banalieva & Dhanaraj (2019) | conceptual | Chỉ digital lens | Không có 4-tier integration; chưa kiểm định empirical |
+| Wu et al. (2022) | meta 359 studies | Chỉ meta theo thời gian | Không tách TCI vs DAI |
+| **Đỗ & Phan (2026 — VEFR)** | 17 nước châu Á mới nổi (n≈40.633) | Digital shield effect | Chưa mở rộng sang Advanced + SIDS; chưa moderation đầy đủ |
+| **Đỗ & Phan (2026 — JFAR)** | China cubic, n=4.889 | Cubic inverted-U turning point ~47,8% FSTS | Chỉ China; chưa cross-country |
+| **CĐ2 (khung mới)** | 47 nước châu Á + Pacific (n=101.035) | 4 tầng + Digital lens; H1–H6; M0–M7; 6 sub-regime ICRV | Là khung tích hợp đầu tiên cho khu vực |
+
+Khung CĐ2 tích hợp 4 tầng + Digital lens cùng lúc, với pool 47 nước/101.035 firms — đó là điểm mới so với tất cả tham chiếu trên.
+
+**Citation chính**: Banalieva & Dhanaraj (2019); Bausch & Krist (2007); Cusolito & Maloney (2018); Đỗ & Phan (2026 — VEFR; 2026 — JFAR); Hambrick & Mason (1984); Hsieh & Klenow (2009); Hsu et al. (2013); Kaufmann et al. (2011); Marano et al. (2016); Verhoef et al. (2021); Wu et al. (2022).
 
 ---
 
@@ -213,10 +223,10 @@ Cần Thơ, năm 2026
 
 > Mỗi giả thuyết ~1,2–1,5 trang: lập luận lý thuyết + bằng chứng thực nghiệm + dấu kỳ vọng + biến đo lường.
 
-### 5.1 H1 — Phi tuyến (S-curve)
-- **Phát biểu**: Quan hệ giữa quốc tế hóa và hiệu quả doanh nghiệp ở châu Á có dạng phi tuyến S-curve (3 đoạn).
-- **Lập luận**: Lu & Beamish (2004); Contractor et al. (2003) — dòng học thuật chủ đạo; châu Á có doanh nghiệp ở cả 3 đoạn cùng lúc.
-- **Bằng chứng**: Đỗ & Phan (2026 — JFAR đã đăng) bằng chứng phi tuyến cubic ở Trung Quốc.
+### 5.1 H1 — Phi tuyến (S-curve / Cubic)
+- **Phát biểu**: Quan hệ giữa quốc tế hóa và hiệu quả doanh nghiệp ở châu Á và Pacific có dạng phi tuyến S-curve / cubic (3 đoạn).
+- **Lập luận**: Lu & Beamish (2004); Contractor et al. (2003) — dòng học thuật chủ đạo; châu Á + Pacific có doanh nghiệp ở cả 3 đoạn cùng lúc.
+- **Bằng chứng**: Đỗ & Phan (2026 — JFAR đã đăng) bằng chứng phi tuyến cubic ở Trung Quốc với turning point ~47,8% FSTS.
 - **Đặc tả**: cubic specification: P = β1·I + β2·I² + β3·I³ + controls.
 
 ### 5.2 H2 — Năng lực công nghệ TCI điều tiết tích cực
@@ -238,22 +248,22 @@ Cần Thơ, năm 2026
 - **Đặc tả**: tương tác I × Manager; dấu dự kiến (+) cho experience; (+/–) cho gender.
 
 ### 5.5 H5 — Thể chế nội địa điều tiết — gradient theo ICRV
-- **Phát biểu**: Sức mạnh quan hệ I→P có gradient theo regime thể chế: regime I (advanced) hiệu ứng dương ổn định → regime V (SIDS) hiệu ứng âm hoặc đảo dấu (forced penalty).
+- **Phát biểu**: Sức mạnh quan hệ I→P có gradient theo regime thể chế: regime Advanced innovation hiệu ứng dương ổn định → regime SIDS hiệu ứng âm hoặc đảo dấu (forced penalty).
 - **Lập luận**: Institutional theory (North, 1990; Peng, 2003); Marano et al. (2016).
-- **Bằng chứng**: Marano et al. (2016) — meta cross-country; Đỗ & Phan (2026 — P8 SIDS manuscript) bằng chứng forced penalty.
-- **Đặc tả**: tương tác I × Regime; 5 nhóm so sánh.
+- **Bằng chứng**: Marano et al. (2016) — meta cross-country; Đỗ & Phan (2026 — VEFR) — bằng chứng "digital shield effect" trên 17 nước châu Á mới nổi (technology adoption làm giảm tác động bất lợi của institutional obstacles); Đỗ & Phan (2026 — P8 SIDS manuscript) bằng chứng forced penalty ở 6 nước Pacific.
+- **Đặc tả**: tương tác I × Regime (6 sub-groups ICRV).
 
 ### 5.6 H6 — Heterogeneity theo thời gian (temporal)
-- **Phát biểu**: Sức mạnh và hình dạng quan hệ I→P thay đổi theo thời gian — đặc biệt giai đoạn 2018–2024 (kỷ nguyên số) khác với 2007–2012.
+- **Phát biểu**: Sức mạnh và hình dạng quan hệ I→P thay đổi theo thời gian — đặc biệt giai đoạn 2018–2025 (kỷ nguyên số + AI) khác với 2009–2012.
 - **Lập luận**: Banalieva & Dhanaraj (2019) — tái định vị Uppsala cho kỷ nguyên số.
-- **Bằng chứng**: Wu, Wood & Khan (2022) — meta cho thấy hiệu ứng giảm dần; Đỗ & Phan (2026 — P5 manuscript) — so sánh China 2012 vs 2024.
-- **Đặc tả**: tương tác I × Year-bucket (2007–2012, 2013–2017, 2018–2024).
+- **Bằng chứng**: Wu, Wood & Khan (2022) — meta cho thấy hiệu ứng giảm dần; Đỗ & Phan (2026 — JFAR) — baseline cubic China 2012; Đỗ & Phan (2026 — P5 manuscript) — so sánh China 2012 vs 2024.
+- **Đặc tả**: tương tác I × Year-bucket (2009–2012, 2013–2017, 2018–2025).
 
 ### 5.7 Tổng hợp giả thuyết
 - **Bảng 5.1**: Ma trận giả thuyết × biến × dấu dự kiến × tham chiếu lý thuyết.
 - **Hình 5.1**: Sơ đồ giả thuyết trên khung khái niệm.
 
-**Citation chính**: Banalieva & Dhanaraj (2019); Barney (1991); Cannella, Park & Lee (2008); Cohen & Levinthal (1990); Contractor et al. (2003); Đỗ & Phan (2026 a–e, P8 manuscript); Hambrick (2007); Hambrick & Mason (1984); Khanna & Palepu (2010); Li et al. (2022); Lu & Beamish (2004); Marano et al. (2016); Nielsen & Nielsen (2011); North (1990); Peng (2003); Stallkamp & Schotter (2021); Teece, Pisano & Shuen (1997); Verhoef et al. (2021); Wu, Wood & Khan (2022); Yang et al. (2025).
+**Citation chính**: Banalieva & Dhanaraj (2019); Barney (1991); Cannella, Park & Lee (2008); Cohen & Levinthal (1990); Contractor et al. (2003); Đỗ & Phan (2026 — VEFR; 2026 — JFAR; 2026 — P5 manuscript; 2026 — P8 manuscript; 2026 a–e); Hambrick (2007); Hambrick & Mason (1984); Khanna & Palepu (2010); Li et al. (2022); Lu & Beamish (2004); Marano et al. (2016); Nielsen & Nielsen (2011); North (1990); Peng (2003); Stallkamp & Schotter (2021); Teece, Pisano & Shuen (1997); Verhoef et al. (2021); Wu, Wood & Khan (2022); Yang et al. (2025).
 
 ---
 
@@ -264,17 +274,17 @@ Cần Thơ, năm 2026
 |---|---|---|
 | **M0** | P = α + β·I + Γ·X + ε | Linear baseline |
 | **M1** | M0 + β2·I² | Inverted-U (H1 partial) |
-| **M2** | M1 + β3·I³ | S-curve (H1 full) |
+| **M2** | M1 + β3·I³ | S-curve / Cubic (H1 full, baseline JFAR 2026) |
 | **M3** | M2 + γ1·TCI + δ1·(I×TCI) | H2 |
 | **M4** | M3 + γ2·DAI + δ2·(I×DAI) | H3 (kiểm định non-overlap với M3) |
 | **M5** | M4 + γ3·Manager + δ3·(I×Manager) | H4 |
-| **M6** | M5 + γ4·Regime + δ4·(I×Regime) | H5 |
+| **M6** | M5 + γ4·Regime + δ4·(I×Regime) | H5 (6 sub-groups ICRV) |
 | **M7** | M6 + δ5·(I×TCI×DAI) | Three-way moderation (capstone) |
 
 > Ghi chú: X gồm size, age, foreign ownership, sector dummy, country FE, year FE.
 
 ### 6.2 Đặc tả phương trình chi tiết
-- **M2 (S-curve)**: 
+- **M2 (S-curve / Cubic)**: 
   $$P_{ict} = \alpha + \beta_1 I_{ict} + \beta_2 I^2_{ict} + \beta_3 I^3_{ict} + \Gamma X_{ict} + \mu_c + \tau_t + \epsilon_{ict}$$
 - **M7 (capstone)**:
   $$P_{ict} = \alpha + \beta_1 I + \beta_2 I^2 + \beta_3 I^3 + \gamma_1 TCI + \gamma_2 DAI + \gamma_3 Manager + \gamma_4 Regime + \delta_1 (I \times TCI) + \delta_2 (I \times DAI) + \delta_3 (I \times Manager) + \delta_4 (I \times Regime) + \delta_5 (I \times TCI \times DAI) + \Gamma X + \mu_c + \tau_t + \epsilon$$
@@ -301,14 +311,14 @@ Cần Thơ, năm 2026
 ## CHƯƠNG 7 — THIẾT KẾ DỮ LIỆU VÀ NHẬN DẠNG (4–5 trang)
 
 ### 7.1 Nguồn dữ liệu
-- WBES 25 nền kinh tế châu Á, 16 đợt upload đã chuẩn bị (xem `thesis/08_p7_data_harmonization_protocol_vi.md`).
-- WGI Rule of Law (Kaufmann et al., 2011) — tạo ICRV regime.
+- WBES **47 nền kinh tế châu Á và Pacific**, **107 country-years** trong giai đoạn **2009–2025** (xem `thesis/08_p7_data_harmonization_protocol_vi.md` cho pipeline; CĐ1 v2.5 đã hoàn thiện pool 101.035 firms).
+- WGI Rule of Law (Kaufmann et al., 2011) — tạo ICRV regime với 6 sub-groups.
 - World Bank Income Classification — phân nhóm thu nhập.
 
-### 7.2 Mẫu nghiên cứu dự kiến
-- ~36 country-units × ~150–500 doanh nghiệp/đơn vị × 8 ngành.
-- Tổng quan sát ước tính: 25.000–35.000 doanh nghiệp sau lọc.
-- Tỷ lệ doanh nghiệp xuất khẩu ~20–30%.
+### 7.2 Mẫu nghiên cứu
+- **47 quốc gia** × **107 country-years** × **101.035 doanh nghiệp** sau hòa hợp 3 thế hệ schema WBES (PICS3 2009–2012, Standardized 2013–2017, BREADY/BEE 2018–2025).
+- Phân bố theo 6 sub-regime ICRV: Advanced innovation 4.220; Advanced resource 1.932; Upper-middle 16.693; Emerging 47.803; Frontier 28.678; Pacific SIDS 1.221.
+- Tỷ lệ doanh nghiệp xuất khẩu trung bình ~16–23% theo regime.
 
 ### 7.3 Đo lường biến
 - **P chính**: log(sales/employee), tính bằng doanh thu PPP USD chia số lao động.
@@ -318,24 +328,24 @@ Cần Thơ, năm 2026
 - **TCI**: composite từ {R&D dummy, imported machinery, ISO certification}.
 - **DAI**: composite từ {website, e-commerce, ERP, cloud}.
 - **Top manager**: experience years, education level, gender, foreign experience dummy.
-- **Regime ICRV**: 5 nhóm dựa trên WGI Rule of Law quartile + Pacific SIDS.
+- **Regime ICRV**: 6 sub-groups dựa trên WGI Rule of Law quartile + Advanced sub-grouping (innovation vs resource) + Pacific SIDS.
 
 ### 7.4 Hòa hợp dữ liệu xuyên thế hệ schema
-- 3 thế hệ schema (2007–2012, 2013–2017, 2018–2024) — không trùng tên biến hoàn toàn.
+- 3 thế hệ schema (2009–2012, 2013–2017, 2018–2025) — không trùng tên biến hoàn toàn.
 - Crosswalk theo `thesis/08_p7_data_harmonization_protocol_vi.md`.
 - Imputation cho missing — chỉ cho biến TCI/DAI (multiple imputation theo Rubin, 1987).
-- Lọc outlier: log-transform + winsorize 1% và 99%.
+- Lọc outlier: log-transform + winsorize 1% và 99% trong country-year.
 
 ### 7.5 Chiến lược nhận dạng (identification strategy)
 - **Vấn đề endogeneity**: doanh nghiệp tự chọn quốc tế hóa (self-selection) → bias.
 - **Giải pháp tầng 1**: Country × year fixed effects loại unobserved.
 - **Giải pháp tầng 2**: kiểm soát rộng (firm controls + sector × country × year FE nếu khả thi).
 - **Giải pháp tầng 3**: kiểm tra với IV-discussion — proposed instruments: distance to nearest port (Bao et al., 2017); industry export propensity (Aw, Chung & Roberts, 2000) — chỉ thảo luận, KHÔNG bắt buộc thực thi vì WBES không có sẵn.
-- **Giải pháp tầng 4**: subsample replication (theo nhóm thu nhập, theo regime ICRV).
+- **Giải pháp tầng 4**: subsample replication (theo nhóm thu nhập, theo 6 sub-regime ICRV).
 
 ### 7.6 Power analysis
-- Với n=25.000, hiệu ứng cỡ trung bình (f² = 0.02), power > 0.99.
-- Với three-way interaction (M7), n cần thiết ≥ 5.000 — đạt được.
+- Với n=101.035, hiệu ứng cỡ trung bình (f² = 0.02), power > 0.99.
+- Với three-way interaction (M7), n cần thiết ≥ 5.000 — đạt được dễ dàng.
 
 **Citation chính**: Aw, Chung & Roberts (2000); Bao et al. (2017); Kaufmann et al. (2011); Long & Ervin (2000); Rubin (1987); Wooldridge (2010); World Bank (n.d.).
 
@@ -351,7 +361,7 @@ Cần Thơ, năm 2026
 ### 8.2 Robustness về mẫu
 - Loại doanh nghiệp Nhà nước (SOE) — kiểm định lại.
 - Chỉ doanh nghiệp >10 lao động — kiểm định lại.
-- Subsample theo nhóm thu nhập (advanced/upper-middle/emerging/frontier).
+- Subsample theo 6 sub-regime ICRV (Advanced innovation/resource/Upper-middle/Emerging/Frontier/SIDS).
 
 ### 8.3 Robustness về phương pháp
 - HC3 SE (chính); HC1; cluster theo country × industry; bootstrap 1000 lần.
@@ -367,7 +377,7 @@ Cần Thơ, năm 2026
 - Thay biến độc lập bằng noise — kiểm chứng hệ số phải gần 0.
 
 ### 8.6 Nhạy cảm thiết kế
-- Thay đổi cách định nghĩa regime ICRV.
+- Thay đổi cách định nghĩa regime ICRV (5 vs 6 sub-groups).
 - Thay đổi thời điểm cắt giai đoạn temporal.
 
 **Citation chính**: Long & Ervin (2000); Wooldridge (2010).
@@ -377,12 +387,12 @@ Cần Thơ, năm 2026
 ## CHƯƠNG 9 — ĐÓNG GÓP VỀ MÔ HÌNH VÀ KẾT LUẬN (3–4 trang)
 
 ### 9.1 Đóng góp về lý thuyết
-- Tích hợp 4 tầng + Digital Capability Lens — chưa có khung tương đương cho châu Á.
+- Tích hợp 4 tầng + Digital Capability Lens — chưa có khung tương đương cho châu Á và Pacific.
 - Tách bạch TCI vs DAI — đề xuất quan trọng so với khung composite FDCI trước đây.
 
 ### 9.2 Đóng góp về mô hình
 - Mô hình M7 ba chiều (I × TCI × DAI) — lần đầu kiểm định đồng thời.
-- Thêm tầng moderation theo institutional regime ICRV — gradient 5 nhóm.
+- Thêm tầng moderation theo institutional regime ICRV — gradient 6 sub-groups.
 - So sánh xuyên thế hệ schema — temporal heterogeneity (H6).
 
 ### 9.3 Đóng góp về phương pháp
@@ -397,13 +407,13 @@ Cần Thơ, năm 2026
 - IV không sẵn có trong WBES → IV-discussion chỉ ở mức gợi ý.
 
 ### 9.5 Định hướng phát triển
-- CĐ2 là khung cho mục 4.3, 4.4 luận án (kết quả thực nghiệm 25-country).
-- Hoàn thiện manuscript P5 (China 2012–2024), P7 (25-country capstone) dựa trên mô hình này.
-- Kết hợp với CĐ1 để có bằng chứng mô tả + bằng chứng kiểm định.
+- CĐ2 là khung cho mục 4.3, 4.4 luận án (kết quả thực nghiệm 47 nước).
+- Hoàn thiện manuscript P5 (China 2012–2024), P7 (47-country capstone) dựa trên mô hình này.
+- Kết hợp với CĐ1 v2.5 (47 nước, 101.035 firms) để có bằng chứng mô tả + bằng chứng kiểm định.
 
 ### 9.6 Kết luận
-- CĐ2 thiết lập đầy đủ khung lý thuyết, hệ giả thuyết, đặc tả mô hình, chiến lược dữ liệu cho nghiên cứu I→P ở châu Á.
-- Mô hình có đủ nền tảng học thuật và khả năng kiểm định trên dữ liệu thực tế WBES.
+- CĐ2 thiết lập đầy đủ khung lý thuyết, hệ giả thuyết, đặc tả mô hình, chiến lược dữ liệu cho nghiên cứu I→P ở châu Á và Pacific.
+- Mô hình có đủ nền tảng học thuật và khả năng kiểm định trên dữ liệu thực tế WBES 47 nước.
 
 ---
 
@@ -425,7 +435,10 @@ Cần Thơ, năm 2026
 - Contractor, F. J., Kundu, S. K., & Hsu, C. C. (2003). A three-stage theory of international expansion. *Journal of International Business Studies, 34*(1), 5–18.
 - Contractor, F. J., Kumar, V., & Kundu, S. K. (2007). Nature of the relationship between international expansion and performance: The case of emerging market firms. *Journal of World Business, 42*(4), 401–417.
 - Cusolito, A. P., & Maloney, W. F. (2018). *Productivity revisited: Shifting paradigms in analysis and policy*. World Bank.
-- Đỗ, T. H., & Phan, A. T. (2026 a–e, P8 manuscript). Internationalization and performance papers in Asian and Pacific firms.
+- Đỗ, T. H., & Phan, A. T. (2026 — VEFR). Internationalization, digital capability and firm performance in 17 emerging Asian economies. *Vietnam Economic and Financial Review*.
+- Đỗ, T. H., & Phan, A. T. (2026 — JFAR). Nonlinear cubic relationship between internationalization and firm performance: Evidence from China SMEs. *Journal of Finance and Accounting Research*.
+- Đỗ, T. H., & Phan, A. T. (2026 — P5 manuscript). China temporal heterogeneity 2012–2024.
+- Đỗ, T. H., & Phan, A. T. (2026 — P8 manuscript). Forced internationalization penalty in 6 Pacific SIDS.
 - Glaum, M., & Oesterle, M. J. (2007). 40 years of research on internationalization and firm performance: More questions than answers? *Management International Review, 47*(3), 307–317.
 - Gomes, L., & Ramaswamy, K. (1999). An empirical examination of the form of the relationship between multinationality and performance. *Journal of International Business Studies, 30*(1), 173–187.
 - Greene, W. H. (2018). *Econometric analysis* (8th ed.). Pearson.
@@ -475,7 +488,7 @@ Cần Thơ, năm 2026
 - **B.** Sơ đồ mô hình M0–M7.
 - **C.** Bảng giả thuyết H1–H6 đầy đủ.
 - **D.** Bộ mã Stata mẫu cho M2 và M7 (`CD2_models.do`).
-- **E.** Bảng crosswalk schema WBES rút gọn.
+- **E.** Bảng crosswalk schema WBES rút gọn (3 thế hệ: PICS3, Standardized, BREADY/BEE).
 - **F.** Power analysis chi tiết.
 - **G.** So sánh khung CĐ2 với 4 khung tham chiếu khác.
 
@@ -512,11 +525,11 @@ Cần Thơ, năm 2026
 
 | Tài liệu | Trọng tâm | Đầu ra ánh xạ vào luận án |
 |---|---|---|
-| **CĐ1** (TS. Nguyễn Minh Cảnh) | Mô tả thực trạng | Ch.1.1, Ch.2.4, Ch.4.0 |
-| **CĐ2** (PGS.TS. Phan Anh Tú) | Xây mô hình + giả thuyết | Ch.2 (full), Ch.3 (full), Ch.4.3–4.4 |
+| **CĐ1 v2.5** (TS. Nguyễn Minh Cảnh) | Mô tả thực trạng 47 nước/101.035 firms | Ch.1.1, Ch.2.4, Ch.4.0 |
+| **CĐ2 v1.1** (PGS.TS. Phan Anh Tú) | Xây mô hình + giả thuyết cho 47 nước | Ch.2 (full), Ch.3 (full), Ch.4.3–4.4 |
 | **TLTQ** (PGS.TS. Phan Anh Tú) | Tổng quan tài liệu | Ch.2.1–2.3 |
 | **Luận án** | Tổng hợp + kiểm định toàn diện | 5 chương đầy đủ |
 
 ---
 
-*Phiên bản 1.0 — soạn ngày 04/05/2026. NCS: Đỗ Thùy Hương. HD chuyên đề: PGS.TS. Phan Anh Tú.*
+*Phiên bản 1.1 — cập nhật ngày 05/05/2026 (đồng bộ với CĐ1 v2.5: 47 nước, 101.035 firms, 107 country-years; bổ sung citation P1 VEFR và P2 JFAR). NCS: Đỗ Thùy Hương. HD chuyên đề: PGS.TS. Phan Anh Tú.*
