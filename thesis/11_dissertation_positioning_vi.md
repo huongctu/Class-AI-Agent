@@ -119,9 +119,9 @@ Tông luận này đối chiếu luận án với các công trình nghiên cứ
 | Sample | 571 USA manufacturing firms | 25–36 countries (WBES Asian + Pacific) |
 | Method | Single country panel | Multi-country pooled |
 | Theory | Resource orchestration + new OLI | Multi-tier + Forced Penalty boundary |
-| Digital | FDCI composite | **TCI + DAI riêng biệt** (cleaner construct) |
+| Digital | Digital capability composite (resource-orchestration) | **TCI + DAI riêng biệt** theo Bharadwaj et al. (2013), Verhoef et al. (2021), Coltman et al. (2008) |
 
-**Điểm khác biệt**: Bhandari single-country USA + FDCI composite; NCS **multi-country emerging** + **TCI/DAI separated** (theoretically stronger).
+**Điểm khác biệt**: Bhandari single-country USA, gộp digital capability theo resource-orchestration logic; NCS **multi-country emerging** + **TCI/DAI separated** (kế thừa Bharadwaj 2013, Verhoef 2021, Cohen & Levinthal 1990, Lall 1992) — theoretically stronger.
 
 ## 2.6 Chen & Meng (2022) — *Managerial and Decision Economics*
 
@@ -213,7 +213,7 @@ Tìm trong cơ sở dữ liệu Luận án CTU, NEU, UEH, Foreign Trade Universi
 | **# papers in program** | 1 | 1 | 1 | 1 | 1 | 4 | 1–3 | **8** |
 | **# countries** | 32 | Multi-EMNE | Multi | 1 (US) | 1 (Colombia) | 1 (Japan) | 1 (VN) | **25–36** |
 | **Pacific SIDS coverage** | Không | Không | Không | Không | Không | Không | Không | **8 Pacific countries** |
-| **TCI/DAI separation** | n/a | n/a | n/a | FDCI composite | n/a | n/a | n/a | **Yes — separated** |
+| **TCI/DAI separation** | n/a | n/a | n/a | Digital capability composite | n/a | n/a | n/a | **Yes — separated (Bharadwaj 2013; Verhoef 2021; Coltman 2008)** |
 | **Institutional gradient** | Yếu | Yếu | Yếu | Không | Một biến | Không | Không | **Full Regime I→V** |
 | **Boundary condition test** | Không | Không | Không | Không | Không | Không | Không | **Forced Penalty** |
 | **Multi-method** | Single (meta) | Single (meta) | Single (meta) | Single | Single | Single (panel) | Single | **Mixed (meta + empirical + boundary)** |
@@ -232,7 +232,7 @@ Mở bằng phenomenon-based pitch:
 3 contributions chu0103a từng có trong literature:
 
 1. **Theoretical**: Forced Internationalization Penalty là named contribution đầu tiên cho boundary case I–P
-2. **Methodological**: TCI/DAI separation (không FDCI composite) đảm bảo construct purity
+2. **Methodological**: TCI/DAI separation (kế thừa Bharadwaj et al. 2013, Verhoef et al. 2021, Cohen & Levinthal 1990, Lall 1992; thỏa 4 tiêu chí Coltman et al. 2008) đảm bảo construct purity
 3. **Empirical**: First multi-country evidence cho Pacific SIDS WBES (1,745 papers, 0 covers Pacific I–P)
 
 ## 7.3 "Vì sao chu0103u yếu vu0102i việc có 8 papers"
@@ -266,9 +266,9 @@ Potential **2027 graduation timeline**:
 
 **Answer**: WBES không phu1ea3i panel theo cùng doanh nghu1ec7p (là repeated cross-sections). Tu0103ng đểng bảo nhu1ea5n cho NCS dissertation: Lu nên có panel future work tu1ea1i 4 countries có 2+ waves (Cambodia, India, Bangladesh, Pakistan, etc.).
 
-## 8.3 GVHD có thể hỏi: "Vì sao bỏ P7 FDCI?"
+## 8.3 GVHD có thể hỏi: "Vì sao tách bạch TCI và DAI thay vì gộp một composite digital duy nhất?"
 
-**Answer**: FDCI composite có Cronbach alpha = 0.23 (rl ot reliability), và theoretically conflict với P3-P5 đã dyụng TCI/DAI separated. Đu1ec3 đu1eb3m bảo cumulative thesis coherence, NCS bu1ed5 P7 FDCI và dyụng Asian capstone với TCI+DAI × institutional × top manager.
+**Answer**: Phân tách dựa trên 5 nguồn IB chính thống: (i) Bharadwaj et al. (2013, MIS Quarterly) phân biệt IT capability với digital business strategy; (ii) Verhoef et al. (2021, JBR) phân tầng 3 cấp digitization → digitalization → digital transformation; (iii) Cohen & Levinthal (1990, ASQ) và Lall (1992, World Development) coi technological capability là chiều sâu năng lực nội tại (absorptive capacity), khác bản chất với digital adoption ở giao diện ngoại tại; (iv) Bhandari et al. (2023, IBR) áp dụng resource-orchestration logic cho I→P relationship cho thấy các construct số có nomological nets khác nhau; (v) Coltman et al. (2008, JBR) đưa 4 tiêu chí cho phép TCI và DAI là hai formative composite độc lập. Do đó, NCS dyụng TCI và DAI riêng biệt (cleaner construct) thay vì gộp một composite duy nhất.
 
 ## 8.4 GVHD có thể hỏi: "P8 Pacific không phu1ea3i Asia, sao trong dissertation?"
 
@@ -330,13 +330,13 @@ Pacific SIDS (regime IV/V) → REVERSED slope (Forced Penalty)
 TÍNH MỚI:
 1. Forced Internationalization Penalty — named contribution
 2. Multi-tier framework integrated (4 layers + digital lens)
-3. TCI/DAI separation (không FDCI composite)
+3. TCI/DAI separation (kế thừa Bharadwaj 2013, Verhoef 2021, Coltman 2008)
 4. First WBES study Pacific SIDS in I-P literature
 
 DISTINCTIVE VS. WORLD LITERATURE:
 → Marano (2016): Single meta. NCS = mixed.
 → Wu (2022): EMNEs broadly. NCS = Asian + Pacific specific.
-→ Bhandari (2023): USA single + FDCI. NCS = multi-country + TCI/DAI.
+→ Bhandari (2023): USA single + digital capability composite. NCS = multi-country + TCI/DAI separated.
 → Vietnamese typical: 1–3 papers. NCS = 8 papers.
 ```
 
