@@ -137,19 +137,25 @@ def _norm_pool47(df: pd.DataFrame) -> pd.DataFrame:
     rn = {
         "country_iso3": "country", "year_survey": "year",
         "log_labor_prod": "lnlp_raw", "log_employees": "log_emp",
-        "fsts_pct": "fsts_pct", "rd_active": "h8",
+        "ln_labor_prod": "lnlp_raw", "ln_empl": "log_emp",
+        "fsts_pct": "fsts_pct", "export_pct": "fsts_pct",
+        "rd_active": "h8",
         "iso_cert": "quality_cert", "website": "website",
         "sector_code": "sector",
     }
     df = df.rename(columns={k: v for k, v in rn.items() if k in df.columns})
-    df["fsts"] = df["fsts_pct"].clip(0, 100) / 100.0
+    df["fsts"] = pd.to_numeric(df["fsts_pct"], errors="coerce").clip(0, 100) / 100.0
     for col in ["e6", "h7", "foreign_tech"]:
         if col in df.columns:
             df["foreign_tech"] = df[col]
             break
     if "fdi10" not in df.columns:
-        b2b = pd.to_numeric(df.get("b2b", pd.Series(dtype=float)), errors="coerce")
-        df["fdi10"] = (b2b >= 10).astype(float).where(b2b.notna())
+        # try b2b (raw WBES) then foreign_own (pre-harmonised)
+        fo_raw = pd.to_numeric(
+            df.get("b2b", df.get("foreign_own", pd.Series(dtype=float))),
+            errors="coerce",
+        )
+        df["fdi10"] = (fo_raw >= 10).astype(float).where(fo_raw.notna())
     # Build TCI_thin and DAI_thin if not present
     if "TCI_thin" not in df.columns:
         items = df[["quality_cert", "foreign_tech"]].apply(pd.to_numeric, errors="coerce")
