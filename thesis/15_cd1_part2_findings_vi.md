@@ -3,6 +3,7 @@
 > Tiếp nối `thesis/14_cd1_part1_intro_theory_vi.md`.
 > Phần 3 (Chương 5–7 + TLTK): `thesis/16_cd1_part3_cases_conclusion_vi.md`.
 > **Phiên bản 2.5 (cập nhật ngày 04/05/2026 — bản hoàn chỉnh)**: Pool **101.035 doanh nghiệp · 47 nước · 107 cặp quốc gia × năm · 2009–2025**, **6 SIDS Pacific đầy đủ** (Fiji, Papua New Guinea, Solomon Islands, Tonga, Vanuatu, Samoa) + Tây Á mở rộng (Saudi Arabia, Qatar, Kuwait, Lebanon, Yemen, Bahrain, Israel, Jordan, Cyprus = 9 nước).
+> **Phiên bản 2.6 (05/05/2026)**: Bổ sung citation P1 (Đỗ & Phan, 2026 — VEFR) làm baseline 17 nước cho pool mở rộng.
 
 ---
 
@@ -10,11 +11,11 @@
 
 ### 4.1 Nguồn dữ liệu World Bank Enterprise Surveys
 
-**Phạm vi pool**. Sau hòa hợp 105 file WBES, pool dữ liệu bao gồm **101.035 doanh nghiệp** thuộc **47 nền kinh tế** ở châu Á và Pacific, trải khắp **107 đơn vị quốc gia × năm khảo sát** trong giai đoạn **2009–2025**. Phân bố theo regime ICRV: Emerging 47.803 (47%), Frontier 28.678 (28%), Upper-middle 16.693 (17%), Advanced 6.640 (7%), **SIDS 1.221 (1%)**. Đặc biệt, pool đã bao gồm **12 đợt khảo sát năm 2025** với 16.829 doanh nghiệp: Ấn Độ (10.479), Nepal (1.740), Saudi Arabia (1.002), Thái Lan (813), Sri Lanka (607), Mongolia (601), Qatar (480), Afghanistan (480), Maldives (154), Fiji (151), Solomon Islands (150), Brunei (150), Kuwait (150).
+**Phạm vi pool**. Sau hòa hợp 105 file WBES, pool dữ liệu bao gồm **101.035 doanh nghiệp** thuộc **47 nền kinh tế** ở châu Á và Pacific, trải khắp **107 đơn vị quốc gia × năm khảo sát** trong giai đoạn **2009–2025**. Pool này **kế thừa và mở rộng** từ pool 17 nền kinh tế châu Á mới nổi (~40.633 doanh nghiệp) đã được tác giả công bố trước đó (Đỗ & Phan, 2026 — VEFR) — gấp ~2,5 lần coverage địa lý và ~2,5 lần số doanh nghiệp. Phân bố theo regime ICRV: Emerging 47.803 (47%), Frontier 28.678 (28%), Upper-middle 16.693 (17%), Advanced 6.640 (7%), **SIDS 1.221 (1%)**. Đặc biệt, pool đã bao gồm **12 đợt khảo sát năm 2025** với 16.829 doanh nghiệp: Ấn Độ (10.479), Nepal (1.740), Saudi Arabia (1.002), Thái Lan (813), Sri Lanka (607), Mongolia (601), Qatar (480), Afghanistan (480), Maldives (154), Fiji (151), Solomon Islands (150), Brunei (150), Kuwait (150).
 
 **Đặc điểm boundary case SIDS Pacific**: 6 quốc gia đảo nhỏ Thái Bình Dương đầy đủ — Fiji (2009, 2025; n=315), Papua New Guinea (2015, 2024; n=210), Solomon Islands (2025; n=150), Tonga (2024; n=150), Vanuatu (2009, 2023; n=239), Samoa (2023; n=157) → tổng n=1.221 — đủ ý nghĩa thống kê cho phân tích boundary "forced internationalization penalty" (Đỗ & Phan, 2026 — P8 manuscript).
 
-**Đặc điểm Tây Á mở rộng**: 9 quốc gia bao gồm Vùng Vịnh dầu mỏ giàu có (Saudi Arabia, Qatar, Kuwait, Bahrain — Advanced) và các nền kinh tế Trung Đông trung bình (Iraq, Jordan, Lebanon, Yemen — Frontier; Israel, Cyprus — Advanced). Cho phép kiểm định hypothesis về **resource-driven Advanced** vs **innovation-driven Advanced** (Singapore, Hong Kong, Hàn Quốc, Đài Loan).
+**Đặc điểm Tây Á mở rộng**: 9 quốc gia bao gồm Vùng Vịnh dầu mỏ giàu có (Saudi Arabia, Qatar, Kuwait, Bahrain — Advanced) và các nền kinh tế Trung Đông trung bình (Iraq, Jordan, Lebanon, Yemen — Frontier; Israel, Cyprus — Advanced). Cho phép kiểm định hypothesis về **resource-driven Advanced** vs **innovation-driven Advanced** (Singapore, Hong Kong, Hàn Quốc, Đài Loan) — phát hiện chưa được bàn đến trong baseline 17 nước (Đỗ & Phan, 2026 — VEFR vốn không bao gồm Advanced regime).
 
 **Phân bố thời gian**. Pool có 14 mốc khảo sát từ 2009 đến 2025: 2009 (n=9.249), 2010 (n=477), 2011 (n=1.366), 2012 (n=3.079), 2013 (n=8.133), 2014 (n=10.323), 2015 (n=3.760), 2016 (n=2.348), 2018 (n=332), 2019 (n=7.515), 2020 (n=546), 2021 (n=238), 2022 (n=12.693), 2023 (n=8.521), 2024 (n=14.857), **2025 (n=16.829)**. Phân bố theo ba giai đoạn schema: 2009–2012 (n=14.171), 2013–2017 (n=24.564), **2018–2025 (n=62.300 — 62% pool)**.
 
@@ -50,7 +51,7 @@ Năm phát hiện chính:
 
 *Thứ tư*, tỷ số P90/P10 tăng đơn điệu Advanced→Frontier: 10,8 → 27,7 → 30,6 → 39,6 lần. Tỷ số P75/P25 (dispersion trung tâm phân phối) cũng đơn điệu 3,1 → 5,4 → 5,1 → 6,1. Pattern hệ thống xuyên toàn bộ phân phối, không chỉ ở đuôi.
 
-*Thứ năm*, sự đơn điệu của dispersion theo regime cung cấp **bằng chứng thực tiễn mạnh nhất cho hệ giả thuyết H5** (institutional moderation) trong Chuyên đề 2: chất lượng thể chế có gradient tác động lên dispersion hiệu quả; cùng mức quốc tế hóa có thể tạo ra kết quả khác nhau giữa regime.
+*Thứ năm*, sự đơn điệu của dispersion theo regime cung cấp **bằng chứng thực tiễn mạnh nhất cho hệ giả thuyết H5** (institutional moderation) trong Chuyên đề 2: chất lượng thể chế có gradient tác động lên dispersion hiệu quả; cùng mức quốc tế hóa có thể tạo ra kết quả khác nhau giữa regime — kết quả đồng nhất với "digital shield effect" tìm thấy trên 17 nước châu Á mới nổi (Đỗ & Phan, 2026 — VEFR).
 
 ### 4.3 Thực trạng quốc tế hóa và tăng trưởng việc làm
 
@@ -104,7 +105,7 @@ Sáu phát hiện:
 
 (5) *Discontinuity ở R&D giữa Emerging (16,4%) và Frontier (14,2%) – SIDS (11,8%)* — phù hợp absorptive capacity threshold (Cohen & Levinthal, 1990).
 
-(6) *Khoảng cách Advanced – SIDS giảm xuống còn 0,4 điểm phần trăm ở website (59,3 vs 58,9)* — hợp pattern leapfrog. Nhưng khoảng cách ISO vẫn cao 13,4 điểm phần trăm, R&D 4,9 điểm phần trăm — gợi ý cần tách bạch năng lực số (DAI) khỏi năng lực thể chế hoá (TCI thông qua R&D + ISO) trong mô hình CĐ2.
+(6) *Khoảng cách Advanced – SIDS giảm xuống còn 0,4 điểm phần trăm ở website (59,3 vs 58,9)* — hợp pattern leapfrog. Nhưng khoảng cách ISO vẫn cao 13,4 điểm phần trăm, R&D 4,9 điểm phần trăm — gợi ý cần tách bạch năng lực số (DAI) khỏi năng lực thể chế hoá (TCI thông qua R&D + ISO) trong mô hình CĐ2 — đồng nhất với phân tách TCI vs DAI mà Đỗ và Phan (2026 — VEFR) đã áp dụng cho 17 nước châu Á mới nổi và phát hiện "digital shield effect".
 
 ### 4.5 Thực trạng cấu trúc doanh nghiệp
 
@@ -146,7 +147,7 @@ Pool dữ liệu theo ba giai đoạn schema: **2009–2012** (n=14.171), **2013
 | Frontier | +22,1 | +1,5 | -6,5 | -18,9 | +18,5 |
 | SIDS | +35–43 | +6–11 | -5 đến -10 | (cập nhật) | -20 đến -25 |
 
-*Nguồn: Tính toán của tác giả từ pool WBES.* \* n/a: thiếu dữ liệu giai đoạn 2009–2012 cho Advanced (Vùng Vịnh chưa có khảo sát trước 2024/2025).
+*Nguồn: Tính toán của tác giả từ pool WBES.* \* n/a: thiếu dữ liệu giai đoạn 2009–2012 cho Advanced (Vùng Vịnh chỉ có 2025).
 
 Năm phát hiện:
 
@@ -158,17 +159,17 @@ Năm phát hiện:
 
 ### 4.7 Tổng hợp Chương 4
 
-Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.035 doanh nghiệp ở 47 nền kinh tế châu Á và Pacific (107 cặp quốc gia × năm) trong giai đoạn 2009–2025** từ pool WBES sau hòa hợp. Đây là pool có **phạm vi địa lý và thời gian rộng nhất từng được tổng hợp** cho nghiên cứu I→P trong văn liệu IB. Sáu kết luận chính:
+Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.035 doanh nghiệp ở 47 nền kinh tế châu Á và Pacific (107 cặp quốc gia × năm) trong giai đoạn 2009–2025** từ pool WBES sau hòa hợp. Đây là pool có **phạm vi địa lý và thời gian rộng nhất từng được tổng hợp** cho nghiên cứu I→P trong văn liệu IB, mở rộng từ pool 17 nước châu Á mới nổi (~40.633 firms) trong Đỗ và Phan (2026 — VEFR). Sáu kết luận chính:
 
 (i) *Dispersion năng suất nội bộ tăng đơn điệu theo regime declension*: Advanced 0,86 → Upper-middle 1,29 → Emerging 1,24 → Frontier 1,36; với SIDS cũng ở mức 1,29. P90/P10 từ 10,8 lên 39,6 lần. Pattern khẳng định misallocation hypothesis và là cơ sở thực tiễn cho H5.
 
-(ii) *Heterogeneity nội bộ Advanced* — sự sụt giảm từ 1,00 (chỉ innovation-driven Asia) xuống 0,86 (sau khi thêm resource-driven Gulf) gợi ý cần **sub-grouping Advanced** trong CĐ2.
+(ii) *Heterogeneity nội bộ Advanced* — sự sụt giảm từ 1,00 (chỉ innovation-driven Asia) xuống 0,86 (sau khi thêm resource-driven Gulf) gợi ý cần **sub-grouping Advanced** trong CĐ2 — phát hiện mới so với baseline 17 nước (Đỗ & Phan, 2026 — VEFR vốn không bao gồm Advanced regime).
 
 (iii) *SIDS Pacific (6 nước, n=1.221) có pattern đặc trưng*: dispersion trung bình (sd=1,29), exporter cao (16,3%), website cao bất ngờ (58,9% — leapfrog), innov_product cao nhất (41,5%) nhưng R&D thấp (11,8%) và ISO thấp (16,5%) — pattern "small open + adaptable + low invention".
 
 (iv) *Quốc tế hóa là hiện tượng phân cực ở mọi regime*: trung vị FSTS = 0% xuyên năm regime; chỉ 15–23% doanh nghiệp tham gia xuất khẩu.
 
-(v) *Số hoá leapfrog 2018–2025 ở Frontier, Emerging và SIDS* (+20–43 điểm phần trăm tỷ lệ website) — bằng chứng tái định vị Uppsala cho kỷ nguyên số (Banalieva & Dhanaraj, 2019; Yang, Zhao & Wei, 2025).
+(v) *Số hoá leapfrog 2018–2025 ở Frontier, Emerging và SIDS* (+20–43 điểm phần trăm tỷ lệ website) — bằng chứng tái định vị Uppsala cho kỷ nguyên số (Banalieva & Dhanaraj, 2019; Yang, Zhao & Wei, 2025); đồng nhất với pattern "digital shield effect" tìm thấy trên 17 nước (Đỗ & Phan, 2026 — VEFR), nay được mở rộng cho 47 nước.
 
 (vi) *Pattern phi tuyến FDI ≥10%* (U-shape với cực tiểu Emerging) — gợi ý hai mô hình FDI khác nhau ở Advanced (MNE hub + Vùng Vịnh) và SIDS (tourism-driven + viễn thông).
 
