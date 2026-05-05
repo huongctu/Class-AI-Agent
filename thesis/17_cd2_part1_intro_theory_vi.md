@@ -181,7 +181,7 @@ Ba câu hỏi trên được trả lời bằng cách (i) tổng hợp văn li�
 
 1. **Khung tích hợp 4 tầng + Digital lens cho châu Á**: chưa có khung tương đương trong văn liệu IB. Khung này tích hợp Uppsala (động lực quốc tế hóa), RBV (nguồn lực), Institutional Theory (thể chế), Upper Echelons (nhà quản trị) với Digital Capability Lens (Banalieva & Dhanaraj, 2019). Mở rộng phạm vi giải thích so với các khung đơn lẻ.
 
-2. **Tách bạch TCI và DAI**: hai chiều năng lực số có cơ chế tác động khác nhau lên hiệu quả — TCI thông qua absorptive capacity (Cohen & Levinthal, 1990), DAI thông qua giảm psychic distance (Banalieva & Dhanaraj, 2019). Phân biệt này chưa có trong các khung composite FDCI trước đây.
+2. **Tách bạch TCI và DAI**: hai chiều năng lực số có cơ chế tác động khác nhau lên hiệu quả — TCI là chiều sâu năng lực công nghệ nội tại theo truyền thống Lall (1992) và Cohen & Levinthal (1990) (absorptive capacity), tương ứng tier "digital transformation" trong phân tầng của Verhoef et al. (2021); DAI là mức độ áp dụng giao diện và giao dịch số nền tảng theo truyền thống Bharadwaj et al. (2013), tương ứng tier "digitization–digitalization" của Verhoef et al. (2021), và giảm psychic distance theo Banalieva và Dhanaraj (2019). Bhandari et al. (2023) áp dụng resource-orchestration logic cho I→P relationship cho thấy hai construct có nomological nets khác nhau và phải được kiểm định riêng. Methodologically, hai construct thỏa mãn 4 tiêu chí formative composite của Coltman et al. (2008).
 
 3. **Sub-grouping Advanced regime**: phát hiện ở Chuyên đề 1 cho thấy Advanced có hai loại — innovation-driven (Singapore, Hong Kong, Korea, Đài Loan) và resource-driven (Saudi, Qatar, Kuwait, Bahrain) — với pattern hiệu quả khác nhau. CĐ2 đề xuất sub-grouping này trong mô hình M7.
 
