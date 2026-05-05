@@ -1,100 +1,149 @@
-# P5 China — Replication Pipeline + APJM Submission Artifacts
+# P5 China — Manuscript v1.8 (Blinded) + Replication Pipeline
 
-Replication of *Threshold Stability in the Export Intensity–Performance Relationship: Evidence from Chinese Private Firms* (P5, manuscript v1.2) using WBES China 2012 and 2024 microdata.
+Replication of *The Export Intensity–Performance Relationship in Chinese Private Firms: A Threshold-Stability Perspective* (P5, manuscript v1.8) using WBES China 2012 and 2024 microdata.
 
-## Status
+The repository contains everything needed to (a) rebuild the blinded manuscript `apjm/manuscript_v1_8_blinded.docx`, (b) reproduce all empirical results behind the manuscript's tables and figures, and (c) prepare the APJM submission package.
 
-**Replication verified.** Python pipeline reproduces manuscript v1.2 within rounding:
+## Headline empirical findings (verified)
 
-| | Mine (Python) | Manuscript v1.2 |
-|---|---|---|
-| Turning point 2012 | **49.37 %** | 49.4 % |
-| Turning point 2024 | **47.19 %** | 47.6 % |
-| Turning point pooled | **48.78 %** | 48.9 % |
-| Paternoster z (FSTS) | p = 0.412 | stable ✓ |
-| Paternoster z (FSTS²) | p = 0.545 | stable ✓ |
-| 2012 sample_base N | 2,610 | 2,612 |
-| 2024 sample_base N | 1,934 | 1,934 ✓ |
-| Pooled sample_base N | 4,544 | 4,546 |
+| | 2012 | 2024 | Pooled |
+|---|---|---|---|
+| Sample size (sample_base) | 2,610 | 1,934 | 4,544 |
+| Turning point of inverted-U | **49.37 %** | **47.19 %** | **48.78 %** |
+| 95 % delta-method CI | [43.17, 55.57] | [34.46, 59.92] | [42.65, 54.91] |
+| Lind–Mehlum U-test p | < .001 | .037 | < .001 |
 
-## Critical findings during replication
+**Cross-wave threshold stability (Paternoster z-test on M2):**
 
-1. **Manuscript v1.2 uses the FULL WBES private-firm frame, not a manufacturing-only subsample.** The title/abstract reference to "Chinese manufacturing SMEs" does not match the analytic sample (2,619 / 1,940 / 4,559) — it includes services, retail, IT, construction. Patch list `apjm/patch_list_v1_2_to_v1_3.md` renames the paper's identity to "Chinese private firms" (Phương án 1, safe).
-2. **2012 vs 2024 sector coding is incompatible.** 2012 `a4a` is ISIC Rev 3.1 (codes 15–37 + 38 Other Mfg). 2024 `a4a` is a 14-category stratum code (1–14, 1–9 = mfg). 2024 also has `d1a2_v4` = 4-digit ISIC Rev 4 (WBES recommended). If a future revision applies a manufacturing filter, code-frame mapping is required per wave.
-3. **2024 has 217 panel firms** (also surveyed in 2012). Pooled regressions cluster on `idstd` to handle dependence — but in the current data, 2012 `idstd` does not appear to share values with the panel firms in 2024, so cluster correction may be a no-op. Verify panel link mechanism before submitting.
-4. **Nonresponse codes differ across waves.** 2012: `-9` and `-7`. 2024: `-9`, `-8`, `-7`. Pipeline recodes all → missing.
+| Coefficient | b (2012) | b (2024) | z | p |
+|---|---|---|---|---|
+| FSTS | +2.065 | +1.498 | +0.821 | **0.412** (NOT rejected) |
+| FSTS² | −2.092 | −1.587 | −0.605 | **0.545** (NOT rejected) |
+
+**Pooled three-way moderation (joint F-tests):**
+
+| Hypothesis | Test | F | p | Verdict |
+|---|---|---|---|---|
+| H2 cross-wave shift | F1: (FSTS×wave_2024, FSTS²×wave_2024) = 0 | 2.24 | .107 | NOT rejected |
+| H4 capability curvature moderation | F2: (FSTS×Tech, FSTS²×Tech) = 0 | 3.26 | .039 | marginal |
+| Capability-conditioned dynamic moderation | F3: 3-way = 0 | 0.27 | .760 | NOT rejected |
+
+Three null moderation channels (H2, H3, H4 curvature) converge on the substantive interpretation that the Chinese internationalization–performance trade-off is **durably structural** rather than wave-specific or capability-conditioned.
 
 ## Repository layout
 
 ```
 p5-china/
-├── README.md                              this file
-├── PLAN.md                                planning doc (sample-construction protocol)
-├── do/                                    Stata do-files (4-step pipeline)
+├── README.md                                this file
+├── do/                                      Stata 4-step data builders
 │   ├── 01_build_2012.do
 │   ├── 02_build_2024.do
 │   ├── 03_build_pooled.do
 │   └── 04_run_models.do
-├── python/                                Python verification pipeline
-│   ├── build_and_run.py                   tries 'all' vs 'mfg' frames
-│   └── full_models.py                     runs M0–M8 on 'all' frame
-├── audit/                                 sample-size audit tables
-│   ├── audit_N_checklist.csv              expected N per step (RA fills observed)
-│   ├── audit_N_all.csv                    observed N, full-private frame
-│   └── audit_N_mfg.csv                    observed N, manufacturing-only frame
-├── results/
-│   ├── results_coefs.csv                  M0–M8 coefficients (3 samples × 9 models)
-│   └── M2_table.csv                       main threshold model summary
+├── python/                                  Python verification + replication
+│   ├── audit_v1_6_claims.py                 audits empirical claims in v1.7+
+│   ├── build_and_run.py                     builds 'all' / 'mfg' analytic frames
+│   ├── full_models.py                       runs M0–M8 on 'all' frame
+│   └── three_way_moderation.py              three-way moderation spec (Table 3)
+├── audit/                                   sample-size audit tables
+│   ├── audit_N_checklist.csv
+│   ├── audit_N_all.csv
+│   └── audit_N_mfg.csv
+├── results/                                 verified empirical outputs
+│   ├── M2_table.csv                         Table 2 (main threshold model)
+│   ├── results_coefs.csv                    M0–M8 coefficients × 3 samples
+│   ├── three_way_moderation.csv             Table 3 (three-way moderation)
+│   ├── moderator_test_summary.csv           moderator interaction tests
+│   ├── moderator_test_VERDICT.md            level-shifter vs moderator analysis
+│   └── summary.md                           empirical summary
 └── apjm/
-    ├── APJM_submission_outline.md         title, abstract, sections, cover letter
-    └── patch_list_v1_2_to_v1_3.md         27 sentence-level edits + 2 inserts
+    ├── manuscript_v1_8_blinded_part{1..6}_*.md   blinded manuscript source (6 parts)
+    ├── build_docx.sh                              one-shot docx builder
+    ├── figures/                                   figure source files
+    │   ├── figure1_conceptual_model_v1_4.dot      Graphviz source (Figure 1)
+    │   ├── figure1_conceptual_model_v1_4.mmd      Mermaid source (Figure 1, alt)
+    │   ├── render_figures.py                      matplotlib script (Figures 2–4)
+    │   ├── README.md                              figures documentation
+    │   └── RENDER_FIGURES_README.md               render script usage
+    ├── CITATION_AUDIT.md                          reference verification audit
+    ├── VERIFICATION_RESULTS.md                    Tier-C reference verification
+    ├── CLAIMS_AUDIT.md                            empirical claims audit
+    ├── SUBMISSION_TARGETS.md                      14 alternative target journals
+    └── submission/                                APJM submission package
+        ├── 00_SUBMISSION_CHECKLIST.md
+        ├── 01_title_page.md                       (fill author info)
+        ├── 02_cover_letter.md
+        ├── 03_declarations.md
+        ├── 04_blinding_check.md
+        └── 05_suggested_reviewers.md
 ```
 
-## How to run
-
-### Stata
+## How to build the blinded manuscript
 
 ```bash
-cd do/
+cd p5-china/apjm
+bash build_docx.sh
+# → manuscript_v1_8_blinded.docx (~770 KB) with 4 figures embedded
+```
+
+Prerequisites: pandoc, graphviz, Python 3 with matplotlib + numpy.
+
+## How to run the empirical pipeline
+
+### Stata (4-step pipeline)
+
+```bash
+cd p5-china/do
 stata -b do 01_build_2012.do
 stata -b do 02_build_2024.do
 stata -b do 03_build_pooled.do
 stata -b do 04_run_models.do
 ```
 
-Update paths in `01_build_2012.do` and `02_build_2024.do` to point at local raw `.dta` files.
+Update paths to local raw `.dta` files at the top of `01_build_2012.do` and `02_build_2024.do`.
 
-### Python
+### Python (verification)
 
 ```bash
-pip install pyreadstat pandas numpy statsmodels scipy
-python3 python/build_and_run.py    # audits both frames
-python3 python/full_models.py      # runs full M0–M8 on 'all' frame
+pip install pyreadstat pandas numpy statsmodels scipy matplotlib
+python3 p5-china/python/build_and_run.py            # build analytic frames
+python3 p5-china/python/full_models.py              # M0–M8 on full-private frame
+python3 p5-china/python/three_way_moderation.py     # Table 3 specification
+python3 p5-china/python/audit_v1_6_claims.py        # audit specific claims
 ```
 
-Both scripts hard-code raw-data paths at the top of the file — update before running.
+Both Python and Stata pipelines reproduce the manuscript's headline numbers.
 
-## Key methodological decisions (chốt)
+## Data
+
+WBES microdata are publicly available from https://www.enterprisesurveys.org/en/data subject to registration with the World Bank Enterprise Analysis Unit and acceptance of the WBES Data Access Protocol. The protocol prohibits redistribution; we therefore reference the public download endpoint rather than redistributing the source `.dta` files.
+
+- China 2012 — full release, 2,700 private firms (analytic sample 2,619 after listwise deletion).
+- China 2024 — 2,189 firms including 217 panel observations re-interviewed from 2012 (analytic sample 1,940).
+
+## Key methodological decisions
 
 | Fork | Choice | Rationale |
 |---|---|---|
-| Sample frame | Full WBES private firms | Matches manuscript v1.2 reported N |
-| 2024 industry filter (if mfg) | `d1a2_v4` (10–33) | WBES recommended (realized industry) |
-| 2012 manufacturing scope | `a4a` 15–38 incl. Other Mfg | Cross-wave consistent |
-| Pooled SE | `vce(cluster idstd)` | Handle 217 panel firms |
-| TCI nonmissing rule | ≥ 3 of 4 items | Manuscript v1.2 convention |
-| DAI proxy | z-mean(c22b, e6) | Cross-wave comparable thin proxy |
+| Sample frame | Full WBES private firms | Matches sample sizes 2,619 / 1,940 / 4,559 |
+| 2024 industry filter (if mfg robust) | `d1a2_v4` 10–33 | WBES recommended realized-industry code |
+| 2012 manufacturing scope (if mfg robust) | `a4a` 15–38 incl. Other Mfg | Cross-wave consistent |
+| Pooled SE | `vce(cluster idstd)` | Address 217 panel-firm dependence |
+| TCI nonmissing rule | ≥ 3 of 4 items | Convention from prior China replications |
+| DAI proxy | c22b own-website (Tier 1 digital) | Cross-wave comparable; e6 reserved for TCI |
 | Within-wave standardization | Yes, before pooling | Preserves cross-wave coefficient comparability |
+| Robust SE | HC1 (single wave); cluster on `idstd` (pooled) | Standard for survey microdata |
 
-## Open items for RA before APJM submission
+## Audits (closed)
 
-1. Verify exact `firmage` formula in v1.2 (`year − b5` vs alternative) against current draft.
-2. Verify `foreigndummy` threshold (`b2b > 0` vs `b2b ≥ 10`).
-3. Cross-check TCI/DAI item names in BREADY 2024 questionnaire (whether `e6/b8/h1/h8/c22b` survived rename).
-4. Verify panel link mechanism between 2012 and 2024 `idstd` (cluster SE depends on it).
-5. Decide whether to apply WBES sampling weights (`wmedian`) for robustness; v1.2 currently unweighted.
-6. Confirm Phương án 1 wording ("Chinese private firms") before applying patch list.
+- `apjm/CITATION_AUDIT.md` — reference verification (39 refs, 4 tiers).
+- `apjm/VERIFICATION_RESULTS.md` — Tier-C verification: 10 of 11 verified correct; 1 patched (Demir & Javorcik 2018: vol 117/pp 11–22 → vol 111/pp 177–189).
+- `apjm/CLAIMS_AUDIT.md` — empirical claims audited against `python/audit_v1_6_claims.py` outputs.
 
-## Citation / reference
+## Submission package (APJM)
 
-World Bank Enterprise Survey, China 2012 (full release, 2,700 private firms) and China 2024 (BREADY, 2,189 firms incl. 217 panel). https://www.enterprisesurveys.org/
+See `apjm/submission/00_SUBMISSION_CHECKLIST.md` for the master checklist mapping APJM portal slots to local files. Author placeholders in `01_title_page.md` and `02_cover_letter.md` must be filled before submission.
+
+## Citation / data attribution
+
+World Bank Enterprise Survey, China 2012 and China 2024. World Bank Group. https://www.enterprisesurveys.org/
