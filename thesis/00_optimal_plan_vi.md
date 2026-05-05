@@ -39,7 +39,7 @@ Luận án kết hợp **meta-analytic synthesis** (cập nhật 1982–2026, m�
 
 Luận án cung cấp ba đóng góp thực nghiệm mới:
 
-- **Phân tách hai construct số**: technological capability (TCI) và digital adoption (DAI) được xử lý như hai construct riêng biệt, không đồng nhất về nội hàm hay cơ chế vận hành, khắc phục hạn chế của các nghiên cứu trước đây gộp chúng thành một FDCI (Bhandari et al., 2023).
+- **Phân tách hai construct số**: technological capability (TCI) và digital adoption (DAI) được xử lý như hai construct riêng biệt, không đồng nhất về nội hàm hay cơ chế vận hành. Phân tách này tựa vào (i) phân tầng lý thuyết của Verhoef et al. (2021) — TCI tương ứng tier "digital transformation" (chiều sâu năng lực nội tại), DAI tương ứng tier "digitization/digitalization" (giao diện và cơ chế giao dịch số); (ii) truyền thống Lall (1992) và Cohen & Levinthal (1990) coi technological capability là tồn kho năng lực nội tại; (iii) Bharadwaj et al. (2013) phân biệt IT capability với digital business strategy; (iv) Bhandari et al. (2023) áp dụng resource-orchestration logic cho I→P relationship cho thấy hai construct có nomological nets khác nhau. Methodologically, hai construct thỏa mãn 4 tiêu chí formative composite của Coltman et al. (2008).
 - **Temporal heterogeneity test**: kiểm định liệu cấu trúc phi tuyến của quan hệ I–P có ổn định giữa hai mốc 2012 và 2024 trong bối cảnh Trung Quốc, kế thừa bằng chứng cubic inverted-U (Đỗ & Phan, 2026 — JFAR; Xiao et al., 2013; Wu et al., 2022).
 - **Three-way moderation**: kiểm định tương tác giữa digital capability × institutional regime × top manager characteristics — cấu hình chưa được kiểm định tổng thể trong literature IB về châu Á.
 
