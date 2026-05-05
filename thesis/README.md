@@ -85,11 +85,10 @@ Pool **101.035 doanh nghiệp · 47 nước · 107 country-years · 2009–2025*
 
 **Quy ước áp dụng cho TOÀN BỘ dissertation và papers**:
 
-- ❌ **KHÔNG dùng FDCI composite** — đã bỏ
-- ✅ **Dùng TCI và DAI riêng biệt** (non-overlapping):
-  - **TCI** (Technological Capability Index) = chiều sâu: R&D + ISO certification + (machinery imports khi có)
-  - **DAI** (Digital Adoption Index) = bề mặt: website + (e-commerce, ERP, cloud khi có schema 2018+)
-  - Hai construct **không share component** — bảo đảm construct purity (Bhandari et al. 2023; Hair et al. 2022)
+- ✅ **Dùng TCI và DAI riêng biệt** (non-overlapping), KHÔNG gộp thành một composite duy nhất:
+  - **TCI** (Technological Capability Index) = chiều sâu năng lực công nghệ nội tại: R&D + ISO certification + (machinery imports khi có) — theo truyền thống Lall (1992) và Cohen & Levinthal (1990)
+  - **DAI** (Digital Adoption Index) = mức độ áp dụng giao diện số: website + (e-commerce, ERP, cloud khi có schema 2018+) — theo Bharadwaj et al. (2013) và Verhoef et al. (2021, tier digitization–digitalization)
+  - Hai construct **không share component** — bảo đảm construct purity (Bharadwaj et al. 2013; Verhoef et al. 2021; Bhandari et al. 2023; thỏa 4 tiêu chí formative composite của Coltman et al. 2008)
 
 ## Câu hỏi nghiên cứu trung tâm
 
@@ -138,7 +137,7 @@ Quốc tế hóa ảnh hưởng đến hiệu quả hoạt động của doanh n
 
 - v1: Cấu trúc umbrella 5-paper (P3-P7).
 - v2: Bổ sung P8 Pacific SIDS + reframe sang "Asian and adjacent" + institutional gradient.
-- v3: Confirm digital constructs = TCI + DAI riêng biệt (bỏ FDCI).
+- v3: Confirm digital constructs = TCI + DAI riêng biệt (kế thừa Bharadwaj 2013, Verhoef 2021, Bhandari 2023, Coltman 2008).
 - **v2.5 (current — 04/05/2026)**: 
   - **CĐ1 hoàn chỉnh** với pool 101.035 doanh nghiệp, 47 nước, 107 country-years
   - **CĐ2 bản nháp đầy đủ** với khung 4 tầng + Digital lens, H1-H6, M0-M7
