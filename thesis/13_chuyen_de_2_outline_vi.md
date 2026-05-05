@@ -123,7 +123,7 @@ Cần Thơ, năm 2026
 ### 2.5 Lăng kính số — Digital Capability Lens (Banalieva & Dhanaraj, 2019; Verhoef et al., 2021; Stallkamp & Schotter, 2021)
 - Internalization theory cho nền kinh tế số: psychic distance giảm, phân mảnh chuỗi giá trị tăng.
 - Phân biệt **năng lực công nghệ TCI** (technological capability — internal R&D, innovation) và **mức độ áp dụng số DAI** (digital adoption — external infrastructure use).
-- **Vai trò trong CĐ2**: hai biến điều tiết riêng — không thể gộp thành FDCI.
+- **Vai trò trong CĐ2**: hai biến điều tiết riêng biệt theo Bharadwaj et al. (2013), Verhoef et al. (2021), và Bhandari et al. (2023); thỏa mãn 4 tiêu chí formative composite của Coltman et al. (2008).
 
 ### 2.6 Tích hợp 4 tầng + Digital lens
 - **Bảng 2.1**: Mỗi lý thuyết → câu hỏi phụ → biến số CĐ2.
@@ -390,7 +390,7 @@ Khung CĐ2 tích hợp 4 tầng + Digital lens cùng lúc, với pool 47 nước
 
 ### 9.1 Đóng góp về lý thuyết
 - Tích hợp 4 tầng + Digital Capability Lens — chưa có khung tương đương cho châu Á và Pacific.
-- Tách bạch TCI vs DAI — đề xuất quan trọng so với khung composite FDCI trước đây.
+- Tách bạch TCI vs DAI dựa trên Bharadwaj et al. (2013) và phân tầng 3 cấp của Verhoef et al. (2021), với cơ sở Lall (1992) và Cohen & Levinthal (1990) cho TCI; phù hợp resource-orchestration logic của Bhandari et al. (2023) và 4 tiêu chí Coltman et al. (2008).
 
 ### 9.2 Đóng góp về mô hình
 - Mô hình M7 ba chiều (I × TCI × DAI) — lần đầu kiểm định đồng thời.
