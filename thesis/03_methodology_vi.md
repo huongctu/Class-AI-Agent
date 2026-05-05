@@ -77,7 +77,7 @@ Luận án phân biệt rõ hai construct:
 
 **Cơ sở kế thừa**: Bhandari et al. (2023) phân biệt digitalization, internationalization và capability theo resource-orchestration logic; Verhoef et al. (2021) phân biệt three stages (digitization, digitalization, digital transformation). Pattern "digital shield effect" được Đỗ và Phan (2026 — VEFR) phát hiện trên 17 nước châu Á mới nổi.
 
-**Đóng góp mới**: Đưa ra **measurement harmonization protocol** trong bối cảnh WBES, đảm bảo construct purity ở 47 nền kinh tế châu Á và Pacific, với pipeline hòa hợp 3 thế hệ schema. Đóng góp này khắc phục hạn chế của các nghiên cứu trước khi gộp technological và digital thành một composite index (FDCI) mà reviewer đã phê phán trong bản thảo Vietnam.
+**Đóng góp mới**: Đưa ra **measurement harmonization protocol** trong bối cảnh WBES, đảm bảo construct purity ở 47 nền kinh tế châu Á và Pacific, với pipeline hòa hợp 3 thế hệ schema. Phân tách TCI và DAI theo (i) Bharadwaj et al. (2013) — IT capability vs digital business strategy có nomological nets khác nhau; (ii) phân tầng 3 cấp của Verhoef et al. (2021) — digitization, digitalization, digital transformation; (iii) truyền thống Lall (1992) và Cohen & Levinthal (1990) coi technological capability là chiều sâu năng lực nội tại (absorptive capacity), khác về bản chất với digital adoption ở giao diện ngoại tại; (iv) resource-orchestration logic của Bhandari et al. (2023) cho I→P relationship; và (v) 4 tiêu chí formative composite của Coltman et al. (2008) — đảm bảo TCI và DAI là hai composite độc lập.
 
 #### 3.4.2 Institutional variables
 
