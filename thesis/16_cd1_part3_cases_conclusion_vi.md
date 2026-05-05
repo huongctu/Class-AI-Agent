@@ -2,6 +2,7 @@
 
 > Tiếp nối `thesis/14_cd1_part1_intro_theory_vi.md` và `thesis/15_cd1_part2_findings_vi.md`.
 > **Phiên bản 2.5 (cập nhật ngày 04/05/2026 — bản hoàn chỉnh)**: Pool **101.035 doanh nghiệp · 47 nước · 107 cặp quốc gia × năm · 2009–2025** với **6 SIDS Pacific đầy đủ** + Tây Á Gulf + Lebanon + Yemen.
+> **Phiên bản 2.6 (05/05/2026)**: Bổ sung citation P1 (Đỗ & Phan, 2026 — VEFR) làm baseline 17 nước + bổ sung entry TLTK đầy đủ.
 
 ---
 
@@ -49,11 +50,11 @@ FSTS giảm 7 điểm phần trăm trong 14 năm — kết quả ngược kỳ v
 | SME (%) | 63,3 | 71,0 | +7,7 |
 | FDI ≥10% (%) | 6,0 | 6,0 | 0 |
 
-Xu hướng "deepen domestic market" (Liu & Zhang, 2024); phi tuyến quan hệ I→P khẳng định mạnh ở Trung Quốc (Đỗ & Phan, 2026 — JFAR).
+Xu hướng "deepen domestic market" (Liu & Zhang, 2024); phi tuyến quan hệ I→P khẳng định mạnh ở Trung Quốc với cubic specification, turning point ~47,8% FSTS (Đỗ & Phan, 2026 — JFAR).
 
 ### 5.5 Tổng hợp Emerging Asia mở rộng (IDN + PHL + IND + BGD, n=42.278, 10 đợt 2009–2025)
 
-FSTS 7,6%; exporter 14%; SME 74%; FDI 4,4%; R&D 16%; innov product 17%. **Dispersion lớn** (sd log 2,18; P90/P10 = 222) — performance heterogeneity within country rõ rệt nhất.
+FSTS 7,6%; exporter 14%; SME 74%; FDI 4,4%; R&D 16%; innov product 17%. **Dispersion lớn** (sd log 2,18; P90/P10 = 222) — performance heterogeneity within country rõ rệt nhất. Pattern này đồng nhất với phân tầng năng suất giữa Chinese economies, South Asia và ASEAN tìm thấy trên 17 nước châu Á mới nổi (Đỗ & Phan, 2026 — VEFR).
 
 ### 5.6 Mongolia (Emerging tài nguyên, 4 đợt 2009/2013/2019/2025, n=1.905)
 
@@ -154,7 +155,7 @@ Sáu phát hiện chính:
 
 (5) *DAI tương quan ÂM ở Advanced* (−0,129) — Single-component DAI (chỉ website) không đủ ở nền kinh tế advanced. Cần bổ sung e-commerce, ERP, cloud cho phiên bản tiếp theo.
 
-(6) *Tương quan nhỏ và đổi dấu giữa các regime* — phù hợp hypothesis H1 phi tuyến và H5 institutional moderation.
+(6) *Tương quan nhỏ và đổi dấu giữa các regime* — phù hợp hypothesis H1 phi tuyến và H5 institutional moderation; đồng thời đồng nhất với phát hiện về "digital shield effect" ở 17 nước châu Á mới nổi (Đỗ & Phan, 2026 — VEFR).
 
 ### 6.2 Diễn giải pattern theo từng regime
 
@@ -174,10 +175,10 @@ Sáu phát hiện chính:
 
 ### 7.1 Khoảng trống nghiên cứu thực tiễn
 
-(1) *Khoảng trống dữ liệu hòa hợp xuyên thế hệ schema WBES 2009–2025*: pool 101.035 doanh nghiệp, 47 quốc gia × 107 cặp năm — phạm vi rộng nhất từng có.
-(2) *Khoảng trống phân tích cấp doanh nghiệp đa chiều xuyên 5 regime + sub-groups* (Advanced innovation-driven vs resource-driven; SIDS sub-groups).
-(3) *Khoảng trống mô hình giải thích phi tuyến + moderation đa tầng* — bằng chứng bivariate đầy đủ ở Chương 6.
-(4) *Khoảng trống boundary case SIDS* — đã lấp đầy với 6 nước Pacific.
+(1) *Khoảng trống dữ liệu hòa hợp xuyên thế hệ schema WBES 2009–2025*: pool 101.035 doanh nghiệp, 47 quốc gia × 107 cặp năm — phạm vi rộng nhất từng có; mở rộng từ baseline 17 nước châu Á mới nổi của Đỗ & Phan (2026 — VEFR) ~2,5 lần coverage địa lý.
+(2) *Khoảng trống phân tích cấp doanh nghiệp đa chiều xuyên 5 regime + sub-groups* (Advanced innovation-driven vs resource-driven; SIDS sub-groups) — phát hiện sub-grouping Advanced là mới so với baseline 17 nước (Đỗ & Phan, 2026 — VEFR vốn không bao gồm Advanced regime).
+(3) *Khoảng trống mô hình giải thích phi tuyến + moderation đa tầng* — bằng chứng bivariate đầy đủ ở Chương 6, đồng nhất với "digital shield effect" tìm thấy trong Đỗ & Phan (2026 — VEFR) và cubic inverted-U của Đỗ & Phan (2026 — JFAR).
+(4) *Khoảng trống boundary case SIDS* — đã lấp đầy với 6 nước Pacific (Đỗ & Phan, 2026 — P8 manuscript).
 
 ### 7.2 Kết luận chính
 
@@ -186,12 +187,12 @@ Sáu phát hiện chính:
 (iii) SIDS có pattern adaptation: innov_product 41,5% (cao nhất), website 58,9% (leapfrog), nhưng R&D 11,8% và ISO 16,5% thấp.
 (iv) Heterogeneity nội bộ Advanced: innovation-driven (Singapore et al.) vs resource-driven (Saudi et al.).
 (v) FDI tương quan dương mạnh ở SIDS (+0,222) — MNE-driven.
-(vi) Bằng chứng bivariate đa dạng cho mô hình phi tuyến + moderation.
+(vi) Bằng chứng bivariate đa dạng cho mô hình phi tuyến + moderation, kế thừa và mở rộng từ Đỗ & Phan (2026 — VEFR; 2026 — JFAR).
 
 ### 7.3 Hàm ý cho luận án và Chuyên đề 2
 
 - **Chuyên đề 2** xây mô hình lý thuyết và thực nghiệm — đặc biệt sub-grouping Advanced + đa tầng moderation theo H5.
-- **Luận án** kiểm định trên pool 101.035 doanh nghiệp với 47 nước × 107 cặp năm.
+- **Luận án** kiểm định trên pool 101.035 doanh nghiệp với 47 nước × 107 cặp năm — kế thừa pool 17 nước của Đỗ & Phan (2026 — VEFR) và baseline cubic của Đỗ & Phan (2026 — JFAR).
 
 ### 7.4 Hạn chế của chuyên đề
 
@@ -214,7 +215,15 @@ Sáu phát hiện chính:
 
 > Trích dẫn theo APA 7th. Danh mục đầy đủ chuyên ngành ở `thesis/04_references_apa7.md`.
 
-ADB (2024); Aitken & Harrison (1999); Banalieva & Dhanaraj (2019); Barney (1991); Bausch & Krist (2007); CIEM (2023); Cohen & Levinthal (1990); Cusolito & Maloney (2018); Đỗ & Phan (2026 a–f, P8 manuscript); Hambrick & Mason (1984); Hsieh & Klenow (2009, 2014); Hsu, Chen & Cheng (2013); Kaufmann, Kraay & Mastruzzi (2011); Khanna & Palepu (2010); Kirca et al. (2012); Li, Liu & Qian (2022); Liu & Zhang (2024); Lu & Beamish (2004); Marano et al. (2016); North (1990); OECD (2026 — FDI in Figures, April 2026); OECD (2026 — Economic Outlook, March 2026); Penrose (1959); Stallkamp & Schotter (2021); Tran & Pham (2024); UNCTAD (2023); Verhoef et al. (2021); WIPO (2024); World Bank (2019, 2023, 2024, n.d.); Wu, Wood & Khan (2022); Xiao, Tylecote & Liu (2013); Yang, Zhao & Wei (2025).
+**Các công bố của tác giả luận án (cited trong CĐ1)**:
+
+- Đỗ, T. H., & Phan, A. T. (2026 — VEFR). Internationalization, digital capability and firm performance in 17 emerging Asian economies. *Vietnam Economic and Financial Review*. *(P1 — pool 17 nước, ~40.633 firms, baseline cho CĐ1 v2.5/v2.6)*.
+- Đỗ, T. H., & Phan, A. T. (2026 — JFAR). Nonlinear cubic relationship between internationalization and firm performance: Evidence from China SMEs. *Journal of Finance and Accounting Research*. *(P2 — China cubic, n=4.889, turning point ~47,8% FSTS; tham chiếu §5.4)*.
+- Đỗ, T. H., & Phan, A. T. (2026 — P8 manuscript). Forced internationalization penalty in 6 Pacific SIDS. *(Tham chiếu §4.1, §5.7, §7.1)*.
+
+**Các tham khảo khác** (đầy đủ trong `thesis/04_references_apa7.md`):
+
+ADB (2024); Aitken & Harrison (1999); Banalieva & Dhanaraj (2019); Barney (1991); Bausch & Krist (2007); CIEM (2023); Cohen & Levinthal (1990); Cusolito & Maloney (2018); Hambrick & Mason (1984); Hsieh & Klenow (2009, 2014); Hsu, Chen & Cheng (2013); Kaufmann, Kraay & Mastruzzi (2011); Khanna & Palepu (2010); Kirca et al. (2012); Li, Liu & Qian (2022); Liu & Zhang (2024); Lu & Beamish (2004); Marano et al. (2016); North (1990); OECD (2026 — FDI in Figures, April 2026); OECD (2026 — Economic Outlook, March 2026); Penrose (1959); Stallkamp & Schotter (2021); Tran & Pham (2024); UNCTAD (2023); Verhoef et al. (2021); WIPO (2024); World Bank (2019, 2023, 2024, n.d.); Wu, Wood & Khan (2022); Xiao, Tylecote & Liu (2013); Yang, Zhao & Wei (2025).
 
 ---
 
@@ -288,4 +297,4 @@ ADB (2024); Aitken & Harrison (1999); Banalieva & Dhanaraj (2019); Barney (1991)
 
 ---
 
-*Phiên bản 2.5 — bản nháp đầy đủ với pool 101.035 doanh nghiệp giai đoạn 2009–2025 (47 nước, 107 country-years, 12 đợt khảo sát 2025; 6 SIDS Pacific đầy đủ; Tây Á mở rộng Lebanon + Yemen + Vùng Vịnh). NCS: Đỗ Thùy Hương. HD chuyên đề: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 04/05/2026.*
+*Phiên bản 2.6 — bản nháp đầy đủ với pool 101.035 doanh nghiệp giai đoạn 2009–2025 (47 nước, 107 country-years, 12 đợt khảo sát 2025; 6 SIDS Pacific đầy đủ; Tây Á mở rộng Lebanon + Yemen + Vùng Vịnh); bổ sung citation P1 (Đỗ & Phan, 2026 — VEFR) tại §5.5, §6.1, §7.1, §7.3 và TLTK đầy đủ. NCS: Đỗ Thùy Hương. HD chuyên đề: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 05/05/2026.*
