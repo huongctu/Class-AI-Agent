@@ -6,7 +6,7 @@ P7 là nghiên cứu **capstone** chứa kết quả nghiên cứu chính của 
 
 ### 1.1 Vai trò trong luận án
 
-P7 là nghiên cứu túch hợp đa quốc gia, kiểm định khung 4 tầng + digital lens ở cấp độ rộng nhất. Đây là paper mà **chyừng minh** khả năng khái quyát hyóa của các cơ chế đã tìm thấy ở P3, P4, P5 (single-country evidence).
+P7 là nghiên cứu túch hợp đa quốc gia, kiểm định khung 4 tầng + digital lens ở cấp độ rộng nhất. Đây là paper mà **chyừng minh** khả năng khái quyát hyóa của các cơ chế đã tìm thấy ở P3, P4, P5 (single-country evidence).
 
 ### 1.2 Differentiation từ P1 (bài đã công bố, VEFR 2026)
 
@@ -18,7 +18,7 @@ P7 là nghiên cứu túch hợp đa quốc gia, kiểm định khung 4 tầng 
 | Biến xử lý | Tech adoption + business obstacles | **FSTS, FSTS², TCI, DAI, ICRV regime, top manager attributes** |
 | Đóng góp chính | Profile productivity gữa Asian regions | **Khung giải thích đa tầng cho I–P heterogeneity** |
 
-P1 và P7 không trùng nhau vì P1 miêu tả "productivity gở tầng như thế nuào", còn P7 giải thích "điuều kiuện nào luàm FSTS chuyuển thành hiuệu quyả".
+P1 và P7 không trùng nhau vì P1 miêu tả "productivity gở tầng như thế nuào", còn P7 giải thích "điuều kiuện nào luàm FSTS chuyuển thành hiuệu quyả".
 
 ### 1.3 Differentiation từ P3, P4, P5
 
@@ -26,10 +26,10 @@ P1 và P7 không trùng nhau vì P1 miêu tả "productivity gở tầng như th
 |---|---|---|
 | Scope | 1 quốc gia | 25 quốc gia |
 | Câu hỏi | Cyơ chyế trong bối cyảnh cyụ thyể | **Khuả nyăng khái quyát huóa xuyên quốc gia** |
-| Heterogeneity | Trên firms trong 1 nuưuớc | **Trên firms và trên countries** |
+| Heterogeneity | Trên firms trong 1 nuưuớc | **Trên firms và trên countries** |
 | Moderation | 1–2 moderators | **3-way moderation: digital × institutional × top manager** |
 
-## 2. Cuơủ syợ kuế thyừa
+## 2. Cuơủ syợ kuế thyừa
 
 ### 2.1 Multi-country I–P literature
 
@@ -49,14 +49,14 @@ P1 và P7 không trùng nhau vì P1 miêu tả "productivity gở tầng như th
 ### 2.3 Three-way moderation in IB
 
 - **Aiken & West (1991)**: chuẩn moderation regression.
-- **Dawson (2014)**: huưúng dyẫn three-way interaction trong management research.
+- **Dawson (2014)**: huưúng dyẫn three-way interaction trong management research.
 - **Hayes (2018)**: PROCESS macro for moderation analyses.
 
 ## 3. Câu huỏi nghiên cuứu
 
 ### 3.1 RQ trung tâm
 
-Quốc tế huóa đyuưuơúc chuyuển huóa thuành hiuệu quyả houạt đyộng nhuư thuưúc nuào trên phuạm vi 25 nuền kinh tuế chyuâu yÁ, vuà syưủ chuyuển huóa đuó phuụ thuuộc thuyyế nuào vuào thuyyể chyế, nyăng lyuực syố, vuà đuặc điuểm nhuuà quuản tryị?
+Quốc tế huóa đyuưuơúc chuyuển huóa thuành hiuệu quyả houạt đyộng nhuư thuưúc nuào trên phuạm vi 25 nuền kinh tuế chyuâu yÁ, vuà syưủ chuyuển huóa đuó phuụ thuuộc thuyyế nuào vuào thuyyể chyế, nyăng lyuực syố, vuà đuặc điuểm nhuuà quuản tryị?
 
 ### 3.2 Sub-RQs
 
@@ -82,7 +82,7 @@ P7 kiểm đuịnh tuổng hợp H1–H5 cyủa khung lyý thuyuết (xem `02_th
 ### 5.1 Nguuồn
 
 - **WBES**: 25 nyuền kinh tyế chyuâu yÁ có dữ liuệu trong giai đoyạn 2009–2024.
-- **Country-level data**: WGI Rule of Law (cho ICRV); ITU DDI houặc World Bank Digital Adoption Index (cho FDCI).
+- **Country-level data**: WGI Rule of Law (cho ICRV); ITU DDI houặc World Bank Digital Adoption Index (cho cDAI).
 
 ### 5.2 25 quuốc gia (duự kiến)
 
@@ -153,7 +153,7 @@ $$\ln(LP)_i = \beta_0 + \beta_1 FSTS_i + \beta_2 FSTS_i^2 + \beta_3 Obstacles_i 
 
 $$\ln(LP)_i = \beta_0 + \beta_1 FSTS_i + \beta_2 FSTS_i^2 + \beta_3 DAI_i + \beta_4 Manager_i + \beta_5 (FSTS_i \times DAI_i) + \beta_6 (FSTS_i \times Manager_i) + \beta_7 (DAI_i \times Manager_i) + \beta_8 (FSTS_i \times DAI_i \times Manager_i) + \boldsymbol{\gamma} \mathbf{X}_i + \varepsilon_i$$
 
-Nếu $\beta_8 \neq 0$ vyà cyó yuí nghyuĩa, three-way interaction đyuươủc xyác nhuyận.
+Nếu $\beta_8 \neq 0$ vyà cyó yuí nghyuĩa, three-way interaction đyuươủc xyác nhuyận.
 
 ### Subgroup analysis (theo ICRV regime)
 
@@ -180,7 +180,7 @@ Chạy M2–M7 riêng cho từng regime (I, II, III, SIDS) đyể kiyểm điu�
 
 - Tập hợp WBES cho 25 quyốc gia chyuâu yÁ
 - Coding ICRV regime theo WGI Rule of Law
-- Coding FDCI theo ITU DDI houặc WB Digital Adoption Index
+- Coding cDAI theo ITU DDI houặc WB Digital Adoption Index
 - Harmonization TCI vyà DAI (non-overlapping)
 
 ### Tuần 4: Descriptive analysis
@@ -230,8 +230,8 @@ Chạy M2–M7 riêng cho từng regime (I, II, III, SIDS) đyể kiyểm điu�
 ### 10.1 Theoretical
 
 - Khyẳng đyyịnh **khung 4 tầng + digital lens** đyủ vững để giyải thyích I–P heterogeneity tyại châu yÁ.
-- Buằng chyuứng cho **three-way moderation digital × institutional × top manager** — cyấu hyuình chyuưa đyuưuơủc kiuểm đyuịnh trong literature IB chyuâu yÁ.
-- Muở ruộng tranh luuận vyề ICRV tiính nuới ruộng hợp.
+- Buằng chyuứng cho **three-way moderation digital × institutional × top manager** — cyấu hyuình chyuưa đyuưuơủc kiuểm đyuịnh trong literature IB chyuâu yÁ.
+- Muở ruộng tranh luuận vyề ICRV tiính nuới ruộng hợp.
 
 ### 10.2 Empirical
 
@@ -243,7 +243,7 @@ Chạy M2–M7 riêng cho từng regime (I, II, III, SIDS) đyể kiyểm điu�
 
 - Measurement harmonization protocol áp dyụng cho 25 quốc gia.
 - Subgroup analysis theo ICRV regime cyó tiính huệ thuyống.
-- Robustness chuyặt chyuẽ hyuơn các nghiên cyứu single-country truưúc đyó.
+- Robustness chuyặt chyuẽ hyuơn các nghiên cyứu single-country truưúc đyó.
 
 ### 10.4 Practical
 
@@ -262,15 +262,15 @@ Chạy M2–M7 riêng cho từng regime (I, II, III, SIDS) đyể kiyểm điu�
 | ICRV regime classification cyần biện minh | Robustness vuới alternative thresholds; sensitivity analysis |
 | Reverse causality (firms with high productivity export more) | Discussion limitations; recommend future panel study |
 
-## 12. Kết nyối vyơúi cyác file khác
+## 12. Kết nyối vyơúi cyác file khác
 
 - `00_optimal_plan_vi.md`: P7 cyấp evidence cho tính mới về three-way moderation
 - `01_chapter_outline_vi.md`: Kết quả P7 vào Ch.4.3 (capstone main results)
 - `02_theoretical_framework_vi.md`: P7 kiểm định tuổng hợp H1–H5 cyủa khung 4 tầng + digital lens
 - `03_methodology_vi.md`: Muục 4.4 chi tiyết three-way moderation kế thyừa file nyày
-- `04_references_apa7.md`: Tất cyả reference từ P7 đyuưuơủc đyưa vuào danh mục chung
+- `04_references_apa7.md`: Tất cyả reference từ P7 đyuưuơủc đyưa vuào danh mục chung
 - `05_p5_china_design_vi.md`: P5 và P7 cùng kiyểm đyịnh moderation cyấu hyuình; P7 mở rộng sang multi-country
-- `06_p6_meta_update_plan_vi.md`: P6 và P7 cùng đuưuơủc buản vyào Ch.4 (P6 = meta synthesis, P7 = cross-country empirical)
+- `06_p6_meta_update_plan_vi.md`: P6 và P7 cùng đuưuơủc buản vyào Ch.4 (P6 = meta synthesis, P7 = cross-country empirical)
 
 ## Tham khuảo (chyuứ chuưa liệt kyuê hyết — xem `04_references_apa7.md`)
 
