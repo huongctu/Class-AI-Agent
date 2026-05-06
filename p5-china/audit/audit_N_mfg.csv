@@ -1,0 +1,21 @@
+wave,step,filter,N
+2012,raw,open,2700
+2012,mfg,a4a 15-38,1708
+2012,sample_analytic,mfg,1656
+2012,sample_base,mfg,1656
+2012,sample_dai,mfg,1656
+2012,sample_tci,mfg,1620
+2012,sample_full,mfg,1620
+2024,raw,open,2189
+2024,mfg,d1a2_v4//100 10-33,1187
+2024,sample_analytic,mfg,1062
+2024,sample_base,mfg,1062
+2024,sample_dai,mfg,1062
+2024,sample_tci,mfg,1052
+2024,sample_full,mfg,1052
+pooled,append,mfg,2895
+pooled,sample_analytic,mfg,2718
+pooled,sample_base,mfg,2718
+pooled,sample_dai,mfg,2718
+pooled,sample_tci,mfg,2672
+pooled,sample_full,mfg,2672

@@ -1,0 +1,42 @@
+%%{init: {'theme':'neutral', 'flowchart':{'curve':'linear', 'nodeSpacing':40, 'rankSpacing':70}}}%%
+graph LR
+    %% ----- node styles -----
+    classDef construct fill:#FFFFFF,stroke:#000000,stroke-width:1.5px,color:#000
+    classDef wave      fill:#FFFFFF,stroke:#1f6feb,stroke-width:2px,color:#1f6feb
+    classDef dashedC   fill:#FFFFFF,stroke:#666666,stroke-width:1.5px,stroke-dasharray:6 4,color:#333
+    classDef outcome   fill:#EFEFEF,stroke:#000000,stroke-width:2px,color:#000
+    classDef annot     fill:#FFF5CC,stroke:#888,stroke-width:1px,stroke-dasharray:2 2,color:#444
+
+    %% ----- predictor / mediator boxes -----
+    EI["Export Intensity<br/><i>FSTS, FSTS²</i>"]:::construct
+    W24["Wave2024<br/><i>(0/1 dummy)</i>"]:::wave
+    TCI["Technological Capability<br/><i>TCI_full</i><br/>(e6, b8, h1/CNo1, h8/CNo3)"]:::construct
+    DAI["Digital Adoption<br/><i>DAI_core</i><br/>(c22b own-website)"]:::construct
+    CTRL["Controls<br/><i>lnEmp, firmage, foreign,</i><br/><i>sector (a4a)</i>"]:::construct
+    WC["Working-Capital Condition<br/><i>Liquidity (k7, k8/k82)</i><br/><i>Financing (k3a, k3bc, k3f)</i><br/><i>A2F obstacle (k30)</i>"]:::dashedC
+
+    %% ----- outcome -----
+    LP["<b>Firm Performance</b><br/><i>ln(LP) = ln(d2/l1)</i>"]:::outcome
+
+    %% ----- H2 annotation -----
+    H2note["H2: predicted shape shift<br/>2012 ↔ 2024<br/><i>(empirical: shift NOT detected →<br/>unexpected stability finding)</i>"]:::annot
+
+    %% ----- arrows -----
+    EI    ==>|"H1: inverted U-shape"| LP
+    W24   ==>|"H2: temporal shift<br/>(FSTS×wave2024,<br/>FSTS²×wave2024)"| EI
+    TCI   ==>|"H4a: level shift<br/>+ curvature moderation"| LP
+    DAI   ==>|"H4b: level shift<br/>+ curvature moderation"| LP
+    CTRL  -->                                                 LP
+    WC    -.->|"H3: post-threshold<br/>conditioning (exploratory)"| LP
+
+    %% ----- H2 annotation link -----
+    EI <-.-> H2note
+
+    %% ----- styling overrides -----
+    linkStyle 0 stroke:#000,stroke-width:2.5px
+    linkStyle 1 stroke:#1f6feb,stroke-width:2.0px,stroke-dasharray:8 3
+    linkStyle 2 stroke:#000,stroke-width:2.0px
+    linkStyle 3 stroke:#000,stroke-width:2.0px
+    linkStyle 4 stroke:#666,stroke-width:1px
+    linkStyle 5 stroke:#666,stroke-width:1.5px,stroke-dasharray:6 3
+    linkStyle 6 stroke:#888,stroke-width:1px,stroke-dasharray:2 2
