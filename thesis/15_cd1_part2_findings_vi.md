@@ -6,9 +6,7 @@
 > **Phiên bản 2.5–2.6**: Pool 101.035 firms · 47 nước · 107 country-years · 2009–2025.
 > **Phiên bản 2.7–2.9 (D1–D3)**: §4.9 Sub-grouping Emerging + §4.10 2025 wave deep dive + §4.8 Industry-level framework.
 > **Phiên bản 2.10 (D4 — final)**: §4.7 expanded summary với 10 kết luận chính (thay vì 6 sơ bộ); integrate phát hiện D1–D3; finalize hàm ý CĐ2.
-> **Phiên bản 3.0a (06/05/2026)**: Biên tập tiếng Việt §4.1–4.3.
-> **Phiên bản 3.0b (06/05/2026)**: Biên tập tiếng Việt §4.4–4.6.
-> **Phiên bản 3.0c (06/05/2026)**: Biên tập tiếng Việt §4.7 — toàn bộ 10 kết luận chính + hàm ý CĐ2 + phạm vi không trình bày. Áp dụng đầy đủ 5 conventions của `09b_vn_term_glossary.md`.
+> **Phiên bản 3.0 (06/05/2026 — biên tập tiếng Việt hoàn thiện)**: Áp dụng đầy đủ `09b_vn_term_glossary.md` cho toàn bộ Chương 4 — §4.1–4.10. Bao gồm code-switching, terminology consistency, ngắt câu dài, thay từ Hán-Việt nặng nề (ít trong file này), và giải thích lần đầu cho mọi acronym + thuật ngữ tiếng Anh.
 
 ---
 
@@ -139,64 +137,64 @@ CĐ2 nên dùng tiểu nhóm dữ liệu 2025-only làm mẫu xác thực (valid
 - (d) Năng suất quy đổi USD PPP (Phase 1 — tháng 6/2026 — Data360 WDI);
 - (e) Phụ thuộc tài nguyên trực tiếp (WDI NY.GDP.TOTL.RT.ZS + UN Comtrade — Phase 1).
 
-### 4.8 Industry-level analysis framework (kế hoạch CĐ2)
+### 4.8 Khung phân tích cấp ngành (industry-level) — kế hoạch CĐ2
 
-> **Mới ở v2.9 (D3)**: WBES schema phân loại theo `a3a` (sector code) và `a4a` (4-digit ISIC). CĐ1 phân tích regime/country level; industry-level cấp ngành dành cho CĐ2 + Giai đoạn 2 hoàn thiện CĐ1 (tháng 7/2026).
+> **Mới ở v2.9 (D3)**: Khung dữ liệu (schema) WBES phân loại theo `a3a` (mã ngành) và `a4a` (mã ISIC 4 chữ số). CĐ1 phân tích ở cấp phân nhóm con / quốc gia; phân tích cấp ngành (industry-level) dành cho CĐ2 và Giai đoạn 2 hoàn thiện CĐ1 (tháng 7/2026).
 
-**Bảng 4.8.1**. *Khung phân loại 9 ngành ISIC Rev. 4 cho pool WBES.*
+**Bảng 4.8.1**. *Khung phân loại 9 ngành ISIC Rev. 4 cho nhóm dữ liệu WBES.*
 
-| Ngành | ISIC | Đặc điểm | Pattern dự kiến |
+| Ngành | Mã ISIC | Đặc điểm | Pattern dự kiến |
 |---|---|---|---|
-| Manufacturing | C (10–33) | Capital-intensive, export-oriented | FSTS cao; R&D cao; ISO cao |
-| Wholesale/retail | G (45–47) | Labor-intensive, domestic | FSTS thấp; website cao; FDI thấp |
-| Tourism/hotels | I (55–56) | Service tourism-dependent | FDI cao ở SIDS |
-| Transport | H (49–53) | Network-economics | FDI cao; ISO cao |
-| ICT | J (58–63) | Knowledge-intensive | R&D cao; website ~100% |
-| Construction | F (41–43) | Project-based, domestic | FSTS thấp; FDI ở GCC |
-| Mining | B (05–09) | Resource-driven | FDI cao; ISO ở MNE-led |
-| Finance | K (64–66) | Regulated, cross-border | FDI cao; website ~100% |
-| Khác | A, D, L | Heterogeneous | Mixed |
+| Manufacturing (chế biến chế tạo) | C (10–33) | Thâm dụng vốn, định hướng xuất khẩu | FSTS cao; R&D cao; ISO cao |
+| Wholesale/retail (bán buôn/bán lẻ) | G (45–47) | Thâm dụng lao động, định hướng trong nước | FSTS thấp; website cao; FDI thấp |
+| Tourism/hotels (du lịch/khách sạn) | I (55–56) | Dịch vụ phụ thuộc du lịch | FDI cao ở SIDS |
+| Transport (vận tải) | H (49–53) | Kinh tế mạng lưới (network-economics) | FDI cao; ISO cao |
+| ICT (công nghệ thông tin) | J (58–63) | Thâm dụng tri thức | R&D cao; website ~100% |
+| Construction (xây dựng) | F (41–43) | Theo dự án, định hướng trong nước | FSTS thấp; FDI ở GCC |
+| Mining (khai khoáng) | B (05–09) | Tài nguyên dẫn dắt | FDI cao; ISO ở doanh nghiệp do MNE dẫn dắt |
+| Finance (tài chính) | K (64–66) | Có quy chế, xuyên biên giới | FDI cao; website ~100% |
+| Khác | A, D, L | Đa dạng | Hỗn hợp |
 
-Phân bố ước tính: Manufacturing ~50%, Services ~30%, Retail ~10%, Other ~10% (chi tiết Phase 2).
+Phân bố ước tính: Manufacturing (~50%), Services (~30%), Retail (~10%), Other (~10%) — chi tiết ở Giai đoạn 2.
 
-**5 hypotheses industry-level cho CĐ2** (kế thừa Bharadwaj et al., 2013; Banalieva & Dhanaraj, 2019; Lall, 1992; Stallkamp & Schotter, 2021; Hertog, 2010):
+**5 giả thuyết cấp ngành cho CĐ2** (kế thừa Bharadwaj et al., 2013; Banalieva & Dhanaraj, 2019; Lall, 1992; Stallkamp & Schotter, 2021; Hertog, 2010):
 
-**I1 (Manufacturing FSTS dominance)**: Manufacturing có FSTS cao nhất (>15% trung bình), đặc biệt Em Asia FDI-driven. Test: Manufacturing-only subsample (n≈50.000).
+**I1 (Manufacturing chiếm ưu thế về FSTS)**: Manufacturing có FSTS cao nhất (trung bình > 15%), đặc biệt ở khu vực Em Asia do FDI dẫn dắt. **Kiểm định**: mẫu con Manufacturing-only (n≈50.000).
 
-**I2 (ICT digital-native)**: ICT có DAI/R&D/innov cao nhất. DAI−0,129 ở Advanced có thể là artifact của *không tách ICT*. Test: ICT exclusion subsample.
+**I2 (ICT — bản chất số ngay từ đầu, digital-native)**: ICT có DAI, R&D và đổi mới sáng tạo cao nhất. Hệ số DAI = -0,129 ở Advanced có thể là **hiện vật thống kê (artifact)** do không tách ICT khỏi mẫu. **Kiểm định**: mẫu con loại trừ ICT (ICT exclusion subsample).
 
-**I3 (Tourism drive FDI ở SIDS)**: SIDS FDI 23,5% có thể chủ yếu từ Tourism. Test: dis-aggregate Tourism cho P8 manuscript.
+**I3 (Du lịch dẫn dắt FDI ở SIDS)**: SIDS có FDI 23,5% có thể chủ yếu từ ngành Tourism. **Kiểm định**: phân tách Tourism cho bản thảo P8.
 
-**I4 (Mining drive resource cluster)**: WBES sample không bao gồm large mining MNEs → "resource curse" pattern là spillover lên non-mining firms. Test: country_resource_dependence × FSTS thay vì firm_sector × FSTS.
+**I4 (Khai khoáng dẫn dắt cụm tài nguyên)**: Mẫu WBES không bao gồm các MNE khai khoáng lớn — pattern "lời nguyền tài nguyên (resource curse)" là **lan tỏa (spillover)** lên các doanh nghiệp ngoài khai khoáng. **Kiểm định**: tương tác giữa phụ thuộc tài nguyên quốc gia × FSTS thay vì ngành doanh nghiệp × FSTS.
 
-**I5 (Construction dominate Vùng Vịnh)**: Hertog (2010) — Construction >40% Gulf samples; "rentier state pattern" có thể là Construction artifact. **Critical test**: dis-aggregate Construction trong 5 nước Vùng Vịnh + Brunei. Nếu pattern duy trì → resource curse thật; nếu biến mất → Construction artifact.
+**I5 (Construction chiếm ưu thế ở Vùng Vịnh)**: Theo Hertog (2010), Construction chiếm hơn 40% mẫu Vùng Vịnh; pattern "nhà nước tô (rentier state)" có thể là **hiện vật ngành xây dựng (Construction artifact)**. **Kiểm định then chốt**: phân tách Construction trong 5 nước Vùng Vịnh và Brunei. Nếu pattern duy trì → lời nguyền tài nguyên thật; nếu biến mất → hiện vật ngành xây dựng.
 
-**5 hàm ý phương pháp luận cho CĐ2**: (a) Industry FE 9 ngành ISIC (G reference); (b) Manufacturing-only subsample robustness check; (c) Tourism/Hotels separation cho SIDS; (d) Construction subsample test cho Vùng Vịnh; (e) ICT exclusion test cho Advanced DAI−0,129.
+**5 hàm ý phương pháp luận cho CĐ2**: (a) hiệu ứng cố định ngành (Industry FE) cho 9 ngành ISIC, lấy G — Wholesale/retail làm tham chiếu; (b) kiểm định vững mẫu con Manufacturing-only; (c) tách Tourism/Hotels cho SIDS; (d) kiểm định mẫu con Construction cho Vùng Vịnh; (e) kiểm định loại trừ ICT cho hệ số DAI = -0,129 ở Advanced.
 
-**Phạm vi không trình bày**: Industry-level descriptive tables (cần `a4a` harmonization xuyên 4 thế hệ schema; pipeline `wbes/industry_harmonize.py` — Phase 2 tháng 7/2026).
+**Phạm vi không trình bày**: Bảng mô tả cấp ngành (industry-level descriptive tables) — cần hài hòa biến `a4a` xuyên 4 thế hệ khung dữ liệu; pipeline `wbes/industry_harmonize.py` thực hiện ở Giai đoạn 2 tháng 7/2026.
 
-### 4.9 Sub-grouping Emerging — phát hiện heterogeneity nội bộ
+### 4.9 Phân nhóm con Emerging — phát hiện dị biệt nội bộ
 
-> **Mới ở v2.7 (D1)**: Phát hiện phương pháp luận thứ hai cho CĐ2 sau sub-grouping Advanced.
+> **Mới ở v2.7 (D1)**: Phát hiện phương pháp luận thứ hai cho CĐ2 sau khi đã có phân nhóm con Advanced.
 
-**Bảng 4.9**. *Sub-grouping Emerging — số liệu pooled 2009–2025 (n=47.803).*
+**Bảng 4.9**. *Phân nhóm con Emerging — số liệu tổng hợp 2009–2025 (n=47.803).*
 
-| Sub-group | Quốc gia | n_firms | FSTS (%) | Exporter (%) | FDI ≥10% (%) | Website (%) | R&D (%) | ISO (%) | sd log |
+| Phân nhóm con | Quốc gia | n_firms | FSTS (%) | Doanh nghiệp xuất khẩu (%) | FDI ≥10% (%) | Website (%) | R&D (%) | ISO (%) | sd log |
 |---|---|---|---|---|---|---|---|---|---|
-| **Emerging-FDI-driven SEA** | VNM, IDN, PHL | 13.779 | **13,2** | 22,1 | 11,4 | 47,3 | 4,8 | 18,8 | 1,53 |
-| **Emerging-large-population** | IND, LKA, JOR | 32.119 | **7,2** | 13,8 | 1,9 | 49,5 | 19,8 | 27,6 | 1,16 |
-| **Emerging-resource** | MNG | 1.905 | **5,0** | 9,7 | 4,7 | 50,1 | 20,8 | 15,4 | 1,16 |
-| **Total Emerging** | 7 nước | **47.803** | 8,6 | 15,5 | 4,7 | 49,2 | 16,4 | 24,9 | 1,24 |
+| **Emerging — FDI dẫn dắt Đông Nam Á (SEA)** | VNM, IDN, PHL | 13.779 | **13,2** | 22,1 | 11,4 | 47,3 | 4,8 | 18,8 | 1,53 |
+| **Emerging — dân số lớn** | IND, LKA, JOR | 32.119 | **7,2** | 13,8 | 1,9 | 49,5 | 19,8 | 27,6 | 1,16 |
+| **Emerging — tài nguyên** | MNG | 1.905 | **5,0** | 9,7 | 4,7 | 50,1 | 20,8 | 15,4 | 1,16 |
+| **Tổng Emerging** | 7 nước | **47.803** | 8,6 | 15,5 | 4,7 | 49,2 | 16,4 | 24,9 | 1,24 |
 
-5 phát hiện: (1) FSTS phân tầng 5,0%–7,2%–13,2% che giấu trong aggregate; (2) FDI chênh lệch 6× ASEAN-3 vs South+West Asia; (3) TCI ngược dấu — FDI-induced learning vs autonomous learning (Cohen & Levinthal, 1990); (4) Mongolia boundary case; (5) Dispersion sd log 1,53 vs 1,16 — two-tier (Hsieh & Klenow, 2009).
+Năm phát hiện: (1) FSTS phân tầng 5,0% – 7,2% – 13,2% bị che giấu trong số liệu tổng hợp; (2) FDI chênh lệch 6 lần giữa ASEAN-3 và Nam Á + Tây Á; (3) Năng lực công nghệ (TCI) ngược dấu — học hỏi do FDI dẫn dắt (FDI-induced learning) so với học hỏi tự thân (autonomous learning) (Cohen & Levinthal, 1990); (4) Mongolia là trường hợp biên (boundary case); (5) phân tán sd log 1,53 so với 1,16 — cấu trúc hai tầng (two-tier) (Hsieh & Klenow, 2009).
 
-### 4.10 2025 wave deep dive — Phân tích đợt khảo sát 2025
+### 4.10 Phân tích sâu đợt khảo sát 2025
 
-> **Mới ở v2.8 (D2)**: Đợt 2025 chiếm 16.829 firms (16,7% pool); largest single-year wave; phát hiện schema effects + SIDS digital leapfrog + sub-grouping Advanced data.
+> **Mới ở v2.8 (D2)**: Đợt 2025 chiếm 16.829 doanh nghiệp (16,7% nhóm dữ liệu) — đợt khảo sát đơn năm lớn nhất. Phát hiện chính: tác động khung dữ liệu (schema effects), nhảy vọt số ở SIDS Thái Bình Dương, và dữ liệu cho phân nhóm con Advanced.
 
 **Bảng 4.10**. *12 quốc gia trong đợt 2025 (n=16.829).*
 
-| Quốc gia | ISO3 | Regime | n_firms | FSTS (%) | FDI (%) | R&D (%) | Website (%) | sd log |
+| Quốc gia | ISO3 | Phân nhóm con | n_firms | FSTS (%) | FDI (%) | R&D (%) | Website (%) | sd log |
 |---|---|---|---|---|---|---|---|---|
 | Ấn Độ | IND | Emerging | 10.479 | 2,7 | 1,9 | 2,2 | 41,8 | 0,83 |
 | Nepal¹ | NPL | Frontier | 1.740 | n/a | n/a | n/a | n/a | n/a |
@@ -213,11 +211,11 @@ Phân bố ước tính: Manufacturing ~50%, Services ~30%, Retail ~10%, Other ~
 | Kuwait | KWT | Advanced | 150 | **0,4** | 0,0 | 20,7 | 69,3 | 1,15 |
 | **Tổng 2025** | — | — | **16.829** | **3,9** | **2,9** | **5,3** | **44,4** | **0,90** |
 
-*Ghi chú: ¹Nepal 2025 schema BREADY chưa thống nhất — re-process Phase 1.*
+*Ghi chú: ¹Nepal 2025 — khung dữ liệu BREADY chưa thống nhất, sẽ xử lý lại ở Giai đoạn 1.*
 
-6 phát hiện: (1) IND FSTS drop sốc 5 đpt — schema effect; (2) THA "digital up, exports down"; (3) Fiji website 74,8% > Singapore — digital leapfrog; (4) Vùng Vịnh+Brunei resource-driven Advanced confirmed (sd log 0,31–0,47); (5) R&D schema-induced overestimation; (6) 2025 most diverse single-year — validation sample CĐ2.
+Sáu phát hiện: (1) Ấn Độ — FSTS sụt 5 đpt do tác động khung dữ liệu (schema effect); (2) Thái Lan — "số tăng, xuất khẩu giảm" (digital up, exports down); (3) Fiji — website 74,8% vượt Singapore, minh chứng nhảy vọt số (digital leapfrog); (4) Vùng Vịnh và Brunei — xác nhận thuộc nhóm Advanced tài nguyên dẫn dắt (sd log 0,31–0,47); (5) R&D bị đánh giá vượt ngưỡng do thay đổi khung dữ liệu (schema-induced overestimation); (6) Năm 2025 — đợt khảo sát đơn năm đa dạng nhất, có thể dùng làm mẫu xác thực (validation sample) cho CĐ2.
 
-5 hàm ý CĐ2: (a) 2025 validation test bed; (b) Schema FE PostBREADY2024; (c) 11-country Advanced sub-grouping test feasible; (d) SIDS digital leapfrog evidence cho H6; (e) Two-wave panel cho 6 nước Em/Frontier.
+Năm hàm ý cho CĐ2: (a) đợt 2025 làm mẫu xác thực (validation test bed); (b) hiệu ứng cố định khung dữ liệu hậu BREADY 2024 (Schema FE PostBREADY2024); (c) khả thi kiểm định phân nhóm con Advanced trên 11 quốc gia; (d) bằng chứng nhảy vọt số ở SIDS phục vụ H6; (e) dữ liệu mảng hai sóng (two-wave panel) cho 6 nước Emerging/Frontier.
 
 ---
 
@@ -229,6 +227,4 @@ Phân bố ước tính: Manufacturing ~50%, Services ~30%, Retail ~10%, Other ~
 
 *Phiên bản 2.10 (D4 — final) — §4.7 expanded summary từ 6 → 10 kết luận chính, integrate phát hiện D1 (sub-grouping Emerging), D2 (2025 wave deep dive), D3 (industry-level framework) + 4 hàm ý cho CĐ2 (H1–H6, 8 sub-regime FE, 2 specifications, industry FE + 5 subsample tests). Chương 4 hoàn thiện với 10 sub-sections (4.1–4.10). NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
 
-*Phiên bản 3.0a (06/05/2026) — Biên tập tiếng Việt §4.1–4.3.*
-*Phiên bản 3.0b (06/05/2026) — Biên tập tiếng Việt §4.4–4.6.*
-*Phiên bản 3.0c (06/05/2026) — Biên tập tiếng Việt §4.7 (10 kết luận chính + hàm ý CĐ2).*
+*Phiên bản 3.0 (06/05/2026 — biên tập tiếng Việt hoàn thiện) — §4.1–4.3 (commit 1/4 v3.0a), §4.4–4.6 (commit 2/4 v3.0b), §4.7 (commit 3/4 v3.0c), §4.8–4.10 (commit 4/4 v3.0d).*
