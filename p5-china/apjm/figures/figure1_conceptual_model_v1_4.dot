@@ -1,0 +1,38 @@
+// Graphviz DOT source for Figure 1 — P5 China conceptual model v1.4
+// Adds wave2024 explicit construct + H2 reframed as "predicted shift, observed stability"
+// Render: dot -Tpng figure1_conceptual_model_v1_4.dot -o figure1_v1_4.png
+
+digraph P5_conceptual_model_v1_4 {
+    rankdir=LR;
+    nodesep=0.4;
+    ranksep=1.0;
+    fontname="Helvetica";
+    node [fontname="Helvetica", fontsize=11, shape=box, style="filled,rounded", fillcolor="white", color="black", margin="0.18,0.10"];
+    edge [fontname="Helvetica", fontsize=10];
+
+    // ---- nodes ----
+    EI [label=<<b>Export Intensity</b><br/><i>FSTS, FSTS²</i>>, penwidth=1.5];
+    W24 [label=<<b>Wave2024</b><br/><i>(0/1 dummy)</i>>, color="#1f6feb", penwidth=2.0];
+    TCI [label=<<b>Technological Capability</b><br/><i>TCI_full</i><br/><font point-size="9">(e6, b8, h1/CNo1, h8/CNo3)</font>>, penwidth=1.5];
+    DAI [label=<<b>Digital Adoption</b><br/><i>DAI_core</i><br/><font point-size="9">(c22b own-website)</font>>, penwidth=1.5];
+    CTRL [label=<<b>Controls</b><br/><font point-size="9">lnEmp, firmage,<br/>foreign, sector (a4a)</font>>, penwidth=1.5];
+    WC [label=<<b>Working-Capital Condition</b><br/><font point-size="9">Liquidity (k7, k8/k82)<br/>Financing (k3a, k3bc, k3f)<br/>A2F obstacle (k30)</font>>, style="filled,rounded,dashed", color="#666666", penwidth=1.5];
+    LP [label=<<b>Firm Performance</b><br/><i>ln(LP) = ln(d2/l1)</i>>, fillcolor="#EFEFEF", penwidth=2.0];
+    H2 [label=<<b>H2: predicted shape shift</b><br/><font point-size="9">2012 ↔ 2024 via FSTS×wave2024,<br/>FSTS²×wave2024<br/><i>empirical: shift NOT detected;</i><br/><i>unexpected stability finding</i></font>>, shape=note, fillcolor="#FFF5CC", color="#888888", penwidth=1.0];
+
+    // ---- ranks ----
+    { rank=same; W24; EI; TCI; DAI; CTRL; WC; }
+
+    // ---- primary arrows ----
+    EI  -> LP [label="H1: inverted U-shape", penwidth=2.2, color="black"];
+    W24 -> EI [label=<H2: temporal shift<br/><font point-size="8">(predicted differ; observed stable)</font>>, penwidth=2.0, color="#1f6feb", style="dashed"];
+    TCI -> LP [label=<H4a: level shift<br/>+ curvature moderation>, penwidth=2.0, color="black"];
+    DAI -> LP [label=<H4b: level shift<br/>+ curvature moderation>, penwidth=2.0, color="black"];
+    CTRL -> LP [penwidth=1.0, color="#666666"];
+
+    // ---- exploratory dashed ----
+    WC -> LP [label=<H3: post-threshold<br/>conditioning (exploratory)>, style="dashed", penwidth=1.5, color="#666666"];
+
+    // ---- H2 annotation link ----
+    EI -> H2 [style="dotted", dir="both", penwidth=1.0, color="#888888", constraint=false];
+}

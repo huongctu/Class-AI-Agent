@@ -1,0 +1,28 @@
+wave,step,filter,N_expected,N_observed,match,notes
+2012,raw,none (open China2012fullESN2700data.dta),2700,,,Private firms only; 148 state-owned excluded by file design
+2012,mfg_keep,a4a >= 15 & a4a <= 38 (ISIC Rev 3.1 mfg incl Other Mfg),1708,,,Optional; manuscript v1.2 does NOT apply this filter
+2012,recode_missing,inlist(var -9 -7) -> . on focal vars,(no N change),,,Verify with codebook recode summary
+2012,analytic,listwise nonmissing on lnLP/FSTS/lnEmp/firmage/foreigndummy,2619,2610,within 9,Per manuscript v1.2 (Python verified 2610)
+2012,sample_base,+ FSTSsq nonmissing (mechanical),2612,2610,within 2,Per manuscript v1.2
+2012,sample_dai,sample_base & DAIthin nonmissing,2612,2610,within 2,DAIthin = z-mean(c22b e6); should not drop firms further
+2012,sample_tci,sample_base & TCIfull nonmissing (>=3/4 items),1613,1639,off 26,Verify TCI missing rule (>=3/4 vs >=2/4)
+2012,sample_full,sample_base & TCIfull & DAIthin nonmissing,1613,1639,off 26,= sample_tci since DAI is universal
+2024,raw,none (open China2024fulldata.dta),2189,2189,exact,1972 fresh + 217 panel
+2024,mfg_keep,d1a2_v4//100 >= 10 & d1a2_v4//100 <= 33 (ISIC Rev 4 mfg),1187,,,Optional; manuscript v1.2 does NOT apply this filter
+2024,recode_missing,inlist(var -9 -8 -7) -> . on focal vars,(no N change),,,2024 separates -9 (DK) from -8 (refuse)
+2024,analytic,listwise nonmissing on focal,1940,1934,within 6,Per manuscript v1.2
+2024,sample_base,+ FSTSsq nonmissing,1934,1934,exact,Per manuscript v1.2 (Python verified 1934)
+2024,sample_dai,sample_base & DAIthin nonmissing,1934,1934,exact,
+2024,sample_tci,sample_base & TCIfull nonmissing,1920,1920,exact,
+2024,sample_full,sample_base & TCIfull & DAIthin nonmissing,1920,1920,exact,
+pooled,append,append 2012 + 2024 analytic files,4559,4544,within 15,wave2024 dummy created in 01/02
+pooled,sample_base,M2 main threshold,4546,4544,within 2,
+pooled,sample_dai,M4/M6,4546,4544,within 2,
+pooled,sample_tci,M3/M5,3533,3559,off 26,Likely TCI missing-rule difference
+pooled,sample_full,M8 joint,3533,3559,off 26,
+pooled,duplicate_idstd,2 x 217 panel firms across waves,434,0,FAIL,Panel idstd not matching cross-wave; investigate panel link
+flag_threshold,Discrepancy > +/- 10 firms vs N_expected,,,,,Trigger root-cause review
+flag_root_cause_1,Mfg filter: 2012 may use 15-37 strict (no 38) in v1.2,,,,,Check methods section
+flag_root_cause_2,2024 mfg filter: a4a vs d1a2_v4 discrepancy,,,,,d1a2_v4 reflects realized industry; a4a reflects frame
+flag_root_cause_3,Composite missing rule (>=3/4 vs >=2/4 for TCI),,,,,Cross-check v1.2 footnote (likely cause of 26-firm gap)
+flag_root_cause_4,foreigndummy threshold (b2b > 0 vs b2b >= 10),,,,,Check methods
