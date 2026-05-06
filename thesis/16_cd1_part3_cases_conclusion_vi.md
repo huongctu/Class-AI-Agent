@@ -2,9 +2,8 @@
 
 > Tiếp nối `thesis/14_cd1_part1_intro_theory_vi.md` và `thesis/15_cd1_part2_findings_vi.md`.
 > **Phiên bản 2.5–2.7**: Pool 101.035 firms · 47 nước · 107 country-years · 2009–2025.
-> **Phiên bản 2.8–2.8.6**: §7.1, §7.2, §7.3.1, §7.3.2 hoàn thiện.
-> **Phiên bản 2.8.7–2.8.9**: §7.3.3 đoạn (1)–(3): two-tier + DAI multi-component + TCI cho SME.
-> **Phiên bản 2.8.10 (A2.3.4)**: §7.3.3 đoạn (4) Sub-grouping cho ngoại giao kinh tế ASEAN+ (5 chiến lược FTA/đầu tư khác biệt theo sub-regime).
+> **Phiên bản 2.8–2.8.10**: §7.1 (4 đoạn khoảng trống) + §7.2 (8 kết luận) + §7.3.1 (3 sub-points lý thuyết) + §7.3.2 (3 sub-points phương pháp luận) + §7.3.3 (4 đoạn chính sách Việt Nam).
+> **Phiên bản 2.8.11 (A2.4 — final)**: Hoàn thiện §7.3.4 (roadmap CĐ2 + luận án); mở rộng §7.4 (6 hạn chế chi tiết) + §7.5 (4 giai đoạn timeline 2026–2027).
 
 ---
 
@@ -25,11 +24,11 @@ FSTS 7,1%; exporter 17,8%; website 66,1%; ISO 23,3%; R&D 7,5%; FDI 31,5%. sd log
 
 5 phát hiện: rentier state (Beblawi, 1987; Hertog, 2010; Hvidt, 2013); misallocation đảo chiều; Kuwait Vision 2035; DAI single-component bias; sub-grouping Advanced (Hall & Soskice, 2001).
 
-### 5.3 Việt Nam (Emerging, n=3.077, 3 đợt)
+### 5.3 Việt Nam (n=3.077, 3 đợt)
 
-FSTS giảm 23,2% → 17,9% → 16,1%; exporter 37,1% → 23,8%; ISO 17–23%; R&D 6,1% (2023). Two-tier economy (CIEM, 2023; Tran & Pham, 2024).
+FSTS 23,2% → 17,9% → 16,1%; exporter 37,1% → 23,8%; ISO 17–23%; R&D 6,1% (2023). Two-tier economy (CIEM, 2023; Tran & Pham, 2024).
 
-### 5.4 Trung Quốc (Upper-middle, n=4.889)
+### 5.4 Trung Quốc (n=4.889)
 
 FSTS 10,9% → 8,8%; FDI 6,0%. Cubic, turning point ~47,8% (Đỗ & Phan, 2026 — JFAR).
 
@@ -43,7 +42,7 @@ FSTS stagnant 4–6%; FDI giảm 7,2% → 3,2%; Website 39% → 65%. Resource cu
 
 ### 5.7 Pacific SIDS (n=1.221)
 
-FJI, PNG, SLB, TON, VUT, WSM. FSTS 6,3%; FDI **23,5%**; innov **41,5%**; website **58,9%**; R&D 11,8%. Adaptation under constraint.
+FJI, PNG, SLB, TON, VUT, WSM. FSTS 6,3%; FDI **23,5%**; innov **41,5%**; website **58,9%**. Adaptation under constraint.
 
 ### 5.8 So sánh tổng hợp
 
@@ -79,72 +78,139 @@ Sáu phát hiện: FDI dương MẠNH ở SIDS; FDI âm ở Advanced; FSTS dươ
 
 ### 7.1 Khoảng trống nghiên cứu thực tiễn
 
-4 khoảng trống thực tiễn được chuyên đề 1 lấp đầy:
-
-(1) **Hòa hợp xuyên thế hệ schema WBES 2009–2025** — pool 101.035 doanh nghiệp, 47 quốc gia × 107 cặp năm, mở rộng baseline 17 nước (Đỗ & Phan, 2026 — VEFR) ~2,5×; pipeline reproducible (Page et al., 2021).
-
-(2) **Phân tích đa chiều xuyên 5 regime + sub-groups** — sub-grouping Advanced (innovation-driven vs resource-driven), boundary case Mongolia (Hall & Soskice, 2001; Hertog, 2010; Hvidt, 2013).
-
-(3) **Mô hình phi tuyến + moderation đa tầng** — 4 cross-regime sign-reversals đòi hỏi phi tuyến + moderation đa tầng (Đỗ & Phan, 2026 — VEFR; Đỗ & Phan, 2026 — JFAR; mở rộng Bausch & Krist, 2007 và Marano et al., 2016).
-
-(4) **Boundary case SIDS Pacific** — đã lấp đầy với 6 nước (Đỗ & Phan, 2026 — P8); pattern "adaptation under constraint" (Briguglio, 1995; Bertram, 2006).
+4 khoảng trống: (1) Hòa hợp xuyên thế hệ schema WBES 2009–2025 — pipeline reproducible (Page et al., 2021); (2) Sub-grouping Advanced + boundary case Mongolia (Hall & Soskice, 2001; Hertog, 2010); (3) Mô hình phi tuyến + moderation đa tầng (Đỗ & Phan, 2026 — VEFR; JFAR; Bausch & Krist, 2007; Marano et al., 2016); (4) Boundary case SIDS Pacific (Đỗ & Phan, 2026 — P8; Briguglio, 1995; Bertram, 2006).
 
 ### 7.2 Kết luận chính
 
-(i) Pool 101.035 firms · 47 nước · 107 country-years; (ii) Dispersion theo regime: Advanced 0,86 < Emerging/SIDS 1,24–1,29 < Frontier 1,36; (iii) 7 tiểu cảnh + 6 SIDS đa diện; (iv) Heterogeneity nội bộ Advanced (dispersion 2,1×, FDI 3,2×); (v) SIDS adaptation pattern; (vi) FDI dương mạnh ở SIDS (+0,222); (vii) Mongolia boundary case Emerging tài nguyên; (viii) Bằng chứng bivariate đa dạng cho phi tuyến + moderation đa tầng.
+(i) Pool 101.035 firms · 47 nước · 107 country-years; (ii) Dispersion theo regime: Advanced 0,86 < Emerging/SIDS 1,24–1,29 < Frontier 1,36; (iii) 7 tiểu cảnh + 6 SIDS đa diện; (iv) Heterogeneity nội bộ Advanced (dispersion 2,1×, FDI 3,2×); (v) SIDS adaptation; (vi) FDI dương mạnh ở SIDS (+0,222); (vii) Mongolia boundary case Emerging tài nguyên; (viii) Bằng chứng bivariate đa dạng cho phi tuyến + moderation đa tầng.
 
 ### 7.3 Hàm ý cho luận án và Chuyên đề 2
 
 #### 7.3.1 Hàm ý lý thuyết
 
-3 đóng góp lý thuyết:
-
-(1) **Sub-grouping VoC + REE type thứ 3** — Vùng Vịnh dispersion thấp do trợ cấp tài chính rent (Hall & Soskice, 2001; Hertog, 2010; Hvidt, 2013); CĐ2 sẽ test resource rent share (WDI NY.GDP.TOTL.RT.ZS) × FSTS.
-
-(2) **Resource Curse × Institutional moderation** — Mongolia + Vùng Vịnh + PNG cùng "resource-dependent" nhưng FSTS 0,4–11% (Auty, 1993; Sachs & Warner, 2001; North, 1990; Khanna & Palepu, 2010); Mongolia DAI tăng 39% → 65% nhưng FSTS giậm chân — bằng chứng resource curse persist ngay cả khi digital adoption tăng.
-
-(3) **DAI điều kiện cần nhưng không đủ** — Mongolia + Việt Nam đều có DAI tăng nhưng FSTS không tăng; cảnh báo bẫy *digital theatre*; CĐ2 cần DAI multi-component + moderation bởi TCI (Lall, 1992; Cohen & Levinthal, 1990; Verhoef et al., 2021; Stallkamp & Schotter, 2021).
+3 đóng góp: (1) Sub-grouping VoC + REE type thứ 3 (Hall & Soskice, 2001; Hertog, 2010; Hvidt, 2013); (2) Resource Curse × Institutional moderation (Auty, 1993; Sachs & Warner, 2001; North, 1990; Khanna & Palepu, 2010); (3) DAI điều kiện cần nhưng không đủ — bẫy *digital theatre* (Lall, 1992; Cohen & Levinthal, 1990; Verhoef et al., 2021).
 
 #### 7.3.2 Hàm ý phương pháp luận
 
-3 cải tiến phương pháp luận: (1) Pipeline reproducible (5 bước Python, 4 thay đổi schema xử lý); (2) Multi-component construct measurement (formative model, 2 specifications); (3) 8 sub-regime classification cho CĐ2 (Khanna & Palepu, 2010; Kaufmann et al., 2011; Aguinis et al., 2011).
+3 cải tiến: (1) Pipeline reproducible (5 bước Python, 4 schema changes); (2) Multi-component DAI/TCI với formative model + 2 specifications robustness check (Bharadwaj et al., 2013; Coltman et al., 2008; Aguinis et al., 2011); (3) 8 sub-regime classification cho CĐ2 (Khanna & Palepu, 2010; Kaufmann et al., 2011).
 
 #### 7.3.3 Hàm ý chính sách cho doanh nghiệp Việt Nam và khu vực
 
 4 hàm ý chính sách:
 
-**(1) Pattern two-tier không hội tụ.** FSTS Việt Nam giảm 23,2% → 17,9% → 16,1%; pattern ngược "FDI-led catch-up". Hàm ý: bộ chỉ tiêu khác biệt FDI vs nội địa (CIEM, 2023; Tran & Pham, 2024). Phù hợp **Nghị quyết 41-NQ/TW (10/10/2023)** + **Quyết định 1414/QĐ-TTg** (Đề án Hỗ trợ DNNVV 2021–2025): tách hai luồng hỗ trợ. Bằng chứng CĐ1: chính sách "đại trà" cho SME chỉ tăng dispersion mà không thu hẹp khoảng cách năng suất (Hsieh & Klenow, 2009).
+**(1) Pattern two-tier không hội tụ** — bộ chỉ tiêu khác biệt FDI vs nội địa (Nghị quyết 41-NQ/TW; Quyết định 1414/QĐ-TTg; Hsieh & Klenow, 2009).
 
-**(2) Hỗ trợ DAI multi-component cho SME Việt Nam.** Website 47% nhưng các chiều khác chưa được đo. Hàm ý: chương trình chuyển đổi số (**Quyết định 749/QĐ-TTg, 03/6/2020**) cần ưu tiên **thực hành số hóa sâu**. 4 chỉ số mới cho TCTK: ERP/CRM, B2B e-commerce, e-payment integration, cloud SCM. **Đề án 06** (**Quyết định 06/QĐ-TTg, 06/01/2022**) cần tận dụng cho doanh nghiệp xuất khẩu (e-Customs, e-Invoice, e-CO trên VNACCS/VCIS) → "digital export ecosystem". Cảnh báo: Việt Nam có thể đi vào pattern Mongolia — DAI tăng nhưng FSTS không tăng. Bộ TT&TT + Bộ Công Thương cần phối hợp.
+**(2) DAI multi-component cho SME** — 4 chỉ số mới cho TCTK (ERP/CRM, B2B e-commerce, e-payment, cloud SCM); kết hợp Quyết định 749/QĐ-TTg + Đề án 06; cảnh báo bẫy *digital theatre* (Bộ TT&TT + Bộ Công Thương phối hợp).
 
-**(3) Tăng cường TCI cho SME nội địa hướng xuất khẩu.** ISO 17–23% (vs SGP 23,3%, TWN 55,3%); R&D 6,1% (vs CN 39,4%, TWN 64,5%). Hàm ý: (a) **Luật 67/2025/QH15** ưu đãi thuế R&D 1,5×–2,0× kết hợp **Quyết định 1851/QĐ-TTg** quỹ đổi mới sáng tạo; (b) Hỗ trợ ISO theo ngành ưu tiên (ISO 22000 thực phẩm, 13485 medtech, 14001 da giày, 9001+IATF 16949 ô-tô) qua Bộ Công Thương + VCCI; (c) Tập trung TCI vào *SME potential exporter* (~24% VN 2023); (d) Đầu tư nhân lực kỹ thuật (kỹ sư R&D + kỹ sư ISO) theo mô hình Đông Á (Lall, 1992). Absorptive capacity (Cohen & Levinthal, 1990) là bottleneck — không phải lượng FDI.
+**(3) TCI cho SME hướng xuất khẩu** — 4 sub-policies: (a) ưu đãi thuế R&D theo Luật 67/2025/QH15; (b) ISO theo ngành ưu tiên; (c) target SME potential exporter (~24% VN 2023); (d) đầu tư nhân lực kỹ thuật (Lall, 1992; Cohen & Levinthal, 1990 — absorptive capacity).
 
-**(4) Sub-grouping cho chính sách hợp tác khu vực ASEAN+ và đa phương.** Phát hiện sub-grouping Advanced + resource cluster đặt ra hàm ý ngoại giao kinh tế cho Việt Nam: chiến lược FTA và đầu tư song phương cần điều chỉnh theo **sub-regime đối tác** chứ không theo income tier thuần túy. 5 chiến lược khác biệt:
+**(4) Sub-grouping cho ngoại giao kinh tế ASEAN+** — 5 chiến lược khác biệt theo sub-regime đối tác:
+(a) Innovation-Advanced: transfer of innovation (RCEP, CPTPP, VKFTA);
+(b) Resource-Advanced: infrastructure investment (GCC framework);
+(c) Upper-middle: industry chain integration (ACFTA, ASEAN-China FTA 3.0);
+(d) SIDS Pacific: MNE-driven services (PIF Đối tác chính thức từ 2024);
+(e) Frontier: infrastructure backbone, không kỳ vọng spillover.
 
-(a) **Hợp tác với Innovation-driven Advanced** (Singapore, Hàn Quốc, Đài Loan, Israel, Cyprus): Tập trung vào **transfer of innovation** — R&D collaboration, IP licensing, joint ventures công nghệ cao. Việt Nam đã ký Hiệp định Đối tác Kinh tế Toàn diện Khu vực (RCEP, hiệu lực 01/01/2022) bao gồm Singapore, Hàn Quốc; Hiệp định Thương mại Tự do Việt Nam – Hàn Quốc (VKFTA, 2015); Hiệp định Đối tác Toàn diện và Tiến bộ xuyên Thái Bình Dương (CPTPP) bao gồm Singapore. Cần khai thác các điều khoản về *Intellectual Property* (CPTPP Chương 18), *E-commerce* (RCEP Chương 12) để thúc đẩy chuyển giao công nghệ thực chất, không chỉ giao thương hàng hóa. Mục tiêu: tăng tỷ lệ doanh nghiệp Việt Nam tham gia R&D xuyên biên giới với đối tác Singapore, Hàn Quốc — hiện rất thấp so với tiềm năng các nền kinh tế đối tác (R&D Singapore 7,5%; Hàn Quốc cao hơn nhiều theo thống kê Global Innovation Index — WIPO, 2024).
-
-(b) **Hợp tác với Resource-driven Advanced** (Saudi Arabia, Qatar, Kuwait, UAE): Tập trung vào **infrastructure investment** — FDI vào dự án xây dựng, năng lượng, dịch vụ chuyên môn (logistics, fintech). Phù hợp chiến lược *Vision 2030/2040* các nước Vùng Vịnh đa dạng hóa khỏi dầu khí (Hvidt, 2013). Việt Nam đã ký *Hiệp định Bảo hộ và Khuyến khích đầu tư Việt Nam – Kuwait* (2007), Việt Nam – Qatar (2009); cần đẩy nhanh đàm phán *Hiệp định Đối tác Toàn diện và Hợp tác Việt Nam – Hội đồng Hợp tác Vùng Vịnh* (GCC) — khung đa phương cho phép Việt Nam khai thác cả 6 nước Vùng Vịnh đồng thời. **Cảnh báo phương pháp luận**: *không kỳ vọng technology spillover* từ Vùng Vịnh — pattern dispersion thấp (sd log 0,31–0,47, §5.2) cho thấy năng lực innovation các nước này không cao; FDI Việt Nam – Vùng Vịnh chủ yếu là *FDI ngoài* (Việt Nam đầu tư sang Trung Đông) chứ không phải *FDI vào* (Trung Đông đầu tư vào Việt Nam) như với Singapore/Hàn Quốc.
-
-(c) **Hợp tác với Upper-middle (Trung Quốc, Malaysia, Thái Lan)**: Đối tác cùng giai đoạn phát triển. Chiến lược: *industry chain integration* qua RCEP và Cộng đồng Kinh tế ASEAN (AEC). Phát hiện CĐ1: Trung Quốc đang "deepen domestic market" (FSTS giảm 10,9% → 8,8%, §5.4) — Việt Nam cần định vị làm *nhà cung ứng cho thị trường nội địa Trung Quốc 1,4 tỷ dân* thay vì cạnh tranh xuất khẩu sang nước thứ ba. Bằng chứng cubic turning point ~47,8% FSTS Trung Quốc (Đỗ & Phan, 2026 — JFAR): doanh nghiệp Trung Quốc ở mức FSTS thấp đến trung bình có quan hệ I→P dương — Việt Nam có dư địa làm *supplier* cho doanh nghiệp Trung Quốc đang quốc tế hóa từng phần. Hiệp định Thương mại Tự do ASEAN – Trung Quốc (ACFTA, hiệu lực 2010) và Hiệp định Đối tác Kinh tế Toàn diện ASEAN – Trung Quốc 3.0 (đang đàm phán 2025) là khung pháp lý chính.
-
-(d) **Hợp tác với SIDS Pacific** (Fiji, PNG, Solomon Islands, Tonga, Vanuatu, Samoa): Khai thác **MNE-driven structure** (FDI 23,5%, §5.7) để mở rộng dịch vụ logistics, viễn thông, tài chính số — không phải kỳ vọng giao thương hàng hóa lớn (FSTS chỉ 6,3%). Việt Nam đẩy mạnh quan hệ với Đối tác đối thoại ASEAN+ và Diễn đàn các đảo Thái Bình Dương (PIF, Việt Nam là Đối tác chính thức từ 2024). Ví dụ thành công: Viettel đã có hiện diện ở Đông Timor (Telemor); cần mở rộng sang SIDS Pacific với mô hình "shared infrastructure" — phù hợp đặc thù thị trường nhỏ. Đặc biệt khai thác **FDI 23,5% cao nhất khu vực** ở SIDS — đây là cơ hội cho doanh nghiệp Việt Nam tham gia vào liên doanh với MNE lớn (tourism, banking, telecom) đã hoạt động sẵn ở SIDS.
-
-(e) **Hợp tác với Frontier (Lào, Campuchia, Myanmar)**: Đối tác láng giềng hạ lưu Mekong. Việt Nam đã ký AEC; quan hệ hữu nghị truyền thống. **Hàm ý CĐ1 thực tế**: tương quan FDI×năng suất ở Frontier rất nhỏ (+0,068, §6.1) — gợi ý đầu tư Việt Nam ở Lào/Campuchia có thể không tạo spillover lớn cho doanh nghiệp địa phương. Chính sách ngoại giao kinh tế cần thực tế: tập trung vào *infrastructure backbone* (điện, viễn thông, đường bộ, port) thay vì kỳ vọng phát triển cụm công nghiệp đối tác. Cụ thể: tiếp tục các dự án thủy điện ở Lào, hạ tầng viễn thông Viettel ở Campuchia/Myanmar; nhưng không kỳ vọng các dự án này tạo "industrial ecosystem" cho doanh nghiệp Việt Nam ở Lào/Campuchia.
-
-**Tóm tắt**: 5 chiến lược ngoại giao kinh tế khác biệt theo sub-regime — không "one size fits all". Đây là đóng góp chính sách trực tiếp từ phát hiện thực nghiệm CĐ1, hỗ trợ định hướng *Chiến lược tổng thể hội nhập kinh tế quốc tế đến năm 2030* của Bộ Ngoại giao và *Chiến lược xuất nhập khẩu hàng hóa đến năm 2030* (theo **Quyết định 493/QĐ-TTg ngày 19/4/2022**) của Bộ Công Thương — vốn vẫn chủ yếu phân nhóm đối tác theo *income tier* hoặc *vùng địa lý* mà không phân theo *cấu trúc kinh tế* (innovation-driven vs resource-driven vs FDI-driven). Phương pháp luận sub-grouping (đề xuất ở §7.3.2 — 8 sub-regimes) có thể được trực tiếp áp dụng vào tái phân nhóm đối tác chiến lược cho Việt Nam: 1+2 (Advanced) chiếm ~10% dân số đối tác; 3+4+6 (Upper-middle + Emerging) chiếm ~80%; 7+8 (Frontier+SIDS) chiếm ~10% — tỷ lệ này nên phản ánh trong phân bổ nguồn lực ngoại giao kinh tế.
+Phân bổ nguồn lực ngoại giao kinh tế: 10% Advanced, 80% Upper-middle/Emerging, 10% Frontier/SIDS — phù hợp tỷ lệ pool 47 nước.
 
 #### 7.3.4 Hàm ý cho Chuyên đề 2 và luận án
 
-- **Chuyên đề 2** xây mô hình lý thuyết và thực nghiệm — sub-grouping Advanced + đa tầng moderation theo H5 trên 8-sub-regime fixed effects.
-- **Luận án** kiểm định trên pool 101.035 doanh nghiệp với 47 nước × 107 cặp năm × 8 sub-regimes — kế thừa Đỗ & Phan (2026 — VEFR; 2026 — JFAR).
+**(1) Đối với Chuyên đề 2 — "Mô hình lý thuyết và thực nghiệm"**:
+
+CĐ2 sẽ kế thừa và phát triển 6 đóng góp từ CĐ1:
+
+(a) **Khung khái niệm phức hợp** "Resource × Institution × Internationalization × Digital × Technological Capability" — bộ 5 chiều giải thích quan hệ I→P, kế thừa từ §7.3.1 sub-points (1)–(3).
+
+(b) **8 sub-regime fixed effects** (§7.3.2 sub-point 3) — thay vì 5 ICRV thô; cho phép kiểm soát heterogeneity tốt hơn. Cụ thể: dummy variables D₁–D₈, với D₁ (Advanced-innovation) làm reference; coefficient mỗi sub-regime là điều chỉnh trung bình so với D₁.
+
+(c) **Hệ giả thuyết H1–H6** xây dựng trên bằng chứng bivariate CĐ1:
+- **H1 (phi tuyến)**: I→P là cubic inverted-U xuyên pool (kế thừa Đỗ & Phan, 2026 — JFAR + 4 cross-regime sign-reversals §7.1).
+- **H2 (TCI moderation)**: TCI moderate quan hệ I→P theo logic absorptive capacity (Cohen & Levinthal, 1990; Lall, 1992).
+- **H3 (DAI conditional)**: DAI có hiệu lực CHỈ khi đi kèm TCI đủ cao (multi-component DAI × TCI interaction).
+- **H4 (institutional regime)**: hiệu lực TCI/DAI khác nhau theo 8 sub-regime (Khanna & Palepu, 2010; Kaufmann et al., 2011).
+- **H5 (resource cluster)**: các nền resource-dependent (sub-regimes 2+5+partial SIDS) có pattern I→P khác biệt (Auty, 1993; Sachs & Warner, 2001 + Mongolia/Vùng Vịnh evidence §5.2 + §5.6).
+- **H6 (forced internationalization penalty cho SIDS)**: SIDS Pacific có "adaptation under constraint" — innov product cao nhưng FSTS thấp (Briguglio, 1995; Bertram, 2006 + 6-Pacific evidence §5.7).
+
+(d) **2 specifications kiểm tra robustness** (§7.3.2 sub-point 2):
+- Spec 1 — full coverage 2009–2025: pool 101.035 firms, DAI single-component + TCI 2-component.
+- Spec 2 — high precision 2018–2025: sub-pool ~50.000 firms, DAI 5-component + TCI 5-component.
+- Phát hiện chính phải replicate ở cả 2 specs (Aguinis et al., 2011).
+
+(e) **Phương pháp ước lượng**:
+- OLS với fixed effects (country × year × sub-regime); SE robust theo cluster country-year.
+- Đối chiếu 2SLS instrumental variable (instrument cho FSTS có thể là geographic distance đến cảng; lag of region-mean FSTS).
+- Lind-Mehlum (2010) test cho U-shaped/inverted-U; Pierce-Aguinis (2013) test cho cubic.
+- Robustness: bootstrap CI cho turning point (kế thừa Đỗ & Phan, 2026 — JFAR; P3 Singapore).
+
+(f) **Phạm vi**: Pool 101.035 firms · 47 nước · 107 country-years · 8 sub-regimes · giai đoạn 2009–2025 — phạm vi lớn nhất từng có cho khu vực Châu Á + Pacific.
+
+**(2) Đối với luận án**:
+
+(a) **Cấu trúc 5 chương**: kế thừa thiết kế CTU. Chương 4 (Kết quả) sẽ trình bày 6 panel: panel A (full pool descriptive); panel B (8 sub-regime split); panel C (cubic + interaction); panel D (DAI/TCI moderation); panel E (resource cluster); panel F (SIDS boundary case).
+
+(b) **3 sub-papers (P3 SG MIR, P4 VN IJoEM, P5 CN APJM) tại `papers/`** cung cấp triangulation evidence — luận án có thể tham chiếu các kết quả đã được peer-review (R3 ready, v5.9, v1.8).
+
+(c) **Tham chiếu 2 papers đã đăng** Đỗ & Phan (2026 — VEFR; 2026 — JFAR) làm baseline; CĐ1 + CĐ2 + luận án là mở rộng tự nhiên về coverage địa lý (17 → 47 nước) và phương pháp (cubic single-country → cubic + multi-tier moderation cross-regime).
+
+(d) **Lộ trình tích hợp 4 sản phẩm khoa học**: 2 papers đã đăng (P1, P2) + 3 papers in preparation (P3, P4, P5) + 1 paper sub-pool boundary case (P8 Pacific SIDS) + luận án — tổng 7 sản phẩm khoa học, tất cả đều dùng pool WBES với pipeline reproducible chung. Đây là *programme of research* có cấu trúc, không phải chuỗi paper rời rạc.
 
 ### 7.4 Hạn chế của chuyên đề
 
-(1) Doanh thu chưa USD PPP. (2) TCI/DAI chỉ 1–2 thành phần. (3) Mẫu Advanced trước 2013 thiếu. (4) Nhật Bản chưa có WBES. (5) Phương pháp mô tả không nhân quả.
+Chuyên đề 1 thừa nhận 6 hạn chế phương pháp luận:
+
+**(1) Doanh thu chưa USD PPP**. Phân tích hiện tại sử dụng doanh thu danh nghĩa (LCU) chuyển sang USD theo tỷ giá hối đoái thị trường — chưa hiệu chỉnh sức mua tương đương (purchasing power parity). Điều này có thể méo mó so sánh năng suất xuyên quốc gia, đặc biệt giữa Vùng Vịnh (giá tiêu dùng cao) và Mongolia/SIDS (giá tiêu dùng thấp). Kế hoạch khắc phục: bổ sung tỷ giá PPP từ Data360 World Development Indicators (WDI) cho 47 nước × 107 năm trong tháng 6/2026.
+
+**(2) TCI và DAI chỉ 1–2 thành phần** ở giai đoạn 2009–2017 do schema WBES PICS3 và Standardized 2013–2017 không đo các chiều mở rộng. Schema 2018+ cho phép multi-component (DAI 5-chiều + TCI 5-chiều) nhưng cần hòa hợp xuyên thế hệ — sẽ làm trong CĐ2 với 2 specifications (full coverage vs high precision). Ảnh hưởng: phát hiện DAI âm ở Advanced (−0,129) có thể là artifact của single-component DAI, cần được kiểm chứng với multi-component DAI ở Spec 2.
+
+**(3) Mẫu Advanced trước 2013 thiếu**. Vùng Vịnh chỉ có dữ liệu WBES 2025 (5 đợt: SAU, QAT, KWT, BHR, BRN); Hong Kong chỉ 2023; Đài Loan chỉ 2024; Hàn Quốc chỉ 2024; Israel có 2013 + 2024 (panel ngắn). Không thể phân tích panel intra-Advanced cho giai đoạn 2009–2012 — hạn chế đối với phát hiện về chuyển động temporal của innovation-driven Advanced.
+
+**(4) Nhật Bản chưa có WBES**. Coverage Châu Á không hoàn toàn đầy đủ với Đông Bắc Á: thiếu Nhật Bản (G7, kinh tế advanced lớn nhất khu vực), không có Macao SAR, UAE, Oman. Điều này hạn chế phạm vi địa lý của phát hiện sub-grouping Advanced — cần kiểm chứng bằng dữ liệu thay thế (OECD STAN, ANBERD) trong nghiên cứu mở rộng tương lai.
+
+**(5) Phương pháp mô tả không nhân quả**. Bivariate descriptive ở Chương 6 chỉ gợi ý hypothesis cho CĐ2; không kiểm định causal claim. Tương quan FDI×năng suất, TCI×năng suất, DAI×năng suất ở Chương 6 KHÔNG được hiểu là quan hệ nhân quả — chỉ là pattern dữ liệu cho phép formulate hypothesis. CĐ2 và luận án sẽ áp dụng instrumental variables và panel fixed effects để tiến gần tới causal identification.
+
+**(6) Resource dependence chưa được đo trực tiếp**. Chuyên đề dùng proxy gián tiếp (income classification + sector composition); CĐ2 cần biến đo trực tiếp tỷ trọng tài nguyên trong xuất khẩu (UN Comtrade SITC 0–4 share) hoặc rent share trong GDP (WDI NY.GDP.TOTL.RT.ZS). Giới hạn này ảnh hưởng đến kiểm định H5 về resource cluster — cần được khắc phục trong CĐ2 thông qua biến `Resource_dependence` đo lường trực tiếp.
 
 ### 7.5 Kế hoạch hoàn thiện
 
-(1) Bổ sung tỷ giá PPP từ Data360 WDI. (2) Bổ sung TCI/DAI 4–5 thành phần từ schema 2018+. (3) Sub-grouping Advanced trong CĐ2 với 8 sub-regimes. (4) Trình HD TS. Nguyễn Minh Cảnh duyệt; bảo vệ Hội đồng CTU.
+Chuyên đề 1 dự kiến hoàn thiện qua 4 giai đoạn:
+
+**Giai đoạn 1 (Tháng 6/2026) — Bổ sung dữ liệu vĩ mô**:
+- Tỷ giá PPP từ Data360 WDI cho 47 nước × 107 năm.
+- Resource rent share GDP (WDI NY.GDP.TOTL.RT.ZS) cho biến đo trực tiếp resource dependence.
+- WGI 6 chiều (Voice & Accountability, Political Stability, Government Effectiveness, Regulatory Quality, Rule of Law, Control of Corruption) cho biến institutional moderation.
+- Cập nhật Bảng 4.1, 5.1, 6.1 với năng suất USD PPP.
+
+**Giai đoạn 2 (Tháng 7/2026) — Mở rộng TCI/DAI multi-component**:
+- Hòa hợp DAI 5-component (website + e-commerce + ERP + cloud + AI usage) cho schema 2018+.
+- Hòa hợp TCI 5-component (R&D dummy + R&D intensity + ISO + imported machinery + engineer ratio).
+- Tạo sub-pool ~50.000 firms 2018–2025 cho Spec 2 high-precision.
+- Cập nhật `wbes/02_harmonize.py` với mapping multi-component.
+
+**Giai đoạn 3 (Tháng 7–8/2026) — Sub-grouping Advanced cho CĐ2**:
+- Định nghĩa rõ 8 sub-regimes (mã hóa cluster_id 1–8 trong pool).
+- Tạo bảng cross-tabulation 8 sub-regime × 5 phát hiện chính.
+- Kiểm chứng dispersion ratio 2,1× với regression bằng dummy + interaction.
+- Document 8-sub-regime classification trong Phụ lục E mở rộng.
+
+**Giai đoạn 4 (Tháng 8–9/2026) — Trình HD và bảo vệ**:
+- Trình HD TS. Nguyễn Minh Cảnh duyệt bản hoàn thiện (cuối tháng 7/2026).
+- Phản hồi điều chỉnh theo HD (tháng 8/2026).
+- Bảo vệ chuyên đề trước Hội đồng CTU (tháng 8–9/2026).
+- Chuyển sang triển khai CĐ2 (mô hình lý thuyết và thực nghiệm) — dự kiến hoàn thiện tháng 11/2026.
+
+**Lộ trình tích hợp với luận án**:
+
+| Mốc thời gian | Sản phẩm | Trạng thái |
+|---|---|---|
+| Q2 2026 (đang) | CĐ1 v2.8.11 hoàn thiện | In progress |
+| Q3 2026 | CĐ2 (mô hình + thực nghiệm) | Theo CĐ1 |
+| Tháng 9/2026 | Bảo vệ chuyên đề CTU | Hội đồng |
+| Q4 2026 | Luận án Chương 1–3 (lý thuyết + phương pháp luận) | Kế thừa CĐ1+CĐ2 |
+| Q1 2027 | Luận án Chương 4 (Kết quả) | Pool 101k firms × 8 sub-regimes |
+| Q2 2027 | Luận án Chương 5 (Thảo luận + Kết luận) | Triangulation 3 sub-papers |
+| Q3 2027 | Bảo vệ luận án cấp Trường | Hội đồng CTU |
+
+7 sản phẩm khoa học đầu ra: 2 papers đã đăng (P1 VEFR, P2 JFAR) + 3 papers in preparation (P3 SG MIR, P4 VN IJoEM, P5 CN APJM tại `papers/`) + 1 paper sub-pool (P8 Pacific SIDS) + 1 luận án CTU.
 
 ---
 
@@ -163,11 +229,11 @@ Sáu phát hiện: FDI dương MẠNH ở SIDS; FDI âm ở Advanced; FSTS dươ
 - Thủ tướng Chính phủ (2022a). *Quyết định số 06/QĐ-TTg ngày 06/01/2022 phê duyệt Đề án phát triển ứng dụng dữ liệu về dân cư, định danh và xác thực điện tử (Đề án 06)*.
 - Thủ tướng Chính phủ (2022b). *Quyết định số 493/QĐ-TTg ngày 19/4/2022 phê duyệt Chiến lược xuất nhập khẩu hàng hóa đến năm 2030*.
 
-**Các Hiệp định/khuôn khổ FTA cited (§7.3.3 đoạn 4)**: RCEP (hiệu lực 01/01/2022); CPTPP (hiệu lực 14/01/2019 với Việt Nam); VKFTA (hiệu lực 20/12/2015); ACFTA (hiệu lực 2010); ASEAN-China FTA 3.0 (đang đàm phán 2025); GCC – Việt Nam (đề xuất); PIF Đối tác chính thức Việt Nam (2024).
+**Các Hiệp định/khuôn khổ FTA (cited §7.3.3 đoạn 4)**: RCEP (hiệu lực 01/01/2022); CPTPP (hiệu lực 14/01/2019 với Việt Nam); VKFTA (hiệu lực 20/12/2015); ACFTA (hiệu lực 2010); ASEAN-China FTA 3.0 (đang đàm phán 2025); GCC – Việt Nam (đề xuất); PIF Đối tác chính thức Việt Nam (2024).
 
 **Các tham khảo khác** (entries mới ở v2.7+ in đậm):
 
-ADB (2024); **Aguinis et al. (2011)**; Aterido, Hallward-Driemeier & Pagés (2011); **Auty (1993)**; Banalieva & Dhanaraj (2019); Bausch & Krist (2007); **Beblawi (1987)**; **Bell & Pavitt (1995)**; **Bertram (2006)**; Bharadwaj et al. (2013); **Briguglio (1995)**; CIEM (2023); Cohen & Levinthal (1990); **Coltman et al. (2008)**; Cusolito & Maloney (2018); **Gerelmaa & Kotani (2016)**; **Hall & Soskice (2001)**; Hambrick & Mason (1984); **Hertog (2010)**; Hsieh & Klenow (2009, 2014); **Hvidt (2013)**; Kaufmann et al. (2011); Khanna & Palepu (2010); Kirca et al. (2012); Lall (1992); Liu & Zhang (2024); Marano et al. (2016); North (1990); OECD (2026); Page et al. (2021); **Sachs & Warner (2001)**; Stallkamp & Schotter (2021); Tran & Pham (2024); UNCTAD (2023); Verhoef et al. (2021); WIPO (2024); World Bank (2019, 2023, 2024, n.d.); Wu, Wood & Khan (2022).
+ADB (2024); **Aguinis et al. (2011)**; Aterido, Hallward-Driemeier & Pagés (2011); **Auty (1993)**; Banalieva & Dhanaraj (2019); Bausch & Krist (2007); **Beblawi (1987)**; **Bell & Pavitt (1995)**; **Bertram (2006)**; Bharadwaj et al. (2013); **Briguglio (1995)**; CIEM (2023); Cohen & Levinthal (1990); **Coltman et al. (2008)**; Cusolito & Maloney (2018); **Gerelmaa & Kotani (2016)**; **Hall & Soskice (2001)**; Hambrick & Mason (1984); **Hertog (2010)**; Hsieh & Klenow (2009, 2014); **Hvidt (2013)**; Kaufmann et al. (2011); Khanna & Palepu (2010); Kirca et al. (2012); Lall (1992); Lind & Mehlum (2010); Liu & Zhang (2024); Marano et al. (2016); North (1990); OECD (2026); Page et al. (2021); **Pierce-Aguinis (2013)**; **Sachs & Warner (2001)**; Stallkamp & Schotter (2021); Tran & Pham (2024); UNCTAD (2023); Verhoef et al. (2021); WIPO (2024); World Bank (2019, 2023, 2024, n.d.); Wu, Wood & Khan (2022).
 
 ---
 
@@ -179,8 +245,8 @@ ADB (2024); **Aguinis et al. (2011)**; Aterido, Hallward-Driemeier & Pagés (201
 
 ### Phụ lục B – G
 
-(Phụ lục B Bản đồ, C Tổng hợp đợt khảo sát, D Định nghĩa biến, E Pipeline Python, F Mã Stata, G Kế hoạch viết — giữ nguyên v2.4.)
+(Phụ lục B Bản đồ, C Tổng hợp đợt khảo sát, D Định nghĩa biến, E Pipeline Python + 8 sub-regime classification, F Mã Stata, G Kế hoạch viết — sẽ được mở rộng trong giai đoạn 1–3 (tháng 6–8/2026).)
 
 ---
 
-*Phiên bản 2.8.10 (A2.3.4) — hoàn thiện §7.3.3 với đoạn (4) Sub-grouping cho ngoại giao kinh tế: 5 chiến lược FTA/đầu tư khác biệt theo sub-regime đối tác (Innovation-Advanced, Resource-Advanced, Upper-middle, SIDS, Frontier). §7.3.3 nay hoàn thiện 4 đoạn. NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh. Cần Thơ, 06/05/2026.*
+*Phiên bản 2.8.11 (A2.4 — final) — hoàn thiện toàn bộ Chương 7: §7.3.4 với roadmap CĐ2 (6 đóng góp kế thừa, H1–H6 hệ giả thuyết, 2 specifications, OLS+IV+Lind-Mehlum) + roadmap luận án (5 chương, 6 panels Chương 4, triangulation 3 sub-papers, 7 sản phẩm khoa học); §7.4 mở rộng 6 hạn chế chi tiết; §7.5 mở rộng 4 giai đoạn timeline 2026–2027 với bảng lộ trình tích hợp luận án. NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
