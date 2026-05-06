@@ -30,7 +30,7 @@ The authors received no specific grant from any funding agency in the public, co
 
 Antonakis, J., Bendahan, S., Jacquart, P., & Lalive, R. (2010). On making causal claims: A review and recommendations. *The Leadership Quarterly, 21*(6), 1086–1120. https://doi.org/10.1016/j.leaqua.2010.10.010
 
-Avenyo, E. K., Tregenna, F., & Kraemer-Mbula, E. (2021). Do productive capabilities affect export performance? Microeconomic evidence from sub-Saharan Africa. *European Journal of Development Research, 33*(2), 304–329. https://doi.org/10.1057/s41287-020-00269-w
+Avenyo, E. K., Tregenna, F., & Kraemer-Mbula, E. (2021). Do productive capabilities affect export performance? Evidence from African firms. *European Journal of Development Research, 33*(2), 304–329. https://doi.org/10.1057/s41287-021-00364-6
 
 Bausch, A., & Krist, M. (2007). The effect of context-related moderators on the internationalization–performance relationship: Evidence from meta-analysis. *Management International Review, 47*(3), 319–347. https://doi.org/10.1007/s11575-007-0019-z
 
