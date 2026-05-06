@@ -5,8 +5,9 @@
 > Bảng thuật ngữ Anh-Việt: `thesis/09b_vn_term_glossary.md`.
 > **Phiên bản 2.5–2.6**: Pool 101.035 firms · 47 nước · 107 country-years · 2009–2025.
 > **Phiên bản 2.7–2.9 (D1–D3)**: §4.9 Sub-grouping Emerging + §4.10 2025 wave deep dive + §4.8 Industry-level framework.
-> **Phiên bản 2.10 (D4 — final)**: §4.7 expanded summary với 10 kết luận chính (thay vì 6 sơ bộ); integrate phát hiện D1–D3; finalize hàm ý CĐ2.
-> **Phiên bản 3.0 (06/05/2026 — biên tập tiếng Việt hoàn thiện)**: Áp dụng đầy đủ `09b_vn_term_glossary.md` cho toàn bộ Chương 4 — §4.1–4.10. Bao gồm code-switching, terminology consistency, ngắt câu dài, thay từ Hán-Việt nặng nề (ít trong file này), và giải thích lần đầu cho mọi acronym + thuật ngữ tiếng Anh.
+> **Phiên bản 2.10 (D4 — final)**: §4.7 expanded summary với 10 kết luận chính.
+> **Phiên bản 3.0 (06/05/2026)**: Biên tập tiếng Việt học thuật toàn bộ Chương 4.
+> **Phiên bản 3.1a (06/05/2026 — Quick Win 1 từ review report HD 07/05/2026)**: Tách Bảng 4.1 phân nhóm Advanced thành hai phân nhóm con (innovation-driven so với resource-driven) — bằng chứng định lượng tỷ số phân tán 2,1 lần (Singapore 1,03 so với Vùng Vịnh 0,49). Đáp ứng review point D.2(3): "Bảng 4.1 thiếu phân nhóm con Advanced".
 
 ---
 
@@ -26,13 +27,17 @@
 
 | Phân nhóm con | Cặp QG×năm | n_firms | sd log | P90/P10 | P75/P25 |
 |---|---|---|---|---|---|
-| Advanced | 13 | 5.921 | 0,86 | 10,8 | 3,1 |
+| **Advanced — innovation-driven** *(SG, HK, KOR, TWN, ISR)* | ~8 | ~4.220 | **1,03** | (cập nhật GĐ1) | (cập nhật GĐ1) |
+| **Advanced — resource-driven** *(SAU, QAT, KWT, BHR, BRN)* | ~5 | ~1.932 | **0,49** | (cập nhật GĐ1) | (cập nhật GĐ1) |
+| *Advanced (gộp — tham chiếu)* | 13 | 5.921 | 0,86 | 10,8 | 3,1 |
 | Upper-middle | 18 | 15.174 | 1,29 | 27,7 | 5,4 |
 | Emerging | 20 | 45.388 | 1,24 | 30,6 | 5,1 |
 | Frontier | 42 | 18.877 | 1,36 | 39,6 | 6,1 |
 | SIDS | 9 | 947 | 1,29 | 27,6 | 5,4 |
 
-5 phát hiện: (1) Advanced 1,00→0,86 sau khi bổ sung Vùng Vịnh — chứng cứ dị biệt nội bộ Advanced; (2) Frontier cao nhất — phù hợp giả thuyết **phân bổ sai nguồn lực (misallocation hypothesis)** của Hsieh & Klenow (2009, 2014); (3) SIDS ở mức trung bình; (4) tỷ số P90/P10 tăng đơn điệu theo phân nhóm con; (5) bằng chứng thực tiễn cho H5 — điều tiết thể chế (institutional moderation).
+*Ghi chú: Phân nhóm Advanced được tách thành hai phân nhóm con (innovation-driven so với resource-driven) ở v3.1 theo phát hiện (ii) §4.7. **Tỷ số phân tán Singapore (1,03) so với Vùng Vịnh (0,49) ≈ 2,1 lần** — bằng chứng định lượng cho phân nhóm con (sub-grouping) Advanced. Số liệu chi tiết P90/P10 và P75/P25 cho từng phân nhóm con sẽ được cập nhật ở Giai đoạn 1 hoàn thiện CĐ1 (tháng 6/2026 — sau khi pool có biến quy đổi USD PPP). Hàng "Advanced (gộp)" giữ lại để tham chiếu so sánh xuyên các phiên bản trước.*
+
+5 phát hiện: (1) Phân tán phân nhóm Advanced gộp giảm từ 1,00 (chỉ innovation-driven) xuống 0,86 (sau khi bổ sung Vùng Vịnh resource-driven) — bằng chứng dị biệt nội bộ; (2) Frontier cao nhất — phù hợp giả thuyết **phân bổ sai nguồn lực (misallocation hypothesis)** của Hsieh & Klenow (2009, 2014); (3) SIDS ở mức trung bình; (4) tỷ số P90/P10 tăng đơn điệu theo phân nhóm con; (5) bằng chứng thực tiễn cho H5 — điều tiết thể chế (institutional moderation).
 
 ### 4.3 Thực trạng quốc tế hóa và tăng trưởng việc làm
 
@@ -97,7 +102,7 @@ Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.0
 
 **(i) Phân tán năng suất nội bộ tăng đơn điệu khi phân nhóm con suy giảm**: Advanced 0,86 → Upper-middle 1,29 ≈ Emerging 1,24 ≈ SIDS 1,29 → Frontier 1,36. Tỷ số P90/P10 leo từ 10,8 lần lên 39,6 lần. Pattern này khẳng định **giả thuyết phân bổ sai nguồn lực (misallocation hypothesis)** của Hsieh & Klenow (2009, 2014) và là cơ sở thực tiễn cho H5 — điều tiết thể chế (institutional moderation) — trong CĐ2.
 
-**(ii) Dị biệt nội bộ phân nhóm Advanced — phân nhóm con đổi mới sáng tạo dẫn dắt so với tài nguyên dẫn dắt**. Sự sụt giảm phân tán từ 1,00 (chỉ tính nhóm châu Á đổi mới sáng tạo dẫn dắt — innovation-driven) xuống 0,86 (sau khi thêm Vùng Vịnh tài nguyên dẫn dắt — resource-driven) gợi ý cần **phân nhóm con (sub-grouping) Advanced** trong CĐ2 (xem §5.2 file 16). Đây là phát hiện mới so với cơ sở 17 nước (Đỗ & Phan, 2026 — VEFR vốn không bao gồm phân nhóm Advanced). Bằng chứng định lượng: tỷ số phân tán Singapore (1,03) so với Vùng Vịnh (0,49) ≈ **2,1 lần**.
+**(ii) Dị biệt nội bộ phân nhóm Advanced — phân nhóm con đổi mới sáng tạo dẫn dắt so với tài nguyên dẫn dắt**. Sự sụt giảm phân tán từ 1,00 (chỉ tính nhóm châu Á đổi mới sáng tạo dẫn dắt — innovation-driven) xuống 0,86 (sau khi thêm Vùng Vịnh tài nguyên dẫn dắt — resource-driven) gợi ý cần **phân nhóm con (sub-grouping) Advanced** trong CĐ2 (xem §5.2 file 16). Đây là phát hiện mới so với cơ sở 17 nước (Đỗ & Phan, 2026 — VEFR vốn không bao gồm phân nhóm Advanced). Bằng chứng định lượng: tỷ số phân tán Singapore (1,03) so với Vùng Vịnh (0,49) ≈ **2,1 lần** — đã được tách trực quan trong **Bảng 4.1 (v3.1)**.
 
 **(iii) Dị biệt nội bộ phân nhóm Emerging — 3 phân nhóm con** *(NEW D1, §4.9)*. Phân nhóm con FDI dẫn dắt Đông Nam Á (VNM+IDN+PHL, n=13.779; FSTS **13,2%**) khác biệt rõ với phân nhóm con dân số lớn (IND+LKA+JOR, n=32.119; FSTS **7,2%**) và phân nhóm con tài nguyên (MNG, n=1.905; FSTS **5,0%**). Phân tầng FSTS 5,0% – 7,2% – 13,2% bị *che giấu* trong số liệu tổng hợp Emerging (8,6%). Đây là phát hiện phương pháp luận thứ hai cho phân loại 8 phân nhóm con trong CĐ2 (§7.3.2 file 16). Năng lực công nghệ (TCI) ngược dấu giữa ASEAN-3 (R&D 4,8%, ISO 18,8%) và Nam Á + Tây Á (R&D 19,8%, ISO 27,6%) — phản ánh hai cơ chế: học hỏi do FDI dẫn dắt (FDI-induced learning) so với học hỏi tự thân (autonomous learning) (Cohen & Levinthal, 1990).
 
@@ -225,6 +230,6 @@ Năm hàm ý cho CĐ2: (a) đợt 2025 làm mẫu xác thực (validation test b
 
 ---
 
-*Phiên bản 2.10 (D4 — final) — §4.7 expanded summary từ 6 → 10 kết luận chính, integrate phát hiện D1 (sub-grouping Emerging), D2 (2025 wave deep dive), D3 (industry-level framework) + 4 hàm ý cho CĐ2 (H1–H6, 8 sub-regime FE, 2 specifications, industry FE + 5 subsample tests). Chương 4 hoàn thiện với 10 sub-sections (4.1–4.10). NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
+*Phiên bản 3.0 (06/05/2026) — Biên tập tiếng Việt §4.1–4.10. NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh.*
 
-*Phiên bản 3.0 (06/05/2026 — biên tập tiếng Việt hoàn thiện) — §4.1–4.3 (commit 1/4 v3.0a), §4.4–4.6 (commit 2/4 v3.0b), §4.7 (commit 3/4 v3.0c), §4.8–4.10 (commit 4/4 v3.0d).*
+*Phiên bản 3.1a (06/05/2026 — Quick Win 1 từ review report HD 07/05/2026) — Tách Bảng 4.1 phân nhóm Advanced thành 2 phân nhóm con (innovation-driven 1,03 so với resource-driven 0,49 — tỷ số 2,1×). Đáp ứng review point D.2(3).*
