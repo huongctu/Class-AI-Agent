@@ -2,9 +2,11 @@
 
 > Tiếp nối `thesis/14_cd1_part1_intro_theory_vi.md`.
 > Phần 3 (Chương 5–7 + TLTK): `thesis/16_cd1_part3_cases_conclusion_vi.md`.
+> Bảng thuật ngữ Anh-Việt: `thesis/09b_vn_term_glossary.md`.
 > **Phiên bản 2.5–2.6**: Pool 101.035 firms · 47 nước · 107 country-years · 2009–2025.
 > **Phiên bản 2.7–2.9 (D1–D3)**: §4.9 Sub-grouping Emerging + §4.10 2025 wave deep dive + §4.8 Industry-level framework.
 > **Phiên bản 2.10 (D4 — final)**: §4.7 expanded summary với 10 kết luận chính (thay vì 6 sơ bộ); integrate phát hiện D1–D3; finalize hàm ý CĐ2.
+> **Phiên bản 3.0a (06/05/2026)**: Biên tập tiếng Việt học thuật §4.1–4.3 theo `09b_vn_term_glossary.md` — pool→nhóm dữ liệu (pool); dispersion→phân tán; schema→khung dữ liệu; sub-regime→phân nhóm con; FSTS/CAGR giải thích lần đầu; boundary cases→trường hợp biên (boundary cases). Phần §4.4–4.10 sẽ biên tập trong các commit tiếp theo (3.0b → 3.0d).
 
 ---
 
@@ -12,17 +14,17 @@
 
 ### 4.1 Nguồn dữ liệu World Bank Enterprise Surveys
 
-**Phạm vi pool**. 101.035 doanh nghiệp · 47 nền kinh tế · 107 cặp quốc gia × năm · giai đoạn 2009–2025. Pool này kế thừa và mở rộng từ pool 17 nước châu Á mới nổi (~40.633 firms) của Đỗ & Phan (2026 — VEFR) ~2,5×. Phân bố regime ICRV: Emerging 47.803 (47%), Frontier 28.678 (28%), Upper-middle 16.693 (17%), Advanced 6.640 (7%), SIDS 1.221 (1%). 12 đợt khảo sát 2025 với 16.829 doanh nghiệp.
+**Phạm vi tổng hợp dữ liệu**. Nhóm dữ liệu (pool) gồm 101.035 doanh nghiệp, 47 nền kinh tế, 107 cặp quốc gia × năm, giai đoạn 2009–2025. Tổng hợp này kế thừa và mở rộng từ nhóm dữ liệu 17 nước châu Á mới nổi (~40.633 doanh nghiệp) của Đỗ & Phan (2026 — VEFR), gấp ~2,5 lần. Phân bố theo phân nhóm con (sub-regime) ICRV: Emerging 47.803 (47%), Frontier 28.678 (28%), Upper-middle 16.693 (17%), Advanced 6.640 (7%), SIDS 1.221 (1%). Có 12 đợt khảo sát năm 2025 với 16.829 doanh nghiệp.
 
-**Boundary cases**: 6 SIDS Pacific đầy đủ (FJI, PNG, SLB, TON, VUT, WSM) + Tây Á 9 nước (Vùng Vịnh + Trung Đông). Phân bố thời gian: 2009–2012 (n=14.171), 2013–2017 (n=24.564), 2018–2025 (n=62.300 — 62% pool). Ba thế hệ schema: PICS3/MENA-WBES, Standardized, Standardized2018+/BREADY.
+**Trường hợp biên (boundary cases)**: 6 SIDS Thái Bình Dương đầy đủ (FJI, PNG, SLB, TON, VUT, WSM) + Tây Á 9 nước (Vùng Vịnh + Trung Đông). Phân bố thời gian: 2009–2012 (n=14.171), 2013–2017 (n=24.564), 2018–2025 (n=62.300 — chiếm 62%). Ba thế hệ khung dữ liệu (schema): PICS3/MENA-WBES, Standardized, Standardized2018+/BREADY.
 
-**Hòa hợp**: Pipeline Python (`wbes/02_harmonize.py`); FSTS = `d3b + d3c`; winsorize log năng suất 1/99 trong country-year. Doanh thu chưa USD PPP.
+**Hài hòa**. Pipeline Python (`wbes/02_harmonize.py`); FSTS = `d3b + d3c`; giới hạn cực trị (winsorize) log năng suất ở mức 1/99 phân vị trong cụm quốc gia × năm. Doanh thu chưa quy đổi sang USD PPP.
 
-### 4.2 Thực trạng năng suất lao động — dispersion trong từng quốc gia
+### 4.2 Thực trạng năng suất lao động — phân tán trong từng quốc gia
 
-**Bảng 4.1**. *Dispersion theo regime (n=107 cặp quốc gia × năm).*
+**Bảng 4.1**. *Phân tán (dispersion) năng suất lao động theo phân nhóm con thể chế (n=107 cặp quốc gia × năm).*
 
-| Nhóm regime | Cặp QG×năm | n_firms | sd log | P90/P10 | P75/P25 |
+| Phân nhóm con | Cặp QG×năm | n_firms | sd log | P90/P10 | P75/P25 |
 |---|---|---|---|---|---|
 | Advanced | 13 | 5.921 | 0,86 | 10,8 | 3,1 |
 | Upper-middle | 18 | 15.174 | 1,29 | 27,7 | 5,4 |
@@ -30,13 +32,13 @@
 | Frontier | 42 | 18.877 | 1,36 | 39,6 | 6,1 |
 | SIDS | 9 | 947 | 1,29 | 27,6 | 5,4 |
 
-5 phát hiện: (1) Advanced 1,00→0,86 sau Vùng Vịnh — heterogeneity Advanced; (2) Frontier cao nhất — misallocation (Hsieh & Klenow, 2009, 2014); (3) SIDS trung bình; (4) P90/P10 đơn điệu; (5) H5 institutional moderation evidence.
+5 phát hiện: (1) Advanced 1,00→0,86 sau khi bổ sung Vùng Vịnh — chứng cứ dị biệt nội bộ Advanced; (2) Frontier cao nhất — phù hợp giả thuyết **phân bổ sai nguồn lực (misallocation hypothesis)** của Hsieh & Klenow (2009, 2014); (3) SIDS ở mức trung bình; (4) tỷ số P90/P10 tăng đơn điệu theo phân nhóm con; (5) bằng chứng thực tiễn cho H5 — điều tiết thể chế (institutional moderation).
 
 ### 4.3 Thực trạng quốc tế hóa và tăng trưởng việc làm
 
-**Bảng 4.3**. *FSTS, exporter, CAGR việc làm theo regime.*
+**Bảng 4.3**. *Cường độ xuất khẩu (FSTS), tỷ lệ doanh nghiệp xuất khẩu và tốc độ tăng trưởng kép hàng năm (CAGR — Compound Annual Growth Rate) việc làm theo phân nhóm con.*
 
-| Nhóm | FSTS (%) | Exporter (%) | CAGR (%) |
+| Phân nhóm con | FSTS (%) | Doanh nghiệp xuất khẩu (%) | CAGR việc làm (%) |
 |---|---|---|---|
 | Advanced | 10,2 | 23,0 | 3,15 |
 | Upper-middle | 10,3 | 21,7 | 4,25 |
@@ -44,7 +46,7 @@
 | Frontier | 10,1 | 16,6 | 3,65 |
 | SIDS | 6,3 | 16,3 | 5,77 |
 
-Median FSTS = 0% — phân cực; SIDS CAGR cao nhất.
+Trung vị FSTS bằng 0% — phân phối phân cực mạnh; SIDS có CAGR việc làm cao nhất.
 
 ### 4.4 Thực trạng đổi mới sáng tạo và năng lực số
 
@@ -224,3 +226,5 @@ Phân bố ước tính: Manufacturing ~50%, Services ~30%, Retail ~10%, Other ~
 ---
 
 *Phiên bản 2.10 (D4 — final) — §4.7 expanded summary từ 6 → 10 kết luận chính, integrate phát hiện D1 (sub-grouping Emerging), D2 (2025 wave deep dive), D3 (industry-level framework) + 4 hàm ý cho CĐ2 (H1–H6, 8 sub-regime FE, 2 specifications, industry FE + 5 subsample tests). Chương 4 hoàn thiện với 10 sub-sections (4.1–4.10). NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
+
+*Phiên bản 3.0a (06/05/2026) — Biên tập tiếng Việt §4.1–4.3.*
