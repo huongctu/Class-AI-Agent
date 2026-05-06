@@ -1,7 +1,7 @@
 #!/bin/bash
-# decode_papers.sh — Decode 3 papers from base64 chunks to .docx files
+# decode_papers.sh — Decode 3 papers + luận án 5 chương from base64 to .docx files
 # Usage: bash decode_papers.sh [output_dir]
-# Output: 3 .docx files ready to print/submit
+# Output: 4 .docx files ready to print/submit
 
 set -e
 OUT="${1:-papers_decoded}"
@@ -31,6 +31,12 @@ base64 -d manuscript_v1_8_blinded.docx.b64 > manuscript_v1_8_blinded.docx
 rm manuscript_v1_8_blinded.docx.b64
 echo "  ✓ manuscript_v1_8_blinded.docx ($(wc -c < manuscript_v1_8_blinded.docx) bytes)"
 
+echo "=== Luận án đề xuất 5 chương (75 KB) ==="
+curl -sLO "$BASE/dist/luan_an_5_chuong_v1.docx.b64"
+base64 -d luan_an_5_chuong_v1.docx.b64 > luan_an_5_chuong_v1.docx
+rm luan_an_5_chuong_v1.docx.b64
+echo "  ✓ luan_an_5_chuong_v1.docx ($(wc -c < luan_an_5_chuong_v1.docx) bytes)"
+
 echo ""
-echo "Done — 3 papers ready in: $OUT/"
+echo "Done — 4 files ready in: $OUT/"
 ls -la *.docx
