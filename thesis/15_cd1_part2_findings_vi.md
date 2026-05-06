@@ -4,6 +4,7 @@
 > Phần 3 (Chương 5–7 + TLTK): `thesis/16_cd1_part3_cases_conclusion_vi.md`.
 > **Phiên bản 2.5 (cập nhật ngày 04/05/2026 — bản hoàn chỉnh)**: Pool **101.035 doanh nghiệp · 47 nước · 107 cặp quốc gia × năm · 2009–2025**, **6 SIDS Pacific đầy đủ** (Fiji, Papua New Guinea, Solomon Islands, Tonga, Vanuatu, Samoa) + Tây Á mở rộng (Saudi Arabia, Qatar, Kuwait, Lebanon, Yemen, Bahrain, Israel, Jordan, Cyprus = 9 nước).
 > **Phiên bản 2.6 (05/05/2026)**: Bổ sung citation P1 (Đỗ & Phan, 2026 — VEFR) làm baseline 17 nước cho pool mở rộng.
+> **Phiên bản 2.7 (06/05/2026, D1)**: Bổ sung §4.9 Sub-grouping Emerging — tách 47.803 firms thành 3 sub-groups (FDI-driven SEA, large-population, resource) với số liệu thực từ pool_summary CSV.
 
 ---
 
@@ -173,6 +174,49 @@ Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.0
 
 (vi) *Pattern phi tuyến FDI ≥10%* (U-shape với cực tiểu Emerging) — gợi ý hai mô hình FDI khác nhau ở Advanced (MNE hub + Vùng Vịnh) và SIDS (tourism-driven + viễn thông).
 
+### 4.9 Sub-grouping Emerging — phát hiện heterogeneity nội bộ
+
+> **Mới ở v2.7 (D1)**: Emerging regime với 47.803 firms gộp 7 quốc gia heterogeneous (VNM, IDN, PHL, IND, LKA, JOR, MNG) trong 5-regime classification ICRV. Sub-grouping nội bộ là phát hiện phương pháp luận cho CĐ2 và luận án — song song với sub-grouping Advanced (§4.2 phát hiện *thứ nhất*).
+
+**Lý do tách sub-groups**. Emerging regime trong khung ICRV truyền thống chỉ phân biệt theo *income tier* (lower-middle income theo World Bank). Tuy nhiên, các phát hiện ở Chương 4 (Bảng 4.3, 4.4, 4.5) cho thấy 7 nước Emerging trong pool có cấu trúc kinh tế khác biệt rõ rệt: (i) ASEAN-3 (VNM, IDN, PHL) là nền FDI-driven hội nhập GVC; (ii) South + West Asia (IND, LKA, JOR) là nền có thị trường nội địa lớn, FDI thấp; (iii) Mongolia là nền resource-driven khoáng sản. Sub-grouping nội bộ Emerging là cần thiết để (a) kiểm tra robustness của các phát hiện regime-level; (b) định hình hệ giả thuyết H4 (institutional regime moderation) và H5 (resource cluster) trong CĐ2.
+
+**Định danh 3 sub-groups Emerging**:
+
+**Bảng 4.9**. *Sub-grouping Emerging — số liệu pooled 2009–2025 (n=47.803).*
+
+| Sub-group | Quốc gia | n_firms | FSTS (%) | Exporter (%) | FDI ≥10% (%) | Website (%) | R&D (%) | ISO (%) | sd log năng suất |
+|---|---|---|---|---|---|---|---|---|---|
+| **Emerging-FDI-driven SEA** | VNM, IDN, PHL | 13.779 | **13,2** | 22,1 | 11,4 | 47,3 | 4,8 | 18,8 | 1,53 |
+| **Emerging-large-population** | IND, LKA, JOR | 32.119 | **7,2** | 13,8 | 1,9 | 49,5 | 19,8 | 27,6 | 1,16 |
+| **Emerging-resource** | MNG | 1.905 | **5,0** | 9,7 | 4,7 | 50,1 | 20,8 | 15,4 | 1,16 |
+| **Total Emerging** | 7 nước | **47.803** | **8,6** | 15,5 | 4,7 | 49,2 | 16,4 | 24,9 | 1,24 |
+
+*Nguồn: Tính toán của tác giả từ pool WBES (47.803 firms, 7 quốc gia, 20 cặp quốc gia × năm).*
+*Ghi chú: Số liệu pooled với trọng số theo n_firms từng đợt khảo sát. R&D và ISO chỉ tính trên các đợt có dữ liệu (do schema thay đổi xuyên thế hệ, không phải tất cả đợt đều đo).*
+
+**Năm phát hiện chính từ sub-grouping Emerging**:
+
+**Phát hiện 1 — FSTS phân tầng rõ rệt giữa 3 sub-groups (5,0% – 7,2% – 13,2%)**. ASEAN-3 (VNM+IDN+PHL) có FSTS 13,2% — cao gấp ~2,6× Mongolia (5,0%) và ~1,8× South+West Asia (7,2%). Pattern này *che giấu* trong Emerging-aggregate (8,6%) — minh chứng tại sao sub-grouping cần thiết. Nguyên nhân: ASEAN-3 là *FDI-driven hội nhập GVC* (Việt Nam: Samsung/Intel/Foxconn, Indonesia: Toyota/Honda, Philippines: BPO + electronics), trong khi IND/LKA/JOR có thị trường nội địa lớn (Ấn Độ 1,4 tỷ dân) hoặc structural barriers (Sri Lanka post-2022 crisis; Jordan trade deficit) khiến doanh nghiệp ưu tiên domestic.
+
+**Phát hiện 2 — FDI ≥10% chênh lệch 6× giữa ASEAN-3 (11,4%) và South+West Asia (1,9%)**. Trong khi Việt Nam (FDI 11,4% — pooled 3 đợt) gần với Singapore (31,5%) và Hong Kong (14,4%), Ấn Độ và Sri Lanka có FDI ≥10% chỉ ~1,4% — phản ánh chính sách hạn chế sở hữu nước ngoài và preference cho doanh nghiệp nội địa lớn. Mongolia FDI ≥10% = 4,7% — trung gian, nhưng đang giảm liên tục từ 7,2% (2009) xuống 3,2% (2025) (xem §5.6 — resource curse pattern).
+
+**Phát hiện 3 — TCI (R&D + ISO) ngược dấu giữa ASEAN-3 và South+West Asia**. ASEAN-3 có R&D thấp (4,8%) nhưng ISO trung bình (18,8%); South+West Asia có R&D cao (19,8%) và ISO cao (27,6%). Đây là pattern bất ngờ — gợi ý: ASEAN-3 *học hỏi qua FDI spillover* (chuẩn quốc tế áp đặt qua đối tác MNE) trong khi South+West Asia *xây dựng năng lực nội tại* (R&D in-house). Phát hiện này phù hợp với tranh luận về "FDI-induced learning vs autonomous learning" trong literature về absorptive capacity (Cohen & Levinthal, 1990; Lall, 1992): hai con đường công nghệ khác nhau dẫn đến cùng output (innov_product 17,5% Emerging-aggregate) nhưng cấu trúc TCI khác nhau.
+
+**Phát hiện 4 — Mongolia là boundary case rõ rệt**. Mongolia có FSTS thấp nhất (5,0%), FDI thấp (4,7%) và đang giảm, nhưng R&D 20,8% (chỉ đo lần đầu 2025) — pattern đặc trưng *resource curse + late-measured TCI* khác hoàn toàn 6 Emerging Asia còn lại. Bằng chứng định lượng cho việc *tách Mongolia thành sub-regime "Emerging-resource" standalone* trong CĐ2 (đề xuất ở §7.3.2 sub-point 3 file 16). Khi tách Mongolia, các tương quan ở Emerging có thể thay đổi — cần kiểm tra robustness loại Mongolia trong sub-analysis CĐ2.
+
+**Phát hiện 5 — Dispersion sd log thấp hơn ở South+West Asia + Mongolia (1,16) so với ASEAN-3 (1,53)**. Cùng là Emerging nhưng phân phối năng suất khác biệt: ASEAN-3 có dispersion cao do *two-tier economy* FDI vs nội địa (Việt Nam sd 1,38; Indonesia sd 2,18 — Em Asia mở rộng); South+West Asia có dispersion thấp hơn do thị trường nội địa lớn cân bằng phân phối. Pattern này ủng hộ phương pháp luận của Hsieh và Klenow (2009): misallocation phụ thuộc institutional + market structure, không chỉ income tier.
+
+**Hàm ý cho CĐ2 và luận án**: Sub-grouping Emerging thành 3 sub-types là phát hiện phương pháp luận thứ hai của CĐ1 (sau sub-grouping Advanced ở §4.2). Trong CĐ2, dummy variable cho Emerging-FDI-driven, Emerging-large-population, Emerging-resource (cùng với Advanced-innovation, Advanced-resource ở §7.3.2 file 16) tạo nên 8-sub-regime classification — phản ánh đầy đủ heterogeneity của pool 47 nước. Hệ giả thuyết H4 (institutional regime moderation) sẽ được kiểm định ở cấp 8-sub-regime thay vì 5-ICRV thô.
+
 ---
 
 *Tiếp tục ở Phần 3 (Chương 5 — bảy tiểu cảnh điển hình bao gồm Pacific SIDS; Chương 6 — yếu tố giải thích sơ bộ; Chương 7 — kết luận; Tài liệu tham khảo) trong file `thesis/16_cd1_part3_cases_conclusion_vi.md`.*
+
+> **Phần Chương 4 sẽ được mở rộng thêm trong D2–D4**:
+> - **D2**: §4.10 2025 wave deep dive (12 nước n=16.829 so sánh với historical)
+> - **D3**: §4.8 Industry-level analysis framework
+> - **D4**: §4.7 expanded summary
+
+---
+
+*Phiên bản 2.7 (D1) — bổ sung §4.9 Sub-grouping Emerging với 3 sub-groups (FDI-driven SEA, large-population, resource); 5 phát hiện chính bao gồm phân tầng FSTS rõ rệt 5,0%–7,2%–13,2%, FDI chênh lệch 6×, TCI ngược dấu giữa ASEAN-3 và South+West Asia, Mongolia boundary case, dispersion sd log khác biệt 1,16 vs 1,53. NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
