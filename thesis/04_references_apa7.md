@@ -3,6 +3,8 @@
 Danh mục tham khảo cho luận án, sắp xếp theo thứ tự alphabet của tên tác giả đầu tiên theo chuẩn APA 7th. Những tham khảo này được dùng xuyên suốt bốn file `00`–`03` và bản thảo luận án.
 
 > **Phiên bản 2.0 (06/05/2026)**: Bổ sung 11 entries học thuật mới (Section N — Lý thuyết tài nguyên + thể chế + boundary cases) và 7 văn bản pháp lý Việt Nam (Section O) được cited trong CĐ1 §7.3.3 mở rộng.
+>
+> **Phiên bản 2.1 (06/05/2026 — QW7 từ review report HD 07/05/2026)**: Bổ sung 5 entries 2026 và Kiribati/Tonga country profiles trong Section K — IMF (2026, April), ADB (2026, April), World Bank Enterprise Surveys (2025), Kiribati 2025 country profile, Tonga 2024 country profile. Thay "World Bank (n.d.)" thành "World Bank Enterprise Surveys (2025)" theo APA 7th §8.31. Đáp ứng review report Phần A.2 (lỗi APA 7th n.d.) và Phần C.2 (cập nhật IMF WEO + ADB ADO April 2026).
 
 ## A. Lý thuyết nền kinh doanh quốc tế
 
@@ -190,23 +192,31 @@ Pierce, J. R., & Aguinis, H. (2013). The too-much-of-a-good-thing effect in mana
 
 White, H. (1980). A heteroskedasticity-consistent covariance matrix estimator and a direct test for heteroskedasticity. *Econometrica, 48*(4), 817–838. https://doi.org/10.2307/1912934
 
-## K. WBES references và báo cáo Việt Nam
+## K. WBES references và báo cáo Việt Nam (cập nhật v2.1 — 06/05/2026)
 
 CIEM (Viện Nghiên cứu Quản lý Kinh tế Trung ương). (2023). *Báo cáo Năng lực cạnh tranh và hiệu quả doanh nghiệp Việt Nam 2023*. Nhà xuất bản Khoa học và Kỹ thuật.
 
 Tran, T. B., & Pham, T. H. (2024). Tác động của FDI đến năng suất doanh nghiệp Việt Nam: Phân tích đa thế hệ điều tra. *Tạp chí Kinh tế và Phát triển, 311*, 24–38.
 
-World Bank. (n.d.). *Enterprise Surveys*. https://www.enterprisesurveys.org/en/enterprisesurveys
+**World Bank Enterprise Surveys**. (2025). *Enterprise Surveys: What businesses experience*. The World Bank. https://www.enterprisesurveys.org/en/enterprisesurveys *(Thay "World Bank (n.d.)" cũ — đáp ứng review report A.2 lỗi APA 7th §8.31. Cập nhật v2.1.)*
 
 World Bank. (2019). *Understanding the questionnaire: Enterprise Survey questionnaire manual*. World Bank Enterprise Surveys.
 
-World Bank. (2023). *Vietnam 2023 Enterprise Surveys country profile*. World Bank Enterprise Surveys.
+World Bank. (2023). *Vietnam 2023 Enterprise Surveys country profile*. World Bank Enterprise Surveys. https://www.enterprisesurveys.org/en/data/exploreeconomies/2023/vietnam
 
 World Bank. (2024). *Mongolia Economic Update: Towards diversified growth*. World Bank.
+
+**World Bank**. (2024, December). *Tonga 2024 Enterprise Surveys country profile*. World Bank Enterprise Surveys. *(Mới v2.1 — đợt khảo sát 150 doanh nghiệp June–December 2024, Upper Middle Income; cited trong CĐ1 §3.2 và §5.7.)*
+
+**World Bank**. (2025, December). *Kiribati 2025 Enterprise Surveys country profile*. World Bank Enterprise Surveys. *(Mới v2.1 — đợt khảo sát 150 doanh nghiệp June–December 2025, Lower Middle Income; cited trong CĐ1 §3.2, §4.10, §5.7. Mở rộng SIDS từ 6 → 7 nước. Số liệu firm-level: FSTS 1,03%; FDI 0,7%; website 18,7%; ISO 1,3%; sd log năng suất 1,48 — cao nhất pool sau Frontier.)*
 
 World Bank. (2026). *Indicator descriptions*. World Bank Enterprise Surveys.
 
 ADB. (2024). *Asian Development Outlook 2024 — Recovery and resilience in Asia*. Asian Development Bank.
+
+**ADB**. (2026, April). *Asian Development Outlook April 2026: The Middle East Conflict Challenges Resilience in Asia and the Pacific*. Asian Development Bank. https://www.adb.org/publications/asian-development-outlook-april-2026 *(Mới v2.1 — cited trong CĐ1 §1.1 lớp bối cảnh 6 và §5.7 SIDS bối cảnh nghiệt ngã. Pacific 3,4% năm 2026 — chậm hơn mainland Asia.)*
+
+**IMF**. (2026, April). *World Economic Outlook April 2026: Global Economy in the Shadow of War*. International Monetary Fund. https://www.imf.org/en/Publications/WEO/Issues/2026/04 *(Mới v2.1 — cited trong CĐ1 §1.1 lớp bối cảnh 6. Tăng trưởng toàn cầu 3,1% năm 2026; Saudi Arabia giảm mạnh từ ~4,5% xuống 3,1% do giảm sản lượng dầu.)*
 
 OECD. (2026, March). *OECD Economic Outlook, Volume 2026 Issue 1*. Organisation for Economic Co-operation and Development.
 
@@ -251,11 +261,11 @@ Wu, J., Wood, G., & Khan, Z. (2022). Internationalization and firm performance: 
 Đỗ, T. H., & Phan, A. T. (in preparation). China internationalization–performance: Temporal heterogeneity 2012–2024. Targeting *Asia Pacific Journal of Management* (v1.8 ready for submission).
 > **Submission package**: [`papers/p5-china/`](../papers/p5-china/)
 
-Đỗ, T. H., & Phan, A. T. (in preparation). Forced internationalization penalty: Evidence from six Pacific Small Island Developing States. *(P8 manuscript — theory-development stage; preliminary evidence trong CĐ1 §5.7.)*
+Đỗ, T. H., & Phan, A. T. (in preparation). Forced internationalization penalty: Evidence from **seven Pacific Small Island Developing States** *(cập nhật v2.1 với Kiribati 2025 — extreme case bổ sung)*. *(P8 manuscript — theory-development stage; preliminary evidence trong CĐ1 §5.7.)*
 
 ## N. Lý thuyết tài nguyên + thể chế kinh tế chính trị + boundary cases
 
-> **Mới ở v2.0 (06/05/2026)**: Bộ tham khảo này được cited trong CĐ1 §5.2 (Saudi/Qatar/Kuwait), §5.6 (Mongolia), §5.7 (SIDS Pacific), và §7.3.1 hàm ý lý thuyết về sub-grouping VoC + Resource Curse + REE type thứ 3 cho khu vực Châu Á.
+> **Mới ở v2.0 (06/05/2026)**: Bộ tham khảo này được cited trong CĐ1 §5.2 (Saudi/Qatar/Kuwait), §5.6 (Mongolia), §5.7 (SIDS Pacific — gồm Kiribati 2025 mới ở v3.1), và §7.3.1 hàm ý lý thuyết về sub-grouping VoC + Resource Curse + REE type thứ 3 cho khu vực Châu Á.
 
 ### N.1 Resource Curse và Rentier State
 
@@ -321,8 +331,9 @@ Thủ tướng Chính phủ. (2022b). *Quyết định số 493/QĐ-TTg ngày 19
 - 2 tác giả: giữ đủ hai tên ("Arte and Larimo, 2022" / "(Arte & Larimo, 2022)").
 - 3+ tác giả: dùng *et al.* ngay từ trích dẫn đầu tiên.
 - **Trích dẫn công trình của tác giả luận án**: dùng dạng "Đỗ và Phan (2025 — IntechOpen)", "Đỗ và Phan (2026 — VEFR)", "Đỗ và Phan (2026 — JFAR)", "Đỗ và Phan (2024 — Kỷ yếu CTU)" để phân biệt rõ giữa các công trình cùng tác giả ở cùng năm.
-- **Trích dẫn công trình đang chuẩn bị (P3 SG, P4 VN, P5 CN)**: dùng dạng "Đỗ và Phan (in preparation — P3 Singapore)", "Đỗ và Phan (in preparation — P4 Vietnam)", "Đỗ và Phan (in preparation — P5 China)" để hội đồng có thể tra cứu nhanh package tương ứng trong `papers/`.
+- **Trích dẫn công trình đang chuẩn bị (P3 SG, P4 VN, P5 CN, P8 SIDS)**: dùng dạng "Đỗ và Phan (in preparation — P3 Singapore)", v.v. để hội đồng có thể tra cứu nhanh package tương ứng trong `papers/`.
 - **Trích dẫn văn bản pháp lý Việt Nam**: dùng dạng "Nghị quyết 41-NQ/TW (2023)", "Quyết định 749/QĐ-TTg (2020)", "Luật 67/2025/QH15" để phân biệt rõ loại văn bản.
+- **Trích dẫn báo cáo quốc tế thường niên** (NEW v2.1): dùng dạng "IMF (2026, April)" hoặc "ADB (2026, April)" để phân biệt với phiên bản tháng khác trong cùng năm.
 
 ### Khi nộp bản cuối
 
@@ -332,3 +343,5 @@ Thủ tướng Chính phủ. (2022b). *Quyết định số 493/QĐ-TTg ngày 19
 - Cần phân biệt rõ năm xuất bản giữa 4 công trình của NCS để tránh lẫn lộn citation: 2024 (Kỷ yếu CTU — meta-analysis), 2025 (IntechOpen India — top management), 2026 (VEFR emerging Asia + JFAR China cubic).
 - **Avenyo et al. (2021)**: DOI chính thức `10.1057/s41287-021-00364-6` (đã verified qua Crossref + Springer; DOI cũ `s41287-020-00328-2` không resolve). Title đúng: "Evidence from African firms" (không phải "Microeconomic evidence from sub-Saharan Africa"). Đã được fix nhất quán trong cả 3 papers P3/P4/P5.
 - **Văn bản pháp lý Việt Nam (Section O)**: cần xác minh số hiệu chính xác trên Cổng thông tin điện tử Chính phủ (chinhphu.vn) hoặc Hệ thống Văn bản quy phạm pháp luật quốc gia (vbpl.vn) trước khi nộp luận án — đặc biệt Luật 67/2025/QH15 vừa được Quốc hội thông qua tháng 6/2025.
+- **Báo cáo IMF/ADB tháng 4/2026** (NEW v2.1): cần tải bản PDF từ trang publisher chính thức để xác minh số trang khi cite cụ thể (currently CĐ1 chỉ cite tổng quát 3,1% và 3,4%).
+- **Kiribati 2025 và Tonga 2024 country profiles** (NEW v2.1): cần tải PDF + .dta từ www.enterprisesurveys.org/en/data/exploreeconomies/2025/kiribati và .../2024/tonga để verify số liệu trước khi nộp.
