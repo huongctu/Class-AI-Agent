@@ -2,6 +2,8 @@
 
 Thư mục này chứa các bản thảo bài báo công bố quốc tế của NCS Đỗ Thùy Hương, là nguồn dữ liệu/bằng chứng nội bộ cho luận án tiến sĩ. Theo Quyết định 4769/QĐ-ĐHCT ngày 15/10/2024 của Hiệu trưởng Trường Đại học Cần Thơ, tên luận án chính thức là **"Quốc tế hóa và hiệu quả hoạt động kinh doanh của các doanh nghiệp ở Châu Á"**, do PGS.TS. Phan Anh Tú hướng dẫn.
 
+> **Lưu ý**: Thư mục `manuscripts/` lưu **bản tiếng Việt học thuật** dùng làm bằng chứng nội bộ cho luận án (Chương 4). Bộ hồ sơ submission đầy đủ (manuscript tiếng Anh + figures + tables + replication scripts + audit reports) cho 3 bản thảo đang chuẩn bị (**P3 Singapore — MIR**, **P4 Vietnam — IJoEM**, **P5 China — APJM**) được lưu tại [`../papers/`](../papers/) — xem [`papers/README.md`](../papers/README.md) để có overview.
+
 ## Cấu trúc thư mục
 
 | File | Nội dung | Ngôn ngữ |
@@ -14,8 +16,9 @@ Thư mục này chứa các bản thảo bài báo công bố quốc tế của 
 
 ## Quan hệ với luận án
 
-- **P3 Vietnam manuscript** → đi vào **Chương 4 Mục 4.2** (bằng chứng country-level cho transitional economy với TCI vs DAI; phát hiện stage-contingent digital value 2009→2015→2023)
-- **P4 Singapore manuscript** → đi vào **Chương 4 Mục 4.2** (bằng chứng country-level ASEAN benchmark cho digitally advanced economy; phát hiện DAI as conditional scaling resource)
+- **P3 Vietnam manuscript** → đi vào **Chương 4 Mục 4.2** (bằng chứng country-level cho transitional economy với TCI vs DAI; phát hiện stage-contingent digital value 2009→2015→2023). Submission package đầy đủ (v5.9 IJoEM, 27 edits) tại [`../papers/p4-vietnam/`](../papers/p4-vietnam/).
+- **P4 Singapore manuscript** → đi vào **Chương 4 Mục 4.2** (bằng chứng country-level ASEAN benchmark cho digitally advanced economy; phát hiện DAI as conditional scaling resource). Submission package đầy đủ (R3 MIR, 12 patches + Figure 1 regen) tại [`../papers/p3-singapore/`](../papers/p3-singapore/).
+- **P5 China manuscript** → đi vào **Chương 4 Mục 4.3** (bằng chứng temporal heterogeneity 2012↔2024; cross-tier comparison). Submission package đầy đủ (v1.8 APJM, 42/42 references verified) tại [`../papers/p5-china/`](../papers/p5-china/).
 
 ## Lưu ý về tên file
 
