@@ -7,7 +7,8 @@
 > **Phiên bản 2.7–2.9 (D1–D3)**: §4.9 Sub-grouping Emerging + §4.10 2025 wave deep dive + §4.8 Industry-level framework.
 > **Phiên bản 2.10 (D4 — final)**: §4.7 expanded summary với 10 kết luận chính (thay vì 6 sơ bộ); integrate phát hiện D1–D3; finalize hàm ý CĐ2.
 > **Phiên bản 3.0a (06/05/2026)**: Biên tập tiếng Việt §4.1–4.3.
-> **Phiên bản 3.0b (06/05/2026)**: Biên tập tiếng Việt §4.4–4.6 — terminology consistency với glossary; "regime"→"phân nhóm con"; "exporter"→"doanh nghiệp xuất khẩu"; "tourism"→"du lịch"; "MNE-driven"→"dẫn dắt bởi doanh nghiệp đa quốc gia"; "leapfrog"→"nhảy vọt số (digital leapfrog)"; "đpt" được giải thích "điểm phần trăm" lần đầu.
+> **Phiên bản 3.0b (06/05/2026)**: Biên tập tiếng Việt §4.4–4.6.
+> **Phiên bản 3.0c (06/05/2026)**: Biên tập tiếng Việt §4.7 — toàn bộ 10 kết luận chính + hàm ý CĐ2 + phạm vi không trình bày. Áp dụng đầy đủ 5 conventions của `09b_vn_term_glossary.md`.
 
 ---
 
@@ -92,51 +93,51 @@ Nhảy vọt số (digital leapfrog): website tăng +20–43 đpt ở Frontier, 
 
 ### 4.7 Tổng hợp Chương 4 (mở rộng D4 — 10 kết luận chính)
 
-Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.035 doanh nghiệp ở 47 nền kinh tế châu Á và Pacific (107 cặp quốc gia × năm) trong giai đoạn 2009–2025** từ pool WBES sau hòa hợp. Đây là pool có **phạm vi địa lý và thời gian rộng nhất từng được tổng hợp** cho nghiên cứu I→P trong văn liệu IB, mở rộng từ pool 17 nước châu Á mới nổi (~40.633 firms) của Đỗ và Phan (2026 — VEFR) ~2,5×.
+Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.035 doanh nghiệp ở 47 nền kinh tế châu Á và Thái Bình Dương (107 cặp quốc gia × năm) trong giai đoạn 2009–2025** từ nhóm dữ liệu WBES sau hài hòa. Đây là nhóm dữ liệu có **phạm vi địa lý và thời gian rộng nhất từng được tổng hợp** cho nghiên cứu quan hệ quốc tế hóa → hiệu quả (I→P) trong văn liệu IB. Phạm vi này mở rộng từ nhóm dữ liệu 17 nước châu Á mới nổi (~40.633 doanh nghiệp) của Đỗ và Phan (2026 — VEFR) khoảng 2,5 lần.
 
-**Mười kết luận chính** (mở rộng từ 6 sơ bộ ở các phiên bản trước, integrate phát hiện D1–D3):
+**Mười kết luận chính** (mở rộng từ 6 kết luận sơ bộ ở các phiên bản trước, tích hợp các phát hiện D1–D3):
 
-**(i) Dispersion năng suất nội bộ tăng đơn điệu theo regime declension**: Advanced 0,86 → Upper-middle 1,29 ≈ Emerging 1,24 ≈ SIDS 1,29 → Frontier 1,36. P90/P10 từ 10,8 lên 39,6 lần. Pattern khẳng định misallocation hypothesis (Hsieh & Klenow, 2009, 2014) và là cơ sở thực tiễn cho H5 (institutional moderation) trong CĐ2.
+**(i) Phân tán năng suất nội bộ tăng đơn điệu khi phân nhóm con suy giảm**: Advanced 0,86 → Upper-middle 1,29 ≈ Emerging 1,24 ≈ SIDS 1,29 → Frontier 1,36. Tỷ số P90/P10 leo từ 10,8 lần lên 39,6 lần. Pattern này khẳng định **giả thuyết phân bổ sai nguồn lực (misallocation hypothesis)** của Hsieh & Klenow (2009, 2014) và là cơ sở thực tiễn cho H5 — điều tiết thể chế (institutional moderation) — trong CĐ2.
 
-**(ii) Heterogeneity nội bộ Advanced — sub-grouping innovation vs resource**. Sự sụt giảm dispersion từ 1,00 (chỉ innovation-driven Asia) xuống 0,86 (sau khi thêm resource-driven Gulf) gợi ý cần **sub-grouping Advanced** trong CĐ2 (xem §5.2 file 16). Phát hiện mới so với baseline 17 nước (Đỗ & Phan, 2026 — VEFR vốn không bao gồm Advanced regime). Bằng chứng định lượng: dispersion ratio Singapore (1,03) / Vùng Vịnh (0,49) ≈ **2,1×**.
+**(ii) Dị biệt nội bộ phân nhóm Advanced — phân nhóm con đổi mới sáng tạo dẫn dắt so với tài nguyên dẫn dắt**. Sự sụt giảm phân tán từ 1,00 (chỉ tính nhóm châu Á đổi mới sáng tạo dẫn dắt — innovation-driven) xuống 0,86 (sau khi thêm Vùng Vịnh tài nguyên dẫn dắt — resource-driven) gợi ý cần **phân nhóm con (sub-grouping) Advanced** trong CĐ2 (xem §5.2 file 16). Đây là phát hiện mới so với cơ sở 17 nước (Đỗ & Phan, 2026 — VEFR vốn không bao gồm phân nhóm Advanced). Bằng chứng định lượng: tỷ số phân tán Singapore (1,03) so với Vùng Vịnh (0,49) ≈ **2,1 lần**.
 
-**(iii) Heterogeneity nội bộ Emerging — 3 sub-groups** *(NEW D1, §4.9)*. Emerging-FDI-driven SEA (VNM+IDN+PHL, n=13.779; FSTS **13,2%**) ≠ Emerging-large-population (IND+LKA+JOR, n=32.119; FSTS **7,2%**) ≠ Emerging-resource (MNG, n=1.905; FSTS **5,0%**). Phân tầng FSTS 5,0%–7,2%–13,2% *che giấu* trong aggregate 8,6%. Đây là phát hiện phương pháp luận thứ hai cho 8-sub-regime classification CĐ2 (§7.3.2 file 16). TCI ngược dấu giữa ASEAN-3 (R&D 4,8%, ISO 18,8%) và South+West Asia (R&D 19,8%, ISO 27,6%) — *FDI-induced learning* vs *autonomous learning* (Cohen & Levinthal, 1990).
+**(iii) Dị biệt nội bộ phân nhóm Emerging — 3 phân nhóm con** *(NEW D1, §4.9)*. Phân nhóm con FDI dẫn dắt Đông Nam Á (VNM+IDN+PHL, n=13.779; FSTS **13,2%**) khác biệt rõ với phân nhóm con dân số lớn (IND+LKA+JOR, n=32.119; FSTS **7,2%**) và phân nhóm con tài nguyên (MNG, n=1.905; FSTS **5,0%**). Phân tầng FSTS 5,0% – 7,2% – 13,2% bị *che giấu* trong số liệu tổng hợp Emerging (8,6%). Đây là phát hiện phương pháp luận thứ hai cho phân loại 8 phân nhóm con trong CĐ2 (§7.3.2 file 16). Năng lực công nghệ (TCI) ngược dấu giữa ASEAN-3 (R&D 4,8%, ISO 18,8%) và Nam Á + Tây Á (R&D 19,8%, ISO 27,6%) — phản ánh hai cơ chế: học hỏi do FDI dẫn dắt (FDI-induced learning) so với học hỏi tự thân (autonomous learning) (Cohen & Levinthal, 1990).
 
-**(iv) SIDS Pacific (6 nước, n=1.221) có pattern đặc trưng "adaptation + leapfrog"**: dispersion trung bình (sd=1,29), innov_product cao nhất (41,5%), website cao bất ngờ (58,9% — leapfrog gần Advanced) nhưng R&D thấp (11,8%) và ISO thấp (16,5%). Pattern "small open + adaptable + low invention" là cơ sở thực tiễn cho **H6 (forced internationalization penalty)** — bằng chứng đầu tiên trên dữ liệu firm-level WBES cho boundary case này (Briguglio, 1995; Bertram, 2006; Đỗ & Phan, 2026 — P8 manuscript).
+**(iv) SIDS Thái Bình Dương (6 nước, n=1.221) có pattern đặc trưng "thích nghi và nhảy vọt"**: phân tán ở mức trung bình (sd log = 1,29), tỷ lệ đổi mới sản phẩm cao nhất nhóm (41,5%), tỷ lệ website cao bất ngờ (58,9% — gần ngang Advanced) nhưng R&D thấp (11,8%) và ISO thấp (16,5%). Pattern "nền kinh tế nhỏ – mở – thích nghi – ít sáng tạo gốc" là cơ sở thực tiễn cho **H6 (chi phí buộc phải quốc tế hóa — forced internationalization penalty)**. Đây là bằng chứng đầu tiên trên dữ liệu firm-level WBES cho trường hợp biên này (Briguglio, 1995; Bertram, 2006; Đỗ & Phan, 2026 — bản thảo P8).
 
-**(v) Quốc tế hóa là hiện tượng phân cực ở mọi regime**: trung vị FSTS = 0% xuyên năm regime; chỉ 15–23% doanh nghiệp tham gia xuất khẩu. Quan hệ I→P ở cấp doanh nghiệp KHÔNG phải hiện tượng phổ quát mà tập trung vào tail bên phải phân phối — đặt ra yêu cầu phương pháp luận: phân tích **2-stage selection** (selection vào exporter pool + intensity FSTS) trong CĐ2 spec đầy đủ.
+**(v) Quốc tế hóa là hiện tượng phân cực ở mọi phân nhóm con thể chế**: trung vị FSTS = 0% xuyên năm phân nhóm con; chỉ 15–23% doanh nghiệp tham gia xuất khẩu. Quan hệ quốc tế hóa → hiệu quả (I→P) ở cấp doanh nghiệp KHÔNG phải hiện tượng phổ quát — nó tập trung ở đuôi phải (right tail) của phân phối. Yêu cầu phương pháp luận: cần phân tích **lựa chọn hai giai đoạn (2-stage selection)** — giai đoạn 1 lựa chọn vào nhóm doanh nghiệp xuất khẩu, giai đoạn 2 cường độ FSTS — trong đặc tả đầy đủ của CĐ2.
 
-**(vi) Số hoá leapfrog 2018–2025 ở Frontier, Emerging và SIDS** (+20–43 đpt website) — bằng chứng tái định vị Uppsala cho kỷ nguyên số (Banalieva & Dhanaraj, 2019; Yang, Zhao & Wei, 2025); đồng nhất pattern "digital shield effect" trên 17 nước (Đỗ & Phan, 2026 — VEFR), nay được mở rộng cho 47 nước.
+**(vi) Nhảy vọt số (digital leapfrog) 2018–2025 ở Frontier, Emerging và SIDS Thái Bình Dương** (+20–43 đpt website). Đây là bằng chứng tái định vị Uppsala cho kỷ nguyên số (Banalieva & Dhanaraj, 2019; Yang, Zhao & Wei, 2025); đồng nhất với pattern hiệu ứng lá chắn số (digital shield effect) đã ghi nhận trên 17 nước (Đỗ & Phan, 2026 — VEFR), nay được mở rộng cho 47 nước.
 
-**(vii) Pattern phi tuyến FDI ≥10%** (U-shape với cực tiểu Emerging 4,7%): Advanced 11,1% → Upper-middle 8,4% → Emerging 4,7% → Frontier 5,9% → SIDS 23,5%. Gợi ý hai mô hình FDI khác nhau: ở Advanced (MNE hub + Vùng Vịnh restrict ownership) và SIDS (tourism-driven + viễn thông). Trong khi ở Emerging, thị trường nội địa lớn (IND, IDN) hấp thụ FDI thấp hơn dự kiến.
+**(vii) Pattern phi tuyến của FDI ≥10%** — dạng chữ U với cực tiểu ở Emerging (4,7%): Advanced 11,1% → Upper-middle 8,4% → Emerging 4,7% → Frontier 5,9% → SIDS 23,5%. Điều này gợi ý hai mô hình FDI khác nhau: (a) ở Advanced — trung tâm doanh nghiệp đa quốc gia (MNE hub) cộng với Vùng Vịnh hạn chế tỷ lệ sở hữu nước ngoài; (b) ở SIDS — du lịch dẫn dắt (tourism-driven) cộng với viễn thông. Trong khi đó, ở Emerging, thị trường nội địa lớn (IND, IDN) hấp thụ FDI thấp hơn dự kiến.
 
-**(viii) 2025 wave là *largest single-year sample* và *most diverse* trong pool** *(NEW D2, §4.10)*. 12 nước × 16.829 firms (16,7% pool) đại diện đầy đủ 5 ICRV regime trong cùng đợt. Phát hiện chính:
-- (a) **IND FSTS drop sốc** 7,7%→2,7% (Δ−5 đpt) — likely schema BREADY 2025 + Atmanirbhar Bharat post-COVID;
-- (b) **Fiji digital leapfrog** website 74,8% > Singapore 66,1%;
-- (c) **Vùng Vịnh + Brunei resource-driven Advanced confirmed** (FSTS 0,4–5,1% + Brunei website 80,7% cao nhất pool; sd log Saudi/Qatar 0,31–0,47);
-- (d) **R&D schema-induced overestimation cảnh báo** (MNG/AFG/MDV/BRN/KWT đều 18–26% R&D ở 2025 — BREADY 2025 thay đổi cách hỏi).
-CĐ2 nên dùng 2025-only sub-pool làm validation sample cho specification chính.
+**(viii) Đợt khảo sát 2025 là *mẫu đơn năm lớn nhất* và *đa dạng nhất* trong nhóm dữ liệu** *(NEW D2, §4.10)*. 12 nước × 16.829 doanh nghiệp (16,7% tổng nhóm dữ liệu) đại diện đầy đủ 5 phân nhóm con ICRV trong cùng đợt. Bốn phát hiện chính:
+- (a) **Ấn Độ — sụt FSTS bất thường** từ 7,7% xuống 2,7% (Δ−5 đpt) — nhiều khả năng do thay đổi khung dữ liệu BREADY 2025 cộng chính sách Atmanirbhar Bharat sau COVID;
+- (b) **Fiji — nhảy vọt số** với website 74,8% > Singapore 66,1%;
+- (c) **Vùng Vịnh và Brunei xác nhận thuộc nhóm Advanced tài nguyên dẫn dắt** (FSTS 0,4–5,1%; Brunei website 80,7% cao nhất nhóm dữ liệu; sd log Saudi/Qatar 0,31–0,47);
+- (d) **Cảnh báo R&D đánh giá vượt ngưỡng do thay đổi khung dữ liệu (schema-induced overestimation)** — MNG/AFG/MDV/BRN/KWT đều ghi nhận R&D 18–26% ở năm 2025, do BREADY 2025 thay đổi cách hỏi.
+CĐ2 nên dùng tiểu nhóm dữ liệu 2025-only làm mẫu xác thực (validation sample) cho đặc tả mô hình chính.
 
-**(ix) Industry-level analysis framework chưa được thực hiện ở CĐ1** *(NEW D3, §4.8)*. Pool 101.035 firms cần industry breakdown 9 ngành ISIC Rev. 4 cho specification CĐ2 — đặc biệt: (a) Manufacturing-only subsample n≈50.000 robustness check; (b) ICT exclusion test cho phát hiện DAI âm ở Advanced; (c) **Construction subsample test ở Vùng Vịnh** để phân biệt "rentier state" vs "Construction artifact" (Hertog, 2010); (d) Tourism/Hotels separation cho SIDS Pacific (P8 manuscript). 5 hypotheses I1–I5 đã được đặt ra để test trong CĐ2 và Giai đoạn 2 hoàn thiện CĐ1 (tháng 7/2026 — xem §7.5 file 16).
+**(ix) Khung phân tích cấp ngành (industry-level) chưa được thực hiện ở CĐ1** *(NEW D3, §4.8)*. Nhóm dữ liệu 101.035 doanh nghiệp cần phân rã theo 9 ngành ISIC Rev. 4 cho đặc tả mô hình CĐ2 — đặc biệt: (a) mẫu con Manufacturing-only (n≈50.000) làm kiểm định vững (robustness check); (b) kiểm định loại trừ ICT cho phát hiện DAI âm ở Advanced; (c) **kiểm định mẫu con Construction ở Vùng Vịnh** để phân biệt giữa "nhà nước tô (rentier state)" và "hiện vật ngành xây dựng (Construction artifact)" (Hertog, 2010); (d) tách Tourism/Hotels cho SIDS Thái Bình Dương (bản thảo P8). 5 giả thuyết I1–I5 đã được đặt ra để kiểm định trong CĐ2 và Giai đoạn 2 hoàn thiện CĐ1 (tháng 7/2026 — xem §7.5 file 16).
 
-**(x) Pipeline reproducible cho 4 thế hệ schema WBES**. Pool 101.035 firms được tạo qua pipeline 5 bước Python (`wbes/01_inventory.py` → `02_harmonize.py` → `03_describe.py` → `merge_macro_with_pool.py` → `fetch_macro_indicators.py`); xử lý 4 thay đổi schema lớn (website, R&D, export channels, main market). Tất cả Bảng 4.1–4.10 và Bảng 5.1, 6.1, Phụ lục A tái tạo được từ raw `.dta`. Đây là *replication package* mở cho cộng đồng tiếng Việt — kế thừa thực hành mở (Page et al., 2021 PRISMA 2020) và mở đường cho luận án + 3 sub-papers trong `papers/` (P3 Singapore MIR, P4 Vietnam IJoEM, P5 China APJM).
+**(x) Pipeline tái lập được cho 4 thế hệ khung dữ liệu WBES**. Nhóm dữ liệu 101.035 doanh nghiệp được tạo qua pipeline 5 bước Python (`wbes/01_inventory.py` → `02_harmonize.py` → `03_describe.py` → `merge_macro_with_pool.py` → `fetch_macro_indicators.py`); xử lý 4 thay đổi khung dữ liệu lớn (website, R&D, kênh xuất khẩu, thị trường chính). Tất cả Bảng 4.1–4.10 và Bảng 5.1, 6.1, Phụ lục A đều tái tạo được từ tệp dữ liệu thô `.dta`. Đây là **gói tái lập (replication package)** mở cho cộng đồng tiếng Việt — kế thừa thực hành mở (Page et al., 2021 PRISMA 2020) và mở đường cho luận án cùng 3 bài báo thành phần trong `papers/` (P3 Singapore — MIR, P4 Việt Nam — IJoEM, P5 Trung Quốc — APJM).
 
 **Hàm ý cho CĐ2 và luận án**:
 
-(a) **Hệ giả thuyết H1–H6** (xây dựng trong CĐ2 §7.3.4 file 16) đã có đủ bivariate evidence ở Chương 4: H1 phi tuyến (4 sign-reversals); H2 TCI moderation (TCI×năng suất theo regime); H3 DAI conditional (Mongolia + VN + Thái Lan evidence); H4 institutional regime (5+8 sub-regimes); H5 resource cluster (MNG + Vùng Vịnh + PNG); H6 forced internationalization penalty (6 SIDS Pacific).
+(a) **Hệ giả thuyết H1–H6** (xây dựng trong CĐ2 §7.3.4 file 16) đã có đầy đủ bằng chứng hai biến (bivariate) ở Chương 4: H1 quan hệ phi tuyến (4 lần đảo dấu — sign-reversals); H2 TCI điều tiết (TCI × năng suất theo phân nhóm con); H3 DAI có điều kiện (bằng chứng Mongolia + Việt Nam + Thái Lan); H4 phân nhóm con thể chế (5 + 8 phân nhóm con); H5 cụm tài nguyên (MNG + Vùng Vịnh + PNG); H6 chi phí buộc phải quốc tế hóa (6 SIDS Thái Bình Dương).
 
-(b) **8 sub-regime fixed effects** cho CĐ2 đã được hoàn thiện ở §4.9 (3 Emerging sub-groups) + §5.2 file 16 (2 Advanced sub-groups) + Upper-middle + Frontier + SIDS = 8 sub-regimes. Đây là một trong 3 cải tiến phương pháp luận chính của CĐ1 (cùng với pipeline reproducible và multi-component construct measurement — xem §7.3.2 file 16).
+(b) **8 phân nhóm con với hiệu ứng cố định (fixed effects)** cho CĐ2 đã được hoàn thiện ở §4.9 (3 phân nhóm con Emerging) cộng §5.2 file 16 (2 phân nhóm con Advanced) cộng Upper-middle, Frontier và SIDS — tổng 8 phân nhóm con. Đây là một trong 3 cải tiến phương pháp luận chính của CĐ1 (cùng với pipeline tái lập được và đo lường khái niệm đa thành phần — xem §7.3.2 file 16).
 
-(c) **2 specifications robustness** cho CĐ2: Spec 1 full coverage 2009–2025 (n=101.035, single-component DAI/TCI); Spec 2 high precision 2018–2025 (n≈50.000, multi-component DAI/TCI 5-chiều). Bivariate evidence Chương 4 chỉ ra: phát hiện chính ở Spec 1 phải replicate ở Spec 2 (criterion theo Aguinis et al., 2011) — đặc biệt: (i) sub-grouping Advanced dispersion ratio 2,1×; (ii) Mongolia DAI tăng nhưng FSTS không tăng; (iii) SIDS digital leapfrog + low FSTS.
+(c) **Hai đặc tả mô hình kiểm định vững** cho CĐ2: Đặc tả 1 — phạm vi đầy đủ 2009–2025 (n=101.035, DAI/TCI đơn thành phần); Đặc tả 2 — độ chính xác cao 2018–2025 (n≈50.000, DAI/TCI đa thành phần 5 chiều). Bằng chứng hai biến ở Chương 4 chỉ ra: phát hiện chính ở Đặc tả 1 phải tái lập được ở Đặc tả 2 (theo tiêu chí của Aguinis et al., 2011) — đặc biệt: (i) tỷ số phân tán phân nhóm con Advanced 2,1 lần; (ii) Mongolia DAI tăng nhưng FSTS không tăng; (iii) SIDS nhảy vọt số nhưng FSTS thấp.
 
-(d) **Industry FE + 5 subsample robustness tests** *(NEW D3)*: Manufacturing-only, ICT-excluded, Tourism-separated SIDS, Construction-tested Gulf, Mining-excluded resource cluster — 5 hypotheses I1–I5 cần được test trong CĐ2 spec mở rộng.
+(d) **Hiệu ứng cố định ngành (Industry FE) cộng 5 kiểm định vững mẫu con** *(NEW D3)*: Manufacturing-only, loại trừ ICT, tách Tourism cho SIDS, kiểm định Construction Vùng Vịnh, loại trừ Mining cho cụm tài nguyên — 5 giả thuyết I1–I5 cần được kiểm định trong đặc tả mở rộng của CĐ2.
 
 **Phạm vi không trình bày trong Chương 4**:
 - (a) Hồi quy đa biến (dành cho CĐ2 — §7.3.4 file 16);
-- (b) Panel/IV identification (dành cho CĐ2);
-- (c) Industry-level descriptive tables (Phase 2 — tháng 7/2026 — `wbes/industry_harmonize.py`);
-- (d) Năng suất USD PPP (Phase 1 — tháng 6/2026 — Data360 WDI);
-- (e) Resource dependence trực tiếp (WDI NY.GDP.TOTL.RT.ZS + UN Comtrade — Phase 1).
+- (b) Định danh nhân quả qua dữ liệu mảng và biến công cụ — Panel/IV identification (dành cho CĐ2);
+- (c) Bảng mô tả cấp ngành (industry-level descriptive tables) — Phase 2 tháng 7/2026, pipeline `wbes/industry_harmonize.py`;
+- (d) Năng suất quy đổi USD PPP (Phase 1 — tháng 6/2026 — Data360 WDI);
+- (e) Phụ thuộc tài nguyên trực tiếp (WDI NY.GDP.TOTL.RT.ZS + UN Comtrade — Phase 1).
 
 ### 4.8 Industry-level analysis framework (kế hoạch CĐ2)
 
@@ -230,3 +231,4 @@ Phân bố ước tính: Manufacturing ~50%, Services ~30%, Retail ~10%, Other ~
 
 *Phiên bản 3.0a (06/05/2026) — Biên tập tiếng Việt §4.1–4.3.*
 *Phiên bản 3.0b (06/05/2026) — Biên tập tiếng Việt §4.4–4.6.*
+*Phiên bản 3.0c (06/05/2026) — Biên tập tiếng Việt §4.7 (10 kết luận chính + hàm ý CĐ2).*
