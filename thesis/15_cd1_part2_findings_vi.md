@@ -6,7 +6,8 @@
 > **Phiên bản 2.5–2.6**: Pool 101.035 firms · 47 nước · 107 country-years · 2009–2025.
 > **Phiên bản 2.7–2.9 (D1–D3)**: §4.9 Sub-grouping Emerging + §4.10 2025 wave deep dive + §4.8 Industry-level framework.
 > **Phiên bản 2.10 (D4 — final)**: §4.7 expanded summary với 10 kết luận chính (thay vì 6 sơ bộ); integrate phát hiện D1–D3; finalize hàm ý CĐ2.
-> **Phiên bản 3.0a (06/05/2026)**: Biên tập tiếng Việt học thuật §4.1–4.3 theo `09b_vn_term_glossary.md` — pool→nhóm dữ liệu (pool); dispersion→phân tán; schema→khung dữ liệu; sub-regime→phân nhóm con; FSTS/CAGR giải thích lần đầu; boundary cases→trường hợp biên (boundary cases). Phần §4.4–4.10 sẽ biên tập trong các commit tiếp theo (3.0b → 3.0d).
+> **Phiên bản 3.0a (06/05/2026)**: Biên tập tiếng Việt §4.1–4.3.
+> **Phiên bản 3.0b (06/05/2026)**: Biên tập tiếng Việt §4.4–4.6 — terminology consistency với glossary; "regime"→"phân nhóm con"; "exporter"→"doanh nghiệp xuất khẩu"; "tourism"→"du lịch"; "MNE-driven"→"dẫn dắt bởi doanh nghiệp đa quốc gia"; "leapfrog"→"nhảy vọt số (digital leapfrog)"; "đpt" được giải thích "điểm phần trăm" lần đầu.
 
 ---
 
@@ -52,42 +53,42 @@ Trung vị FSTS bằng 0% — phân phối phân cực mạnh; SIDS có CAGR vi�
 
 **Bảng 4.4**. *Đổi mới sáng tạo và áp dụng số (%).*
 
-| Nhóm | Sản phẩm mới | Quy trình mới | R&D | ISO | Website |
+| Phân nhóm con | Sản phẩm mới | Quy trình mới | R&D | ISO | Website |
 |---|---|---|---|---|---|
 | Advanced | 22,3 | 52,3 | 16,7 | 29,9 | 59,3 |
 | Upper-middle | 26,7 | 71,7 | 21,0 | 31,4 | 56,9 |
 | Emerging | 17,5 | 65,2 | 16,4 | 24,9 | 49,2 |
 | Frontier | 23,1 | 68,9 | 14,2 | 20,7 | 38,0 |
-| SIDS | **41,5** | 65,1 | 11,8 | 16,5 | **58,9** |
+| SIDS Thái Bình Dương | **41,5** | 65,1 | 11,8 | 16,5 | **58,9** |
 
-SIDS pattern *adaptation + leapfrog*; phân tách TCI vs DAI (Đỗ & Phan, 2026 — VEFR).
+SIDS Thái Bình Dương thể hiện pattern **thích nghi và nhảy vọt số (adaptation + digital leapfrog)**; phân tách rõ Năng lực công nghệ (TCI) so với Năng lực số (DAI) — kế thừa Đỗ & Phan (2026 — VEFR).
 
 ### 4.5 Thực trạng cấu trúc doanh nghiệp
 
-**Bảng 4.5**. *Cấu trúc doanh nghiệp theo regime (%).*
+**Bảng 4.5**. *Cấu trúc doanh nghiệp theo phân nhóm con (%).*
 
-| Nhóm | SME | Exporter | FDI ≥10% |
+| Phân nhóm con | SME | Doanh nghiệp xuất khẩu | FDI ≥10% |
 |---|---|---|---|
 | Advanced | 79,1 | 23,0 | 11,1 |
 | Upper-middle | 76,2 | 21,7 | 8,4 |
 | Emerging | 74,4 | 15,5 | 4,7 |
 | Frontier | 85,0 | 16,5 | 5,9 |
-| SIDS | **88,5** | 16,3 | **23,5** |
+| SIDS Thái Bình Dương | **88,5** | 16,3 | **23,5** |
 
-FDI U-shape với cực tiểu Emerging; SIDS cao nhất do tourism + viễn thông MNE-driven.
+Tỷ lệ FDI có dạng chữ U với cực tiểu ở Emerging. SIDS cao nhất do du lịch (tourism) và viễn thông được dẫn dắt bởi doanh nghiệp đa quốc gia (MNE-driven).
 
 ### 4.6 Bức tranh thay đổi theo thời gian
 
-**Bảng 4.6**. *Δ điểm phần trăm 2018–2025 vs 2009–2012.*
+**Bảng 4.6**. *Δ điểm phần trăm (đpt) khi so sánh 2018–2025 với 2009–2012.*
 
-| Nhóm | Δ Website | Δ Exporter | Δ FDI | Δ R&D | Δ ISO |
+| Phân nhóm con | Δ Website | Δ Doanh nghiệp xuất khẩu | Δ FDI | Δ R&D | Δ ISO |
 |---|---|---|---|---|---|
 | Upper-middle | -9,9 | +1,4 | +2,3 | +21,5 | -25,4 |
 | Emerging | +20,3 | -7,5 | -10,9 | -42,1 | +1,9 |
 | Frontier | +22,1 | +1,5 | -6,5 | -18,9 | +18,5 |
-| SIDS | +35–43 | +6–11 | -5 đến -10 | (cập nhật) | -20 đến -25 |
+| SIDS Thái Bình Dương | +35–43 | +6–11 | -5 đến -10 | (cập nhật) | -20 đến -25 |
 
-Số hoá leapfrog +20–43 đpt website ở Frontier/Emerging/SIDS — Banalieva & Dhanaraj (2019).
+Nhảy vọt số (digital leapfrog): website tăng +20–43 đpt ở Frontier, Emerging và SIDS Thái Bình Dương — phù hợp luận điểm digital leapfrog của Banalieva & Dhanaraj (2019).
 
 ### 4.7 Tổng hợp Chương 4 (mở rộng D4 — 10 kết luận chính)
 
@@ -228,3 +229,4 @@ Phân bố ước tính: Manufacturing ~50%, Services ~30%, Retail ~10%, Other ~
 *Phiên bản 2.10 (D4 — final) — §4.7 expanded summary từ 6 → 10 kết luận chính, integrate phát hiện D1 (sub-grouping Emerging), D2 (2025 wave deep dive), D3 (industry-level framework) + 4 hàm ý cho CĐ2 (H1–H6, 8 sub-regime FE, 2 specifications, industry FE + 5 subsample tests). Chương 4 hoàn thiện với 10 sub-sections (4.1–4.10). NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
 
 *Phiên bản 3.0a (06/05/2026) — Biên tập tiếng Việt §4.1–4.3.*
+*Phiên bản 3.0b (06/05/2026) — Biên tập tiếng Việt §4.4–4.6.*
