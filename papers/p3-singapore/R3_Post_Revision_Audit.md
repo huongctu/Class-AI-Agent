@@ -2,20 +2,21 @@
 
 > **Date**: 2026-05-06
 > **Source**: `Manuscript_Blinded_MIR_2_revised.docx` (R3 final, on branch `claude/p3-r3-revision`)
-> **Output**: `Manuscript_R3_FIXED.docx` (after applying `fix_r3_post_revision.py`)
+> **Output**: `Manuscript_R3_FIGFIXED.docx` (after applying ALL patches including Figure 1)
 
 ## Summary
 
-R3 đã giải quyết hầu hết các phản biện reviewer. Audit hậu-R3 phát hiện **2 nhóm vấn đề còn sót** (11 changes total), đều mang tính cosmetic/citation và không ảnh hưởng nội dung khoa học:
+R3 đã giải quyết hầu hết các phản biện reviewer. Audit hậu-R3 phát hiện **3 nhóm vấn đề còn sót** (12 changes total):
 
 1. **Avenyo et al. (2021) DOI sai** — kế thừa từ R2, chưa được fix trong R3
 2. **Hypothesis numbering có gap** — H1, H3, H4 (H2 đã được demote thành "open empirical question" theo phản hồi reviewer)
+3. **Figure 1 chứa nhãn cũ** — embedded PNG vẫn hiển thị "H4: DAI × FSTS" và "H3: DAI direct" (sau khi renumber phải là H3 và H2)
 
-Đã apply tất cả 11 fixes vào `Manuscript_R3_FIXED.docx`. Verify clean: 0 H4 references, 0 old DOI, 0 old subtitle.
+Đã apply tất cả 12 fixes vào `Manuscript_R3_FIGFIXED.docx`. Verify clean: 0 H4 references trong text body, Figure 1 đã regenerate.
 
 ## Phát hiện chính
 
-### 1. Avenyo (2021) DOI được verified qua Crossref + Springer
+### 1. Avenyo (2021) DOI verified qua Crossref + Springer
 
 ```
 Bản R2 + R3 (cả hai đều sai): 10.1057/s41287-020-00328-2  ❌
@@ -28,7 +29,7 @@ DOI cũ KHÔNG resolve trên doi.org (404). Title cũ là paraphrase của abstr
 
 ### 2. Hypothesis numbering rationale
 
-Trong R3, NCS đã (rất đúng) demote TCI moderation từ H2 sang "open empirical question" (theo phản biện reviewer rằng "non-significant interaction does not establish absence of moderation"). Tuy nhiên numbering còn lại có gap:
+Trong R3, NCS đã (rất đúng) demote TCI moderation từ H2 sang "open empirical question". Tuy nhiên numbering còn lại có gap:
 
 ```
 R3 hiện tại:
@@ -44,12 +45,30 @@ R3 fixed (consecutive numbering):
   H3 (§2.3.4)   DAI moderation by FSTS  ← was H4
 ```
 
-Giải pháp này:
-- Giữ nguyên thay đổi nội dung mà R3 đã apply (H2 demoted)
-- Đảm bảo numbering H1, H2, H3 liên tục
-- Không cần explain "missing H2" trong response letter
+### 3. Figure 1 đã regenerate (NEW — 2026-05-06)
 
-## 11 changes đã apply
+**Vấn đề**: Sơ đồ Figure 1 trong R3 docx (file `image3.png` trong `word/media/`) chứa các nhãn cũ:
+- "H2: TCI × FSTS (open empirical question)" — TCI moderation arrow
+- "H4: DAI × FSTS (stronger at high FSTS)" — DAI moderation arrow
+- Bottom legend: "H1: TCI ...; H3: DAI ..." — DAI direct effect
+
+Patch script trước (`fix_r3_post_revision.py`) chỉ fix CAPTION text bên dưới figure. Nhãn TRONG image (embedded PNG) cần regenerate riêng.
+
+**Giải pháp**: Sử dụng `regenerate_fig1.py` (matplotlib) để tạo lại Figure 1 với:
+- TCI moderation arrow: chỉ "TCI × FSTS (open empirical question)" — KHÔNG còn nhãn H2 (vì đã demote)
+- DAI moderation arrow: "H3: DAI × FSTS (stronger at high FSTS)" — was H4
+- Bottom legend: "H1: TCI...; H2: DAI...; conditional on FSTS" — was H3
+- Thiết kế giữ nguyên: 4 boxes (Moderators × 2, IV, DV), 4 controls, scope footer
+- Aspect ratio 2062×1404 (xấp xỉ original 2077×1426)
+
+**Cách reproduce**:
+```bash
+pip install matplotlib pillow python-docx
+python3 regenerate_fig1.py  # outputs fig1_FIXED.png
+# then replace word/media/image3.png inside .docx zip
+```
+
+## 12 changes đã apply
 
 | # | Vùng | Trước → Sau |
 |---|---|---|
@@ -64,11 +83,12 @@ Giải pháp này:
 | 9 | Figure 1 caption (para 45) | DAI direct "(H3)" → "(H2)" |
 | 10 | Figure 1 caption (para 156) | "(H4)" path → "(H3)" path (duplicate caption) |
 | 11 | Figure 1 caption (para 156) | DAI direct "(H3)" → "(H2)" (duplicate caption) |
+| **12** | **Figure 1 image** (image3.png) | **Regenerated với matplotlib — H4 → H3 và H3 → H2 trong nhãn box** |
 
 ## Verification
 
 ```
-$ python3 -c "..."
+=== TEXT FIXES (paragraph-level) ===
 ✓ NEW Avenyo DOI: FOUND
 ✓ NEW Avenyo subtitle: FOUND
 ✓ H2 (DAI conditional): FOUND
@@ -79,39 +99,42 @@ $ python3 -c "..."
 
 ✓ removed "Microeconomic evidence from sub-Saharan Africa"
 ✓ removed "Hypothesis 4 (H4)"
-✓ removed "Hypothesis 3 (H3). The productivity association"
 ✓ removed "s41287-020-00328-2"
 ✓ removed "H3 and H4 are jointly informative"
-✓ removed "whereas H4 specifies"
 
 Any "H4" references remaining: 0
+
+=== FIGURE 1 IMAGE ===
+✓ image3.png replaced: 320,414 → 254,957 bytes
+✓ New image: 2062×1404 RGBA (similar to original 2077×1426)
+✓ Visual inspection: TCI moderation no longer shows H2; DAI moderation shows H3; bottom legend shows H1+H2
 ```
 
-## Lưu ý — Figure 1 (sơ đồ vẽ tay/PowerPoint)
+## Files trong commit này
 
-Sơ đồ Figure 1 trong R3 chứa các nhãn box "H1: TCI × FSTS (open empirical question)" và "H4: DAI × FSTS (stronger at high FSTS)". Patch script đã xử lý CAPTION text bên dưới figure, nhưng nhãn TRONG figure (nếu nó là embedded image/SmartArt) cần fix thủ công trong PowerPoint/Inkscape.
+| File | Mô tả | Vị trí |
+|---|---|---|
+| `fix_r3_post_revision.py` | Patch script cho text fixes (changes 1-11) | `papers/p3-singapore/` |
+| `regenerate_fig1.py` | Script tạo lại Figure 1 PNG (change 12) | `papers/p3-singapore/` |
+| `R3_Post_Revision_Audit.md` | Audit report (file này) | `papers/p3-singapore/` |
+| `Manuscript_R3_FIGFIXED.docx` | **Output cuối** với cả 12 fixes | `/tmp/p3_r3/` (tải xuống session) |
 
-**Nếu Figure 1 là PNG/SVG embedded**: NCS cần mở source file (PowerPoint, Visio, Inkscape) và sửa nhãn box trực tiếp:
-- "H4: DAI × FSTS (stronger at high FSTS)" → "H3: DAI × FSTS (stronger at high FSTS)"
+## Trạng thái sẵn sàng submit MIR
 
-**Nếu Figure 1 là native Word drawing**: thì script python-docx có thể handle, nhưng phức tạp hơn — có thể cần fix manual qua Word UI.
+Sau khi apply 12 patches:
+- ✓ All citations APA 7 format
+- ✓ All DOIs verified (28/28 references; Avenyo fix bằng DOI thực)
+- ✓ Hypothesis numbering consecutive H1, H2, H3 trong cả text VÀ Figure 1
+- ✓ R3 framing (within-context, not boundary condition)
+- ✓ Statistical evidence properly hedged
+- ✓ 13/13 consistency audit pass (per R3_vs_R2_Comparison.md)
+- ✓ Figure 1 image regenerated với numbering nhất quán
+
+→ **R3 + 12 patches = sẵn sàng submit MIR round 4** (hoặc thay thế R3).
 
 ## Phạm vi không làm trong patch này
 
 - Không re-estimate models (R3 đã re-estimate Table 3, đã verify consistency 13/13 pass)
 - Không thay đổi nội dung Discussion / Conclusion / Limitations (R3 đã rewrite kỹ)
 - Không thêm robustness panels (đã có 6 panels)
-- Không change figure source (cần fix manual nếu Figure 1 chứa H4 nhãn box)
-
-## Trạng thái sẵn sàng submit MIR
-
-Sau khi apply 11 patches:
-- ✓ All citations APA 7 format
-- ✓ All DOIs verified (28/28 references)
-- ✓ Hypothesis numbering consecutive H1, H2, H3
-- ✓ R3 framing (within-context, not boundary condition)
-- ✓ Statistical evidence properly hedged ("is consistent with" / "qualifies" not "supports")
-- ✓ 13/13 consistency audit pass (per R3_vs_R2_Comparison.md)
-- ⚠ Figure 1 box label "H4" → "H3" cần fix manual nếu là embedded image
-
-→ R3 + 11 patches = sẵn sàng submit MIR round 4 (hoặc thay thế R3).
+- Không thay đổi Figures 2 & 3 (already regenerated in R3)
