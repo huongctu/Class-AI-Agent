@@ -146,6 +146,8 @@ Aiken, L. S., & West, S. G. (1991). *Multiple regression: Testing and interpreti
 
 Aterido, R., Hallward-Driemeier, M., & Pagés, C. (2011). Big constraints to small firms' growth? Business environment and employment growth across firms. *Economic Development and Cultural Change, 59*(3), 609–647. https://doi.org/10.1086/658349
 
+Avenyo, E. K., Konte, M., & Mohnen, P. (2021). Product innovation and informal market competition in sub-Saharan Africa: Evidence from African firms. *European Journal of Development Research, 33*(4), 1018–1043. https://doi.org/10.1057/s41287-021-00364-6
+
 Begg, C. B., & Mazumdar, M. (1994). Operating characteristics of a rank correlation test for publication bias. *Biometrics, 50*(4), 1088–1101. https://doi.org/10.2307/2533446
 
 Borenstein, M., Hedges, L. V., Higgins, J. P. T., & Rothstein, H. R. (2009). *Introduction to meta-analysis*. Wiley. https://doi.org/10.1002/9780470743386
@@ -193,6 +195,8 @@ Yang, B., Bai, W., Chen, Y., & Rong, K. (2025). Internationalization of digital 
 ## M. Công trình của tác giả luận án (NCS Đỗ Thùy Hương)
 
 > Bốn công trình đã công bố / chấp nhận xuất bản, làm cơ sở dữ liệu/bằng chứng nội bộ cho luận án. Tham chiếu chi tiết kết quả ở thư mục `manuscripts/` (`p1_emerging_asia_results.md`, `p2_china_smes_results.md`, `p_india_book_chapter_results.md`, `p_meta_analysis_kyyeu_results.md`).
+>
+> **Bộ hồ sơ submission đầy đủ** (manuscript + figures + tables + replication scripts + audit reports) cho 3 working papers chưa xuất bản (P3, P4, P5) được lưu tại thư mục `papers/` — xem `papers/README.md` để có overview và bảng tóm tắt 3 papers × dataset × method × current status.
 
 ### Đã xuất bản
 
@@ -206,15 +210,18 @@ Yang, B., Bai, W., Chen, Y., & Rong, K. (2025). Internationalization of digital 
 
 Đỗ, T. H., & Phan, A. T. (2024). Internationalization and firm performance: A meta-analysis review. In *Proceedings of the 6th International Conference on Economics, Business, and Finance* (in press, ISBN). College of Economics, Can Tho University.
 
-### Bản thảo đang chuẩn bị (under preparation)
+### Bản thảo đang chuẩn bị (under preparation) — full submission package trong `papers/`
 
-Đỗ, T. H., & Phan, A. T. (in preparation). Technological capability, digital adoption, and the internationalization–performance relationship: A firm-level study of Singapore. *(P3 Singapore manuscript — `manuscripts/p4_singapore_*.md`.)*
+Đỗ, T. H., & Phan, A. T. (in preparation). Technological capability, digital adoption, and the internationalization–performance relationship: A firm-level study of Singapore. Targeting *Management International Review* (R3 round 3 ready, R4 sẵn sàng resubmit).
+> **Submission package**: [`papers/p3-singapore/`](../papers/p3-singapore/) — manuscript R3 + 12 patches (Avenyo DOI fix, hypothesis renumbering H1/H2/H3, Figure 1 regen), 4 figures + matplotlib source, 4 tables CSV, replication scripts (`fix_r3_post_revision.py`, `regenerate_fig1.py`), 2 audit reports. Data: WBES Singapore 2023 B-READY, N=623/617 firms — xem [`papers/p3-singapore/replication/data_source.md`](../papers/p3-singapore/replication/data_source.md).
 
-Đỗ, T. H., & Phan, A. T. (in preparation). Technological capability, digital adoption, and the internationalization–performance relationship in Vietnam: A three-wave analysis (2009, 2015, 2023). *(P4 Vietnam manuscript — `manuscripts/p3_vietnam_*.md`.)*
+Đỗ, T. H., & Phan, A. T. (in preparation). Technological capability, digital adoption, and the internationalization–performance relationship in Vietnam: A three-wave analysis (2009, 2015, 2023). Targeting *International Journal of Emerging Markets* (v5.9 round 2 ready, R3 sẵn sàng resubmit).
+> **Submission package**: [`papers/p4-vietnam/`](../papers/p4-vietnam/) — manuscript v5.9 (27 edits: 7 metadata fixes + 20 reviewer-driven clean-copy edits), 7 figures (PNG+PDF) + 6 XLSX sources, 10 tables CSV, replication scripts (`apply_v59_edits.py`, `fix_p4_v58.py`), v5.9 changelog. Data: WBES Vietnam 3 waves 2009/2015/2023, pooled N=2,958 — xem [`papers/p4-vietnam/replication/data_source.md`](../papers/p4-vietnam/replication/data_source.md).
 
-Đỗ, T. H., & Phan, A. T. (in preparation). China internationalization–performance: Temporal heterogeneity 2012–2024. *(P5 manuscript.)*
+Đỗ, T. H., & Phan, A. T. (in preparation). China internationalization–performance: Temporal heterogeneity 2012–2024. Targeting *Asia Pacific Journal of Management* (v1.8 ready for submission).
+> **Submission package**: [`papers/p5-china/`](../papers/p5-china/) — manuscript v1.8 (compiled DOCX + 6 markdown source parts via pandoc), 4 figures (Graphviz `.dot` + matplotlib), 4 audit reports (CITATION_AUDIT 42/42 verified, CLAIMS_AUDIT, VERIFICATION_RESULTS, SUBMISSION_TARGETS), 6 submission documents (cover letter, declarations, blinding check, suggested reviewers). Data: WBES China 2 waves 2012/2024 + 217-firm panel — xem [`papers/p5-china/replication/data_source.md`](../papers/p5-china/replication/data_source.md).
 
-Đỗ, T. H., & Phan, A. T. (in preparation). Forced internationalization penalty: Evidence from six Pacific Small Island Developing States. *(P8 manuscript.)*
+Đỗ, T. H., & Phan, A. T. (in preparation). Forced internationalization penalty: Evidence from six Pacific Small Island Developing States. *(P8 manuscript — not yet in `papers/`; theory-development stage.)*
 
 ---
 
@@ -227,6 +234,7 @@ Yang, B., Bai, W., Chen, Y., & Rong, K. (2025). Internationalization of digital 
 - 2 tác giả: giữ đủ hai tên ("Arte and Larimo, 2022" / "(Arte & Larimo, 2022)").
 - 3+ tác giả: dùng *et al.* ngay từ trích dẫn đầu tiên.
 - **Trích dẫn công trình của tác giả luận án**: dùng dạng "Đỗ và Phan (2025 — IntechOpen)", "Đỗ và Phan (2026 — VEFR)", "Đỗ và Phan (2026 — JFAR)", "Đỗ và Phan (2024 — Kỷ yếu CTU)" để phân biệt rõ giữa các công trình cùng tác giả ở cùng năm.
+- **Trích dẫn công trình đang chuẩn bị (P3 SG, P4 VN, P5 CN)**: dùng dạng "Đỗ và Phan (in preparation — P3 Singapore)", "Đỗ và Phan (in preparation — P4 Vietnam)", "Đỗ và Phan (in preparation — P5 China)" để hội đồng có thể tra cứu nhanh package tương ứng trong `papers/`.
 
 ### Khi nộp bản cuối
 
@@ -234,3 +242,4 @@ Yang, B., Bai, W., Chen, Y., & Rong, K. (2025). Internationalization of digital 
 - Kiểm tra nhất quán italic và punctuation theo APA 7th.
 - Nếu trường yêu cầu tên tác giả tiếng Việt ở các công trình của NCS, phải chuyển "Do, T. H., & Phan, A. T." sang "Đỗ Thùy Hương & Phan Anh Tú" một cách nhất quán.
 - Cần phân biệt rõ năm xuất bản giữa 4 công trình của NCS để tránh lẫn lộn citation: 2024 (Kỷ yếu CTU — meta-analysis), 2025 (IntechOpen India — top management), 2026 (VEFR emerging Asia + JFAR China cubic).
+- **Avenyo et al. (2021)**: DOI chính thức `10.1057/s41287-021-00364-6` (đã verified qua Crossref + Springer; DOI cũ `s41287-020-00328-2` không resolve). Title đúng: "Evidence from African firms" (không phải "Microeconomic evidence from sub-Saharan Africa"). Đã được fix nhất quán trong cả 3 papers P3/P4/P5.
