@@ -2,9 +2,13 @@
 
 Danh mục tham khảo cho luận án, sắp xếp theo thứ tự alphabet của tên tác giả đầu tiên theo chuẩn APA 7th. Những tham khảo này được dùng xuyên suốt bốn file `00`–`03` và bản thảo luận án.
 
+> **Phiên bản 2.0 (06/05/2026)**: Bổ sung 11 entries học thuật mới (Section N — Lý thuyết tài nguyên + thể chế + boundary cases) và 7 văn bản pháp lý Việt Nam (Section O) được cited trong CĐ1 §7.3.3 mở rộng.
+
 ## A. Lý thuyết nền kinh doanh quốc tế
 
 Barney, J. (1991). Firm resources and sustained competitive advantage. *Journal of Management, 17*(1), 99–120. https://doi.org/10.1177/014920639101700108
+
+Bell, M., & Pavitt, K. (1995). The development of technological capabilities. In I. Haque (Ed.), *Trade, technology and international competitiveness* (pp. 69–101). World Bank.
 
 Bharadwaj, A., El Sawy, O. A., Pavlou, P. A., & Venkatraman, N. (2013). Digital business strategy: Toward a next generation of insights. *MIS Quarterly, 37*(2), 471–482. https://doi.org/10.25300/MISQ/2013/37:2.3
 
@@ -136,7 +140,11 @@ Richard, P. J., Devinney, T. M., Yip, G. S., & Johnson, G. (2009). Measuring org
 
 Bloom, N., Sadun, R., & Van Reenen, J. (2012). Americans do IT better: US multinationals and the productivity miracle. *American Economic Review, 102*(1), 167–201. https://doi.org/10.1257/aer.102.1.167
 
+Cusolito, A. P., & Maloney, W. F. (2018). *Productivity revisited: Shifting paradigms in analysis and policy*. World Bank.
+
 Hsieh, C.-T., & Klenow, P. J. (2009). Misallocation and manufacturing TFP in China and India. *The Quarterly Journal of Economics, 124*(4), 1403–1448. https://doi.org/10.1162/qjec.2009.124.4.1403
+
+Hsieh, C.-T., & Klenow, P. J. (2014). The life cycle of plants in India and Mexico. *The Quarterly Journal of Economics, 129*(3), 1035–1084. https://doi.org/10.1093/qje/qju014
 
 ## J. Phương pháp meta-analysis và kinh tế lượng
 
@@ -170,15 +178,23 @@ Higgins, J. P. T., Thompson, S. G., Deeks, J. J., & Altman, D. G. (2003). Measur
 
 Hunter, J. E., & Schmidt, F. L. (2004). *Methods of meta-analysis: Correcting error and bias in research findings* (2nd ed.). Sage. https://doi.org/10.4135/9781412985031
 
+Kaufmann, D., Kraay, A., & Mastruzzi, M. (2011). The Worldwide Governance Indicators: Methodology and analytical issues. *Hague Journal on the Rule of Law, 3*(2), 220–246. https://doi.org/10.1017/S1876404511200046
+
 Lind, J. T., & Mehlum, H. (2010). With or without U? The appropriate test for a U-shaped relationship. *Oxford Bulletin of Economics and Statistics, 72*(1), 109–118. https://doi.org/10.1111/j.1468-0084.2009.00569.x
 
 Long, J. S., & Ervin, L. H. (2000). Using heteroscedasticity consistent standard errors in the linear regression model. *The American Statistician, 54*(3), 217–224. https://doi.org/10.1080/00031305.2000.10474549
 
 Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., Shamseer, L., Tetzlaff, J. M., Akl, E. A., Brennan, S. E., Chou, R., Glanville, J., Grimshaw, J. M., Hróbjartsson, A., Lalu, M. M., Li, T., Loder, E. W., Mayo-Wilson, E., McDonald, S., … Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. *BMJ, 372*, n71. https://doi.org/10.1136/bmj.n71
 
+Pierce, J. R., & Aguinis, H. (2013). The too-much-of-a-good-thing effect in management. *Journal of Management, 39*(2), 313–338. https://doi.org/10.1177/0149206311410060
+
 White, H. (1980). A heteroskedasticity-consistent covariance matrix estimator and a direct test for heteroskedasticity. *Econometrica, 48*(4), 817–838. https://doi.org/10.2307/1912934
 
-## K. WBES references
+## K. WBES references và báo cáo Việt Nam
+
+CIEM (Viện Nghiên cứu Quản lý Kinh tế Trung ương). (2023). *Báo cáo Năng lực cạnh tranh và hiệu quả doanh nghiệp Việt Nam 2023*. Nhà xuất bản Khoa học và Kỹ thuật.
+
+Tran, T. B., & Pham, T. H. (2024). Tác động của FDI đến năng suất doanh nghiệp Việt Nam: Phân tích đa thế hệ điều tra. *Tạp chí Kinh tế và Phát triển, 311*, 24–38.
 
 World Bank. (n.d.). *Enterprise Surveys*. https://www.enterprisesurveys.org/en/enterprisesurveys
 
@@ -186,11 +202,25 @@ World Bank. (2019). *Understanding the questionnaire: Enterprise Survey question
 
 World Bank. (2023). *Vietnam 2023 Enterprise Surveys country profile*. World Bank Enterprise Surveys.
 
+World Bank. (2024). *Mongolia Economic Update: Towards diversified growth*. World Bank.
+
 World Bank. (2026). *Indicator descriptions*. World Bank Enterprise Surveys.
+
+ADB. (2024). *Asian Development Outlook 2024 — Recovery and resilience in Asia*. Asian Development Bank.
+
+OECD. (2026, March). *OECD Economic Outlook, Volume 2026 Issue 1*. Organisation for Economic Co-operation and Development.
+
+OECD. (2026, April). *FDI in Figures, April 2026*. Organisation for Economic Co-operation and Development.
+
+UNCTAD. (2023). *World Investment Report 2023: Investing in sustainable energy for all*. United Nations Conference on Trade and Development.
+
+WIPO. (2024). *Global Innovation Index 2024: Unlocking the promise of social entrepreneurship*. World Intellectual Property Organization.
 
 ## L. Tham khảo bổ sung 2024–2025
 
 Yang, B., Bai, W., Chen, Y., & Rong, K. (2025). Internationalization of digital firms: A systematic review and research agenda. *Journal of Business Research*. *(Trước khi trích dẫn chính thức trong bản nộp, cần xác minh volume, issue, pages, DOI trên trang nhà xuất bản.)*
+
+Wu, J., Wood, G., & Khan, Z. (2022). Internationalization and firm performance: Evidence from a meta-analysis. *International Business Review, 31*(2), 101920. https://doi.org/10.1016/j.ibusrev.2021.101920
 
 ## M. Công trình của tác giả luận án (NCS Đỗ Thùy Hương)
 
@@ -213,15 +243,72 @@ Yang, B., Bai, W., Chen, Y., & Rong, K. (2025). Internationalization of digital 
 ### Bản thảo đang chuẩn bị (under preparation) — full submission package trong `papers/`
 
 Đỗ, T. H., & Phan, A. T. (in preparation). Technological capability, digital adoption, and the internationalization–performance relationship: A firm-level study of Singapore. Targeting *Management International Review* (R3 round 3 ready, R4 sẵn sàng resubmit).
-> **Submission package**: [`papers/p3-singapore/`](../papers/p3-singapore/) — manuscript R3 + 12 patches (Avenyo DOI fix, hypothesis renumbering H1/H2/H3, Figure 1 regen), 4 figures + matplotlib source, 4 tables CSV, replication scripts (`fix_r3_post_revision.py`, `regenerate_fig1.py`), 2 audit reports. Data: WBES Singapore 2023 B-READY, N=623/617 firms — xem [`papers/p3-singapore/replication/data_source.md`](../papers/p3-singapore/replication/data_source.md).
+> **Submission package**: [`papers/p3-singapore/`](../papers/p3-singapore/)
 
 Đỗ, T. H., & Phan, A. T. (in preparation). Technological capability, digital adoption, and the internationalization–performance relationship in Vietnam: A three-wave analysis (2009, 2015, 2023). Targeting *International Journal of Emerging Markets* (v5.9 round 2 ready, R3 sẵn sàng resubmit).
-> **Submission package**: [`papers/p4-vietnam/`](../papers/p4-vietnam/) — manuscript v5.9 (27 edits: 7 metadata fixes + 20 reviewer-driven clean-copy edits), 7 figures (PNG+PDF) + 6 XLSX sources, 10 tables CSV, replication scripts (`apply_v59_edits.py`, `fix_p4_v58.py`), v5.9 changelog. Data: WBES Vietnam 3 waves 2009/2015/2023, pooled N=2,958 — xem [`papers/p4-vietnam/replication/data_source.md`](../papers/p4-vietnam/replication/data_source.md).
+> **Submission package**: [`papers/p4-vietnam/`](../papers/p4-vietnam/)
 
 Đỗ, T. H., & Phan, A. T. (in preparation). China internationalization–performance: Temporal heterogeneity 2012–2024. Targeting *Asia Pacific Journal of Management* (v1.8 ready for submission).
-> **Submission package**: [`papers/p5-china/`](../papers/p5-china/) — manuscript v1.8 (compiled DOCX + 6 markdown source parts via pandoc), 4 figures (Graphviz `.dot` + matplotlib), 4 audit reports (CITATION_AUDIT 42/42 verified, CLAIMS_AUDIT, VERIFICATION_RESULTS, SUBMISSION_TARGETS), 6 submission documents (cover letter, declarations, blinding check, suggested reviewers). Data: WBES China 2 waves 2012/2024 + 217-firm panel — xem [`papers/p5-china/replication/data_source.md`](../papers/p5-china/replication/data_source.md).
+> **Submission package**: [`papers/p5-china/`](../papers/p5-china/)
 
-Đỗ, T. H., & Phan, A. T. (in preparation). Forced internationalization penalty: Evidence from six Pacific Small Island Developing States. *(P8 manuscript — not yet in `papers/`; theory-development stage.)*
+Đỗ, T. H., & Phan, A. T. (in preparation). Forced internationalization penalty: Evidence from six Pacific Small Island Developing States. *(P8 manuscript — theory-development stage; preliminary evidence trong CĐ1 §5.7.)*
+
+## N. Lý thuyết tài nguyên + thể chế kinh tế chính trị + boundary cases
+
+> **Mới ở v2.0 (06/05/2026)**: Bộ tham khảo này được cited trong CĐ1 §5.2 (Saudi/Qatar/Kuwait), §5.6 (Mongolia), §5.7 (SIDS Pacific), và §7.3.1 hàm ý lý thuyết về sub-grouping VoC + Resource Curse + REE type thứ 3 cho khu vực Châu Á.
+
+### N.1 Resource Curse và Rentier State
+
+Auty, R. M. (1993). *Sustaining development in mineral economies: The resource curse thesis*. Routledge. https://doi.org/10.4324/9780203422595
+
+Beblawi, H. (1987). The rentier state in the Arab world. *Arab Studies Quarterly, 9*(4), 383–398.
+
+Gerelmaa, L., & Kotani, K. (2016). Further investigation of natural resources and economic growth: Do natural resources depress economic growth? *Resources Policy, 50*, 312–321. https://doi.org/10.1016/j.resourpol.2016.10.004
+
+Hertog, S. (2010). Defying the resource curse: Explaining successful state-owned enterprises in rentier states. *World Politics, 62*(2), 261–301. https://doi.org/10.1017/S0043887110000055
+
+Hvidt, M. (2013). Economic diversification in GCC countries: Past record and future trends. *Kuwait Programme on Development, Governance and Globalisation in the Gulf States, Research Paper, 27*. London School of Economics.
+
+Sachs, J. D., & Warner, A. M. (2001). The curse of natural resources. *European Economic Review, 45*(4–6), 827–838. https://doi.org/10.1016/S0014-2921(01)00125-8
+
+### N.2 Varieties of Capitalism (Comparative Political Economy)
+
+Hall, P. A., & Soskice, D. (Eds.). (2001). *Varieties of capitalism: The institutional foundations of comparative advantage*. Oxford University Press. https://doi.org/10.1093/0199247757.001.0001
+
+### N.3 SIDS (Small Island Developing States) Literature
+
+Bertram, G. (2006). Introduction: The MIRAB model in the twenty-first century. *Asia Pacific Viewpoint, 47*(1), 1–13. https://doi.org/10.1111/j.1467-8373.2006.00296.x
+
+Briguglio, L. (1995). Small island developing states and their economic vulnerabilities. *World Development, 23*(9), 1615–1632. https://doi.org/10.1016/0305-750X(95)00065-K
+
+## O. Văn bản pháp lý Việt Nam (cited trong CĐ1 §7.3.3)
+
+> **Mới ở v2.0 (06/05/2026)**: Bộ văn bản pháp lý này được cited trong các đoạn hàm ý chính sách của CĐ1 §7.3.3 (4 đoạn về pattern two-tier, DAI multi-component, TCI cho SME, ngoại giao kinh tế).
+
+Bộ Chính trị. (2023). *Nghị quyết số 41-NQ/TW ngày 10/10/2023 về xây dựng và phát huy vai trò của đội ngũ doanh nhân Việt Nam trong thời kỳ mới*.
+
+Quốc hội. (2025). *Luật số 67/2025/QH15 sửa đổi, bổ sung Luật Thuế thu nhập doanh nghiệp* (có hiệu lực 01/10/2025).
+
+Thủ tướng Chính phủ. (2020). *Quyết định số 749/QĐ-TTg ngày 03/6/2020 phê duyệt "Chương trình Chuyển đổi số quốc gia đến năm 2025, định hướng đến năm 2030"*.
+
+Thủ tướng Chính phủ. (2021a). *Quyết định số 1414/QĐ-TTg phê duyệt Đề án "Hỗ trợ doanh nghiệp nhỏ và vừa giai đoạn 2021–2025"*.
+
+Thủ tướng Chính phủ. (2021b). *Quyết định số 1851/QĐ-TTg về Phát triển hệ sinh thái khởi nghiệp đổi mới sáng tạo quốc gia đến năm 2025*.
+
+Thủ tướng Chính phủ. (2022a). *Quyết định số 06/QĐ-TTg ngày 06/01/2022 phê duyệt Đề án phát triển ứng dụng dữ liệu về dân cư, định danh và xác thực điện tử (Đề án 06)*.
+
+Thủ tướng Chính phủ. (2022b). *Quyết định số 493/QĐ-TTg ngày 19/4/2022 phê duyệt Chiến lược xuất nhập khẩu hàng hóa đến năm 2030*.
+
+### O.2 Hiệp định FTA và khuôn khổ đa phương Việt Nam là thành viên
+
+- **CPTPP** (Hiệp định Đối tác Toàn diện và Tiến bộ xuyên Thái Bình Dương): hiệu lực với Việt Nam 14/01/2019.
+- **VKFTA** (Hiệp định Thương mại Tự do Việt Nam – Hàn Quốc): hiệu lực 20/12/2015.
+- **RCEP** (Hiệp định Đối tác Kinh tế Toàn diện Khu vực): hiệu lực 01/01/2022.
+- **ACFTA** (Hiệp định Thương mại Tự do ASEAN – Trung Quốc): hiệu lực 2010; phiên bản 3.0 đang đàm phán 2025.
+- **AEC** (Cộng đồng Kinh tế ASEAN): vận hành từ 31/12/2015.
+- **GCC – Việt Nam** Hiệp định Đối tác Toàn diện và Hợp tác (đề xuất, đang nghiên cứu).
+- **PIF** (Pacific Islands Forum): Việt Nam là Đối tác chính thức từ 2024.
+- IPA (Hiệp định Bảo hộ và Khuyến khích đầu tư) song phương: Việt Nam – Kuwait (2007); Việt Nam – Qatar (2009).
 
 ---
 
@@ -235,6 +322,7 @@ Yang, B., Bai, W., Chen, Y., & Rong, K. (2025). Internationalization of digital 
 - 3+ tác giả: dùng *et al.* ngay từ trích dẫn đầu tiên.
 - **Trích dẫn công trình của tác giả luận án**: dùng dạng "Đỗ và Phan (2025 — IntechOpen)", "Đỗ và Phan (2026 — VEFR)", "Đỗ và Phan (2026 — JFAR)", "Đỗ và Phan (2024 — Kỷ yếu CTU)" để phân biệt rõ giữa các công trình cùng tác giả ở cùng năm.
 - **Trích dẫn công trình đang chuẩn bị (P3 SG, P4 VN, P5 CN)**: dùng dạng "Đỗ và Phan (in preparation — P3 Singapore)", "Đỗ và Phan (in preparation — P4 Vietnam)", "Đỗ và Phan (in preparation — P5 China)" để hội đồng có thể tra cứu nhanh package tương ứng trong `papers/`.
+- **Trích dẫn văn bản pháp lý Việt Nam**: dùng dạng "Nghị quyết 41-NQ/TW (2023)", "Quyết định 749/QĐ-TTg (2020)", "Luật 67/2025/QH15" để phân biệt rõ loại văn bản.
 
 ### Khi nộp bản cuối
 
@@ -243,3 +331,4 @@ Yang, B., Bai, W., Chen, Y., & Rong, K. (2025). Internationalization of digital 
 - Nếu trường yêu cầu tên tác giả tiếng Việt ở các công trình của NCS, phải chuyển "Do, T. H., & Phan, A. T." sang "Đỗ Thùy Hương & Phan Anh Tú" một cách nhất quán.
 - Cần phân biệt rõ năm xuất bản giữa 4 công trình của NCS để tránh lẫn lộn citation: 2024 (Kỷ yếu CTU — meta-analysis), 2025 (IntechOpen India — top management), 2026 (VEFR emerging Asia + JFAR China cubic).
 - **Avenyo et al. (2021)**: DOI chính thức `10.1057/s41287-021-00364-6` (đã verified qua Crossref + Springer; DOI cũ `s41287-020-00328-2` không resolve). Title đúng: "Evidence from African firms" (không phải "Microeconomic evidence from sub-Saharan Africa"). Đã được fix nhất quán trong cả 3 papers P3/P4/P5.
+- **Văn bản pháp lý Việt Nam (Section O)**: cần xác minh số hiệu chính xác trên Cổng thông tin điện tử Chính phủ (chinhphu.vn) hoặc Hệ thống Văn bản quy phạm pháp luật quốc gia (vbpl.vn) trước khi nộp luận án — đặc biệt Luật 67/2025/QH15 vừa được Quốc hội thông qua tháng 6/2025.
