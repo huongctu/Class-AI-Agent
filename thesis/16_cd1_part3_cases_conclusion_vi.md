@@ -1,19 +1,21 @@
 # CHUYÊN ĐỀ TIẾN SĨ SỐ 1 — BẢN NHÁP ĐẦY ĐỦ (PHẦN 3: CHƯƠNG 5–7 + TÀI LIỆU THAM KHẢO + PHỤ LỤC)
 
 > Tiếp nối `thesis/14_cd1_part1_intro_theory_vi.md` và `thesis/15_cd1_part2_findings_vi.md`.
+> Bảng thuật ngữ Anh-Việt: `thesis/09b_vn_term_glossary.md`.
 > **Phiên bản 2.5–2.7**: Pool 101.035 firms · 47 nước · 107 country-years · 2009–2025.
 > **Phiên bản 2.8–2.8.10**: §7.1 (4 đoạn khoảng trống) + §7.2 (8 kết luận) + §7.3.1 (3 sub-points lý thuyết) + §7.3.2 (3 sub-points phương pháp luận) + §7.3.3 (4 đoạn chính sách Việt Nam).
 > **Phiên bản 2.8.11 (A2.4 — final)**: Hoàn thiện §7.3.4 (roadmap CĐ2 + luận án); mở rộng §7.4 (6 hạn chế chi tiết) + §7.5 (4 giai đoạn timeline 2026–2027).
+> **Phiên bản 3.0a (06/05/2026)**: Biên tập tiếng Việt học thuật Chương 5 (§5.1–5.8) theo `09b_vn_term_glossary.md`. Chương 6 và Chương 7 sẽ biên tập trong các commit kế tiếp (3.0b, 3.0c).
 
 ---
 
 ## CHƯƠNG 5 — BẢY TIỂU CẢNH ĐIỂN HÌNH
 
-### 5.1 Singapore (Advanced innovation-driven, n=623, đợt 2023)
+### 5.1 Singapore (Advanced đổi mới sáng tạo dẫn dắt — innovation-driven, n=623, đợt 2023)
 
-FSTS 7,1%; exporter 17,8%; website 66,1%; ISO 23,3%; R&D 7,5%; FDI 31,5%. sd log 1,03. **Biên trên (upper boundary)** — innovation-driven Advanced. P3: Adj R²=0,196, FSTS²×DAI=3,119 (M8), turning point ~85%.
+FSTS 7,1%; doanh nghiệp xuất khẩu 17,8%; website 66,1%; ISO 23,3%; R&D 7,5%; FDI 31,5%. Độ lệch chuẩn log năng suất (sd log) 1,03. **Biên trên (upper boundary)** của nhóm Advanced đổi mới sáng tạo dẫn dắt. Theo bài báo P3 (Singapore — MIR): mô hình M8 cho R² hiệu chỉnh = 0,196; tương tác FSTS² × DAI = 3,119; điểm uốn (turning point) ở mức ~85%.
 
-### 5.2 Saudi Arabia + Qatar + Kuwait (Advanced resource-driven, n=1.632, 3 đợt 2025)
+### 5.2 Saudi Arabia, Qatar và Kuwait (Advanced tài nguyên dẫn dắt — resource-driven, n=1.632, 3 đợt năm 2025)
 
 | Chỉ số | Saudi Arabia | Qatar | Kuwait | Singapore |
 |---|---|---|---|---|
@@ -22,33 +24,33 @@ FSTS 7,1%; exporter 17,8%; website 66,1%; ISO 23,3%; R&D 7,5%; FDI 31,5%. sd log
 | R&D dương (%) | 1,7 | 0,6 | **20,7** | 7,5 |
 | sd log năng suất | **0,47** | **0,31** | 1,15 | 1,03 |
 
-5 phát hiện: rentier state (Beblawi, 1987; Hertog, 2010; Hvidt, 2013); misallocation đảo chiều; Kuwait Vision 2035; DAI single-component bias; sub-grouping Advanced (Hall & Soskice, 2001).
+Năm phát hiện: (1) **nhà nước tô (rentier state)** — Beblawi (1987); Hertog (2010); Hvidt (2013); (2) **phân bổ sai nguồn lực đảo chiều** so với pattern Hsieh & Klenow (2009) — phân tán nội bộ thấp bất thường ở Saudi (sd log 0,47) và Qatar (0,31); (3) Kuwait đi theo định hướng Vision 2035 với R&D 20,7% nổi bật; (4) **thiên lệch của DAI đơn thành phần** — chỉ đo website không phản ánh đầy đủ năng lực số ở các nền kinh tế tài nguyên dẫn dắt; (5) **phân nhóm con (sub-grouping) Advanced** — innovation-driven so với resource-driven là một dạng biến thể chế kiểu Varieties of Capitalism (Hall & Soskice, 2001).
 
-### 5.3 Việt Nam (n=3.077, 3 đợt)
+### 5.3 Việt Nam (n=3.077, 3 đợt khảo sát)
 
-FSTS 23,2% → 17,9% → 16,1%; exporter 37,1% → 23,8%; ISO 17–23%; R&D 6,1% (2023). Two-tier economy (CIEM, 2023; Tran & Pham, 2024).
+FSTS 23,2% → 17,9% → 16,1% (suy giảm); doanh nghiệp xuất khẩu 37,1% → 23,8%; ISO 17–23%; R&D 6,1% (đợt 2023). Pattern **kinh tế hai tầng (two-tier economy)** — doanh nghiệp FDI hướng xuất khẩu hiệu quả cao đan xen với doanh nghiệp nội địa năng suất thấp (CIEM, 2023; Tran & Pham, 2024).
 
 ### 5.4 Trung Quốc (n=4.889)
 
-FSTS 10,9% → 8,8%; FDI 6,0%. Cubic, turning point ~47,8% (Đỗ & Phan, 2026 — JFAR).
+FSTS 10,9% → 8,8%; FDI ≥10% chiếm 6,0%. Quan hệ FSTS – năng suất là hàm bậc ba (cubic) với điểm uốn (turning point) ở mức ~47,8% (Đỗ & Phan, 2026 — JFAR).
 
 ### 5.5 Tổng hợp Emerging Asia (n=42.278)
 
-FSTS 7,6%; FDI 4,4%; R&D 16%. Dispersion lớn (sd log 2,18).
+FSTS 7,6%; FDI ≥10% chiếm 4,4%; tỷ lệ doanh nghiệp R&D dương 16%. Phân tán nội bộ lớn (sd log 2,18) — phản ánh dị biệt rộng xuyên 7 nước Emerging.
 
 ### 5.6 Mongolia (n=1.905)
 
-FSTS stagnant 4–6%; FDI giảm 7,2% → 3,2%; Website 39% → 65%. Resource curse (Auty, 1993; Sachs & Warner, 2001; Gerelmaa & Kotani, 2016). **Boundary case Emerging tài nguyên**.
+FSTS đình trệ ở mức 4–6%; FDI ≥10% giảm 7,2% → 3,2%; tỷ lệ website tăng 39% → 65%. Pattern **lời nguyền tài nguyên (resource curse)** — Auty (1993); Sachs & Warner (2001); Gerelmaa & Kotani (2016). Mongolia là **trường hợp biên (boundary case)** của phân nhóm Emerging tài nguyên.
 
-### 5.7 Pacific SIDS (n=1.221)
+### 5.7 SIDS Thái Bình Dương (n=1.221)
 
-FJI, PNG, SLB, TON, VUT, WSM. FSTS 6,3%; FDI **23,5%**; innov **41,5%**; website **58,9%**. Adaptation under constraint.
+Sáu nước: Fiji (FJI), Papua New Guinea (PNG), Solomon Islands (SLB), Tonga (TON), Vanuatu (VUT), Samoa (WSM). FSTS 6,3%; FDI ≥10% chiếm **23,5%** (cao thứ hai sau Advanced); tỷ lệ đổi mới sản phẩm **41,5%** (cao nhất nhóm); tỷ lệ website **58,9%**. Pattern **thích nghi trong điều kiện ràng buộc (adaptation under constraint)** — đổi mới sản phẩm cao và áp dụng số cao là phản ứng thích nghi với thị trường nội địa nhỏ và khoảng cách địa lý lớn.
 
 ### 5.8 So sánh tổng hợp
 
-**Bảng 5.1**.
+**Bảng 5.1**. *Ma trận so sánh đa chiều bảy tiểu cảnh điển hình.*
 
-| Chỉ số | Singapore | Việt Nam | Trung Quốc | Em Asia | Mongolia | SIDS Pacific | Saudi+Qatar+Kuwait |
+| Chỉ số | Singapore | Việt Nam | Trung Quốc | Em Asia | Mongolia | SIDS Thái Bình Dương | Saudi+Qatar+Kuwait |
 |---|---|---|---|---|---|---|---|
 | n_firms | 623 | 3.077 | 4.889 | 42.278 | 1.905 | 1.221 | 1.632 |
 | FSTS (%) | 7,1 | 19,1 | 9,9 | 7,6 | **5,0** | 6,3 | **2,4** |
@@ -250,3 +252,5 @@ ADB (2024); **Aguinis et al. (2011)**; Aterido, Hallward-Driemeier & Pagés (201
 ---
 
 *Phiên bản 2.8.11 (A2.4 — final) — hoàn thiện toàn bộ Chương 7: §7.3.4 với roadmap CĐ2 (6 đóng góp kế thừa, H1–H6 hệ giả thuyết, 2 specifications, OLS+IV+Lind-Mehlum) + roadmap luận án (5 chương, 6 panels Chương 4, triangulation 3 sub-papers, 7 sản phẩm khoa học); §7.4 mở rộng 6 hạn chế chi tiết; §7.5 mở rộng 4 giai đoạn timeline 2026–2027 với bảng lộ trình tích hợp luận án. NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
+
+*Phiên bản 3.0a (06/05/2026) — Biên tập tiếng Việt Chương 5 (§5.1–5.8). Ch.6 và Ch.7 sẽ biên tập trong commit kế tiếp.*
