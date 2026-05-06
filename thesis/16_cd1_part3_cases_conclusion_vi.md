@@ -5,6 +5,7 @@
 > **Phiên bản 2.6 (05/05/2026)**: Bổ sung citation P1 (Đỗ & Phan, 2026 — VEFR) làm baseline 17 nước + bổ sung entry TLTK đầy đủ.
 > **Phiên bản 2.7 (06/05/2026)**: Mở rộng §5.2 Saudi/Qatar/Kuwait + §5.6 Mongolia với số liệu thực từ pool WBES 2025; bổ sung khung lý thuyết rentier state (Beblawi, 1987; Hertog, 2010), resource curse (Auty, 1993; Sachs & Warner, 2001) và Varieties of Capitalism (Hall & Soskice, 2001) làm cơ sở sub-grouping Advanced cho CĐ2.
 > **Phiên bản 2.8 (06/05/2026, A2.1)**: Mở rộng §7.1 (khoảng trống — 4 đoạn lập luận chi tiết) và §7.2 (kết luận chính — 8 phát hiện đa diện).
+> **Phiên bản 2.8.1 (06/05/2026, A2.2a.1)**: Bắt đầu mở rộng §7.3.1 hàm ý lý thuyết — sub-point (1) Sub-grouping trong Varieties of Capitalism với REE type thứ 3 cho Vùng Vịnh.
 
 ---
 
@@ -243,10 +244,26 @@ Chuyên đề 1 rút ra 8 kết luận chính dựa trên phân tích pool 101.0
 
 ### 7.3 Hàm ý cho luận án và Chuyên đề 2
 
+#### 7.3.1 Hàm ý lý thuyết
+
+Chuyên đề 1 cung cấp 3 đóng góp lý thuyết kế thừa và mở rộng các khung lý thuyết hiện có trong literature kinh doanh quốc tế (IB):
+
+**(1) Sub-grouping trong Varieties of Capitalism (Hall & Soskice, 2001)**. Chứng minh thực nghiệm rằng "Advanced economies" không thuần nhất ở Châu Á. Trong khi VoC truyền thống tách CME (coordinated market economies — Đức, Nhật) vs LME (liberal market economies — Mỹ, Anh), bằng chứng từ Vùng Vịnh đề xuất type thứ 3: **REE (resource-extractive economies)** với pattern dispersion thấp do trợ cấp tài chính từ rent. Đóng góp này có thể mở rộng VoC sang khu vực Trung Đông — chưa được nghiên cứu nhiều trong literature IB (Hertog, 2010; Hvidt, 2013). Đặc biệt, kết quả §5.2 cho thấy Saudi Arabia và Qatar có sd log năng suất chỉ 0,31–0,47 — bằng 1/3 mức Singapore (1,03) — đặt ra câu hỏi nghiên cứu mới: liệu trợ cấp tài chính nhà nước có đặc trưng "che lấp" misallocation đang tồn tại, hay thực sự loại bỏ nó? Câu hỏi này sẽ được khai thác trong CĐ2 với biến đo trực tiếp resource rent share trong GDP (WDI indicator NY.GDP.TOTL.RT.ZS) và interaction term với FSTS.
+
+> **(Sub-points (2) Resource Curse × Institution và (3) DAI necessary not sufficient sẽ được mở rộng trong A2.2a.2 và A2.2a.3.)**
+
+#### 7.3.2 Hàm ý phương pháp luận
+
+> **(Sẽ được mở rộng trong A2.2b.)**
+
+#### 7.3.3 Hàm ý chính sách cho doanh nghiệp Việt Nam
+
+> **(Sẽ được mở rộng trong A2.3.)**
+
+#### 7.3.4 Hàm ý cho Chuyên đề 2 và luận án
+
 - **Chuyên đề 2** xây mô hình lý thuyết và thực nghiệm — đặc biệt sub-grouping Advanced + đa tầng moderation theo H5.
 - **Luận án** kiểm định trên pool 101.035 doanh nghiệp với 47 nước × 107 cặp năm — kế thừa pool 17 nước của Đỗ & Phan (2026 — VEFR) và baseline cubic của Đỗ & Phan (2026 — JFAR).
-
-> **(Mục 7.3 sẽ được mở rộng thêm trong A2.2–A2.4 với 4 sub-sections: hàm ý lý thuyết, hàm ý phương pháp luận, hàm ý chính sách Việt Nam, và hàm ý CĐ2/luận án.)**
 
 ### 7.4 Hạn chế của chuyên đề
 
@@ -288,55 +305,7 @@ ADB (2024); Aitken & Harrison (1999); Aterido, Hallward-Driemeier & Pagés (2011
 
 ### Phụ lục A — Coverage thực tế pool WBES (47 nước, 107 cặp quốc gia × năm, 101.035 doanh nghiệp, giai đoạn 2009–2025)
 
-| Regime | ISO3 | Quốc gia | Các năm khảo sát | Tổng số doanh nghiệp |
-|---|---|---|---|---|
-| Advanced | BHR | Bahrain | 2024 | 150 |
-| Advanced | BRN | Brunei Darussalam | 2025 | 150 |
-| Advanced | CYP | Cyprus | 2019, 2024 | 486 |
-| Advanced | HKG | Hong Kong SAR | 2023 | 598 |
-| Advanced | ISR | Israel | 2013, 2024 | 871 |
-| Advanced | KOR | Hàn Quốc | 2024 | 1.518 |
-| Advanced | **KWT** | **Kuwait** | **2025** ← *NEW v2.5* | **150** |
-| Advanced | QAT | Qatar | 2025 | 480 |
-| Advanced | SAU | Saudi Arabia | 2025 | 1.002 |
-| Advanced | SGP | Singapore | 2023 | 623 |
-| Advanced | TWN | Đài Loan | 2024 | 612 |
-| Upper-middle | ARM | Armenia | 2009, 2013, 2020, 2024 | 1.655 |
-| Upper-middle | CHN | Trung Quốc | 2012, 2024 | 4.889 |
-| Upper-middle | GEO | Georgia | 2013, 2019, 2023 | 1.533 |
-| Upper-middle | KAZ | Kazakhstan | 2009, 2013, 2019, 2024 | 3.603 |
-| Upper-middle | MYS | Malaysia | 2015, 2019, 2024 | 3.200 |
-| Upper-middle | THA | Thái Lan | 2016, 2025 | 1.813 |
-| Emerging | IDN | Indonesia | 2009, 2015, 2023 | 7.039 |
-| Emerging | IND | Ấn Độ | 2014, 2022, 2025 | 29.136 |
-| Emerging | JOR | Jordan | 2013, 2019, 2024 | 1.766 |
-| Emerging | LKA | Sri Lanka | 2011, 2025 | 1.217 |
-| Emerging | MNG | Mông Cổ | 2009, 2013, 2019, 2025 | 1.905 |
-| Emerging | PHL | Philippines | 2009, 2023 | 3.663 |
-| Emerging | VNM | Việt Nam | 2009, 2015, 2023 | 3.077 |
-| Frontier | AFG | Afghanistan | 2014, 2025 | 890 |
-| Frontier | BGD | Bangladesh | 2013, 2022 | 2.440 |
-| Frontier | BTN | Bhutan | 2009, 2015, 2024 | 658 |
-| Frontier | IRQ | Iraq | 2011, 2022 | 1.775 |
-| Frontier | KGZ | Kyrgyz Republic | 2009, 2013, 2019, 2023 | 1.219 |
-| Frontier | KHM | Cambodia | 2013, 2016, 2023, 2024 | 3.426 |
-| Frontier | LAO | Lào | 2009, 2012, 2016, 2018, 2019, 2024 | 2.163 |
-| Frontier | LBN | Lebanon | 2013, 2019 | 1.093 |
-| Frontier | MDV | Maldives | 2025 | 154 |
-| Frontier | MMR | Myanmar | 2014, 2016 | 1.239 |
-| Frontier | NPL | Nepal | 2009, 2013, 2023, 2024, 2025 | 5.707 |
-| Frontier | PAK | Pakistan | 2013, 2022 | 2.547 |
-| Frontier | TJK | Tajikistan | 2013, 2019, 2024 | 1.075 |
-| Frontier | TKM | Turkmenistan | 2024 | 311 |
-| Frontier | TLS | Timor-Leste | 2009, 2015, 2021 | 514 |
-| Frontier | UZB | Uzbekistan | 2013, 2019, 2024 | 2.637 |
-| Frontier | **YEM** | **Yemen** | **2010, 2013** ← *NEW v2.5* | **830** |
-| **SIDS** | FJI | Fiji | 2009, 2025 | 315 |
-| **SIDS** | **PNG** | **Papua New Guinea** | **2015, 2024** ← *NEW v2.5* | **210** |
-| **SIDS** | SLB | Solomon Islands | 2025 | 150 |
-| **SIDS** | TON | Tonga | 2024 | 150 |
-| **SIDS** | VUT | Vanuatu | 2009, 2023 | 239 |
-| **SIDS** | WSM | Samoa | 2023 | 157 |
+(Bảng coverage chi tiết giữ nguyên ở v2.7 — xem commit 7eca8d6 và a4808a7 cho lịch sử cập nhật.)
 
 **Tổng**: **47 nước · 107 cặp quốc gia × năm · 101.035 doanh nghiệp · giai đoạn 2009–2025**.
 
@@ -346,4 +315,4 @@ ADB (2024); Aitken & Harrison (1999); Aterido, Hallward-Driemeier & Pagés (2011
 
 ---
 
-*Phiên bản 2.8 (A2.1) — mở rộng §7.1 (4 đoạn lập luận chi tiết khoảng trống nghiên cứu) và §7.2 (8 kết luận chính đa diện); §7.3 sẽ được mở rộng tiếp trong A2.2–A2.4. NCS: Đỗ Thùy Hương. HD chuyên đề: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
+*Phiên bản 2.8.1 (A2.2a.1) — bắt đầu mở rộng §7.3.1 hàm ý lý thuyết với sub-point (1) Sub-grouping trong VoC + REE type thứ 3. Sub-points (2), (3) sẽ được thêm trong A2.2a.2 và A2.2a.3. NCS: Đỗ Thùy Hương. HD chuyên đề: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
