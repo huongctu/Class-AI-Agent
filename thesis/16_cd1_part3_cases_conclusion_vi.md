@@ -1,11 +1,10 @@
 # CHUYÊN ĐỀ TIẾN SĨ SỐ 1 — BẢN NHÁP ĐẦY ĐỦ (PHẦN 3: CHƯƠNG 5–7 + TÀI LIỆU THAM KHẢO + PHỤ LỤC)
 
 > Tiếp nối `thesis/14_cd1_part1_intro_theory_vi.md` và `thesis/15_cd1_part2_findings_vi.md`.
-> **Phiên bản 2.5 (cập nhật ngày 04/05/2026 — bản hoàn chỉnh)**: Pool **101.035 doanh nghiệp · 47 nước · 107 cặp quốc gia × năm · 2009–2025** với **6 SIDS Pacific đầy đủ** + Tây Á Gulf + Lebanon + Yemen.
-> **Phiên bản 2.6 (05/05/2026)**: Bổ sung citation P1 (Đỗ & Phan, 2026 — VEFR) làm baseline 17 nước + bổ sung entry TLTK đầy đủ.
-> **Phiên bản 2.7 (06/05/2026)**: Mở rộng §5.2 Saudi/Qatar/Kuwait + §5.6 Mongolia với số liệu thực từ pool WBES 2025; bổ sung khung lý thuyết rentier state (Beblawi, 1987; Hertog, 2010), resource curse (Auty, 1993; Sachs & Warner, 2001) và Varieties of Capitalism (Hall & Soskice, 2001) làm cơ sở sub-grouping Advanced cho CĐ2.
-> **Phiên bản 2.8 (06/05/2026, A2.1)**: Mở rộng §7.1 (khoảng trống — 4 đoạn lập luận chi tiết) và §7.2 (kết luận chính — 8 phát hiện đa diện).
-> **Phiên bản 2.8.1 (06/05/2026, A2.2a.1)**: Bắt đầu mở rộng §7.3.1 hàm ý lý thuyết — sub-point (1) Sub-grouping trong Varieties of Capitalism với REE type thứ 3 cho Vùng Vịnh.
+> **Phiên bản 2.5–2.7**: Pool 101.035 firms · 47 nước · 107 country-years · 2009–2025; mở rộng §5.2 Saudi/Qatar/Kuwait + §5.6 Mongolia với số liệu thực; bổ sung khung rentier state, resource curse, VoC.
+> **Phiên bản 2.8 (A2.1)**: Mở rộng §7.1 (4 đoạn lập luận) và §7.2 (8 kết luận đa diện).
+> **Phiên bản 2.8.1 (A2.2a.1)**: Bắt đầu §7.3.1 hàm ý lý thuyết — sub-point (1) VoC sub-grouping + REE type thứ 3.
+> **Phiên bản 2.8.2 (A2.2a.2)**: Thêm §7.3.1 sub-point (2) Resource Curse × Institutional moderation; khôi phục Phụ lục A đầy đủ.
 
 ---
 
@@ -117,28 +116,9 @@ FSTS 7,6%; exporter 14%; SME 74%; FDI 4,4%; R&D 16%; innov product 17%. **Disper
 | **Vanuatu** | 2009, 2023 | 239 | Frontier SIDS, du lịch + offshore finance |
 | **Samoa** | 2023 | 157 | Lower-middle income, kiều hối + du lịch |
 
-**Pattern SIDS Pacific (n=1.221, 9 cặp năm)**:
+**Pattern SIDS Pacific (n=1.221, 9 cặp năm)**: FSTS 6,3%; exporter 16,3%; SME 88,5%; FDI ≥10% **23,5%** (cao nhất); innov product **41,5%** (cao nhất); website **58,9%** (gần Advanced); R&D 11,8%; ISO 16,5%; sd log 1,29; P90/P10 = 27,6.
 
-- FSTS trung bình **6,3%**; exporter share **16,3%**
-- SME 88,5%; FDI ≥10% **23,5%** (cao nhất tất cả regime)
-- Innov product **41,5%** (cao nhất tất cả regime!)
-- Website **58,9%** (gần Advanced — leapfrog mạnh)
-- R&D dương **11,8%**; ISO **16,5%** (thấp — pattern adaptation)
-- sd log năng suất 1,29; P90/P10 = 27,6
-
-**Bài học**. SIDS Pacific có pattern **đặc trưng và phức tạp**:
-
-(1) **Forced internationalization penalty**: FSTS thấp (6,3%) bất chấp đặc tính kinh tế nhỏ-mở.
-
-(2) **Adaptation vs Invention**: innov_product cực cao (41,5%) nhưng R&D thấp (11,8%) — doanh nghiệp linh hoạt thử nghiệm sản phẩm vì thị trường nhỏ buộc, KHÔNG phải đầu tư R&D nội tại.
-
-(3) **Digital leapfrog**: Website 58,9% gần Advanced — Pacific SIDS nhảy thẳng vào hạ tầng số mặc dù không có infrastructure R&D.
-
-(4) **FDI-driven structure**: 23,5% doanh nghiệp có vốn nước ngoài — cao nhất khu vực, phản ánh tourism + viễn thông + offshore finance dẫn dắt.
-
-(5) **Heterogeneity giữa các SIDS**: Fiji (upper-middle, du lịch lớn) khác PNG (khai thác) khác Tonga/Samoa (kiều hối). Cần phân tích country-level trong CĐ2/luận án.
-
-**Cơ sở thực tiễn cho hệ giả thuyết H5 (institutional moderation)** và **H6 (forced internationalization penalty)** ở CĐ2 và luận án.
+**Bài học**. SIDS Pacific có pattern đặc trưng: (1) **Forced internationalization penalty** (FSTS thấp bất chấp đặc tính nhỏ-mở); (2) **Adaptation vs Invention** (innov 41,5% nhưng R&D 11,8%); (3) **Digital leapfrog** (website 58,9% gần Advanced); (4) **FDI-driven** (23,5% — cao nhất); (5) **Heterogeneity giữa các SIDS** (Fiji du lịch khác PNG khai thác khác Tonga/Samoa kiều hối). Cơ sở thực tiễn cho H5 (institutional moderation) và H6 (forced internationalization penalty).
 
 ### 5.8 So sánh tổng hợp các tiểu cảnh
 
@@ -157,9 +137,9 @@ FSTS 7,6%; exporter 14%; SME 74%; FDI 4,4%; R&D 16%; innov product 17%. **Disper
 | sd log năng suất | 1,03 | 1,38 | 1,20 | 2,18 | **1,16** | 1,29 | **0,49** |
 
 *Nguồn: Tính toán của tác giả từ pool WBES 2009–2025. Số đậm = mới cập nhật v2.7.*
-*Ghi chú: ¹VN R&D chỉ đo 2 đợt sau (2015 + 2023), 2009 thiếu trường. ²CN R&D + innov sản phẩm chỉ có ở 2024. ³MNG R&D mới đo lần đầu 2025. ⁴VN innov sản phẩm 2 đợt sau (2015 + 2023). ⁵MNG innov sản phẩm 3 đợt sau (2013 + 2019 + 2025).*
+*Ghi chú: ¹VN R&D chỉ đo 2 đợt sau (2015 + 2023). ²CN R&D + innov chỉ ở 2024. ³MNG R&D mới đo 2025. ⁴VN innov 2 đợt sau. ⁵MNG innov 3 đợt sau.*
 
-7 tiểu cảnh khẳng định: (i) phi tuyến cần thiết; (ii) tách bạch TCI và DAI; (iii) moderation theo regime + sub-regime; (iv) **sub-grouping Advanced** (innovation-driven Singapore vs resource-driven Vùng Vịnh — confirmed bằng dispersion ratio 1,03/0,49 ≈ 2,1×); (v) đặc thù SIDS — boundary case; (vi) Mongolia là boundary case Emerging tài nguyên — gợi ý "resource cluster" xuyên regime trong CĐ2.
+7 tiểu cảnh khẳng định: (i) phi tuyến cần thiết; (ii) tách bạch TCI và DAI; (iii) moderation theo regime + sub-regime; (iv) **sub-grouping Advanced** (dispersion ratio 1,03/0,49 ≈ 2,1×); (v) đặc thù SIDS — boundary case; (vi) Mongolia là boundary case Emerging tài nguyên.
 
 ---
 
@@ -180,31 +160,19 @@ FSTS 7,6%; exporter 14%; SME 74%; FDI 4,4%; R&D 16%; innov product 17%. **Disper
 
 *Nguồn: Tính toán của tác giả từ pool WBES (n=101.035, giai đoạn 2009–2025).*
 
-Sáu phát hiện chính:
-
-(1) *FDI tương quan dương MẠNH ở SIDS* (+0,222) — phù hợp pattern tourism + viễn thông MNE-driven; spillover effect rất mạnh ở các nền kinh tế nhỏ-mở.
-
-(2) *FDI tương quan âm ở Advanced* (−0,113) — hiệu ứng do Vùng Vịnh dầu mỏ; trong khi FDI dương ở Emerging/Frontier (spillover hypothesis).
-
-(3) *FSTS dương ở Advanced* (+0,113) — sau khi thêm Saudi/Qatar/Kuwait, FSTS×năng suất tương quan dương rõ. Có thể do doanh nghiệp xuất khẩu ở Advanced thường lớn và năng suất cao hơn.
-
-(4) *TCI tương quan dương MẠNH ở SIDS* (+0,155) — bằng chứng thực tiễn: tại Pacific, doanh nghiệp có ISO/R&D tương quan tốt với năng suất. Có thể do mẫu nhỏ phân biệt rõ doanh nghiệp "có chuẩn quốc tế" vs "không có".
-
-(5) *DAI tương quan ÂM ở Advanced* (−0,129) — Single-component DAI (chỉ website) không đủ ở nền kinh tế advanced. Cần bổ sung e-commerce, ERP, cloud cho phiên bản tiếp theo.
-
-(6) *Tương quan nhỏ và đổi dấu giữa các regime* — phù hợp hypothesis H1 phi tuyến và H5 institutional moderation; đồng thời đồng nhất với phát hiện về "digital shield effect" ở 17 nước châu Á mới nổi (Đỗ & Phan, 2026 — VEFR).
+Sáu phát hiện chính: (1) FDI dương MẠNH ở SIDS (+0,222) — MNE-driven; (2) FDI âm ở Advanced (−0,113) — Vùng Vịnh dầu mỏ; (3) FSTS dương ở Advanced (+0,113); (4) TCI dương MẠNH ở SIDS (+0,155); (5) DAI ÂM ở Advanced (−0,129) — single-component không đủ; (6) Tương quan đổi dấu giữa các regime — phù hợp H1 phi tuyến và H5 institutional moderation; đồng nhất "digital shield effect" của Đỗ & Phan (2026 — VEFR).
 
 ### 6.2 Diễn giải pattern theo từng regime
 
-**Advanced** (Singapore, Hong Kong, Korea + Vùng Vịnh): FSTS×năng suất dương (+0,113), TCI×năng suất dương (+0,128), DAI×năng suất âm (−0,129). Pattern này phản ánh: doanh nghiệp xuất khẩu nhiều có năng suất cao, có chứng nhận ISO/R&D có năng suất cao, nhưng website chỉ ngụ ý doanh nghiệp nhỏ dịch vụ tư vấn (không phản ánh năng lực số thật). **Tuy nhiên**, sau sub-grouping (§5.2), tương quan trung bình này có thể che giấu hai pattern ngược dấu: innovation-driven Advanced (Singapore) có thể có DAI dương, trong khi resource-driven Advanced (Vùng Vịnh) có DAI rất yếu. Cần kiểm chứng trong CĐ2 với interaction term.
+**Advanced**: FSTS dương (+0,113), TCI dương (+0,128), DAI âm (−0,129). Sub-grouping (§5.2) cho thấy có thể che giấu hai pattern ngược dấu — innovation-driven (Singapore) có DAI dương vs resource-driven (Vùng Vịnh) DAI rất yếu.
 
-**Upper-middle** (CN, MY, TH, KZ, AM, GE): tương quan rất nhỏ ở mọi biến. Pattern này gợi ý các yếu tố giải thích cấp doanh nghiệp ít quan trọng — thay vào đó cần biến cấp ngành/quốc gia.
+**Upper-middle**: tương quan rất nhỏ ở mọi biến — gợi ý cần biến cấp ngành/quốc gia.
 
-**Emerging** (VN, ID, PH, IN, LK, JO, MN): FDI×năng suất dương rõ (+0,113). Pattern điển hình của FDI spillover ở nền kinh tế emerging. Tuy nhiên Mongolia (boundary case Emerging tài nguyên — §5.6) có thể dilute pattern này; cần kiểm tra robustness bằng cách loại Mongolia trong sub-analysis.
+**Emerging**: FDI×năng suất dương rõ (+0,113) — pattern điển hình FDI spillover. Mongolia (boundary case §5.6) có thể dilute pattern này; cần robustness check loại Mongolia.
 
-**Frontier** (16 nước): tương quan rất nhỏ ở mọi biến — gợi ý misallocation lớn (nhiều noise) (Hsieh & Klenow, 2009; Aterido et al., 2011).
+**Frontier**: tương quan rất nhỏ — gợi ý misallocation lớn (Hsieh & Klenow, 2009; Aterido et al., 2011).
 
-**SIDS** (6 nước Pacific): TCI và FDI tương quan dương mạnh — cấu trúc đặc thù với MNE-driven và quality certification có ý nghĩa lớn.
+**SIDS**: TCI và FDI tương quan dương mạnh — MNE-driven và quality certification có ý nghĩa lớn.
 
 ---
 
@@ -250,7 +218,9 @@ Chuyên đề 1 cung cấp 3 đóng góp lý thuyết kế thừa và mở rộn
 
 **(1) Sub-grouping trong Varieties of Capitalism (Hall & Soskice, 2001)**. Chứng minh thực nghiệm rằng "Advanced economies" không thuần nhất ở Châu Á. Trong khi VoC truyền thống tách CME (coordinated market economies — Đức, Nhật) vs LME (liberal market economies — Mỹ, Anh), bằng chứng từ Vùng Vịnh đề xuất type thứ 3: **REE (resource-extractive economies)** với pattern dispersion thấp do trợ cấp tài chính từ rent. Đóng góp này có thể mở rộng VoC sang khu vực Trung Đông — chưa được nghiên cứu nhiều trong literature IB (Hertog, 2010; Hvidt, 2013). Đặc biệt, kết quả §5.2 cho thấy Saudi Arabia và Qatar có sd log năng suất chỉ 0,31–0,47 — bằng 1/3 mức Singapore (1,03) — đặt ra câu hỏi nghiên cứu mới: liệu trợ cấp tài chính nhà nước có đặc trưng "che lấp" misallocation đang tồn tại, hay thực sự loại bỏ nó? Câu hỏi này sẽ được khai thác trong CĐ2 với biến đo trực tiếp resource rent share trong GDP (WDI indicator NY.GDP.TOTL.RT.ZS) và interaction term với FSTS.
 
-> **(Sub-points (2) Resource Curse × Institution và (3) DAI necessary not sufficient sẽ được mở rộng trong A2.2a.2 và A2.2a.3.)**
+**(2) Kết hợp Resource Curse với Internationalization Theory**. Mongolia + Saudi/Qatar/Kuwait + PNG cùng "resource-dependent" nhưng pattern internationalization khác nhau (FSTS từ 0,4% Kuwait đến 5,9% Mongolia đến ~11% PNG). Điều này chỉ ra resource curse (Auty, 1993; Sachs & Warner, 2001) cần được mở rộng với chiều **institutional moderation** (North, 1990; Khanna & Palepu, 2010). Khung lý thuyết "Resource × Institution × Internationalization" đề xuất cho CĐ2: hai cấu trúc tài nguyên cùng-đặc-điểm có thể dẫn đến hai pattern xuất khẩu trái ngược nếu thể chế khác nhau — PNG mở cửa MNE khoáng sản đầu tư trực tiếp dài hạn (FDI 40%), trong khi Mongolia sau Oyu Tolgoi 2013 đối mặt bất ổn chính sách khoáng sản và FDI giảm liên tục, và Vùng Vịnh duy trì chính sách hạn chế sở hữu nước ngoài (FDI ≤ 19%). Đóng góp này lấp đầy khoảng trống trong literature IB về "geography of resource dependence" (Liu & Zhang, 2024 — về geopolitical risk; mở rộng sang firm-level). Cụ thể, kết quả §5.6 cho thấy Mongolia DAI tăng 39% → 65% nhưng FSTS giậm chân — bằng chứng định lượng đầu tiên cho thấy resource curse ảnh hưởng đến internationalization ngay cả khi digital adoption tăng tốc; điều này thử thách quan điểm "digital can overcome resource curse" có trong một số literature gần đây và đặt nền tảng cho hypothesis của CĐ2 về tương tác phức hợp `Resource × Institution × Digital`.
+
+> **(Sub-point (3) DAI necessary not sufficient sẽ được mở rộng trong A2.2a.3.)**
 
 #### 7.3.2 Hàm ý phương pháp luận
 
@@ -288,16 +258,16 @@ Chuyên đề 1 cung cấp 3 đóng góp lý thuyết kế thừa và mở rộn
 
 **Các công bố của tác giả luận án (cited trong CĐ1)**:
 
-- Đỗ, T. H., & Phan, A. T. (2026 — VEFR). Internationalization, digital capability and firm performance in 17 emerging Asian economies. *Vietnam Economic and Financial Review*. *(P1 — pool 17 nước, ~40.633 firms, baseline cho CĐ1 v2.5/v2.6/v2.7/v2.8)*.
-- Đỗ, T. H., & Phan, A. T. (2026 — JFAR). Nonlinear cubic relationship between internationalization and firm performance: Evidence from China SMEs. *Journal of Finance and Accounting Research*. *(P2 — China cubic, n=4.889, turning point ~47,8% FSTS; tham chiếu §5.4)*.
-- Đỗ, T. H., & Phan, A. T. (in preparation — P3 Singapore). Technological capability, digital adoption, and the internationalization–performance relationship: A firm-level study of Singapore. *Management International Review* (R3 ready). *(Tham chiếu §5.1; submission package: `papers/p3-singapore/`)*
-- Đỗ, T. H., & Phan, A. T. (in preparation — P4 Vietnam). Technological capability, digital adoption, and the internationalization–performance relationship in Vietnam: A three-wave analysis. *International Journal of Emerging Markets* (v5.9). *(Tham chiếu §5.3; submission package: `papers/p4-vietnam/`)*
-- Đỗ, T. H., & Phan, A. T. (in preparation — P5 China). China internationalization–performance: Temporal heterogeneity 2012–2024. *Asia Pacific Journal of Management* (v1.8). *(Tham chiếu §5.4; submission package: `papers/p5-china/`)*
-- Đỗ, T. H., & Phan, A. T. (2026 — P8 manuscript). Forced internationalization penalty in 6 Pacific SIDS. *(Tham chiếu §4.1, §5.7, §7.1)*.
+- Đỗ, T. H., & Phan, A. T. (2026 — VEFR). Internationalization, digital capability and firm performance in 17 emerging Asian economies. *Vietnam Economic and Financial Review*. *(P1 — pool 17 nước, ~40.633 firms, baseline cho CĐ1)*.
+- Đỗ, T. H., & Phan, A. T. (2026 — JFAR). Nonlinear cubic relationship between internationalization and firm performance: Evidence from China SMEs. *Journal of Finance and Accounting Research*. *(P2 — China cubic, n=4.889, turning point ~47,8% FSTS)*.
+- Đỗ, T. H., & Phan, A. T. (in preparation — P3 Singapore). *Management International Review* (R3 ready). *(`papers/p3-singapore/`)*
+- Đỗ, T. H., & Phan, A. T. (in preparation — P4 Vietnam). *International Journal of Emerging Markets* (v5.9). *(`papers/p4-vietnam/`)*
+- Đỗ, T. H., & Phan, A. T. (in preparation — P5 China). *Asia Pacific Journal of Management* (v1.8). *(`papers/p5-china/`)*
+- Đỗ, T. H., & Phan, A. T. (2026 — P8 manuscript). Forced internationalization penalty in 6 Pacific SIDS.
 
 **Các tham khảo khác** (đầy đủ trong `thesis/04_references_apa7.md`; entries mới ở v2.7 in đậm):
 
-ADB (2024); Aitken & Harrison (1999); Aterido, Hallward-Driemeier & Pagés (2011); **Auty (1993)**; Banalieva & Dhanaraj (2019); Barney (1991); Bausch & Krist (2007); **Beblawi (1987)**; **Bertram (2006)**; Bharadwaj et al. (2013); **Briguglio (1995)**; CIEM (2023); Cohen & Levinthal (1990); Cusolito & Maloney (2018); **Gerelmaa & Kotani (2016)**; **Hall & Soskice (2001)**; Hambrick & Mason (1984); **Hertog (2010)**; Hsieh & Klenow (2009, 2014); Hsu, Chen & Cheng (2013); **Hvidt (2013)**; Kaufmann, Kraay & Mastruzzi (2011); Khanna & Palepu (2010); Kirca et al. (2012); Li, Liu & Qian (2022); Liu & Zhang (2024); Lu & Beamish (2004); Marano et al. (2016); North (1990); OECD (2026 — FDI in Figures, April 2026); OECD (2026 — Economic Outlook, March 2026); Page et al. (2021); Penrose (1959); **Sachs & Warner (2001)**; Stallkamp & Schotter (2021); Tran & Pham (2024); UNCTAD (2023); Verhoef et al. (2021); WIPO (2024); World Bank (2019, 2023, 2024, n.d.); Wu, Wood & Khan (2022); Xiao, Tylecote & Liu (2013); Yang, Zhao & Wei (2025).
+ADB (2024); Aterido, Hallward-Driemeier & Pagés (2011); **Auty (1993)**; Banalieva & Dhanaraj (2019); Bausch & Krist (2007); **Beblawi (1987)**; **Bertram (2006)**; Bharadwaj et al. (2013); **Briguglio (1995)**; CIEM (2023); Cohen & Levinthal (1990); Cusolito & Maloney (2018); **Gerelmaa & Kotani (2016)**; **Hall & Soskice (2001)**; Hambrick & Mason (1984); **Hertog (2010)**; Hsieh & Klenow (2009, 2014); **Hvidt (2013)**; Kaufmann et al. (2011); Khanna & Palepu (2010); Kirca et al. (2012); Liu & Zhang (2024); Marano et al. (2016); North (1990); Page et al. (2021); **Sachs & Warner (2001)**; Stallkamp & Schotter (2021); Tran & Pham (2024); UNCTAD (2023); Verhoef et al. (2021); WIPO (2024); World Bank (2019, 2023, 2024, n.d.); Wu, Wood & Khan (2022).
 
 ---
 
@@ -305,14 +275,68 @@ ADB (2024); Aitken & Harrison (1999); Aterido, Hallward-Driemeier & Pagés (2011
 
 ### Phụ lục A — Coverage thực tế pool WBES (47 nước, 107 cặp quốc gia × năm, 101.035 doanh nghiệp, giai đoạn 2009–2025)
 
-(Bảng coverage chi tiết giữ nguyên ở v2.7 — xem commit 7eca8d6 và a4808a7 cho lịch sử cập nhật.)
+| Regime | ISO3 | Quốc gia | Các năm khảo sát | Tổng số doanh nghiệp |
+|---|---|---|---|---|
+| Advanced | BHR | Bahrain | 2024 | 150 |
+| Advanced | BRN | Brunei Darussalam | 2025 | 150 |
+| Advanced | CYP | Cyprus | 2019, 2024 | 486 |
+| Advanced | HKG | Hong Kong SAR | 2023 | 598 |
+| Advanced | ISR | Israel | 2013, 2024 | 871 |
+| Advanced | KOR | Hàn Quốc | 2024 | 1.518 |
+| Advanced | KWT | Kuwait | 2025 | 150 |
+| Advanced | QAT | Qatar | 2025 | 480 |
+| Advanced | SAU | Saudi Arabia | 2025 | 1.002 |
+| Advanced | SGP | Singapore | 2023 | 623 |
+| Advanced | TWN | Đài Loan | 2024 | 612 |
+| Upper-middle | ARM | Armenia | 2009, 2013, 2020, 2024 | 1.655 |
+| Upper-middle | CHN | Trung Quốc | 2012, 2024 | 4.889 |
+| Upper-middle | GEO | Georgia | 2013, 2019, 2023 | 1.533 |
+| Upper-middle | KAZ | Kazakhstan | 2009, 2013, 2019, 2024 | 3.603 |
+| Upper-middle | MYS | Malaysia | 2015, 2019, 2024 | 3.200 |
+| Upper-middle | THA | Thái Lan | 2016, 2025 | 1.813 |
+| Emerging | IDN | Indonesia | 2009, 2015, 2023 | 7.039 |
+| Emerging | IND | Ấn Độ | 2014, 2022, 2025 | 29.136 |
+| Emerging | JOR | Jordan | 2013, 2019, 2024 | 1.766 |
+| Emerging | LKA | Sri Lanka | 2011, 2025 | 1.217 |
+| Emerging | MNG | Mông Cổ | 2009, 2013, 2019, 2025 | 1.905 |
+| Emerging | PHL | Philippines | 2009, 2023 | 3.663 |
+| Emerging | VNM | Việt Nam | 2009, 2015, 2023 | 3.077 |
+| Frontier | AFG | Afghanistan | 2014, 2025 | 890 |
+| Frontier | BGD | Bangladesh | 2013, 2022 | 2.440 |
+| Frontier | BTN | Bhutan | 2009, 2015, 2024 | 658 |
+| Frontier | IRQ | Iraq | 2011, 2022 | 1.775 |
+| Frontier | KGZ | Kyrgyz Republic | 2009, 2013, 2019, 2023 | 1.219 |
+| Frontier | KHM | Cambodia | 2013, 2016, 2023, 2024 | 3.426 |
+| Frontier | LAO | Lào | 2009, 2012, 2016, 2018, 2019, 2024 | 2.163 |
+| Frontier | LBN | Lebanon | 2013, 2019 | 1.093 |
+| Frontier | MDV | Maldives | 2025 | 154 |
+| Frontier | MMR | Myanmar | 2014, 2016 | 1.239 |
+| Frontier | NPL | Nepal | 2009, 2013, 2023, 2024, 2025 | 5.707 |
+| Frontier | PAK | Pakistan | 2013, 2022 | 2.547 |
+| Frontier | TJK | Tajikistan | 2013, 2019, 2024 | 1.075 |
+| Frontier | TKM | Turkmenistan | 2024 | 311 |
+| Frontier | TLS | Timor-Leste | 2009, 2015, 2021 | 514 |
+| Frontier | UZB | Uzbekistan | 2013, 2019, 2024 | 2.637 |
+| Frontier | YEM | Yemen | 2010, 2013 | 830 |
+| **SIDS** | FJI | Fiji | 2009, 2025 | 315 |
+| **SIDS** | PNG | Papua New Guinea | 2015, 2024 | 210 |
+| **SIDS** | SLB | Solomon Islands | 2025 | 150 |
+| **SIDS** | TON | Tonga | 2024 | 150 |
+| **SIDS** | VUT | Vanuatu | 2009, 2023 | 239 |
+| **SIDS** | WSM | Samoa | 2023 | 157 |
 
 **Tổng**: **47 nước · 107 cặp quốc gia × năm · 101.035 doanh nghiệp · giai đoạn 2009–2025**.
 
+**Đợt khảo sát năm 2025** (12 quốc gia, n=16.829): Ấn Độ (10.479), Nepal (1.740), Saudi Arabia (1.002), Thái Lan (813), Sri Lanka (607), Mongolia (601), Qatar (480), Afghanistan (480), Maldives (154), Fiji (151), Solomon Islands (150), Brunei (150), Kuwait (150).
+
+**Pacific SIDS (6 nước, n=1.221)**: Fiji + PNG + Solomon Islands + Tonga + Vanuatu + Samoa.
+
+**Tây Á (9 nước)**: Saudi Arabia + Qatar + Kuwait + Bahrain + Israel + Cyprus + Iraq + Jordan + Lebanon + Yemen.
+
 ### Phụ lục B – G
 
-(Các phụ lục B–G giữ nguyên như phiên bản 2.4: Phụ lục B Bản đồ, C Tổng hợp đợt khảo sát, D Định nghĩa biến, E Pipeline Python, F Mã Stata, G Kế hoạch viết.)
+(Các phụ lục B–G giữ nguyên như phiên bản 2.4: Bản đồ, Tổng hợp đợt khảo sát, Định nghĩa biến, Pipeline Python, Mã Stata, Kế hoạch viết.)
 
 ---
 
-*Phiên bản 2.8.1 (A2.2a.1) — bắt đầu mở rộng §7.3.1 hàm ý lý thuyết với sub-point (1) Sub-grouping trong VoC + REE type thứ 3. Sub-points (2), (3) sẽ được thêm trong A2.2a.2 và A2.2a.3. NCS: Đỗ Thùy Hương. HD chuyên đề: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
+*Phiên bản 2.8.2 (A2.2a.2) — thêm §7.3.1 sub-point (2) Resource Curse × Institutional moderation; khôi phục Phụ lục A coverage table đầy đủ. Sub-point (3) sẽ được thêm trong A2.2a.3. NCS: Đỗ Thùy Hương. HD chuyên đề: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
