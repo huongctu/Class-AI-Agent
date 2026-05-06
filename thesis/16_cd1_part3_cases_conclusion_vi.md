@@ -5,7 +5,8 @@
 > **Phiên bản 2.5–2.7**: Pool 101.035 firms · 47 nước · 107 country-years · 2009–2025.
 > **Phiên bản 2.8–2.8.10**: §7.1 (4 đoạn khoảng trống) + §7.2 (8 kết luận) + §7.3.1 (3 sub-points lý thuyết) + §7.3.2 (3 sub-points phương pháp luận) + §7.3.3 (4 đoạn chính sách Việt Nam).
 > **Phiên bản 2.8.11 (A2.4 — final)**: Hoàn thiện §7.3.4 (roadmap CĐ2 + luận án); mở rộng §7.4 (6 hạn chế chi tiết) + §7.5 (4 giai đoạn timeline 2026–2027).
-> **Phiên bản 3.0a (06/05/2026)**: Biên tập tiếng Việt học thuật Chương 5 (§5.1–5.8) theo `09b_vn_term_glossary.md`. Chương 6 và Chương 7 sẽ biên tập trong các commit kế tiếp (3.0b, 3.0c).
+> **Phiên bản 3.0a (06/05/2026)**: Biên tập tiếng Việt Chương 5 (§5.1–5.8).
+> **Phiên bản 3.0b (06/05/2026)**: Biên tập tiếng Việt Chương 6 — 6 phát hiện được mở rộng thành các luận điểm có chủ ngữ + diễn giải. Chương 7 sẽ biên tập trong commit 3/3.
 
 ---
 
@@ -63,7 +64,9 @@ Sáu nước: Fiji (FJI), Papua New Guinea (PNG), Solomon Islands (SLB), Tonga (
 
 ## CHƯƠNG 6 — CÁC YẾU TỐ GIẢI THÍCH SƠ BỘ
 
-**Bảng 6.1**. *Hệ số tương quan Pearson với log năng suất lao động (n=101.035).*
+Chương này phân tích tương quan **hai biến (bivariate)** giữa bốn yếu tố giải thích sơ bộ — FDI ≥10%, Cường độ xuất khẩu (FSTS), Năng lực công nghệ (TCI), Năng lực số (DAI) — và log năng suất lao động, theo từng phân nhóm con thể chế. Mục tiêu của Chương 6 là **gợi ý giả thuyết** cho Chuyên đề 2 (mô hình lý thuyết và thực nghiệm) chứ không kiểm định nhân quả; mọi tương quan trình bày dưới đây cần được hiểu là pattern dữ liệu, không phải quan hệ nhân quả.
+
+**Bảng 6.1**. *Hệ số tương quan Pearson giữa các yếu tố giải thích sơ bộ và log năng suất lao động (n=101.035).*
 
 | Yếu tố | Advanced | Upper-middle | Emerging | Frontier | SIDS |
 |---|---|---|---|---|---|
@@ -72,7 +75,21 @@ Sáu nước: Fiji (FJI), Papua New Guinea (PNG), Solomon Islands (SLB), Tonga (
 | TCI (R&D + ISO) | **+0,128** | +0,016 | −0,029 | +0,019 | **+0,155** |
 | DAI (website) | **−0,129** | +0,012 | +0,016 | +0,070 | −0,049 |
 
-Sáu phát hiện: FDI dương MẠNH ở SIDS; FDI âm ở Advanced; FSTS dương ở Advanced; TCI dương MẠNH ở SIDS; DAI ÂM ở Advanced; tương quan đổi dấu giữa các regime.
+*Ghi chú: TCI (Năng lực công nghệ) đo bằng tổng hợp R&D + ISO; DAI (Năng lực số) ở giai đoạn này đo bằng đơn thành phần — biến nhị phân website. Hai chỉ số này sẽ được mở rộng đa thành phần ở Chuyên đề 2 và luận án (xem §7.4 hạn chế phương pháp luận).*
+
+**Sáu phát hiện chính** từ Bảng 6.1:
+
+**(1) FDI ≥10% có tương quan dương rất mạnh ở SIDS Thái Bình Dương** (+0,222) — đây là tương quan mạnh nhất trong toàn bộ Bảng 6.1. Phát hiện này gợi ý FDI là kênh truyền tải năng suất quan trọng nhất ở phân nhóm con SIDS, có thể do du lịch (tourism) và viễn thông được dẫn dắt bởi doanh nghiệp đa quốc gia mang vào năng lực vận hành cao (xem §5.7 và §4.5 file 15).
+
+**(2) FDI ≥10% lại tương quan âm ở Advanced** (−0,113). Pattern này phản ánh khả năng FDI ở các nền kinh tế tiên tiến tập trung vào ngành tài chính / dầu khí có năng suất tự thân thấp hơn các ngành chế biến chế tạo công nghệ cao (Vùng Vịnh là trường hợp điển hình — xem §5.2).
+
+**(3) Cường độ xuất khẩu (FSTS) tương quan dương ở Advanced** (+0,113) — phù hợp lý thuyết Uppsala (Johanson & Vahlne, 1977) và lý thuyết OLI của Dunning (1988) ở các nền kinh tế có thể chế hoàn thiện. Tương quan này yếu hoặc đảo dấu ở Upper-middle và Emerging, gợi ý quan hệ I→P là **phi tuyến và có điều kiện** — cơ sở thực tiễn cho H1 (giả thuyết phi tuyến) trong CĐ2.
+
+**(4) Năng lực công nghệ (TCI) tương quan dương rất mạnh ở SIDS** (+0,155) cùng dương ở Advanced (+0,128) — TCI là yếu tố then chốt ở **hai cực** của phổ phát triển. Trong khi đó, TCI lại tương quan âm hoặc trung tính ở Upper-middle và Emerging, phản ánh hai cơ chế khác nhau: **học hỏi tự thân (autonomous learning)** ở Advanced và SIDS so với **học hỏi do FDI dẫn dắt (FDI-induced learning)** ở Upper-middle và Emerging (Cohen & Levinthal, 1990; Lall, 1992).
+
+**(5) Năng lực số đơn thành phần (DAI = website) tương quan âm ở Advanced** (−0,129). Đây là pattern bất ngờ — gợi ý số hóa làm giảm năng suất ở Singapore, Hàn Quốc, v.v., điều khó có thể là thực tế kinh tế. Có ba khả năng giải thích: (a) DAI đơn thành phần (chỉ đo website) không phản ánh đầy đủ năng lực số ở các nền kinh tế tiên tiến nơi website chỉ là **sự hiện diện số cơ bản (Tier-1 Digital Presence)** đã bão hòa từ lâu; (b) **hiện vật thống kê (artifact)** do không tách ngành ICT khỏi mẫu — các doanh nghiệp ICT hiện diện 100% website nhưng có phương sai năng suất cao; (c) hiệu ứng *digital theatre* (Verhoef et al., 2021) — sở hữu công cụ số không tự động đem lại lợi nhuận biên. Phát hiện này cần được kiểm chứng với DAI đa thành phần (5 chiều) ở Đặc tả 2 của CĐ2.
+
+**(6) Tương quan đổi dấu giữa các phân nhóm con thể chế**. FDI dương ở Emerging/Frontier/SIDS nhưng âm ở Advanced; FSTS dương ở Advanced/Emerging nhưng âm ở Upper-middle; TCI dương ở Advanced/SIDS nhưng âm ở Emerging; DAI âm ở Advanced nhưng dương ở các phân nhóm khác. Bốn lần đảo dấu xuyên phân nhóm con là bằng chứng thực tiễn mạnh mẽ cho **điều tiết thể chế (institutional moderation)** — cùng một biến giải thích có hiệu lực khác nhau (thậm chí ngược dấu) tùy theo nhóm thể chế. Đây là cơ sở cho H4 (giả thuyết phân nhóm con thể chế) trong CĐ2.
 
 ---
 
@@ -235,7 +252,7 @@ Chuyên đề 1 dự kiến hoàn thiện qua 4 giai đoạn:
 
 **Các tham khảo khác** (entries mới ở v2.7+ in đậm):
 
-ADB (2024); **Aguinis et al. (2011)**; Aterido, Hallward-Driemeier & Pagés (2011); **Auty (1993)**; Banalieva & Dhanaraj (2019); Bausch & Krist (2007); **Beblawi (1987)**; **Bell & Pavitt (1995)**; **Bertram (2006)**; Bharadwaj et al. (2013); **Briguglio (1995)**; CIEM (2023); Cohen & Levinthal (1990); **Coltman et al. (2008)**; Cusolito & Maloney (2018); **Gerelmaa & Kotani (2016)**; **Hall & Soskice (2001)**; Hambrick & Mason (1984); **Hertog (2010)**; Hsieh & Klenow (2009, 2014); **Hvidt (2013)**; Kaufmann et al. (2011); Khanna & Palepu (2010); Kirca et al. (2012); Lall (1992); Lind & Mehlum (2010); Liu & Zhang (2024); Marano et al. (2016); North (1990); OECD (2026); Page et al. (2021); **Pierce-Aguinis (2013)**; **Sachs & Warner (2001)**; Stallkamp & Schotter (2021); Tran & Pham (2024); UNCTAD (2023); Verhoef et al. (2021); WIPO (2024); World Bank (2019, 2023, 2024, n.d.); Wu, Wood & Khan (2022).
+ADB (2024); **Aguinis et al. (2011)**; Aterido, Hallward-Driemeier & Pagés (2011); **Auty (1993)**; Banalieva & Dhanaraj (2019); Bausch & Krist (2007); **Beblawi (1987)**; **Bell & Pavitt (1995)**; **Bertram (2006)**; Bharadwaj et al. (2013); **Briguglio (1995)**; CIEM (2023); Cohen & Levinthal (1990); **Coltman et al. (2008)**; Cusolito & Maloney (2018); **Dunning (1988)**; **Gerelmaa & Kotani (2016)**; **Hall & Soskice (2001)**; Hambrick & Mason (1984); **Hertog (2010)**; Hsieh & Klenow (2009, 2014); **Hvidt (2013)**; **Johanson & Vahlne (1977)**; Kaufmann et al. (2011); Khanna & Palepu (2010); Kirca et al. (2012); Lall (1992); Lind & Mehlum (2010); Liu & Zhang (2024); Marano et al. (2016); North (1990); OECD (2026); Page et al. (2021); **Pierce-Aguinis (2013)**; **Sachs & Warner (2001)**; Stallkamp & Schotter (2021); Tran & Pham (2024); UNCTAD (2023); Verhoef et al. (2021); WIPO (2024); World Bank (2019, 2023, 2024, n.d.); Wu, Wood & Khan (2022).
 
 ---
 
@@ -251,6 +268,7 @@ ADB (2024); **Aguinis et al. (2011)**; Aterido, Hallward-Driemeier & Pagés (201
 
 ---
 
-*Phiên bản 2.8.11 (A2.4 — final) — hoàn thiện toàn bộ Chương 7: §7.3.4 với roadmap CĐ2 (6 đóng góp kế thừa, H1–H6 hệ giả thuyết, 2 specifications, OLS+IV+Lind-Mehlum) + roadmap luận án (5 chương, 6 panels Chương 4, triangulation 3 sub-papers, 7 sản phẩm khoa học); §7.4 mở rộng 6 hạn chế chi tiết; §7.5 mở rộng 4 giai đoạn timeline 2026–2027 với bảng lộ trình tích hợp luận án. NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
+*Phiên bản 2.8.11 (A2.4 — final) — hoàn thiện toàn bộ Chương 7. NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh. Cần Thơ, ngày 06/05/2026.*
 
-*Phiên bản 3.0a (06/05/2026) — Biên tập tiếng Việt Chương 5 (§5.1–5.8). Ch.6 và Ch.7 sẽ biên tập trong commit kế tiếp.*
+*Phiên bản 3.0a (06/05/2026) — Biên tập tiếng Việt Chương 5.*
+*Phiên bản 3.0b (06/05/2026) — Biên tập tiếng Việt Chương 6 (mở rộng 6 phát hiện thành luận điểm có chủ ngữ + diễn giải).*
