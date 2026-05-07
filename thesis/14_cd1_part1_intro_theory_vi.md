@@ -15,6 +15,7 @@
 > **Phiên bản 3.10 (07/05/2026 — WBES methodology official từ World Bank Vietnamese sources)**: Chia 2 sub-blocks: (a) **v3.10a §1.3** đối tượng nghiên cứu — phân loại quy mô WBES chính thức (Nhỏ 5-19 / Vừa 20-99 / Lớn 100+ / Rất lớn top 1%) + 4 ngành loại trừ (tiện ích công cộng, dịch vụ chính phủ, chăm sóc sức khỏe, dịch vụ tài chính); (b) **v3.10b §1.4** chi tiết methodology Global — trọng số lấy mẫu cho mean/median, xử lý ngoại lai 3SD logarit + winsorize 1/99, ngưỡng quan sát ≥5/≥30. Theo World Bank Vietnamese sources file 04 v2.5.
 > **Phiên bản 3.11 (07/05/2026 — Phase 5 sub-commit X1: Lớp 7 thuế quan Mỹ + 2025 GDP 8,0% confirm)**: §1.1 mở rộng "sáu lớp bối cảnh" → **bảy lớp bối cảnh đan xen** với **Lớp 7 — Bất định chính sách thuế quan Mỹ 2026** (Mỹ chiếm ~30% kim ngạch xuất khẩu Việt Nam; thuế toàn cầu 10% tạm thời, nguy cơ tăng 15%; **front-loading effect** ngắn hạn → giảm đà tăng trưởng tương lai; phân hóa tập đoàn lớn vs SME). Cập nhật con số Việt Nam: **2025 GDP = 8,0% (số liệu lịch sử mới)** → 2026 dự báo 7,2% → 2027 7,0% (đường giảm 8,0% → 7,2% → 7,0%). Theo ADB Vietnam Economic Outlook 2026 file 04 v2.5 + NotebookLM (07/05/2026, *Tariff Mỹ + Vietnam Macro Deep + Zombie Firms*).
 > **Phiên bản 3.12 (07/05/2026 — Vietnamization audit pass cho submission CTU)**: Bổ sung gloss tiếng Việt cho các thuật ngữ tiếng Anh kỹ thuật trong §1.5 (3) (nhị phân binary; bão hòa saturation; phân biệt discriminate) — đảm bảo độc giả không chuyên IB vẫn theo dõi được lập luận Tier-1/Tier-2 Digital Presence. Tuân thủ Convention 1 file 09 §4 chuẩn văn phong tiếng Việt học thuật — Việt + Anh ngoặc đơn lần đầu xuất hiện. Mục tiêu: file 14 đạt chuẩn nộp Hội đồng CTU + Bộ GD&ĐT.
+> **Phiên bản 3.13 (08/05/2026 — NotebookLM Digital Scaling integration: 4-Tier Verhoef + CDCM model)**: Thêm **§2.7 Khung 4-Tier chuyển đổi số + Mô hình năng lực số phụ thuộc bối cảnh (CDCM) (NEW)** — tích hợp NotebookLM critique 08/05/2026 đối chiếu hai bản thảo P3 Singapore + P4 Việt Nam: (a) Bảng 4-Tier Verhoef et al. (2021) với mapping vào WBES coverage (Tier 1-2 quan sát được; Tier 3-4 KHÔNG); (b) Tuyên bố ranh giới đo lường — DAI = "Foundational Digital Adoption" thay vì "Digital Capability"; (c) Mô hình CDCM xuyên quốc gia 3 chiều (I-P curve, DAI mechanism, TCI role) hợp nhất phát hiện Mar et al. (2026 — *MIR*) + Đỗ & Phan (2026 — *JFAR*); (d) Lý giải Institutional Transaction Costs (TCE) cho khác biệt điểm uốn 39-46% (VN) vs ~82% (Singapore); (e) 4 hàm ý phương pháp luận cho CĐ2 (Spec 1/2 + Robustness #10 + Limitations Tier 3-4 gap). Ngăn chặn rủi ro "overclaiming" + "desk-reject" ở Q1/Q2 IB journals.
 
 ---
 
@@ -239,6 +240,41 @@ Ma trận 3 trạng thái này thiết lập **tiền đề lý thuyết bắt b
 - **§5.2 (Singapore archetype)** + **§5.7 (Pacific SIDS case)** trong file 16;
 - **CĐ2 H6 (forced internationalization penalty)**: dự đoán ở SIDS Pacific (trạng thái C), FSTS KHÔNG correlate với năng suất vì U-curve không vận hành — hệ số FSTS ở SIDS sẽ không-significant hoặc đảo dấu so với Advanced/Emerging.
 
+### §2.7 KHUNG 4-TIER CHUYỂN ĐỔI SỐ + MÔ HÌNH NĂNG LỰC SỐ PHỤ THUỘC BỐI CẢNH (mới v3.13 — NotebookLM Digital Scaling 08/05/2026)
+
+NotebookLM critique 08/05/2026 (đối chiếu hai bản thảo của tác giả: P3 Singapore — Mar et al., 2026, *MIR*; P4 Việt Nam — Đỗ & Phan, 2026 — *JFAR*) chỉ ra một construct validity gap quan trọng: DAI đo lường trong cả 2 papers chỉ chạm tầng cơ bản (Tier 1 = website cho Việt Nam; Tier 1+2 = website + e-payment cho Singapore), trong khi lý thuyết về *super-linear coordination cost* (Brynjolfsson & McAfee, 2014) đòi hỏi tầng tích hợp sâu (Tier 3) hoặc năng lực động (Tier 4). Cần thiết lập explicit **construct boundary** từ Chương 2 — trước khi báo cáo descriptive results — để phòng tránh "overclaiming" trong khi nộp Hội đồng CTU + tránh "desk-reject" khi submit Q1/Q2 IB journals.
+
+**Bốn tầng bậc số hóa theo Verhoef et al. (2021 — *Journal of Business Research*)**:
+
+| Tầng | Tên (Việt) | Tên (Anh) | Đại diện đo lường | Quan sát được trong WBES? |
+|---|---|---|---|---|
+| **Tier 1** | Sự hiện diện số cơ bản | *Digital Presence* | website binary, email | ✓ Có (toàn pool 2009-2025) |
+| **Tier 2** | Giao tiếp số + thương mại điện tử cơ bản | *Digital communication + basic e-commerce* | e-payment intensity (k33, k38), online ordering | ✓ Có một phần (BREADY 2018+) |
+| **Tier 3** | Tích hợp quy trình số | *Digital process integration* | ERP, CRM, supply-chain digitization | ✗ KHÔNG quan sát |
+| **Tier 4** | Năng lực số động | *Dynamic digital capability* | AI integration, platform orchestration, data-driven decision | ✗ KHÔNG quan sát |
+
+**Tuyên bố ranh giới đo lường (Construct Boundary Statement)**: Pool 101.185 doanh nghiệp WBES quan sát Tier 1-2 (website cho toàn giai đoạn; e-payment cho wave BREADY 2018+). KHÔNG quan sát Tier 3-4. Do đó, mọi lập luận về "năng lực số" trong CĐ1 + papers IB thuộc luận án phải hạn chế ở phạm vi **Foundational Digital Adoption (FDA)**, KHÔNG mở rộng thành "Digital Capability" hay "Digital Transformation". Đây là tiêu chuẩn nhất quán xuyên CĐ1 / CĐ2 / luận án 5 chương.
+
+**Mô hình Năng lực số phụ thuộc bối cảnh (Context-Contingent Digital Capability Model — CDCM)** — đóng góp lý thuyết MỚI hợp nhất hai papers:
+
+CDCM hợp nhất phát hiện Singapore P3 (Mar et al., 2026) + Việt Nam P4 (Đỗ & Phan, 2026 — *JFAR*) thành một khung xuyên quốc gia 3 chiều:
+
+**(a) Hình dáng đường cong I-P (Internationalization-Performance)**: Việt Nam → Inverted-U rõ nét, điểm uốn (TP) ≈ 39-46% FSTS xuyên 3 wave 2009-2023; Lind-Mehlum p<0,013. Singapore → tuyến tính dương + bậc hai nhẹ, TP ≈ 82% FSTS (vùng dữ liệu thưa, 3,2% firms vượt 70% FSTS); Lind-Mehlum p=0,303 KHÔNG xác nhận.
+
+**(b) Cơ chế DAI**: Việt Nam (Tier 1 = website only) → **stage-contingent**: mạnh 2009 → vô tác dụng 2015 → phục hồi 2023 nhưng tương tác DAI×FSTS mang dấu âm (β=-0,912, p=,043) ở mức xuất khẩu cao → Tier 1 trở thành **điểm nghẽn**. Singapore (Tier 1+2 = website + e-payment) → **conditional scaling**: tương tác DAI×FSTS² dương mạnh (β=3,119, p=,005) → Tier 1+2 trở thành **đòn bẩy** ở xuất khẩu cao.
+
+**(c) Vai trò TCI (Năng lực công nghệ)**: Việt Nam — *scarce advantage* giúp doanh nghiệp vượt rào cản quốc tế hóa (TCIz IV β=1,639, p<,001 robust 2SLS — Đỗ & Phan, 2026 — *JFAR*). Singapore — *hygiene factor* nâng cao productivity floor nhưng KHÔNG điều tiết I-P curve.
+
+**Lý giải xuyên quốc gia — Institutional Transaction Costs (TCE Coase-Williamson, mở rộng Banalieva & Dhanaraj 2019)**: Ở Việt Nam, hạ tầng thương mại số yếu khiến chi phí điều phối xuyên biên giới tăng vọt ở mức xuất khẩu trung bình (TP 39-46%). Ở Singapore, hạ tầng số + logistics đã hấp thụ phần lớn chi phí này, đẩy ranh giới quá tải (overload) về vùng FSTS cực cao (~82%).
+
+**Hàm ý phương pháp luận cho CĐ2 + luận án**:
+- **Specification 1** (Tier 1-only website, full pool 2009-2025): expected hệ số DAI âm hoặc null ở Advanced phân nhóm innovation-driven do bão hòa Tier 1 (xem §1.5 contribution #3 + §4.4.5 ICT exclusion test file 15);
+- **Specification 2** (Tier 1+2 multi-component, BREADY 2018+ wave): expected positive coefficient + interaction với FSTS² dương ở Advanced — replication pattern Singapore P3;
+- **Robustness check #10** (mới): cross-validation construct boundary — chạy Spec 2 chỉ ở 41 nước có đủ Tier 1+2 data (BREADY+ wave); confirm rằng pattern Singapore-style emerges khi có composite digital adoption metric;
+- **Hạn chế minh bạch (Limitations)**: WBES không quan sát Tier 3 (ERP/CRM) và Tier 4 (AI). Đề xuất nghiên cứu tương lai sử dụng panel data đo trực tiếp các hệ thống ERP/AI để xác định ranh giới giữa "đòn bẩy" (lever) và "điểm nghẽn" (bottleneck) của số hóa theo cấp tầng và cường độ xuất khẩu.
+
+**Tham chiếu**: Verhoef et al. (2021); Bharadwaj et al. (2013); Brynjolfsson & McAfee (2014); Mar et al. (2026 — P3 Singapore manuscript, *MIR* under review); Đỗ & Phan (2026 — P4 Việt Nam — *JFAR*); NotebookLM (08/05/2026, *Digital Scaling and Performance in Singapore's Global Firms*); Coase (1937); Williamson (1985); Banalieva & Dhanaraj (2019).
+
 ---
 
 ## CHƯƠNG 3 — KHUNG PHÂN LOẠI 6 PHÂN NHÓM CON ICRV
@@ -278,3 +314,5 @@ Ma trận 3 trạng thái này thiết lập **tiền đề lý thuyết bắt b
 *Phiên bản 3.11 (07/05/2026 — Phase 5 sub-commit X1: Lớp 7 thuế quan Mỹ + 2025 GDP 8,0% confirm) — §1.1 mở rộng "sáu lớp" → **bảy lớp bối cảnh đan xen** với Lớp 7 mới về bất định chính sách thuế quan Mỹ 2026 (Mỹ ~30% kim ngạch xuất khẩu Việt Nam; thuế toàn cầu 10% tạm thời, nguy cơ tăng 15%; front-loading effect; trì hoãn đầu tư; phân hóa lớn vs SME). Cập nhật con số Việt Nam: **2025 GDP = 8,0% (số liệu lịch sử mới)** → đường giảm 8,0% → 7,2% (2026) → 7,0% (2027). Theo NotebookLM (07/05/2026 *Tariff Mỹ + Vietnam Macro Deep + Zombie Firms*) + ADB Vietnam Economic Outlook 2026 (file 04 v2.5).*
 
 *Phiên bản 3.12 (07/05/2026 — Vietnamization audit pass cho submission CTU) — §1.5 (3) Tier-1/Tier-2 Digital Presence: bổ sung gloss tiếng Việt cho thuật ngữ kỹ thuật — nhị phân (binary), bão hòa (saturation), thanh toán di động (smartphone POS), thương mại điện tử (e-commerce), điện toán đám mây (cloud), biểu hiện giả tạo do bão hòa (artifact của saturation), kiểm định loại trừ ICT (ICT exclusion test), phân biệt (discriminate). Tuân thủ Convention 1 file 09 §4 — Việt + Anh ngoặc đơn lần đầu xuất hiện. Mục tiêu nộp Hội đồng CTU + Bộ GD&ĐT về văn phong tiếng Việt khoa học.*
+
+*Phiên bản 3.13 (08/05/2026 — NotebookLM Digital Scaling integration: §2.7 NEW) — Thêm §2.7 Khung 4-Tier chuyển đổi số + Mô hình CDCM (Context-Contingent Digital Capability Model) tích hợp NotebookLM critique 08/05/2026 đối chiếu P3 Singapore (Mar et al., 2026 — MIR) + P4 Việt Nam (Đỗ & Phan, 2026 — JFAR): (a) Bảng 4-Tier Verhoef (2021) mapping vào WBES coverage (Tier 1-2 ✓; Tier 3-4 ✗); (b) Construct Boundary Statement — DAI = Foundational Digital Adoption (FDA), không phải Digital Capability; (c) CDCM 3 chiều: I-P curve TP 39-46% VN vs ~82% Singapore (Lind-Mehlum p=0,303 không xác nhận), DAI Tier 1 → điểm nghẽn vs Tier 1+2 → đòn bẩy, TCI scarce advantage VN vs hygiene factor Singapore; (d) Institutional Transaction Costs (TCE) lý giải khác biệt; (e) 4 hàm ý CĐ2: Spec 1 vs Spec 2 + Robustness #10 cross-validation construct boundary + Limitations Tier 3-4 gap.*
