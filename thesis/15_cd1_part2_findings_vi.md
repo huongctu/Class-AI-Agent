@@ -12,6 +12,7 @@
 > **Phiên bản 3.5 (07/05/2026 — Phase 2 NotebookLM Đợt 1 / HĐ1: Tier-1 Digital Presence rebrand)**: §4.4 thêm Sub-section §4.4.5 ICT exclusion test (promoted from §4.8 I2 lên thân Chương 4) + đoạn về Tier-1 Digital Presence rebrand cho Spec 1; §4.7 mục (vi) cập nhật framing Tier-1 saturated vs Tier-2 transformation; §4.10 mục (b) Schema FE PostBREADY2024 enhanced với anchor model concept + hàm ý (g) panel hậu đại dịch độc lập. Đáp ứng NotebookLM podcast 06/05/2026 *Bẫy đo lường số hóa Châu Á*.
 > **Phiên bản 3.7 (07/05/2026 — Phase 2 NotebookLM Đợt 3 / HĐ3: Cô lập đứt gãy schema BREADY 2025)**: Thêm **§4.11 Cô lập đứt gãy schema BREADY 2025 (NEW)** — chi tiết hóa 3 đề xuất phương pháp luận từ NotebookLM HĐ3: (3a) biến giả `Post_BREADY_2024` cho mọi spec tổng gộp; (3b) mô hình neo (anchor model) — chạy hồi quy với data ≤2024 khóa hệ số rồi re-run với 2025; (3c) tách 2025 thành "Panel hậu đại dịch độc lập" như tập mẫu xác thực kỷ nguyên hậu COVID + AI. Đáp ứng NotebookLM podcast HĐ3 toàn diện.
 > **Phiên bản 3.8a (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2A)**: Thêm **§4.5.5 "4 rào cản hàng đầu Asia-Pacific WBES" (NEW)** sau Bảng 4.5 — mini-section liệt kê 4 rào cản (Tiếp cận tài chính / Lực lượng lao động thiếu kỹ năng / Cạnh tranh từ doanh nghiệp phi chính thức / Nguồn cung điện không đáng tin cậy) theo thuật ngữ chuẩn World Bank. Cited file 04 v2.5 (commit a3c1769) + glossary v1.2 Nhóm 7 #61 (commit beb47d3).
+> **Phiên bản 3.8b (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2B)**: Thêm **§4.4.0 "Khung 5 lĩnh vực chỉ số WBES" (NEW)** vào đầu §4.4 — thiết lập framework chính thức 5 lĩnh vực WBES (Quy định+Thuế / Tài chính+Tín dụng / Hạ tầng+Khí hậu / Thương mại+Cạnh tranh / Tham nhũng+Phi chính thức) theo World Bank Vietnamese sources. §4.4 hiện chỉ đo lường (3) Hạ tầng + (5) Innovation/Digital; (1)(2)(4) gợi ý cho CĐ2 deep-dive. Cited file 04 v2.5 + glossary v1.2 Nhóm 6+7.
 
 ---
 
@@ -70,6 +71,26 @@
 Trung vị FSTS bằng 0% — phân phối phân cực mạnh; SIDS có CAGR việc làm cao nhất.
 
 ### 4.4 Thực trạng đổi mới sáng tạo và năng lực số
+
+#### 4.4.0 Khung 5 lĩnh vực chỉ số WBES — định vị §4.4 trong tổng thể *(mới v3.8b — Phase 4 Đợt 2 sub-commit 2B)*
+
+> **Nguồn chuẩn**: World Bank (n.d.). *Tài liệu tóm tắt: Các chỉ số khảo sát doanh nghiệp Enterprise Surveys* (file 04 v2.5 Section L). Cross-cite glossary v1.2 Nhóm 6 (commit e9a73ae) + Nhóm 7 (commit beb47d3).
+
+WBES tổ chức các chỉ số doanh nghiệp thành **5 lĩnh vực chính thức (5 indicator domains)** — đây là khung phân tích chuẩn của World Bank được dùng nhất quán xuyên các báo cáo WBES châu Á và châu lục khác. Bảng dưới định vị §4.4 hiện tại trong tổng thể 5 lĩnh vực:
+
+**Bảng 4.4.0**. *Khung 5 lĩnh vực chỉ số WBES — định vị phạm vi đo lường của §4.4.*
+
+| # | Lĩnh vực | Ví dụ chỉ số WBES | §CĐ1 đo trực tiếp | Hàm ý CĐ2 |
+|---|---|---|---|---|
+| (1) | **Quy định pháp lý + Thuế** | Thuế thời gian (Time Tax) — h/năm tuân thủ thuế; Tuân thủ thuế (Tax compliance); Cấp phép kinh doanh; Thanh tra | (gợi ý CĐ2) | CĐ2 sẽ deep-dive — biến `time_tax_hours` và `tax_inspection_freq` |
+| (2) | **Tài chính + Tín dụng** | Hạn chế tín dụng (Credit constraint); Số hóa tài chính (Financial digitalization); Tỷ lệ DN có tài khoản ngân hàng; Tỷ lệ DN có khoản vay | (gợi ý CĐ2 — link §4.5.5 rào cản #1) | CĐ2 deep-dive — biến `credit_constraint_dummy` |
+| (3) | **Cơ sở hạ tầng + Khí hậu** | Quản lý năng lượng (Energy management); Mất điện (Power outages); Theo dõi CO2 (CO2 monitoring); Chất lượng đường giao thông | **§4.4 đo gián tiếp qua quy trình mới**; **§4.5.5 rào cản #4 đo trực tiếp** | CĐ2 — biến `power_outage_intensity` từ question c30 |
+| (4) | **Thương mại + Cạnh tranh** | Thời gian thông quan (Customs clearance time); Đối thủ phi chính thức; Xuất khẩu trực tiếp/gián tiếp; FSTS | (FSTS đã đo §4.3); cạnh tranh phi chính thức ở §4.5.5 #3 | CĐ2 — biến `customs_days` + `informal_competition` |
+| (5) | **Tham nhũng + Phi chính thức** | Hối lộ (Bribery): Bribery Incidence + Bribery Depth; Tham ô (Graft Index); Đối thủ không chính thức | (sẽ phân biệt rõ trong §4.7 sub-commit 2C v3.8c) | CĐ2 deep-dive — biến `bribery_incidence_pct` |
+
+**Phạm vi đo lường của §4.4** *(đổi mới sáng tạo + năng lực số)*: Chỉ tập trung vào **lĩnh vực (5) phần đổi mới + năng lực số** (gồm Sản phẩm mới, Quy trình mới, R&D, ISO, Website) và một phần **lĩnh vực (3) hạ tầng** (Website đại diện cho ICT infrastructure access). Các lĩnh vực (1) (2) (4) và phần lớn (5) tham nhũng được **đề cập gián tiếp** qua bảng kết quả mức độ chi tiết quốc gia (§4.10) hoặc rào cản hàng đầu (§4.5.5), nhưng chưa được phân tích sâu — đây là **scope mở rộng cho CĐ2** với 5 control variables mới (xem §4.5.5 hàm ý CĐ2).
+
+**Lý do giới hạn phạm vi CĐ1**: (a) tính khả dụng của biến — biến trong (1) (2) (4) có nhiều missing values trong PICS3 schema cũ 2009-2012, gây mất cân đối panel; (b) tập trung vào hai construct cốt lõi của luận án (TCI + DAI) — Đỗ & Phan (2026 — VEFR) đã thiết kế hai biến này từ lĩnh vực (5) đổi mới + năng lực số; (c) CĐ1 mang tính descriptive và gợi mở, để dành CĐ2 cho phân tích đa biến với specification đầy đủ 5 lĩnh vực.
 
 **Bảng 4.4**. *Đổi mới sáng tạo và áp dụng số (%).*
 
@@ -335,7 +356,7 @@ Cả 3 đều là tiền đề cho file 16 §7.3.4 hàm ý cho CĐ2 — robustne
 
 *Tiếp tục ở Phần 3 trong file `thesis/16_cd1_part3_cases_conclusion_vi.md`.*
 
-**Chương 4 nay HOÀN THIỆN với 11 mục (4.1–4.11) + 6 hình (4.0, 4.1.1, 4.2, 4.4, 4.6, 4.7) + §4.5.5 mini-section (NEW v3.8a) — sẵn sàng trình HD duyệt.**
+**Chương 4 nay HOÀN THIỆN với 11 mục (4.1–4.11) + 6 hình (4.0, 4.1.1, 4.2, 4.4, 4.6, 4.7) + §4.4.0 khung 5 lĩnh vực WBES (NEW v3.8b) + §4.5.5 mini-section 4 rào cản (NEW v3.8a) — sẵn sàng trình HD duyệt.**
 
 ---
 
@@ -350,3 +371,5 @@ Cả 3 đều là tiền đề cho file 16 §7.3.4 hàm ý cho CĐ2 — robustne
 *Phiên bản 3.7 (07/05/2026 — Phase 2 NotebookLM Đợt 3 / HĐ3 Cô lập đứt gãy schema BREADY 2025) — Thêm §4.11 NEW (Cô lập đứt gãy schema BREADY 2025) với 3 đề xuất phương pháp luận chi tiết: (3a) biến giả Post_BREADY_2024 hấp thụ schema effect tĩnh; (3b) mô hình neo (anchor model) test stability hệ số khi thêm 2025 — robustness check #6; (3c) tách 2025 thành "Panel hậu đại dịch độc lập" như out-of-sample validation kỷ nguyên hậu COVID+AI — robustness check #7. Hệ thống "triple-defense" chống đứt gãy schema. Liên kết file 16 §7.3.4.*
 
 *Phiên bản 3.8a (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2A) — Thêm **§4.5.5 "Bốn rào cản hàng đầu của khu vực tư nhân Á-Thái — bằng chứng từ WBES" (NEW)** sau Bảng 4.5: liệt kê 4 rào cản (Tiếp cận tài chính / Lực lượng lao động thiếu kỹ năng / Cạnh tranh từ doanh nghiệp phi chính thức / Nguồn cung điện không đáng tin cậy) theo thuật ngữ chuẩn World Bank + Bảng 4.5.5 phân tầng theo 4 phân nhóm con thể chế + 4 nhận xét phân tích + hàm ý CĐ2 (4 control variables mới). Cited file 04 v2.5 (commit a3c1769) Section L + glossary v1.2 Nhóm 7 #61 (commit beb47d3). Tiền đề cho sub-commit 2B (§4.4 5 lĩnh vực WBES) và 2C (§4.7 Bribery vs Graft).*
+
+*Phiên bản 3.8b (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2B) — Thêm **§4.4.0 "Khung 5 lĩnh vực chỉ số WBES — định vị §4.4 trong tổng thể" (NEW)** vào đầu §4.4 (trước Bảng 4.4): thiết lập framework chính thức 5 lĩnh vực WBES theo World Bank Vietnamese sources với Bảng 4.4.0 mapping (1) Quy định+Thuế / (2) Tài chính+Tín dụng / (3) Hạ tầng+Khí hậu / (4) Thương mại+Cạnh tranh / (5) Tham nhũng+Phi chính thức + định vị §CĐ1 đo trực tiếp + hàm ý CĐ2 deep-dive cho từng lĩnh vực. §4.4 hiện chỉ đo (3) Hạ tầng + (5) Innovation/Digital; (1)(2)(4) gợi ý CĐ2. Cited file 04 v2.5 + glossary v1.2 Nhóm 6+7. Tiền đề cho sub-commit 2C (§4.7 Bribery vs Graft phân biệt rõ).*
