@@ -11,13 +11,15 @@
 > 4. **Phụ lục H "Bảng thuật ngữ Anh-Việt"** sẽ được thêm vào cuối file 14, là rút gọn (~40 mục core) của bảng đầy đủ trong file này.
 >
 > **Phiên bản 1.1 (07/05/2026 — Bổ sung Nhóm 6 từ World Bank Vietnamese sources)**: Thêm **Nhóm 6 — Thuật ngữ chính thức từ World Bank tiếng Việt (10 mục)** từ 2 tài liệu World Bank Vietnamese vừa upload (07/05/2026): "Tài liệu tóm tắt: Các chỉ số khảo sát doanh nghiệp Enterprise Surveys" + "Hướng dẫn học tập: Hệ thống phân loại quốc gia FY26". Đây là **thuật ngữ chuẩn chính thức từ World Bank** (không phải dịch tự do), nên được ưu tiên cao nhất khi mâu thuẫn với các nhóm 1-5.
+>
+> **Phiên bản 1.2 (07/05/2026 cuối phiên — Bổ sung Nhóm 7 thuật ngữ WBES methodology + Asia-Pacific structural)**: Thêm **Nhóm 7 — Thuật ngữ WBES methodology + Asia-Pacific (8 mục)** phục vụ Phase 4 sub-commits (file 14 v3.10 §1.3+§1.4 WBES official; file 15 v3.8 §4.4+§4.5+§4.7 4 rào cản + Bribery/Graft phân biệt; file 16 v3.5 §5.7 PICs macro context). Tổng 68 mục thuật ngữ trong 7 nhóm.
 
 ---
 
 ## Mục lục
 
 - [A. Năm convention chuẩn văn phong tiếng Việt học thuật](#a-năm-convention-chuẩn-văn-phong-tiếng-việt-học-thuật)
-- [B. Bảng thuật ngữ Anh-Việt (60 mục, 6 nhóm)](#b-bảng-thuật-ngữ-anh-việt-60-mục-6-nhóm)
+- [B. Bảng thuật ngữ Anh-Việt (68 mục, 7 nhóm)](#b-bảng-thuật-ngữ-anh-việt-68-mục-7-nhóm)
 - [C. Năm anti-patterns thường gặp (trước → sau)](#c-năm-anti-patterns-thường-gặp-trước--sau)
 - [D. Checklist 10 điểm tự kiểm tra trước khi nộp](#d-checklist-10-điểm-tự-kiểm-tra-trước-khi-nộp)
 - [E. Tài liệu tham khảo về văn phong khoa học tiếng Việt](#e-tài-liệu-tham-khảo-về-văn-phong-khoa-học-tiếng-việt)
@@ -113,7 +115,7 @@ Sau lần đầu, dùng acronym hoặc tiếng Việt thay đổi nhau để tr�
 
 ---
 
-## B. Bảng thuật ngữ Anh-Việt (60 mục, 6 nhóm — cập nhật v1.1)
+## B. Bảng thuật ngữ Anh-Việt (68 mục, 7 nhóm — cập nhật v1.2)
 
 ### Nhóm 1 — Khái niệm cốt lõi (10 mục)
 
@@ -214,6 +216,30 @@ Sau lần đầu, dùng acronym hoặc tiếng Việt thay đổi nhau để tr�
 - **Graft (Tham ô / Tham nhũng)**: hành vi biển thủ công quỹ hoặc lạm dụng chức vụ để trục lợi cá nhân.
 - WBES đo cả hai chỉ số riêng biệt; CĐ1 v3.x sẽ dùng "Hối lộ" và "Tham ô" thay thế "tham nhũng" tổng quát khi cite số liệu cụ thể.
 
+### Nhóm 7 — Thuật ngữ WBES methodology + Asia-Pacific structural (8 mục, **mới v1.2 — 07/05/2026**)
+
+> **Nguồn**: World Bank (n.d.). *Tài liệu tóm tắt: Các chỉ số khảo sát doanh nghiệp Enterprise Surveys* + World Bank (2025). *Hướng dẫn học tập: Hệ thống phân loại quốc gia FY26* + 6 phân tích NotebookLM (07/05/2026). Phục vụ Phase 4 sub-commits: file 14 v3.10 (§1.3+§1.4 methodology), file 15 v3.8 (§4.4+§4.5+§4.7 4 rào cản + Bribery/Graft), file 16 v3.5 (§5.7 PICs macro). Cited file 04 v2.5 (commit a3c1769).
+
+| # | Tiếng Anh | Tiếng Việt CHUẨN | Cách dùng lần đầu | Nguồn / Ghi chú |
+|---|---|---|---|---|
+| 61 | Top 4 barriers WBES Asia-Pacific | **4 rào cản hàng đầu** đối với khu vực tư nhân Á-Thái: (i) tiếp cận tài chính; (ii) lao động thiếu kỹ năng; (iii) cạnh tranh từ doanh nghiệp phi chính thức; (iv) nguồn cung điện không đáng tin cậy | "4 rào cản hàng đầu (top 4 barriers) đối với khu vực tư nhân Á-Thái theo WBES" | Phục vụ §4.5.5 file 15 v3.8a |
+| 62 | WBES size classification | **Phân loại quy mô WBES**: Nhỏ (5-19 lao động) / Vừa (20-99) / Lớn (100+) / Rất lớn (top 1% nền kinh tế) | "Phân loại quy mô WBES: Nhỏ (5-19), Vừa (20-99), Lớn (100+), Rất lớn (top 1%)" | WB Indicators Summary; phục vụ §1.3 file 14 v3.10a |
+| 63 | Sampling weights | **Trọng số lấy mẫu** | "trọng số lấy mẫu (sampling weights) áp dụng cho mọi mean/median" | WB Indicators Summary; phục vụ §1.4 file 14 v3.10b |
+| 64 | Bribery Incidence | **Tỷ lệ hối lộ** | "Tỷ lệ hối lộ (Bribery Incidence) — tỷ lệ DN nhận yêu cầu hối lộ trong 6 giao dịch công" | WB Indicators Summary; phục vụ §4.7 file 15 v3.8c |
+| 65 | Bribery Depth | **Độ sâu hối lộ** | "Độ sâu hối lộ (Bribery Depth) — tỷ lệ giao dịch công có hối lộ trên tổng giao dịch" | WB Indicators Summary; phục vụ §4.7 file 15 v3.8c |
+| 66 | Graft Index | **Chỉ số tham ô** | "Chỉ số tham ô (Graft Index) — tỷ lệ hối lộ gồm kết nối điện thoại nhưng loại trừ thanh tra thuế" | WB Indicators Summary; phục vụ §4.7 file 15 v3.8c |
+| 67 | PICs (Pacific Island Countries) | **Quốc đảo Thái Bình Dương** (PICs) | "Quốc đảo Thái Bình Dương (Pacific Island Countries — PICs) — 6 nền kinh tế nhỏ Pacific" | NotebookLM 06/05/2026; phục vụ §5.7 file 16 v3.5a |
+| 68 | WBES excluded sectors | **4 ngành loại trừ khỏi WBES**: tiện ích công cộng / dịch vụ chính phủ / chăm sóc sức khỏe / dịch vụ tài chính | "4 ngành loại trừ khỏi vũ trụ khảo sát WBES: tiện ích công cộng, dịch vụ chính phủ, chăm sóc sức khỏe và dịch vụ tài chính" | WB Indicators Summary; phục vụ §1.3 file 14 v3.10a |
+
+**Liên kết nội dung phục vụ Phase 4 sub-commits**:
+- **#62 + #68** → file 14 §1.3 (sub-commit 1A v3.10a) — thiết lập đối tượng nghiên cứu chuẩn WBES.
+- **#63** → file 14 §1.4 (sub-commit 1B v3.10b) — methodology trọng số lấy mẫu + ngưỡng quan sát.
+- **#61** → file 15 §4.5.5 (sub-commit 2A v3.8a) — mini-section 4 rào cản.
+- **#64 + #65 + #66** → file 15 §4.7 (sub-commit 2C v3.8c) — phân biệt Bribery Incidence vs Depth vs Graft.
+- **#67** → file 16 §5.7 (sub-commit 3A v3.5a) — Pacific PICs macro context với MIRAB model.
+
+**Quy tắc ưu tiên Nhóm 7**: Tương tự Nhóm 6, Nhóm 7 ƯU TIÊN CAO khi mâu thuẫn với các nhóm 1-5 vì đây là (a) chuẩn chính thức WBES World Bank (61-66, 68); hoặc (b) thuật ngữ macro hóa Asia-Pacific phổ biến trong văn liệu IB (67). Khi cite số liệu rào cản hoặc tham nhũng cụ thể trong CĐ1 v3.x, **luôn dùng tên chuẩn từ Nhóm 7** thay vì tên chung chung ("rào cản tài chính", "tham nhũng") — giúp người đọc liên kết trực tiếp với báo cáo WBES gốc.
+
 ---
 
 ## C. Năm anti-patterns thường gặp (trước → sau)
@@ -284,6 +310,7 @@ Sau khi viết xong một chương hoặc một mục, NCS rà soát 10 điểm 
 - [ ] **(9) Số liệu** — Số thập phân dùng dấu phẩy ("0,86" không "0.86"); phần nghìn dùng dấu chấm ("101.035" không "101,035"); đơn vị viết đầy đủ lần đầu (USD PPP, đơn vị phần trăm — đpt).
 - [ ] **(10) Tham chiếu hình/bảng** — Bảng 4.1, Hình 3.1 viết hoa khi dẫn trong văn. Mọi bảng/hình có nguồn rõ ràng; bảng tổng hợp ghi "*Nguồn: Tổng hợp của tác giả từ ...*".
 - [ ] **(11 — mới v1.1) Ưu tiên thuật ngữ Nhóm 6** — Khi có thuật ngữ thuộc Nhóm 6 (chính thức từ World Bank Vietnamese), luôn ưu tiên dùng thay vì dịch tự do (vd: "Thuế thời gian" thay vì "Time Tax" trần; "Hối lộ" + "Tham ô" thay vì "tham nhũng" tổng quát).
+- [ ] **(12 — mới v1.2) Ưu tiên thuật ngữ Nhóm 7** — Khi cite số liệu rào cản hoặc tham nhũng cụ thể, luôn dùng tên chuẩn từ Nhóm 7 (vd: "Tỷ lệ hối lộ (Bribery Incidence)" thay "tỷ lệ tham nhũng"; "Phân loại quy mô WBES Nhỏ/Vừa/Lớn/Rất lớn" thay "doanh nghiệp nhỏ và vừa"). Liên kết trực tiếp với báo cáo WBES gốc giúp người đọc kiểm chứng.
 
 ---
 
@@ -318,12 +345,14 @@ Các nguồn cite trong file này (theo APA 7th):
 
 10. **Trường Đại học Cần Thơ**. (15/10/2024). *Quyết định số 4768/QĐ-ĐHCT — Giao chuyên đề tiến sĩ và tiểu luận tổng quan cho NCS Đỗ Thùy Hương* và *Quyết định số 4769/QĐ-ĐHCT — Tên luận án chính thức*. Cần Thơ.
 
-11. **World Bank**. (n.d.). *Tài liệu tóm tắt: Các chỉ số khảo sát doanh nghiệp Enterprise Surveys* [Vietnamese version]. World Bank. https://www.enterprisesurveys.org *(Mới v1.1 — nguồn cho Nhóm 6 thuật ngữ)*
+11. **World Bank**. (n.d.). *Tài liệu tóm tắt: Các chỉ số khảo sát doanh nghiệp Enterprise Surveys* [Vietnamese version]. World Bank. https://www.enterprisesurveys.org *(Mới v1.1 — nguồn cho Nhóm 6 + 7 thuật ngữ)*
 
-12. **World Bank**. (2025, July 1). *Hướng dẫn học tập: Hệ thống phân loại quốc gia và khảo sát doanh nghiệp của Ngân hàng Thế giới (FY26)*. World Bank. *(Mới v1.1 — nguồn cho Nhóm 6 thuật ngữ phân loại quốc gia)*
+12. **World Bank**. (2025, July 1). *Hướng dẫn học tập: Hệ thống phân loại quốc gia và khảo sát doanh nghiệp của Ngân hàng Thế giới (FY26)*. World Bank. *(Mới v1.1 — nguồn cho Nhóm 6 + 7 thuật ngữ phân loại quốc gia + WBES methodology)*
 
 ---
 
 *Phiên bản 1.0 (06/05/2026). NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh. Bản này áp dụng cho biên tập file 14, 15, 16 (Chuyên đề tiến sĩ số 1) và mọi tài liệu tiếng Việt nộp Hội đồng Trường Đại học Cần Thơ. Cập nhật khi cần thêm thuật ngữ mới hoặc chuẩn mới của Bộ GD&ĐT.*
 
 *Phiên bản 1.1 (07/05/2026) — Bổ sung Nhóm 6 (10 mục) thuật ngữ chính thức từ World Bank Vietnamese sources. Tổng glossary: 60 mục thuật ngữ + 5 conventions + 5 anti-patterns + 11-điểm checklist + 12 references về văn phong KH Việt. Liên kết file 04 v2.5 (commit a3c1769).*
+
+*Phiên bản 1.2 (07/05/2026 cuối phiên) — Bổ sung Nhóm 7 (8 mục) thuật ngữ WBES methodology + Asia-Pacific structural từ World Bank Vietnamese sources + NotebookLM 6 phân tích. Tổng glossary: **68 mục thuật ngữ trong 7 nhóm** + 5 conventions + 5 anti-patterns + **12-điểm checklist** + 12 references về văn phong KH Việt. Phục vụ Phase 4 sub-commits: file 14 v3.10 (§1.3 phân loại quy mô + §1.4 sampling), file 15 v3.8 (§4.4 + §4.5 + §4.7 4 rào cản + Bribery/Graft), file 16 v3.5 (§5.7 PICs macro). Liên kết file 04 v2.5 (commit a3c1769) + file 14 v3.10 (commit 9c512b3).*
