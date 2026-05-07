@@ -9,13 +9,15 @@
 > 2. **Hán-Việt vừa phải**: giữ Hán-Việt phổ biến chuẩn (thịnh vượng, dị biệt, hệ quả); chỉ thay những từ ít dùng hoặc khó hiểu (phồn vinh → thịnh vượng; chồng lấn → đan xen).
 > 3. **Edit trực tiếp** file 14, 15, 16 (overwrite, git giữ history).
 > 4. **Phụ lục H "Bảng thuật ngữ Anh-Việt"** sẽ được thêm vào cuối file 14, là rút gọn (~40 mục core) của bảng đầy đủ trong file này.
+>
+> **Phiên bản 1.1 (07/05/2026 — Bổ sung Nhóm 6 từ World Bank Vietnamese sources)**: Thêm **Nhóm 6 — Thuật ngữ chính thức từ World Bank tiếng Việt (10 mục)** từ 2 tài liệu World Bank Vietnamese vừa upload (07/05/2026): "Tài liệu tóm tắt: Các chỉ số khảo sát doanh nghiệp Enterprise Surveys" + "Hướng dẫn học tập: Hệ thống phân loại quốc gia FY26". Đây là **thuật ngữ chuẩn chính thức từ World Bank** (không phải dịch tự do), nên được ưu tiên cao nhất khi mâu thuẫn với các nhóm 1-5.
 
 ---
 
 ## Mục lục
 
 - [A. Năm convention chuẩn văn phong tiếng Việt học thuật](#a-năm-convention-chuẩn-văn-phong-tiếng-việt-học-thuật)
-- [B. Bảng thuật ngữ Anh-Việt (50 mục, 5 nhóm)](#b-bảng-thuật-ngữ-anh-việt-50-mục-5-nhóm)
+- [B. Bảng thuật ngữ Anh-Việt (60 mục, 6 nhóm)](#b-bảng-thuật-ngữ-anh-việt-60-mục-6-nhóm)
 - [C. Năm anti-patterns thường gặp (trước → sau)](#c-năm-anti-patterns-thường-gặp-trước--sau)
 - [D. Checklist 10 điểm tự kiểm tra trước khi nộp](#d-checklist-10-điểm-tự-kiểm-tra-trước-khi-nộp)
 - [E. Tài liệu tham khảo về văn phong khoa học tiếng Việt](#e-tài-liệu-tham-khảo-về-văn-phong-khoa-học-tiếng-việt)
@@ -111,7 +113,7 @@ Sau lần đầu, dùng acronym hoặc tiếng Việt thay đổi nhau để tr�
 
 ---
 
-## B. Bảng thuật ngữ Anh-Việt (50 mục, 5 nhóm)
+## B. Bảng thuật ngữ Anh-Việt (60 mục, 6 nhóm — cập nhật v1.1)
 
 ### Nhóm 1 — Khái niệm cốt lõi (10 mục)
 
@@ -188,6 +190,30 @@ Sau lần đầu, dùng acronym hoặc tiếng Việt thay đổi nhau để tr�
 | 49 | phenomenon-based research | nghiên cứu xuất phát từ hiện tượng | "nghiên cứu xuất phát từ hiện tượng (phenomenon-based research)" | Meyer et al. (2017) |
 | 50 | data harmonization | hài hòa dữ liệu / chuẩn hóa schema | "hài hòa dữ liệu (data harmonization)" | Quan trọng cho pool 4 thế hệ WBES |
 
+### Nhóm 6 — Thuật ngữ chính thức từ World Bank Vietnamese sources (10 mục, **mới v1.1 — 07/05/2026**)
+
+> **Nguồn**: World Bank (n.d.). *Tài liệu tóm tắt: Các chỉ số khảo sát doanh nghiệp Enterprise Surveys* + World Bank (2025). *Hướng dẫn học tập: Hệ thống phân loại quốc gia FY26*. Đây là **thuật ngữ chính thức từ World Bank tiếng Việt** — ƯU TIÊN CAO NHẤT khi mâu thuẫn với các nhóm khác. Cited file 04 v2.5 (commit a3c1769).
+
+| # | Tiếng Anh | Tiếng Việt CHUẨN World Bank | Cách dùng lần đầu | Nguồn / Ghi chú |
+|---|---|---|---|---|
+| 51 | Time Tax | **Thuế thời gian** | "Thuế thời gian (Time Tax) — chi phí thời gian tuân thủ thuế" | WB Indicators Summary |
+| 52 | Tax compliance | **Tuân thủ thuế** | "Tuân thủ thuế (Tax compliance)" | WB Indicators Summary |
+| 53 | Bribery | **Hối lộ** | "Hối lộ (Bribery) trong giao dịch công" | WB Indicators Summary |
+| 54 | Graft | **Tham ô** / **Tham nhũng** | "Tham ô (Graft) — biển thủ công quỹ" | WB Indicators Summary; phân biệt với "Bribery" (hối lộ) |
+| 55 | Credit constraint | **Hạn chế tín dụng** | "Hạn chế tín dụng (Credit constraint)" | WB Indicators Summary |
+| 56 | Financial digitalization | **Số hóa tài chính** | "Số hóa tài chính (Financial digitalization)" | WB Indicators Summary |
+| 57 | Energy management | **Quản lý năng lượng** | "Quản lý năng lượng (Energy management)" | WB Indicators Summary |
+| 58 | Online presence | **Hiện diện trực tuyến** | "Hiện diện trực tuyến (Online presence)" | WB Indicators Summary; thay thế "online presence" trần |
+| 59 | Atlas Method | **Phương pháp Atlas** | "Phương pháp Atlas (Atlas Method) tính GNI per capita" | WB FY26 Country Classification |
+| 60 | 4 income groups | **4 nhóm thu nhập**: Thu nhập thấp / Thu nhập trung bình thấp / Thu nhập trung bình cao / Thu nhập cao | "Phân loại 4 nhóm thu nhập theo World Bank FY26: Thu nhập thấp ≤$1.135 GNI; Thu nhập trung bình thấp $1.136–$4.495; Thu nhập trung bình cao $4.496–$13.935; Thu nhập cao >$13.935" | WB FY26 Country Classification (1/7/2025) |
+
+**Quy tắc ưu tiên Nhóm 6**: Khi có mâu thuẫn giữa thuật ngữ trong Nhóm 6 và các Nhóm 1-5 (ví dụ: "Online presence" ở Nhóm 6 vs "website adoption" có thể dịch tự do), **luôn ưu tiên Nhóm 6** vì đây là chuẩn chính thức từ World Bank — tránh dịch tự do gây hiểu lầm và bảo đảm so sánh nhất quán với báo cáo World Bank/WBES tiếng Việt khác.
+
+**Phân biệt 2 thuật ngữ tham nhũng**:
+- **Bribery (Hối lộ)**: hành vi đưa/nhận tiền/quà để có lợi thế trong giao dịch công (cấp phép, thanh tra, hoàn thuế).
+- **Graft (Tham ô / Tham nhũng)**: hành vi biển thủ công quỹ hoặc lạm dụng chức vụ để trục lợi cá nhân.
+- WBES đo cả hai chỉ số riêng biệt; CĐ1 v3.x sẽ dùng "Hối lộ" và "Tham ô" thay thế "tham nhũng" tổng quát khi cite số liệu cụ thể.
+
 ---
 
 ## C. Năm anti-patterns thường gặp (trước → sau)
@@ -257,6 +283,7 @@ Sau khi viết xong một chương hoặc một mục, NCS rà soát 10 điểm 
 - [ ] **(8) Trích dẫn APA 7** — Mọi luận điểm có nguồn dẫn theo "(Tác giả, năm)" hoặc "Tác giả (năm) cho thấy..."; et al. từ 3+ tác giả ngay từ trích dẫn đầu tiên.
 - [ ] **(9) Số liệu** — Số thập phân dùng dấu phẩy ("0,86" không "0.86"); phần nghìn dùng dấu chấm ("101.035" không "101,035"); đơn vị viết đầy đủ lần đầu (USD PPP, đơn vị phần trăm — đpt).
 - [ ] **(10) Tham chiếu hình/bảng** — Bảng 4.1, Hình 3.1 viết hoa khi dẫn trong văn. Mọi bảng/hình có nguồn rõ ràng; bảng tổng hợp ghi "*Nguồn: Tổng hợp của tác giả từ ...*".
+- [ ] **(11 — mới v1.1) Ưu tiên thuật ngữ Nhóm 6** — Khi có thuật ngữ thuộc Nhóm 6 (chính thức từ World Bank Vietnamese), luôn ưu tiên dùng thay vì dịch tự do (vd: "Thuế thời gian" thay vì "Time Tax" trần; "Hối lộ" + "Tham ô" thay vì "tham nhũng" tổng quát).
 
 ---
 
@@ -291,6 +318,12 @@ Các nguồn cite trong file này (theo APA 7th):
 
 10. **Trường Đại học Cần Thơ**. (15/10/2024). *Quyết định số 4768/QĐ-ĐHCT — Giao chuyên đề tiến sĩ và tiểu luận tổng quan cho NCS Đỗ Thùy Hương* và *Quyết định số 4769/QĐ-ĐHCT — Tên luận án chính thức*. Cần Thơ.
 
+11. **World Bank**. (n.d.). *Tài liệu tóm tắt: Các chỉ số khảo sát doanh nghiệp Enterprise Surveys* [Vietnamese version]. World Bank. https://www.enterprisesurveys.org *(Mới v1.1 — nguồn cho Nhóm 6 thuật ngữ)*
+
+12. **World Bank**. (2025, July 1). *Hướng dẫn học tập: Hệ thống phân loại quốc gia và khảo sát doanh nghiệp của Ngân hàng Thế giới (FY26)*. World Bank. *(Mới v1.1 — nguồn cho Nhóm 6 thuật ngữ phân loại quốc gia)*
+
 ---
 
 *Phiên bản 1.0 (06/05/2026). NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh. Bản này áp dụng cho biên tập file 14, 15, 16 (Chuyên đề tiến sĩ số 1) và mọi tài liệu tiếng Việt nộp Hội đồng Trường Đại học Cần Thơ. Cập nhật khi cần thêm thuật ngữ mới hoặc chuẩn mới của Bộ GD&ĐT.*
+
+*Phiên bản 1.1 (07/05/2026) — Bổ sung Nhóm 6 (10 mục) thuật ngữ chính thức từ World Bank Vietnamese sources. Tổng glossary: 60 mục thuật ngữ + 5 conventions + 5 anti-patterns + 11-điểm checklist + 12 references về văn phong KH Việt. Liên kết file 04 v2.5 (commit a3c1769).*
