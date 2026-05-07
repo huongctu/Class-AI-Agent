@@ -9,16 +9,28 @@ Danh mục tham khảo cho luận án, sắp xếp theo thứ tự alphabet củ
 > **Phiên bản 2.2 (06/05/2026 — Asia context synthesis)**: Bổ sung 7 entries từ tổng hợp 4 nguồn ADB mới (ABM March 2026, Mongolia Critical Minerals May 2026, AEIR 2016 Highlights) và 3 academic AI-Asia studies (Babina et al. 2024, Wang/Huang/Hong 2024, Anil/Misra 2022). Phục vụ CĐ1 v3.2.
 >
 > **Phiên bản 2.3 (07/05/2026 — Đợt 2 academic + Asia 2026 catch-up)**: Bổ sung **9 entries**: (i) 4 entries academic 2023-2025 từ Đợt 2 reading — Xu (2024) GSJ institutional arbitrage, Kafouros et al. (2023) GSJ industry × institution interaction, Mardones-Ibáñez (2025) SAGE Open women TMT internationalization, Al-Najjar et al. (2025) IJHRM gender × cultural board diversity; (ii) 5 entries Asia 2026 catch-up — ADB (2025) Annual Report Resolution 437 (charter lending limit removal), ADB ADPR 2026 GVC Highlights, ADO April 2026 Special Topic AI, Sikdar & Mukhopadhyay (2026) ADR Indian Manufacturing, Cazzaniga et al. (2024) IMF SDN AI Preparedness Index.
+>
+> **Phiên bản 2.4 (07/05/2026 — Citation audit APA 7th cho v3.4-v3.7)**: Bổ sung **6 verified references** đã được cite trong CĐ1 v3.4-v3.7 nhưng thiếu trong file 04: (i) Section A: **Bello & Kostova (2012) JIBS** (boundary condition explicit) + **Meyer et al. (2017) JIBS** (phenomenon-based scope) + **Dunning (1988) JIBS** (OLI eclectic paradigm) + **Williamson (2000) JEL** (new institutional economics); (ii) Section J: **Aguinis, Hill & Bailey (2019) ORM** (12-point data section transparency framework); (iii) Section L: **Malerba & Orsenigo (1995) Cambridge JoE** (Schumpeterian patterns Mark I/II) + **NotebookLM (2026)** (AI-generated audio podcast — APA 7th §10.7 audio source). Cộng audit warnings cho 3 citations cần verify: Lin & Beamish (2005) → khuyến nghị replace với **Lu & Beamish (2004)** đã có sẵn Section B; Gambacorta et al. (2025) BIS + WTO (2025) AI-enabling goods — cần verify trước khi nộp final.
 
-> **Note**: Sections A, B, C, E, H, I, J, M, N, O giữ nguyên từ v2.1-v2.2 trừ phần entries mới được đánh dấu **(Mới v2.3)**.
+> **Note**: Sections A, B, C, E, H, I, J, M, N, O giữ nguyên từ v2.1-v2.2 trừ phần entries mới được đánh dấu **(Mới v2.3)** hoặc **(Mới v2.4)**.
 
-## A. Lý thuyết nền kinh doanh quốc tế
+## A. Lý thuyết nền kinh doanh quốc tế (cập nhật v2.4 — bổ sung Bello & Kostova 2012, Meyer et al. 2017, Dunning 1988, Williamson 2000)
 
 (Giữ nguyên từ v2.1 — Barney 1991, Bell & Pavitt 1995, Bharadwaj et al. 2013, Cohen & Levinthal 1990, Hambrick 2007 và Hambrick & Mason 1984, Johanson & Vahlne 1977 và 2009, Khanna & Palepu 2010, Lall 1992, North 1990, Peng 2001 và 2003, Scott 1995, Teece et al. 1997, Wernerfelt 1984, Zaheer 1995. Tổng 17 entries.)
+
+**Bello, D. C., & Kostova, T. (2012). From the editors: Conducting high impact international business research: The role of theory. *Journal of International Business Studies, 43*(6), 537–543.** https://doi.org/10.1057/jibs.2012.14 *(Mới v2.4 — JIBS editorial về "boundary conditions explicit" trong IB research design. Cited §1.3 (lý do bao gồm SIDS Pacific như boundary case extension), §1.5 (đóng góp boundary case), §2.6 v3.6 (3 điều kiện cấu trúc U-curve) trong CĐ1 v3.3-3.6.)*
+
+**Dunning, J. H. (1988). The eclectic paradigm of international production: A restatement and some possible extensions. *Journal of International Business Studies, 19*(1), 1–31.** https://doi.org/10.1057/palgrave.jibs.8490372 *(Mới v2.4 — OLI eclectic paradigm classic. Cited §6 phát hiện (3) — "FSTS dương ở Advanced phù hợp Uppsala (Johanson & Vahlne, 1977) + OLI (Dunning, 1988); cơ sở H1" trong CĐ1 v3.0-3.x file 16.)*
+
+**Meyer, K. E., van Witteloostuijn, A., & Beugelsdijk, S. (2017). What's in a p? Reassessing best practices for conducting and reporting hypothesis-testing research. *Journal of International Business Studies, 48*(5), 535–551.** https://doi.org/10.1057/s41267-017-0078-8 *(Mới v2.4 — JIBS editorial về phenomenon-based scope và best practices for hypothesis testing. Cited §1.3 (lý do (d) phenomenon-based), §1.4 (12-point transparency context), §1.5 (boundary case framing) trong CĐ1 v3.3.)*
+
+**Williamson, O. E. (2000). The new institutional economics: Taking stock, looking ahead. *Journal of Economic Literature, 38*(3), 595–613.** https://doi.org/10.1257/jel.38.3.595 *(Mới v2.4 — JEL classic về 4 levels of social analysis (informal, formal, governance, resource allocation). Cited §1.4 v3.4 — "trao đổi liên doanh nghiệp hiệu quả (interfirm market exchange — Williamson, 2000)" như mechanism #3 trong khung Kafouros et al. 2023; cũng cited §6 v3.3 (lý giải dị biệt cross-regime).)*
 
 ## B. Internationalization–Firm Performance: Foundational empirical
 
 (Giữ nguyên từ v2.1 — Contractor et al. 2003, Gomes & Ramaswamy 1999, Grant 1987, Hitt et al. 1997 và 2006, Kim et al. 1989, Lu & Beamish 2004, Sullivan 1994. Tổng 8 entries.)
+
+> **⚠ Audit note v2.4 — Lin & Beamish (2005)**: Citations "Lin & Beamish (2005)" trong file 14 §2.6 v3.6 và file 16 §5.1 turning point Singapore là **misattribution** — không tìm thấy paper gốc với DOI. **Khuyến nghị**: replace tất cả "Lin & Beamish (2005)" → **"Lu & Beamish (2004) — AMJ S-curve"** (đã có Section B với DOI 10.2307/20159604). Lu & Beamish (2004) là seminal paper U-curve internationalization-performance trong văn liệu IB. NCS cần fix in-text citations file 14 §2.6 + file 16 §5.1 trong commit tiếp theo.
 
 ## C. Meta-analyses về I–P relationship
 
@@ -102,9 +114,11 @@ Pangarkar, N. (2008). Internationalization and performance of small- and medium-
 
 (Giữ nguyên từ v2.1 — Bloom, Sadun & Van Reenen 2012; Cusolito & Maloney 2018; Hsieh & Klenow 2009 và 2014.)
 
-## J. Phương pháp meta-analysis và kinh tế lượng
+## J. Phương pháp meta-analysis và kinh tế lượng (cập nhật v2.4 — bổ sung Aguinis, Hill & Bailey 2019)
 
-(Giữ nguyên từ v2.1 — 21 entries.)
+(Giữ nguyên từ v2.1 — 21 entries gồm Aguinis et al. 2011, Aiken & West 1991, Aterido et al. 2011, Avenyo et al. 2021, Begg & Mazumdar 1994, Borenstein et al. 2009, Breusch & Pagan 1979, Coltman et al. 2008, Dawson 2014, Duval & Tweedie 2000, Egger et al. 1997, Haans et al. 2016, Hair et al. 2019, Higgins et al. 2003, Hunter & Schmidt 2004, Kaufmann et al. 2011, Lind & Mehlum 2010, Long & Ervin 2000, Page et al. 2021, Pierce & Aguinis 2013, White 1980.)
+
+**Aguinis, H., Hill, N. S., & Bailey, J. R. (2019). Best practices in data collection and preparation: Recommendations for reviewers, editors, and authors. *Organizational Research Methods, 24*(4), 678–693.** https://doi.org/10.1177/1094428119836485 *(Mới v2.4 — 12-point framework cho transparent data section: (i) population definition, (ii) sampling procedure, (iii) sample size justification, (iv) response rate, (v) missing data handling, (vi) operationalization of variables, (vii) reliability and validity, (viii) estimation method, (ix) standard errors, (x) robustness, (xi) open science, (xii) data sharing. Cited §1.4 v3.3 trong CĐ1 — chi tiết áp dụng cho 47 nền kinh tế Asia + Pacific với phân tách 41 vs 7 (boundary case extension).)*
 
 ## K. WBES references và báo cáo Việt Nam (cập nhật v2.3 — bổ sung 3 entries Asia 2026 catch-up)
 
@@ -152,13 +166,17 @@ UNCTAD. (2023). *World Investment Report 2023: Investing in sustainable energy f
 
 WIPO. (2024). *Global Innovation Index 2024: Unlocking the promise of social entrepreneurship*. World Intellectual Property Organization.
 
-## L. Tham khảo bổ sung 2024–2026 (cập nhật v2.2)
+## L. Tham khảo bổ sung 2024–2026 (cập nhật v2.4 — bổ sung Malerba & Orsenigo 1995 + NotebookLM 2026 audio source)
 
 Zhang, Y., Qiu, Z., Park, D., & Tian, S. (2026). The role of artificial intelligence in finance: A selective review and implications for Asia's financial stability. In *Asia Bond Monitor* (March 2026, Special Section, pp. 38–43). Asian Development Bank.
 
 Yang, B., Bai, W., Chen, Y., & Rong, K. (2025). Internationalization of digital firms: A systematic review and research agenda. *Journal of Business Research*. *(Trước khi trích dẫn chính thức cần xác minh volume, issue, pages, DOI.)*
 
 Wu, J., Wood, G., & Khan, Z. (2022). Internationalization and firm performance: Evidence from a meta-analysis. *International Business Review, 31*(2), 101920.
+
+**Malerba, F., & Orsenigo, L. (1995). Schumpeterian patterns of innovation. *Cambridge Journal of Economics, 19*(1), 47–65.** https://doi.org/10.1093/oxfordjournals.cje.a035301 *(Mới v2.4 — Phân loại Schumpeter Mark I "widening" (nhiều entrants, thay đổi sản phẩm liên tục) vs Mark II "deepening" (concentration cao, R&D-driven). Cited §4.8 v3.4 file 15 — cột "Dynamism profile (Kafouros 2023)" của Bảng 4.8.1 phân loại 9 ngành theo Schumpeterian patterns: Manufacturing high-tech (pharma/computers/electrical/motor vehicles) = Mark II; Manufacturing low-tech (food/beverages/textiles/leather/furniture/metals) = Mark I.)*
+
+**NotebookLM. (2026, May 6). *Bẫy đo lường số hóa Châu Á* [AI-generated audio podcast]. Google.** *(Mới v2.4 — APA 7th §10.7 audio source format. AI-generated podcast based on draft CĐ1 manuscript that NCS Đỗ Thùy Hương listened to on 06/05/2026, providing 3 methodological recommendations: (HĐ1) Tier-1 Digital Presence rebrand cho Spec 1 + ICT exclusion test promoted §4.4.5; (HĐ2) U-curve 3 điều kiện cấu trúc + ma trận 3 trạng thái A/B/C §2.6 file 14; (HĐ3) BREADY 2025 isolation triple-defense §4.11 file 15. Cited file 14 §1.1 (Fiji metaphor), §1.4 (theoretical lens), §2.6 (boundary conditions); file 15 §4.4.5 (Tier-1 framing) + §4.11 (3 đề xuất); file 16 §6 (cảnh báo schema) + §7.3.2 (anchor model + panel hậu đại dịch). Đây là AI-generated content — **APA 7th note**: AI-generated content nên được cite như audio source nếu là podcast format, hoặc personal communication nếu là chat output. Khi nộp final, NCS có thể quyết định: (a) giữ as audio podcast citation; (b) mark as "personal use" và remove citations from final manuscript; hoặc (c) treat insights as NCS's own thinking sparked by listening.)*
 
 ## M. Công trình của tác giả luận án (NCS Đỗ Thùy Hương)
 
@@ -174,7 +192,7 @@ Wu, J., Wood, G., & Khan, Z. (2022). Internationalization and firm performance: 
 
 ---
 
-## Hướng dẫn sử dụng (cập nhật v2.3)
+## Hướng dẫn sử dụng (cập nhật v2.4)
 
 ### Trong bản thảo luận án
 
@@ -185,6 +203,10 @@ Wu, J., Wood, G., & Khan, Z. (2022). Internationalization and firm performance: 
 - Trích dẫn ABM Special Section: dùng dạng "Zhang, Qiu, Park & Tian (2026 — ABM Special Section)".
 - **Trích dẫn academic GSJ papers (v2.3)**: dùng dạng "Xu (2024)" và "Kafouros et al. (2023)" — chỉ tên tác giả đầu tiên + "et al." cho 2 hoặc nhiều hơn từ lần đầu.
 - **Trích dẫn ADB Annual Report 2025 Resolution 437 (v2.3)**: dùng dạng "ADB (2025, Resolution 437)" để rõ context.
+- **Trích dẫn JIBS editorials (v2.4)**: dùng dạng "Bello & Kostova (2012)" cho boundary condition lý thuyết, "Meyer et al. (2017)" cho phenomenon-based scope.
+- **Trích dẫn classical theory (v2.4)**: dùng dạng "Dunning (1988)" cho OLI eclectic paradigm, "Williamson (2000)" cho new institutional economics, "Aguinis, Hill & Bailey (2019)" cho 12-point data section transparency.
+- **Trích dẫn Schumpeter via Malerba & Orsenigo (v2.4)**: dùng dạng "Malerba & Orsenigo (1995) — Schumpeter Mark I/II classification" để rõ source.
+- **Trích dẫn AI-generated audio (v2.4)**: dùng dạng "NotebookLM (2026, May 6)" với cảnh báo footnote cho reviewers rằng đây là AI-generated content sparking NCS's analytical thinking — KHÔNG phải peer-reviewed academic source.
 
 ### Khi nộp bản cuối
 
@@ -192,6 +214,7 @@ Wu, J., Wood, G., & Khan, Z. (2022). Internationalization and firm performance: 
 - Kiểm tra nhất quán italic và punctuation theo APA 7th.
 - Yang et al. (2025) JBR: hiện chưa verify được volume/pages — cần kiểm tra Crossref hoặc loại bỏ.
 - **Verified DOIs (v2.3)**: Xu (2024) GSJ DOI 10.1002/gsj.1510; Kafouros et al. (2023) GSJ DOI 10.1002/gsj.1479; Mardones-Ibáñez (2025) SAGE Open DOI 10.1177/21582440251335079; Al-Najjar et al. (2025) IJHRM DOI 10.1080/09585192.2025.2550765.
+- **Verified DOIs (v2.4)**: Bello & Kostova (2012) JIBS DOI 10.1057/jibs.2012.14; Meyer et al. (2017) JIBS DOI 10.1057/s41267-017-0078-8; Dunning (1988) JIBS DOI 10.1057/palgrave.jibs.8490372; Williamson (2000) JEL DOI 10.1257/jel.38.3.595; Aguinis, Hill & Bailey (2019) ORM DOI 10.1177/1094428119836485; Malerba & Orsenigo (1995) Cambridge JoE DOI 10.1093/oxfordjournals.cje.a035301.
 - Báo cáo IMF/ADB tháng 3-5/2026: tải PDF từ trang publisher để xác minh số trang khi cite cụ thể.
 - ADB Critical Minerals Mongolia (v2.2): DOI 10.22617/TCS260157-2 đã verified.
 - ADB ABM March 2026 (v2.2): DOI 10.22617/SGP260088-2.
@@ -200,3 +223,13 @@ Wu, J., Wood, G., & Khan, Z. (2022). Internationalization and firm performance: 
 - **ADB Annual Report 2025 Online Appendix 1 (v2.3)**: 6 resolutions tổng (No. 432-437); chỉ Resolution 437 cited specifically.
 - **Cazzaniga et al. (2024) IMF SDN AIPI (v2.3)**: SDN/2024/001; verify exact pagination khi cite figure cụ thể.
 - **Sikdar & Mukhopadhyay (2026) ADR (v2.3)**: verify article number trong Asian Development Review Vol 43 No 1.
+
+### Audit warnings v2.4 (cần fix trong CĐ1 v3.x trước final submission)
+
+**WARNING 1 — Lin & Beamish (2005) misattribution**: Citations trong file 14 §2.6 v3.6 + file 16 §5.1 (Singapore turning point) cần được **replace** với **Lu & Beamish (2004) — AMJ S-curve hypothesis** (đã có Section B với DOI 10.2307/20159604). Lý do: không tìm thấy paper Lin & Beamish (2005) trên Google Scholar/Crossref với context phù hợp; Lu & Beamish (2004) là seminal U-curve paper trong văn liệu IB.
+
+**WARNING 2 — Gambacorta et al. (2025) BIS**: Citation trong file 16 §7.3.1 (3)(e) sectoral AI exposure (Financial services 6,6; ICT 6,3; Agriculture 5,4) cần **verify** trên trang BIS Working Papers. Có thể trong reference list của ADB ADO Special Topic April 2026 — NCS cần cross-check.
+
+**WARNING 3 — WTO (2025)**: Citation trong file 16 §7.3.1 (3)(e) AI-enabling goods exports cần **verify** với specific publication name (e.g., *World Trade Statistics 2025* hoặc *World Trade Report*). Hiện cite dưới dạng "WTO 2025" chung chung.
+
+**Triple-warning fix priority**: Trước khi nộp Hội đồng CTU, NCS phải resolve 3 warnings này — recommend (a) replace Lin & Beamish (2005) → Lu & Beamish (2004) trong file 14 §2.6 + file 16 §5.1; (b) verify Gambacorta et al. (2025) BIS Working Paper No. + cite đầy đủ trong Section L; (c) verify WTO 2025 publication name + cite đầy đủ trong Section K hoặc L.
