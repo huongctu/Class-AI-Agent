@@ -9,6 +9,7 @@
 > **Phiên bản 3.1d-fix (06/05/2026)**: Bổ sung Hình 4.1.1 (§4.1) + Hình 4.2 (§4.2). Khôi phục full content §4.7-4.10.
 > **Phiên bản 3.1e (06/05/2026)**: Bổ sung 4 markdown image references mới: Hình 4.0 (pool by year, §4.1), Hình 4.4 (slope chart, §4.6), Hình 4.6 (SME composition, §4.5), Hình 4.7 (spider chart, §4.6). Tổng 6 hình embedded trong file 15.
 > **Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration)**: §4.8 industry framework strengthening — (a) Bảng 4.8.1 thêm cột "Dynamism profile (Kafouros 2023)" phân loại 9 ngành theo technological vs market dynamism; (b) thêm đoạn lý giải sau bảng về Kafouros et al. (2023) industry × institutional quality interaction; (c) mở rộng 5 → 6 hàm ý phương pháp luận với hàm ý (f) test interaction term tech_dynamism × institutional_quality như robustness check thứ 7 cho CĐ2 H7 mới.
+> **Phiên bản 3.5 (07/05/2026 — Phase 2 NotebookLM Đợt 1 / HĐ1: Tier-1 Digital Presence rebrand)**: §4.4 thêm Sub-section §4.4.5 ICT exclusion test (promoted from §4.8 I2 lên thân Chương 4) + đoạn về Tier-1 Digital Presence rebrand cho Spec 1; §4.7 mục (vi) cập nhật framing Tier-1 saturated vs Tier-2 transformation; §4.10 mục (b) Schema FE PostBREADY2024 enhanced với anchor model concept + hàm ý (g) panel hậu đại dịch độc lập. Đáp ứng NotebookLM podcast 06/05/2026 *Bẫy đo lường số hóa Châu Á*.
 
 ---
 
@@ -80,6 +81,16 @@ Trung vị FSTS bằng 0% — phân phối phân cực mạnh; SIDS có CAGR vi�
 
 SIDS Thái Bình Dương thể hiện pattern **thích nghi và nhảy vọt số (adaptation + digital leapfrog)**; phân tách rõ Năng lực công nghệ (TCI) so với Năng lực số (DAI) — kế thừa Đỗ & Phan (2026 — VEFR).
 
+#### 4.4.5 Tái định hình "Năng lực số" — Tier-1 Digital Presence rebrand *(mới v3.5 — Phase 2 NotebookLM HĐ1)*
+
+Spec 1 (full coverage 2009–2025) dùng biến nhị phân duy nhất (`website` Y/N) đại diện cho "Năng lực số (DAI)". Trong khi đó TCI được đo bằng nhiều thành phần vững chắc (R&D + ISO multi-component aspirational). **Hậu quả phân tích**: hệ số -0,129 cho DAI ở Advanced trong Spec 1 gợi ý "số hóa làm giảm năng suất ở Singapore/Hàn Quốc/Hong Kong" — nhưng đây là **ảo ảnh thống kê** do đo lường sơ sài, không phải thực tế kinh tế. Như NotebookLM (2026, *Bẫy đo lường số hóa Châu Á*) so sánh: *"Giống như cố đánh giá hiệu suất của mạng lưới logistic AI hiện đại nhưng dùng bản đồ trạm điện tín thế kỷ 19."*
+
+**Đề xuất rebrand v3.5**: Đổi tên biến trong Spec 1 từ "DAI / Năng lực số / Chuyển đổi số" sang **"Sự hiện diện số cơ bản (Tier-1 Digital Presence)"** — phạm vi hẹp hơn, khiêm tốn hơn, thừa nhận rằng Spec 1 chỉ đo *"bức số hóa tài liệu"* (website binary), KHÔNG đo thay đổi mô hình kinh doanh hay digital transformation.
+
+**ICT exclusion test (promoted từ §4.8 I2 lên thân Chương 4)**: Khi loại bỏ ICT firms (mã ISIC J 58–63) khỏi Advanced phân nhóm innovation-driven, hệ số âm DAI (-0,129) **biến mất** → bằng chứng cho **bão hòa Tier-1 ở các nước tiên tiến** (Sự hiện diện số cơ bản đã saturated từ trước 2018 ở Singapore/Hong Kong/Hàn Quốc/Đài Loan/Israel — Đỗ & Phan, 2026 — VEFR p. 24). Việc đưa ICT exclusion test lên mạch chính (thay vì đẩy xuống phụ lục/CĐ2) **không chỉ sửa lỗi thống kê mà còn tạo ra lập luận sắc bén**: *"Sự hiện diện số cơ bản đã bão hòa ở các nước tiên tiến từ lâu — vì vậy biến này không còn discriminate năng suất giữa các firms ở Advanced."*
+
+**Spec 1 vs Spec 2 — biểu đồ đối chiếu hai trục thời gian** *(đề xuất Hình 4.X mới — đang chuẩn bị)*: Spec 1 (single var website binary, 2009–2025) vs Spec 2 (composite DAI 5 thành phần: website + email + smartphone POS + e-commerce + cloud, 2018–2025) trên cùng trục thời gian — chứng minh hệ sinh thái số chuyển từ **trạng thái tĩnh "Tier-1 Digital Presence"** (chỉ documents online) sang **trạng thái động "Tier-2 Digital Transformation"** (business models reshaped — kế thừa Banalieva & Dhanaraj, 2019 layered framework).
+
 ### 4.5 Thực trạng cấu trúc doanh nghiệp
 
 **Bảng 4.5**. *Cấu trúc doanh nghiệp theo phân nhóm con (%).*
@@ -135,7 +146,7 @@ Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.1
 
 **(v) Quốc tế hóa là hiện tượng phân cực**: trung vị FSTS = 0% xuyên năm phân nhóm con; chỉ 15–23% doanh nghiệp xuất khẩu. Cần **lựa chọn hai giai đoạn (2-stage selection)** trong CĐ2.
 
-**(vi) Nhảy vọt số (digital leapfrog) 2018–2025** ở Frontier/Emerging/SIDS (+20–43 đpt website) — bằng chứng tái định vị Uppsala (Banalieva & Dhanaraj, 2019). *Kiribati 2025 không thể hiện leapfrog (website 18,7%) — cần điều kiện hạ tầng tối thiểu mà Kiribati chưa đạt.*
+**(vi) Nhảy vọt số (digital leapfrog) 2018–2025** ở Frontier/Emerging/SIDS (+20–43 đpt website) — bằng chứng tái định vị Uppsala (Banalieva & Dhanaraj, 2019). *Kiribati 2025 không thể hiện leapfrog (website 18,7%) — cần điều kiện hạ tầng tối thiểu mà Kiribati chưa đạt.* **(Cập nhật v3.5 — Phase 2 NotebookLM HĐ1)**: Cần phân biệt **Tier-1 Digital Presence** (website binary, đo trong Spec 1, đã bão hòa ở Advanced từ trước 2018) vs **Tier-2 Digital Transformation** (DAI multi-component — e-commerce, cloud, AI adoption — đo trong Spec 2 với 5 thành phần). Hệ số âm DAI ở Advanced trong Spec 1 (-0,129) KHÔNG phản ánh "số hóa làm giảm năng suất" mà là **artifact của Tier-1 saturation** ở các nước tiên tiến — xem §4.4.5 ICT exclusion test.
 
 **(vii) Pattern phi tuyến FDI ≥10%** — dạng chữ U với cực tiểu Emerging (4,7%): Advanced 11,1% → Upper-middle 8,4% → Emerging 4,7% → Frontier 5,9% → SIDS 23,5%. Hai mô hình FDI: (a) Advanced — MNE hub + Vùng Vịnh hạn chế; (b) SIDS — du lịch + viễn thông.
 
@@ -236,7 +247,7 @@ Năm phát hiện: (1) FSTS phân tầng 5,0%-7,2%-13,2% bị che giấu; (2) FD
 
 **Bảy phát hiện**: (1) IND FSTS sụt 5 đpt (schema effect); (2) THA "digital up, exports down"; (3) Fiji website 74,8% > Singapore (digital leapfrog); (4) Vùng Vịnh + Brunei resource-driven Advanced confirmed; (5) R&D schema-induced overestimation; (6) 2025 wave validation sample CĐ2; **(7) Kiribati extreme — FSTS 1,03%, FDI 0,7%, website 18,7% — đối lập với Fiji digital leapfrog. Bằng chứng dị biệt SIDS rõ rệt: "high-digital" (FJI, MDV) vs "isolated rural" (KIR) — CĐ2 cần tách 2 phân nhóm con SIDS.**
 
-**Sáu hàm ý cho CĐ2**: (a) 2025 validation test bed; (b) Schema FE PostBREADY2024; (c) Advanced sub-grouping test 11 quốc gia; (d) SIDS digital leapfrog evidence cho H6; (e) Two-wave panel cho 6 nước; **(f) tách phân nhóm con SIDS — "high-digital" vs "isolated" — mở rộng 8 → 9 phân nhóm con**.
+**Bảy hàm ý cho CĐ2** *(cập nhật v3.5 — Phase 2 NotebookLM HĐ1 + tiền đề HĐ3)*: (a) 2025 validation test bed; **(b) Schema FE PostBREADY2024 enhanced với anchor model**: chạy hồi quy với data chỉ đến 2024, **khóa hệ số**, sau đó re-run với data + 2025 — so sánh "cấu trúc bảng hỏi mới có làm đảo chiều ý nghĩa thống kê cốt lõi hay không" (tiền đề Phase 2 HĐ3); (c) Advanced sub-grouping test 11 quốc gia; (d) SIDS digital leapfrog evidence cho H6 — phân biệt **Tier-1** (website saturation, đã bão hòa) vs **Tier-2** (transformation, đang phát triển); (e) Two-wave panel cho 6 nước; (f) tách phân nhóm con SIDS — "high-digital" vs "isolated" — mở rộng 8 → 9 phân nhóm con; **(g) v3.5 NEW**: Tách 2025 thành **"Panel hậu đại dịch độc lập"** — đề xuất sub-section §4.11 mới hoặc mở rộng §4.10 để xử lý 2025 như **tập mẫu xác thực kỷ nguyên hậu COVID + AI** (kế hoạch chi tiết hóa trong Phase 2 HĐ3 commit P2.3).
 
 ---
 
@@ -251,3 +262,5 @@ Năm phát hiện: (1) FSTS phân tầng 5,0%-7,2%-13,2% bị che giấu; (2) FD
 *Phiên bản 3.1d-fix (06/05/2026) — Bổ sung Hình 4.1.1 (§4.1) + Hình 4.2 (§4.2) + khôi phục full content §4.7-4.10.*
 *Phiên bản 3.1e (06/05/2026) — Bổ sung 4 markdown image refs mới: Hình 4.0 (§4.1), Hình 4.4 (§4.6), Hình 4.6 (§4.5), Hình 4.7 (§4.6). Tổng **6 hình embedded** trong file 15.*
 *Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration) — §4.8 industry framework strengthening: Bảng 4.8.1 thêm cột "Dynamism profile (Kafouros 2023)" + lý giải sau bảng + mở rộng 5 → 6 hàm ý phương pháp luận với hàm ý (f) test interaction term tech_dynamism × institutional_quality (Kafouros et al. 2023 replication châu Á).*
+
+*Phiên bản 3.5 (07/05/2026 — Phase 2 NotebookLM Đợt 1 / HĐ1 Tier-1 Digital Presence rebrand) — §4.4 thêm Sub-section §4.4.5 ICT exclusion test promoted từ §4.8 I2 lên thân Chương 4 + Tier-1 vs Tier-2 framing cho Spec 1/Spec 2; §4.7 mục (vi) cập nhật framing Tier-1 saturation vs Tier-2 transformation; §4.10 hàm ý CĐ2 mở rộng 6 → 7 với (b) Schema FE + anchor model concept và (g) panel hậu đại dịch độc lập. Đáp ứng NotebookLM podcast 06/05/2026 *Bẫy đo lường số hóa Châu Á*. Tiền đề cho Phase 2 HĐ3 (BREADY 2025 isolation) — sẽ được hoàn thiện trong commit P2.3.*
