@@ -12,6 +12,7 @@
 > **Phiên bản 3.5b (07/05/2026 — Phase 4 Đợt 3 sub-commit 3B)**: §6.1 Gender + §6.2 Innovation U-curve digital.
 > **Phiên bản 3.5c (07/05/2026 cuối phiên — Phase 4 Đợt 3 sub-commit 3C)**: §7.3.3 mở rộng từ 6 → 8 hàm ý — (7) **Migration labor partnership Pacific** cho Việt Nam dựa trên mô hình PLMS Australia + RSE New Zealand; (8) **NEW Chính sách số hóa Asia** cho SME Việt Nam — học từ Singapore/Korea AI full-stack, Japan 60% DN dùng AI back-office, Trung Quốc smart manufacturing, model thanh toán digital + social commerce. **Hoàn thành Đợt 3 Phase 4.**
 > **Phiên bản 3.6 (07/05/2026 — Phase 5 sub-commit X2: Vietnam macro deep + Zombie firms PRC)**: §5.3 mở rộng với 4 mảng — **lạm phát** 4,0% (2026) → 3,8% (2027); **cấu trúc ngành** công nghiệp 7,7% / dịch vụ 7,5% (du lịch phục hồi) / nông nghiệp 3,6%; **4 trụ cột tăng trưởng** đầu tư công + tiền tệ nới lỏng + FDI + xuất khẩu; **5 rủi ro** chuỗi cung ứng + chính sách Mỹ + thanh khoản nội + nợ xấu + trái phiếu DN. §5.4 Trung Quốc bổ sung **khung Zombie firms** (Caballero, Hoshi & Kashyap, 2008 — *AER*) — doanh nghiệp xác sống PRC làm chậm đào thải + cản trở entry → giảm TFP, là lý do bổ sung cho hàm bậc ba FSTS-năng suất với điểm uốn 47,8% (Đỗ & Phan, 2026 — JFAR). Theo NotebookLM (07/05/2026 *Tariff Mỹ + Vietnam Macro Deep + Zombie Firms*) + ADB Vietnam Economic Outlook 2026.
+> **Phiên bản 3.7 (07/05/2026 — Phase 5 sub-commit X3: §6 front-loading + §7.3.3 hedging strategy)**: §6 thêm 1 đoạn về **front-loading effect + tariff uncertainty** trong khung ICRV — đảo dấu hệ số FSTS giữa Emerging high-FDI (front-load capability cao) vs low-FDI (front-load capability thấp); phân hóa lớn vs SME hấp thụ tariff cost. §7.3.3 (4) ngoại giao kinh tế ASEAN+ bổ sung **Hedging strategy 4 nguyên tắc** cho doanh nghiệp Việt Nam: (i) đa dạng hóa thị trường giảm phụ thuộc Mỹ ~30% → RCEP+CPTPP+ACFTA+GCC+India corridor; (ii) front-loading planning + buffer inventory; (iii) higher-value FDI partnership thay assembly; (iv) financial hedging cho rủi ro tỷ giá USD/VND. Theo NotebookLM (07/05/2026 *Tariff Mỹ + Vietnam Macro Deep + Zombie Firms*).
 
 ---
 
@@ -122,6 +123,8 @@ PICs có 4 trụ cột MIRAB (Bertram, 2006): (1) khu vực công chủ đạo (
 
 **Lý giải dị biệt cross-regime qua Xu (2024) de jure-de facto (v3.3)**: gap formal-enforcement explains FDI sign reversal Emerging vs Advanced.
 
+**Front-loading effect + tariff uncertainty trong khung ICRV *(mới v3.7 — Phase 5 sub-commit X3)***: Theo NotebookLM (07/05/2026), bất định chính sách thuế quan Mỹ 2026 (xem §1.1 file 14 v3.11 Lớp 7) tạo **front-loading effect** — doanh nghiệp xuất khẩu Việt Nam đẩy nhanh giao hàng ngắn hạn nhằm tận dụng cửa sổ thuế thấp 10% trước khi tăng lên 15% trong nửa cuối 2026. Hậu quả: doanh thu xuất khẩu boost ngắn hạn 2025 (đóng góp vào GDP 8,0%) nhưng làm giảm đà tăng trưởng 2026-2027 do hợp đồng tương lai bị "ăn trước". Trong khung ICRV, front-loading + tariff uncertainty hoạt động như **ngoại sinh shock** đảo dấu hệ số FSTS giữa hai nhóm: (a) **Emerging high-FDI capability** (Việt Nam doanh nghiệp FDI manufacturing) — có khả năng front-load + hedging tốt → FSTS-năng suất tương quan dương mạnh ngắn hạn 2025 → đảo chiều âm 2026-2027 do exhaustion of forward orders; (b) **Emerging low-FDI capability** (doanh nghiệp nội địa SME không có buffer inventory) — không thể front-load → FSTS-năng suất tương quan yếu hoặc âm cả 2 giai đoạn. **Phân hóa lớn vs SME**: tập đoàn lớn hấp thụ tariff cost qua đa thị trường + financial hedging; SME phải lựa chọn hấp thụ cost (giảm biên lợi nhuận) vs chuyển giá khách hàng (mất đơn hàng). Hàm ý CĐ2: bổ sung **biến `Tariff_Front_Loading_2025_2026`** (proxy: tỷ trọng xuất khẩu sang Mỹ × thời điểm giao hàng quý 1-2 2026) vào robustness check #8 (front-loading-adjusted re-estimation).
+
 ### 6.1 Pattern giới tính trong quản lý + sở hữu — bằng chứng EAP châu Á dẫn đầu *(mới v3.5b)*
 
 **Bảng 6.1.1**. *Pattern giới tính trong TMT + ownership — phân tầng theo khu vực địa lý.*
@@ -163,9 +166,10 @@ Bốn quan sát: (a) EAP dẫn đầu — Asian gender paradox; (b) MENA thấp 
 
 (Giữ nguyên từ v3.3 — 5 hàm ý + triple-defense system. Xem commit cc33ed4.)
 
-#### 7.3.3 Hàm ý chính sách cho doanh nghiệp Việt Nam và khu vực (mở rộng v3.5c từ 6 lên **8 hàm ý**)
+#### 7.3.3 Hàm ý chính sách cho doanh nghiệp Việt Nam và khu vực (mở rộng v3.5c từ 6 lên **8 hàm ý** + v3.7 thêm hàm ý **(9) Hedging strategy** = **9 hàm ý**)
 
 > **Cập nhật v3.5c**: Mở rộng (7) Migration labor partnership Pacific + (8) NEW Chính sách số hóa Asia.
+> **Cập nhật v3.7**: Mở rộng (9) Hedging strategy 4 nguyên tắc.
 > **Hàm ý (1)-(6)** giữ nguyên từ v3.2 — 6 hàm ý chính sách + 4 đề xuất GVC cho Việt Nam (commit 7738953).
 
 **(7) Migration labor partnership Pacific cho Việt Nam — bài học từ PLMS Australia + RSE New Zealand** *(mới v3.5c — Phase 4 Đợt 3 sub-commit 3C)*
@@ -202,6 +206,39 @@ Bốn lộ trình số hóa cho SME Việt Nam tham khảo:
    → Mức **Tier-1.5** — vượt website passive (Tier-1) nhưng chưa đến full-stack AI (Tier-2/3) — phù hợp với pattern thực tế Việt Nam và mức R&D 6,1%.
 
 **Hàm ý cho CĐ2**: bổ sung **biến `Digital_Tier_Vietnam`** với 4 cấp (Tier-1 website, Tier-1.5 digital payment+social commerce, Tier-2 productive AI, Tier-3 full-stack AI) → test xem mỗi tier có productivity payoff khác nhau không. Kỳ vọng: Tier-1 không add productivity (saturated); Tier-1.5 add productivity ở SME-driven economies (VN, IDN, PHL); Tier-2 add productivity ở Manufacturing; Tier-3 add productivity ở ICT + Finance.
+
+**(9) Hedging strategy — đa dạng hóa thị trường + buffer inventory + higher-value FDI partnership + financial hedging** *(mới v3.7 — Phase 5 sub-commit X3)*
+
+> **Bằng chứng nền tảng**: §1.1 file 14 v3.11 Lớp 7 (bất định chính sách thuế quan Mỹ 2026); §6 v3.7 (front-loading effect + tariff uncertainty); §5.3 v3.6 (5 rủi ro Việt Nam).
+
+Trong bối cảnh Mỹ chiếm xấp xỉ 30% kim ngạch xuất khẩu Việt Nam và bất định chính sách thuế quan 2026 gây áp lực kép (front-loading + trì hoãn đầu tư + phân hóa lớn vs SME), doanh nghiệp Việt Nam cần **hedging strategy 4 nguyên tắc**:
+
+(a) **Đa dạng hóa thị trường — giảm phụ thuộc Mỹ ~30% qua 5 hành lang thay thế**:
+   1. **RCEP** (Regional Comprehensive Economic Partnership) — 15 thành viên gồm ASEAN+5 (China, Japan, Korea, Australia, New Zealand) — tổng GDP $26 ngàn tỷ, đối trọng lớn với Mỹ
+   2. **CPTPP** (Comprehensive and Progressive Trans-Pacific Partnership) — 11 thành viên (Singapore, Japan, Australia, NZ, Mexico, Canada, Chile, Peru, Brunei, Malaysia, Việt Nam) — phân khúc cao cấp + dịch vụ
+   3. **ACFTA** (ASEAN-China Free Trade Area) — đặc biệt cho electronics + textiles + agricultural
+   4. **GCC partnership** (Gulf Cooperation Council — Saudi/Qatar/UAE/Kuwait/Bahrain/Oman) — đa dạng hóa sang Trung Đông sau xung đột giảm áp lực
+   5. **India trade corridor** — thông qua India-Vietnam Comprehensive Strategic Partnership 2024 — thị trường 1,4 tỷ dân tăng nhanh
+   
+   Mục tiêu: giảm tỷ trọng xuất khẩu sang Mỹ từ 30% → 22-25% trong 2026-2030.
+
+(b) **Front-loading planning + buffer inventory** — đối phó với tariff uncertainty:
+   - **Front-load planning**: doanh nghiệp xuất khẩu lớn lập kế hoạch giao hàng quý 1-2 2026 để tận dụng cửa sổ thuế 10% — KHÔNG vi phạm anti-dumping rules vì là response chính sách
+   - **Buffer inventory** ở thị trường Mỹ: maintain warehouse 60-90 ngày stock để chống chịu disruption ngắn hạn
+   - **Contract restructuring**: chuyển sang USD-denominated contracts với MFN clauses để protect against retroactive tariff changes
+
+(c) **Higher-value FDI partnership thay assembly** — học từ §5.3 (d) GVC re-positioning:
+   - **TRÁNH** assembly-only FDI (low value-added, high tariff vulnerability) — Foxconn/Samsung assembly mass-production
+   - **ƯU TIÊN** R&D + design FDI partnership — Singapore Pacific Tech Park model, Korean semiconductor packaging Hà Nội
+   - **Mục tiêu**: tăng value-added per export USD từ ~30% (hiện tại) lên 45-50% trong 2026-2030 — phù hợp với Vietnam_HighValue_FDI_2026 (xem §5.3 hàm ý CĐ2)
+
+(d) **Financial hedging cho rủi ro tỷ giá USD/VND**:
+   - **Forex hedging**: forward contracts + currency swaps cho exports >$1M/năm
+   - **Multi-currency receivables**: invoice 30% EUR + 30% JPY + 40% USD để giảm dollar exposure
+   - **Bank consortium hedging**: Vietcombank + BIDV + Techcombank consortium để cung cấp hedging products cost thấp cho SME (~0,5-1% notional vs 1,5-2% hiện tại)
+   - **Fintech-enabled hedging**: leverage MoMo + ZaloPay + ViettelPay với Singapore-based liquidity providers (Wise, Currencycloud)
+
+**Hàm ý cho CĐ2**: bổ sung **biến `Hedging_Capability_Index`** (proxy: market diversification HHI + buffer inventory days + forex hedging ratio + multi-currency invoicing %) để test xem doanh nghiệp có hedging capability cao có productivity payoff dài hạn ổn định hơn không (vs short-term boost rồi exhaustion). Robustness check #9 (hedging-adjusted) — bổ sung sau front-loading-adjusted (#8).
 
 #### 7.3.4 Hàm ý cho Chuyên đề 2 và luận án
 
@@ -247,5 +284,7 @@ Bốn lộ trình số hóa cho SME Việt Nam tham khảo:
 *Phiên bản 3.5c (07/05/2026 cuối phiên — Phase 4 Đợt 3 sub-commit 3C) — Mở rộng §7.3.3 từ 6 → 8 hàm ý chính sách: **(7) Migration labor partnership Pacific cho Việt Nam** với 4 đề xuất (a) PLMS Australia agriculture+aged-care; (b) RSE New Zealand viticulture+horticulture; (c) remittance corridor digital fintech 7%→<3%; (d) skills upgrading return migration channel theo Korea EPS. **(8) NEW Chính sách số hóa Asia cho SME Việt Nam** với 4 lộ trình (a) Singapore/Korea AI full-stack Tier-3; (b) Japan 60% DN AI back-office Tier-2 + AI Adoption Voucher; (c) Trung Quốc smart manufacturing Tier-2/3 + concentration risk warning Wang/Huang/Hong (2024); (d) **Mô hình ưu tiên Việt Nam Tier-1.5 — digital payment VietQR + social commerce TikTok/Facebook + cross-border Shopee/Amazon + cloud Google/Microsoft**. Hàm ý CĐ2: biến `Digital_Tier_Vietnam` với 4 cấp test productivity payoff khác nhau. **HOÀN THÀNH ĐỢT 3 PHASE 4** — file 16 v3.5 với 3 sub-commits 3A/B/C all pushed.*
 
 *Phiên bản 3.6 (07/05/2026 — Phase 5 sub-commit X2: Vietnam macro deep + Zombie firms PRC) — §5.3 Việt Nam mở rộng 4 mảng: (i) lạm phát 4,0% → 3,8%; (ii) cấu trúc ngành công nghiệp 7,7% / dịch vụ 7,5% / nông nghiệp 3,6%; (iii) 4 trụ cột tăng trưởng đầu tư công + tiền tệ nới lỏng + FDI + xuất khẩu; (iv) 5 rủi ro chuỗi cung ứng + thuế Mỹ + thanh khoản nội + nợ xấu + trái phiếu yếu. §5.4 Trung Quốc bổ sung **khung Zombie firms** (Caballero/Hoshi/Kashyap 2008 — AER) với 3 cơ chế (chậm đào thải + cản trở entry + concentration-zombie hybrid risk) làm lý giải bổ sung cho điểm uốn cubic FSTS-năng suất 47,8% (Đỗ & Phan 2026 — JFAR). Hàm ý CĐ2: biến `Vietnam_Sector_Mix_2026` (robustness #6) + biến `Zombie_Firm_Indicator_PRC` (robustness #7). Theo NotebookLM 07/05/2026 + ADB Vietnam Outlook 2026.*
+
+*Phiên bản 3.7 (07/05/2026 — Phase 5 sub-commit X3: §6 front-loading + §7.3.3 hedging strategy) — §6 thêm 1 đoạn **front-loading effect + tariff uncertainty trong khung ICRV**: Emerging high-FDI capability có front-load tốt → FSTS-năng suất dương 2025 boost rồi đảo âm 2026-2027 do exhaustion of forward orders; Emerging low-FDI capability không front-load → FSTS-năng suất yếu/âm cả 2 giai đoạn; phân hóa lớn vs SME. Hàm ý CĐ2: biến `Tariff_Front_Loading_2025_2026` (robustness #8). §7.3.3 thêm **hàm ý (9) Hedging strategy** với 4 nguyên tắc: (a) đa dạng hóa thị trường giảm phụ thuộc Mỹ ~30% qua RCEP+CPTPP+ACFTA+GCC+India corridor (target 22-25% Mỹ trong 2026-2030); (b) front-loading planning + buffer inventory 60-90 ngày stock + USD-denominated contracts với MFN clauses; (c) higher-value FDI partnership thay assembly — target value-added per export USD 30% → 45-50%; (d) financial hedging USD/VND — forex hedging + multi-currency invoicing 30% EUR/30% JPY/40% USD + bank consortium hedging + fintech-enabled hedging MoMo/ZaloPay/Wise. Hàm ý CĐ2: biến `Hedging_Capability_Index` (robustness #9). Theo NotebookLM 07/05/2026 *Tariff Mỹ + Vietnam Macro Deep + Zombie Firms*. **HOÀN THÀNH PHASE 5 — 3 sub-commits X1 (file 14 v3.11) + X2 (file 16 v3.6) + X3 (file 16 v3.7) all pushed.***
 
 > **Sections §7.1, §7.2, §7.3.1, §7.3.2, §7.3.4, §7.4, §7.5 v3.5a-c**: Giữ nguyên từ v3.2 (commit 7738953) và v3.3 (commit cc33ed4) — full content vẫn truy cập qua git history.
