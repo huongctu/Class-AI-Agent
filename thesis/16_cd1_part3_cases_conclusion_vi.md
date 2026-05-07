@@ -6,6 +6,7 @@
 > Hình minh họa: `thesis/figures/` (11 hình; chạy `python3 generate_figures.py`).
 > **Phiên bản 2.5–3.1d**: xem commit history (v3.0 biên tập tiếng Việt; v3.1a Kiribati; v3.1c Mongolia critical minerals; v3.1d image refs).
 > **Phiên bản 3.2 (06/05/2026 — Asia context v2 integration)**: Tích hợp 4 nguồn ADB mới (ADPR 2026 GVC Inclusive Development, ADO April 2026 AI Special Topic, ADR Vol 43 Indian Manufacturing Sikdar/Mukhopadhyay 2026, Cazzaniga et al. 2024 IMF AIPI). 4 substantive enhancements: (i) §5.5 Emerging Asia bổ sung India case + technology spillovers; (ii) §7.1 (5) NEW khoảng trống GVC participation; (iii) §7.3.1 (3)(e) AI Preparedness Index evidence; (iv) §7.3.3 (6) NEW GVC partnership strategy Việt Nam.
+> **Phiên bản 3.3 (07/05/2026 — Phase 2 NotebookLM Đợt 3 ripple-effects)**: Tiếp nhận chi tiết §4.11 file 15 (BREADY 2025 isolation). §6 Yếu tố giải thích bổ sung paragraph về **3-defense system** chống đứt gãy schema và Xu (2024) de jure-de facto giải thích đảo dấu cross-regime. §7.3.2 hàm ý phương pháp luận mở rộng với **(4) anchor model robustness check #6 + (5) panel hậu đại dịch độc lập #7** (kế thừa từ §4.11 file 15). Liên kết file 14 §2.6 cho 3 trạng thái U-curve.
 
 ---
 
@@ -133,6 +134,10 @@ Chương này phân tích tương quan **hai biến (bivariate)** giữa bốn y
 
 **(6)** Đảo dấu xuyên phân nhóm con — bằng chứng cho **điều tiết thể chế (institutional moderation)**. Cơ sở H4.
 
+**Cảnh báo schema BREADY 2025 (mới v3.3 — Phase 2 NotebookLM HĐ3)**: Đợt 2025 (n=16.979, 16,8% pool) sử dụng schema mới gây thay đổi đo lường tại nhiều nước (đặc biệt IND FSTS 7,7%→2,7%, R&D nhiều nước tăng vọt do hiệu ứng bảng hỏi). Vì vậy bảng 6.1 trên có thể bị nhiễu schema effect — **cần kiểm chứng qua hệ thống "triple-defense" §4.11 file 15**: (a) biến giả `Post_BREADY_2024`; (b) anchor model so sánh hệ số 2009-2024 vs 2009-2025; (c) tách 2025 thành panel hậu đại dịch độc lập. Đặc biệt với DAI âm Advanced (-0,129): kết hợp với ICT exclusion test §4.4.5 và Tier-1 saturation framing để minh bạch hóa artifact.
+
+**Lý giải dị biệt cross-regime qua Xu (2024) de jure-de facto** *(mới v3.3)*: Đảo dấu giữa nhóm Emerging (FDI +0,113) và Advanced (FDI −0,113) một phần phản ánh **gap de jure–de facto enforcement**: ở Emerging (Việt Nam, Indonesia, Trung Quốc, Mongolia — trạng thái B của Bảng 2.6.1 file 14), thể chế formal có nhưng thực thi yếu, nên FDI capture được "premium" từ partnership identification (Kafouros et al. 2023 mechanism #1) chưa bão hòa. Ngược lại, ở Advanced (Singapore, Korea — trạng thái A), formal-de facto đã align, nên FDI thuần tài chính/dầu khí (Vùng Vịnh) không add productivity premium qua kênh thể chế.
+
 ---
 
 ## CHƯƠNG 7 — KHOẢNG TRỐNG THỰC TIỄN VÀ KẾT LUẬN
@@ -205,13 +210,19 @@ Khoảng trống cho CĐ1: chưa có nghiên cứu firm-level WBES kết hợp v
 
 Cảnh báo *digital theatre* (Verhoef et al., 2021) cần được củng cố trong CĐ2 với DAI đa thành phần và mô hình tương tác DAI × TCI × AIPI.
 
-#### 7.3.2 Hàm ý phương pháp luận
+#### 7.3.2 Hàm ý phương pháp luận (mở rộng v3.3 — bổ sung anchor model + panel hậu đại dịch)
 
 **(1) Pipeline tái lập được**.
 
 **(2) DAI/TCI đa thành phần với formative model + 2 đặc tả** (Bharadwaj et al., 2013; Coltman et al., 2008; Aguinis et al., 2011).
 
 **(3) Phân loại 8 phân nhóm con cho CĐ2** + biến `Critical_Minerals_Exposure` (v3.1c) + biến `GVC_participation_rate` (NEW v3.2) + biến `AIPI_country_score` (NEW v3.2 conditional on data availability).
+
+**(4) NEW v3.3 — Mô hình neo (anchor model) — robustness check #6 cho schema BREADY 2025** (kế thừa từ §4.11.2 file 15): Quy trình 3 bước — (i) chạy hồi quy với data ≤2024 lấy "anchor coefficients"; (ii) khóa hệ số; (iii) re-run với data đầy đủ 2009-2025 và so sánh stability (Wald test, Chow test, coefficient ratio). Nếu `beta_2025 / beta_anchor > 1.5x` hoặc `< 0.67x` → schema effect significant. Đây là kiểm chứng định lượng cho "cấu trúc bảng hỏi mới có làm đảo chiều ý nghĩa thống kê cốt lõi hay không" (NotebookLM, 2026).
+
+**(5) NEW v3.3 — Tách 2025 thành "Panel hậu đại dịch độc lập" — robustness check #7** (kế thừa từ §4.11.3 file 15): Thay vì cố ép 2025 vào đường xu hướng lịch sử, dành riêng sub-section CĐ2 để xử lý 2025 như **out-of-sample validation panel cho kỷ nguyên hậu COVID + AI**. Câu hỏi nghiên cứu: *"Quy luật thể chế và U-curve giai đoạn 2009-2024 có còn hiệu lực trong 'trạng thái bình thường mới' (new normal) hậu COVID + AI bùng nổ?"* Tiến trình 3 bước (chạy mô hình chính trên 2009-2024 → test trên 2025 only → báo cáo coefficient stability vs paradigm shift).
+
+**Triple-defense system tổng hợp**: 3 đề xuất 3a (biến giả `Post_BREADY_2024`) + 3b (anchor model #6) + 3c (panel hậu đại dịch #7) tạo thành **hệ thống 3 lớp** chống đứt gãy schema 2025 — bảo vệ tính liên tục của phân tích chuỗi thời gian và tránh "kết luận sai lệch hoàn toàn" (NotebookLM, 2026).
 
 #### 7.3.3 Hàm ý chính sách cho doanh nghiệp Việt Nam và khu vực (mở rộng v3.2 từ 5 lên **6 hàm ý**)
 
@@ -247,6 +258,8 @@ Phân bổ: 10% Advanced, 80% Upper-middle/Emerging, 10% Frontier/SIDS.
 #### 7.3.4 Hàm ý cho Chuyên đề 2 và luận án
 
 (Giữ nguyên từ v3.1a — xem commit `b41dbb8` cho 6 đóng góp kế thừa, H1-H6, 2 đặc tả robustness, OLS+IV+Lind-Mehlum, 5-chương luận án.)
+
+**Mở rộng v3.3**: CĐ2 sẽ cần triển khai **8 robustness checks** (nâng từ 5 lên 8): (#1) Manufacturing-only subsample; (#2) ICT exclusion test (đã promote lên §4.4.5 file 15); (#3) Tourism-separated SIDS; (#4) Construction-tested Gulf; (#5) Mining-excluded resource; (#6) **anchor model BREADY** *(NEW)*; (#7) **panel hậu đại dịch độc lập** *(NEW)*; (#8) interaction term Kafouros 2023 replication. CĐ2 §X.Y dedicated section cho robustness #6-#8, tham chiếu §4.11 file 15 cho chi tiết quy trình.
 
 ### 7.4 Hạn chế của chuyên đề
 
@@ -287,3 +300,5 @@ Phân bổ: 10% Advanced, 80% Upper-middle/Emerging, 10% Frontier/SIDS.
 *Phiên bản 3.1c (06/05/2026) — §5.6 Mongolia REVAMP critical minerals.*
 *Phiên bản 3.1d (06/05/2026) — 3 markdown image refs (5.6.1, 5.7.1, 5.1).*
 *Phiên bản 3.2 (06/05/2026) — Asia context v2: §5.5 India case (Sikdar/Mukhopadhyay 2026); §7.1 (5) NEW GVC khoảng trống (ADPR 2026); §7.3.1 (3)(e) AI Preparedness Index (Cazzaniga 2024 + ADO April 2026); §7.3.3 (6) NEW GVC partnership cho Việt Nam.*
+
+*Phiên bản 3.3 (07/05/2026 — Phase 2 NotebookLM Đợt 3 ripple-effects) — §6 bổ sung (a) cảnh báo schema BREADY 2025 link sang §4.11 file 15 triple-defense và (b) lý giải dị biệt cross-regime qua Xu (2024) de jure-de facto + Bảng 2.6.1 file 14. §7.3.2 hàm ý phương pháp luận mở rộng với (4) anchor model robustness #6 và (5) panel hậu đại dịch độc lập #7. §7.3.4 nâng từ 5 → 8 robustness checks cho CĐ2.*
