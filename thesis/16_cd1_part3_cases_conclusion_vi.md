@@ -11,6 +11,7 @@
 > **Phiên bản 3.5a (07/05/2026 — Phase 4 Đợt 3 sub-commit 3A)**: §5.7.5 PICs macro context (4 trụ cột MIRAB).
 > **Phiên bản 3.5b (07/05/2026 — Phase 4 Đợt 3 sub-commit 3B)**: §6.1 Gender + §6.2 Innovation U-curve digital.
 > **Phiên bản 3.5c (07/05/2026 cuối phiên — Phase 4 Đợt 3 sub-commit 3C)**: §7.3.3 mở rộng từ 6 → 8 hàm ý — (7) **Migration labor partnership Pacific** cho Việt Nam dựa trên mô hình PLMS Australia + RSE New Zealand; (8) **NEW Chính sách số hóa Asia** cho SME Việt Nam — học từ Singapore/Korea AI full-stack, Japan 60% DN dùng AI back-office, Trung Quốc smart manufacturing, model thanh toán digital + social commerce. **Hoàn thành Đợt 3 Phase 4.**
+> **Phiên bản 3.6 (07/05/2026 — Phase 5 sub-commit X2: Vietnam macro deep + Zombie firms PRC)**: §5.3 mở rộng với 4 mảng — **lạm phát** 4,0% (2026) → 3,8% (2027); **cấu trúc ngành** công nghiệp 7,7% / dịch vụ 7,5% (du lịch phục hồi) / nông nghiệp 3,6%; **4 trụ cột tăng trưởng** đầu tư công + tiền tệ nới lỏng + FDI + xuất khẩu; **5 rủi ro** chuỗi cung ứng + chính sách Mỹ + thanh khoản nội + nợ xấu + trái phiếu DN. §5.4 Trung Quốc bổ sung **khung Zombie firms** (Caballero, Hoshi & Kashyap, 2008 — *AER*) — doanh nghiệp xác sống PRC làm chậm đào thải + cản trở entry → giảm TFP, là lý do bổ sung cho hàm bậc ba FSTS-năng suất với điểm uốn 47,8% (Đỗ & Phan, 2026 — JFAR). Theo NotebookLM (07/05/2026 *Tariff Mỹ + Vietnam Macro Deep + Zombie Firms*) + ADB Vietnam Economic Outlook 2026.
 
 ---
 
@@ -35,13 +36,35 @@ Năm phát hiện: (1) **nhà nước tô (rentier state)** — Beblawi (1987); 
 
 FSTS 23,2% → 17,9% → 16,1% (suy giảm); doanh nghiệp xuất khẩu 37,1% → 23,8%; ISO 17–23%; R&D 6,1% (đợt 2023). Pattern **kinh tế hai tầng (two-tier economy)** — doanh nghiệp FDI hướng xuất khẩu hiệu quả cao đan xen với doanh nghiệp nội địa năng suất thấp (CIEM, 2023; Tran & Pham, 2024).
 
-**Cập nhật bối cảnh 2026 — ADB Vietnam Economic Outlook 2026 (mới v3.4)**: Theo ADB (2026, April — *Vietnam Economic Outlook 2026: Navigating the Crosscurrents*), Việt Nam dự phóng GDP **7,2% (2026) / 7,0% (2027)** — vượt mức bình quân ASEAN 4,6% và Đông Nam Á 4,7%. Bốn động lực chính: (a) FDI commitment $2,4 tỷ qua 18 dự án chiến lược; (b) Năng suất lao động tăng 5,1% giai đoạn 2026-2027; (c) Hai-tầng kinh tế tiếp tục phân kỳ + ADB Policy-Based Loans $2,4B target SME nội địa; (d) GVC re-positioning từ assembly downstream → mid-stream design/R&D theo 3 trụ cột "Resilience + Environmental Sustainability + Inclusiveness".
+**Cập nhật bối cảnh 2026 — ADB Vietnam Economic Outlook 2026 (mới v3.4)**: Theo ADB (2026, April — *Vietnam Economic Outlook 2026: Navigating the Crosscurrents*), Việt Nam ghi nhận **GDP lịch sử 2025 đạt 8,0%** (cao nhất khu vực Đông Nam Á) và dự phóng **7,2% (2026) → 7,0% (2027)** — vượt mức bình quân ASEAN 4,6% và Đông Nam Á 4,7%. Bốn động lực chính: (a) FDI commitment $2,4 tỷ qua 18 dự án chiến lược; (b) Năng suất lao động tăng 5,1% giai đoạn 2026-2027; (c) Hai-tầng kinh tế tiếp tục phân kỳ + ADB Policy-Based Loans $2,4B target SME nội địa; (d) GVC re-positioning từ assembly downstream → mid-stream design/R&D theo 3 trụ cột "Resilience + Environmental Sustainability + Inclusiveness".
 
-**Hàm ý cho CĐ2** *(mới v3.4)*: bổ sung **biến `Vietnam_HighValue_FDI_2026`** đo bước chuyển từ assembly → higher-value của FDI manufacturing như test cho **H7 industry × institutional dynamism interaction** (Kafouros et al., 2023).
+**Cập nhật macro deep — 4 mảng bổ sung *(mới v3.6 — Phase 5 sub-commit X2)***:
+
+(i) **Lạm phát**: ADB dự báo **4,0% (2026) → 3,8% (2027)** — nằm trong vùng mục tiêu của Ngân hàng Nhà nước (≤4,5%). Áp lực từ giá năng lượng + xung đột Trung Đông kéo dài + đứt gãy chuỗi cung ứng vận tải biển. Lạm phát kiểm soát được tạo dư địa cho chính sách tiền tệ nới lỏng.
+
+(ii) **Cấu trúc ngành** (đóng góp tăng trưởng 2026): **công nghiệp + xây dựng 7,7%** (FDI manufacturing + smart manufacturing); **dịch vụ 7,5%** (du lịch phục hồi sau COVID, retail e-commerce, fintech); **nông nghiệp 3,6%** (climate-resilient agriculture, công nghệ cao). Cơ cấu này phản ánh chuyển dịch tiếp tục từ nông nghiệp → công nghiệp → dịch vụ chất lượng cao.
+
+(iii) **Bốn trụ cột tăng trưởng**: (a) **Đầu tư công** — gói 800.000 tỷ VND giải ngân ưu tiên hạ tầng giao thông + năng lượng sạch + chuyển đổi số chính phủ; (b) **Chính sách tiền tệ nới lỏng** — Ngân hàng Nhà nước duy trì lãi suất tái cấp vốn thấp + mở rộng tín dụng có chọn lọc cho SME + manufacturing; (c) **FDI inflows** — $2,4 tỷ commitment qua 18 dự án chiến lược (fintech, năng lượng sạch, logistics, semiconductor packaging); (d) **Xuất khẩu** — duy trì >30% kim ngạch sang Mỹ (đối tác lớn nhất) + đa dạng hóa qua CPTPP + RCEP + ACFTA.
+
+(iv) **Năm rủi ro chính**: (a) **Gián đoạn chuỗi cung ứng toàn cầu** do Trung Đông + chip shortage + vận tải biển; (b) **Chính sách thuế quan Mỹ 2026** — thuế 10% tạm thời, nguy cơ tăng 15% (xem §1.1 file 14 v3.11 Lớp 7); (c) **Thanh khoản nội địa** — nợ doanh nghiệp/GDP cao (~120%); (d) **Nợ xấu hệ thống ngân hàng** — đặc biệt từ bất động sản; (e) **Trái phiếu doanh nghiệp yếu** — sau khủng hoảng Tân Hoàng Minh + Vạn Thịnh Phát 2022-2024 — cần củng cố niềm tin nhà đầu tư trái phiếu trong nước.
+
+**Hàm ý cho CĐ2** *(mới v3.4 + mở rộng v3.6)*: bổ sung **biến `Vietnam_HighValue_FDI_2026`** đo bước chuyển từ assembly → higher-value của FDI manufacturing như test cho **H7 industry × institutional dynamism interaction** (Kafouros et al., 2023). Bổ sung thêm **biến `Vietnam_Sector_Mix_2026`** (3 cấp: công nghiệp / dịch vụ / nông nghiệp) làm control variable trong robustness check #6 (sector composition adjustment).
 
 ### 5.4 Trung Quốc (n=4.889)
 
 FSTS 10,9% → 8,8%; FDI ≥10% chiếm 6,0%. Quan hệ FSTS – năng suất là hàm bậc ba (cubic) với điểm uốn ~47,8% (Đỗ & Phan, 2026 — JFAR). **Cập nhật v3.1c**: Wang, Huang và Hong (2024 — *IRFA*) phân tích 80% bank risk models ở PRC phụ thuộc dominant tech providers — **concentration risk** trong digital ecosystem PRC.
+
+**Khung Zombie firms PRC — lý giải bổ sung cho điểm uốn bậc ba 47,8% *(mới v3.6 — Phase 5 sub-commit X2)***: Theo NotebookLM (07/05/2026 *Tariff Mỹ + Vietnam Macro Deep + Zombie Firms*) và văn liệu Caballero, Hoshi và Kashyap (2008 — *American Economic Review*), khái niệm **"doanh nghiệp xác sống" (zombie firms)** chỉ những doanh nghiệp tồn tại nhờ tín dụng ưu đãi hoặc trợ cấp ngầm, không tạo lợi nhuận thực + không khấu hao bình thường. Trong bối cảnh PRC sau 2015 (chiến dịch khử rủi ro tài chính + supply-side structural reform), tỷ lệ zombie firms ở các SOE + ngành thừa năng lực sản xuất (steel, coal, real estate, shipbuilding) vẫn cao bất chấp các đợt thắt chặt.
+
+**Ba cơ chế zombie firms làm méo TFP tổng thể PRC**:
+
+(i) **Chậm đào thải** (slow exit): Doanh nghiệp xác sống không phá sản → vẫn chiếm dụng vốn vay ngân hàng + đất đai + lao động — kéo dài chu kỳ phân bổ sai nguồn lực (Hsieh & Klenow, 2009 channel). Trong WBES PRC pool, một số firms zombie có FSTS cao (cố xuất khẩu để duy trì doanh thu) nhưng năng suất thực thấp → góp phần kéo điểm uốn cubic về phía cao 47,8%.
+
+(ii) **Cản trở entry** (entry barrier): SME mới không thể chiếm thị phần vì zombie firms vẫn occupy thị trường nội địa với giá dumping. Liên kết §5.5 Emerging Asia: Việt Nam + Indonesia + India tránh được zombie effect nhờ market discipline mạnh hơn → entry rate cao + creative destruction (Schumpeter, 1942) hoạt động tốt hơn.
+
+(iii) **Concentration risk + zombie hybrid**: Wang/Huang/Hong (2024) finding (80% bank risk models PRC dependent on dominant tech providers) **kết hợp** với zombie firms structure tạo ra rủi ro hệ thống — nếu fintech provider lock-in fails + zombie firms massively default đồng thời → systemic banking crisis. Đây là rủi ro mới cho China-exposed Vietnamese exporters.
+
+**Hàm ý cho CĐ2** *(mới v3.6)*: bổ sung **biến `Zombie_Firm_Indicator_PRC`** (proxy: firms với ROA <0 trong 3 năm liên tiếp + tăng nợ vay) để test xem điểm uốn cubic 47,8% có shifted khi loại zombie firms khỏi PRC subsample. Robustness check #7 (zombie-excluded re-estimation) — bổ sung sau Manufacturing-only / ICT-excluded / Tourism-separated SIDS / Construction-tested Gulf / Mining-excluded resource / Sector composition adjustment.
 
 ### 5.5 Tổng hợp Emerging Asia (n=42.278) — bổ sung India case (v3.2)
 
@@ -222,5 +245,7 @@ Bốn lộ trình số hóa cho SME Việt Nam tham khảo:
 *Phiên bản 3.5b (07/05/2026 — Phase 4 Đợt 3 sub-commit 3B) — §6.1 Gender + §6.2 Innovation U-curve.*
 
 *Phiên bản 3.5c (07/05/2026 cuối phiên — Phase 4 Đợt 3 sub-commit 3C) — Mở rộng §7.3.3 từ 6 → 8 hàm ý chính sách: **(7) Migration labor partnership Pacific cho Việt Nam** với 4 đề xuất (a) PLMS Australia agriculture+aged-care; (b) RSE New Zealand viticulture+horticulture; (c) remittance corridor digital fintech 7%→<3%; (d) skills upgrading return migration channel theo Korea EPS. **(8) NEW Chính sách số hóa Asia cho SME Việt Nam** với 4 lộ trình (a) Singapore/Korea AI full-stack Tier-3; (b) Japan 60% DN AI back-office Tier-2 + AI Adoption Voucher; (c) Trung Quốc smart manufacturing Tier-2/3 + concentration risk warning Wang/Huang/Hong (2024); (d) **Mô hình ưu tiên Việt Nam Tier-1.5 — digital payment VietQR + social commerce TikTok/Facebook + cross-border Shopee/Amazon + cloud Google/Microsoft**. Hàm ý CĐ2: biến `Digital_Tier_Vietnam` với 4 cấp test productivity payoff khác nhau. **HOÀN THÀNH ĐỢT 3 PHASE 4** — file 16 v3.5 với 3 sub-commits 3A/B/C all pushed.*
+
+*Phiên bản 3.6 (07/05/2026 — Phase 5 sub-commit X2: Vietnam macro deep + Zombie firms PRC) — §5.3 Việt Nam mở rộng 4 mảng: (i) lạm phát 4,0% → 3,8%; (ii) cấu trúc ngành công nghiệp 7,7% / dịch vụ 7,5% / nông nghiệp 3,6%; (iii) 4 trụ cột tăng trưởng đầu tư công + tiền tệ nới lỏng + FDI + xuất khẩu; (iv) 5 rủi ro chuỗi cung ứng + thuế Mỹ + thanh khoản nội + nợ xấu + trái phiếu yếu. §5.4 Trung Quốc bổ sung **khung Zombie firms** (Caballero/Hoshi/Kashyap 2008 — AER) với 3 cơ chế (chậm đào thải + cản trở entry + concentration-zombie hybrid risk) làm lý giải bổ sung cho điểm uốn cubic FSTS-năng suất 47,8% (Đỗ & Phan 2026 — JFAR). Hàm ý CĐ2: biến `Vietnam_Sector_Mix_2026` (robustness #6) + biến `Zombie_Firm_Indicator_PRC` (robustness #7). Theo NotebookLM 07/05/2026 + ADB Vietnam Outlook 2026.*
 
 > **Sections §7.1, §7.2, §7.3.1, §7.3.2, §7.3.4, §7.4, §7.5 v3.5a-c**: Giữ nguyên từ v3.2 (commit 7738953) và v3.3 (commit cc33ed4) — full content vẫn truy cập qua git history.
