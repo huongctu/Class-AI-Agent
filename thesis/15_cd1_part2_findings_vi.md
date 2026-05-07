@@ -7,7 +7,8 @@
 > **Phiên bản 2.5–2.10**: Pool 101.035 firms · 47 nước · 107 country-years · 2009–2025.
 > **Phiên bản 3.0–3.1c**: Biên tập tiếng Việt + Quick Wins + Asia context integration.
 > **Phiên bản 3.1d-fix (06/05/2026)**: Bổ sung Hình 4.1.1 (§4.1) + Hình 4.2 (§4.2). Khôi phục full content §4.7-4.10.
-> **Phiên bản 3.1e (06/05/2026)**: **Bổ sung 4 markdown image references mới**: Hình 4.0 (pool by year, §4.1), Hình 4.4 (slope chart, §4.6), Hình 4.6 (SME composition, §4.5), Hình 4.7 (spider chart, §4.6). Tổng 6 hình embedded trong file 15 (4.1.1, 4.0, 4.2, 4.4, 4.6, 4.7). Đáp ứng review report B.2 (≥8-10 hình target).
+> **Phiên bản 3.1e (06/05/2026)**: Bổ sung 4 markdown image references mới: Hình 4.0 (pool by year, §4.1), Hình 4.4 (slope chart, §4.6), Hình 4.6 (SME composition, §4.5), Hình 4.7 (spider chart, §4.6). Tổng 6 hình embedded trong file 15.
+> **Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration)**: §4.8 industry framework strengthening — (a) Bảng 4.8.1 thêm cột "Dynamism profile (Kafouros 2023)" phân loại 9 ngành theo technological vs market dynamism; (b) thêm đoạn lý giải sau bảng về Kafouros et al. (2023) industry × institutional quality interaction; (c) mở rộng 5 → 6 hàm ý phương pháp luận với hàm ý (f) test interaction term tech_dynamism × institutional_quality như robustness check thứ 7 cho CĐ2 H7 mới.
 
 ---
 
@@ -159,24 +160,38 @@ Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.1
 ### 4.8 Khung phân tích cấp ngành (industry-level) — kế hoạch CĐ2
 
 > **Mới ở v2.9 (D3)**: Khung dữ liệu (schema) WBES phân loại theo `a3a` (mã ngành) và `a4a` (mã ISIC 4 chữ số).
+>
+> **Mở rộng v3.4 (07/05/2026)**: Bảng 4.8.1 thêm cột "Dynamism profile (Kafouros 2023)"; thêm đoạn lý giải sau bảng về industry × institutional quality interaction; mở rộng 5 → 6 hàm ý phương pháp luận với hàm ý (f) test interaction term.
 
-**Bảng 4.8.1**. *Khung phân loại 9 ngành ISIC Rev. 4 cho nhóm dữ liệu WBES.*
+**Bảng 4.8.1**. *Khung phân loại 9 ngành ISIC Rev. 4 cho nhóm dữ liệu WBES (cập nhật v3.4 — thêm cột Dynamism profile theo Kafouros 2023).*
 
-| Ngành | Mã ISIC | Đặc điểm | Pattern dự kiến |
-|---|---|---|---|
-| Manufacturing | C (10–33) | Thâm dụng vốn, định hướng xuất khẩu | FSTS cao; R&D cao; ISO cao |
-| Wholesale/retail | G (45–47) | Thâm dụng lao động, định hướng trong nước | FSTS thấp; website cao; FDI thấp |
-| Tourism/hotels | I (55–56) | Dịch vụ phụ thuộc du lịch | FDI cao ở SIDS |
-| Transport | H (49–53) | Kinh tế mạng lưới | FDI cao; ISO cao |
-| ICT | J (58–63) | Thâm dụng tri thức | R&D cao; website ~100% |
-| Construction | F (41–43) | Theo dự án, định hướng trong nước | FSTS thấp; FDI ở GCC |
-| Mining | B (05–09) | Tài nguyên dẫn dắt | FDI cao; ISO ở MNE-led |
-| Finance | K (64–66) | Có quy chế, xuyên biên giới | FDI cao; website ~100% |
-| Khác | A, D, L | Đa dạng | Hỗn hợp |
+| Ngành | Mã ISIC | Đặc điểm | Pattern dự kiến | **Dynamism profile (Kafouros 2023)** |
+|---|---|---|---|---|
+| Manufacturing — high-tech | C (20–21, 26–30) *(pharma, computers, electrical, motor vehicles)* | Thâm dụng vốn, định hướng xuất khẩu | FSTS cao; R&D cao; ISO cao | **High technological dynamism** *(Schumpeter Mark II — deepening pattern)* |
+| Manufacturing — low-tech | C (10–18, 22–25, 31–33) *(food, beverages, textiles, leather, furniture, basic metals)* | Thâm dụng lao động | FSTS trung bình; R&D thấp | **Low technological dynamism** *(widening pattern; longer technology life cycle)* |
+| Wholesale/retail | G (45–47) | Thâm dụng lao động, định hướng trong nước | FSTS thấp; website cao; FDI thấp | **High market dynamism** *(volatile consumer demand, short product cycles)* |
+| Tourism/hotels | I (55–56) | Dịch vụ phụ thuộc du lịch | FDI cao ở SIDS | **High market dynamism** *(volatile demand — pandemic, geopolitical, seasonal)* |
+| Transport | H (49–53) | Kinh tế mạng lưới | FDI cao; ISO cao | Trung gian (low-medium dynamism) |
+| ICT | J (58–63) | Thâm dụng tri thức | R&D cao; website ~100% | **High technological dynamism** *(rapid tech evolution, IPR-sensitive)* |
+| Construction | F (41–43) | Theo dự án, định hướng trong nước | FSTS thấp; FDI ở GCC | **Low technological dynamism + low market dynamism** *(stable demand, traditional methods)* |
+| Mining | B (05–09) | Tài nguyên dẫn dắt | FDI cao; ISO ở MNE-led | **Low technological dynamism** *(commodity-driven, institutional rents)* |
+| Finance | K (64–66) | Có quy chế, xuyên biên giới | FDI cao; website ~100% | **High market dynamism** *(demand shocks, AI disruption Wang/Huang/Hong 2024)* |
+| Khác | A, D, L | Đa dạng | Hỗn hợp | Hỗn hợp |
 
 **5 giả thuyết cấp ngành cho CĐ2**: I1 Manufacturing FSTS dominance; I2 ICT digital-native; I3 Tourism drive FDI ở SIDS; I4 Mining drive resource cluster; I5 Construction dominate Vùng Vịnh.
 
-**5 hàm ý phương pháp luận**: (a) Industry FE 9 ngành; (b) Manufacturing-only subsample; (c) Tourism separation; (d) Construction subsample Vùng Vịnh; (e) ICT exclusion test cho DAI.
+**Lý giải lý thuyết — Kafouros et al. (2023) industry × institutional quality interaction** *(mới v3.4)*:
+
+Khung 9 ngành trên không chỉ phân loại theo logic kinh tế mà còn theo logic lý thuyết của **Kafouros et al. (2023 — *Global Strategy Journal*, Vol 14, 56–83)**. Kafouros và cộng sự (n=12.888 firms · 16 CEE economies · 2004-2011 · 72.082 obs) chứng minh chất lượng thể chế (đo bằng Rule of Law từ World Governance Indicators) tương tác hai chiều với động học ngành: **(H1)** ở các ngành có **technological dynamism** cao (Schumpeter Mark II — pharma, computers, electrical, ICT, motor vehicles), chất lượng thể chế **khuếch đại tích cực** hiệu quả doanh nghiệp do ba cơ chế (partnership identification, IPR enforcement, interfirm market exchange); **(H2)** ngược lại, ở các ngành có **market dynamism** cao (volatility cầu — tourism, retail, finance), chất lượng thể chế **suy yếu** vì doanh nghiệp phải nội bộ hóa (internalize) các chức năng để giảm phụ thuộc thị trường ngoài. **Hàm ý cho CĐ1 và CĐ2**: (a) hệ số âm DAI ở Advanced phân nhóm innovation-driven (-0,129 trong Spec 1 — xem §4.4 và Phase 2 NotebookLM HĐ1) có thể bị nhiễu bởi ICT firms saturated; (b) Bảng 4.6 cho thấy Δ R&D Emerging giảm -42,1 đpt — nếu phân tách high-tech vs low-tech Manufacturing, có thể thấy pattern khác biệt; (c) **CĐ2 cần thêm giả thuyết H7**: tương tác `tech_dynamism × institutional_quality` có hệ số dương; tương tác `market_dynamism × institutional_quality` có hệ số âm. Đây là test trực tiếp cho replication của Kafouros (2023) trong bối cảnh châu Á — đóng góp lý thuyết quan trọng vì Kafouros chỉ test trong bối cảnh CEE.
+
+**6 hàm ý phương pháp luận** *(cập nhật v3.4 — mở rộng từ 5 → 6 với hàm ý (f))*:
+
+(a) Industry FE 9 ngành theo Bảng 4.8.1.
+(b) Manufacturing-only subsample — tách cho high-tech vs low-tech theo Kafouros (2023) classification.
+(c) Tourism separation cho SIDS Pacific (boundary case extension §1.3).
+(d) Construction subsample test Vùng Vịnh resource-driven Advanced.
+(e) ICT exclusion test cho DAI — đặc biệt liên quan Phase 2 NotebookLM HĐ1 Tier-1 Digital Presence rebrand.
+**(f) Test interaction term `tech_dynamism × institutional_quality` và `market_dynamism × institutional_quality`** *(mới v3.4)* — robustness check thứ 7 cho CĐ2 H7 mới (sau Manufacturing-only, ICT-excluded, Tourism-separated SIDS, Construction-tested Gulf, Mining-excluded resource, Anchor model BREADY 2025). Đây là test trực tiếp cho **replication Kafouros et al. (2023) trong bối cảnh châu Á** — bảng Industry × Institutional Quality interaction cần thiết để confirm/disconfirm H1-H2 của Kafouros với 41 nước châu Á (vs 16 nước CEE của Kafouros). Nếu interaction tech_dynamism × institutional_quality dương và significant ở mức p<.05, đây là evidence châu Á-specific cho industry-bounded institutional advantage — đóng góp lý thuyết của luận án.
 
 ### 4.9 Phân nhóm con Emerging — phát hiện dị biệt nội bộ
 
@@ -234,4 +249,5 @@ Năm phát hiện: (1) FSTS phân tầng 5,0%-7,2%-13,2% bị che giấu; (2) FD
 *Phiên bản 3.0 (06/05/2026) — Biên tập tiếng Việt §4.1–4.10.*
 *Phiên bản 3.1c (06/05/2026 — QW5) — Bổ sung Kiribati 2025.*
 *Phiên bản 3.1d-fix (06/05/2026) — Bổ sung Hình 4.1.1 (§4.1) + Hình 4.2 (§4.2) + khôi phục full content §4.7-4.10.*
-*Phiên bản 3.1e (06/05/2026) — Bổ sung 4 markdown image refs mới: Hình 4.0 (§4.1), Hình 4.4 (§4.6), Hình 4.6 (§4.5), Hình 4.7 (§4.6). Tổng **6 hình embedded** trong file 15. Đáp ứng review report B.2.*
+*Phiên bản 3.1e (06/05/2026) — Bổ sung 4 markdown image refs mới: Hình 4.0 (§4.1), Hình 4.4 (§4.6), Hình 4.6 (§4.5), Hình 4.7 (§4.6). Tổng **6 hình embedded** trong file 15.*
+*Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration) — §4.8 industry framework strengthening: Bảng 4.8.1 thêm cột "Dynamism profile (Kafouros 2023)" + lý giải sau bảng + mở rộng 5 → 6 hàm ý phương pháp luận với hàm ý (f) test interaction term tech_dynamism × institutional_quality (Kafouros et al. 2023 replication châu Á).*
