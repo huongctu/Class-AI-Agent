@@ -3,10 +3,11 @@
 > Tiếp nối `thesis/14_cd1_part1_intro_theory_vi.md`.
 > Phần 3 (Chương 5–7 + TLTK): `thesis/16_cd1_part3_cases_conclusion_vi.md`.
 > Bảng thuật ngữ Anh-Việt: `thesis/09b_vn_term_glossary.md`.
-> Hình minh họa: `thesis/figures/` (5 hình; chạy `python3 generate_figures.py` để regen).
+> Hình minh họa: `thesis/figures/` (**11 hình**; chạy `python3 generate_figures.py` để regen).
 > **Phiên bản 2.5–2.10**: Pool 101.035 firms · 47 nước · 107 country-years · 2009–2025.
-> **Phiên bản 3.0–3.1c**: Biên tập tiếng Việt + Quick Wins từ review report HD 07/05/2026.
-> **Phiên bản 3.1d-fix (06/05/2026)**: Khôi phục full content §4.7-4.10 (đã bị rút gọn nhầm trong commit `36ecd13`) + giữ markdown image refs Hình 4.1.1 ở §4.1 và Hình 4.2 ở §4.2.
+> **Phiên bản 3.0–3.1c**: Biên tập tiếng Việt + Quick Wins + Asia context integration.
+> **Phiên bản 3.1d-fix (06/05/2026)**: Bổ sung Hình 4.1.1 (§4.1) + Hình 4.2 (§4.2). Khôi phục full content §4.7-4.10.
+> **Phiên bản 3.1e (06/05/2026)**: **Bổ sung 4 markdown image references mới**: Hình 4.0 (pool by year, §4.1), Hình 4.4 (slope chart, §4.6), Hình 4.6 (SME composition, §4.5), Hình 4.7 (spider chart, §4.6). Tổng 6 hình embedded trong file 15 (4.1.1, 4.0, 4.2, 4.4, 4.6, 4.7). Đáp ứng review report B.2 (≥8-10 hình target).
 
 ---
 
@@ -14,19 +15,23 @@
 
 ### 4.1 Nguồn dữ liệu World Bank Enterprise Surveys
 
-**Phạm vi tổng hợp dữ liệu**. Nhóm dữ liệu (pool) gồm **101.185 doanh nghiệp**, 47 nền kinh tế, **108 cặp quốc gia × năm**, giai đoạn 2009–2025 (cập nhật v3.1 sau khi bổ sung Kiribati 2025: +150 doanh nghiệp, +1 cặp quốc gia × năm). Tổng hợp này kế thừa và mở rộng từ nhóm dữ liệu 17 nước châu Á mới nổi (~40.633 doanh nghiệp) của Đỗ & Phan (2026 — VEFR), gấp ~2,5 lần. Phân bố theo phân nhóm con (sub-regime) ICRV: Emerging 47.803 (47%), Frontier 28.678 (28%), Upper-middle 16.693 (17%), Advanced 6.640 (7%), **SIDS 1.371 (1,4% — gồm Kiribati 2025)**. Có **14 đợt khảo sát năm 2025** với 16.979 doanh nghiệp.
+**Phạm vi tổng hợp dữ liệu**. Nhóm dữ liệu (pool) gồm **101.185 doanh nghiệp**, 47 nền kinh tế, **108 cặp quốc gia × năm**, giai đoạn 2009–2025 (cập nhật v3.1 với Kiribati 2025: +150 doanh nghiệp, +1 cặp QG×năm). Tổng hợp này kế thừa và mở rộng từ 17 nước châu Á mới nổi (~40.633 doanh nghiệp) của Đỗ & Phan (2026 — VEFR), gấp ~2,5 lần. Phân bố theo phân nhóm con (sub-regime) ICRV: Emerging 47.803 (47%), Frontier 28.678 (28%), Upper-middle 16.693 (17%), Advanced 6.640 (7%), **SIDS 1.371 (1,4% — gồm Kiribati 2025)**. Có **14 đợt khảo sát năm 2025** với 16.979 doanh nghiệp.
 
-![Hình 4.1.1 — Phân bố pool 5 phân nhóm con thể chế (n=101.185 doanh nghiệp · 47 nước · 108 QG×năm · 2009–2025, v3.1)](figures/fig_4_1_pool_composition.png)
+![Hình 4.1.1 — Phân bố pool 5 phân nhóm con thể chế (n=101.185 doanh nghiệp)](figures/fig_4_1_pool_composition.png)
 
-*Hình 4.1.1. Phân bố nhóm dữ liệu theo 5 phân nhóm con: Emerging (47.803, 47,2%), Frontier (28.678, 28,3%), Upper-middle (16.693, 16,5%), Advanced (6.640, 6,6%), SIDS Thái Bình Dương (1.371, 1,4%, gồm Kiribati 2025). Source: pipeline Python `wbes/02_harmonize.py`. Tái lập: `thesis/figures/generate_figures.py`.*
+*Hình 4.1.1. Bar chart phân bố theo 5 phân nhóm con: Emerging (47.803, 47,2%), Frontier (28.678, 28,3%), Upper-middle (16.693, 16,5%), Advanced (6.640, 6,6%), SIDS Thái Bình Dương (1.371, 1,4%, gồm Kiribati 2025). Tái lập: `thesis/figures/generate_figures.py` function `fig_4_1_pool_composition()`.*
 
-**Trường hợp biên (boundary cases)**: **7 SIDS Thái Bình Dương đầy đủ (FJI, PNG, SLB, TON, VUT, WSM, KIR)** + Tây Á 9 nước (Vùng Vịnh + Trung Đông). Phân bố thời gian: 2009–2012 (n=14.171), 2013–2017 (n=24.564), 2018–2025 (n=62.450 — chiếm 62%, bao gồm Kiribati 2025). Ba thế hệ khung dữ liệu (schema): PICS3/MENA-WBES, Standardized, Standardized2018+/BREADY.
+![Hình 4.0 — Phân bố mẫu 101.185 doanh nghiệp xuyên 17 năm (2009–2025) theo 3 thế hệ schema WBES](figures/fig_4_0_pool_by_year.png)
+
+*Hình 4.0. Phân bố mẫu doanh nghiệp xuyên 17 năm theo 3 thế hệ schema WBES: PICS3 (2009-2012, n=14.171), Standardized (2013-2017, n=24.564), BREADY (2018-2025, n=62.450 gồm Kiribati 2025). Đợt 2025 đột biến với 16.979 doanh nghiệp = 16,8% pool — đợt khảo sát đơn năm lớn nhất. Tái lập: `generate_figures.py` function `fig_4_0_pool_by_year()`.*
+
+**Trường hợp biên (boundary cases)**: **7 SIDS Thái Bình Dương đầy đủ (FJI, PNG, SLB, TON, VUT, WSM, KIR)** + Tây Á 9 nước. Phân bố thời gian: 2009–2012 (n=14.171), 2013–2017 (n=24.564), 2018–2025 (n=62.450, chiếm 62%). Ba thế hệ khung dữ liệu (schema): PICS3/MENA-WBES, Standardized, Standardized2018+/BREADY.
 
 **Hài hòa**. Pipeline Python (`wbes/02_harmonize.py`); FSTS = `d3b + d3c`; giới hạn cực trị (winsorize) log năng suất ở mức 1/99 phân vị trong cụm quốc gia × năm. Doanh thu chưa quy đổi sang USD PPP.
 
 ### 4.2 Thực trạng năng suất lao động — phân tán trong từng quốc gia
 
-**Bảng 4.1**. *Phân tán (dispersion) năng suất lao động theo phân nhóm con thể chế (n=108 cặp quốc gia × năm — cập nhật v3.1).*
+**Bảng 4.1**. *Phân tán (dispersion) năng suất lao động theo phân nhóm con thể chế (n=108 cặp QG×năm — v3.1).*
 
 | Phân nhóm con | Cặp QG×năm | n_firms | sd log | P90/P10 | P75/P25 |
 |---|---|---|---|---|---|
@@ -38,17 +43,17 @@
 | Frontier | 42 | 18.877 | 1,36 | 39,6 | 6,1 |
 | **SIDS Thái Bình Dương (v3.1: gồm Kiribati 2025)** | **10** | **1.097** | **1,32** | (cập nhật GĐ1) | (cập nhật GĐ1) |
 
-*Ghi chú: (1) Phân nhóm Advanced được tách thành hai phân nhóm con (innovation-driven so với resource-driven) ở v3.1. **Tỷ số phân tán Singapore (1,03) so với Vùng Vịnh (0,49) ≈ 2,1 lần**. (2) SIDS row cập nhật v3.1 với Kiribati 2025 (n=150, sd log 1,48). P90/P10 và P75/P25 chi tiết sẽ được cập nhật ở Giai đoạn 1 (tháng 6/2026).*
+*Ghi chú: Advanced tách 2 phân nhóm con ở v3.1 — tỷ số phân tán Singapore (1,03) so với Vùng Vịnh (0,49) ≈ **2,1 lần**. SIDS row v3.1 với Kiribati 2025 (n=150, sd log 1,48).*
 
-![Hình 4.2 — Phân phối năng suất theo 6 phân nhóm con (kernel density approximation từ tham số sd log, n=101.185)](figures/fig_4_2_productivity_density.png)
+![Hình 4.2 — Phân phối năng suất theo 6 phân nhóm con (kernel density, n=101.185)](figures/fig_4_2_productivity_density.png)
 
-*Hình 4.2. Đồ thị mật độ kernel cho 6 phân nhóm con (sd log từ Bảng 4.1): Advanced innovation (sd 1,03), Advanced resource (sd 0,49), Upper-middle (1,29), Emerging (1,24), Frontier (1,36), SIDS (1,32). Phân nhóm tài nguyên dẫn dắt (Advanced resource, Vùng Vịnh) có phân tán hẹp nhất; Frontier rộng nhất. Tái lập: `thesis/figures/generate_figures.py` function `fig_4_2_productivity_density()`.*
+*Hình 4.2. Đồ thị mật độ kernel cho 6 phân nhóm con: Advanced innovation (sd 1,03), Advanced resource (sd 0,49), Upper-middle (1,29), Emerging (1,24), Frontier (1,36), SIDS (1,32). Phân nhóm tài nguyên dẫn dắt (Vùng Vịnh) phân tán hẹp nhất; Frontier rộng nhất. Tái lập: `generate_figures.py` function `fig_4_2_productivity_density()`.*
 
-5 phát hiện: (1) Phân tán phân nhóm Advanced gộp giảm từ 1,00 (chỉ innovation-driven) xuống 0,86 (sau khi bổ sung Vùng Vịnh resource-driven) — bằng chứng dị biệt nội bộ; (2) Frontier cao nhất — phù hợp giả thuyết **phân bổ sai nguồn lực (misallocation hypothesis)** của Hsieh & Klenow (2009, 2014); (3) SIDS ở mức trung bình ~1,32 (cập nhật v3.1); (4) tỷ số P90/P10 tăng đơn điệu theo phân nhóm con; (5) bằng chứng thực tiễn cho H5 — điều tiết thể chế (institutional moderation).
+5 phát hiện: (1) Phân tán Advanced gộp giảm từ 1,00 → 0,86 sau khi bổ sung Vùng Vịnh — bằng chứng dị biệt nội bộ; (2) Frontier cao nhất — phù hợp **giả thuyết phân bổ sai nguồn lực (misallocation hypothesis)** Hsieh & Klenow (2009, 2014); (3) SIDS ở mức trung bình ~1,32 (v3.1); (4) tỷ số P90/P10 tăng đơn điệu theo phân nhóm con; (5) bằng chứng cho H5 — điều tiết thể chế (institutional moderation).
 
 ### 4.3 Thực trạng quốc tế hóa và tăng trưởng việc làm
 
-**Bảng 4.3**. *Cường độ xuất khẩu (FSTS), tỷ lệ doanh nghiệp xuất khẩu và tốc độ tăng trưởng kép hàng năm (CAGR — Compound Annual Growth Rate) việc làm theo phân nhóm con.*
+**Bảng 4.3**. *FSTS, doanh nghiệp xuất khẩu và CAGR việc làm theo phân nhóm con.*
 
 | Phân nhóm con | FSTS (%) | Doanh nghiệp xuất khẩu (%) | CAGR việc làm (%) |
 |---|---|---|---|
@@ -88,6 +93,10 @@ SIDS Thái Bình Dương thể hiện pattern **thích nghi và nhảy vọt s�
 
 Tỷ lệ FDI có dạng chữ U với cực tiểu ở Emerging. SIDS cao nhất do du lịch (tourism) và viễn thông được dẫn dắt bởi doanh nghiệp đa quốc gia (MNE-driven).
 
+![Hình 4.6 — Phân phối quy mô doanh nghiệp theo phân nhóm con (n=101.185)](figures/fig_4_6_firm_size.png)
+
+*Hình 4.6. Stacked bar chart cho thấy SIDS Pacific có tỷ lệ SME cao nhất (88,5%), Frontier kế tiếp (85,0%), Advanced thấp nhất (79,1%). Pattern phù hợp với cấu trúc kinh tế khu vực — SIDS thị trường nhỏ phụ thuộc SME; Advanced có nhiều doanh nghiệp lớn. Tái lập: `generate_figures.py` function `fig_4_6_firm_size()`.*
+
 ### 4.6 Bức tranh thay đổi theo thời gian
 
 **Bảng 4.6**. *Δ điểm phần trăm (đpt) khi so sánh 2018–2025 với 2009–2012.*
@@ -101,39 +110,47 @@ Tỷ lệ FDI có dạng chữ U với cực tiểu ở Emerging. SIDS cao nhấ
 
 Nhảy vọt số (digital leapfrog): website tăng +20–43 đpt ở Frontier, Emerging và SIDS Thái Bình Dương — phù hợp luận điểm digital leapfrog của Banalieva & Dhanaraj (2019).
 
+![Hình 4.4 — Slope chart 2009–2012 vs 2018–2025 (Δ điểm phần trăm 5 chỉ số)](figures/fig_4_4_growth_pathway.png)
+
+*Hình 4.4. Slope chart minh họa thay đổi 5 chỉ số (Website, DN xuất khẩu, FDI, R&D, ISO) giữa 2 mốc thời gian cho 4 phân nhóm con. Pattern nổi bật: Website tăng mạnh +20-40 đpt ở Frontier/SIDS (digital leapfrog); FDI giảm phổ biến (-5 đến -11 đpt); R&D giảm mạnh ở Emerging (-42,1 đpt) cảnh báo schema effect. Tái lập: `generate_figures.py` function `fig_4_4_growth_pathway()`.*
+
+![Hình 4.7 — Spider chart 5 chiều × 2 mốc thời gian (Advanced, Emerging, SIDS)](figures/fig_4_7_spider_chart.png)
+
+*Hình 4.7. Radar/spider chart cho 3 phân nhóm con (Advanced, Emerging, SIDS) trên 5 chiều (FSTS, Innovation product, R&D, Website, ISO) với 2 mốc thời gian (2009–2012 vs 2018–2025). Quan sát: SIDS có Innovation product cao đột biến + Website tăng mạnh giai đoạn 2018-2025 (digital leapfrog confirmed). Advanced ổn định high level. Emerging: ISO + R&D thay đổi mạnh, FSTS giảm. Tái lập: `generate_figures.py` function `fig_4_7_spider_chart()`.*
+
 ### 4.7 Tổng hợp Chương 4 (mở rộng D4 — 10 kết luận chính)
 
-Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.185 doanh nghiệp ở 47 nền kinh tế châu Á và Thái Bình Dương (108 cặp quốc gia × năm) trong giai đoạn 2009–2025** từ nhóm dữ liệu WBES sau hài hòa (cập nhật v3.1 với Kiribati 2025). Đây là nhóm dữ liệu có **phạm vi địa lý và thời gian rộng nhất từng được tổng hợp** cho nghiên cứu quan hệ quốc tế hóa → hiệu quả (I→P) trong văn liệu IB. Phạm vi này mở rộng từ nhóm dữ liệu 17 nước châu Á mới nổi (~40.633 doanh nghiệp) của Đỗ và Phan (2026 — VEFR) khoảng 2,5 lần.
+Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.185 doanh nghiệp ở 47 nền kinh tế châu Á và Thái Bình Dương (108 cặp QG×năm) trong giai đoạn 2009–2025** từ nhóm dữ liệu WBES sau hài hòa. Đây là phạm vi rộng nhất từng có cho nghiên cứu I→P trong văn liệu IB, mở rộng từ 17 nước châu Á mới nổi (Đỗ & Phan, 2026 — VEFR) khoảng 2,5 lần.
 
 **Mười kết luận chính**:
 
-**(i) Phân tán năng suất nội bộ tăng đơn điệu khi phân nhóm con suy giảm**: Advanced 0,86 → Upper-middle 1,29 ≈ Emerging 1,24 ≈ SIDS 1,32 → Frontier 1,36. Tỷ số P90/P10 leo từ 10,8 lần lên 39,6 lần. Pattern này khẳng định **giả thuyết phân bổ sai nguồn lực (misallocation hypothesis)** của Hsieh & Klenow (2009, 2014) và là cơ sở thực tiễn cho H5 — điều tiết thể chế (institutional moderation) — trong CĐ2.
+**(i) Phân tán năng suất nội bộ tăng đơn điệu khi phân nhóm con suy giảm**: Advanced 0,86 → Upper-middle 1,29 ≈ Emerging 1,24 ≈ SIDS 1,32 → Frontier 1,36. Tỷ số P90/P10 leo từ 10,8 lần lên 39,6 lần. Pattern khẳng định **giả thuyết phân bổ sai nguồn lực** (Hsieh & Klenow, 2009, 2014).
 
-**(ii) Dị biệt nội bộ phân nhóm Advanced — phân nhóm con đổi mới sáng tạo dẫn dắt so với tài nguyên dẫn dắt**. Sự sụt giảm phân tán từ 1,00 (chỉ tính nhóm châu Á đổi mới sáng tạo dẫn dắt — innovation-driven) xuống 0,86 (sau khi thêm Vùng Vịnh tài nguyên dẫn dắt — resource-driven) gợi ý cần **phân nhóm con (sub-grouping) Advanced** trong CĐ2. Bằng chứng định lượng: tỷ số phân tán Singapore (1,03) so với Vùng Vịnh (0,49) ≈ **2,1 lần** — đã được tách trực quan trong **Bảng 4.1 (v3.1)**.
+**(ii) Dị biệt nội bộ phân nhóm Advanced**. Sự sụt giảm phân tán từ 1,00 (chỉ innovation-driven) xuống 0,86 (sau khi thêm Vùng Vịnh resource-driven) gợi ý cần **phân nhóm con (sub-grouping) Advanced** trong CĐ2. Tỷ số phân tán Singapore (1,03) so với Vùng Vịnh (0,49) ≈ **2,1 lần** — đã được tách trực quan trong **Bảng 4.1 (v3.1)**.
 
-**(iii) Dị biệt nội bộ phân nhóm Emerging — 3 phân nhóm con** *(NEW D1, §4.9)*. Phân nhóm con FDI dẫn dắt Đông Nam Á (VNM+IDN+PHL, n=13.779; FSTS **13,2%**) khác biệt rõ với phân nhóm con dân số lớn (IND+LKA+JOR, n=32.119; FSTS **7,2%**) và phân nhóm con tài nguyên (MNG, n=1.905; FSTS **5,0%**). Phân tầng FSTS 5,0% – 7,2% – 13,2% bị *che giấu* trong số liệu tổng hợp Emerging (8,6%). Năng lực công nghệ (TCI) ngược dấu giữa ASEAN-3 (R&D 4,8%, ISO 18,8%) và Nam Á + Tây Á (R&D 19,8%, ISO 27,6%) — phản ánh hai cơ chế: học hỏi do FDI dẫn dắt (FDI-induced learning) so với học hỏi tự thân (autonomous learning) (Cohen & Levinthal, 1990).
+**(iii) Dị biệt nội bộ phân nhóm Emerging — 3 phân nhóm con** *(NEW D1, §4.9)*. FDI dẫn dắt SEA (VNM+IDN+PHL, FSTS 13,2%) ≠ dân số lớn (IND+LKA+JOR, FSTS 7,2%) ≠ tài nguyên (MNG, FSTS 5,0%). TCI ngược dấu — **học hỏi do FDI dẫn dắt vs học hỏi tự thân** (Cohen & Levinthal, 1990).
 
-**(iv) SIDS Thái Bình Dương (7 nước, n=1.371) có pattern đặc trưng "thích nghi và nhảy vọt"**: phân tán ở mức trung bình (sd log = 1,32), tỷ lệ đổi mới sản phẩm cao nhất nhóm (41,5%), tỷ lệ website cao bất ngờ ở 6 nước cũ (58,9% — gần ngang Advanced). **Kiribati 2025 là trường hợp biên CỰC ĐOAN nhất với FSTS chỉ 1,03%, FDI ≥10% chỉ 0,7%, website 18,7%, ISO 1,3% — gợi ý dị biệt nội bộ SIDS giữa "high digital leapfrog" (Fiji, Maldives) và "isolated rural" (Kiribati).** Pattern là cơ sở cho **H6 (forced internationalization penalty)** (Briguglio, 1995; Bertram, 2006; Đỗ & Phan, 2026 — bản thảo P8).
+**(iv) SIDS Thái Bình Dương (7 nước, n=1.371)**: phân tán 1,32, đổi mới sản phẩm cao nhất (41,5%), website 58,9% gần Advanced. **Kiribati 2025 là trường hợp biên CỰC ĐOAN nhất với FSTS 1,03%, FDI 0,7%, website 18,7%, ISO 1,3% — gợi ý dị biệt nội bộ SIDS giữa "high digital leapfrog" (Fiji, Maldives) và "isolated rural" (Kiribati).** Cơ sở cho **H6 (forced internationalization penalty)** (Briguglio, 1995; Bertram, 2006).
 
-**(v) Quốc tế hóa là hiện tượng phân cực ở mọi phân nhóm con thể chế**: trung vị FSTS = 0% xuyên năm phân nhóm con; chỉ 15–23% doanh nghiệp tham gia xuất khẩu. Yêu cầu phương pháp luận: cần phân tích **lựa chọn hai giai đoạn (2-stage selection)** trong đặc tả đầy đủ của CĐ2.
+**(v) Quốc tế hóa là hiện tượng phân cực**: trung vị FSTS = 0% xuyên năm phân nhóm con; chỉ 15–23% doanh nghiệp xuất khẩu. Cần **lựa chọn hai giai đoạn (2-stage selection)** trong CĐ2.
 
-**(vi) Nhảy vọt số (digital leapfrog) 2018–2025 ở Frontier, Emerging và SIDS Thái Bình Dương** (+20–43 đpt website). Bằng chứng tái định vị Uppsala cho kỷ nguyên số (Banalieva & Dhanaraj, 2019; Yang, Zhao & Wei, 2025); đồng nhất pattern hiệu ứng lá chắn số (digital shield effect) trên 17 nước (Đỗ & Phan, 2026 — VEFR). *Kiribati 2025 không thể hiện digital leapfrog (website chỉ 18,7%) — gợi ý leapfrog đòi hỏi điều kiện hạ tầng cơ bản tối thiểu mà Kiribati chưa đạt.*
+**(vi) Nhảy vọt số (digital leapfrog) 2018–2025** ở Frontier/Emerging/SIDS (+20–43 đpt website) — bằng chứng tái định vị Uppsala (Banalieva & Dhanaraj, 2019). *Kiribati 2025 không thể hiện leapfrog (website 18,7%) — cần điều kiện hạ tầng tối thiểu mà Kiribati chưa đạt.*
 
-**(vii) Pattern phi tuyến của FDI ≥10%** — dạng chữ U với cực tiểu ở Emerging (4,7%): Advanced 11,1% → Upper-middle 8,4% → Emerging 4,7% → Frontier 5,9% → SIDS 23,5%. Hai mô hình FDI khác nhau: (a) Advanced — MNE hub + Vùng Vịnh hạn chế; (b) SIDS — du lịch + viễn thông.
+**(vii) Pattern phi tuyến FDI ≥10%** — dạng chữ U với cực tiểu Emerging (4,7%): Advanced 11,1% → Upper-middle 8,4% → Emerging 4,7% → Frontier 5,9% → SIDS 23,5%. Hai mô hình FDI: (a) Advanced — MNE hub + Vùng Vịnh hạn chế; (b) SIDS — du lịch + viễn thông.
 
-**(viii) Đợt khảo sát 2025 là *mẫu đơn năm lớn nhất* và *đa dạng nhất* trong nhóm dữ liệu** *(NEW D2)*. **14 nước × 16.979 doanh nghiệp** (16,8% pool) đại diện đầy đủ 5 phân nhóm con ICRV: (a) IND FSTS sụt 7,7%→2,7% (schema effect + Atmanirbhar Bharat); (b) Fiji website 74,8% > Singapore 66,1%; **Kiribati đối lập với website 18,7%, FSTS 1,03%**; (c) Vùng Vịnh + Brunei resource-driven Advanced confirmed; (d) R&D schema-induced overestimation cảnh báo.
+**(viii) Đợt khảo sát 2025 — mẫu đơn năm lớn nhất** *(NEW D2)*. **14 nước × 16.979 doanh nghiệp**: (a) IND FSTS sụt 5 đpt (schema + Atmanirbhar Bharat); (b) Fiji website 74,8% > Singapore 66,1%; **Kiribati đối lập với website 18,7%, FSTS 1,03%**; (c) Vùng Vịnh+Brunei resource-driven Advanced confirmed; (d) R&D schema-induced overestimation cảnh báo.
 
-**(ix) Khung phân tích cấp ngành (industry-level) chưa được thực hiện ở CĐ1** *(NEW D3, §4.8)*. 9 ngành ISIC Rev. 4: Manufacturing-only subsample (n≈50.000), ICT exclusion test cho DAI âm Advanced, Construction subsample test Vùng Vịnh, Tourism/Hotels separation cho SIDS. 5 giả thuyết I1-I5 đặt cho CĐ2.
+**(ix) Khung phân tích cấp ngành (industry-level)** *(NEW D3, §4.8)*. 9 ngành ISIC Rev. 4: Manufacturing-only subsample, ICT exclusion test, Construction subsample test Vùng Vịnh, Tourism/Hotels separation cho SIDS. 5 giả thuyết I1-I5.
 
-**(x) Pipeline tái lập được cho 4 thế hệ khung dữ liệu WBES**. Pipeline 5 bước Python (`wbes/01_inventory.py` → `02_harmonize.py` → `03_describe.py` → `merge_macro_with_pool.py` → `fetch_macro_indicators.py`); xử lý 4 thay đổi khung dữ liệu lớn. Tất cả Bảng 4.1–4.10 và 5.1, 6.1, Phụ lục A đều tái tạo được. **Gói tái lập (replication package)** mở cho cộng đồng tiếng Việt.
+**(x) Pipeline tái lập được cho 4 thế hệ schema WBES**. Pipeline 5 bước Python; tất cả Bảng 4.1–4.10, 5.1, 6.1, Phụ lục A đều tái tạo được. **Gói tái lập (replication package)** mở.
 
 **Hàm ý cho CĐ2 và luận án**:
 
-(a) **Hệ giả thuyết H1–H6** đã có đủ bằng chứng hai biến: H1 phi tuyến; H2 TCI điều tiết; H3 DAI có điều kiện; H4 phân nhóm con thể chế (5+8 phân nhóm con); H5 cụm tài nguyên; H6 chi phí buộc phải quốc tế hóa (**7 SIDS gồm Kiribati extreme**).
+(a) **Hệ giả thuyết H1–H6**: H1 phi tuyến; H2 TCI điều tiết; H3 DAI có điều kiện; H4 phân nhóm con thể chế (5+8 phân nhóm con); H5 cụm tài nguyên; H6 chi phí buộc phải quốc tế hóa (**7 SIDS gồm Kiribati extreme**).
 
-(b) **8 phân nhóm con với hiệu ứng cố định** cho CĐ2 (3 Emerging sub-groups + 2 Advanced + Upper-middle + Frontier + SIDS).
+(b) **8 phân nhóm con với hiệu ứng cố định** cho CĐ2.
 
-(c) **Hai đặc tả mô hình kiểm định vững**: Đặc tả 1 — phạm vi đầy đủ (n=101.185, DAI/TCI đơn thành phần); Đặc tả 2 — 2018-2025 (n≈50.000, DAI/TCI 5 thành phần).
+(c) **Hai đặc tả mô hình kiểm định vững**: Đặc tả 1 — phạm vi đầy đủ (n=101.185); Đặc tả 2 — 2018-2025 (n≈50.000, DAI/TCI 5 thành phần).
 
 (d) **Industry FE + 5 kiểm định vững mẫu con** *(NEW D3)*.
 
@@ -141,7 +158,7 @@ Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.1
 
 ### 4.8 Khung phân tích cấp ngành (industry-level) — kế hoạch CĐ2
 
-> **Mới ở v2.9 (D3)**: Khung dữ liệu (schema) WBES phân loại theo `a3a` (mã ngành) và `a4a` (mã ISIC 4 chữ số). CĐ1 phân tích ở cấp phân nhóm con / quốc gia; phân tích cấp ngành dành cho CĐ2 và Giai đoạn 2 hoàn thiện CĐ1 (tháng 7/2026).
+> **Mới ở v2.9 (D3)**: Khung dữ liệu (schema) WBES phân loại theo `a3a` (mã ngành) và `a4a` (mã ISIC 4 chữ số).
 
 **Bảng 4.8.1**. *Khung phân loại 9 ngành ISIC Rev. 4 cho nhóm dữ liệu WBES.*
 
@@ -157,13 +174,13 @@ Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.1
 | Finance | K (64–66) | Có quy chế, xuyên biên giới | FDI cao; website ~100% |
 | Khác | A, D, L | Đa dạng | Hỗn hợp |
 
-**5 giả thuyết cấp ngành cho CĐ2**: I1 Manufacturing FSTS dominance; I2 ICT digital-native (DAI−0,129 artifact?); I3 Tourism drive FDI ở SIDS; I4 Mining drive resource cluster (spillover); I5 Construction dominate Vùng Vịnh (rentier vs Construction artifact).
+**5 giả thuyết cấp ngành cho CĐ2**: I1 Manufacturing FSTS dominance; I2 ICT digital-native; I3 Tourism drive FDI ở SIDS; I4 Mining drive resource cluster; I5 Construction dominate Vùng Vịnh.
 
-**5 hàm ý phương pháp luận cho CĐ2**: (a) Industry FE 9 ngành ISIC; (b) Manufacturing-only subsample robustness check; (c) Tourism/Hotels separation; (d) Construction subsample test Vùng Vịnh; (e) ICT exclusion test cho DAI Advanced.
+**5 hàm ý phương pháp luận**: (a) Industry FE 9 ngành; (b) Manufacturing-only subsample; (c) Tourism separation; (d) Construction subsample Vùng Vịnh; (e) ICT exclusion test cho DAI.
 
 ### 4.9 Phân nhóm con Emerging — phát hiện dị biệt nội bộ
 
-> **Mới ở v2.7 (D1)**: Phát hiện phương pháp luận thứ hai cho CĐ2 sau khi đã có phân nhóm con Advanced.
+> **Mới ở v2.7 (D1)**: Phát hiện phương pháp luận thứ hai cho CĐ2.
 
 **Bảng 4.9**. *Phân nhóm con Emerging — số liệu tổng hợp 2009–2025 (n=47.803).*
 
@@ -174,13 +191,13 @@ Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.1
 | Emerging — tài nguyên | MNG | 1.905 | **5,0** | 9,7 | 4,7 | 50,1 | 20,8 | 15,4 | 1,16 |
 | **Tổng Emerging** | 7 nước | **47.803** | 8,6 | 15,5 | 4,7 | 49,2 | 16,4 | 24,9 | 1,24 |
 
-Năm phát hiện: (1) FSTS phân tầng 5,0%-7,2%-13,2% bị che giấu; (2) FDI chênh lệch 6 lần ASEAN-3 vs Nam Á+Tây Á; (3) TCI ngược dấu — FDI-induced vs autonomous learning; (4) Mongolia boundary case; (5) sd log 1,53 vs 1,16 — two-tier (Hsieh & Klenow, 2009).
+Năm phát hiện: (1) FSTS phân tầng 5,0%-7,2%-13,2% bị che giấu; (2) FDI chênh lệch 6× ASEAN-3 vs Nam Á+Tây Á; (3) TCI ngược dấu; (4) Mongolia boundary case; (5) sd log 1,53 vs 1,16 — two-tier (Hsieh & Klenow, 2009).
 
 ### 4.10 Phân tích sâu đợt khảo sát 2025
 
-> **Mới ở v2.8 (D2)**: Đợt 2025 chiếm 16.979 doanh nghiệp (16,8% pool — cập nhật v3.1 với Kiribati 2025).
+> **Mới ở v2.8 (D2)**: Đợt 2025 chiếm 16.979 doanh nghiệp (16,8% pool — v3.1 với Kiribati 2025).
 
-**Bảng 4.10**. *14 quốc gia trong đợt 2025 (n=16.979 — cập nhật v3.1 với Kiribati 2025).*
+**Bảng 4.10**. *14 quốc gia trong đợt 2025 (n=16.979 — v3.1 với Kiribati 2025).*
 
 | Quốc gia | ISO3 | Phân nhóm con | n_firms | FSTS (%) | FDI (%) | R&D (%) | Website (%) | sd log |
 |---|---|---|---|---|---|---|---|---|
@@ -200,22 +217,21 @@ Năm phát hiện: (1) FSTS phân tầng 5,0%-7,2%-13,2% bị che giấu; (2) FD
 | **Kiribati (mới v3.1)²** | **KIR** | **SIDS** | **150** | **1,0** | **0,7** | **14,0** | **18,7** | **1,48** |
 | **Tổng 2025** | — | — | **16.979** | **3,8** | **2,9** | **5,4** | **44,2** | **0,90** |
 
-*Ghi chú: ¹Nepal 2025 — khung dữ liệu BREADY chưa thống nhất. ²Kiribati 2025: WBES Country Profile 2025 + phân tích `Kiribati-2025-full-data.dta`; Lower Middle Income; phụ thuộc viện trợ Australia/New Zealand ~30% GDP.*
+*Ghi chú: ¹Nepal 2025 — schema BREADY chưa thống nhất. ²Kiribati 2025: Lower Middle Income; viện trợ AUS/NZ ~30% GDP.*
 
-**Bảy phát hiện**: (1) IND FSTS sụt 5 đpt (schema effect); (2) THA "digital up, exports down"; (3) Fiji website 74,8% > Singapore (digital leapfrog); (4) Vùng Vịnh + Brunei resource-driven Advanced confirmed; (5) R&D schema-induced overestimation; (6) 2025 wave validation sample CĐ2; **(7) Kiribati extreme — FSTS 1,03%, FDI 0,7%, website 18,7%, ISO 1,3%, sd log 1,48 — đối lập với Fiji digital leapfrog. Bằng chứng dị biệt SIDS rõ rệt: "high-digital" (FJI, MDV) vs "isolated rural" (KIR) — CĐ2 cần tách 2 phân nhóm con SIDS.**
+**Bảy phát hiện**: (1) IND FSTS sụt 5 đpt (schema effect); (2) THA "digital up, exports down"; (3) Fiji website 74,8% > Singapore (digital leapfrog); (4) Vùng Vịnh + Brunei resource-driven Advanced confirmed; (5) R&D schema-induced overestimation; (6) 2025 wave validation sample CĐ2; **(7) Kiribati extreme — FSTS 1,03%, FDI 0,7%, website 18,7% — đối lập với Fiji digital leapfrog. Bằng chứng dị biệt SIDS rõ rệt: "high-digital" (FJI, MDV) vs "isolated rural" (KIR) — CĐ2 cần tách 2 phân nhóm con SIDS.**
 
-**Sáu hàm ý cho CĐ2**: (a) 2025 validation test bed; (b) Schema FE PostBREADY2024; (c) Advanced sub-grouping test trên 11 quốc gia; (d) SIDS digital leapfrog evidence cho H6; (e) Two-wave panel cho 6 nước; **(f) tách phân nhóm con SIDS — "high-digital" vs "isolated" — mở rộng 8 → 9 phân nhóm con**.
-
----
-
-*Tiếp tục ở Phần 3 (Chương 5–7 + TLTK) trong file `thesis/16_cd1_part3_cases_conclusion_vi.md`.*
-
-**Chương 4 nay HOÀN THIỆN với 10 mục (4.1–4.10)** — sẵn sàng trình HD TS. Nguyễn Minh Cảnh duyệt cùng Chương 5–7 (file 16).
+**Sáu hàm ý cho CĐ2**: (a) 2025 validation test bed; (b) Schema FE PostBREADY2024; (c) Advanced sub-grouping test 11 quốc gia; (d) SIDS digital leapfrog evidence cho H6; (e) Two-wave panel cho 6 nước; **(f) tách phân nhóm con SIDS — "high-digital" vs "isolated" — mở rộng 8 → 9 phân nhóm con**.
 
 ---
 
-*Phiên bản 3.0 (06/05/2026) — Biên tập tiếng Việt §4.1–4.10. NCS: Đỗ Thùy Hương. HD: TS. Nguyễn Minh Cảnh.*
+*Tiếp tục ở Phần 3 trong file `thesis/16_cd1_part3_cases_conclusion_vi.md`.*
 
-*Phiên bản 3.1c (06/05/2026 — QW5) — Bổ sung Kiribati 2025 vào nhóm SIDS.*
+**Chương 4 nay HOÀN THIỆN với 10 mục (4.1–4.10) + 6 hình (4.0, 4.1.1, 4.2, 4.4, 4.6, 4.7) — sẵn sàng trình HD duyệt.**
 
-*Phiên bản 3.1d-fix (06/05/2026) — Bổ sung markdown image references: Hình 4.1.1 ở §4.1 + Hình 4.2 ở §4.2. Khôi phục full content §4.7-4.10 đã bị rút gọn nhầm trong commit `36ecd13`. NCS chạy `thesis/figures/generate_figures.py` (commit `ff977f8`) để materialize 5 PNG/SVG.*
+---
+
+*Phiên bản 3.0 (06/05/2026) — Biên tập tiếng Việt §4.1–4.10.*
+*Phiên bản 3.1c (06/05/2026 — QW5) — Bổ sung Kiribati 2025.*
+*Phiên bản 3.1d-fix (06/05/2026) — Bổ sung Hình 4.1.1 (§4.1) + Hình 4.2 (§4.2) + khôi phục full content §4.7-4.10.*
+*Phiên bản 3.1e (06/05/2026) — Bổ sung 4 markdown image refs mới: Hình 4.0 (§4.1), Hình 4.4 (§4.6), Hình 4.6 (§4.5), Hình 4.7 (§4.6). Tổng **6 hình embedded** trong file 15. Đáp ứng review report B.2.*
