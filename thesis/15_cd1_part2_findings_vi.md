@@ -10,6 +10,7 @@
 > **Phiên bản 3.1e (06/05/2026)**: Bổ sung 4 markdown image references mới: Hình 4.0 (pool by year, §4.1), Hình 4.4 (slope chart, §4.6), Hình 4.6 (SME composition, §4.5), Hình 4.7 (spider chart, §4.6). Tổng 6 hình embedded trong file 15.
 > **Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration)**: §4.8 industry framework strengthening — (a) Bảng 4.8.1 thêm cột "Dynamism profile (Kafouros 2023)" phân loại 9 ngành theo technological vs market dynamism; (b) thêm đoạn lý giải sau bảng về Kafouros et al. (2023) industry × institutional quality interaction; (c) mở rộng 5 → 6 hàm ý phương pháp luận với hàm ý (f) test interaction term tech_dynamism × institutional_quality như robustness check thứ 7 cho CĐ2 H7 mới.
 > **Phiên bản 3.5 (07/05/2026 — Phase 2 NotebookLM Đợt 1 / HĐ1: Tier-1 Digital Presence rebrand)**: §4.4 thêm Sub-section §4.4.5 ICT exclusion test (promoted from §4.8 I2 lên thân Chương 4) + đoạn về Tier-1 Digital Presence rebrand cho Spec 1; §4.7 mục (vi) cập nhật framing Tier-1 saturated vs Tier-2 transformation; §4.10 mục (b) Schema FE PostBREADY2024 enhanced với anchor model concept + hàm ý (g) panel hậu đại dịch độc lập. Đáp ứng NotebookLM podcast 06/05/2026 *Bẫy đo lường số hóa Châu Á*.
+> **Phiên bản 3.7 (07/05/2026 — Phase 2 NotebookLM Đợt 3 / HĐ3: Cô lập đứt gãy schema BREADY 2025)**: Thêm **§4.11 Cô lập đứt gãy schema BREADY 2025 (NEW)** — chi tiết hóa 3 đề xuất phương pháp luận từ NotebookLM HĐ3: (3a) biến giả `Post_BREADY_2024` cho mọi spec tổng gộp; (3b) mô hình neo (anchor model) — chạy hồi quy với data ≤2024 khóa hệ số rồi re-run với 2025; (3c) tách 2025 thành "Panel hậu đại dịch độc lập" như tập mẫu xác thực kỷ nguyên hậu COVID + AI. Đáp ứng NotebookLM podcast HĐ3 toàn diện.
 
 ---
 
@@ -247,7 +248,60 @@ Năm phát hiện: (1) FSTS phân tầng 5,0%-7,2%-13,2% bị che giấu; (2) FD
 
 **Bảy phát hiện**: (1) IND FSTS sụt 5 đpt (schema effect); (2) THA "digital up, exports down"; (3) Fiji website 74,8% > Singapore (digital leapfrog); (4) Vùng Vịnh + Brunei resource-driven Advanced confirmed; (5) R&D schema-induced overestimation; (6) 2025 wave validation sample CĐ2; **(7) Kiribati extreme — FSTS 1,03%, FDI 0,7%, website 18,7% — đối lập với Fiji digital leapfrog. Bằng chứng dị biệt SIDS rõ rệt: "high-digital" (FJI, MDV) vs "isolated rural" (KIR) — CĐ2 cần tách 2 phân nhóm con SIDS.**
 
-**Bảy hàm ý cho CĐ2** *(cập nhật v3.5 — Phase 2 NotebookLM HĐ1 + tiền đề HĐ3)*: (a) 2025 validation test bed; **(b) Schema FE PostBREADY2024 enhanced với anchor model**: chạy hồi quy với data chỉ đến 2024, **khóa hệ số**, sau đó re-run với data + 2025 — so sánh "cấu trúc bảng hỏi mới có làm đảo chiều ý nghĩa thống kê cốt lõi hay không" (tiền đề Phase 2 HĐ3); (c) Advanced sub-grouping test 11 quốc gia; (d) SIDS digital leapfrog evidence cho H6 — phân biệt **Tier-1** (website saturation, đã bão hòa) vs **Tier-2** (transformation, đang phát triển); (e) Two-wave panel cho 6 nước; (f) tách phân nhóm con SIDS — "high-digital" vs "isolated" — mở rộng 8 → 9 phân nhóm con; **(g) v3.5 NEW**: Tách 2025 thành **"Panel hậu đại dịch độc lập"** — đề xuất sub-section §4.11 mới hoặc mở rộng §4.10 để xử lý 2025 như **tập mẫu xác thực kỷ nguyên hậu COVID + AI** (kế hoạch chi tiết hóa trong Phase 2 HĐ3 commit P2.3).
+**Bảy hàm ý cho CĐ2** *(cập nhật v3.5 — Phase 2 NotebookLM HĐ1 + chi tiết hóa HĐ3 trong §4.11)*: (a) 2025 validation test bed; **(b) Schema FE PostBREADY2024 enhanced với anchor model** *(chi tiết §4.11 v3.7)*; (c) Advanced sub-grouping test 11 quốc gia; (d) SIDS digital leapfrog evidence cho H6 — phân biệt **Tier-1** (website saturation, đã bão hòa) vs **Tier-2** (transformation, đang phát triển); (e) Two-wave panel cho 6 nước; (f) tách phân nhóm con SIDS — "high-digital" vs "isolated" — mở rộng 8 → 9 phân nhóm con; (g) Tách 2025 thành **"Panel hậu đại dịch độc lập"** *(chi tiết §4.11 v3.7)*.
+
+### 4.11 Cô lập đứt gãy schema BREADY 2025 — 3 đề xuất phương pháp luận *(mới v3.7 — Phase 2 NotebookLM HĐ3)*
+
+Đợt 2025 (n=16.979 firms, **16,8% pool**) sử dụng schema mới BREADY khác bản hỏi cũ — gây cú sốc phi lý: IND FSTS rơi 7,7%→2,7% (xem §4.10), R&D nhiều nước tăng vọt do **hiệu ứng bảng hỏi (questionnaire effect)** chứ không phải thực tế. Theo NotebookLM (2026, *Bẫy đo lường số hóa Châu Á*): *"Đứt gãy schema BREADY 2025 đe dọa trực tiếp đến tính liên tục của phân tích chuỗi thời gian. Mô hình kiểm tra điểm uốn sẽ cho ra kết luận sai lệch hoàn toàn nếu không xử lý."* NCS đã có cảnh báo trong §4.10 (mục 5: R&D schema-induced overestimation) nhưng cần làm sâu hơn với 3 đề xuất phương pháp luận.
+
+#### 4.11.1 Đề xuất 3a — Biến giả `Post_BREADY_2024` trong mọi spec tổng gộp
+
+Khai báo biến giả `Post_BREADY_2024` = 1 cho mọi observation thuộc đợt khảo sát 2025+ (BREADY schema), = 0 cho 2009–2024 (PICS3 + Standardized + early BREADY 2018-2024). Biến giả này:
+
+- **Hấp thụ schema effect tĩnh**: lấy out mức trung bình của các thay đổi đo lường giữa 2 generation bảng hỏi (e.g., IND FSTS 7,7%→2,7% có thể một phần do BREADY questions hỏi rõ hơn về "doanh thu xuất khẩu trực tiếp" vs PICS3 hỏi tổng quát hơn).
+- **Cảnh báo từ NotebookLM**: *"Biến giả đâu phải cây đũa thần. Nó chỉ như miếng bọt biển hút tác động tĩnh, không sửa được phương sai."* Vì vậy cần đi cùng đề xuất 3b (anchor model) để kiểm tra robustness.
+- **Triển khai**: thêm `Post_BREADY_2024` vào Spec 1 (full pool, 101.185 firms) và Spec 2 (2018-2025, ~50.000 firms) cho CĐ2.
+
+#### 4.11.2 Đề xuất 3b — Mô hình neo (anchor model)
+
+Quy trình 3 bước:
+
+(i) Chạy hồi quy với data chỉ đến 2024 (n≈84.000 firms, 13 đợt khảo sát 2009-2024) → có **bộ hệ số "neo"** (anchor coefficients) cho FSTS, FSTS², TCI, DAI và các tương tác.
+
+(ii) **Khóa hệ số** từ bước (i). Trong R: `glmer(... offset = X1 * beta1_anchor + X2 * beta2_anchor, data=full_pool_with_2025)`.
+
+(iii) Re-run hồi quy với data đầy đủ 2009-2025 (n=101.185), so sánh:
+   - Coefficient stability test (Wald test, Chow test): hệ số FSTS, FSTS², TCI, DAI có thay đổi significantly khi thêm 2025 không?
+   - Likelihood ratio test giữa 2 mô hình: Δ AIC, Δ BIC.
+   - Coefficient ratio test: nếu `beta_2025 / beta_anchor > 1.5x` hoặc `< 0.67x` → schema effect significant.
+
+**Mục đích**: kiểm tra "cấu trúc bảng hỏi mới có làm đảo chiều ý nghĩa thống kê cốt lõi hay không". Đây là **robustness check thứ 6 cho CĐ2** (sau Manufacturing-only, ICT-excluded, Tourism-separated SIDS, Construction-tested Gulf, Mining-excluded resource).
+
+#### 4.11.3 Đề xuất 3c — Tách 2025 thành "Panel hậu đại dịch độc lập"
+
+Thay vì cố ép 2025 vào đường xu hướng lịch sử, dành riêng một sub-section trong CĐ2 (đề xuất §X.Y trong §6 mô hình) để xử lý 2025 như **tập mẫu xác thực cho kỷ nguyên hậu COVID + AI**. Câu hỏi nghiên cứu mới: *"Quy luật thể chế và U-curve giai đoạn 2009-2024 có còn hiệu lực trong 'trạng thái bình thường mới' (new normal) hậu COVID + AI bùng nổ?"*
+
+Tiến trình:
+- **Bước 1**: Chạy mô hình chính trên data 2009-2024 — báo cáo H1-H6 + H7 + Lin-Mehlum tests.
+- **Bước 2**: Test cùng mô hình trên data 2025 only (n=16.979) như **out-of-sample validation panel**. Ghi rõ "post-pandemic + AI era panel" (post-COVID 2020-2022 + AI surge 2023-2025).
+- **Bước 3**: Báo cáo:
+  - Hệ số nào giữ stability (validation passed)
+  - Hệ số nào thay đổi (validation failed → discuss as evidence của paradigm shift hậu COVID + AI)
+  - Effect size differences và policy implications.
+
+**Như NotebookLM nhận xét**: *"Biến rủi ro dữ liệu thành chương phân tích hướng tới tương lai cực kỳ giá trị."*
+
+#### 4.11.4 Liên kết với §6 (yếu tố giải thích) và §7.3 (hàm ý CĐ2)
+
+3 đề xuất 3a-3b-3c kết hợp tạo thành **hệ thống cô lập triple-defense** chống đứt gãy schema 2025:
+
+| Đề xuất | Tác dụng | Robustness check # | Liên kết |
+|---|---|---|---|
+| 3a Biến giả Post_BREADY_2024 | Hấp thụ schema effect tĩnh | (parametric correction) | Spec 1 + Spec 2 |
+| 3b Anchor model | Test stability hệ số | #6 (sau Mfg/ICT/Tourism/Gulf/Mining) | CĐ2 robustness section |
+| 3c Panel hậu đại dịch độc lập | Out-of-sample validation hậu COVID+AI | #7 panel test | CĐ2 §X.Y dedicated section |
+
+Cả 3 đều là tiền đề cho file 16 §7.3.4 hàm ý cho CĐ2 — robustness check section.
 
 ---
 
@@ -264,3 +318,5 @@ Năm phát hiện: (1) FSTS phân tầng 5,0%-7,2%-13,2% bị che giấu; (2) FD
 *Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration) — §4.8 industry framework strengthening: Bảng 4.8.1 thêm cột "Dynamism profile (Kafouros 2023)" + lý giải sau bảng + mở rộng 5 → 6 hàm ý phương pháp luận với hàm ý (f) test interaction term tech_dynamism × institutional_quality (Kafouros et al. 2023 replication châu Á).*
 
 *Phiên bản 3.5 (07/05/2026 — Phase 2 NotebookLM Đợt 1 / HĐ1 Tier-1 Digital Presence rebrand) — §4.4 thêm Sub-section §4.4.5 ICT exclusion test promoted từ §4.8 I2 lên thân Chương 4 + Tier-1 vs Tier-2 framing cho Spec 1/Spec 2; §4.7 mục (vi) cập nhật framing Tier-1 saturation vs Tier-2 transformation; §4.10 hàm ý CĐ2 mở rộng 6 → 7 với (b) Schema FE + anchor model concept và (g) panel hậu đại dịch độc lập. Đáp ứng NotebookLM podcast 06/05/2026 *Bẫy đo lường số hóa Châu Á*. Tiền đề cho Phase 2 HĐ3 (BREADY 2025 isolation) — sẽ được hoàn thiện trong commit P2.3.*
+
+*Phiên bản 3.7 (07/05/2026 — Phase 2 NotebookLM Đợt 3 / HĐ3 Cô lập đứt gãy schema BREADY 2025) — Thêm §4.11 NEW (Cô lập đứt gãy schema BREADY 2025) với 3 đề xuất phương pháp luận chi tiết: (3a) biến giả Post_BREADY_2024 hấp thụ schema effect tĩnh; (3b) mô hình neo (anchor model) test stability hệ số khi thêm 2025 — robustness check #6; (3c) tách 2025 thành "Panel hậu đại dịch độc lập" như out-of-sample validation kỷ nguyên hậu COVID+AI — robustness check #7. Hệ thống "triple-defense" chống đứt gãy schema. Liên kết file 16 §7.3.4.*
