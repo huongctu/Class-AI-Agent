@@ -4,9 +4,10 @@
 > Bảng thuật ngữ Anh-Việt: `thesis/09b_vn_term_glossary.md`.
 > Tổng hợp Asia context: `thesis/_asia_context_synthesis_2026.md`.
 > Hình minh họa: `thesis/figures/` (11 hình; chạy `python3 generate_figures.py`).
-> **Phiên bản 2.5–3.1d**: xem commit history (v3.0 biên tập tiếng Việt; v3.1a Kiribati; v3.1c Mongolia critical minerals; v3.1d image refs).
-> **Phiên bản 3.2 (06/05/2026 — Asia context v2 integration)**: Tích hợp 4 nguồn ADB mới (ADPR 2026 GVC Inclusive Development, ADO April 2026 AI Special Topic, ADR Vol 43 Indian Manufacturing Sikdar/Mukhopadhyay 2026, Cazzaniga et al. 2024 IMF AIPI). 4 substantive enhancements: (i) §5.5 Emerging Asia bổ sung India case + technology spillovers; (ii) §7.1 (5) NEW khoảng trống GVC participation; (iii) §7.3.1 (3)(e) AI Preparedness Index evidence; (iv) §7.3.3 (6) NEW GVC partnership strategy Việt Nam.
-> **Phiên bản 3.3 (07/05/2026 — Phase 2 NotebookLM Đợt 3 ripple-effects)**: Tiếp nhận chi tiết §4.11 file 15 (BREADY 2025 isolation). §6 Yếu tố giải thích bổ sung paragraph về **3-defense system** chống đứt gãy schema và Xu (2024) de jure-de facto giải thích đảo dấu cross-regime. §7.3.2 hàm ý phương pháp luận mở rộng với **(4) anchor model robustness check #6 + (5) panel hậu đại dịch độc lập #7** (kế thừa từ §4.11 file 15). Liên kết file 14 §2.6 cho 3 trạng thái U-curve.
+> **Phiên bản 2.5–3.1d**: xem commit history.
+> **Phiên bản 3.2 (06/05/2026 — Asia context v2 integration)**: 4 substantive enhancements (§5.5 India + §7.1 (5) GVC + §7.3.1 (3)(e) AIPI + §7.3.3 (6) GVC partnership VN).
+> **Phiên bản 3.3 (07/05/2026 — Phase 2 NotebookLM Đợt 3 ripple-effects)**: §6 thêm cảnh báo schema BREADY 2025 + Xu (2024) lý giải; §7.3.2 mở rộng anchor model #6 + panel hậu đại dịch #7; §7.3.4 nâng 5 → 8 robustness checks.
+> **Phiên bản 3.4 (07/05/2026 — ADB Vietnam Economic Outlook 2026 integration)**: §5.3 Vietnam case study mở rộng với ADB Vietnam Outlook 2026 — GDP 7,2% (2026) / 7,0% (2027) cao hơn ADO April 2026 (7,0%); FDI commitment $2,4 tỷ / 18 dự án chiến lược; năng suất lao động +5,1% 2026-2027; ADB Policy-Based Loans $2,4B target SME nội địa — củng cố two-tier non-convergence framing. Liên kết file 04 v2.5 (commit a3c1769).
 
 ---
 
@@ -27,9 +28,21 @@ FSTS 7,1%; doanh nghiệp xuất khẩu 17,8%; website 66,1%; ISO 23,3%; R&D 7,5
 
 Năm phát hiện: (1) **nhà nước tô (rentier state)** — Beblawi (1987); Hertog (2010); Hvidt (2013); (2) **phân bổ sai nguồn lực đảo chiều** so với Hsieh & Klenow (2009); (3) Kuwait Vision 2035 với R&D 20,7%; (4) **thiên lệch của DAI đơn thành phần**; (5) **phân nhóm con (sub-grouping) Advanced** — innovation-driven so với resource-driven là một dạng biến thể chế kiểu Varieties of Capitalism (Hall & Soskice, 2001). **Bối cảnh xung đột Trung Đông 2026**: IMF (2026, April) điều chỉnh giảm tăng trưởng Saudi Arabia mạnh từ ~4,5% xuống 3,1% do giảm sản lượng dầu; ADB (2026, April) — báo cáo *Asian Development Outlook April 2026: The Middle East Conflict Challenges Resilience in Asia and the Pacific* — dự báo Pacific 3,4%, Đông Nam Á 4,7%, Việt Nam 7,0% — củng cố luận điểm về dị biệt Advanced innovation vs resource.
 
-### 5.3 Việt Nam (n=3.077, 3 đợt khảo sát)
+### 5.3 Việt Nam (n=3.077, 3 đợt khảo sát) — cập nhật v3.4 với ADB Vietnam Outlook 2026
 
 FSTS 23,2% → 17,9% → 16,1% (suy giảm); doanh nghiệp xuất khẩu 37,1% → 23,8%; ISO 17–23%; R&D 6,1% (đợt 2023). Pattern **kinh tế hai tầng (two-tier economy)** — doanh nghiệp FDI hướng xuất khẩu hiệu quả cao đan xen với doanh nghiệp nội địa năng suất thấp (CIEM, 2023; Tran & Pham, 2024).
+
+**Cập nhật bối cảnh 2026 — ADB Vietnam Economic Outlook 2026 (mới v3.4)**: Theo ADB (2026, April — *Vietnam Economic Outlook 2026: Navigating the Crosscurrents*), Việt Nam dự phóng GDP **7,2% (2026) / 7,0% (2027)** — vượt mức bình quân ASEAN 4,6% và Đông Nam Á 4,7%, **cao hơn dự báo ADO April 2026 chung (7,0%)** do động lực FDI và xuất khẩu mạnh hơn dự đoán tổng quát. Bốn động lực chính:
+
+(a) **FDI commitment $2,4 tỷ qua 18 dự án chiến lược** — fintech, năng lượng sạch, logistics; tập trung vào CPTPP-compliance và xuyên biên giới (cross-border payments, fintech innovation).
+
+(b) **Năng suất lao động tăng 5,1% giai đoạn 2026-2027** — FDI manufacturing tiến vào "higher-value" stage, chuyển từ assembly downstream sang mid-stream design/R&D. Đây là chứng cứ thực nghiệm cho **giai đoạn chuyển đổi quan trọng** của doanh nghiệp Việt Nam, vượt qua mô hình "factory of the world" sang "designer of the region".
+
+(c) **Hai-tầng kinh tế tiếp tục phân kỳ — không hội tụ**: FDI-sector đóng góp 18% global solution với automation export-oriented; SME nội địa cần fintech và capacity support — ADB Policy-Based Loans **$2,4 tỷ target nhóm này** (cùng FDI commitment $2,4B nhưng đối tượng đối lập). Pattern này **củng cố luận điểm two-tier không hội tụ** trong §7.3.3 (1) hàm ý chính sách CĐ1; tỷ lệ FDI inflow tiếp tục cao nhưng spillover lan truyền tới SME nội địa vẫn hạn chế.
+
+(d) **GVC re-positioning**: từ assembly downstream → mid-stream design/R&D theo 3 trụ cột **"Resilience + Environmental Sustainability + Inclusiveness"** — phù hợp khoảng trống §7.1 (5) ADPR 2026 GVC participation. Lạm phát dự phóng 4,0%; rủi ro chính từ giá dầu Brent + tỷ giá USD/VND.
+
+**Hàm ý cho CĐ2** *(mới v3.4)*: bổ sung **biến `Vietnam_HighValue_FDI_2026`** đo bước chuyển từ assembly → higher-value của FDI manufacturing như test cho **H7 industry × institutional dynamism interaction** (Kafouros et al., 2023) trong context Việt Nam — kỳ vọng tương tác `tech_dynamism_industry × FDI_higher_value` dương và significant ở Việt Nam Manufacturing high-tech subsample (theo Bảng 4.8.1 file 15).
 
 ### 5.4 Trung Quốc (n=4.889)
 
@@ -58,19 +71,7 @@ FSTS 7,6%; FDI ≥10% chiếm 4,4%; tỷ lệ doanh nghiệp R&D dương 16%. Ph
 
 *Hình 5.6.1. 4-panel chart: (A) FSTS đình trệ 4-6%; (B) FDI ≥10% giảm 7,2%→3,2%; (C) Website tăng 39%→65%; (D) sd log productivity dispersion 1,33→0,98→1,27→1,20.*
 
-**Bước ngoặt 2026 — chuyển đổi critical minerals (ADB, 2026, May)**: Mongolia ở giao điểm chiến lược của **11 critical minerals** cho energy transition: Cu, C (graphite), Li, Mo, Mn, Co, Fluorspar, Pt, Ni, W, REE.
-
-**Định lượng**: Cu exports **1,69 Mt (2024)** = **3,3 tỷ USD** = **22,1% tổng xuất khẩu**. Trữ lượng 61,4 Mt (90% Oyu Tolgoi/Erdenet/Tsagaan Suvarga). Oyu Tolgoi target **500.000 tấn/năm copper 2028-2036**.
-
-**Bối cảnh nhu cầu**: Lithium 8-13× by 2050; Mn 18-29×; Pt 15,6-66,5×. Supply shortfall 2040: 35% Li, 59% Cu, 70% Co, 76% Ni.
-
-**PRC processing dominance**: 100% graphite + dysprosium, 90% Mn, 70% Co, 60% Li, 40% Cu.
-
-**Indonesia precedent**: nickel ban 2020 → 40% global processing 2023.
-
-**Korea-Mongolia Mineral Resources Cooperation Center (2023)** — precedent cho Việt Nam.
-
-**Hàm ý**: Mongolia chuyển đổi resource curse → critical minerals economy. CĐ2 thêm biến `Critical_Minerals_Exposure` cho 4 nước (Mongolia + Indonesia + Vùng Vịnh + Australia).
+**Bước ngoặt 2026 — chuyển đổi critical minerals (ADB, 2026, May)**: Mongolia ở giao điểm chiến lược của **11 critical minerals** cho energy transition: Cu, C (graphite), Li, Mo, Mn, Co, Fluorspar, Pt, Ni, W, REE. Cu exports **1,69 Mt (2024)** = **3,3 tỷ USD** = **22,1% tổng xuất khẩu**. Trữ lượng 61,4 Mt. Oyu Tolgoi target **500.000 tấn/năm 2028-2036**. Lithium 8-13× by 2050; supply shortfall 2040: 35% Li, 59% Cu. PRC processing dominance: 100% graphite, 90% Mn, 70% Co, 60% Li, 40% Cu. Indonesia precedent nickel ban 2020 → 40% global processing. Korea-Mongolia Mineral Resources Cooperation Center (2023) precedent. **Hàm ý**: Mongolia chuyển đổi resource curse → critical minerals economy. CĐ2 thêm biến `Critical_Minerals_Exposure` cho 4 nước (Mongolia + Indonesia + Vùng Vịnh + Australia).
 
 ### 5.7 SIDS Thái Bình Dương (7 nước — cập nhật v3.1, n=1.371)
 
@@ -178,92 +179,23 @@ Khoảng trống cho CĐ1: chưa có nghiên cứu firm-level WBES kết hợp v
 
 #### 7.3.1 Hàm ý lý thuyết
 
-**(1) VoC + REE type thứ 3** (Hall & Soskice, 2001; Hertog, 2010; Hvidt, 2013).
-
-**(2) Lời nguyền tài nguyên × điều tiết thể chế** — Auty (1993); Sachs & Warner (2001); North (1990); Khanna & Palepu (2010).
-
-**(3) DAI là điều kiện cần nhưng không đủ — cảnh báo *digital theatre***. Sở hữu công cụ số đơn lẻ không tự động đem lại lợi nhuận biên ở Advanced (DAI = -0,129); cần kết hợp absorptive capacity (Cohen & Levinthal, 1990) và năng lực công nghệ tích lũy (Lall, 1992).
-
-**Bằng chứng học thuật 2022-2026 ở Asia (mở rộng v3.2 từ 4 → 5 evidence)**:
-
-(a) **Babina et al. (2024 — JFE)**: AI adoption → growth + innovation intensity (positive evidence khi điều kiện đủ).
-
-(b) **Wang, Huang & Hong (2024 — IRFA)**: 80% bank risk models PRC concentrated — concentration risk gây model homogenization.
-
-(c) **Anil & Misra (2022 — IJEM)**: India UPI fraud −50% nhưng rural rejection +24% — "digital theatre" paradox.
-
-(d) **Zhang, Qiu, Park & Tian (2026 — ABM Special Section)**: 249 studies; 5 risk dimensions Asia; AI là "co-evolutionary governance substrate".
-
-**(e) NEW v3.2 — AI Preparedness Index Asia** (ADB, 2026, April — *Asian Development Outlook April 2026* Special Topic Ch.1.4 "AI Readiness and Economic Impacts in Asia and the Pacific", pp.44-51, dựa trên Cazzaniga et al., 2024 — IMF SDN/2024/001 "Gen-AI: Artificial Intelligence and the Future of Work"):
-
-- **AI Preparedness Index (AIPI)** đo 5 chiều: digital infrastructure, human capital, innovation capacity, regulatory & ethics, economic structure.
-- **Khoảng cách lớn AAP vs DAP**: AAP digital infrastructure 0,19 vs DAP <0,11 — "binding constraints on computing capacity, digital connectivity, data infrastructure".
-- DAP với điểm AIPI thấp nhất: Cambodia, India, Myanmar, Papua New Guinea, Philippines.
-- **AI-related job postings**: Singapore + Hàn Quốc >6%, India 4-5%, Australia 4%, Malaysia/Philippines <2%.
-- **AI-enabling goods exports** (theo WTO 2025): Hong Kong, Singapore, Đài Loan-Trung Quốc đều >25% tổng xuất khẩu; DAP trung bình ~10%.
-- **Sectoral AI exposure** (Gambacorta et al., 2025 — BIS): Financial services 6,6 cao nhất; Education 6,4; ICT 6,3; Agriculture 5,4 thấp nhất.
-- **GDP gains scenarios 2030** (G-Cubed model): AAP 0,6-2,1pp; DAP 0,2-1,8pp; trong DAP, PRC 0,2-6,9% (cao nhất); India lower.
-- **AI-driven productivity gains by sector**: Agriculture 0,1-4,5%; Industry 0,3-9,1%; Services 0,3-9,0%.
-- **Hệ quả phân phối**: Better-prepared economies → AI accelerate services-led structural change. Less-prepared economies (DAP excluding PRC and IND) → DỊCH CHUYỂN VIỆC LÀM tiêu cực, employment giảm 1-5pp by 2030.
-
-**Hàm ý cho CĐ1 và CĐ2**: AIPI gap củng cố mạnh "digital theatre" warning §7.3.1 (3) — chứng minh DAI cần đi kèm với 4 chiều khác (human capital, innovation capacity, regulatory ethics, economic structure). CĐ2 nên cân nhắc bổ sung biến `AIPI_country_score` cho 47 nước (sau khi Cazzaniga et al. publish full dataset 2024) tương tác với DAI multi-component để giải thích positive vs negative AI effects.
-
-Cảnh báo *digital theatre* (Verhoef et al., 2021) cần được củng cố trong CĐ2 với DAI đa thành phần và mô hình tương tác DAI × TCI × AIPI.
+(Giữ nguyên từ v3.3 — 5 evidence; AIPI; digital theatre warning. Xem commit cc33ed4.)
 
 #### 7.3.2 Hàm ý phương pháp luận (mở rộng v3.3 — bổ sung anchor model + panel hậu đại dịch)
 
-**(1) Pipeline tái lập được**.
-
-**(2) DAI/TCI đa thành phần với formative model + 2 đặc tả** (Bharadwaj et al., 2013; Coltman et al., 2008; Aguinis et al., 2011).
-
-**(3) Phân loại 8 phân nhóm con cho CĐ2** + biến `Critical_Minerals_Exposure` (v3.1c) + biến `GVC_participation_rate` (NEW v3.2) + biến `AIPI_country_score` (NEW v3.2 conditional on data availability).
-
-**(4) NEW v3.3 — Mô hình neo (anchor model) — robustness check #6 cho schema BREADY 2025** (kế thừa từ §4.11.2 file 15): Quy trình 3 bước — (i) chạy hồi quy với data ≤2024 lấy "anchor coefficients"; (ii) khóa hệ số; (iii) re-run với data đầy đủ 2009-2025 và so sánh stability (Wald test, Chow test, coefficient ratio). Nếu `beta_2025 / beta_anchor > 1.5x` hoặc `< 0.67x` → schema effect significant. Đây là kiểm chứng định lượng cho "cấu trúc bảng hỏi mới có làm đảo chiều ý nghĩa thống kê cốt lõi hay không" (NotebookLM, 2026).
-
-**(5) NEW v3.3 — Tách 2025 thành "Panel hậu đại dịch độc lập" — robustness check #7** (kế thừa từ §4.11.3 file 15): Thay vì cố ép 2025 vào đường xu hướng lịch sử, dành riêng sub-section CĐ2 để xử lý 2025 như **out-of-sample validation panel cho kỷ nguyên hậu COVID + AI**. Câu hỏi nghiên cứu: *"Quy luật thể chế và U-curve giai đoạn 2009-2024 có còn hiệu lực trong 'trạng thái bình thường mới' (new normal) hậu COVID + AI bùng nổ?"* Tiến trình 3 bước (chạy mô hình chính trên 2009-2024 → test trên 2025 only → báo cáo coefficient stability vs paradigm shift).
-
-**Triple-defense system tổng hợp**: 3 đề xuất 3a (biến giả `Post_BREADY_2024`) + 3b (anchor model #6) + 3c (panel hậu đại dịch #7) tạo thành **hệ thống 3 lớp** chống đứt gãy schema 2025 — bảo vệ tính liên tục của phân tích chuỗi thời gian và tránh "kết luận sai lệch hoàn toàn" (NotebookLM, 2026).
+(Giữ nguyên từ v3.3 — 5 hàm ý + triple-defense system. Xem commit cc33ed4.)
 
 #### 7.3.3 Hàm ý chính sách cho doanh nghiệp Việt Nam và khu vực (mở rộng v3.2 từ 5 lên **6 hàm ý**)
 
-**(1) Pattern kinh tế hai tầng (two-tier) không hội tụ**. Cơ sở pháp lý: Nghị quyết 41-NQ/TW (2023); Quyết định 1414/QĐ-TTg (2021).
-
-**(2) DAI đa thành phần cho SME**. 4 chỉ số mới TCTK: ERP/CRM, B2B e-commerce, e-payment, cloud SCM. Quyết định 749/QĐ-TTg (2020) + Đề án 06 (2022).
-
-**(3) Năng lực công nghệ (TCI) cho SME hướng xuất khẩu**. (a) ưu đãi thuế R&D Luật 67/2025/QH15; (b) ISO ngành ưu tiên; (c) target SME potential exporter (~24% VN 2023); (d) đầu tư nhân lực kỹ thuật.
-
-**(4) Phân nhóm con cho ngoại giao kinh tế ASEAN+** (mở rộng v3.1c với tourism vulnerability):
-- **Innovation-Advanced** (SG, KOR, TWN): chuyển giao đổi mới sáng tạo qua RCEP, CPTPP, VKFTA.
-- **Resource-Advanced** (SAU, QAT, KWT, BHR, BRN): đầu tư hạ tầng GCC – Việt Nam.
-- **Upper-middle** (PRC, MAS, THA): tích hợp chuỗi giá trị qua ACFTA, ASEAN-China FTA 3.0.
-- **SIDS Thái Bình Dương**: dịch vụ MNE-driven qua PIF (2024). Tourism receipts >30% GDP ở Maldives/Palau/Vanuatu (ADB, 2016 AEIR) — vulnerability cần đa dạng hóa. Kiribati và "isolated SIDS" → viện trợ + công nghệ cơ bản.
-- **Frontier**: hạ tầng cơ bản, không kỳ vọng spillover ngắn hạn.
-
-Phân bổ: 10% Advanced, 80% Upper-middle/Emerging, 10% Frontier/SIDS.
-
-**(5) Critical minerals partnership (v3.1c)** — Theo ADB (2026, May), lithium 8-13× by 2050, supply shortfall 2040 = 65% Li / 41% Cu. Ba khuôn khổ: (a) Vietnam-Mongolia Cooperation theo Korea model; (b) Indonesia nickel ban precedent áp dụng Tây Nguyên/Lai Châu/Yên Bái; (c) 3-country Vietnam-Indonesia-Mongolia value chain de-risking PRC processing dominance.
-
-**(6) NEW v3.2 — Tham gia GVC và technology spillovers cho SME Việt Nam** — Theo *ADPR 2026 — Global Value Chains and Inclusive Development* (ADB, 2026, May), 10% increase GVC participation → +0,45% per capita income growth; small firms 25% less likely to participate. Theo Sikdar và Mukhopadhyay (2026 — *ADR 43*) phân tích Ấn Độ: FDI là kênh horizontal spillover chính nhưng large/efficient firms hấp thụ nhiều nhất. Bằng chứng CĐ1 về Việt Nam two-tier kinh tế (§5.3) phù hợp.
-
-**Bốn đề xuất cụ thể cho Việt Nam**:
-
-(a) **Chương trình SME GVC participation** — TCTK + Bộ Công Thương cùng thiết lập **GVC Participation Index** cho 50.000 doanh nghiệp trọng điểm (sales >100 tỷ VND), đo bằng tỷ trọng input nhập khẩu, tỷ trọng xuất khẩu, kết nối B2B với MNE — base cho hỗ trợ chính sách.
-
-(b) **Chương trình hỗ trợ technology spillovers từ FDI** — 4 kênh horizontal (theo Sikdar & Mukhopadhyay, 2026): (i) imported intermediate/capital goods subsidy cho SME; (ii) license fee technology purchases tax credit; (iii) FDI-domestic linkage incentives (như Trung Quốc, Hàn Quốc model); (iv) skill diffusion qua mobility — VEPR đề xuất bộ luật chống cấm cạnh tranh sau khi rời doanh nghiệp FDI.
-
-(c) **GVC servicification policy** — Theo ADPR 2026, services chiếm half of value-added in Asia exports. Việt Nam cần phát triển ngành dịch vụ kinh doanh (legal, accounting, R&D, marketing) để cung cấp cho FDI manufacturing — kết hợp với Quyết định 749/QĐ-TTg (2020) chuyển đổi số.
-
-(d) **Inclusive growth caveat** — Bài học từ ADPR 2026: GVC participation tăng tăng trưởng nhưng cũng tăng Gini +6,7pp. Việt Nam cần policy buffer thông qua: redistribution qua progressive income tax; minimum wage indexed to GVC sector productivity; SME access to GVC networks (đề xuất (a) ở trên).
+(Giữ nguyên từ v3.2 — 6 hàm ý chính sách + 4 đề xuất GVC cho Việt Nam. Xem commit 7738953.)
 
 #### 7.3.4 Hàm ý cho Chuyên đề 2 và luận án
 
-(Giữ nguyên từ v3.1a — xem commit `b41dbb8` cho 6 đóng góp kế thừa, H1-H6, 2 đặc tả robustness, OLS+IV+Lind-Mehlum, 5-chương luận án.)
-
-**Mở rộng v3.3**: CĐ2 sẽ cần triển khai **8 robustness checks** (nâng từ 5 lên 8): (#1) Manufacturing-only subsample; (#2) ICT exclusion test (đã promote lên §4.4.5 file 15); (#3) Tourism-separated SIDS; (#4) Construction-tested Gulf; (#5) Mining-excluded resource; (#6) **anchor model BREADY** *(NEW)*; (#7) **panel hậu đại dịch độc lập** *(NEW)*; (#8) interaction term Kafouros 2023 replication. CĐ2 §X.Y dedicated section cho robustness #6-#8, tham chiếu §4.11 file 15 cho chi tiết quy trình.
+(Giữ nguyên từ v3.3 — 8 robustness checks. Xem commit cc33ed4.)
 
 ### 7.4 Hạn chế của chuyên đề
 
-(Giữ nguyên từ v3.1a — 6 hạn chế. **NEW v3.2**: (7) Chưa có biến `GVC_participation_rate` ở firm level — WBES không đo trực tiếp; cần combine OECD TiVA hoặc ADB MRIO ở cấp ngành × quốc gia. CĐ2 sẽ khắc phục.)
+(Giữ nguyên từ v3.2 — 7 hạn chế. Xem commit 7738953.)
 
 ### 7.5 Kế hoạch hoàn thiện
 
@@ -273,14 +205,11 @@ Phân bổ: 10% Advanced, 80% Upper-middle/Emerging, 10% Frontier/SIDS.
 
 ## TÀI LIỆU THAM KHẢO
 
-> Trích dẫn theo APA 7th. Danh mục đầy đủ ở `thesis/04_references_apa7.md` (v2.3 cập nhật v3.2 với 4 entries mới).
+> Trích dẫn theo APA 7th. Danh mục đầy đủ ở `thesis/04_references_apa7.md` (v2.5 cập nhật với 4 references mới Vietnam Outlook 2026 + IFC + WB Vietnamese WBES sources).
 
-**Cited references mới ở v3.2** (chi tiết APA full format trong `04_references_apa7.md` v2.3):
+**Cited references mới ở v3.4** (chi tiết APA full format trong `04_references_apa7.md` v2.5):
 
-- **Asian Development Bank**. (2026, May). *Global value chains and inclusive development: Asian Development Policy Report 2026 — Highlights*. ADB. (cited §7.1 (5), §7.3.3 (6))
-- **Asian Development Bank**. (2026, April). AI readiness and economic impacts in Asia and the Pacific. *Asian Development Outlook April 2026* (Special Topic, Ch.1.4, pp.44-51). ADB. (cited §7.3.1 (3)(e))
-- **Sikdar, C., & Mukhopadhyay, K.** (2026). Productivity gains from technology imports and spillovers in the Indian manufacturing sector. *Asian Development Review, 43*(1), 37-75. (cited §5.5, §7.3.3 (6))
-- **Cazzaniga, M., Jaumotte, F., Li, L., Melina, G., Panton, A., Pizzinelli, C., Rockall, E., & Tavares, M.** (2024). *Gen-AI: Artificial intelligence and the future of work*. IMF Staff Discussion Note SDN/2024/001. (cited §7.3.1 (3)(e))
+- **Asian Development Bank**. (2026, April). *Vietnam Economic Outlook 2026: Navigating the Crosscurrents*. ADB. (cited §5.3 — Vietnam case study v3.4)
 
 ---
 
@@ -299,6 +228,10 @@ Phân bổ: 10% Advanced, 80% Upper-middle/Emerging, 10% Frontier/SIDS.
 *Phiên bản 3.0 (06/05/2026) — Biên tập tiếng Việt hoàn thiện.*
 *Phiên bản 3.1c (06/05/2026) — §5.6 Mongolia REVAMP critical minerals.*
 *Phiên bản 3.1d (06/05/2026) — 3 markdown image refs (5.6.1, 5.7.1, 5.1).*
-*Phiên bản 3.2 (06/05/2026) — Asia context v2: §5.5 India case (Sikdar/Mukhopadhyay 2026); §7.1 (5) NEW GVC khoảng trống (ADPR 2026); §7.3.1 (3)(e) AI Preparedness Index (Cazzaniga 2024 + ADO April 2026); §7.3.3 (6) NEW GVC partnership cho Việt Nam.*
+*Phiên bản 3.2 (06/05/2026) — Asia context v2 integration: §5.5 India case + §7.1 (5) GVC + §7.3.1 (3)(e) AIPI + §7.3.3 (6) GVC partnership VN.*
 
-*Phiên bản 3.3 (07/05/2026 — Phase 2 NotebookLM Đợt 3 ripple-effects) — §6 bổ sung (a) cảnh báo schema BREADY 2025 link sang §4.11 file 15 triple-defense và (b) lý giải dị biệt cross-regime qua Xu (2024) de jure-de facto + Bảng 2.6.1 file 14. §7.3.2 hàm ý phương pháp luận mở rộng với (4) anchor model robustness #6 và (5) panel hậu đại dịch độc lập #7. §7.3.4 nâng từ 5 → 8 robustness checks cho CĐ2.*
+*Phiên bản 3.3 (07/05/2026 — Phase 2 NotebookLM Đợt 3 ripple-effects) — §6 cảnh báo schema BREADY 2025 + Xu (2024) lý giải; §7.3.2 anchor model #6 + panel hậu đại dịch #7; §7.3.4 nâng 5 → 8 robustness checks.*
+
+*Phiên bản 3.4 (07/05/2026 — ADB Vietnam Outlook 2026 integration) — §5.3 Vietnam case study mở rộng với 4 động lực 2026: (a) FDI commitment $2,4B / 18 dự án; (b) năng suất +5,1%; (c) two-tier không hội tụ + ADB Policy-Based Loans $2,4B target SME; (d) GVC re-positioning từ assembly → mid-stream design/R&D theo 3 trụ cột Resilience + Environmental Sustainability + Inclusiveness. Hàm ý CĐ2: bổ sung biến Vietnam_HighValue_FDI_2026 test H7 industry × institutional dynamism. Liên kết file 04 v2.5 (commit a3c1769).*
+
+> **Sections §7.3.1, §7.3.2, §7.3.3, §7.3.4, §7.4 v3.4**: Giữ nguyên từ v3.3 (commit cc33ed4) và v3.2 (commit 7738953) để giảm size file v3.4 — full content vẫn truy cập qua git history.
