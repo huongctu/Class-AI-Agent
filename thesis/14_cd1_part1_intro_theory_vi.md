@@ -6,7 +6,8 @@
 > Bảng thuật ngữ Anh-Việt: `thesis/09b_vn_term_glossary.md` · Chuẩn văn phong: `thesis/09_academic_writing_standards_vi.md`.
 > Hình minh họa: `thesis/figures/` (11 hình).
 > **Phiên bản 2.5–3.1b**: xem commit history (pool 101.035→101.185; biên tập tiếng Việt; lớp 6 Trung Đông; Kiribati 2025; WB n.d. fix).
-> **Phiên bản 3.3 (06/05/2026 — Scope clarification per HD direction Option A)**: **Minh bạch hóa scope thesis title "Châu Á"** so với pool 47 nền kinh tế (41 nước châu Á thuần + 7 SIDS Thái Bình Dương). NCS và HD chốt: **giữ SIDS Pacific trong pool với tư cách trường hợp biên mở rộng (boundary case extension)** theo khung "Asia and Pacific" của ADB/World Bank. KHÔNG đổi title (giữ Quyết định 4769/QĐ-ĐHCT 15/10/2024). Cập nhật: (i) Tóm tắt + ABSTRACT thêm scope caveat; (ii) §1.3 thêm phân biệt rõ scope chính vs boundary extension; (iii) §1.5 tách đóng góp scope chính (4) khỏi đóng góp boundary (1 — SIDS); (iv) Áp dụng nguyên tắc Aguinis et al. (2019) data section transparency + Bello & Kostova (2012) boundary condition explicit + Meyer et al. (2017) phenomenon-based scope.
+> **Phiên bản 3.3 (06/05/2026 — Scope clarification per HD direction Option A)**: Minh bạch hóa scope thesis title "Châu Á" so với pool 47 nền kinh tế. Áp dụng Aguinis et al. (2019) data section transparency + Bello & Kostova (2012) boundary condition + Meyer et al. (2017) phenomenon-based scope.
+> **Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration)**: Tích hợp 4 papers academic Đợt 2 vào §1.4 + §1.5: (i) **Xu (2024) GSJ** *Rethinking institutional arbitrage* — phân tách de jure exposure vs de facto enforcement → strengthen ICRV framework justification; (ii) **Kafouros et al. (2023) GSJ** *Institutional quality × industry dynamism* — 3 mechanisms (partnerships, legal, market exchange) làm theoretical lens cho phương pháp descriptive + open đường cho **CĐ2 H7** (industry × institutional dynamism interaction); (iii) **Mardones-Ibáñez (2025) SAGE Open** + **Al-Najjar et al. (2025) IJHRM** — boundary references cho CĐ2 H4 TMT moderation. Cũng thêm 5 entries Asia 2026 catch-up vào file 04 v2.3 (ADB Resolution 437, ADO Special Topic AI, ADPR 2026 GVC, Cazzaniga 2024 IMF AIPI, Sikdar & Mukhopadhyay 2026 ADR).
 
 ---
 
@@ -168,7 +169,9 @@ Cụ thể, chuyên đề kết hợp ba kỹ thuật: (a) thống kê mô tả 
 
 **Áp dụng nguyên tắc transparent data section của Aguinis et al. (2019 — *Journal of Management*)**: chuyên đề trình bày rõ (i) population definition (47 nền kinh tế Asia + Pacific với phân tách 41 vs 7); (ii) sampling procedure (WBES official sampling); (iii) sample size justification (pool 101.185); (iv) response rate (per WBES Country Profile each); (v) missing data handling (FSTS = d3b + d3c, winsorize 1/99); (vi) operationalization variables; (vii) reliability/validity (TCI = R&D + ISO multi-component aspirational, DAI = website single-component v3.0, multi-component v3.2); (viii) estimation method (descriptive only in CĐ1; OLS + IV in CĐ2); (ix) standard errors (n/a CĐ1); (x) robustness (cross-validate with VEFR baseline 17 nước); (xi) open science (replication package `wbes/` + `papers/` + `figures/`); (xii) data sharing (WBES public + processed pool documented in Phụ lục E).
 
-### 1.5 Đóng góp dự kiến của chuyên đề (cập nhật v3.3 — tách scope chính vs boundary extension)
+**Khung lý giải lý thuyết bổ sung — Kafouros et al. (2023 — *Global Strategy Journal*)** *(mới v3.4)*: Phương pháp descriptive được dẫn dắt bởi ba cơ chế (mechanisms) qua đó chất lượng thể chế tác động đến hiệu quả doanh nghiệp ở các nền kinh tế mới nổi: (a) **chi phí và mức độ dễ dàng nhận diện và thiết lập đối tác** (partnership identification) — giải thích vì sao DAI và mức độ tham gia website thay đổi mạnh xuyên các phân nhóm thể chế; (b) **hiệu lực của khung pháp lý và sở hữu trí tuệ** (legal framework effectiveness) — giải thích sự phân tán R&D, ISO và TCI; (c) **trao đổi giữa các doanh nghiệp** (interfirm market exchange) — giải thích phân tán năng suất nội bộ. Khung 3 cơ chế này là cơ sở để CĐ2 thiết lập các mô hình điều tiết (moderation) cho giả thuyết H7 mới — tương tác giữa chất lượng thể chế và động học ngành (industry × institutional dynamism interaction).
+
+### 1.5 Đóng góp dự kiến của chuyên đề (cập nhật v3.4 — tách scope chính vs boundary extension + tích hợp Đợt 2 academic)
 
 **Bốn đóng góp scope chính cho 41 nước châu Á**:
 
@@ -178,7 +181,7 @@ Cụ thể, chuyên đề kết hợp ba kỹ thuật: (a) thống kê mô tả 
 
 (3) **Nhảy vọt số (digital leapfrog)** ở Frontier và Emerging châu Á 2018–2025 — mở rộng pattern hiệu ứng lá chắn số (digital shield effect) từ 17 nước (Đỗ & Phan, 2026 — VEFR) lên 47 nước (xem §4.4 và §4.6).
 
-(4) **Bằng chứng cho khung lý thuyết phi tuyến + điều tiết đa tầng** — bốn lần đảo dấu xuyên phân nhóm con thể chế (xem §6 và Hình 6.1) là cơ sở thực tiễn cho **6 giả thuyết H1-H6** của Chuyên đề 2.
+(4) **Bằng chứng cho khung lý thuyết phi tuyến + điều tiết đa tầng** — bốn lần đảo dấu xuyên phân nhóm con thể chế (xem §6 và Hình 6.1) là cơ sở thực tiễn cho **6 giả thuyết H1-H6** của Chuyên đề 2. *(Cập nhật v3.4 — tích hợp Đợt 2 academic)*: Bốn lần đảo dấu này được lý giải sâu hơn qua hai hướng lý thuyết bổ sung. **Thứ nhất**, **Xu (2024 — *Global Strategy Journal*)** phân tách "exposure de jure" (luật trên giấy) vs "enforcement de facto" (thực thi thực tế) — gợi ý rằng các điểm chuyển dấu cross-regime không thể chỉ giải thích bằng điểm số WGI hay khoảng cách thể chế tổng hợp; cần phân biệt formal rules và implementation capacity, đặc biệt cho Việt Nam, Trung Quốc, Indonesia, Mongolia có gap de jure–de facto lớn (xem §6 và §7.3.3). **Thứ hai**, **Kafouros et al. (2023 — *Global Strategy Journal*)** đề xuất chất lượng thể chế tương tác hai chiều với động học ngành — khuếch đại tích cực ở ngành công nghệ-động (technological dynamism) và suy yếu ở ngành thị trường-động (market dynamism). Hai hướng này mở đường cho **giả thuyết H7 mới của CĐ2** — *industry × institutional dynamism interaction effect* — và cho biểu đồ Bảng 4.8.1 dynamism profile theo Kafouros (xem §4.8 file 15).
 
 **Một đóng góp boundary case mở rộng (SIDS Pacific)**:
 
@@ -216,4 +219,6 @@ Chuyên đề gồm bảy chương: Ch.1 Giới thiệu; Ch.2 Cơ sở lý luậ
 
 *Phiên bản 3.1b (06/05/2026 — QW2-4) — Lớp bối cảnh 6 Trung Đông + Kiribati 2025 + WB n.d. fix (commit cd4276a).*
 
-*Phiên bản 3.3 (06/05/2026 — Scope clarification per HD direction Option A) — Minh bạch hóa scope: 41 nước châu Á (scope chính) + 7 SIDS Pacific (boundary case extension). KHÔNG đổi title luận án (giữ Quyết định 4769/QĐ-ĐHCT). Áp dụng Aguinis et al. (2019) transparency + Bello & Kostova (2012) boundary condition + Meyer et al. (2017) phenomenon-based scope. Sections §2-§3 và Phụ lục H giữ nguyên (pointer commits trước) để giảm size; full content vẫn truy cập qua git history.*
+*Phiên bản 3.3 (06/05/2026 — Scope clarification per HD direction Option A) — Minh bạch hóa scope: 41 nước châu Á (scope chính) + 7 SIDS Pacific (boundary case extension). KHÔNG đổi title luận án (giữ Quyết định 4769/QĐ-ĐHCT). Áp dụng Aguinis et al. (2019) transparency + Bello & Kostova (2012) boundary condition + Meyer et al. (2017) phenomenon-based scope.*
+
+*Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration) — §1.4 thêm khung 3 cơ chế Kafouros et al. (2023); §1.5 contribution #4 mở rộng với Xu (2024) de jure-de facto + Kafouros (2023) industry × institution interaction → mở đường CĐ2 H7. File 04 cập nhật v2.3 với 9 entries mới (4 academic Đợt 2 + 5 Asia 2026 catch-up).*
