@@ -8,6 +8,7 @@
 > **Phiên bản 3.2 (06/05/2026 — Asia context v2 integration)**: 4 substantive enhancements (§5.5 India + §7.1 (5) GVC + §7.3.1 (3)(e) AIPI + §7.3.3 (6) GVC partnership VN).
 > **Phiên bản 3.3 (07/05/2026 — Phase 2 NotebookLM Đợt 3 ripple-effects)**: §6 thêm cảnh báo schema BREADY 2025 + Xu (2024) lý giải; §7.3.2 mở rộng anchor model #6 + panel hậu đại dịch #7; §7.3.4 nâng 5 → 8 robustness checks.
 > **Phiên bản 3.4 (07/05/2026 — ADB Vietnam Economic Outlook 2026 integration)**: §5.3 Vietnam case study mở rộng với ADB Vietnam Outlook 2026 — GDP 7,2% (2026) / 7,0% (2027) cao hơn ADO April 2026 (7,0%); FDI commitment $2,4 tỷ / 18 dự án chiến lược; năng suất lao động +5,1% 2026-2027; ADB Policy-Based Loans $2,4B target SME nội địa — củng cố two-tier non-convergence framing. Liên kết file 04 v2.5 (commit a3c1769).
+> **Phiên bản 3.5a (07/05/2026 cuối phiên — Phase 4 Đợt 3 sub-commit 3A)**: §5.7 PICs Pacific mở rộng với macro context (khu vực công chủ đạo do khu vực tư nhân tạo ít việc làm, 4 nguồn phụ thuộc kinh tế, thanh niên thất nghiệp cao, migration labor Aus/NZ seasonal worker programs là channel sinh tồn) — liên kết MIRAB model Bertram (2006) đã có Section N file 04. Cited glossary v1.2 #67 PICs (commit beb47d3).
 
 ---
 
@@ -80,6 +81,28 @@ FSTS 7,6%; FDI ≥10% chiếm 4,4%; tỷ lệ doanh nghiệp R&D dương 16%. Ph
 **Số liệu gộp 6 nước cũ**: FSTS 6,3%; FDI ≥10% **23,5%**; đổi mới sản phẩm **41,5%**; website **58,9%**. Pattern **thích nghi trong điều kiện ràng buộc (adaptation under constraint)**.
 
 **Kiribati 2025 — trường hợp biên CỰC ĐOAN nhất**: FSTS 1,03%, FDI 0,7%, website 18,7% (LOW vs Fiji 74,8%), ISO 1,3%, sd log 1,48, SME 93,3%. GDP/đầu người ~1.700 USD, viện trợ AUS/NZ ~30% GDP.
+
+#### 5.7.5 Bối cảnh kinh tế vĩ mô PICs Pacific — khu vực công chủ đạo + 4 nguồn phụ thuộc + migration labor *(mới v3.5a — Phase 4 Đợt 3 sub-commit 3A)*
+
+> **Nguồn**: Bertram (2006) MIRAB model — Section N file 04 v2.5; NotebookLM 06/05/2026 Pacific PICs analysis. Cross-cite glossary v1.2 #67 PICs (commit beb47d3).
+
+PICs (Pacific Island Countries — Quốc đảo Thái Bình Dương) có **cấu trúc kinh tế vĩ mô đặc thù** mà chỉ số WBES firm-level không phản ánh được toàn bộ — nhưng lại là điều kiện cấu trúc giải thích pattern boundary case của 7 nước này. Bối cảnh này được tổng hợp từ MIRAB model (Bertram, 2006) — 4 trụ cột kinh tế PICs:
+
+**(1) Khu vực công chủ đạo (public sector dominance)**: Vì khu vực tư nhân quá nhỏ và tạo ít việc làm, chính phủ + doanh nghiệp nhà nước thường chiếm 30-50% việc làm chính thức (đối lập với 10-15% ở Đông Á). Trong WBES n=1.371, đây là lý do tại sao **88,5% là SME** — không có firms cỡ lớn private sector. Hàm ý phương pháp: Khi đo "firm performance" qua WBES, thực ra ta đang đo "tier 2" của kinh tế hai tầng (private SMEs serving local market) — tier 1 (public sector + MNE in tourism) không nằm trong scope.
+
+**(2) Phụ thuộc 4 nguồn ngoại sinh (external dependence)**: PICs phụ thuộc vào (a) **nông nghiệp tự cấp** (subsistence agriculture) cho an ninh lương thực; (b) **viện trợ ODA** (~30% GDP cho Kiribati từ AUS/NZ; cao tương tự ở Tonga, Tuvalu); (c) **kiều hối** (remittances) — Tonga ~40% GDP, Samoa ~25% GDP; (d) **khai thác tài nguyên** (fishing licenses, mining). Bốn nguồn này **không phụ thuộc vào năng lực doanh nghiệp tư nhân** — giải thích tại sao FSTS thấp (6,3%) nhưng đời sống vẫn duy trì.
+
+**(3) Thanh niên thất nghiệp cao + dân số trẻ tăng nhanh**: Hơn 50% dân số PICs dưới 25 tuổi; thị trường lao động chính thức không đủ chỗ → unemployment thanh niên 15-30% (cao gấp 2-3 lần Đông Nam Á). Đây là áp lực xã hội + chính trị khiến (a) khu vực công phình to (employer of last resort) và (b) migration labor trở thành van xả áp.
+
+**(4) Migration labor như channel sinh tồn**: Australia *Pacific Labour Mobility Scheme* (PLMS) + New Zealand *Recognised Seasonal Employer* (RSE) Program tuyển dụng hàng năm 30-40 nghìn lao động PICs cho nông nghiệp + chế biến thực phẩm + xây dựng. Đây không chỉ là cơ hội việc làm mà là **nguồn kiều hối chính** — ví dụ Vanuatu RSE remittances chiếm 15-20% GDP. Không có migration labor, kinh tế PICs có nguy cơ collapse — đây là **van an toàn cấu trúc**, đồng thời là cơ chế brain drain nếu không quản lý tốt.
+
+**Liên kết với pattern PICs trong CĐ1**:
+
+- **Fiji website 74,8% > Singapore 66,1%**: phản ánh PICs phụ thuộc vào kết nối với Aus/NZ + remittance corridors → website là bắt buộc (gửi yêu cầu PLMS, nhận remittances qua online banking, kết nối tourism customers). KHÔNG phải digital transformation thuần túy.
+- **Kiribati website 18,7% (cực thấp)**: Kiribati ở vị trí ngoại biên — outer islands không có internet stable; PLMS chỉ accessible cho South Tarawa residents. Bằng chứng cho **isolated SIDS** sub-grouping.
+- **SIDS đổi mới sản phẩm 41,5% cao nhất**: pattern thích nghi trong ràng buộc — không phải Schumpeterian innovation mà là **bricolage** (Lévi-Strauss; Baker & Nelson, 2005) — tận dụng nguyên liệu sẵn có để sáng tạo sản phẩm phục vụ thị trường nhỏ.
+
+**Hàm ý cho CĐ2**: bổ sung 3 control variables PICs-specific: (i) `aid_share_GDP_pct` (ODA/GDP); (ii) `remittance_share_GDP_pct`; (iii) `seasonal_worker_outflow_pct` (PLMS+RSE participants/labor force). Ba biến này capture macro context không có trong WBES firm-level data — giúp specification đầy đủ cho boundary case 7 SIDS Pacific (Kiribati extreme + 6 nước cũ).
 
 ![Hình 5.7.1 — Dị biệt nội bộ SIDS Thái Bình Dương: Kiribati vs Fiji vs Singapore](figures/fig_5_7_sids_comparison.png)
 
@@ -234,4 +257,6 @@ Khoảng trống cho CĐ1: chưa có nghiên cứu firm-level WBES kết hợp v
 
 *Phiên bản 3.4 (07/05/2026 — ADB Vietnam Outlook 2026 integration) — §5.3 Vietnam case study mở rộng với 4 động lực 2026: (a) FDI commitment $2,4B / 18 dự án; (b) năng suất +5,1%; (c) two-tier không hội tụ + ADB Policy-Based Loans $2,4B target SME; (d) GVC re-positioning từ assembly → mid-stream design/R&D theo 3 trụ cột Resilience + Environmental Sustainability + Inclusiveness. Hàm ý CĐ2: bổ sung biến Vietnam_HighValue_FDI_2026 test H7 industry × institutional dynamism. Liên kết file 04 v2.5 (commit a3c1769).*
 
-> **Sections §7.3.1, §7.3.2, §7.3.3, §7.3.4, §7.4 v3.4**: Giữ nguyên từ v3.3 (commit cc33ed4) và v3.2 (commit 7738953) để giảm size file v3.4 — full content vẫn truy cập qua git history.
+*Phiên bản 3.5a (07/05/2026 cuối phiên — Phase 4 Đợt 3 sub-commit 3A) — §5.7 PICs Pacific mở rộng với **§5.7.5 "Bối cảnh kinh tế vĩ mô PICs Pacific" (NEW)**: 4 trụ cột MIRAB model — (1) khu vực công chủ đạo (30-50% việc làm chính thức); (2) phụ thuộc 4 nguồn ngoại sinh (nông nghiệp tự cấp + ODA 30% GDP + remittances 25-40% GDP + khai thác tài nguyên); (3) thanh niên thất nghiệp 15-30% + dân số <25 tuổi >50%; (4) migration labor PLMS Australia + RSE New Zealand như channel sinh tồn (Vanuatu RSE 15-20% GDP). Liên kết với pattern Fiji website 74,8% > Singapore (PLMS+remittance corridors), Kiribati 18,7% (outer islands no internet), SIDS innovation 41,5% (bricolage Baker & Nelson 2005). Hàm ý CĐ2: 3 control variables PICs-specific (`aid_share_GDP_pct`, `remittance_share_GDP_pct`, `seasonal_worker_outflow_pct`). Cited file 04 v2.5 Section N + glossary v1.2 #67 (commit beb47d3).*
+
+> **Sections §7.3.1, §7.3.2, §7.3.3, §7.3.4, §7.4 v3.4-3.5a**: Giữ nguyên từ v3.3 (commit cc33ed4) và v3.2 (commit 7738953) để giảm size file v3.5a — full content vẫn truy cập qua git history.
