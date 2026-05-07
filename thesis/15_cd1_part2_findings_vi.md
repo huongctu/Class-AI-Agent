@@ -11,8 +11,9 @@
 > **Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration)**: §4.8 industry framework strengthening — (a) Bảng 4.8.1 thêm cột "Dynamism profile (Kafouros 2023)" phân loại 9 ngành theo technological vs market dynamism; (b) thêm đoạn lý giải sau bảng về Kafouros et al. (2023) industry × institutional quality interaction; (c) mở rộng 5 → 6 hàm ý phương pháp luận với hàm ý (f) test interaction term tech_dynamism × institutional_quality như robustness check thứ 7 cho CĐ2 H7 mới.
 > **Phiên bản 3.5 (07/05/2026 — Phase 2 NotebookLM Đợt 1 / HĐ1: Tier-1 Digital Presence rebrand)**: §4.4 thêm Sub-section §4.4.5 ICT exclusion test (promoted from §4.8 I2 lên thân Chương 4) + đoạn về Tier-1 Digital Presence rebrand cho Spec 1; §4.7 mục (vi) cập nhật framing Tier-1 saturated vs Tier-2 transformation; §4.10 mục (b) Schema FE PostBREADY2024 enhanced với anchor model concept + hàm ý (g) panel hậu đại dịch độc lập. Đáp ứng NotebookLM podcast 06/05/2026 *Bẫy đo lường số hóa Châu Á*.
 > **Phiên bản 3.7 (07/05/2026 — Phase 2 NotebookLM Đợt 3 / HĐ3: Cô lập đứt gãy schema BREADY 2025)**: Thêm **§4.11 Cô lập đứt gãy schema BREADY 2025 (NEW)** — chi tiết hóa 3 đề xuất phương pháp luận từ NotebookLM HĐ3: (3a) biến giả `Post_BREADY_2024` cho mọi spec tổng gộp; (3b) mô hình neo (anchor model) — chạy hồi quy với data ≤2024 khóa hệ số rồi re-run với 2025; (3c) tách 2025 thành "Panel hậu đại dịch độc lập" như tập mẫu xác thực kỷ nguyên hậu COVID + AI. Đáp ứng NotebookLM podcast HĐ3 toàn diện.
-> **Phiên bản 3.8a (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2A)**: Thêm **§4.5.5 "4 rào cản hàng đầu Asia-Pacific WBES" (NEW)** sau Bảng 4.5 — mini-section liệt kê 4 rào cản (Tiếp cận tài chính / Lực lượng lao động thiếu kỹ năng / Cạnh tranh từ doanh nghiệp phi chính thức / Nguồn cung điện không đáng tin cậy) theo thuật ngữ chuẩn World Bank. Cited file 04 v2.5 (commit a3c1769) + glossary v1.2 Nhóm 7 #61 (commit beb47d3).
-> **Phiên bản 3.8b (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2B)**: Thêm **§4.4.0 "Khung 5 lĩnh vực chỉ số WBES" (NEW)** vào đầu §4.4 — thiết lập framework chính thức 5 lĩnh vực WBES (Quy định+Thuế / Tài chính+Tín dụng / Hạ tầng+Khí hậu / Thương mại+Cạnh tranh / Tham nhũng+Phi chính thức) theo World Bank Vietnamese sources. §4.4 hiện chỉ đo lường (3) Hạ tầng + (5) Innovation/Digital; (1)(2)(4) gợi ý cho CĐ2 deep-dive. Cited file 04 v2.5 + glossary v1.2 Nhóm 6+7.
+> **Phiên bản 3.8a (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2A)**: Thêm **§4.5.5 "4 rào cản hàng đầu Asia-Pacific WBES" (NEW)** sau Bảng 4.5.
+> **Phiên bản 3.8b (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2B)**: Thêm **§4.4.0 "Khung 5 lĩnh vực chỉ số WBES" (NEW)** vào đầu §4.4.
+> **Phiên bản 3.8c (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2C)**: Thêm **§4.7.5 "Phân biệt 3 thuật ngữ tham nhũng WBES — Bribery vs Graft" (NEW)** trước §4.8: định nghĩa rõ Bribery (Hối lộ) vs Graft (Tham ô); 3 chỉ số đo lường WBES — Bribery Incidence (Tỷ lệ hối lộ) / Bribery Depth (Độ sâu hối lộ) / Graft Index (Chỉ số tham ô). Cited file 04 v2.5 + glossary v1.2 Nhóm 6 #53-54 + Nhóm 7 #64-66.
 
 ---
 
@@ -86,7 +87,7 @@ WBES tổ chức các chỉ số doanh nghiệp thành **5 lĩnh vực chính th
 | (2) | **Tài chính + Tín dụng** | Hạn chế tín dụng (Credit constraint); Số hóa tài chính (Financial digitalization); Tỷ lệ DN có tài khoản ngân hàng; Tỷ lệ DN có khoản vay | (gợi ý CĐ2 — link §4.5.5 rào cản #1) | CĐ2 deep-dive — biến `credit_constraint_dummy` |
 | (3) | **Cơ sở hạ tầng + Khí hậu** | Quản lý năng lượng (Energy management); Mất điện (Power outages); Theo dõi CO2 (CO2 monitoring); Chất lượng đường giao thông | **§4.4 đo gián tiếp qua quy trình mới**; **§4.5.5 rào cản #4 đo trực tiếp** | CĐ2 — biến `power_outage_intensity` từ question c30 |
 | (4) | **Thương mại + Cạnh tranh** | Thời gian thông quan (Customs clearance time); Đối thủ phi chính thức; Xuất khẩu trực tiếp/gián tiếp; FSTS | (FSTS đã đo §4.3); cạnh tranh phi chính thức ở §4.5.5 #3 | CĐ2 — biến `customs_days` + `informal_competition` |
-| (5) | **Tham nhũng + Phi chính thức** | Hối lộ (Bribery): Bribery Incidence + Bribery Depth; Tham ô (Graft Index); Đối thủ không chính thức | (sẽ phân biệt rõ trong §4.7 sub-commit 2C v3.8c) | CĐ2 deep-dive — biến `bribery_incidence_pct` |
+| (5) | **Tham nhũng + Phi chính thức** | Hối lộ (Bribery): Bribery Incidence + Bribery Depth; Tham ô (Graft Index); Đối thủ không chính thức | (sẽ phân biệt rõ trong §4.7.5 v3.8c — NEW) | CĐ2 deep-dive — biến `bribery_incidence_pct` |
 
 **Phạm vi đo lường của §4.4** *(đổi mới sáng tạo + năng lực số)*: Chỉ tập trung vào **lĩnh vực (5) phần đổi mới + năng lực số** (gồm Sản phẩm mới, Quy trình mới, R&D, ISO, Website) và một phần **lĩnh vực (3) hạ tầng** (Website đại diện cho ICT infrastructure access). Các lĩnh vực (1) (2) (4) và phần lớn (5) tham nhũng được **đề cập gián tiếp** qua bảng kết quả mức độ chi tiết quốc gia (§4.10) hoặc rào cản hàng đầu (§4.5.5), nhưng chưa được phân tích sâu — đây là **scope mở rộng cho CĐ2** với 5 control variables mới (xem §4.5.5 hàm ý CĐ2).
 
@@ -217,6 +218,30 @@ Chương 4 cung cấp bức tranh thực trạng đa chiều dựa trên **101.1
 (d) **Industry FE + 5 kiểm định vững mẫu con** *(NEW D3)*.
 
 **Phạm vi không trình bày**: hồi quy đa biến (CĐ2); panel/IV identification (CĐ2); industry-level descriptive tables (Phase 2 7/2026); năng suất USD PPP (Phase 1 6/2026); resource dependence trực tiếp (Phase 1).
+
+#### 4.7.5 Phân biệt 3 thuật ngữ tham nhũng trong WBES — Bribery vs Graft *(mới v3.8c — Phase 4 Đợt 2 sub-commit 2C)*
+
+> **Nguồn chuẩn**: World Bank (n.d.). *Tài liệu tóm tắt: Các chỉ số khảo sát doanh nghiệp Enterprise Surveys* (file 04 v2.5 Section L). Cross-cite glossary v1.2 Nhóm 6 #53-54 (commit e9a73ae) + Nhóm 7 #64-66 (commit beb47d3).
+
+WBES đo lường tham nhũng qua **3 chỉ số riêng biệt** — phân biệt rõ giữa **hành vi chủ thể** (subject behavior — hối lộ vs tham ô) và **mức độ phổ biến** (incidence vs depth). Sự phân biệt này quan trọng cho phân tích chính sách: hối lộ và tham ô có nguyên nhân + giải pháp khác nhau, dù đôi khi gộp chung dưới label "tham nhũng" trong văn liệu chính sách Việt Nam.
+
+**Bảng 4.7.5**. *Phân biệt 3 chỉ số tham nhũng WBES — định nghĩa chính thức + cách đo + ngưỡng cảnh báo.*
+
+| # | Chỉ số (Tiếng Anh) | Tiếng Việt CHUẨN WB | Định nghĩa | Cách đo (công thức) | Ngưỡng cảnh báo |
+|---|---|---|---|---|---|
+| (a) | **Bribery** *(khái niệm gốc)* | **Hối lộ** | Hành vi đưa/nhận tiền/quà cho lợi thế trong giao dịch công (cấp phép, thanh tra, hoàn thuế, kết nối điện thoại/điện) | (đo qua 3 chỉ số dưới đây) | — |
+| (b) | **Graft** *(khái niệm gốc)* | **Tham ô** *(rộng hơn hối lộ)* | Biển thủ công quỹ + lạm dụng chức vụ trục lợi cá nhân | (đo qua chỉ số (b-1) dưới đây) | — |
+| (a-1) | **Bribery Incidence** | **Tỷ lệ hối lộ** | % DN gặp ít nhất 1 yêu cầu hối lộ trong 6 giao dịch công khảo sát | Tử số: # DN có ≥1 yêu cầu hối lộ; Mẫu: # DN trong khảo sát có giao dịch trong 6 dạng | >20% = báo động đỏ |
+| (a-2) | **Bribery Depth** | **Độ sâu hối lộ** | % giao dịch công có hối lộ trên tổng số giao dịch công của DN | Tử số: # giao dịch có hối lộ; Mẫu: tổng # giao dịch công | >15% = báo động đỏ |
+| (b-1) | **Graft Index** | **Chỉ số tham ô** | Tỷ lệ hối lộ trong 6 giao dịch (gồm kết nối điện thoại/điện) NHƯNG **loại trừ thanh tra thuế** | Tử số: như Bribery Incidence; Mẫu: 5 giao dịch (loại bỏ tax inspection vì thiên lệch khai thuế) | >10% = báo động đỏ |
+
+**Tại sao loại trừ thanh tra thuế khỏi Graft Index**: Doanh nghiệp khai báo "phải hối lộ thanh tra thuế" có thể bị thiên lệch (selection bias) vì những DN trốn thuế dễ thừa nhận (do đã có hành vi vi phạm), trong khi DN tuân thủ thuế ít gặp tình huống thanh tra cụ thể. Loại trừ tax inspection giúp Graft Index phản ánh **tham ô hệ thống** (systemic graft) thay vì hành vi cá biệt liên quan đến trốn thuế.
+
+**Hàm ý cho CĐ2 và luận án**:
+- **(1) CĐ1 v3.x** sẽ dùng "Hối lộ" (Bribery) và "Tham ô" (Graft) thay vì "tham nhũng" tổng quát khi cite số liệu cụ thể từ WBES. Khi nói chung về vấn đề thể chế hoặc chính sách quốc gia, vẫn có thể dùng "tham nhũng" như một tổng thể.
+- **(2) CĐ2 specification** sẽ có **3 biến phân biệt**: `bribery_incidence_pct` (a-1), `bribery_depth_pct` (a-2), `graft_index_pct` (b-1) từ WBES question j7a-j7f → kiểm tra hệ số khác nhau xuyên 8 phân nhóm con thể chế. Giả thuyết H8 (mới): tác động tham nhũng lên hiệu quả doanh nghiệp khác biệt giữa "extensive corruption" (Bribery Incidence cao, Depth thấp — tham nhũng phổ biến nhưng mỗi giao dịch ít) và "intensive corruption" (Incidence thấp, Depth cao — chỉ một số ít DN nhưng giao dịch nào cũng tham nhũng).
+- **(3) Liên kết với §4.5.5 rào cản #3** (cạnh tranh phi chính thức): DN phi chính thức tránh thuế nhưng cũng có thể bypass bribery do hoạt động ngoài hệ thống chính thức — tạo ra dilemma chính sách: formalization có thể tăng compliance nhưng cũng tăng exposure to bribery.
+- **(4) Liên kết với industry framework §4.8**: ngành Construction (high contract intensity) thường có Bribery Depth cao do từng giao dịch công lớn; ngành Mining/Tourism (high MNE share) có Bribery Incidence cao nhưng Depth thấp do MNE compliance pressure.
 
 ### 4.8 Khung phân tích cấp ngành (industry-level) — kế hoạch CĐ2
 
@@ -356,20 +381,17 @@ Cả 3 đều là tiền đề cho file 16 §7.3.4 hàm ý cho CĐ2 — robustne
 
 *Tiếp tục ở Phần 3 trong file `thesis/16_cd1_part3_cases_conclusion_vi.md`.*
 
-**Chương 4 nay HOÀN THIỆN với 11 mục (4.1–4.11) + 6 hình (4.0, 4.1.1, 4.2, 4.4, 4.6, 4.7) + §4.4.0 khung 5 lĩnh vực WBES (NEW v3.8b) + §4.5.5 mini-section 4 rào cản (NEW v3.8a) — sẵn sàng trình HD duyệt.**
+**Chương 4 nay HOÀN THIỆN với 11 mục (4.1–4.11) + 6 hình + §4.4.0 khung 5 lĩnh vực WBES + §4.5.5 mini-section 4 rào cản + §4.7.5 Bribery vs Graft (NEW v3.8a/b/c) — sẵn sàng trình HD duyệt.**
 
 ---
 
 *Phiên bản 3.0 (06/05/2026) — Biên tập tiếng Việt §4.1–4.10.*
 *Phiên bản 3.1c (06/05/2026 — QW5) — Bổ sung Kiribati 2025.*
 *Phiên bản 3.1d-fix (06/05/2026) — Bổ sung Hình 4.1.1 (§4.1) + Hình 4.2 (§4.2) + khôi phục full content §4.7-4.10.*
-*Phiên bản 3.1e (06/05/2026) — Bổ sung 4 markdown image refs mới: Hình 4.0 (§4.1), Hình 4.4 (§4.6), Hình 4.6 (§4.5), Hình 4.7 (§4.6). Tổng **6 hình embedded** trong file 15.*
-*Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration) — §4.8 industry framework strengthening: Bảng 4.8.1 thêm cột "Dynamism profile (Kafouros 2023)" + lý giải sau bảng + mở rộng 5 → 6 hàm ý phương pháp luận với hàm ý (f) test interaction term tech_dynamism × institutional_quality (Kafouros et al. 2023 replication châu Á).*
-
-*Phiên bản 3.5 (07/05/2026 — Phase 2 NotebookLM Đợt 1 / HĐ1 Tier-1 Digital Presence rebrand) — §4.4 thêm Sub-section §4.4.5 ICT exclusion test promoted từ §4.8 I2 lên thân Chương 4 + Tier-1 vs Tier-2 framing cho Spec 1/Spec 2; §4.7 mục (vi) cập nhật framing Tier-1 saturation vs Tier-2 transformation; §4.10 hàm ý CĐ2 mở rộng 6 → 7 với (b) Schema FE + anchor model concept và (g) panel hậu đại dịch độc lập. Đáp ứng NotebookLM podcast 06/05/2026 *Bẫy đo lường số hóa Châu Á*. Tiền đề cho Phase 2 HĐ3 (BREADY 2025 isolation) — sẽ được hoàn thiện trong commit P2.3.*
-
-*Phiên bản 3.7 (07/05/2026 — Phase 2 NotebookLM Đợt 3 / HĐ3 Cô lập đứt gãy schema BREADY 2025) — Thêm §4.11 NEW (Cô lập đứt gãy schema BREADY 2025) với 3 đề xuất phương pháp luận chi tiết: (3a) biến giả Post_BREADY_2024 hấp thụ schema effect tĩnh; (3b) mô hình neo (anchor model) test stability hệ số khi thêm 2025 — robustness check #6; (3c) tách 2025 thành "Panel hậu đại dịch độc lập" như out-of-sample validation kỷ nguyên hậu COVID+AI — robustness check #7. Hệ thống "triple-defense" chống đứt gãy schema. Liên kết file 16 §7.3.4.*
-
-*Phiên bản 3.8a (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2A) — Thêm **§4.5.5 "Bốn rào cản hàng đầu của khu vực tư nhân Á-Thái — bằng chứng từ WBES" (NEW)** sau Bảng 4.5: liệt kê 4 rào cản (Tiếp cận tài chính / Lực lượng lao động thiếu kỹ năng / Cạnh tranh từ doanh nghiệp phi chính thức / Nguồn cung điện không đáng tin cậy) theo thuật ngữ chuẩn World Bank + Bảng 4.5.5 phân tầng theo 4 phân nhóm con thể chế + 4 nhận xét phân tích + hàm ý CĐ2 (4 control variables mới). Cited file 04 v2.5 (commit a3c1769) Section L + glossary v1.2 Nhóm 7 #61 (commit beb47d3). Tiền đề cho sub-commit 2B (§4.4 5 lĩnh vực WBES) và 2C (§4.7 Bribery vs Graft).*
-
-*Phiên bản 3.8b (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2B) — Thêm **§4.4.0 "Khung 5 lĩnh vực chỉ số WBES — định vị §4.4 trong tổng thể" (NEW)** vào đầu §4.4 (trước Bảng 4.4): thiết lập framework chính thức 5 lĩnh vực WBES theo World Bank Vietnamese sources với Bảng 4.4.0 mapping (1) Quy định+Thuế / (2) Tài chính+Tín dụng / (3) Hạ tầng+Khí hậu / (4) Thương mại+Cạnh tranh / (5) Tham nhũng+Phi chính thức + định vị §CĐ1 đo trực tiếp + hàm ý CĐ2 deep-dive cho từng lĩnh vực. §4.4 hiện chỉ đo (3) Hạ tầng + (5) Innovation/Digital; (1)(2)(4) gợi ý CĐ2. Cited file 04 v2.5 + glossary v1.2 Nhóm 6+7. Tiền đề cho sub-commit 2C (§4.7 Bribery vs Graft phân biệt rõ).*
+*Phiên bản 3.1e (06/05/2026) — Bổ sung 4 markdown image refs mới.*
+*Phiên bản 3.4 (07/05/2026) — §4.8 Bảng 4.8.1 thêm cột Dynamism profile (Kafouros 2023) + lý giải + 6 hàm ý.*
+*Phiên bản 3.5 (07/05/2026 — Phase 2 NotebookLM HĐ1) — §4.4.5 Tier-1 Digital Presence rebrand + ICT exclusion test.*
+*Phiên bản 3.7 (07/05/2026 — Phase 2 NotebookLM HĐ3) — §4.11 Cô lập đứt gãy schema BREADY 2025 (3 đề xuất phương pháp luận).*
+*Phiên bản 3.8a (07/05/2026 — Phase 4 Đợt 2 sub-commit 2A) — §4.5.5 4 rào cản hàng đầu Á-Thái WBES.*
+*Phiên bản 3.8b (07/05/2026 — Phase 4 Đợt 2 sub-commit 2B) — §4.4.0 khung 5 lĩnh vực WBES.*
+*Phiên bản 3.8c (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2C) — Thêm **§4.7.5 "Phân biệt 3 thuật ngữ tham nhũng WBES — Bribery vs Graft" (NEW)** trước §4.8: Bảng 4.7.5 phân biệt Bribery (Hối lộ) vs Graft (Tham ô) + 3 chỉ số đo lường (Bribery Incidence / Bribery Depth / Graft Index) + định nghĩa + công thức + ngưỡng cảnh báo + lý do loại trừ thanh tra thuế khỏi Graft Index + 4 hàm ý CĐ2 (3 biến phân biệt cho specification + giả thuyết H8 mới + liên kết §4.5.5 informal competition + liên kết industry framework §4.8). Cited file 04 v2.5 (commit a3c1769) Section L + glossary v1.2 Nhóm 6 #53-54 (commit e9a73ae) + Nhóm 7 #64-66 (commit beb47d3). **Hoàn thành Đợt 2 Phase 4 — file 15 v3.8 với 3 sub-commits 2A/B/C all pushed.***
