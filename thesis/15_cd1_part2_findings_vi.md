@@ -11,6 +11,7 @@
 > **Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration)**: §4.8 industry framework strengthening — (a) Bảng 4.8.1 thêm cột "Dynamism profile (Kafouros 2023)" phân loại 9 ngành theo technological vs market dynamism; (b) thêm đoạn lý giải sau bảng về Kafouros et al. (2023) industry × institutional quality interaction; (c) mở rộng 5 → 6 hàm ý phương pháp luận với hàm ý (f) test interaction term tech_dynamism × institutional_quality như robustness check thứ 7 cho CĐ2 H7 mới.
 > **Phiên bản 3.5 (07/05/2026 — Phase 2 NotebookLM Đợt 1 / HĐ1: Tier-1 Digital Presence rebrand)**: §4.4 thêm Sub-section §4.4.5 ICT exclusion test (promoted from §4.8 I2 lên thân Chương 4) + đoạn về Tier-1 Digital Presence rebrand cho Spec 1; §4.7 mục (vi) cập nhật framing Tier-1 saturated vs Tier-2 transformation; §4.10 mục (b) Schema FE PostBREADY2024 enhanced với anchor model concept + hàm ý (g) panel hậu đại dịch độc lập. Đáp ứng NotebookLM podcast 06/05/2026 *Bẫy đo lường số hóa Châu Á*.
 > **Phiên bản 3.7 (07/05/2026 — Phase 2 NotebookLM Đợt 3 / HĐ3: Cô lập đứt gãy schema BREADY 2025)**: Thêm **§4.11 Cô lập đứt gãy schema BREADY 2025 (NEW)** — chi tiết hóa 3 đề xuất phương pháp luận từ NotebookLM HĐ3: (3a) biến giả `Post_BREADY_2024` cho mọi spec tổng gộp; (3b) mô hình neo (anchor model) — chạy hồi quy với data ≤2024 khóa hệ số rồi re-run với 2025; (3c) tách 2025 thành "Panel hậu đại dịch độc lập" như tập mẫu xác thực kỷ nguyên hậu COVID + AI. Đáp ứng NotebookLM podcast HĐ3 toàn diện.
+> **Phiên bản 3.8a (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2A)**: Thêm **§4.5.5 "4 rào cản hàng đầu Asia-Pacific WBES" (NEW)** sau Bảng 4.5 — mini-section liệt kê 4 rào cản (Tiếp cận tài chính / Lực lượng lao động thiếu kỹ năng / Cạnh tranh từ doanh nghiệp phi chính thức / Nguồn cung điện không đáng tin cậy) theo thuật ngữ chuẩn World Bank. Cited file 04 v2.5 (commit a3c1769) + glossary v1.2 Nhóm 7 #61 (commit beb47d3).
 
 ---
 
@@ -109,6 +110,33 @@ Tỷ lệ FDI có dạng chữ U với cực tiểu ở Emerging. SIDS cao nhấ
 ![Hình 4.6 — Phân phối quy mô doanh nghiệp theo phân nhóm con (n=101.185)](figures/fig_4_6_firm_size.png)
 
 *Hình 4.6. Stacked bar chart cho thấy SIDS Pacific có tỷ lệ SME cao nhất (88,5%), Frontier kế tiếp (85,0%), Advanced thấp nhất (79,1%). Pattern phù hợp với cấu trúc kinh tế khu vực — SIDS thị trường nhỏ phụ thuộc SME; Advanced có nhiều doanh nghiệp lớn. Tái lập: `generate_figures.py` function `fig_4_6_firm_size()`.*
+
+#### 4.5.5 Bốn rào cản hàng đầu của khu vực tư nhân Á-Thái — bằng chứng từ WBES *(mới v3.8a — Phase 4 Đợt 2 sub-commit 2A)*
+
+> **Nguồn chuẩn**: World Bank (n.d.). *Tài liệu tóm tắt: Các chỉ số khảo sát doanh nghiệp Enterprise Surveys* (file 04 v2.5 Section L). Cross-cite glossary v1.2 Nhóm 7 #61 (commit beb47d3).
+
+WBES chính thức xác định **4 rào cản hàng đầu (top 4 barriers)** đối với khu vực tư nhân ở các nền kinh tế đang phát triển và mới nổi Á-Thái Bình Dương — phù hợp với pool 101.185 doanh nghiệp của chuyên đề này. Bốn rào cản này tạo thành **khung phân tích cấu trúc** (structural framework) bổ sung cho 5 lĩnh vực chỉ số WBES được phân tích trong §4.4 (đổi mới + năng lực số) và §4.5 (cấu trúc doanh nghiệp). Bảng phân tầng theo 4 phân nhóm con thể chế:
+
+**Bảng 4.5.5**. *Bốn rào cản hàng đầu Asia-Pacific WBES — phân tầng theo phân nhóm con thể chế (cảm quan định tính + vào sâu chương trình CĐ2).*
+
+| # | Rào cản | Tiếng Anh chuẩn WB | Cường độ Frontier | Cường độ Emerging | Cường độ Upper-middle | Cường độ Advanced | Lý thuyết liên kết |
+|---|---|---|---|---|---|---|---|
+| (1) | **Tiếp cận tài chính** *(Hạn chế tín dụng)* | Credit constraint / Access to finance | Cao | Cao | Trung bình | Thấp | Aguinis et al. (2011) — formative composite measurement; Coltman et al. (2008) construct validation cho credit access |
+| (2) | **Lực lượng lao động thiếu kỹ năng** | Skilled labor shortage / Workforce skill gap | Cao | Trung bình | Trung bình | Thấp | Cohen & Levinthal (1990) — absorptive capacity; Kafouros et al. (2023) — institutional quality moderation tech-dynamism |
+| (3) | **Cạnh tranh từ doanh nghiệp phi chính thức** | Informal sector competition | Cao | Cao | Trung bình | Thấp | Khanna & Palepu (2010) — institutional voids; La Porta & Shleifer (2008, 2014) shadow economy share |
+| (4) | **Nguồn cung điện không đáng tin cậy** | Unreliable electricity supply / Power outages | Cao (đặc biệt SIDS, Frontier) | Trung bình | Thấp | Thấp | IFC PSD Blueprint operational resources pillar; Banerjee & Duflo (2014) infrastructure productivity links |
+
+**Bốn nhận xét** (cập nhật theo WBES Asia-Pacific 2018–2025):
+
+(a) **Rào cản 1 — Hạn chế tín dụng**: Hơn 30% doanh nghiệp ở Frontier và Emerging xem credit constraint là rào cản trên trung bình. Pattern phù hợp giả thuyết "**institutional voids**" của Khanna & Palepu (2010): các thị trường đang phát triển có hệ thống tài chính kém phát triển → doanh nghiệp khó tiếp cận tín dụng chính thức. Liên kết với §4.4 *Số hóa tài chính (Financial digitalization)* — fintech có thể giảm chi phí giao dịch nhưng chưa thay thế được kênh ngân hàng truyền thống ở SME.
+
+(b) **Rào cản 2 — Lực lượng lao động thiếu kỹ năng**: Đặc biệt nghiêm trọng cho doanh nghiệp manufacturing high-tech và ICT (Bảng 4.8.1) — đúng với khung **Schumpeter Mark II tech dynamism** (Kafouros et al., 2023). Pattern Asia mạnh nhất ở Frontier (do hệ giáo dục đào tạo nghề kém phát triển) và Vùng Vịnh (do labor force phụ thuộc lao động nhập cư).
+
+(c) **Rào cản 3 — Cạnh tranh từ doanh nghiệp phi chính thức**: Tạo "**unfair competition**" cho các doanh nghiệp chính thức vì doanh nghiệp phi chính thức không phải tuân thủ thuế, lao động, chuẩn an toàn. Mức độ shadow economy ở Frontier và Emerging Á-Thái có thể lên 30–40% GDP (La Porta & Shleifer, 2014). Giả thuyết: cạnh tranh phi chính thức làm giảm động lực đầu tư R&D và ISO chứng chỉ — liên kết §4.4 *Δ R&D Emerging giảm -42,1 đpt*.
+
+(d) **Rào cản 4 — Nguồn cung điện không đáng tin cậy**: Đặc biệt nghiêm trọng cho SIDS Pacific và Frontier (e.g., Bangladesh, Pakistan power outages > 10 hours/tháng theo WBES). Trực tiếp giảm năng suất lao động (Banerjee & Duflo, 2014) — liên kết §4.2 *phân tán năng suất Frontier 1,36 cao nhất*. **IFC PSD Blueprint** classify đây là *operational resources pillar* — yếu tố hạ tầng vật chất khác biệt với *human resources pillar* (kỹ năng) và *financial resources pillar* (tín dụng).
+
+**Hàm ý cho CĐ2**: 4 rào cản này → 4 control variables mới trong Spec 1 (full pool) và Spec 2 (2018-2025): (i) `credit_constraint_dummy` từ WBES question k30; (ii) `labor_skill_gap` từ question b8; (iii) `informal_competition` từ question e30; (iv) `power_outage_intensity` từ question c30 (ngày/tháng mất điện). Cộng với khung industry FE (§4.8) và phân nhóm con thể chế (Chương 3 file 14), CĐ2 sẽ có **specification đầy đủ 5 lĩnh vực WBES** — không chỉ 2 lĩnh vực (đổi mới + năng lực số) như §4.4 hiện đang phân tích.
 
 ### 4.6 Bức tranh thay đổi theo thời gian
 
@@ -307,7 +335,7 @@ Cả 3 đều là tiền đề cho file 16 §7.3.4 hàm ý cho CĐ2 — robustne
 
 *Tiếp tục ở Phần 3 trong file `thesis/16_cd1_part3_cases_conclusion_vi.md`.*
 
-**Chương 4 nay HOÀN THIỆN với 10 mục (4.1–4.10) + 6 hình (4.0, 4.1.1, 4.2, 4.4, 4.6, 4.7) — sẵn sàng trình HD duyệt.**
+**Chương 4 nay HOÀN THIỆN với 11 mục (4.1–4.11) + 6 hình (4.0, 4.1.1, 4.2, 4.4, 4.6, 4.7) + §4.5.5 mini-section (NEW v3.8a) — sẵn sàng trình HD duyệt.**
 
 ---
 
@@ -320,3 +348,5 @@ Cả 3 đều là tiền đề cho file 16 §7.3.4 hàm ý cho CĐ2 — robustne
 *Phiên bản 3.5 (07/05/2026 — Phase 2 NotebookLM Đợt 1 / HĐ1 Tier-1 Digital Presence rebrand) — §4.4 thêm Sub-section §4.4.5 ICT exclusion test promoted từ §4.8 I2 lên thân Chương 4 + Tier-1 vs Tier-2 framing cho Spec 1/Spec 2; §4.7 mục (vi) cập nhật framing Tier-1 saturation vs Tier-2 transformation; §4.10 hàm ý CĐ2 mở rộng 6 → 7 với (b) Schema FE + anchor model concept và (g) panel hậu đại dịch độc lập. Đáp ứng NotebookLM podcast 06/05/2026 *Bẫy đo lường số hóa Châu Á*. Tiền đề cho Phase 2 HĐ3 (BREADY 2025 isolation) — sẽ được hoàn thiện trong commit P2.3.*
 
 *Phiên bản 3.7 (07/05/2026 — Phase 2 NotebookLM Đợt 3 / HĐ3 Cô lập đứt gãy schema BREADY 2025) — Thêm §4.11 NEW (Cô lập đứt gãy schema BREADY 2025) với 3 đề xuất phương pháp luận chi tiết: (3a) biến giả Post_BREADY_2024 hấp thụ schema effect tĩnh; (3b) mô hình neo (anchor model) test stability hệ số khi thêm 2025 — robustness check #6; (3c) tách 2025 thành "Panel hậu đại dịch độc lập" như out-of-sample validation kỷ nguyên hậu COVID+AI — robustness check #7. Hệ thống "triple-defense" chống đứt gãy schema. Liên kết file 16 §7.3.4.*
+
+*Phiên bản 3.8a (07/05/2026 cuối phiên — Phase 4 Đợt 2 sub-commit 2A) — Thêm **§4.5.5 "Bốn rào cản hàng đầu của khu vực tư nhân Á-Thái — bằng chứng từ WBES" (NEW)** sau Bảng 4.5: liệt kê 4 rào cản (Tiếp cận tài chính / Lực lượng lao động thiếu kỹ năng / Cạnh tranh từ doanh nghiệp phi chính thức / Nguồn cung điện không đáng tin cậy) theo thuật ngữ chuẩn World Bank + Bảng 4.5.5 phân tầng theo 4 phân nhóm con thể chế + 4 nhận xét phân tích + hàm ý CĐ2 (4 control variables mới). Cited file 04 v2.5 (commit a3c1769) Section L + glossary v1.2 Nhóm 7 #61 (commit beb47d3). Tiền đề cho sub-commit 2B (§4.4 5 lĩnh vực WBES) và 2C (§4.7 Bribery vs Graft).*
