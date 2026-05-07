@@ -9,6 +9,7 @@
 > **Phiên bản 3.3 (06/05/2026 — Scope clarification per HD direction Option A)**: Minh bạch hóa scope thesis title "Châu Á" so với pool 47 nền kinh tế. Áp dụng Aguinis et al. (2019) data section transparency + Bello & Kostova (2012) boundary condition + Meyer et al. (2017) phenomenon-based scope.
 > **Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration)**: Tích hợp 4 papers academic Đợt 2 vào §1.4 + §1.5: (i) **Xu (2024) GSJ** *Rethinking institutional arbitrage* — phân tách de jure exposure vs de facto enforcement → strengthen ICRV framework justification; (ii) **Kafouros et al. (2023) GSJ** *Institutional quality × industry dynamism* — 3 mechanisms (partnerships, legal, market exchange) làm theoretical lens cho phương pháp descriptive + open đường cho **CĐ2 H7** (industry × institutional dynamism interaction); (iii) **Mardones-Ibáñez (2025) SAGE Open** + **Al-Najjar et al. (2025) IJHRM** — boundary references cho CĐ2 H4 TMT moderation. Cũng thêm 5 entries Asia 2026 catch-up vào file 04 v2.3 (ADB Resolution 437, ADO Special Topic AI, ADPR 2026 GVC, Cazzaniga 2024 IMF AIPI, Sikdar & Mukhopadhyay 2026 ADR).
 > **Phiên bản 3.5 (07/05/2026 — Phase 2 NotebookLM Đợt 1 / HĐ1: Tier-1 Digital Presence rebrand)**: §1.5 contribution #3 phân tách **Tier-1 Digital Presence** (website binary, Spec 1, đã bão hòa Advanced) vs **Tier-2 Digital Transformation** (DAI multi-component, Spec 2) — minh bạch hóa rằng hệ số âm DAI ở Advanced trong Spec 1 là artifact của Tier-1 saturation, không phải số hóa làm giảm năng suất. Liên kết sang §4.4.5 ICT exclusion test trong file 15 (promoted từ §4.8 I2). Đáp ứng NotebookLM podcast 06/05/2026 *Bẫy đo lường số hóa Châu Á*.
+> **Phiên bản 3.6 (07/05/2026 — Phase 2 NotebookLM Đợt 2 / HĐ2: U-curve 3 điều kiện cấu trúc + ma trận 3 trạng thái)**: §1.1 thêm **ẩn dụ Fiji 74,8% > Singapore 66%** — minh họa boundary condition của lý thuyết Uppsala. Thêm **§2.6 Điều kiện biên cho U-curve Lin & Beamish (NEW)** — 3 điều kiện cấu trúc bắt buộc (thị trường nội địa khả thi, chi phí thương mại kiểm soát được, thể chế vận hành) + Bảng 2.X **ma trận 3 trạng thái** (A. Điểm tối ưu — Singapore; B. Bẫy chuyển hướng nguồn lực — Việt Nam/Indonesia; C. Sự sụp đổ — SIDS Pacific). Đáp ứng NotebookLM podcast 06/05/2026 HĐ2.
 
 ---
 
@@ -110,6 +111,8 @@ Trong bối cảnh đó, hệ thống thông tin về hiệu quả doanh nghiệ
 
 Vì vậy, chuyên đề này lấp khoảng trống thực tiễn bằng việc cập nhật **pattern điển hình (stylized facts)** đa chiều về hiệu quả doanh nghiệp châu Á. Tổng hợp dữ liệu (pool) **101.185 doanh nghiệp xuyên 47 nền kinh tế × 108 cặp quốc gia × năm × 14 mốc khảo sát** (cập nhật v3.1 với Kiribati 2025) — gấp 2,5 lần phạm vi của Đỗ & Phan (2026 — VEFR). Đây là phạm vi rộng nhất từng có cho nghiên cứu I→P trong văn liệu IB hiện hành. Năm 2025 có **14 đợt khảo sát với 17.107 doanh nghiệp** (gồm cả Kiribati 2025).
 
+**Ẩn dụ Fiji vs Singapore (mới v3.6 — Phase 2 NotebookLM HĐ2)**: Trường hợp Fiji 2025 với tỷ lệ website 74,8% **vượt Singapore 66,1%** (xem Bảng 4.10 file 15) là minh họa rõ nhất cho ranh giới giữa "lý thuyết Uppsala vận hành ở điểm tối ưu" và "lý thuyết Uppsala bị biến dạng thành đường cong đảo ngược ở điều kiện biên". Đối với Fiji và 6 SIDS Pacific khác, **số hóa không phải công cụ tối ưu hóa chuỗi cung ứng mà là phương tiện sinh tồn — website không phải chiến lược marketing mà là cánh cửa duy nhất kết nối với thế giới** (NotebookLM, 2026 *Bẫy đo lường số hóa Châu Á*). Ẩn dụ này dẫn vào §2.6 (3 điều kiện cấu trúc của U-curve) và §5.7 (SIDS Pacific case file 16) — nơi điều kiện biên của lý thuyết Lin & Beamish (2005) được thiết lập rõ ràng.
+
 ### 1.2 Mục tiêu chuyên đề
 
 **Mục tiêu chung**: Hệ thống hóa và phân tích mô tả thực trạng hiệu quả hoạt động kinh doanh của các doanh nghiệp ở **47 nền kinh tế châu Á và Thái Bình Dương** (41 nước châu Á + 6 SIDS boundary extension; pool 101.185 doanh nghiệp) trong giai đoạn **2009–2025**.
@@ -198,6 +201,33 @@ Chuyên đề gồm bảy chương: Ch.1 Giới thiệu; Ch.2 Cơ sở lý luậ
 
 (Giữ nguyên từ v3.0/3.1 — xem commit `cd4276a` cho 5 tiểu mục đầy đủ §2.1-§2.5: khái niệm; chiều đo lường; meta-analysis; chuẩn hóa xuyên quốc gia; ba khung lý thuyết.)
 
+### §2.6 ĐIỀU KIỆN BIÊN CHO U-CURVE LIN & BEAMISH *(mới v3.6 — Phase 2 NotebookLM HĐ2)*
+
+NotebookLM podcast 06/05/2026 *Bẫy đo lường số hóa Châu Á* khuyến nghị: việc nhét khái niệm "chi phí buộc phải quốc tế hóa SIDS Pacific" vào §4.4 file 15 làm mờ ranh giới giữa hai loại điều tiết thể chế — (i) thể chế **điều tiết cường độ lợi nhuận** từ quốc tế hóa (U-curve operating); (ii) thể chế **quyết định sự tồn tại của quy luật U-curve** (boundary case). Cần thiết lập 3 điều kiện cấu trúc cho U-curve từ sớm trong Chương 2 thì khi Chương 4–5 phân tích sự thất bại, mảnh ghép sẽ hoàn hảo. SIDS Pacific là trường hợp **đường cong U ngược (Lin & Beamish, 2005) bị biến dạng thành đường cong đảo ngược** — không phải dị biệt ngẫu nhiên mà là điều kiện biên (boundary condition — Bello & Kostova, 2012) của lý thuyết.
+
+**Ba điều kiện cấu trúc bắt buộc cho U-curve vận hành** (theoretical foundation cho Chương 4–5 file 15/16 + CĐ2 H6):
+
+(1) **Điều kiện thị trường nội địa khả thi** (viable domestic market): Doanh nghiệp có thể bán hàng nội địa ở quy mô đủ để tích lũy năng lực kinh doanh trước khi quốc tế hóa. Điều kiện này thỏa ở Singapore (5,9 triệu dân, GDP per capita ~$80.000), Trung Quốc (1,4 tỷ dân), Việt Nam (98 triệu dân), Indonesia (273 triệu) — KHÔNG thỏa ở Kiribati (130.000 dân, GDP per capita ~$1.700), Tuvalu (~12.000 dân) hoặc Tonga (~106.000);
+
+(2) **Điều kiện chi phí thương mại kiểm soát được** (manageable trade costs): Logistics, vận tải biển/hàng không, regulations cho xuất nhập khẩu nằm trong khoảng kinh tế. Điều kiện này thỏa ở Châu Á đại lục — KHÔNG thỏa đầy đủ ở SIDS Pacific xa hub thương mại (Fiji-Auckland 2.100 km, Kiribati-Suva 2.700 km, không có direct flight thường xuyên; Vanuatu-Sydney 2.500 km);
+
+(3) **Điều kiện thể chế vận hành** (functional institutions): Khung pháp lý, IPR, contract enforcement, banking infrastructure ở mức tối thiểu cho hoạt động kinh doanh. Điều kiện này thỏa ở Advanced (Singapore, Korea, Israel) và Upper-middle (Trung Quốc, Malaysia) — KHÔNG thỏa đầy đủ ở SIDS isolated (Kiribati ISO 1,3%, FDI 0,7%) hay frontier conflict zones (Afghanistan, Yemen, Iraq); riêng nhóm Emerging có gap de jure–de facto lớn theo Xu (2024) gây bẫy chuyển hướng nguồn lực.
+
+**Bảng 2.6.1**. *Ma trận đối chiếu lý thuyết 3 trạng thái U-curve theo 3 điều kiện cấu trúc (mới v3.6).*
+
+| Trạng thái | Đại diện | ĐK 1 (thị trường) | ĐK 2 (chi phí TM) | ĐK 3 (thể chế) | Hành vi U-curve |
+|---|---|:---:|:---:|:---:|---|
+| **A. Điểm tối ưu của U-curve** | Singapore, Hong Kong, Hàn Quốc, Đài Loan | ✓ | ✓ | ✓ | U-curve vận hành chuẩn — FSTS có optimal level cho hiệu quả tối đa (Lin & Beamish, 2005) |
+| **B. Bẫy chuyển hướng nguồn lực (RDT)** | Việt Nam, Indonesia, Trung Quốc, Mongolia | ✓ | ✓ | ⚠ *(gap de jure–de facto Xu 2024)* | U-curve vận hành nhưng có **bẫy chuyển hướng nguồn lực** (resource diversion trap) — chi phí thể chế thực thi > lợi ích quốc tế hóa ở mức trung; cần ICRV phân biệt formal rules vs implementation capacity |
+| **C. Sự sụp đổ của đường cong** | SIDS Pacific (Fiji, Kiribati, Tuvalu, Tonga) | ✗ *(thị trường <1 triệu dân)* | ✗ *(cô lập địa lý 2.000+ km tới hub)* | ⚠–✗ *(ISO <2%, banking limited)* | **U-curve không vận hành** — quốc tế hóa là **buộc phải** (forced internationalization penalty Briguglio 1995; Bertram 2006); Fiji 74,8% website > Singapore 66% là minh chứng |
+
+**Tham chiếu**: Lin & Beamish (2005); Briguglio (1995); Bertram (2006); Bello & Kostova (2012); Cuervo-Cazurra et al. (2018); Banalieva & Dhanaraj (2019); Xu (2024) cho de jure–de facto gap ở trạng thái B; NotebookLM (2026, *Bẫy đo lường số hóa Châu Á*).
+
+Ma trận 3 trạng thái này thiết lập **tiền đề lý thuyết bắt buộc** cho:
+- **§3 ICRV regime classification**: Singapore = Advanced innovation (trạng thái A); Việt Nam = Emerging (trạng thái B); SIDS Pacific = boundary case extension (trạng thái C) — tách 3 trạng thái thay vì gộp;
+- **§5.2 (Singapore archetype)** + **§5.7 (Pacific SIDS case)** trong file 16;
+- **CĐ2 H6 (forced internationalization penalty)**: dự đoán ở SIDS Pacific (trạng thái C), FSTS KHÔNG correlate với năng suất vì U-curve không vận hành — hệ số FSTS ở SIDS sẽ không-significant hoặc đảo dấu so với Advanced/Emerging.
+
 ---
 
 ## CHƯƠNG 3 — KHUNG PHÂN LOẠI 6 PHÂN NHÓM CON ICRV
@@ -225,3 +255,5 @@ Chuyên đề gồm bảy chương: Ch.1 Giới thiệu; Ch.2 Cơ sở lý luậ
 *Phiên bản 3.4 (07/05/2026 — Đợt 2 academic integration) — §1.4 thêm khung 3 cơ chế Kafouros et al. (2023); §1.5 contribution #4 mở rộng với Xu (2024) de jure-de facto + Kafouros (2023) industry × institution interaction → mở đường CĐ2 H7. File 04 cập nhật v2.3 với 9 entries mới (4 academic Đợt 2 + 5 Asia 2026 catch-up).*
 
 *Phiên bản 3.5 (07/05/2026 — Phase 2 NotebookLM Đợt 1 / HĐ1 Tier-1 Digital Presence rebrand) — §1.5 contribution #3 thêm phân tách Tier-1 Digital Presence vs Tier-2 Digital Transformation theo NotebookLM podcast khuyến cáo (Bay đo lường số hóa Châu Á 06/05/2026); minh bạch hóa artifact âm DAI ở Advanced (Spec 1 saturation, ICT exclusion test confirm). Liên kết §4.4.5 mới trong file 15.*
+
+*Phiên bản 3.6 (07/05/2026 — Phase 2 NotebookLM Đợt 2 / HĐ2 U-curve 3 điều kiện cấu trúc + ma trận 3 trạng thái) — §1.1 thêm ẩn dụ Fiji 74,8% > Singapore 66% (boundary case minh họa); thêm §2.6 mới (Điều kiện biên cho U-curve Lin & Beamish) với 3 điều kiện cấu trúc bắt buộc + Bảng 2.6.1 ma trận 3 trạng thái (A. Singapore optimal — B. Việt Nam RDT — C. SIDS Pacific collapse). Tiền đề lý thuyết cho ICRV §3, case studies §5.2 + §5.7, và CĐ2 H6.*
