@@ -3,13 +3,9 @@
 > Tiếp nối `thesis/14_cd1_part1_intro_theory_vi.md` và `thesis/15_cd1_part2_findings_vi.md`.
 > Bảng thuật ngữ Anh-Việt: `thesis/09b_vn_term_glossary.md`.
 > Tổng hợp Asia context: `thesis/_asia_context_synthesis_2026.md`.
-> Hình minh họa: `thesis/figures/` (5 hình; chạy `python3 generate_figures.py` để regen).
-> **Phiên bản 2.5–2.7**: Pool 101.035 firms · 47 nước · 107 country-years · 2009–2025.
-> **Phiên bản 2.8–2.8.11**: Hoàn thiện §7.1–7.5.
-> **Phiên bản 3.0 (06/05/2026)**: Biên tập tiếng Việt học thuật hoàn thiện — Ch.5, Ch.6, Ch.7.
-> **Phiên bản 3.1a (06/05/2026 — QW6)**: Bổ sung Kiribati 2025 vào nhóm SIDS (§5.7: 6 → 7 nước, n=1.371) + thêm reference ADB (2026, April), IMF (2026, April), WBES (2025).
-> **Phiên bản 3.1c (06/05/2026 — Asia context integration)**: §5.6 Mongolia REVAMP critical minerals; §7.3.1 (3) expand với Babina/Wang/Anil/Zhang evidence; §7.3.3 (5) NEW critical minerals partnership.
-> **Phiên bản 3.1d (06/05/2026)**: Bổ sung 3 markdown image references — Hình 5.6.1 (Mongolia evolution) ở §5.6; Hình 5.7.1 (Kiribati vs Fiji vs Singapore) ở §5.7; Hình 5.1 (Định vị 7 tiểu cảnh) ở §5.8. Chạy `thesis/figures/generate_figures.py` để materialize 5 PNG/SVG.
+> Hình minh họa: `thesis/figures/` (11 hình; chạy `python3 generate_figures.py`).
+> **Phiên bản 2.5–3.1d**: xem commit history (v3.0 biên tập tiếng Việt; v3.1a Kiribati; v3.1c Mongolia critical minerals; v3.1d image refs).
+> **Phiên bản 3.2 (06/05/2026 — Asia context v2 integration)**: Tích hợp 4 nguồn ADB mới (ADPR 2026 GVC Inclusive Development, ADO April 2026 AI Special Topic, ADR Vol 43 Indian Manufacturing Sikdar/Mukhopadhyay 2026, Cazzaniga et al. 2024 IMF AIPI). 4 substantive enhancements: (i) §5.5 Emerging Asia bổ sung India case + technology spillovers; (ii) §7.1 (5) NEW khoảng trống GVC participation; (iii) §7.3.1 (3)(e) AI Preparedness Index evidence; (iv) §7.3.3 (6) NEW GVC partnership strategy Việt Nam.
 
 ---
 
@@ -28,7 +24,7 @@ FSTS 7,1%; doanh nghiệp xuất khẩu 17,8%; website 66,1%; ISO 23,3%; R&D 7,5
 | R&D dương (%) | 1,7 | 0,6 | **20,7** | 7,5 |
 | sd log năng suất | **0,47** | **0,31** | 1,15 | 1,03 |
 
-Năm phát hiện: (1) **nhà nước tô (rentier state)** — Beblawi (1987); Hertog (2010); Hvidt (2013); (2) **phân bổ sai nguồn lực đảo chiều** so với pattern Hsieh & Klenow (2009) — phân tán nội bộ thấp bất thường ở Saudi (sd log 0,47) và Qatar (0,31); (3) Kuwait đi theo định hướng Vision 2035 với R&D 20,7% nổi bật; (4) **thiên lệch của DAI đơn thành phần** — chỉ đo website không phản ánh đầy đủ năng lực số ở các nền kinh tế tài nguyên dẫn dắt; (5) **phân nhóm con (sub-grouping) Advanced** — innovation-driven so với resource-driven là một dạng biến thể chế kiểu Varieties of Capitalism (Hall & Soskice, 2001). Bối cảnh 2026: IMF (2026, April) điều chỉnh giảm tăng trưởng Saudi Arabia mạnh từ ~4,5% xuống 3,1% do giảm sản lượng dầu trong xung đột Trung Đông — củng cố luận điểm về dị biệt giữa Advanced innovation và Advanced resource.
+Năm phát hiện: (1) **nhà nước tô (rentier state)** — Beblawi (1987); Hertog (2010); Hvidt (2013); (2) **phân bổ sai nguồn lực đảo chiều** so với Hsieh & Klenow (2009); (3) Kuwait Vision 2035 với R&D 20,7%; (4) **thiên lệch của DAI đơn thành phần**; (5) **phân nhóm con (sub-grouping) Advanced** — innovation-driven so với resource-driven là một dạng biến thể chế kiểu Varieties of Capitalism (Hall & Soskice, 2001). **Bối cảnh xung đột Trung Đông 2026**: IMF (2026, April) điều chỉnh giảm tăng trưởng Saudi Arabia mạnh từ ~4,5% xuống 3,1% do giảm sản lượng dầu; ADB (2026, April) — báo cáo *Asian Development Outlook April 2026: The Middle East Conflict Challenges Resilience in Asia and the Pacific* — dự báo Pacific 3,4%, Đông Nam Á 4,7%, Việt Nam 7,0% — củng cố luận điểm về dị biệt Advanced innovation vs resource.
 
 ### 5.3 Việt Nam (n=3.077, 3 đợt khảo sát)
 
@@ -36,55 +32,58 @@ FSTS 23,2% → 17,9% → 16,1% (suy giảm); doanh nghiệp xuất khẩu 37,1% 
 
 ### 5.4 Trung Quốc (n=4.889)
 
-FSTS 10,9% → 8,8%; FDI ≥10% chiếm 6,0%. Quan hệ FSTS – năng suất là hàm bậc ba (cubic) với điểm uốn (turning point) ở mức ~47,8% (Đỗ & Phan, 2026 — JFAR). **Cập nhật v3.1c**: Wang, Huang và Hong (2024 — *International Review of Financial Analysis*) phân tích 80% bank risk models ở PRC phụ thuộc vào dominant tech providers — gợi ý **concentration risk** trong digital ecosystem PRC, có thể là yếu tố giải thích tại sao quan hệ I→P ở Trung Quốc không tuyến tính mà có dạng cubic với điểm uốn cao.
+FSTS 10,9% → 8,8%; FDI ≥10% chiếm 6,0%. Quan hệ FSTS – năng suất là hàm bậc ba (cubic) với điểm uốn ~47,8% (Đỗ & Phan, 2026 — JFAR). **Cập nhật v3.1c**: Wang, Huang và Hong (2024 — *IRFA*) phân tích 80% bank risk models ở PRC phụ thuộc dominant tech providers — **concentration risk** trong digital ecosystem PRC.
 
-### 5.5 Tổng hợp Emerging Asia (n=42.278)
+### 5.5 Tổng hợp Emerging Asia (n=42.278) — bổ sung India case (v3.2)
 
 FSTS 7,6%; FDI ≥10% chiếm 4,4%; tỷ lệ doanh nghiệp R&D dương 16%. Phân tán nội bộ lớn (sd log 2,18) — phản ánh dị biệt rộng xuyên 7 nước Emerging.
 
+**Trường hợp Ấn Độ — chứng cứ technology spillovers (NEW v3.2)**: Theo Sikdar và Mukhopadhyay (2026 — *Asian Development Review, 43*(1), pp.37-75), nghiên cứu panel **4.293 doanh nghiệp Ấn Độ giai đoạn 2006-2019**, áp dụng mô hình TFP với bốn kênh horizontal spillovers (imported intermediate/capital goods, license fee technology purchases, foreign-owned firm presence, skill diffusion qua lao động) và hai kênh vertical spillovers (downstream/upstream FDI, downstream/upstream import inputs). Phát hiện chính:
+
+- **FDI là kênh horizontal spillover quan trọng nhất** ở Ấn Độ
+- Doanh nghiệp **lớn và hiệu quả cao** capture spillovers nhiều nhất
+- FDI inflows Ấn Độ tăng từ **$1,705M (1990-2000) → $20,077M (2001-2011) → $42,396M (2012-2022)**; chi trả IP tăng tương ứng $138M → $1,195M → $6,530M
+- R&D **stagnant ở 0,7% GDP** từ 1996; patent applications resident filing **+11,9%/năm 2012-2022** (vs 0,3% nonresident)
+
+**Hàm ý so sánh**: Pattern Ấn Độ (FDI là kênh chính, large/efficient firms hấp thụ tốt nhất) **đối lập với Việt Nam two-tier kinh tế** — nơi FDI hiệu quả cao nhưng spillover hạn chế cho khối nội địa do absorptive capacity yếu (CIEM, 2023). Khi Ấn Độ FSTS sụt 7,7→2,7% trong đợt 2025 (§4.10), pattern này gợi ý không chỉ là schema effect mà còn phản ánh chuyển hướng Atmanirbhar Bharat (self-reliance) — giảm phụ thuộc nhập khẩu công nghệ. Bằng chứng từ Sikdar & Mukhopadhyay (2026) củng cố **H2 (TCI điều tiết)** trong CĐ2: tác động FSTS → năng suất phụ thuộc vào năng lực hấp thụ (absorptive capacity, Cohen & Levinthal, 1990) và năng lực công nghệ tích lũy (Lall, 1992).
+
 ### 5.6 Mongolia — từ lời nguyền tài nguyên đến chuyển đổi critical minerals (n=1.905, 4 đợt 2009–2025)
 
-> **REVAMP v3.1c** (06/05/2026): Tích hợp ADB (2026, May) *Market Assessment of Critical Minerals in Mongolia* + IEA Global Critical Minerals Outlook 2025 — chuyển từ "lời nguyền tài nguyên cũ" sang "chuyển đổi resource curse với critical minerals opportunity 2026".
+> **REVAMP v3.1c** (06/05/2026): Tích hợp ADB (2026, May) *Market Assessment of Critical Minerals in Mongolia* + IEA Global Critical Minerals Outlook 2025.
 
-**Số liệu lịch sử lời nguyền tài nguyên (2009-2025)**: FSTS đình trệ ở mức 4-6%; FDI ≥10% giảm rõ **7,2% → 3,2%** trong giai đoạn 2009-2025; tỷ lệ website tăng 39% → 65% (digital leapfrog đơn lẻ); R&D dao động 27-41%. Pattern **lời nguyền tài nguyên (resource curse)** — Auty (1993); Sachs & Warner (2001); Gerelmaa & Kotani (2016). Mongolia là **trường hợp biên (boundary case)** của phân nhóm Emerging tài nguyên với pattern điển hình suy giảm FDI bất chấp digital adoption tăng.
+**Số liệu lịch sử lời nguyền tài nguyên (2009-2025)**: FSTS đình trệ 4-6%; FDI ≥10% giảm rõ **7,2% → 3,2%**; tỷ lệ website tăng 39% → 65% (digital leapfrog đơn lẻ). Pattern **lời nguyền tài nguyên** (Auty, 1993; Sachs & Warner, 2001; Gerelmaa & Kotani, 2016).
 
 ![Hình 5.6.1 — Mongolia: Evolution 2009–2025 (4 đợt khảo sát WBES)](figures/fig_5_6_mongolia_evolution.png)
 
-*Hình 5.6.1. 4-panel chart minh họa pattern lời nguyền tài nguyên Mongolia qua 4 đợt WBES (n=362, 360, 360, 601 doanh nghiệp): (A) FSTS đình trệ 4-6% — quốc tế hóa không tăng dù digital lên; (B) FDI ≥10% giảm rõ 7,2%→3,2% (resource curse); (C) Website tăng mạnh 39%→65% (digital leapfrog đơn lẻ); (D) sd log productivity dispersion 1,33→0,98→1,27→1,20 (recovery sau 2013 nadir). Source: Mongolia panel data WBES, computed từ 4 raw `.dta` files. Tái lập: `thesis/figures/generate_figures.py` function `fig_5_6_mongolia_evolution()` với raw .dta input.*
+*Hình 5.6.1. 4-panel chart: (A) FSTS đình trệ 4-6%; (B) FDI ≥10% giảm 7,2%→3,2%; (C) Website tăng 39%→65%; (D) sd log productivity dispersion 1,33→0,98→1,27→1,20.*
 
-**Bước ngoặt 2026 — chuyển đổi critical minerals (ADB, 2026, May)**: Theo báo cáo *Market Assessment of Critical Minerals in Mongolia* của ADB (May 2026), Mongolia đang ở giao điểm chiến lược của **11 critical minerals** cho energy transition: đồng (Cu), graphite (C), lithium (Li), molybdenum (Mo), manganese (Mn), cobalt (Co), fluorspar, platinum (Pt), nickel (Ni), tungsten (W), rare earth elements (REE).
+**Bước ngoặt 2026 — chuyển đổi critical minerals (ADB, 2026, May)**: Mongolia ở giao điểm chiến lược của **11 critical minerals** cho energy transition: Cu, C (graphite), Li, Mo, Mn, Co, Fluorspar, Pt, Ni, W, REE.
 
-**Nền tảng định lượng**: Xuất khẩu copper concentrate đạt **1,69 triệu tấn (2024)** với doanh thu **3,3 tỷ USD** — chiếm **22,1% tổng kim ngạch xuất khẩu Mongolia**. Trữ lượng đồng đăng ký 61,4 triệu tấn (90% tập trung ở Oyu Tolgoi, Erdenet, Tsagaan Suvarga). **Dự án Oyu Tolgoi target 500.000 tấn/năm copper giai đoạn 2028-2036** — major scale-up có thể nâng vị thế Mongolia trên thị trường global.
+**Định lượng**: Cu exports **1,69 Mt (2024)** = **3,3 tỷ USD** = **22,1% tổng xuất khẩu**. Trữ lượng 61,4 Mt (90% Oyu Tolgoi/Erdenet/Tsagaan Suvarga). Oyu Tolgoi target **500.000 tấn/năm copper 2028-2036**.
 
-**Bối cảnh nhu cầu toàn cầu**: Theo IEA Global Critical Minerals Outlook 2025: lithium demand 8-13× by 2050; manganese 18-29×; platinum 15,6-66,5×. ADB cảnh báo **supply shortfall 2040**: chỉ đáp ứng 35% lithium, 59% Cu, 70% Co, 76% Ni từ existing/announced projects.
+**Bối cảnh nhu cầu**: Lithium 8-13× by 2050; Mn 18-29×; Pt 15,6-66,5×. Supply shortfall 2040: 35% Li, 59% Cu, 70% Co, 76% Ni.
 
-**Cấu trúc thị trường — PRC processing dominance**: PRC xử lý **100% refined natural graphite + dysprosium (REE), 90% Mn, 70% Co, 60% Li, 40% Cu**. Đây là điểm yếu chiến lược của Mongolia — phụ thuộc PRC processing để xuất khẩu nâng giá trị.
+**PRC processing dominance**: 100% graphite + dysprosium, 90% Mn, 70% Co, 60% Li, 40% Cu.
 
-**Precedent thành công — Indonesia nickel ban**: Indonesia áp dụng nickel ore export ban năm 2020, thúc đẩy domestic processing đạt **40% global supply** vào 2023. Mongolia có thể học hỏi mô hình tương tự cho Cu, Li, REE.
+**Indonesia precedent**: nickel ban 2020 → 40% global processing 2023.
 
-**Khuôn khổ song phương — Korea-Mongolia Mineral Resources Cooperation Center (2023)**: Bộ Ngoại giao Hàn Quốc thúc đẩy hợp tác critical minerals với Mongolia, tạo precedent cho Việt Nam tham gia chuỗi giá trị critical minerals khu vực.
+**Korea-Mongolia Mineral Resources Cooperation Center (2023)** — precedent cho Việt Nam.
 
-**SWOT Mongolia critical minerals 2026**:
-- **Strengths**: vast reserves Cu/REE/Li/U, government commitment, geographic proximity PRC/JPN/KOR
-- **Weaknesses**: infrastructure constraints, human capital, regulatory framework
-- **Opportunities**: rising global demand, new markets EU/Japan/Korea, supply chain diversification
-- **Threats**: trade restrictions, competition Australia/Canada, ESG compliance costs, mining-sector dependence
-
-**Hàm ý cho CĐ1 v3.1c**: Mongolia không còn chỉ là "lời nguyền tài nguyên cũ" mà đang ở giai đoạn **chuyển đổi resource curse** — có cơ hội thoát ra qua critical minerals nhưng vẫn chịu **hai bottleneck cấu trúc**: (i) PRC processing dominance và (ii) infrastructure constraints. Pattern này gợi ý **CĐ2 nên có biến `Critical_Minerals_Exposure`** riêng cho 4 nước có lợi thế tài nguyên transition (Mongolia + Indonesia + Vùng Vịnh + Australia).
+**Hàm ý**: Mongolia chuyển đổi resource curse → critical minerals economy. CĐ2 thêm biến `Critical_Minerals_Exposure` cho 4 nước (Mongolia + Indonesia + Vùng Vịnh + Australia).
 
 ### 5.7 SIDS Thái Bình Dương (7 nước — cập nhật v3.1, n=1.371)
 
-**Bảy nước** (cập nhật v3.1 với Kiribati 2025): Fiji (FJI), Papua New Guinea (PNG), Solomon Islands (SLB), Tonga (TON, gồm cả đợt 2024 mới phát hành), Vanuatu (VUT), Samoa (WSM), **Kiribati (KIR — bổ sung 2025)**. Tổng n=1.371 doanh nghiệp.
+**Bảy nước**: Fiji (FJI), Papua New Guinea (PNG), Solomon Islands (SLB), Tonga (TON), Vanuatu (VUT), Samoa (WSM), **Kiribati (KIR — bổ sung 2025)**. Tổng n=1.371.
 
-**Số liệu gộp 6 nước cũ** (giữ tham chiếu so sánh): FSTS 6,3%; FDI ≥10% chiếm **23,5%** (cao thứ hai sau Advanced); tỷ lệ đổi mới sản phẩm **41,5%** (cao nhất nhóm); tỷ lệ website **58,9%**. Pattern **thích nghi trong điều kiện ràng buộc (adaptation under constraint)** — đổi mới sản phẩm cao và áp dụng số cao là phản ứng thích nghi với thị trường nội địa nhỏ và khoảng cách địa lý lớn.
+**Số liệu gộp 6 nước cũ**: FSTS 6,3%; FDI ≥10% **23,5%**; đổi mới sản phẩm **41,5%**; website **58,9%**. Pattern **thích nghi trong điều kiện ràng buộc (adaptation under constraint)**.
 
-**Cập nhật v3.1: Kiribati 2025 là trường hợp biên CỰC ĐOAN nhất**. Số liệu từ phân tích trực tiếp `Kiribati-2025-full-data.dta` (336 cột, 150 doanh nghiệp, BREADY 2025 schema, June–December 2025; World Bank Enterprise Surveys, 2025): FSTS 1,03% (gần zero — chỉ 4 doanh nghiệp xuất khẩu), FDI ≥10% chỉ 0,7% (gần zero foreign ownership), website 18,7% (LOW — đối lập hoàn toàn với Fiji 74,8%), ISO chỉ 1,3%, R&D 14,0%, đổi mới sản phẩm 26,0%, sd log năng suất 1,48 (cao nhất pool sau Frontier 1,36), SME 93,3%. Đặc điểm: GDP/đầu người ~1.700 USD, phụ thuộc viện trợ Australia/New Zealand chiếm ~30% GDP, không có đặc khu kinh tế.
+**Kiribati 2025 — trường hợp biên CỰC ĐOAN nhất**: FSTS 1,03%, FDI 0,7%, website 18,7% (LOW vs Fiji 74,8%), ISO 1,3%, sd log 1,48, SME 93,3%. GDP/đầu người ~1.700 USD, viện trợ AUS/NZ ~30% GDP.
 
-![Hình 5.7.1 — Dị biệt nội bộ SIDS Thái Bình Dương: Kiribati vs Fiji vs Singapore (n=150 mỗi nước, đợt 2025)](figures/fig_5_7_sids_comparison.png)
+![Hình 5.7.1 — Dị biệt nội bộ SIDS Thái Bình Dương: Kiribati vs Fiji vs Singapore](figures/fig_5_7_sids_comparison.png)
 
-*Hình 5.7.1. Bar chart 3-way comparison cho 6 chỉ số (FSTS, FDI ≥10%, R&D, ISO, Website, sd log năng suất) giữa: (i) Kiribati 2025 (isolated SIDS, đỏ) — gần ZERO trên mọi chỉ số kết nối quốc tế; (ii) Fiji 2025 (high-digital SIDS, xanh lá) — website 74,8% vượt cả Singapore; (iii) Singapore 2023 (Advanced innovation, xanh dương) — chuẩn so sánh. Phát hiện cốt lõi: Kiribati và Fiji cùng là SIDS Pacific nhưng pattern hoàn toàn đối lập — chứng minh dị biệt nội bộ SIDS rõ rệt, khẳng định cần 9 phân nhóm con thay vì 8 trong CĐ2. Tái lập: `generate_figures.py` function `fig_5_7_sids_comparison()`.*
+*Hình 5.7.1. 3-way comparison cho 6 chỉ số. Kiribati gần ZERO trên mọi chỉ số kết nối quốc tế. Phát hiện cốt lõi: cần 9 phân nhóm con thay vì 8 trong CĐ2.*
 
-**Phát hiện cốt lõi v3.1**: Kiribati chứng minh **dị biệt nội bộ SIDS** — cần tách thành hai phân nhóm con: (i) "high-digital SIDS" (Fiji, Maldives — website >70%, FDI cao, đổi mới mạnh) so với (ii) "isolated SIDS" (Kiribati — website <20%, FDI gần zero, hạ tầng cơ bản hạn chế). ADB (2026, April) dự báo Pacific tăng trưởng chỉ 3,4% năm 2026, chậm hơn mainland Asia — bối cảnh nghiệt ngã cho nhóm "isolated SIDS".
+**Phát hiện cốt lõi v3.1**: Dị biệt nội bộ SIDS — "high-digital SIDS" (Fiji, Maldives) vs "isolated SIDS" (Kiribati). ADB (2026, April) Pacific 3,4% năm 2026 — bối cảnh nghiệt ngã cho "isolated SIDS".
 
 ### 5.8 So sánh tổng hợp
 
@@ -99,19 +98,19 @@ FSTS 7,6%; FDI ≥10% chiếm 4,4%; tỷ lệ doanh nghiệp R&D dương 16%. Ph
 | Website (%) | 66,1 | **47,0** | **58,7** | **48,0** | **50,1** | 58,9 | **43,6** |
 | sd log năng suất | 1,03 | 1,38 | 1,20 | 2,18 | **1,16** | 1,32 | **0,49** |
 
-*¹SIDS Thái Bình Dương cập nhật v3.1 với Kiribati 2025: tổng n=1.371; sd log 1,32. Chi tiết Kiribati so sánh Fiji ở §5.7.*
+*¹SIDS Thái Bình Dương cập nhật v3.1 với Kiribati 2025: tổng n=1.371; sd log 1,32.*
 
 ![Hình 5.1 — Định vị 7 tiểu cảnh điển hình trên hệ trục Phân tán (sd log) × FDI ≥10%](figures/fig_5_1_seven_scenes.png)
 
-*Hình 5.1. Scatter bubble chart định vị 7 tiểu cảnh điển hình trên hệ trục: trục x = phân tán sd log năng suất; trục y = tỷ lệ FDI ≥10%. Kích thước marker tỷ lệ với √n_firms. **Bốn vùng nổi bật**: (i) Vùng FDI cao (>20%) — Singapore (FDI 31,5%, sd 1,03) và SIDS Pacific (FDI 23,5%, sd 1,32); (ii) Vùng phân tán cao (>1,5) — Em Asia gộp (sd 2,18); (iii) Vùng tài nguyên dẫn dắt phân tán thấp — Saudi+Qatar+Kuwait (sd 0,49, FDI 11,5%) — cực đối lập với Em Asia; (iv) Vùng trung gian — Việt Nam, Trung Quốc, Mongolia. Tái lập: `generate_figures.py` function `fig_5_1_seven_scenes()`.*
+*Hình 5.1. Scatter bubble chart, kích thước √n_firms.*
 
 ---
 
 ## CHƯƠNG 6 — CÁC YẾU TỐ GIẢI THÍCH SƠ BỘ
 
-Chương này phân tích tương quan **hai biến (bivariate)** giữa bốn yếu tố giải thích sơ bộ — FDI ≥10%, Cường độ xuất khẩu (FSTS), Năng lực công nghệ (TCI), Năng lực số (DAI) — và log năng suất lao động, theo từng phân nhóm con thể chế. Mục tiêu của Chương 6 là **gợi ý giả thuyết** cho Chuyên đề 2 chứ không kiểm định nhân quả; mọi tương quan trình bày dưới đây cần được hiểu là pattern dữ liệu, không phải quan hệ nhân quả.
+Chương này phân tích tương quan **hai biến (bivariate)** giữa bốn yếu tố giải thích sơ bộ — FDI ≥10%, FSTS, TCI, DAI — và log năng suất lao động, theo từng phân nhóm con thể chế.
 
-**Bảng 6.1**. *Hệ số tương quan Pearson giữa các yếu tố giải thích sơ bộ và log năng suất lao động (n=101.185 — cập nhật v3.1).*
+**Bảng 6.1**. *Hệ số tương quan Pearson (n=101.185 — v3.1).*
 
 | Yếu tố | Advanced | Upper-middle | Emerging | Frontier | SIDS |
 |---|---|---|---|---|---|
@@ -120,118 +119,130 @@ Chương này phân tích tương quan **hai biến (bivariate)** giữa bốn y
 | TCI (R&D + ISO) | **+0,128** | +0,016 | −0,029 | +0,019 | **+0,155** |
 | DAI (website) | **−0,129** | +0,012 | +0,016 | +0,070 | −0,049 |
 
-*Ghi chú: TCI đo bằng R&D + ISO; DAI đo đơn thành phần biến nhị phân website. Sẽ mở rộng đa thành phần ở CĐ2 (xem §7.4).*
+**Sáu phát hiện chính**:
 
-**Sáu phát hiện chính** từ Bảng 6.1:
+**(1)** FDI ≥10% dương rất mạnh ở SIDS (+0,222) — kênh truyền tải năng suất chính.
 
-**(1) FDI ≥10% có tương quan dương rất mạnh ở SIDS** (+0,222) — đây là tương quan mạnh nhất. Phát hiện này gợi ý FDI là kênh truyền tải năng suất quan trọng nhất ở SIDS, có thể do du lịch và viễn thông được dẫn dắt bởi MNE.
+**(2)** FDI ≥10% âm ở Advanced (−0,113) — FDI tài chính/dầu khí năng suất tự thân thấp.
 
-**(2) FDI ≥10% lại tương quan âm ở Advanced** (−0,113) — phản ánh FDI ở các nền kinh tế tiên tiến tập trung vào ngành tài chính/dầu khí có năng suất tự thân thấp.
+**(3)** FSTS dương ở Advanced (+0,113) — phù hợp Uppsala (Johanson & Vahlne, 1977) + OLI (Dunning, 1988); cơ sở H1.
 
-**(3) Cường độ xuất khẩu (FSTS) tương quan dương ở Advanced** (+0,113) — phù hợp lý thuyết Uppsala (Johanson & Vahlne, 1977) và OLI của Dunning (1988). Tương quan yếu hoặc đảo dấu ở Upper-middle/Emerging gợi ý quan hệ I→P là **phi tuyến và có điều kiện** — cơ sở cho H1 trong CĐ2.
+**(4)** TCI dương mạnh ở SIDS (+0,155) + Advanced (+0,128) — TCI then chốt ở **hai cực** phổ phát triển. Học hỏi tự thân vs FDI-induced learning (Cohen & Levinthal, 1990; Lall, 1992).
 
-**(4) Năng lực công nghệ (TCI) tương quan dương rất mạnh ở SIDS** (+0,155) cùng dương ở Advanced (+0,128) — TCI then chốt ở **hai cực** phổ phát triển. Phản ánh hai cơ chế: học hỏi tự thân vs học hỏi do FDI dẫn dắt (Cohen & Levinthal, 1990; Lall, 1992).
+**(5)** DAI âm Advanced (−0,129) — Tier-1 Digital Presence saturation; ICT artifact; digital theatre (Verhoef et al., 2021). Cần multi-component DAI ở CĐ2.
 
-**(5) Năng lực số đơn thành phần (DAI = website) tương quan âm ở Advanced** (−0,129). Pattern bất ngờ — gợi ý số hóa làm giảm năng suất ở Singapore/Hàn Quốc (khó là thực tế kinh tế). Ba khả năng giải thích: (a) DAI đơn thành phần không phản ánh đầy đủ năng lực số ở Advanced nơi website là **Tier-1 Digital Presence** đã bão hòa; (b) **hiện vật thống kê (artifact)** do không tách ICT khỏi mẫu; (c) hiệu ứng *digital theatre* (Verhoef et al., 2021). Cần kiểm chứng với DAI đa thành phần ở CĐ2 Đặc tả 2.
-
-**(6) Tương quan đổi dấu giữa các phân nhóm con thể chế** — bốn lần đảo dấu xuyên phân nhóm con là bằng chứng thực tiễn mạnh mẽ cho **điều tiết thể chế (institutional moderation)**. Cơ sở cho H4 trong CĐ2.
+**(6)** Đảo dấu xuyên phân nhóm con — bằng chứng cho **điều tiết thể chế (institutional moderation)**. Cơ sở H4.
 
 ---
 
 ## CHƯƠNG 7 — KHOẢNG TRỐNG THỰC TIỄN VÀ KẾT LUẬN
 
-### 7.1 Khoảng trống nghiên cứu thực tiễn
+### 7.1 Khoảng trống nghiên cứu thực tiễn (mở rộng v3.2 từ 4 lên **5 khoảng trống**)
 
-Bốn khoảng trống nghiên cứu thực tiễn được Chuyên đề 1 lấp đầy:
+**(1) Hài hòa khung dữ liệu xuyên thế hệ WBES 2009–2025**. Pipeline tái lập được cho 4 thế hệ (PICS3, Standardized, BEE, BREADY) — thực hành mở (Page et al., 2021).
 
-**(1) Hài hòa khung dữ liệu xuyên thế hệ WBES 2009–2025**. Pipeline tái lập được (reproducible pipeline) cho 4 thế hệ khung dữ liệu (PICS3, Standardized, BEE, BREADY) với 5 bước Python — kế thừa thực hành mở (Page et al., 2021) cho phân tích tổng hợp PRISMA 2020.
+**(2) Phân nhóm con Advanced + boundary case Mongolia**. (a) Advanced sub-grouping innovation/resource — VoC + REE (Hall & Soskice, 2001; Hertog, 2010); (b) Mongolia chuyển đổi sang critical minerals economy 2026 (ADB, 2026, May).
 
-**(2) Phân nhóm con (sub-grouping) Advanced và trường hợp biên Mongolia**. (a) Phân nhóm con Advanced thành đổi mới sáng tạo dẫn dắt và tài nguyên dẫn dắt — mở rộng VoC (Hall & Soskice, 2001) bằng kiểu thứ ba "Resource-Extractive Economy" (Hertog, 2010); (b) Mongolia là trường hợp biên Emerging tài nguyên với pattern lời nguyền tài nguyên rõ nét, **đang chuyển đổi sang critical minerals economy 2026** (ADB, 2026, May).
+**(3) Mô hình phi tuyến và điều tiết đa tầng** (Bausch & Krist, 2007; Marano et al., 2016). Đỗ & Phan (2026 — VEFR, JFAR) chỉ ra điểm uốn khác nhau; CĐ1 mở rộng lên 47 nước.
 
-**(3) Mô hình phi tuyến và điều tiết đa tầng**. Bằng chứng hai biến ở Chương 6 cho thấy quan hệ I→P là phi tuyến và có điều tiết đa tầng (Bausch & Krist, 2007; Marano et al., 2016). Đỗ & Phan (2026 — VEFR và JFAR) chỉ ra điểm uốn khác nhau giữa các nước; CĐ1 mở rộng pattern này lên 47 nước.
+**(4) Trường hợp biên SIDS Thái Bình Dương** — 7 nước với Kiribati 2025. Đỗ & Phan (2026 — bản thảo P8) áp dụng forced internationalization penalty (Briguglio, 1995; Bertram, 2006).
 
-**(4) Trường hợp biên SIDS Thái Bình Dương** *(cập nhật v3.1: 7 nước với Kiribati)*. Khoảng trống lớn nhất trong văn liệu IB. Đỗ & Phan (2026 — bản thảo P8) là nghiên cứu đầu tiên áp dụng khung **chi phí buộc phải quốc tế hóa** cho SIDS Thái Bình Dương dựa trên Briguglio (1995) và Bertram (2006); CĐ1 v3.1 cung cấp dữ liệu firm-level WBES đầu tiên cho 7 nước SIDS đầy đủ.
+**(5) Khung GVC participation và inclusive development cho 47 nước (NEW v3.2)** — Theo *Asian Development Policy Report 2026 — Global Value Chains and Inclusive Development* (ADB, 2026, May): Asia/Pacific chiếm ~1/3 GVC trade global; **GVC share Developing Asia tăng 9% → 18% giai đoạn 2000-2023** (gấp đôi). Bằng chứng định lượng macro: 10% increase trong GVC participation → +0,45% per capita income growth; 10% improvement in GVC centrality → +0,8% per capita income growth. Successfully upgraded economies grew 6%/năm (2000-2023) vs 3,9% peripheral. **Tuy nhiên**: small firms 25% less likely to participate in GVCs; within-economy Gini ↑6,7pp — nguy cơ dị biệt nội bộ.
+
+Khoảng trống cho CĐ1: chưa có nghiên cứu firm-level WBES kết hợp với GVC participation cho 47 nước châu Á + Thái Bình Dương. Bằng chứng CĐ1 về **kinh tế hai tầng Việt Nam** (§5.3) và **dị biệt Em Asia** (§5.5) phù hợp với pattern ADPR 2026 — small firms khó tham gia GVC. CĐ2 nên có biến `GVC_participation_rate` (theo OECD TiVA hoặc ADB MRIO) ở cấp ngành × quốc gia × năm.
 
 ### 7.2 Kết luận chính
 
-Tám kết luận chính của Chuyên đề 1:
+**(i)** Pool 101.185 doanh nghiệp · 47 nước · 108 cặp QG×năm — phạm vi rộng nhất.
 
-**(i)** Pool 101.185 doanh nghiệp · 47 nước · 108 cặp quốc gia × năm — phạm vi rộng nhất từng có.
+**(ii)** Phân tán: Advanced (0,86) < Emerging (1,24) ≈ SIDS (1,32) < Frontier (1,36).
 
-**(ii)** Phân tán theo phân nhóm con thể chế: Advanced (sd log 0,86) < Emerging (1,24) ≈ SIDS (1,32) < Frontier (1,36).
+**(iii)** Bảy tiểu cảnh + 7 SIDS đa diện cùng tồn tại — không có hội tụ.
 
-**(iii)** Bảy tiểu cảnh điển hình cộng **7 SIDS đa diện** cùng tồn tại — không có hội tụ.
+**(iv)** Dị biệt nội bộ Advanced (Singapore/Vùng Vịnh ≈ 2,1×).
 
-**(iv)** Dị biệt nội bộ phân nhóm Advanced (tỷ số phân tán Singapore/Vùng Vịnh ≈ 2,1 lần).
+**(v)** SIDS pattern thích nghi/leapfrog ở 6 nước cũ; Kiribati 2025 CỰC ĐOAN nhất.
 
-**(v)** SIDS Thái Bình Dương có pattern thích nghi và nhảy vọt số ở 6 nước cũ; **Kiribati 2025 là trường hợp biên CỰC ĐOAN nhất** — chứng minh dị biệt nội bộ SIDS.
+**(vi)** FDI ≥10% dương mạnh SIDS (+0,222) — kênh năng suất chính.
 
-**(vi)** FDI ≥10% có tương quan dương rất mạnh ở SIDS (+0,222) — kênh truyền tải năng suất chính.
+**(vii)** Mongolia chuyển đổi sang critical minerals economy 2026.
 
-**(vii)** Mongolia là trường hợp biên Emerging tài nguyên — pattern lời nguyền tài nguyên ở cấp doanh nghiệp; **đang chuyển đổi sang critical minerals economy 2026**.
-
-**(viii)** Bằng chứng hai biến đa dạng — bốn lần đảo dấu — cho mô hình phi tuyến + điều tiết đa tầng. Cơ sở cho H1–H6 trong CĐ2; **CĐ2 nay được khuyến nghị mở rộng thành 9 phân nhóm con** với "high-digital SIDS" tách khỏi "isolated SIDS".
+**(viii)** Bằng chứng đảo dấu — phi tuyến + điều tiết đa tầng. Cơ sở H1-H6; **CĐ2 mở rộng 9 phân nhóm con**.
 
 ### 7.3 Hàm ý cho luận án và Chuyên đề 2
 
 #### 7.3.1 Hàm ý lý thuyết
 
-Chuyên đề 1 đóng góp ba hướng vào lý thuyết IB:
+**(1) VoC + REE type thứ 3** (Hall & Soskice, 2001; Hertog, 2010; Hvidt, 2013).
 
-**(1) Phân nhóm con VoC + kiểu thứ ba "Resource-Extractive Economy (REE)"**. Hall & Soskice (2001) phân biệt LME và CME; CĐ1 đề xuất kiểu thứ ba REE — kế thừa Hertog (2010) và Hvidt (2013).
+**(2) Lời nguyền tài nguyên × điều tiết thể chế** — Auty (1993); Sachs & Warner (2001); North (1990); Khanna & Palepu (2010).
 
-**(2) Lời nguyền tài nguyên × điều tiết thể chế**. Auty (1993) và Sachs & Warner (2001) chứng minh lời nguyền tài nguyên cấp quốc gia; CĐ1 mở rộng xuống cấp doanh nghiệp với điều tiết thể chế (North, 1990; Khanna & Palepu, 2010) — Mongolia và Vùng Vịnh là hai trường hợp biên minh chứng.
+**(3) DAI là điều kiện cần nhưng không đủ — cảnh báo *digital theatre***. Sở hữu công cụ số đơn lẻ không tự động đem lại lợi nhuận biên ở Advanced (DAI = -0,129); cần kết hợp absorptive capacity (Cohen & Levinthal, 1990) và năng lực công nghệ tích lũy (Lall, 1992).
 
-**(3) Năng lực số (DAI) là điều kiện cần nhưng không đủ — cảnh báo bẫy *digital theatre* (mở rộng v3.1c)**. Sở hữu công cụ số đơn lẻ (như website) không tự động đem lại lợi nhuận biên ở Advanced (DAI = -0,129); cần kết hợp với absorptive capacity (Cohen & Levinthal, 1990) và năng lực công nghệ tích lũy (Lall, 1992).
+**Bằng chứng học thuật 2022-2026 ở Asia (mở rộng v3.2 từ 4 → 5 evidence)**:
 
-**Bằng chứng học thuật 2022-2024 ở Asia ủng hộ cảnh báo này**:
+(a) **Babina et al. (2024 — JFE)**: AI adoption → growth + innovation intensity (positive evidence khi điều kiện đủ).
 
-(a) **Babina, Fedyk, He và Hodson (2024 — JFE)**: AI adoption → growth + innovation intensity — supportive evidence cho positive effect khi điều kiện đầy đủ.
+(b) **Wang, Huang & Hong (2024 — IRFA)**: 80% bank risk models PRC concentrated — concentration risk gây model homogenization.
 
-(b) **Wang, Huang và Hong (2024 — IRFA)**: 80% bank risk models ở PRC phụ thuộc dominant tech providers — concentration risk gây model homogenization.
+(c) **Anil & Misra (2022 — IJEM)**: India UPI fraud −50% nhưng rural rejection +24% — "digital theatre" paradox.
 
-(c) **Anil và Misra (2022 — IJEM)**: AI trong UPI Ấn Độ giảm fraud 50% nhưng rural rejection +24% — "digital theatre" paradox.
+(d) **Zhang, Qiu, Park & Tian (2026 — ABM Special Section)**: 249 studies; 5 risk dimensions Asia; AI là "co-evolutionary governance substrate".
 
-(d) **Zhang, Qiu, Park và Tian (2026 — ABM Special Section)**: 249 studies; 5 risk dimensions Asia; AI là "co-evolutionary governance substrate".
+**(e) NEW v3.2 — AI Preparedness Index Asia** (ADB, 2026, April — *Asian Development Outlook April 2026* Special Topic Ch.1.4 "AI Readiness and Economic Impacts in Asia and the Pacific", pp.44-51, dựa trên Cazzaniga et al., 2024 — IMF SDN/2024/001 "Gen-AI: Artificial Intelligence and the Future of Work"):
 
-Đây là cảnh báo quan trọng về xu hướng "digital theatre" (Verhoef et al., 2021) — cần được củng cố trong Chuyên đề 2 với DAI đa thành phần và mô hình tương tác DAI × TCI.
+- **AI Preparedness Index (AIPI)** đo 5 chiều: digital infrastructure, human capital, innovation capacity, regulatory & ethics, economic structure.
+- **Khoảng cách lớn AAP vs DAP**: AAP digital infrastructure 0,19 vs DAP <0,11 — "binding constraints on computing capacity, digital connectivity, data infrastructure".
+- DAP với điểm AIPI thấp nhất: Cambodia, India, Myanmar, Papua New Guinea, Philippines.
+- **AI-related job postings**: Singapore + Hàn Quốc >6%, India 4-5%, Australia 4%, Malaysia/Philippines <2%.
+- **AI-enabling goods exports** (theo WTO 2025): Hong Kong, Singapore, Đài Loan-Trung Quốc đều >25% tổng xuất khẩu; DAP trung bình ~10%.
+- **Sectoral AI exposure** (Gambacorta et al., 2025 — BIS): Financial services 6,6 cao nhất; Education 6,4; ICT 6,3; Agriculture 5,4 thấp nhất.
+- **GDP gains scenarios 2030** (G-Cubed model): AAP 0,6-2,1pp; DAP 0,2-1,8pp; trong DAP, PRC 0,2-6,9% (cao nhất); India lower.
+- **AI-driven productivity gains by sector**: Agriculture 0,1-4,5%; Industry 0,3-9,1%; Services 0,3-9,0%.
+- **Hệ quả phân phối**: Better-prepared economies → AI accelerate services-led structural change. Less-prepared economies (DAP excluding PRC and IND) → DỊCH CHUYỂN VIỆC LÀM tiêu cực, employment giảm 1-5pp by 2030.
+
+**Hàm ý cho CĐ1 và CĐ2**: AIPI gap củng cố mạnh "digital theatre" warning §7.3.1 (3) — chứng minh DAI cần đi kèm với 4 chiều khác (human capital, innovation capacity, regulatory ethics, economic structure). CĐ2 nên cân nhắc bổ sung biến `AIPI_country_score` cho 47 nước (sau khi Cazzaniga et al. publish full dataset 2024) tương tác với DAI multi-component để giải thích positive vs negative AI effects.
+
+Cảnh báo *digital theatre* (Verhoef et al., 2021) cần được củng cố trong CĐ2 với DAI đa thành phần và mô hình tương tác DAI × TCI × AIPI.
 
 #### 7.3.2 Hàm ý phương pháp luận
 
-Chuyên đề 1 đề xuất ba cải tiến phương pháp luận:
+**(1) Pipeline tái lập được**.
 
-**(1) Pipeline tái lập được**. 5 bước Python xử lý 4 thay đổi khung dữ liệu — gói tái lập đầu tiên cho phân tích nhóm dữ liệu WBES quy mô lớn.
+**(2) DAI/TCI đa thành phần với formative model + 2 đặc tả** (Bharadwaj et al., 2013; Coltman et al., 2008; Aguinis et al., 2011).
 
-**(2) Đo lường khái niệm đa thành phần (DAI và TCI) với formative model + 2 đặc tả kiểm định vững** (Bharadwaj et al., 2013; Coltman et al., 2008; Aguinis et al., 2011).
+**(3) Phân loại 8 phân nhóm con cho CĐ2** + biến `Critical_Minerals_Exposure` (v3.1c) + biến `GVC_participation_rate` (NEW v3.2) + biến `AIPI_country_score` (NEW v3.2 conditional on data availability).
 
-**(3) Phân loại 8 phân nhóm con cho CĐ2** — chi tiết hơn 5 ICRV thô (Khanna & Palepu, 2010; Kaufmann et al., 2011). *Cập nhật v3.1c*: thêm cân nhắc biến `Critical_Minerals_Exposure` cho 4 nước có lợi thế tài nguyên transition.
+#### 7.3.3 Hàm ý chính sách cho doanh nghiệp Việt Nam và khu vực (mở rộng v3.2 từ 5 lên **6 hàm ý**)
 
-#### 7.3.3 Hàm ý chính sách cho doanh nghiệp Việt Nam và khu vực
+**(1) Pattern kinh tế hai tầng (two-tier) không hội tụ**. Cơ sở pháp lý: Nghị quyết 41-NQ/TW (2023); Quyết định 1414/QĐ-TTg (2021).
 
-Chuyên đề 1 đề xuất **năm hàm ý chính sách thực tiễn** (mở rộng v3.1c từ 4 lên 5 với critical minerals):
+**(2) DAI đa thành phần cho SME**. 4 chỉ số mới TCTK: ERP/CRM, B2B e-commerce, e-payment, cloud SCM. Quyết định 749/QĐ-TTg (2020) + Đề án 06 (2022).
 
-**(1) Pattern kinh tế hai tầng (two-tier) không hội tụ**. Bộ chỉ tiêu hỗ trợ doanh nghiệp cần khác biệt giữa khối FDI và khối nội địa. Cơ sở: Nghị quyết 41-NQ/TW (2023); Quyết định 1414/QĐ-TTg (2021); Hsieh & Klenow (2009).
-
-**(2) DAI đa thành phần cho SME**. Đề xuất TCTK bổ sung 4 chỉ số mới: ERP/CRM, B2B e-commerce, e-payment, cloud SCM. Kết hợp Quyết định 749/QĐ-TTg (2020) và Đề án 06 (2022) — cảnh báo bẫy *digital theatre*.
-
-**(3) Năng lực công nghệ (TCI) cho SME hướng xuất khẩu**. Bốn hợp phần: (a) ưu đãi thuế R&D theo Luật 67/2025/QH15; (b) chứng nhận ISO ngành ưu tiên; (c) target SME potential exporter (~24% VN 2023); (d) đầu tư nhân lực kỹ thuật (Cohen & Levinthal, 1990; Lall, 1992).
+**(3) Năng lực công nghệ (TCI) cho SME hướng xuất khẩu**. (a) ưu đãi thuế R&D Luật 67/2025/QH15; (b) ISO ngành ưu tiên; (c) target SME potential exporter (~24% VN 2023); (d) đầu tư nhân lực kỹ thuật.
 
 **(4) Phân nhóm con cho ngoại giao kinh tế ASEAN+** (mở rộng v3.1c với tourism vulnerability):
-- **(a) Innovation-Advanced** (SG, KOR, TWN): chuyển giao đổi mới sáng tạo qua RCEP, CPTPP, VKFTA;
-- **(b) Resource-Advanced** (SAU, QAT, KWT, BHR, BRN): đầu tư hạ tầng song phương GCC – Việt Nam;
-- **(c) Upper-middle** (PRC, MAS, THA): tích hợp chuỗi giá trị ngành qua ACFTA và ASEAN-China FTA 3.0;
-- **(d) SIDS Thái Bình Dương**: dịch vụ MNE-driven thông qua PIF (2024). **Cập nhật v3.1c**: theo ADB (2016, AEIR), tourism receipts >30% GDP ở Maldives, Palau, Vanuatu — vulnerability mạnh cần đa dạng hóa. Đặc biệt với Kiribati và "isolated SIDS" — viện trợ + công nghệ cơ bản;
-- **(e) Frontier**: hạ tầng cơ bản, không kỳ vọng spillover ngắn hạn.
+- **Innovation-Advanced** (SG, KOR, TWN): chuyển giao đổi mới sáng tạo qua RCEP, CPTPP, VKFTA.
+- **Resource-Advanced** (SAU, QAT, KWT, BHR, BRN): đầu tư hạ tầng GCC – Việt Nam.
+- **Upper-middle** (PRC, MAS, THA): tích hợp chuỗi giá trị qua ACFTA, ASEAN-China FTA 3.0.
+- **SIDS Thái Bình Dương**: dịch vụ MNE-driven qua PIF (2024). Tourism receipts >30% GDP ở Maldives/Palau/Vanuatu (ADB, 2016 AEIR) — vulnerability cần đa dạng hóa. Kiribati và "isolated SIDS" → viện trợ + công nghệ cơ bản.
+- **Frontier**: hạ tầng cơ bản, không kỳ vọng spillover ngắn hạn.
 
-Phân bổ nguồn lực ngoại giao kinh tế: 10% Advanced, 80% Upper-middle/Emerging, 10% Frontier/SIDS.
+Phân bổ: 10% Advanced, 80% Upper-middle/Emerging, 10% Frontier/SIDS.
 
-**(5) Critical minerals partnership cho energy transition (mới ở v3.1c)** — Theo ADB (2026, May), lithium demand 8-13× by 2050; supply shortfall 2040 = 65% Li / 41% Cu / 24% Ni — cơ hội chiến lược cho Việt Nam. Ba khuôn khổ:
+**(5) Critical minerals partnership (v3.1c)** — Theo ADB (2026, May), lithium 8-13× by 2050, supply shortfall 2040 = 65% Li / 41% Cu. Ba khuôn khổ: (a) Vietnam-Mongolia Cooperation theo Korea model; (b) Indonesia nickel ban precedent áp dụng Tây Nguyên/Lai Châu/Yên Bái; (c) 3-country Vietnam-Indonesia-Mongolia value chain de-risking PRC processing dominance.
 
-(a) **Mô hình Korea-Mongolia (2023)** — Việt Nam đề xuất "Vietnam-Mongolia Critical Minerals Cooperation" tương tự, tập trung Cu, REE, fluorspar.
+**(6) NEW v3.2 — Tham gia GVC và technology spillovers cho SME Việt Nam** — Theo *ADPR 2026 — Global Value Chains and Inclusive Development* (ADB, 2026, May), 10% increase GVC participation → +0,45% per capita income growth; small firms 25% less likely to participate. Theo Sikdar và Mukhopadhyay (2026 — *ADR 43*) phân tích Ấn Độ: FDI là kênh horizontal spillover chính nhưng large/efficient firms hấp thụ nhiều nhất. Bằng chứng CĐ1 về Việt Nam two-tier kinh tế (§5.3) phù hợp.
 
-(b) **Học từ Indonesia precedent** — Indonesia nickel ban (2020) → 40% global processing share by 2023. Việt Nam có nickel + bauxite (Tây Nguyên) + REE (Lai Châu, Yên Bái) — áp dụng tương tự với regulatory framework rõ ràng.
+**Bốn đề xuất cụ thể cho Việt Nam**:
 
-(c) **Three-country Vietnam-Indonesia-Mongolia partnership** — Việt Nam = manufacturing hub, Indonesia = processing, Mongolia = mining; chuỗi giá trị **independent từ PRC processing dominance**. Chiến lược de-risking trong bối cảnh trade tensions Mỹ-Trung.
+(a) **Chương trình SME GVC participation** — TCTK + Bộ Công Thương cùng thiết lập **GVC Participation Index** cho 50.000 doanh nghiệp trọng điểm (sales >100 tỷ VND), đo bằng tỷ trọng input nhập khẩu, tỷ trọng xuất khẩu, kết nối B2B với MNE — base cho hỗ trợ chính sách.
+
+(b) **Chương trình hỗ trợ technology spillovers từ FDI** — 4 kênh horizontal (theo Sikdar & Mukhopadhyay, 2026): (i) imported intermediate/capital goods subsidy cho SME; (ii) license fee technology purchases tax credit; (iii) FDI-domestic linkage incentives (như Trung Quốc, Hàn Quốc model); (iv) skill diffusion qua mobility — VEPR đề xuất bộ luật chống cấm cạnh tranh sau khi rời doanh nghiệp FDI.
+
+(c) **GVC servicification policy** — Theo ADPR 2026, services chiếm half of value-added in Asia exports. Việt Nam cần phát triển ngành dịch vụ kinh doanh (legal, accounting, R&D, marketing) để cung cấp cho FDI manufacturing — kết hợp với Quyết định 749/QĐ-TTg (2020) chuyển đổi số.
+
+(d) **Inclusive growth caveat** — Bài học từ ADPR 2026: GVC participation tăng tăng trưởng nhưng cũng tăng Gini +6,7pp. Việt Nam cần policy buffer thông qua: redistribution qua progressive income tax; minimum wage indexed to GVC sector productivity; SME access to GVC networks (đề xuất (a) ở trên).
 
 #### 7.3.4 Hàm ý cho Chuyên đề 2 và luận án
 
@@ -239,19 +250,24 @@ Phân bổ nguồn lực ngoại giao kinh tế: 10% Advanced, 80% Upper-middle/
 
 ### 7.4 Hạn chế của chuyên đề
 
-(Giữ nguyên từ v3.1a — 6 hạn chế: USD PPP, TCI/DAI thành phần, Advanced trước 2013, Nhật Bản/SIDS thiếu, mô tả không nhân quả, resource dependence trực tiếp.)
+(Giữ nguyên từ v3.1a — 6 hạn chế. **NEW v3.2**: (7) Chưa có biến `GVC_participation_rate` ở firm level — WBES không đo trực tiếp; cần combine OECD TiVA hoặc ADB MRIO ở cấp ngành × quốc gia. CĐ2 sẽ khắc phục.)
 
 ### 7.5 Kế hoạch hoàn thiện
 
-(Giữ nguyên từ v3.1a — 4 giai đoạn 6/2026 → 9/2026 + bảng lộ trình tích hợp luận án.)
+(Giữ nguyên từ v3.1a — 4 giai đoạn 6/2026 → 9/2026.)
 
 ---
 
 ## TÀI LIỆU THAM KHẢO
 
-> Trích dẫn theo APA 7th. Danh mục đầy đủ ở `thesis/04_references_apa7.md` (v2.2 cập nhật v3.1c).
+> Trích dẫn theo APA 7th. Danh mục đầy đủ ở `thesis/04_references_apa7.md` (v2.3 cập nhật v3.2 với 4 entries mới).
 
-(Nội dung TLTK giữ nguyên từ v3.1a — xem commit `b41dbb8` cho danh sách đầy đủ. Ở v3.1c bổ sung cited references mới từ ADB synthesis: ADB (2016, 2026 March, 2026 May), Zhang/Qiu/Park/Tian (2026), Babina et al. (2024), Wang/Huang/Hong (2024), Anil/Misra (2022) — chi tiết APA full format trong `04_references_apa7.md` v2.2 commit `a199a94`.)
+**Cited references mới ở v3.2** (chi tiết APA full format trong `04_references_apa7.md` v2.3):
+
+- **Asian Development Bank**. (2026, May). *Global value chains and inclusive development: Asian Development Policy Report 2026 — Highlights*. ADB. (cited §7.1 (5), §7.3.3 (6))
+- **Asian Development Bank**. (2026, April). AI readiness and economic impacts in Asia and the Pacific. *Asian Development Outlook April 2026* (Special Topic, Ch.1.4, pp.44-51). ADB. (cited §7.3.1 (3)(e))
+- **Sikdar, C., & Mukhopadhyay, K.** (2026). Productivity gains from technology imports and spillovers in the Indian manufacturing sector. *Asian Development Review, 43*(1), 37-75. (cited §5.5, §7.3.3 (6))
+- **Cazzaniga, M., Jaumotte, F., Li, L., Melina, G., Panton, A., Pizzinelli, C., Rockall, E., & Tavares, M.** (2024). *Gen-AI: Artificial intelligence and the future of work*. IMF Staff Discussion Note SDN/2024/001. (cited §7.3.1 (3)(e))
 
 ---
 
@@ -259,20 +275,15 @@ Phân bổ nguồn lực ngoại giao kinh tế: 10% Advanced, 80% Upper-middle/
 
 ### Phụ lục A — Phạm vi thực tế của nhóm dữ liệu WBES
 
-(Giữ nguyên từ v3.1a — 47 nước, 108 cặp QG×năm, 101.185 doanh nghiệp, 7 SIDS bao gồm Kiribati 2025.)
+47 nước, 108 cặp QG×năm, 101.185 doanh nghiệp, 7 SIDS bao gồm Kiribati 2025.
 
 ### Phụ lục B – G
 
-(Phụ lục B Bản đồ, C Tổng hợp đợt khảo sát, D Định nghĩa biến, E Pipeline Python + 8/9 phân nhóm con, F Mã Stata, G Kế hoạch viết — sẽ được mở rộng trong giai đoạn 1–3 tháng 6–8/2026.)
+(Sẽ mở rộng giai đoạn 1–3 tháng 6–8/2026.)
 
 ---
 
-*Phiên bản 2.8.11 (A2.4 — final) — hoàn thiện toàn bộ Chương 7.*
-
-*Phiên bản 3.0 (06/05/2026) — Biên tập tiếng Việt hoàn thiện file 16.*
-
-*Phiên bản 3.1a (06/05/2026 — QW6) — Bổ sung Kiribati 2025 vào §5.7.*
-
-*Phiên bản 3.1c (06/05/2026 — Asia context integration) — §5.6 Mongolia REVAMP với critical minerals 2026; §7.3.1 (3) expand; §7.3.3 (5) NEW critical minerals partnership.*
-
-*Phiên bản 3.1d (06/05/2026) — Bổ sung 3 markdown image references: Hình 5.6.1 ở §5.6, Hình 5.7.1 ở §5.7, Hình 5.1 ở §5.8. Chạy `thesis/figures/generate_figures.py` để materialize 5 PNG/SVG.*
+*Phiên bản 3.0 (06/05/2026) — Biên tập tiếng Việt hoàn thiện.*
+*Phiên bản 3.1c (06/05/2026) — §5.6 Mongolia REVAMP critical minerals.*
+*Phiên bản 3.1d (06/05/2026) — 3 markdown image refs (5.6.1, 5.7.1, 5.1).*
+*Phiên bản 3.2 (06/05/2026) — Asia context v2: §5.5 India case (Sikdar/Mukhopadhyay 2026); §7.1 (5) NEW GVC khoảng trống (ADPR 2026); §7.3.1 (3)(e) AI Preparedness Index (Cazzaniga 2024 + ADO April 2026); §7.3.3 (6) NEW GVC partnership cho Việt Nam.*
