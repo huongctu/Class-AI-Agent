@@ -1,6 +1,8 @@
 # WBES Asia Dataset
 
-Pooled World Bank Enterprise Surveys (WBES) microdata for **41 Asian economies**, 5 UN M.49 regions.
+Pooled World Bank Enterprise Surveys (WBES) microdata for **48 Asian/Pacific economies**, 6 regions (UN M.49 Asia + World Bank "East Asia & Pacific" extension).
+
+> **Region definition note**: We follow the World Bank's *East Asia & Pacific* (EAP) regional grouping, which includes Pacific Island economies (Fiji, Samoa, Kiribati, PNG, Tonga, Solomon Islands, Vanuatu) alongside East and Southeast Asia. UN M.49 classifies these as Oceania separately; readers preferring strict Asia-only analysis can filter `src_region != "Pacific"` in the pooled file.
 
 ## Contents
 
@@ -24,9 +26,9 @@ data/asia/
 
 ## Coverage
 
-- **110 country-year files** (deduplicated from 298 raw uploads — many duplicates from re-uploads)
-- **122,858 firm-observations** total
-- **41 economies** across 5 regions:
+- **120 country-year files** (deduplicated from 298 raw uploads — many duplicates from re-uploads)
+- **124,229 firm-observations** total
+- **48 economies** across 6 regions:
 
 | Region          | Files | Economies                                                                                              |
 | --------------- | ----- | ------------------------------------------------------------------------------------------------------ |
@@ -35,8 +37,7 @@ data/asia/
 | South Asia      | 24    | Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan, SriLanka                            |
 | Central Asia    | 16    | Kazakhstan, KyrgyzRepublic, Tajikistan, Turkmenistan, Uzbekistan                                       |
 | West Asia       | 25    | Armenia, Bahrain, Cyprus, Georgia, Iraq, Israel, Jordan, Kuwait, Lebanon, Oman, Qatar, SaudiArabia, Yemen |
-
-Pacific islands (Fiji, Samoa, Kiribati, Tonga, Solomon Islands, PNG, Vanuatu) are excluded — Oceania, not Asia per UN M.49.
+| Pacific         | 10    | Fiji, Kiribati, PapuaNewGuinea, Samoa, SolomonIslands, Tonga, Vanuatu                                  |
 
 ## Pooled file: variable set
 

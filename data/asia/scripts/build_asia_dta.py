@@ -10,7 +10,7 @@ import csv
 
 ALL_DTA = Path("/tmp/all_dta.txt").read_text().strip().splitlines()
 
-# UN M.49 Asia regions
+# UN M.49 Asia regions + WB "East Asia & Pacific" extension
 ASIA_REGIONS = {
     "East Asia": {"China", "HongKongSARChina", "Japan", "Korea", "KoreaRepublic",
                   "Mongolia", "TaiwanChina", "DPRK"},
@@ -25,9 +25,11 @@ ASIA_REGIONS = {
                  "Georgia", "Iraq", "Israel", "Jordan", "Kuwait", "Lebanon",
                  "Oman", "Palestine", "Qatar", "Saudi-Arabia", "Syria", "Turkey",
                  "UAE", "Yemen"},
+    "Pacific": {"Fiji", "Samoa", "Kiribati", "Tonga", "Solomon-Islands",
+                "PapuaNewGuinea", "Papua-New-Guinea", "Vanuatu", "Tuvalu",
+                "Palau", "Nauru", "MarshallIslands", "Micronesia"},
 }
-NOT_ASIA = {"Fiji", "Samoa", "Kiribati", "Tonga", "Solomon-Islands",
-            "PapuaNewGuinea", "Papua-New-Guinea", "Vanuatu"}
+NOT_ASIA = set()  # Pacific now included per World Bank EAP regional grouping
 
 # Country name canonicalization
 NAME_MAP = {
@@ -44,6 +46,7 @@ NAME_MAP = {
     "TimorLeste": "TimorLeste",
     "Papua-New-Guinea": "PapuaNewGuinea",
     "Solomon-Islands": "SolomonIslands",
+    "PapuaNewGuinea": "PapuaNewGuinea",
 }
 
 ALL_COUNTRIES = set()
