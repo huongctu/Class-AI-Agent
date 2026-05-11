@@ -16,6 +16,8 @@ Danh mục tham khảo cho luận án, sắp xếp theo thứ tự alphabet củ
 >
 > **Phiên bản 2.7 (10/05/2026 — Singapore innovation ecosystem 2025/2026)**: Bổ sung **Section Q mới** (5 entries) phục vụ cập nhật §1.1 và §5.1 của P4 Singapore: (i) Enterprise Singapore (2025) SWITCH 2025; (ii) GovTech Singapore (2024) Digital Government Rankings; (iii) IMDA (2025) ATxSG 2025; (iv) StartupBlink (2025) Global Startup Ecosystem Index; (v) StartupBlink (2026) Innovators Business Environment Index.
 >
+> **Phiên bản 2.9 (11/05/2026 — Audit CĐÒ2 đầy đủ)**: Bổ sung **Section S mới** (4 entries) phục vụ resolve audit format-apa7.py trên CĐ2 complete file: Adner (2017) ecosystem; Angrist & Pischke (2009) econometrics; Contractor (2012) GSJ theory update; Dosi (1982) tech paradigms.
+>
 > **Phiên bản 2.5 (07/05/2026 — Vietnamese WBES sources + Vietnam Outlook 2026 + IFC PSD Blueprint)**: Bổ sung **4 references mới** từ batch upload 5 PDFs (07/05/2026): (i) Section K — **ADB (2026, April) Vietnam Economic Outlook 2026** (Việt Nam GDP 7,2% 2026 / 7,0% 2027, FDI commitment $2,4B / 18 dự án); (ii) Section K — **IFC (n.d.) Private Sector Development Blueprint** (3 trụ cột framework + 6 essential public transactions); (iii) Section K — **World Bank (2025) Hệ thống phân loại quốc gia FY26 (Vietnamese)** (4 income groups + 7 regions + 3 borrowing); (iv) Section K — **World Bank (n.d.) Tài liệu tóm tắt chỉ số WBES (Vietnamese)** — base cho thuật ngữ Việt chuẩn. **✓ RESOLVED Audit Warning 1 v2.4**: Lin & Beamish (2005) → Lu & Beamish (2004) replacement đã hoàn tất trong file 14 v3.8 (commit e2f8415).
 
 > **Note**: Sections A, B, C, E, H, I, J, M, N, O giữ nguyên từ v2.1-v2.4 trừ phần entries mới được đánh dấu **(Mới v2.x)**.
@@ -365,6 +367,20 @@ StartupBlink. (2026). *Innovators Business Environment Index 2026*. StartupBlink
 Abreha, K., & Lopez Acevedo, G. (2024). *Trade restructuring: Assessing labor market and welfare effects* (Policy Research Working Paper No. 10955). World Bank Group. *(Cited in P5 §2 — trade re-equilibration, US–China tariff cycle, bilateral trade flow reorientation; Poverty and Equity Global Practice, October 2024.)*
 
 *(Các tài liệu World Bank DPI, Vietnam FCI Snapshot, Taking Stock, GDKC đã được lưu trong Section P — World Bank 2025a/b/c/d.)*
+
+---
+
+## S. Bổ sung v2.9 — 4 references cho CĐ2 (11/05/2026)
+
+*Bổ sung theo audit format-apa7.py trên `thesis/cd2/00_cd2_complete_vi.md` — 4 entries cited inline nhưng chưa có entry trong refs.*
+
+**Adner, R. (2017). Ecosystem as structure: An actionable construct for strategy. *Journal of Management, 43*(1), 39–58.** https://doi.org/10.1177/0149206316678451 *(Mới v2.9 — Ecosystem framework cho CĐ2 §4 H7 industry interaction.)*
+
+**Angrist, J. D., & Pischke, J.-S. (2009). *Mostly harmless econometrics: An empiricist's companion*. Princeton University Press.** *(Mới v2.9 — Identification strategy bible cho CĐ2 §5 IV specification + endogeneity discussion.)*
+
+**Contractor, F. J. (2012). Why do multinational firms exist? A theory note about the effect of multinational expansion on performance and recent methodological critiques. *Global Strategy Journal, 2*(4), 318–331.** https://doi.org/10.1111/j.2042-5805.2012.01045.x *(Mới v2.9 — Theoretical update sau Contractor et al. (2003) three-stage; cited trong CĐ2 §2 review I-P theoretical evolution.)*
+
+**Dosi, G. (1982). Technological paradigms and technological trajectories: A suggested interpretation of the determinants and directions of technical change. *Research Policy, 11*(3), 147–162.** https://doi.org/10.1016/0048-7333(82)90016-6 *(Mới v2.9 — Classical innovation theory cho CĐ2 §2 lý thuyết nền + §4 Kafouros tech-dynamism interpretation.)*
 
 ---
 
