@@ -30,7 +30,7 @@
 
 ### 6.3 Cấp độ phân tích và đơn vị quan sát
 
-**Đơn vị quan sát**: doanh nghiệp i × quốc gia c × năm khảo sát t. Pool có 101.035 đơn vị quan sát.
+**Đơn vị quan sát**: doanh nghiệp i × quốc gia c × năm khảo sát t. Pool có 101.185 đơn vị quan sát.
 
 **Cấu trúc dữ liệu**: pooled cross-section với 47 quốc gia × 107 năm. Một số quốc gia có panel ngắn (Trung Quốc 2012/2024, Việt Nam 2009/2015/2023, Mongolia 2009/2013/2019/2025).
 
@@ -63,17 +63,17 @@ H1 phi tuyến: Wald test β₂=β₃=0 với Bonferroni correction. H2 TCI: t-t
 
 ### 7.1 Nguồn dữ liệu
 
-**Dữ liệu chính**: Pool WBES 101.035 doanh nghiệp ở 47 nền kinh tế châu Á và Pacific × 107 cặp quốc gia × năm × 14 mốc khảo sát giai đoạn 2009–2025.
+**Dữ liệu chính**: Pool WBES 101.185 doanh nghiệp ở 47 nền kinh tế châu Á và Pacific × 108 cặp quốc gia × năm × 14 mốc khảo sát giai đoạn 2009–2025.
 
 **Dữ liệu bổ sung**: WB WDI (GDP/cap PPP, FDI/GDP), WGI 6 chiều, GII (WIPO 2024), ITU Digital Hub, Data360 API.
 
 ### 7.2 Mẫu nghiên cứu dự kiến
 
-**Pool đầy đủ**: 101.035 doanh nghiệp.
+**Pool đầy đủ**: 101.185 doanh nghiệp.
 
 **Sub-samples**: Manufacturing only (~45.000), SME only (~76.000), Exporters only (~17.000), by regime (Advanced 5.921; Upper-middle 15.174; Emerging 47.803; Frontier 28.678; SIDS 1.221).
 
-**Power**: n=101.035 và effect size f²=0,02 → power > 0,99 cho mọi M0–M7. SIDS subsample n=1.221 đáp ứng cho M2 nhưng không đủ M7.
+**Power**: n=101.185 và effect size f²=0,02 → power > 0,99 cho mọi M0–M7. SIDS subsample n=1.221 đáp ứng cho M2 nhưng không đủ M7.
 
 ### 7.3 Đo lường biến
 
@@ -96,9 +96,9 @@ Pipeline 5 bước (`wbes/02_harmonize.py`); 4 thay đổi schema lớn xuyên 3
 
 | Mô hình | n cần thiết | n hiện có | Power |
 |---|---|---|---|
-| M0–M5 | 200–2.500 | 101.035 | >0,99 |
-| M6 + Regime | 5.000 | 101.035 | >0,99 |
-| **M7 capstone** | 30.000 | 101.035 | **0,99** |
+| M0–M5 | 200–2.500 | 101.185 | >0,99 |
+| M6 + Regime | 5.000 | 101.185 | >0,99 |
+| **M7 capstone** | 30.000 | 101.185 | **0,99** |
 | M7 SIDS | 5.000 | 1.221 | 0,4 (không đủ) |
 
 → M7 SIDS không đủ power; phải kiểm định H5 cho SIDS riêng bằng M0–M2.
@@ -127,7 +127,7 @@ Tám mô hình M0–M7 với three-way moderation + temporal heterogeneity. Boun
 
 ### 9.3 Đóng góp về phương pháp
 
-Pool 101.035 firms × 47 nước × 107 country-years × 14 mốc khảo sát; pipeline reproducible 5 bước Python.
+Pool 101.185 firms × 47 nước × 107 country-years × 14 mốc khảo sát; pipeline reproducible 5 bước Python.
 
 ### 9.4 Hạn chế của mô hình
 
@@ -150,10 +150,10 @@ Pool 101.035 firms × 47 nước × 107 country-years × 14 mốc khảo sát; p
 3 sub-regime-specific testable hypotheses từ CĐ1: (i) DAI âm CHỈ ở Advanced-innovation (không phải Advanced-resource); (ii) FDI dương mạnh CHỈ ở SIDS (+0,222 vs Frontier +0,068); (iii) Resource cluster (regimes 2+5+partial SIDS) có pattern riêng. Trong CĐ2, các fixed effects sẽ ở 8-sub-regimes thay vì 5-ICRV thô.
 
 (b) **2 specifications robustness check** (kế thừa CĐ1 §7.3.2 sub-point 2):
-- *Spec 1 — full coverage 2009–2025*: pool 101.035 firms với DAI single-component (website) + TCI 2-component (R&D + ISO).
+- *Spec 1 — full coverage 2009–2025*: pool 101.185 firms với DAI single-component (website) + TCI 2-component (R&D + ISO).
 - *Spec 2 — high precision 2018–2025*: sub-pool ~50.000 firms với DAI 5-component (website + e-commerce + ERP + cloud + AI usage) + TCI 5-component (R&D dummy + R&D intensity + ISO + imported machinery + engineer ratio).
 
-Phát hiện chính phải replicate ở cả 2 specs (criterion theo Aguinis et al., 2011) — đặc biệt: dispersion ratio 2,1×, Mongolia DAI tăng nhưng FSTS không tăng, SIDS digital leapfrog + low FSTS.
+Phát hiện chính phải replicate ở cả 2 specs — tiêu chí replication theo Aguinis et al. (2011) — đặc biệt: dispersion ratio 2,1×, Mongolia DAI tăng nhưng FSTS không tăng, SIDS digital leapfrog + low FSTS.
 
 (c) **Industry FE + 5 subsample tests** (kế thừa CĐ1 §4.8 file 15):
 - *Hypothesis I1*: Manufacturing FSTS dominance → Manufacturing-only subsample n≈50.000
@@ -175,7 +175,7 @@ Phát hiện chính phải replicate ở cả 2 specs (criterion theo Aguinis et
 - Trong CĐ2, hypothesis: DAI moderation hiệu lực CHỈ khi đi kèm với TCI đủ cao (multi-component DAI × TCI three-way interaction trong M7)
 
 **Hướng 2 — Triển khai luận án với 6 panels Chương 4** (kế thừa CĐ1 §7.3.4 file 16):
-- *Panel A*: Full pool descriptive (101.035 firms × 47 nước × 107 country-years)
+- *Panel A*: Full pool descriptive (101.185 firms × 47 nước × 107 country-years)
 - *Panel B*: 8-sub-regime split với fixed effects
 - *Panel C*: Cubic + interaction (S-curve + 4 moderators)
 - *Panel D*: DAI/TCI moderation (Spec 1 vs Spec 2)
@@ -208,7 +208,7 @@ Chuyên đề 2 thiết lập đầy đủ khung lý thuyết tích hợp 4 tầ
 
 **Tính mới**: tích hợp 8 yếu tố cùng lúc (phi tuyến + 4 moderators + temporal + 3-way + sub-grouping Advanced + SIDS boundary).
 
-**Tính khả thi**: Pool 101.035 firms × 47 nước × 107 country-years cung cấp dư thừa power cho mọi M0–M7.
+**Tính khả thi**: Pool 101.185 firms × 47 nước × 107 country-years cung cấp dư thừa power cho mọi M0–M7.
 
 **Tính ứng dụng**: 4 hàm ý chính sách Việt Nam được CĐ1 §7.3.3 phát triển với 7 văn bản pháp lý cited (Nghị quyết 41-NQ/TW, Luật 67/2025/QH15, các Quyết định 749, 1414, 1851, 06, 493).
 
@@ -239,7 +239,7 @@ CĐ2 cùng với CĐ1 (mô tả thực trạng + sub-grouping Emerging + 2025 wa
 **Workflow CĐ1 → CĐ2 → Luận án**:
 
 ```
-CĐ1 v2.10 (101.035 firms descriptive + 8 sub-regimes + 5 industry hypotheses)
+CĐ1 v2.10 (101.185 firms descriptive + 8 sub-regimes + 5 industry hypotheses)
     ↓
 CĐ2 v1.1 (M0–M7 với 8 sub-regime FE + 2 specs + industry FE + 2025 validation)
     ↓
@@ -252,7 +252,7 @@ Luận án 5 chương (kế thừa CĐ1+CĐ2 + 6 panels Chương 4 + 4 hàm ý c
 - Q2 2026: CĐ1 v2.10 + CĐ2 v1.1 hoàn thiện
 - Q3 2026: Bảo vệ chuyên đề trước Hội đồng CTU (tháng 8–9/2026)
 - Q4 2026: Luận án Chương 1–3 (kế thừa lý thuyết + phương pháp luận từ CĐ1+CĐ2)
-- Q1 2027: Luận án Chương 4 (Kết quả) — pool 101.035 × 8 sub-regimes × 2 specs × 6 panels
+- Q1 2027: Luận án Chương 4 (Kết quả) — pool 101.185 × 8 sub-regimes × 2 specs × 6 panels
 - Q2 2027: Luận án Chương 5 (Thảo luận + Kết luận) — triangulation 3 sub-papers
 - Q3 2027: Bảo vệ luận án cấp Trường
 
