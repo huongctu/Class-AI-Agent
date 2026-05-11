@@ -12,6 +12,10 @@ Danh mục tham khảo cho luận án, sắp xếp theo thứ tự alphabet củ
 >
 > **Phiên bản 2.4 (07/05/2026 — Citation audit APA 7th cho v3.4-v3.7)**: Bổ sung **6 verified references** (Bello & Kostova 2012 JIBS, Meyer et al. 2017 JIBS, Dunning 1988 JIBS, Williamson 2000 JEL, Aguinis Hill & Bailey 2019 ORM, Malerba & Orsenigo 1995 CJE, NotebookLM 2026 podcast). 3 audit warnings cho NCS fix.
 >
+> **Phiên bản 2.6 (10/05/2026 — World Bank Data360 Atlas 2026 + G20 AI FinSupervision)**: Bổ sung **Section P mới** (5 entries): (i) Pirlea & Corso (2026) internet access digital divide; (ii) Mahler, Wang & Weber (2026) AI inequality; (iii) Pirlea et al. (2026) Atlas of Global Development 2026; (iv) Agnolucci, Kenworthy & Kose (2026) Middle East war → commodity markets; (v) Boeddu, Feyen et al. (2025) AI for Financial Sector Supervision (G20 report).
+>
+> **Phiên bản 2.7 (10/05/2026 — Singapore innovation ecosystem 2025/2026)**: Bổ sung **Section Q mới** (5 entries) phục vụ cập nhật §1.1 và §5.1 của P4 Singapore: (i) Enterprise Singapore (2025) SWITCH 2025; (ii) GovTech Singapore (2024) Digital Government Rankings; (iii) IMDA (2025) ATxSG 2025; (iv) StartupBlink (2025) Global Startup Ecosystem Index; (v) StartupBlink (2026) Innovators Business Environment Index.
+>
 > **Phiên bản 2.5 (07/05/2026 — Vietnamese WBES sources + Vietnam Outlook 2026 + IFC PSD Blueprint)**: Bổ sung **4 references mới** từ batch upload 5 PDFs (07/05/2026): (i) Section K — **ADB (2026, April) Vietnam Economic Outlook 2026** (Việt Nam GDP 7,2% 2026 / 7,0% 2027, FDI commitment $2,4B / 18 dự án); (ii) Section K — **IFC (n.d.) Private Sector Development Blueprint** (3 trụ cột framework + 6 essential public transactions); (iii) Section K — **World Bank (2025) Hệ thống phân loại quốc gia FY26 (Vietnamese)** (4 income groups + 7 regions + 3 borrowing); (iv) Section K — **World Bank (n.d.) Tài liệu tóm tắt chỉ số WBES (Vietnamese)** — base cho thuật ngữ Việt chuẩn. **✓ RESOLVED Audit Warning 1 v2.4**: Lin & Beamish (2005) → Lu & Beamish (2004) replacement đã hoàn tất trong file 14 v3.8 (commit e2f8415).
 
 > **Note**: Sections A, B, C, E, H, I, J, M, N, O giữ nguyên từ v2.1-v2.4 trừ phần entries mới được đánh dấu **(Mới v2.x)**.
@@ -142,6 +146,24 @@ World Bank. (2025, December). *Kiribati 2025 Enterprise Surveys country profile*
 
 World Bank. (2026). *Indicator descriptions*. World Bank Enterprise Surveys.
 
+Buchhave, H., Nguyen, C. V., Vu, C., Nguyen, G. T., & Zumbyte, I. (2026). *Care for growth: Making industrial jobs work for women in Viet Nam* (Policy Summary Note). World Bank Group & Australian Aid.
+
+International Finance Corporation. (2022, December). *Mind the gaps: Women in leadership in Viet Nam's banking sector*. IFC, World Bank Group.
+
+World Bank. (2024, December). *Viet Nam economy snapshot: Justice* (Prosperity Data360). World Bank Group. https://www.worldbank.org/ext/en/country/vietnam
+
+World Bank. (2025a, March). *Digital public infrastructure and development: A World Bank Group approach*. World Bank Group.
+
+World Bank. (2025b, September). *Viet Nam economic update: Nurturing high-tech talents* (Taking Stock, September 2025). World Bank Group.
+
+World Bank. (2025c, October). *Viet Nam economy snapshot: Finance, competitiveness & innovation* (Prosperity Data360). World Bank Group. https://www.worldbank.org/ext/en/country/vietnam
+
+World Bank. (2025d, December). *Korea global digital knowledge center*. World Bank Group.
+
+World Bank. (2026a). *ID4D & G2Px annual report 2023: Putting people at the center of digital public infrastructure*. World Bank Group.
+
+World Bank. (2026b, April). *Viet Nam macro monitoring: April 2026*. World Bank Group, Fiscal Policy and Growth Viet Nam Team.
+
 **World Bank. (n.d.). *Tài liệu tóm tắt: Các chỉ số khảo sát doanh nghiệp Enterprise Surveys* [Summary document: Enterprise Survey indicators]. World Bank.** https://www.enterprisesurveys.org *(Mới v2.5 — Bản tiếng Việt tóm tắt 5 lĩnh vực WBES với thuật ngữ Việt chuẩn từ World Bank: (1) Quy định pháp lý + Thuế (Time Tax = "Thuế thời gian"; Tax compliance = "Tuân thủ thuế"); (2) Tài chính + Tín dụng (Credit constraint = "Hạn chế tín dụng"; Financial digitalization = "Số hóa tài chính"); (3) Cơ sở hạ tầng + Khí hậu (Energy management = "Quản lý năng lượng"); (4) Tham nhũng + Tranh chấp (Bribery = "Hối lộ"; Graft = "Tham ô"); (5) Lao động + Đổi mới (Online presence = "Hiện diện trực tuyến"). Năm xuất bản KHÔNG ghi rõ — APA 7th cite "n.d." per §8.31. Cited file 09b_vn_term_glossary.md cho thuật ngữ chuẩn + chuyển dịch tiếng Việt CĐ1 v3.x.)*
 
 **World Bank. (2025, July 1). *Hướng dẫn học tập: Hệ thống phân loại quốc gia và khảo sát doanh nghiệp của Ngân hàng Thế giới (FY26)* [Learning guide: World Bank country classification system FY26]. World Bank.** *(Mới v2.5 — Bản tiếng Việt FY26 (hiệu lực 1/7/2025) với 3 hệ thống phân loại: (a) **4 income groups**: Thu nhập thấp ≤$1.135 GNI; Thu nhập trung bình thấp $1.136–$4.495; Thu nhập trung bình cao $4.496–$13.935; Thu nhập cao >$13.935; (b) **7 regions**: EAP (Đông Á + Thái Bình Dương), ECA (Châu Âu + Trung Á), LAC (Mỹ Latinh + Caribe), **MENAAP (mới FY26 — Trung Đông + Bắc Phi + Afghanistan + Pakistan)**, NA (Bắc Mỹ), SAS (Nam Á), SSA (Châu Phi cận Sahara); (c) **3 borrowing classifications**: IDA only / Blend / IBRD only; (d) **Phương pháp Atlas** để tính GNI per capita. Cited §1.3 phạm vi không gian (47 nước châu Á phân loại theo income group) + §3 ICRV regime classification trong CĐ1 v3.x.)*
@@ -200,6 +222,150 @@ Wu, J., Wood, G., & Khan, Z. (2022). Internationalization and firm performance: 
 
 (Giữ nguyên từ v2.0 — 7 văn bản pháp lý + 8 hiệp định FTA.)
 
+## P. World Bank Data360 Atlas 2026 và báo cáo AI-Finance (Mới v2.6)
+
+Agnolucci, P., Kenworthy, P., & Kose, M. A. (2026, May 7). Five questions on how the war in the Middle East is affecting commodity markets. *Let's Talk Development*. World Bank Blogs. https://blogs.worldbank.org/en/developmenttalk/five-questions-on-how-the-war-in-the-middle-east-is-affecting-co *(Mới v2.6 — Strait of Hormuz closure: 35% seaborne crude oil; Brent $72→$118/bbl March 2026; energy +24%; fertilizer +30%; EMDEs growth 3,6% downgrade 0,4pp; EMDE commodity exporters 2,4%.)*
+
+Boeddu, G., Feyen, E., Martinez Jaramillo, S., Mesquita, S., Palta, Y., Sarkar, A., Sinha, S., & Gutiérrez Traverso, A. (2025). *Artificial Intelligence for Financial Sector Supervision: An Emerging Market and Developing Economies Perspective* (Prosperity Insight Series). World Bank Group. https://doi.org/10.1596/978-1-4648-2132-7 *(Mới v2.6 — G20 report to Finance Ministers; survey 70+ EMDEs financial authorities; 3 challenges: skills gap, data quality, digitization of existing systems.)*
+
+Mahler, D., Wang, H., & Weber, M. (2026, May). Inequalities in use of and exposure to artificial intelligence. In *Atlas of Global Development 2026*. World Bank Data360. World Bank Group. https://data360.worldbank.org/en/int/atlas/artificial-intelligence *(Mới v2.6 — ChatGPT 50× per internet user HIC vs LIC; 5GB data = ~50% remaining budget after food in LICs; only 5% LIC population had basic digital skills 2023; HICs hold 77% global data center capacity; US 20,000× more servers per capita than LICs.)*
+
+Pirlea, A. F., & Corso, L. (2026, May). The unfinished digital revolution: Expanding internet access. In *Atlas of Global Development 2026*. World Bank Data360. World Bank Group. https://data360.worldbank.org/en/int/atlas/internet-access *(Mới v2.6 — 2,2 tỷ người offline (2025); Bangladesh: 100% 4G coverage nhưng chỉ 53% dùng Internet (coverage-to-connection gap); 280 triệu men online hơn women; Singapore/UAE/Chile >300 Mbps vs LIC <20 Mbps.)*
+
+---
+
+## Bổ sung v2.7 — Tham khảo cốt lõi từ P3/P4/P5/P6/P7/CĐ1/CĐ2
+
+*Các entry dưới đây được thêm để giải quyết 85 warnings từ format-apa7.py. DOIs đã verify từ bản thảo gốc.*
+
+Author, C., & Author, C. B. (2026). Self-citation blinded for anonymous peer review. *Management International Review, under review*. *(Placeholder — replace with real P4 Singapore citation after review decision.)*
+
+Banerjee, A. V., & Duflo, E. (2014). Do firms want to borrow more? Testing credit constraints using a directed lending program. *Review of Economic Studies, 81*(2), 572–607. https://doi.org/10.1093/restud/rdt046
+
+Barney, J. (1991). Firm resources and sustained competitive advantage. *Journal of Management, 17*(1), 99–120. https://doi.org/10.1177/014920639101700108
+
+Bausch, A., & Krist, M. (2007). The effect of context-related moderators on the internationalization–performance relationship: Evidence from meta-analysis. *Management International Review, 47*(3), 319–347. https://doi.org/10.1007/s11575-007-0019-z
+
+Begg, C. B., & Mazumdar, M. (1994). Operating characteristics of a rank correlation test for publication bias. *Biometrics, 50*(4), 1088–1101. https://doi.org/10.2307/2533446
+
+Bertram, G. (2006). Introduction: The MIRAB model in the twenty-first century. *Asia Pacific Viewpoint, 47*(1), 1–13. https://doi.org/10.1111/j.1467-8373.2006.00297.x
+
+Brynjolfsson, E., & McAfee, A. (2014). *The second machine age: Work, progress, and prosperity in a time of brilliant technologies*. W. W. Norton & Company.
+
+Brynjolfsson, E., Rock, D., & Syverson, C. (2021). The productivity J-curve: How intangibles complement general purpose technologies. *American Economic Journal: Macroeconomics, 13*(1), 333–372. https://doi.org/10.1257/mac.20180386
+
+Buckley, P. J., Clegg, L. J., Cross, A. R., Liu, X., Voss, H., & Zheng, P. (2007). The determinants of Chinese outward foreign direct investment. *Journal of International Business Studies, 38*(4), 499–518. https://doi.org/10.1057/palgrave.jibs.8400277
+
+Cohen, W. M., & Levinthal, D. A. (1990). Absorptive capacity: A new perspective on learning and innovation. *Administrative Science Quarterly, 35*(1), 128–152. https://doi.org/10.2307/2393553
+
+Cusolito, A. P., & Maloney, W. F. (2018). *Productivity revisited: Shifting paradigms in analysis and policy*. World Bank. https://doi.org/10.1596/978-1-4648-1219-6
+
+Demir, B., & Javorcik, B. (2018). Don't throw in the towel, throw in trade credit! *Journal of International Economics, 111*, 177–189. https://doi.org/10.1016/j.jinteco.2018.01.008
+
+Duval, S., & Tweedie, R. (2000). Trim and fill: A simple funnel-plot–based method of testing and adjusting for publication bias in meta-analysis. *Biometrics, 56*(2), 455–463. https://doi.org/10.1111/j.0006-341X.2000.00455.x
+
+Eden, L., & Nielsen, B. B. (2020). Research methods in international business: The challenge of complexity. *Journal of International Business Studies, 51*(9), 1609–1620. https://doi.org/10.1057/s41267-020-00374-2
+
+Egger, M., Davey Smith, G., Schneider, M., & Minder, C. (1997). Bias in meta-analysis detected by a simple, graphical test. *British Medical Journal, 315*(7109), 629–634. https://doi.org/10.1136/bmj.315.7109.629
+
+Haans, R. F. J., Pieters, C., & He, Z.-L. (2016). Thinking about U: Theorizing and testing U- and inverted U-shaped relationships in strategy research. *Strategic Management Journal, 37*(7), 1177–1195. https://doi.org/10.1002/smj.2399
+
+Hall, P. A., & Soskice, D. (2001). *Varieties of capitalism: The institutional foundations of comparative advantage*. Oxford University Press. https://doi.org/10.1093/0199247757.001.0001
+
+Hennart, J.-F. (2007). The theoretical rationale for a multinationality–performance relationship. *Management International Review, 47*(3), 423–452. https://doi.org/10.1007/s11575-007-0022-4
+
+Hitt, M. A., Hoskisson, R. E., & Kim, H. (1997). International diversification: Effects on innovation and firm performance in product-diversified firms. *Academy of Management Journal, 40*(4), 767–798. https://doi.org/10.2307/256948
+
+Hsieh, C.-T., & Klenow, P. J. (2009). Misallocation and manufacturing TFP in China and India. *Quarterly Journal of Economics, 124*(4), 1403–1448. https://doi.org/10.1162/qjec.2009.124.4.1403
+
+Hsu, M.-L., & Boggs, D. J. (2003). Internationalization and performance: Traditional measures and their decomposition. *Multinational Business Review, 11*(3), 23–49. https://doi.org/10.1108/1525383X200300015
+
+Hsu, W. T., Chen, H. L., & Cheng, C. Y. (2013). Internationalization and firm performance of SMEs: The moderating effects of CEO attributes. *Journal of World Business, 48*(1), 1–12. https://doi.org/10.1016/j.jwb.2012.06.001
+
+Johanson, J., & Vahlne, J.-E. (1977). The internationalization process of the firm — A model of knowledge development and increasing foreign market commitments. *Journal of International Business Studies, 8*(1), 23–32. https://doi.org/10.1057/palgrave.jibs.8490676
+
+Kano, L., Tsang, E. W. K., & Yeung, H. W.-C. (2020). Global value chains: A review of the multi-disciplinary literature. *Journal of International Business Studies, 51*(4), 577–622. https://doi.org/10.1057/s41267-020-00304-2
+
+Karna, A., Richter, A., & Riesenkampff, E. (2016). Revisiting the role of the environment in the capabilities–financial performance relationship: A meta-analysis. *Strategic Management Journal, 37*(6), 1154–1173. https://doi.org/10.1002/smj.2379
+
+Khanna, T., & Palepu, K. G. (2010). *Winning in emerging markets: A road map for strategy and execution*. Harvard Business Press.
+
+Knight, G. A., & Cavusgil, S. T. (2004). Innovation, organizational capabilities, and the born-global firm. *Journal of International Business Studies, 35*(2), 124–141. https://doi.org/10.1057/palgrave.jibs.8400071
+
+La Porta, R., & Shleifer, A. (2014). Informality and development. *Journal of Economic Perspectives, 28*(3), 109–126. https://doi.org/10.1257/jep.28.3.109
+
+Lall, S. (1992). Technological capabilities and industrialization. *World Development, 20*(2), 165–186. https://doi.org/10.1016/0305-750X(92)90097-F
+
+Li, Y., Liu, Y., & Qian, C. (2022). Digitalization, internationalization, and firm performance: Evidence from Chinese manufacturing firms. *International Business Review, 31*(3), 101953. https://doi.org/10.1016/j.ibusrev.2021.101953
+
+Lind, J. T., & Mehlum, H. (2010). With or without U? The appropriate test for a U-shaped relationship. *Oxford Bulletin of Economics and Statistics, 72*(1), 109–118. https://doi.org/10.1111/j.1468-0084.2009.00569.x
+
+Long, J. S., & Ervin, L. H. (2000). Using heteroscedasticity consistent standard errors in the linear regression model. *The American Statistician, 54*(3), 217–224. https://doi.org/10.1080/00031305.2000.10474549
+
+Lu, J. W., & Beamish, P. W. (2004). International diversification and firm performance: The S-curve hypothesis. *Academy of Management Journal, 47*(4), 598–609. https://doi.org/10.2307/20159604
+
+MacKinnon, J. G., & White, H. (1985). Some heteroskedasticity-consistent covariance matrix estimators with improved finite sample properties. *Journal of Econometrics, 29*(3), 305–325. https://doi.org/10.1016/0304-4076(85)90158-7
+
+Manova, K. (2013). Credit constraints, heterogeneous firms, and international trade. *Review of Economic Studies, 80*(2), 711–744. https://doi.org/10.1093/restud/rds036
+
+Mar, T. T., Đỗ, T. H., & Phan, A. T. (2026). *Digital adoption and the internationalization–performance curve: Evidence from Singapore firms* [Manuscript under review]. *Management International Review*.
+
+Marano, V., Arregle, J.-L., Hitt, M. A., Spadafora, E., & van Essen, M. (2016). Home country institutions and the internationalization–performance relationship: A meta-analytic review. *Journal of Management, 42*(5), 1075–1110. https://doi.org/10.1177/0149206315624963
+
+Meyer, K. E., van Witteloostuijn, A., & Beugelsdijk, S. (2017). What's in a p? Reassessing best practices for conducting and reporting hypothesis-testing research. *Journal of International Business Studies, 48*(5), 535–551. https://doi.org/10.1057/s41267-017-0078-8
+
+Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., Shamseer, L., Tetzlaff, J. M., Akl, E. A., Brennan, S. E., Chou, R., Glanville, J., Grimshaw, J. M., Hróbjartsson, A., Lalu, M. M., Li, T., Loder, E. W., Mayo-Wilson, E., McDonald, S., & Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. *BMJ, 372*, n71. https://doi.org/10.1136/bmj.n71
+
+Paternoster, R., Brame, R., Mazerolle, P., & Piquero, A. (1998). Using the correct statistical test for the equality of regression coefficients. *Criminology, 36*(4), 859–866. https://doi.org/10.1111/j.1745-9125.1998.tb01268.x
+
+Pierce, J. R., & Aguinis, H. (2013). The too-much-of-a-good-thing effect in management. *Journal of Management, 39*(2), 313–338. https://doi.org/10.1177/0149206311410060
+
+Post, C., & Byron, K. (2015). Women on boards and firm financial performance: A meta-analysis. *Academy of Management Journal, 58*(5), 1546–1571. https://doi.org/10.5465/amj.2013.0319
+
+Riahi-Belkaoui, A. (1998). The effects of the degree of internationalization on firm performance. *International Business Review, 7*(3), 315–321. https://doi.org/10.1016/S0969-5931(98)00013-4
+
+Suurmond, R., van Rhee, H., & Hak, T. (2017). Introduction, comparison, and validation of Meta-Essentials: A free and simple tool for meta-analysis. *Research Synthesis Methods, 8*(4), 537–553. https://doi.org/10.1002/jrsm.1260
+
+Tallman, S., & Li, J. (1996). Effects of international diversity and product diversity on the performance of multinational firms. *Academy of Management Journal, 39*(1), 179–196. https://doi.org/10.2307/256635
+
+Teece, D. J. (2007). Explicating dynamic capabilities: The nature and microfoundations of (sustainable) enterprise performance. *Strategic Management Journal, 28*(13), 1319–1350. https://doi.org/10.1002/smj.640
+
+Teece, D. J., Pisano, G., & Shuen, A. (1997). Dynamic capabilities and strategic management. *Strategic Management Journal, 18*(7), 509–533. https://doi.org/10.1002/smj.4250180702
+
+Torraco, R. J. (2005). Writing integrative literature reviews: Guidelines and examples. *Human Resource Development Review, 4*(3), 356–367. https://doi.org/10.1177/1534484305278283
+
+UNCTAD. (2023). *World investment report 2023: Investing in sustainable energy for all*. United Nations Conference on Trade and Development. https://unctad.org/wir2023
+
+Wagner, J. (2007). Exports and productivity: A survey of the evidence from firm-level data. *The World Economy, 30*(1), 60–82. https://doi.org/10.1111/j.1467-9701.2007.00872.x
+
+World Bank. (2013). *China Enterprise Survey 2012* [Data file]. World Bank Enterprise Surveys. https://www.enterprisesurveys.org
+
+Zaheer, S. (1995). Overcoming the liability of foreignness. *Academy of Management Journal, 38*(2), 341–363. https://doi.org/10.2307/256411
+
+Pirlea, A. F., Wadhwa, D., Mahler, D., Serajuddin, U., Welch, M., Thudt, A., & Lambrechts, M. (Eds.). (2026). *Atlas of Global Development 2026* (License: Creative Commons Attribution CC BY 3.0 IGO). World Bank. https://data360.worldbank.org/en/int/atlas *(Mới v2.6 — 121,249 data points · 107 datasets · 95 interactive visualizations; tracks progress across 75 years; 5 themes: People, Prosperity, Planet, Infrastructure, Digital; progress slowest on record in 15 of 26 development indicators.)*
+
+---
+
+## Q. Singapore innovation ecosystem 2025/2026 (Mới v2.7 — P4 contextual grounding)
+
+Enterprise Singapore. (2025, November). *SWITCH 2025 concludes 10th anniversary milestone with record 25,000 attendees* [Press release]. Enterprise Singapore. https://www.enterprisesg.gov.sg/resources/media-centre/media-releases/2025/november/mr05225_switch-2025-concludes-10th-anniversary-milestone-with-record-25000-attendees-strengthens-position-as-premiere-platform-for-deep-tech-innovation *(Mới v2.7 — SWITCH 2025: 25,000+ attendees from 100+ countries; 6,800+ SLINGSHOT applications from 150 markets; S$2M prize pool; 10th edition SG60.)*
+
+GovTech Singapore. (2024). *Our digital government rankings*. Government Technology Agency of Singapore. https://www.tech.gov.sg/about-us/our-achievements/our-digital-government-rankings/ *(Mới v2.7 — Singapore ranked 3rd globally UN e-Government Survey 2024; Smart Nation 2.0 (2024) framed around Trust, Growth, Community.)*
+
+IMDA. (2025). *Asia Tech x Singapore turns five* [Press release]. Infocomm Media Development Authority. https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2025/asia-tech-x-singapore-turns-five *(Mới v2.7 — ATxSG 2025: 22,000 attendees from 110 regions; 450+ speakers; 700+ exhibitors; 34 international pavilions; 5th anniversary.)*
+
+StartupBlink. (2025). *Global Startup Ecosystem Index 2025: Singapore profile*. StartupBlink Research. https://www.startupblink.com/startup-ecosystem/singapore *(Mới v2.7 — Singapore ranked 4th globally in 2025 (up from 5th in 2024); ecosystem growth rate 44.9% vs top-20 average 28.5%.)*
+
+StartupBlink. (2026). *Innovators Business Environment Index 2026*. StartupBlink Research. https://www.startupblink.com/blog/innovators-business-environment-index/ *(Mới v2.7 — Singapore ranked 2nd globally (score 99.145/100); 1st in Asia Pacific; 30+ parameters across Regulation & Governance, Access to Capital, Taxation, Digital Infrastructure, Global Mobility.)*
+
+---
+
+## R. Tài liệu mới bổ sung v2.8 — Trade Restructuring
+
+Abreha, K., & Lopez Acevedo, G. (2024). *Trade restructuring: Assessing labor market and welfare effects* (Policy Research Working Paper No. 10955). World Bank Group. *(Cited in P5 §2 — trade re-equilibration, US–China tariff cycle, bilateral trade flow reorientation; Poverty and Equity Global Practice, October 2024.)*
+
+*(Các tài liệu World Bank DPI, Vietnam FCI Snapshot, Taking Stock, GDKC đã được lưu trong Section P — World Bank 2025a/b/c/d.)*
+
 ---
 
 ## Hướng dẫn sử dụng (cập nhật v2.5)
@@ -216,8 +382,19 @@ Wu, J., Wood, G., & Khan, Z. (2022). Internationalization and firm performance: 
 - **Trích dẫn WB WBES indicators Vietnamese (v2.5)**: dùng dạng "World Bank (n.d. — Vietnamese Indicators Summary)".
 - **Trích dẫn academic GSJ papers (v2.3)**: "Xu (2024)" và "Kafouros et al. (2023)".
 - **Trích dẫn JIBS editorials (v2.4)**: "Bello & Kostova (2012)" và "Meyer et al. (2017)".
+- **Trích dẫn Section P — Data360 Atlas (v2.6)**:
+  - Internet access story: "Pirlea & Corso (2026)"
+  - AI inequality story: "Mahler, Wang & Weber (2026)"
+  - Atlas overview/statistics: "Pirlea et al. (2026 — Atlas)"
+  - Commodity markets blog: "Agnolucci, Kenworthy & Kose (2026)"
+  - AI financial supervision G20: "Boeddu et al. (2025)"
 - **Trích dẫn classical theory (v2.4)**: "Dunning (1988)", "Williamson (2000)", "Aguinis, Hill & Bailey (2019)".
 - **Trích dẫn AI-generated audio (v2.4)**: "NotebookLM (2026, May 6)".
+- **Trích dẫn Section Q — Singapore ecosystem (v2.7)**:
+  - SWITCH 2025: "Enterprise Singapore (2025)"
+  - Digital government rankings: "GovTech Singapore (2024)"
+  - ATxSG summit: "IMDA (2025)"
+  - Startup ecosystem rank: "StartupBlink (2025)" or "StartupBlink (2026)" (specify year for disambiguation)
 
 ### Khi nộp bản cuối
 
