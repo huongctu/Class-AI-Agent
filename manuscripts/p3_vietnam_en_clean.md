@@ -1076,12 +1076,12 @@ Table 4: Implied turning points of the inverted-U (M2 specification).
 *Notes.* Cross-wave coefficient equality tests following Paternoster et al. (1998). Failure to reject indicates coefficient stability across waves. FSTSc and FSTSc² comparisons support wave-specific heterogeneity in TCI and DAI direct effects but not in the I–P curvature parameters. Turning points (already reported in Table 4 above) are derived from M2 (lnLP = β₀ + β₁ FSTS_c + β₂ FSTS_c² + controls + sector FE [+ wave FE in pooled]) back-transformed to the raw FSTS scale; 95% CI uses the delta method; Lind–Mehlum p-values follow the Sasabuchi-style endpoint test (Lind & Mehlum, 2010). Source: WBES Vietnam 2009, 2015, 2023; authors' calculations.
 
 ## 5. Discussion
-### 5.1 Reinterpreting digital capability in Vietnam
-The central implication of the findings is that foundational digital adoption in Vietnam should
-not be interpreted as a universal and temporally stable productivity premium. Although both
+### 5.1 Reinterpreting the baseline website-presence indicator in Vietnam
+The central implication of the descriptive DAI_z findings is that baseline website presence in Vietnam should
+not be interpreted as a universal and temporally stable productivity premium, nor as evidence on dynamic digital capability. Although both
 TCI_z and DAI_z are positive on average in pooled specifications, their empirical roles differ
-materially across waves and across identification strategies (Vahlne, 2020; Stallkamp and Schotter, 2021). This means that website-based digital adoption is not simply a constant background
-advantage; it is a context-sensitive and stage-dependent source of performance heterogeneity.
+materially across waves and across identification strategies (Vahlne, 2020; Stallkamp and Schotter, 2021). Within the constraint of a Tier-1 binary website indicator, the pattern is that
+website ownership is not a constant background advantage; it is a context-sensitive marker whose productivity association attenuates under instrumental-variable identification and varies sharply across the 2009 / 2015 / 2023 waves.
 
 The negative sign on the FSTS_c × DAI_z interaction in 2023 — where DAI productivity relevance attenuates at higher export intensities — is consistent with the Tier-1 boundary of the construct: a website alone cannot manage the transaction density of high-export-intensity operations without electronic-payment and process-integration support. This contrasts with settings where the same construct includes Tier 2 transaction-enabling items, where higher export intensity could instead amplify the productivity return to digital adoption.
 This interpretation helps reconcile the coexistence of positive pooled effects and uneven wavespecific results. The pooled model captures the average tendency for stronger capability to be
@@ -1089,8 +1089,8 @@ associated with better performance. The wave-specific models show that this tend
 equally strong in every phase. The value of digital capability therefore depends on where firms
 stand in the broader lifecycle of internationalisation and transition.
 
-### 5.2 Why the distinction between TCI and DAI matters
-The results strengthen the theoretical case for separating foreign-technology / standards capability from foundational digital adoption. The PSM and IV evidence in 4.5 (Panels J and K)
+### 5.2 Why the distinction between TCI and baseline DAI matters
+The results strengthen the methodological case for separating foreign-technology / standards capability from a baseline website-presence indicator and for not conflating the two under a single "digital adoption" or "digital transformation" label. The PSM and IV evidence in 4.5 (Panels J and K)
 makes the distinction sharper (Karna et al., 2016).
 
 TCI is robust under both matching and
@@ -1287,15 +1287,11 @@ Sixth, the analysis is limited to Vietnam as a single transitional economy at a 
 
 
 ## 7. Conclusion
-This study revisits the internationalisation–performance relationship in Vietnam by distinguishing foreign-technology / standards capability from foundational digital adoption and by comparing pooled with wave-specific evidence.
+This study revisits the internationalisation–performance relationship in Vietnam by treating foreign-technology / standards capability as the primary capability construct and by retaining a single-item website-presence indicator only as a baseline digital-presence control. It compares pooled with wave-specific evidence across the 2009 / 2015 / 2023 WBES waves to evaluate the structural durability of the I–P threshold and the wave-level identification robustness of each capability dimension.
 
-The findings show that the internationalisation–
+The findings show that the internationalisation–performance relationship is non-monotonic in the full sample, that the pattern is driven primarily by a participation-and-intensity structure rather than by strong within-exporter curvature alone, and — critically — that the inverted-U turning point is structurally durable: the threshold range clusters within a narrow ~7-percentage-point band (39.3–46.2 %) across 14 years of major institutional change, including WTO accession, the Global Financial Crisis, the COVID-19 supply-chain disruption, and the diffusion of digital-payment infrastructure. This durability is consistent with deep firm-level constraints — coordination capacity, contract enforcement, and trade-finance access — that change more slowly than the wider operating environment.
 
-performance relationship is non-monotonic in the full sample, but that this pattern is driven
-primarily by a participation-and-intensity structure rather than by strong within-exporter curvature alone.
-The results also show that the two capability domains should not be treated as interchangeable. Technological capability is comparatively stable and identification-robust across specifications, whereas foundational digital adoption is more wave-sensitive and only exhibits withinsample detectable moderation in 2023. The broader implication is that the productivity relevance
-of basic digital adoption in a transitional economy is real but uneven, and that pooled averages
-can conceal important temporal heterogeneity in when and how digital adoption matters.
+The results also show that technological capability and the baseline website-presence indicator should not be treated as interchangeable, and that conflating them under a single "digital adoption" or "digital transformation" label would obscure their differing identification properties. Technological capability is comparatively stable and identification-robust across specifications. The baseline DAI_z control is more wave-sensitive and attenuates to a null under instrumental-variable estimation, consistent with Tier-1 proxy obsolescence as website ownership diffuses to near-universal levels in the Vietnamese firm population. Within the constraint of a single binary website indicator, this paper makes no claim about dynamic digital capability moderation; any such test awaits richer Tier 2–4 indicators not currently available cross-wave in the WBES Vietnam instrument.
 
 ## Conflict of interest
 The authors declare no conflict of interest.
