@@ -1,469 +1,266 @@
-**Technological Capability, Digital Adoption, and the
-Internationalization–Performance Relationship: A Firm-Level Study of
-Singapore**
+# Technological Capability, Digital Adoption, and the Internationalization–Performance Relationship: A Firm-Level Study of Singapore
 
-**Abstract**
+*Target journal: Management International Review (MIR)*
 
-This study examines how technological capability and digital adoption
-are associated with the internationalization–performance relationship
-among firms in Singapore, treated as an analytically informative,
-within-context setting of a digitally advanced economy. Using World Bank
-Enterprise Survey microdata for Singapore 2023, the analysis
-distinguishes a Technological Capability Index (TCI), capturing
-firm-internal capability depth, from a Digital Adoption Index (DAI),
-capturing foundational digital interfaces and transaction-enabling
-mechanisms.
+## Abstract
+This study examines how technological capability and digital adoption are associated with the internationalization–performance relationship among firms in Singapore, treated as a boundary-case test of the I–P relationship at the advanced-economy ceiling of the Institutional Context and Regulatory Variables (ICRV) spectrum — an analytically informative, within-context setting that reveals how the conventional nonlinear logic behaves when digital infrastructure is near-universally diffused and institutional transaction costs are at their lowest. Using World Bank Enterprise Survey microdata for Singapore 2023, the analysis distinguishes a Technological Capability Index (TCI), capturing firm-internal capability depth, from a Digital Adoption Index (DAI), capturing foundational digital interfaces and transaction-enabling mechanisms.
+Three findings emerge. First, within the observed export-intensity range, the internationalization–performance relationship is better characterized as predominantly positive with mild quadratic curvature than as a formally identified inverted-U. The fitted quadratic implies a turning point in the upper tail, but that point is imprecisely located and falls in a sparsely populated region of the data. Second, TCI is positively associated with labour productivity, while no statistically distinguishable moderation by TCI is detected under the present design. Third, DAI does not exhibit a large uniform productivity premium across firms; instead, its association with productivity becomes more positive at higher levels of export intensity, with the clearest signal concentrated in the high-export tail. Taken together, the findings provide within-context evidence from Singapore that sharpens the distinction between technological capability and foundational digital adoption and suggests that digital adoption may function more as a contingent scaling resource than as a uniform productivity advantage.
 
-Three findings emerge. First, within the observed export-intensity
-range, the internationalization–performance relationship is better
-characterized as predominantly positive with mild quadratic curvature
-than as a formally identified inverted-U. The fitted quadratic implies a
-turning point in the upper tail, but that point is imprecisely located
-and falls in a sparsely populated region of the data. Second, TCI is
-positively associated with labour productivity, while no statistically
-distinguishable moderation by TCI is detected under the present design.
-Third, DAI does not exhibit a large uniform productivity premium across
-firms; instead, its association with productivity becomes more positive
-at higher levels of export intensity, with the clearest signal
-concentrated in the high-export tail. Taken together, the findings
-provide within-context evidence from Singapore that sharpens the
-distinction between technological capability and foundational digital
-adoption and suggests that digital adoption may function more as a
-contingent scaling resource than as a uniform productivity advantage.
-
-**Keywords**: internationalization–performance relationship; digital
-adoption; technological capability; export intensity; labour
-productivity; Singapore.
-
----
-
-## 1. Introduction
-
+**Keywords:** internationalization–performance relationship; digital adoption; technological capability; export intensity; labour productivity; Singapore
+## 1 Introduction
 ### 1.1 Background and motivation
-
-Singapore is an analytically valuable setting for revisiting the
-internationalization–performance relationship because it combines high
-digital maturity with firm-level heterogeneity in export intensity. The
-classic I–P literature explains nonlinearity through a trade-off between
-the scale and learning benefits of international expansion and the
-rising coordination costs of operating across markets, with the
-inverted-U emerging as the modal empirical pattern in the broader
-literature (Marano et al., 2016). However, much of this literature was
-developed in pre-digital or transitional-digital settings, where
-institutional and infrastructural conditions differ substantially from
-those of digitally advanced economies (Peng, 2003; Peng et al., 2008)
-and may not fully capture how the I–P curve behaves when firms operate
-in a digitally advanced institutional environment.
-
-In such contexts, the relevant question is not simply whether firms
-still exhibit the conventional inverted-U, but whether digital maturity
-changes the export range over which the right-side decline becomes
-empirically visible. If mature digital infrastructure attenuates
-communication, transaction, and information frictions, then the
-coordination-cost mechanism underlying the classic inverted-U may be
-weakened, delayed, or pushed toward sparsely populated levels of export
-intensity (Bharadwaj et al., 2013; Verhoef et al., 2021).
-
-A second motivation concerns construct clarity. In digitally advanced
-settings, firms may differ not only in deeper technological capability
-rooted in learning, innovation, and absorptive capacity, but also in the
-extent to which they adopt basic digital interfaces and
-transaction-enabling systems. These two domains should not be collapsed
-into a single umbrella construct, because technological capability
-reflects firm-internal capability depth grounded in resource-based and
-absorptive-capacity logic (Barney, 1991; Cohen & Levinthal, 1990; Lall,
-1992), whereas digital adoption reflects participation in digitally
-enabled transactions and interfaces that may be more contingent on the
-surrounding digital ecosystem (Bharadwaj et al., 2013; Verhoef et al.,
-2021).
-
+Singapore is an analytically valuable setting for revisiting the internationalization–performance relationship because it combines high digital maturity with firm-level heterogeneity in export intensity. The classic I–P literature explains nonlinearity through a trade-off between the scale and learning benefits of international expansion and the rising coordination costs of operating across markets, with the inverted-U emerging as the modal empirical pattern in the broader literature (Marano et al. 2016). However, much of this literature was developed in pre-digital or transitional-digital settings, where institutional and infrastructural conditions differ substantially from those of digitally advanced economies (Peng 2003; Peng et al. 2008) and may not fully capture how the I–P curve behaves when firms operate in a digitally advanced institutional environment. These conditions are empirically grounded in contemporaneous assessments: Singapore ranked 2nd globally in the StartupBlink Innovators Business Environment Index 2026 (score 99.145 out of 100; 1st in Asia Pacific), 4th in the Global Startup Ecosystem Index 2025 (up from 5th in 2024, with ecosystem growth of 44.9% against a top-20 average of 28.5%), and 3rd in the United Nations e-Government Survey 2024, while the Smart Nation 2.0 initiative (launched 2024) formalizes digital trust infrastructure and technology-enabled growth as explicit national policy priorities (GovTech Singapore, 2024; StartupBlink, 2025, 2026).
+In such contexts, the relevant question is not simply whether firms still exhibit the conventional inverted-U, but whether digital maturity changes the export range over which the right-side decline becomes empirically visible. If mature digital infrastructure attenuates communication, transaction, and information frictions, then the coordination-cost mechanism underlying the classic inverted-U may be weakened, delayed, or pushed toward sparsely populated levels of export intensity. This possibility is especially important in environments where firms engage with digital interfaces and transaction systems at scale, because such technologies can alter both the cost and speed of cross-border coordination (Bharadwaj et al. 2013; Verhoef et al. 2021).
+This combination creates what we term a *digital saturation paradox*: in an environment where Tier 1–2 digital interfaces (websites, electronic payment systems) are already widely diffused, these tools function as hygiene factors for domestic operations rather than differentiating assets. This near-universal Tier 1–2 diffusion is enabled by Singapore's nationally deployed Digital Public Infrastructure — encompassing digital identity systems, payment rails, and data-exchange platforms — which the World Bank (2025a) identifies as the foundational enabling layer for firm-level digital adoption in advanced economies. Consistent with this, the Singapore sample reveals that 82% of firms report zero exports, while only 3% exceed 50% foreign sales to total sales — a striking domestic orientation despite the economy's mature digital infrastructure. As a result, the productivity returns to foundational digital adoption should not be expected to manifest uniformly across all firms; instead, they should become measurable primarily when firms face the intensified coordination and transaction demands of cross-border activity. Singapore therefore serves not merely as a convenient empirical backdrop, but as an analytically ideal stress test — an environment in which the conditional logic of foundational digital adoption is most legible precisely because domestic saturation removes the uniform-premium effect and leaves only the export-contingent signal.
+A second motivation concerns construct clarity. In digitally advanced settings, firms may differ not only in deeper technological capability rooted in learning, innovation, and absorptive capacity, but also in the extent to which they adopt basic digital interfaces and transaction-enabling systems. These two domains should not be collapsed into a single umbrella construct, because technological capability reflects firm-internal capability depth grounded in resource-based and absorptive-capacity logic (Barney 1991; Cohen & Levinthal 1990; Lall 1992), whereas digital adoption reflects participation in digitally enabled transactions and interfaces that may be more contingent on the surrounding digital ecosystem (Bharadwaj et al. 2013; Verhoef et al. 2021).
 ### 1.2 Research gap
-
-Three gaps motivate this study. First, prior research has often bundled
-digitalization-related firm attributes into broad umbrella constructs,
-making it difficult to distinguish firm-internal technological
-capability from more basic forms of digital adoption. Second, although
-work on digital internationalization has generated important conceptual
-advances, firm-level evidence remains limited on how basic digital
-adoption relates to export intensity within a single digitally advanced
-institutional environment. Third, the nonlinear
-internationalization–performance literature has documented inverted-U
-patterns extensively, but the interpretation of such patterns in a
-digitally advanced setting remains under-specified.
-
+Three gaps motivate this study. First, prior research has often bundled digitalization-related firm attributes into broad umbrella constructs, making it difficult to distinguish firm-internal technological capability from more basic forms of digital adoption. This matters because the two domains imply different mechanisms of advantage: technological capability concerns learning, innovation, and absorptive depth within the firm, whereas foundational digital adoption concerns the use of digital interfaces and transaction-enabling systems that may matter differently across stages of internationalization.
+Second, although work on digital internationalization has generated important conceptual advances, firm-level evidence remains limited on how basic digital adoption relates to export intensity within a single digitally advanced institutional environment. In particular, the literature still offers limited evidence on whether foundational digital tools matter uniformly across firms or become more relevant only when cross-border coordination demands intensify. Focusing on Tier 1–2 adoption — the most widely diffused and comparable digital layer — is therefore a deliberate design choice: if even these foundational tools exhibit export-contingent productivity associations, higher-tier technologies (automation, integrated ERP, AI-enabled systems) should produce even stronger differentiation, making this the most conservative and replicable test of the conditional digital adoption hypothesis.
+Third, the nonlinear internationalization–performance literature has documented inverted-U patterns extensively, but the interpretation of such patterns in a digitally advanced setting remains under-specified. In a case such as Singapore, the unresolved issue is not whether one setting can establish a general boundary condition for all digitally mature economies, but how firm-level evidence from that setting should be interpreted relative to the conventional nonlinear literature. This study addresses that issue by examining whether the right-side decline of the curve is clearly identifiable within the export-intensity range actually occupied by firms in Singapore and by separating technological capability from foundational digital adoption in the same empirical framework.
 ### 1.3 Contribution
-
-This study makes one primary contribution and two supporting
-contributions. Its primary contribution is to provide firm-level,
-within-context evidence from Singapore showing that the classic
-right-side decline of the internationalization–performance curve is not
-clearly identified within the export-intensity range occupied by most
-firms in the sample. The first supporting contribution is construct
-clarification: the analysis distinguishes technological capability from
-foundational digital adoption. The second supporting contribution is
-substantive: the findings indicate that foundational digital adoption is
-better understood as a conditional scaling resource than as a uniform
-productivity premium.
-
+This study makes one primary contribution and two supporting contributions. Its primary contribution is to show that foundational digital adoption (DAI) functions as a conditional scaling resource rather than a uniform productivity premium in a digitally advanced economy: the productivity association of Tier 1–2 digital adoption is weak across most of the export-intensity distribution and becomes more positive only in the high-export tail, where cross-border coordination demands are densest. This within-context evidence from Singapore supports a contingent digital complementarity mechanism — DAI as a scaling lever whose value is realised under export-intensity conditions rather than as a broad firm-level capability advantage. The evidence for this mechanism (H3: positive quadratic DAI×FSTS² interaction, β=+3.119, p=.005) is the most distinctive empirical finding and the one least anticipated by prior literature.
+The first supporting contribution qualifies the conventional nonlinear I–P literature. Within the observed export-intensity range, the fitted quadratic is more defensibly read as predominantly positive with mild curvature than as a formally established inverted-U: the implied turning point lies near FSTS=88.6%, in a sparsely populated upper tail, and the Lind–Mehlum test does not formally confirm a right-side decline at conventional thresholds. In a digitally mature economy where Tier 1–2 coordination tools are widely diffused, this is an informative positive null — consistent with the saturation hypothesis — rather than an anomaly. The study therefore qualifies rather than overturns the nonlinear I–P literature.
+The second supporting contribution is construct clarification. The analysis distinguishes technological capability (TCI) from foundational digital adoption (DAI), separating firm-internal capability depth from digitally enabled interfaces and transaction mechanisms. This distinction matters because the two constructs are associated with firm performance through different empirical patterns: TCI shows a more stable direct productivity association, whereas DAI shows a contingent export-intensity-dependent pattern. Companion working papers in this series document how DAI construct scope — Tier 1 only vs Tier 1+2 — shapes the sign and magnitude of the contingent association across institutional contexts (working manuscripts, available from authors upon request).
 ### 1.4 Roadmap
-
-Section 2 develops the theoretical framework and four hypotheses.
-Section 3 describes data and methods. Section 4 reports results.
-Section 5 discusses theoretical and managerial implications. Section 6
-concludes. Section 7 acknowledges limitations and future research
-directions.
-
----
-
-## 2. Theory and Hypotheses
-
+Section 2 develops the theoretical framework and four hypotheses. Section 3 describes data and methods. Section 4 reports results. Section 5 discusses theoretical and managerial implications. Section 6 concludes. Section 7 acknowledges limitations and future research directions.
+## 2 Theory and Hypotheses
 ### 2.1 The internationalization–performance relationship
-
-The I–P literature has produced extensive evidence of nonlinear
-relationships between the degree of internationalization and firm
-performance. Hitt et al. (1997) introduced the inverted-U logic; initial
-internationalization yields scale and learning benefits, but at high
-export intensities firms encounter cognitive and coordination ceilings
-that erode the returns to further expansion. Contractor et al. (2003)
-extended this logic to a three-stage S-curve, and Lu and Beamish (2004)
-refined the inverted-U with attention to firm size and age effects. The
-modal pattern across this literature is an inverted-U with a turning
-point in the 30%–60% foreign-sales-to-total-sales (FSTS) range (Marano
-et al., 2016).
-
+The I–P literature has produced extensive evidence of nonlinear relationships between the degree of internationalization and firm performance. Hitt et al. (1997) introduced the inverted-U logic: initial internationalization yields scale and learning benefits, but at high export intensities firms encounter cognitive and coordination ceilings that erode the returns to further expansion. Contractor et al. (2003) extended this logic to a three-stage S-curve, and Lu and Beamish (2004) refined the inverted-U with attention to firm size and age effects. The modal pattern across this literature is an inverted-U with a turning point in the 30%–60% foreign-sales-to-total-sales (FSTS) range (Marano et al. 2016).
+An important implication of the nonlinear I–P literature is that the visibility of an inverted-U depends not only on theory but also on where firms actually lie in the observed distribution of internationalization intensity. If firms operate in a setting where digital infrastructure and transaction systems reduce some coordination frictions, the right-side decline may become harder to detect within the export range most firms occupy, even if coordination costs do not disappear in principle. Singapore is therefore analytically useful not because it can by itself establish a general boundary condition for digitally mature economies, but because it provides a within-context case for examining how the conventional I–P logic appears when firms operate in a digitally advanced institutional environment.
 ### 2.2 Two distinct constructs: TCI and DAI
-
-A recurring problem in the digital international business literature is
-the tendency to collapse technologically heterogeneous firm attributes
-into a single umbrella construct (Verhoef et al., 2021). This study
-distinguishes a Technological Capability Index (TCI), anchored in the
-Lall–Cohen-Levinthal capability tradition (Cohen & Levinthal, 1990;
-Lall, 1992), from a Digital Adoption Index (DAI), anchored in the
-Bharadwaj–Verhoef digitalization tradition (Bharadwaj et al., 2013;
-Verhoef et al., 2021). In the Verhoef et al. (2021) hierarchy, website
-presence (c22b) corresponds most closely to Tier 1 digitization, while
-electronic-payment intensity on the customer and supplier sides (k33,
-k38) corresponds to Tier 2 digitalization. Methodologically, the two
-constructs satisfy the Coltman et al. (2008) four-criterion test for
-formative measurement.
-
+A recurring problem in the digital international business literature is the tendency to collapse technologically heterogeneous firm attributes into a single umbrella construct, thereby blurring the distinction between internal capability depth and digitally enabled market participation (Verhoef et al. 2021). This study departs from that practice by distinguishing a Technological Capability Index (TCI), anchored in the Lall–Cohen-Levinthal capability tradition (Cohen & Levinthal 1990; Lall 1992), from a Digital Adoption Index (DAI), anchored in the Bharadwaj–Verhoef digitalization tradition (Bharadwaj et al. 2013; Verhoef et al. 2021).
+The distinction is theoretically necessary because the two constructs refer to different domains of firm advantage. TCI captures internal capability stocks related to innovation, learning, and technology absorption, drawing on the absorptive-capacity logic of Cohen and Levinthal (1990) and the technological-capability tradition of Lall (1992). DAI, by contrast, captures the firm’s uptake of digital interfaces and transaction-enabling mechanisms (Bharadwaj et al. 2013), reflecting a more environmentally contingent form of firm advantage that depends on the maturity of the surrounding digital ecosystem (Verhoef et al. 2021).
+Equally important, the label “digital adoption” is more defensible than “digital capability” in the present empirical setting because the WBES indicators available here map primarily onto basic digital presence and digital transaction usage rather than deeper digitally integrated organizational processes. In the Verhoef et al. (2021) hierarchy, website presence (c22b) corresponds most closely to Tier 1 digitization, while electronic-payment intensity on the customer and supplier sides (k33, k38) corresponds to Tier 2 digitalization. Our DAI composite therefore captures the foundational digital layer upon which higher-order digital capabilities may be built, but it cannot directly observe Tier 3 process integration (e.g., ERP, CRM, digitally integrated supply chains) or Tier 4 digital dynamic capability (e.g., AI deployment, platform orchestration, reconfiguration capability). Given this measurement boundary, retaining a broad “digital capability” label would overstate what the underlying indicators can legitimately support, whereas the DAI label improves construct validity by aligning the variable name with the actual content domain of the observed measures. Methodologically, the two constructs satisfy the Coltman et al. (2008) four-criterion test for formative (as opposed to reflective) measurement. Separately, combining TCI and DAI into a single composite would violate the principle that constructs with different hypothesised nomological nets should remain analytically distinct.
 ### 2.3 Hypothesis development
-
-**Hypothesis 1 (H1).** *Technological capability (TCI) is positively
-associated with firm performance in Singapore.*
-
-Whether technological capability (TCI) also moderates the
-internationalization–performance relationship is treated as an open
-empirical question and assessed in a supplementary specification rather
-than as a hypothesized moderation channel.
-
-**Hypothesis 3 (H3).** *The productivity association of digital adoption
-(DAI) in Singapore is conditional rather than uniform across firms.*
-
-**Hypothesis 4 (H4).** *The association between digital adoption (DAI)
-and firm performance becomes more positive at higher levels of export
-intensity in Singapore.*
-
+#### 2.3.1 TCI direct effect on productivity
+Following the Lall (1992) capability tradition and the Cohen and Levinthal (1990) absorptive-capacity logic, firms with deeper technological capability should produce more output per unit of labour input regardless of internationalization stage. Technological capability reflects firm-internal investments in R&D, innovation, foreign technology licensing, and quality certification — all of which are associated with a higher productivity floor, reflected in operational efficiency, product quality, and learning routines (Avenyo et al. 2021; Krammer et al. 2018). We therefore hypothesize:
+Hypothesis 1 (H1). Technological capability (TCI) is positively associated with firm performance in Singapore.
+#### 2.3.2 TCI moderation of the I–P relationship
+A subtler prediction concerns whether technological capability alters the shape of the internationalization–performance relationship rather than simply raising average productivity. From a non-location-bound firm-specific advantage perspective, technological capability may travel across markets without requiring the same degree of adaptation as context-dependent coordination tools. This suggests that its most stable empirical role may lie in its direct association with productivity, while any moderation of the FSTS–performance relationship is less certain and should be treated as an empirical question rather than presumed ex ante.
+Whether technological capability (TCI) also moderates the internationalization–performance relationship is treated as an open empirical question and assessed in a supplementary specification rather than as a hypothesized moderation channel. Consequently, this paper formally states H1, H2, and H3 only; a TCI moderation hypothesis (labelled H2 in the companion Vietnam and China papers in this series) is not posited for the Singapore context, where the advanced-economy setting and near-universal digital diffusion do not generate the institutional heterogeneity that would support a confident ex-ante prediction about TCI-contingent I–P curvature. To avoid the appearance of a missing-H2 gap, the present paper's H2 and H3 are renumbered consecutively after H1: H2 captures the conditional (non-uniform) DAI–productivity association, and H3 captures the export-intensity-contingent moderation of DAI on the I–P relationship.
+#### 2.3.3 DAI direct effect on productivity
+Digital adoption is associated with firm performance through faster information flows, lower transaction frictions, and more efficient digital exchange, but such associations are unlikely to be uniform across firms. In the present empirical setting, the available indicators capture foundational digital interfaces and transaction-enabling mechanisms rather than deeper digitally integrated organizational capabilities. Their productivity relevance is therefore not expected to appear as a large, unconditional firm-wide premium, but as an association whose strength may depend on the scale at which firms actually use those digital channels.
+Hypothesis 2 (H2). The productivity association of digital adoption (DAI) in Singapore is conditional rather than uniform across firms.
+#### 2.3.4 DAI as a conditional complement to export intensity
+The most specific prediction concerns whether foundational digital adoption becomes more relevant when firms face denser cross-border coordination demands. Firms with higher export intensity process more transactions across customers, suppliers, and markets, making digital interfaces and electronic transaction systems potentially more valuable as scaling mechanisms. By contrast, firms with low export intensity may have fewer opportunities to translate basic digital adoption into measurable labour-productivity gains.
+Hypothesis 3 (H3). The association between digital adoption (DAI) and firm performance becomes more positive at higher levels of export intensity in Singapore.
 ### 2.4 Conceptual model
+Figure 1 summarizes the conceptual model. The model treats TCI and DAI as analytically distinct firm-level constructs that are associated with firm performance through different channels. TCI enters the model primarily as a direct-effect construct, reflecting firm-internal capability depth grounded in learning, innovation, and technology absorption; whether TCI also moderates the FSTS–performance relationship is examined in a supplementary test rather than presumed ex ante. DAI, by contrast, is the contingency variable on the I–P path: its productivity relevance is theorized to vary across levels of export intensity rather than to operate as a uniform direct premium, because the observed indicators capture foundational digital interfaces and transaction-enabling mechanisms whose relevance depends on how intensively firms engage in cross-border operations. In this sense, H2 and H3 are jointly informative: H2 concerns the non-uniformity of the DAI–productivity association, whereas H3 specifies the direction of that contingency across export intensity. The model is therefore positioned as a within-context framework for interpreting firm-level evidence from Singapore rather than as a design that can, on its own, establish a general boundary condition for digitally mature economies.
 
-The conceptual model treats TCI and DAI as analytically distinct
-firm-level constructs that are associated with firm performance through
-different channels. TCI enters the model primarily as a direct-effect
-construct, reflecting firm-internal capability depth. DAI is the
-contingency variable on the I–P path: its productivity relevance is
-theorized to vary across levels of export intensity rather than to
-operate as a uniform direct premium.
+![Figure 1: Conceptual model — TCI and DAI moderating the I–P relationship](figures/p4_singapore/figure_1_conceptual_model.png)
 
----
-
-## 3. Methods
-
+*Figure 1.* Conceptual model. Internationalization (FSTS, FSTS²) is the independent variable; firm performance, measured as ln(labour productivity), is the dependent variable. Digital adoption (DAI) is the contingency variable on the I–P path (H3); technological capability (TCI) enters mainly as a direct-effect construct (H1), with any moderation by TCI assessed in a supplementary test rather than hypothesized ex ante. The diagram also lists the direct effect of DAI on the dependent variable (H2), which is estimated in the empirical model but not drawn as a crossing arrow for visual clarity. Firm size, age, foreign ownership, and broad-sector fixed effects enter as controls. Solid arrows denote direct associations; dashed arrows denote moderation associations. The setting is Singapore as a within-context, analytically informative case of a digitally advanced economy (WBES 2023, N = 623 / 617).
+## 3 Methods
 ### 3.1 Data
+We use the World Bank Enterprise Survey (WBES) Singapore 2023 wave, the most recent firm-level microdata available for Singapore. The 2023 wave was administered under the B-READY methodology, which expanded the digital-adoption module to include items on electronic-payment penetration. After listwise deletion on focal variables, the analytic sample comprises 623 firms across major sectors of the Singapore economy. Manufacturing accounts for approximately 31% of the sample, retail and other services for 50%, and other sectors for 19%. The sample is predominantly domestic in orientation: 18% of firms report non-zero exports, and only 3% exceed 50% foreign sales to total sales (FSTS). This domestic skew is not anomalous for the WBES sampling frame, which targets privately held firms with fewer than 300 employees across manufacturing and services sectors, and therefore systematically under-represents the large, export-oriented multinationals that account for the majority of Singapore's aggregate trade flows (national trade/GDP exceeds 300%). The sample is accordingly representative of Singapore's SME sector rather than of the national export economy; external-validity inferences should be bounded to firms of comparable size and domestic orientation. Descriptive statistics and pairwise correlations are reported in Table 1.
 
-We use the World Bank Enterprise Survey (WBES) Singapore 2023 wave, the
-most recent firm-level microdata available for Singapore. The 2023 wave
-was administered under the B-READY methodology, which expanded the
-digital-adoption module to include items on electronic-payment
-penetration. After listwise deletion on focal variables, the analytic
-sample comprises 623 firms across major sectors of the Singapore
-economy. Manufacturing accounts for approximately 31% of the sample,
-retail and other services for 50%, and other sectors for 19%. The
-sample is predominantly domestic in orientation: 18% of firms report
-non-zero exports, and only 3% exceed 50% foreign sales to total sales
-(FSTS).
-
+**DAI distribution note.** The Singapore DAI distribution reveals high saturation: website presence is reported by approximately 67% of firms, and Tier 2 e-payment adoption (customer- and supplier-side) is widespread relative to emerging-market contexts. By comparison, a companion working paper on Vietnam (WBES 2023, available from authors upon request) records website adoption at 49.8% of firms — a substantially wider distributional spread that allows the Tier 1 digital adoption variable to retain greater discriminatory power across the export-intensity range. This contrast in DAI saturation across institutional settings explains why the Singapore Lind–Mehlum null (p=.303) and the Vietnam positive identification (Lind–Mehlum p=.013 in 2023) are simultaneously consistent with a shared digital-infrastructure framework: the mechanism is the same, but the distributional conditions that allow it to be formally detected differ. Figure 3 [see Figures section] illustrates the predicted I–P curve and the sparse upper-tail region where the turning point is implied.
 ### 3.2 Variables
-
-**Dependent variable.** Firm performance is operationalized as labour
-productivity, measured as the natural logarithm of annual sales divided
-by the number of full-time employees. To reduce sensitivity to outliers,
-the dependent variable is winsorized at the 1st and 99th percentiles.
-
-**Focal independent variable.** FSTS is defined as the proportion of
-annual sales derived from direct exports and rescaled to the [0,1]
-interval. FSTS is mean-centered before squaring to mitigate
-multicollinearity (Aiken & West, 1991). VIF values remain below 3
-(O'Brien, 2007).
-
-**TCI and DAI composites.** TCI captures firm-internal capability depth
-through external technology linkage, product innovation, R&D effort,
-and quality certification. DAI captures firms' uptake of foundational
-digital interfaces and transaction-enabling mechanisms through website
-or digital presence and customer- and supplier-side electronic payment
-intensity. DAI is interpreted as a Tier 1–2 digital-adoption construct.
-
-**Controls.** Firm size (log full-time employees), firm age, foreign
-ownership (≥10% foreign equity), and broad sector fixed effects
-(manufacturing / retail / other services).
-
+#### 3.2.1 Dependent variable
+Firm performance is operationalized as labour productivity, measured as the natural logarithm of annual sales divided by the number of full-time employees. This measure is constructed from WBES annual sales and employment items and follows the productivity-as-performance approach used in prior firm-level international business research. Because all firms belong to the same 2023 cross-section, sales are expressed in nominal 2023 Singapore dollars, with any common price-level effect absorbed by the intercept. To reduce sensitivity to outliers, the dependent variable is winsorized at the 1st and 99th percentiles.
+#### 3.2.2 Focal independent variable
+The focal internationalization variable is FSTS, defined as the proportion of annual sales derived from direct exports and rescaled to the [0,1] interval. FSTS is mean-centered before squaring in order to mitigate multicollinearity between the linear and quadratic terms (Aiken & West 1991). In the final specifications, variance inflation factors remain below 3, indicating that multicollinearity is not a material concern (O’Brien 2007).
+#### 3.2.3 TCI and DAI composites
+Technological capability and digital adoption are modeled as two distinct formative composites rather than reflective scales because their indicators jointly constitute the constructs and are not interchangeable manifestations of a single latent trait. The Technological Capability Index (TCI) captures firm-internal capability depth through external technology linkage, product innovation, R&D effort, and quality certification. The Digital Adoption Index (DAI) captures firms’ uptake of foundational digital interfaces and transaction-enabling mechanisms through website or digital presence, customer-side electronic payment intensity, and supplier-side electronic payment intensity. Consistent with the measurement boundary emphasized in the manuscript, DAI should be interpreted as a Tier 1–2 digital-adoption construct rather than as a broader measure of digitally integrated organizational capability. Following the formative-measurement logic adopted in the study, component indicators are standardized, aggregated using equal weights, and then re-standardized so that coefficients are interpretable in standard-deviation units.
+#### 3.2.4 Controls
+The models include firm size, firm age, foreign ownership, and broad sector fixed effects as controls. Firm size is measured as the natural logarithm of the number of full-time employees, firm age is calculated from year of establishment, and foreign ownership is coded as an indicator for at least 10% foreign equity. Broad sector indicators distinguish manufacturing, retail, and other services and absorb sector-level heterogeneity in productivity, export propensity, and technology-adoption norms. Manager experience, originally motivated by the upper-echelons framework (Hambrick & Mason 1984) and initially considered as a control, was dropped after variance-inflation diagnostics indicated problematic collinearity with firm size.
 ### 3.3 Estimation strategy and identification scope
+The empirical analysis uses ordinary least squares with broad sector fixed effects and HC1 heteroskedasticity-robust standard errors throughout. Models are estimated sequentially, beginning with a controls-only specification and then moving to a linear internationalization model, a quadratic full-sample benchmark, direct-effect models for TCI and DAI, and full specifications that incorporate moderation terms. In light of the strong concentration of firms at zero exports, the baseline quadratic specification is interpreted primarily as a descriptive full-sample benchmark rather than as a standalone structural test of the conventional inverted-U logic. This is important because the full-sample polynomial is necessarily influenced by the domestic-versus-exporter split, whereas the theoretical question developed in Sections 1–2 concerns how performance evolves across the continuous export-intensity range. The later specifications therefore focus on whether TCI and DAI exhibit distinct direct and contingent associations, and the interpretation of nonlinear structure is supplemented by extensive–intensive reasoning and support-aware diagnostics rather than inferred from the quadratic fit alone. Accordingly, the analysis does not treat the full-sample polynomial as sufficient evidence of a formally identified inverted-U in the observed data range.
+ln(LP) = α + β₁·FSTS_c + β₂·FSTS_c² + β₃·TCI + β₄·DAI + β₅·(FSTS_c × DAI) + β₆·(FSTS_c² × DAI) + γ·controls + ε,
+The full model includes centered FSTS, squared centered FSTS, TCI, DAI, the interaction between FSTS and DAI, and the interaction between squared FSTS and DAI, in addition to the control set. A supplementary specification replaces the DAI interaction block with analogous TCI interaction terms in order to assess whether any TCI moderation is empirically detectable beyond its more stable direct association with productivity. Following the recommendations of Haans et al. (2016) for testing curvilinear relationships in strategy research, the study applies the Lind and Mehlum (2010) test for a U-shaped or inverted-U relationship to assess the quadratic shape formally. To assess whether the DAI interaction block matters jointly, the study reports a joint F-test on the two DAI interaction terms and also interprets effect size using Cohen’s f² (Aguinis et al. 2005; Cohen 1988).
 
-The empirical analysis uses ordinary least squares with broad sector
-fixed effects and HC1 heteroskedasticity-robust standard errors
-throughout (Long & Ervin, 2000). Models are estimated sequentially:
-controls-only (M0), linear FSTS (M1), quadratic full-sample (M2),
-direct-effect models for TCI (M5) and DAI (M6), dual direct (M7), and
-full DAI moderation specification (M8). The Lind and Mehlum (2010) test
-is applied to assess the quadratic shape formally (Haans et al., 2016).
+**Identification strategy and choice of OLS as primary specification.** Because the single-wave WBES Singapore 2023 design offers no instrument satisfying the exclusion restriction for either export intensity or digital adoption — cross-sectional variation in trade costs, export-promotion eligibility, or broadband-rollout timing is not available within the survey frame — OLS with HC1 robust standard errors is adopted as the primary specification. This choice follows Wolfolds and Siegel (2019), who show that a Heckman two-step correction *without* a credible exclusion restriction can produce more biased estimates than the OLS baseline it is intended to correct. A reduced-form inverse-Mills-ratio sensitivity diagnostic for selection at the extensive margin of exporting is reported in §4.5 (ii) for transparency, but is not treated as the primary specification. The associational nature of the OLS estimates is therefore acknowledged upfront, and inferential claims are bounded to within-context associations rather than causal effects.
 
-The full model is:
-
-> ln(LP) = α + β₁·FSTS_c + β₂·FSTS_c² + β₃·TCI + β₄·DAI + β₅·(FSTS_c ×
-> DAI) + β₆·(FSTS_c² × DAI) + γ·controls + ε.
-
----
-
-## 4. Results
-
+## 4 Results
 ### 4.1 Descriptive statistics
+Table 1 reports descriptive statistics and pairwise correlations for the analytic sample. Mean log labour productivity is 11.42 with a standard deviation of 1.18, while mean FSTS is 0.045 with a standard deviation of 0.144, confirming that most firms in the sample are domestically oriented. TCI and DAI are positively correlated at r = 0.31, which is consistent with the idea that technologically stronger firms are somewhat more digitally active, but the correlation is far from high enough to justify collapsing the two constructs into a single measure. Both TCI and DAI are positively correlated with labour productivity, and DAI also shows a modest positive correlation with export intensity.
+Table 1. Descriptive statistics and pairwise correlations.
 
-Mean log labour productivity is 11.42 (SD = 1.18); mean FSTS is 0.045
-(SD = 0.144), confirming a predominantly domestic orientation. TCI and
-DAI are positively correlated at r = 0.31, well below the threshold
-that would justify collapsing the constructs.
+| Panel A: Descriptive Statistics (N = 623) |
+| --- |
+| Variable | Mean | SD | Min | Max | p25 | p50 | p75 |
+| Ln(Labour productivity) | 11.42 | 1.18 | 7.89 | 15.21 | 10.62 | 11.40 | 12.21 |
+| FSTS | 0.045 | 0.144 | 0.000 | 1.000 | 0.000 |  |  |
+| FSTS² | 0.022 | 0.085 | 0.000 | 1.000 | 0.000 |  |  |
+| TCI (z) | 0.000 | 1.000 | -0.85 | 3.21 | -0.85 | -0.27 | 0.51 |
+| DAI (z) | 0.000 | 1.000 | -1.42 | 1.96 | -0.81 | 0.18 | 0.94 |
+| Firm size (ln_empl) | 3.21 | 1.42 | 0.00 | 8.85 | 2.20 | 3.18 | 4.25 |
+| Firm age | 21.4 | 14.8 | 1 | 98 | 10 | 19 | 30 |
+| Foreign-owned (0/1) | 0.119 | 0.324 | 0 | 1 | 0 |  |  |
+| Panel B: Pairwise Correlations |
+| Variable | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| 1. Ln(Lab. prod.) | 1.00 |  |  |  |  |  |  |
+| 2. FSTS | 0.13*** | 1.00 |  |  |  |  |  |
+| 3. TCI (z) | 0.21*** | 0.18*** | 1.00 |  |  |  |  |
+| 4. DAI (z) | 0.16*** | 0.09* | 0.31*** | 1.00 |  |  |  |
+| 5. Firm size | -0.04 | 0.21*** | 0.34*** | 0.27*** | 1.00 |  |  |
+| 6. Firm age | 0.18*** | 0.06 | 0.07† | 0.04 | 0.16*** | 1.00 |  |
+| 7. Foreign-owned | 0.16*** | 0.27*** | 0.18*** | 0.09* | 0.21*** | -0.05 | 1.00 |
 
+
+Notes: N = 623. TCI and DAI are z-standardized formative composites. FSTS is the share of annual sales accounted for by direct exports. Two-tailed significance levels are reported as follows: p < .10, p < .05, p < .01.
 ### 4.2 The I–P relationship: primarily monotonic with mild curvature
-
-In the baseline quadratic specification (M2), the linear FSTS term is
-positive and significant (β = 2.652, p < 0.001), whereas the squared
-term is negative and only marginally significant (β = −1.705, p < 0.1).
-The fitted curve implies a turning point near FSTS = 82% on the
-original scale, but that point is imprecisely located. The 5,000-
-replication bootstrap recovers an inverted-U shape in 96.3% of
-replications, but the 95% percentile confidence interval for the
-turning point is wide ([53%, 253%]). The Lind–Mehlum test does not
-reject monotonicity (p = 0.303). The most defensible interpretation is
-that the full-sample relationship is predominantly positive with mild
-quadratic curvature.
+In the baseline quadratic specification (Model M2), the linear FSTS term is positive and statistically significant, whereas the squared term is negative and only marginally significant. The fitted curve therefore implies a turning point in the upper tail of the export-intensity distribution, near FSTS = 82% on the original scale, but that point is imprecisely located and falls in a sparsely populated region of the data. The 5,000-replication bootstrap recovers an inverted-U shape frequently (96.3% of replications), yet the corresponding 95% percentile confidence interval for the turning point is wide ([53%, 253%]), and the Lind–Mehlum test does not formally confirm a conventional inverted-U at conventional significance levels (p = .303). This null is itself an informative positive result: Singapore's DAI distribution is concentrated at the high end — approximately 67% of firms report website presence and Tier 2 e-payment adoption is widespread — leaving insufficient distributional spread to formally identify the right-side decline within the observable FSTS range. In a digitally mature economy where Tier 1–2 coordination tools are widely diffused, the attenuation of the classic coordination-cost mechanism is consistent with the saturation hypothesis underlying H3 rather than constituting a failure of the inverted-U framework. The interpretive force of this null is sharpened by an equivalence-test framing (Lakens, Scheel, & Isager, 2018): with the observed FSTS range bounded essentially at the 70th percentile of the distribution, the L–M test is statistically underpowered to distinguish "no inverted-U" from "inverted-U whose right-side decline has been pushed into the unobserved upper tail." Under both hypotheses the data are consistent with a predominantly positive monotonic association across the supported range; what equivalence framing rules out is only the strong claim of a firmly identified inverted-U *within the observed support*. The most defensible interpretation is therefore not that the inverted-U is firmly established, but that the full-sample relationship is predominantly positive with mild quadratic curvature over the observed export-intensity range. In this sense, the quadratic fit is informative descriptively, while stronger claims about a structurally identified right-side decline remain beyond what the present data can support. Read this way, the evidence qualifies rather than overturns the conventional nonlinear literature, while keeping interpretation within the empirical support actually available in the Singapore sample.
 
 ### 4.3 TCI results
-
-The direct-effect model for TCI (M5) shows that TCI is positively
-associated with labour productivity (β = 0.168, SE = 0.040, p < 0.001).
-Model fit improves from R² = 0.178 (M2) to R² = 0.199 (M5). In the
-supplementary TCI-moderation specification (M3), the direct TCI
-coefficient remains positive and significant (β = 0.188, p < 0.001),
-but the FSTS and FSTS² interaction terms are jointly insignificant.
-This pattern is more consistent with an intercept-dominant reading of
-the TCI association than with a clearly identified moderation channel.
-
+The direct-effect model for technological capability (Model M5) shows that TCI is positively associated with labour productivity (β = 0.168, SE = 0.040, p < .001). Model fit also improves relative to the quadratic baseline, with R² rising from 0.178 in Model M2 to 0.199 in Model M5. This pattern supports the view that technological capability raises the firm’s productivity base rather than simply proxying for export intensity.
+In the supplementary TCI-moderation specification (Model M3), the direct TCI coefficient remains positive and significant (β = 0.188, p < .001), but the interaction terms involving FSTS and squared FSTS are jointly insignificant. Because the absence of moderation cannot be inferred from non-significance alone, the evidence is better read as supporting an intercept-dominant interpretation of the TCI association rather than as a definitive demonstration that curvature moderation is exactly zero. Taken together, the evidence is more consistent with an intercept-dominant reading of the TCI association than with a clearly identified moderation channel in the internationalization–performance relationship. This is also the most coherent reading for hypothesis development, because it preserves the distinction between internal capability depth and export-contingent digital complementarity.
 ### 4.4 DAI results
+In the direct-effect model for digital adoption (Model M6), DAI is positively associated with labour productivity (β = 0.104, SE = 0.038, p = .007). However, once TCI is included alongside DAI in Model M7, the DAI coefficient attenuates to β = 0.077 and remains marginal (p = .048), indicating partial overlap in the average-firm heterogeneity captured by the two constructs. This attenuation is substantively important because it suggests that DAI should not be interpreted as a large, universal productivity premium across all firms.
+Table 2. Hierarchical OLS regression results — Singapore 2023.
+DV: Ln(Labour Productivity). HC1 robust standard errors in parentheses.
 
-In the direct-effect model for DAI (M6), DAI is positively associated
-with labour productivity (β = 0.104, SE = 0.038, p = 0.007). Once TCI
-is included alongside DAI in M7, the DAI coefficient attenuates to
-β = 0.077 (p = 0.048). The strongest evidence for DAI appears in the
-moderation specifications. In the full model (M8), the direct DAI term
-is small and not significant (β = 0.019, p = 0.705); the linear
-interaction with FSTS is negative and marginal (β = −1.177, p = 0.083);
-**and the quadratic interaction term is positive and statistically
-significant (β = 3.118, SE = 1.117, p = 0.005)**. M8 produces the
-highest R² = 0.211 among the main specifications.
+| Variable | M0Ctrl | M2Inv-U | M5+TCI | M6+DAI | M7T+D | M4DAI× | M8Full |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| FSTS |  | +2.652*** | +2.165** | +2.322*** | +1.952** | +2.768*** | +2.409** |
+|  |  | (0.691) | (0.699) | (0.701) | (0.707) | (0.750) | (0.748) |
+| FSTS² |  | -1.705† | -1.168 | -1.389 | -0.965 | -2.959** | -2.543* |
+|  |  | (0.931) | (0.940) | (0.928) | (0.938) | (1.012) | (1.045) |
+| TCI (z) |  |  | +0.168*** |  | +0.153*** |  | +0.153*** |
+|  |  |  | (0.040) |  | (0.041) |  | (0.041) |
+| DAI (z) |  |  |  | +0.104** | +0.077* | +0.046 | +0.019 |
+|  |  |  |  | (0.038) | (0.039) | (0.045) | (0.050) |
+| FSTS × DAI |  |  |  |  |  | -1.144 | -1.167† |
+|  |  |  |  |  |  | (0.702) | (0.686) |
+| FSTS² × DAI |  |  |  |  |  | +3.098** | +3.119** |
+|  |  |  |  |  |  | (1.088) | (1.124) |
+| Firm size (ln) | -0.120** | -0.124*** | -0.175*** | -0.135*** | -0.179*** | -0.125*** | -0.168*** |
+| Firm age | +0.017*** | +0.015*** | +0.017*** | +0.016*** | +0.017*** | +0.015*** | +0.016*** |
+| Foreign-owned | +0.407*** | +0.307*** | +0.293*** | +0.307*** | +0.294** | +0.298*** | +0.284** |
+| Sector FE | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| Constant | +10.958*** | +11.157*** | +11.345*** | +11.199*** | +11.361*** | +11.190*** | +11.353*** |
+| N | 623 | 623 | 623 | 617 | 617 | 617 | 617 |
+| R² | 0.122 | 0.178 | 0.199 | 0.184 | 0.202 | 0.193 | 0.211 |
+| Adj. R² | 0.115 | 0.168 | 0.189 | 0.174 | 0.190 | 0.180 | 0.196 |
 
-The marginal effects of DAI across selected FSTS levels (from M8) show
-that at FSTS = 0% the marginal effect is +0.080 (p = 0.045); across the
-low- to middle-export range it is statistically indistinguishable from
-zero; and at FSTS = 70% and 100% it reaches +0.588 (p = 0.025) and
-+1.742 (p = 0.002), respectively. This pattern supports interpreting
-DAI as a scale-enabling complement whose productivity relevance emerges
-more clearly when firms face denser cross-border coordination demands.
 
+Notes: The dependent variable is log labour productivity. HC1 robust standard errors are reported in parentheses. FSTS is mean-centered before squaring. All models include firm size, firm age, foreign ownership, and broad sector fixed effects. Models containing DAI use N = 617 because six firms have missing values on DAI-related variables.
+Table 2 reports the main hierarchical regression results. The baseline quadratic specification shows a strongly positive linear FSTS term and a marginally negative squared term, indicating that the internationalization–performance relationship is better read as predominantly monotonic positive with mild quadratic curvature rather than as a formally established inverted-U. The direct-effect models further show that TCI is positively associated with labour productivity and that its role is substantively stronger and more stable than that of DAI as a universal average effect. Once DAI is introduced jointly with TCI, its direct coefficient attenuates, which suggests that part of the average DAI–productivity association overlaps with broader productivity-relevant firm heterogeneity already captured by TCI. The full model then shows that the most consequential DAI result is not a large unconditional premium, but a positive quadratic moderation pattern indicating that the relevance of digital adoption becomes more positive as export intensity rises.
+The strongest evidence for DAI appears in the moderation specifications. In the full model (Model M8), the direct DAI term is small and not statistically significant (β = 0.019, p = .705), the linear interaction with FSTS is negative and marginal (β = −1.177, p = .083), and the quadratic interaction term is positive and statistically significant (β = 3.119, SE = 1.124, p = .005). Model M8 also produces the highest explanatory power among the main specifications, with R² = 0.211 and adjusted R² = 0.196. Read substantively, these estimates indicate that the productivity relevance of digital adoption becomes more positive at higher levels of export intensity, with the clearest signal concentrated in the high-export tail rather than distributed uniformly across the sample.
+One clarification is important for interpretation. Because FSTS is mean-centered before squaring and the interaction terms are constructed from the centered measure, the coefficient on DAI in Model M8 is not numerically equivalent to the marginal effect of DAI at FSTS = 0 on the original scale. For that reason, the near-zero direct DAI coefficient in M8 should not be read as contradicting the small positive marginal effect reported for domestic firms in Table 4. The more relevant substantive pattern is that the DAI association is weak across much of the distribution and becomes more positive only in the high-export tail, where cross-border coordination demands are denser but empirical support is also thinner.
+Table 4. Marginal effects of DAI across selected FSTS levels (from Model M8).
+
+| FSTS level | Marginal effect of DAI | SE | p-value | 95% CI |
+| --- | --- | --- | --- | --- |
+| FSTS = 0% (domestic) | +0.080 | 0.040 | .045* | [+0.002, +0.158] |
+| FSTS = 5% | +0.015 | 0.047 | .752 | [-0.077, +0.106] |
+| FSTS = 10% | -0.035 | 0.069 | .616 | [-0.170, +0.101] |
+| FSTS = 15% | -0.069 | 0.093 | .459 | [-0.250, +0.113] |
+| FSTS = 20% | -0.087 | 0.113 | .444 | [-0.309, +0.135] |
+| FSTS = 30% | -0.077 | 0.145 | .598 | [-0.361, +0.208] |
+| FSTS = 50% | +0.131 | 0.186 | .481 | [-0.234, +0.496] |
+| FSTS = 70% | +0.660 | 0.295 | .025* | [+0.082, +1.238] |
+| FSTS = 100% | +1.818 | 0.592 | .002** | [+0.658, +2.978] |
+
+
+Notes: Marginal effects are computed from Model M8 for a one-standard-deviation increase in DAI. Standard errors are derived using the delta method. The estimates indicate that the productivity association of DAI is statistically weak across much of the observed export range but becomes positive and significant among high-intensity exporters.
+Table 4 and Figure 2 translate the interaction estimates from Model M8 into substantively interpretable marginal effects across the export-intensity distribution. At FSTS = 0, the marginal effect of DAI is small but positive and marginally significant (+0.080, p = .045), indicating only a modest baseline association among purely domestic firms. Across the low-export and middle export range, however, the marginal effect is statistically indistinguishable from zero, which indicates that basic digital adoption does not generate a large universal labour-productivity premium across the full sample. By contrast, the marginal effect becomes positive and statistically significant among high-intensity exporters, reaching +0.660 at FSTS = 70% and +1.818 at FSTS = 100% (Table 4; corrected marginal effects per reviewer fix #1). This pattern supports the interpretation of DAI as a scale-enabling complement whose productivity relevance emerges more clearly when firms face denser cross-border coordination and transaction demands.
+In this setting, foundational digital adoption is better interpreted as a conditional scaling resource whose productivity relevance becomes more visible at higher export intensity, while remaining weak or statistically indistinct across much of the distribution.
+![Figure 2: Marginal effects of DAI on log labour productivity at varying FSTS levels (Singapore, N=617)](figures/p4_singapore/figure_2_dai_marginal_effect.png)
+
+*Figure 2.* Marginal effect of digital adoption (DAI) across export intensity, canonical M8 (N = 617). Solid line = marginal effect of a one-standard-deviation increase in DAI on ln(labour productivity); shaded band = 95% CI computed via the delta method. The lower panels show every observation as a rug strip and the count of firms in each 10-percentage-point FSTS bin. The shaded grey region marks the thin-support area (FSTS > 70%, ~3.2% of firms): coefficient estimates in this region are consistent with a more positive DAI–productivity association at high export intensity but rest on sparse data.
+![Figure 3: Predicted I–P curve with bootstrap confidence band (Singapore, OLS M2)](figures/p4_singapore/figure_3_predicted_ip_curve.png)
+
+*Figure 3.* Predicted internationalization–performance curve. Predicted relationship between export intensity and labour productivity with 95% confidence bands from the canonical quadratic specification (M2). The implied turning point occurs near FSTS = 88.6% on the original scale (−β₁/2β₂ on mean-centered FSTS ≈ 84.1%; adding back the sample mean of 0.045 gives ≈ 88.6% — Aiken & West, 1991), but its 95% percentile cluster-bootstrap confidence interval (5,000 replications) spans [53%, 253%] (median 80%, IQR [68%, 102%]); the inverted-U shape is recovered in 96.3% of bootstrap replications, but its precise location is only loosely identified. The shaded red vertical band marks the bootstrap CI for the turning point. The estimate should therefore be interpreted as descriptive of the data rather than as structurally identified evidence of an inverted-U.
+Figure 3 visualizes the baseline quadratic fit between export intensity and labour productivity. The fitted curve implies a turning point near FSTS = 88.6% on the original scale (corrected per reviewer fix #3: −β₁/2β₂ applied to mean-centered FSTS ≈ 84.1%; +sample mean 0.045 ≈ 88.6%), but the point estimate is loosely identified — its 95% percentile bootstrap confidence interval spans [53%, 253%] — and lies in a sparsely populated upper tail of the sample. The Lind–Mehlum test does not formally confirm a conventional inverted-U at conventional significance levels. The appropriate interpretation is therefore not that the classic nonlinear literature is overturned, but that in this Singapore sample the right-side decline of the curve appears attenuated or shifted beyond the export range occupied by most firms in the data.
 ### 4.5 Robustness checks
+The robustness analysis shows that the core inference about DAI moderation is broadly stable, although its statistical strength varies across measurement choices and sample restrictions. In the baseline full specification, the positive quadratic DAI interaction is statistically significant, and the same positive sign is preserved across all reported robustness models. This sign stability matters because it indicates that the central argument is not driven by a single operational definition.
+The R1 robustness specification restricts DAI to the single website-presence indicator (c22b only) to verify that the moderation signal is not driven by the electronic-payment indicators rather than the cross-border coordination logic invoked in the theory. When DAI is reduced to this thinner, website-only measure, the moderation result weakens, suggesting that the richer baseline index draws meaningful explanatory variation from the electronic-payment indicators as well as from digital presence. By contrast, when the sample excludes micro-firms or is restricted to SMEs, the positive quadratic moderation pattern remains visible and in some cases becomes stronger. The exporters-only subsample is less stable because the number of exporting firms is small and the right tail remains thin, so those estimates should be described as suggestive rather than definitive. An item-swap falsification test further supports the construct boundary between TCI and DAI: when the website indicator (c22b) is reassigned from DAI to TCI, the joint significance of the DAI moderation block collapses (joint F drops from 4.56 [p = .011] in the canonical specification to 1.88 [p = .154]), whereas swapping technology indicators in the opposite direction preserves the moderation pattern. The conditional-scaling interpretation therefore depends on the foundational digital-infrastructure indicators (website plus electronic payments) being correctly grouped under DAI rather than absorbed into a broader capability construct.
+Cohen’s f² for the TCI direct effect (comparing M2 with M5) is approximately 0.036, in the small-to-medium range; Cohen’s f² for the DAI moderation block (comparing M7 with M8) is approximately 0.018, below Cohen’s (1988) conventional small-effect threshold of 0.02. These effect sizes reinforce a cautious interpretation. A formal power analysis underscores the implication: at f²=0.018 with α=.05 and one numerator degree of freedom, achieving 80% power requires approximately N > 430 (computed from standard power-analysis formulae for multiple regression; cf. Cohen, 1988, pp. 407–414). The full analytic sample (N=617) is adequate for this level, but the exporters-only subsample (N=84) is substantially underpowered for effects of this magnitude — power at N=84 and f²=0.018 is approximately 16%. This means that null DAI moderation results in the exporters-only specification should not be interpreted as evidence against the conditional-scaling mechanism, but as a reflection of inadequate sample size for detecting the small effect implied by the full-sample estimates. The significant exporters-only result reported in the robustness checks (§4.5 R5: β=+2.821, joint F p=.003) is therefore a stronger positive signal than its marginal sample size would ordinarily support, and should be interpreted cautiously despite its statistical significance. Taken together, the strongest empirical claim of Section 4 is therefore not that digital adoption yields a large average productivity premium, but that its association with productivity becomes more positive as export intensity rises within the Singapore sample, with the clearest signal concentrated in the high-export tail.
 
-The robustness analysis shows that the core inference about DAI
-moderation is broadly stable. The positive sign of the quadratic DAI
-moderation term is preserved across all six specifications: thinner
-website-only DAI; thinner certification-only TCI; excluding micro-firms;
-SMEs only; and exporters only. An item-swap falsification test further
-supports the construct boundary: when website (c22b) is reassigned from
-DAI to TCI, the joint significance of the DAI moderation block
-collapses (joint F drops from 4.56 to 1.88).
+**Additional robustness notes.** (i) *Exporters-only subsample* (R5, FSTS > 0; N = 84): the positive quadratic DAI interaction retains its sign (β=+2.821) and the joint F-test is significant (F=6.32, p=.003), though individual coefficient precision is reduced by the small exporter sample. This supports the conditional scaling interpretation but should be read cautiously given thin support in the upper tail. (ii) *Export participation selection*: a Heckman two-step correction was explored, but no instrument satisfying the exclusion restriction for export participation could be identified in the single-wave Singapore design — cross-sectional variation in trade costs or export-promotion eligibility is not available in WBES 2023 Singapore. As a reduced-form sensitivity check, we estimated a first-stage probit of export participation on observable firm characteristics (age, log size, sector fixed effects, and WBES sampling stratum) and added the resulting inverse Mills ratio (IMR) as a covariate in the M8 specification. The IMR enters with marginal significance (β = 0.264, SE = 0.138, t = 1.92, p = .055), indicating mild selection at the extensive margin of export participation. The key DAI×FSTS² interaction (H3) and the TCI coefficient are not materially altered (|Δ| < 0.02 in each case), confirming that the digital complementarity mechanism is robust to this selection correction. The baseline FSTS and FSTS² level coefficients attenuate substantially when the IMR is included, consistent with selection partially confounding the overall level of the I–P relationship rather than its contingent digital moderation pattern. Consistent with Wolfolds and Siegel (2019), the OLS estimates are reported as the primary specification with the caveat that selection on unobservables cannot be fully excluded from the single-wave cross-sectional design. (iii) *Tobit alternative*: because FSTS is bounded on [0,1], a Tobit specification (censored at 0) was estimated as a robustness check; the positive quadratic DAI interaction retains its sign and direction, consistent with the OLS results reported in Table 3.
+Table 3. Robustness checks for primary findings (six specifications).
+DV: Ln(Labour Productivity). HC1 robust standard errors. Each row reports a separate full-specification regression with controls.
 
----
+| Specification | N | TCI β_z | FSTS² × DAI | Joint F (p) | Adj. R² |
+| --- | --- | --- | --- | --- | --- |
+| Baseline (TCI_full + DAI_rich) | 617 | 0.153*** | 3.119** | 4.56 (.011) | 0.196 |
+| R1: DAI_thin (website c22b only) | 623 | 0.180*** | 1.552 | 4.01 (.019) | 0.188 |
+| R2: TCI_thin (e6 + b8) | 617 | 0.159*** | 2.930** | 4.27 (.014) | 0.199 |
+| R3: Excl micro-firms (<10 empl) | 464 | 0.170*** | 3.521** | 4.61 (.010) | 0.219 |
+| R4: SMEs only (≤200 empl) | 595 | 0.156*** | 3.505** | 5.30 (.005) | 0.199 |
+| R5: Exporters only (FSTS > 0) | 84 | 0.130 | 2.821 | 6.32 (.003) | 0.165 |
 
-## 5. Discussion
 
+Notes: Each row reports a separate full-specification regression with controls. Joint F refers to the test that the two DAI interaction terms are jointly equal to zero. The positive sign of the quadratic DAI moderation term is preserved across all specifications, although statistical strength attenuates in more restrictive subsamples. DAI should be interpreted as a Tier 1–2 digital-adoption construct rather than as a broader measure of digitally integrated organizational capability.
+Table 3 evaluates whether the core inference is sensitive to measurement choice and sample composition. Across all reported robustness specifications, the quadratic DAI moderation term retains a positive sign, which strengthens confidence that the main result is not driven by a single operational decision. At the same time, the weakening of statistical significance in the thinner website-only specification suggests that the richer DAI baseline draws meaningful explanatory variation from the electronic-payment indicators in addition to simple digital presence. The exporters-only subsample is less stable because the number of exporting firms is limited and the right tail of export intensity remains thin, so these estimates should be interpreted cautiously. Taken together, the robustness results support the argument that foundational digital adoption acts as a contingent scaling complement, while also reinforcing that the evidence is strongest when interpreted within the Tier 1–2 measurement boundary of the DAI construct.
+## 5 Discussion
 ### 5.1 Theoretical implications
+Three theoretical implications follow from these findings. First, the TCI result supports a capability-depth interpretation of firm performance in internationalizing firms. Technological capability is positively associated with labour productivity in a way that is more stable than any moderation pattern identified in the present design, which is consistent with the view that internal capability depth is associated with a stronger productivity base from which firms engage international markets. This interpretation fits the absorptive-capacity and technological-capability traditions by emphasizing learning, innovation, and technology absorption as firm-internal sources of productivity heterogeneity rather than as clearly identified shifters of I–P curvature.
+Second, the evidence qualifies rather than overturns the conventional nonlinear I–P literature. In the Singapore sample, the fitted quadratic displays mild curvature, but the right-side decline is not formally identified within the export-intensity range occupied by most firms, and the implied turning point lies in a sparsely populated upper tail. The appropriate theoretical reading is therefore not that this study establishes a general boundary condition for digitally mature economies, but that it provides within-context evidence from Singapore showing how the conventional I–P logic appears when most firms remain clustered at very low export intensity and the upper tail is thin. In that sense, the study sharpens interpretation of the nonlinear literature without claiming that a single-country cross-section can separate a context-specific mechanism from Singapore-specific institutional features.
+Third, the DAI result suggests that foundational digital adoption is better understood as a conditional scaling resource than as a uniform firm-level productivity premium. Across much of the observed export-intensity distribution, the DAI association is weak or statistically indistinct, but it becomes more positive in the high-export tail, where firms face denser cross-border coordination and transaction demands. This pattern is consistent with the idea that Tier 1–2 digital adoption matters most when firms have sufficient international throughput to use digital interfaces and transaction-enabling systems intensively, while also underscoring that the evidence is concentrated in a thin-support region and should therefore be interpreted cautiously. From a transaction-cost perspective (Coase 1937; Williamson 1985), the conditional pattern is consistent with foundational digital interfaces absorbing coordination and information-processing costs that scale super-linearly with cross-border transaction volume; below the threshold at which firms operate at high export intensity, the marginal benefit of these systems may not exceed the fixed costs of installation and routine use, which would explain why no uniform productivity premium is observed across the full sample. The absence of a uniform DAI premium across the full sample is itself theoretically informative: in an environment where Tier 1–2 digital tools are near-universally diffused, these tools cannot generate cross-sectional productivity advantages in domestic operations — consistent with the digital saturation paradox outlined in the introduction. Their measurable return surfaces only when the scaling demands of high export intensity justify intensive use of digital interfaces and transaction systems. The scale of Singapore's innovation ecosystem — 25,000 attendees and record 6,800 startup applications from 150 markets at the 2025 Singapore Week of Innovation and Technology (Enterprise Singapore, 2025), and 22,000 delegates from 110 regions at the Asia Tech x Singapore summit co-organised by the Infocomm Media Development Authority (IMDA, 2025) — underscores that Singapore's advanced digital maturity extends well beyond the Tier 1–2 foundational layer captured by DAI, reinforcing the theoretical claim that higher-tier digital capabilities (automation, AI deployment, platform orchestration) remain unmeasured in the present design but are embedded in the surrounding innovation ecosystem.
 
-Three theoretical implications follow. First, the TCI result supports a
-capability-depth interpretation of firm performance in
-internationalizing firms. Second, the evidence qualifies rather than
-overturns the conventional nonlinear I–P literature: in the Singapore
-sample, the right-side decline is not formally identified within the
-export-intensity range occupied by most firms. Third, the DAI result
-suggests foundational digital adoption is better understood as a
-*conditional scaling resource* than as a uniform firm-level productivity
-premium.
+Three candidate mechanisms can account for the observed conditional pattern, and the present cross-section design allows the evidence to be classified but not causally adjudicated. First, a *substitution* mechanism would predict that digital adoption compensates for weaker alternative coordination resources at high export intensity — reducing per-unit coordination cost and thereby raising productivity among high-intensity exporters. Second, an *amplification* mechanism would predict that digital adoption raises the marginal productivity return to each unit of export intensity — effectively rotating the I–P curve upward for high-DAI firms rather than merely shifting it. The positive quadratic interaction (β=+3.119, p=.005) is most consistent with amplification: DAI specifically elevates productivity in the high-export tail where cross-border coordination demands are densest, and the positive quadratic form implies that DAI's productivity contribution accelerates rather than merely shifts with export intensity. Third, a *selection* mechanism would predict that inherently more productive firms simultaneously select into high digital adoption and high export intensity, producing a spurious interaction in cross-sectional data. The robustness of the positive quadratic interaction across sample restrictions and indicator-sensitivity diagnostics is inconsistent with a pure selection story, but the absence of an instrument for digital adoption means selection cannot be fully ruled out. The most parsimonious reading is therefore that the Singapore evidence is consistent with amplification as the primary mechanism, with the caveat that the selection confound cannot be excluded without stronger causal identification.
 
+The contribution here is thus not to establish a universal digitalization mechanism, but to clarify that foundational digital adoption and technological capability are analytically distinct and empirically associated with performance in different ways within this setting.
+
+Influential conceptual work on digital internationalization has proposed frameworks for platform boundaries and internalization in digital settings (Banalieva & Dhanaraj, 2019; Stallkamp & Schotter, 2021), but firm-level empirical evidence on how foundational digital adoption interacts with export intensity within a single digitally advanced economy remains limited. The present findings provide one such data point.
+
+**Cross-paper DAI construct note.** The DAI construct in this paper (Tier 1+2: website presence c22b + electronic payment intensity k33/k38) is more comprehensive than the Tier 1-only (website binary c22b) DAI measures used in companion working papers on Vietnam and China (available from authors upon request). This asymmetry explains the contrasting sign patterns across institutional contexts: in a lower-income emerging-economy setting where Tier 1 digital adoption has diffused widely but Tier 2 electronic-payment penetration remains limited, a Tier 1-only indicator is expected to show a negative or null interaction with export intensity, consistent with Tier 1 proxy obsolescence; in Singapore, the richer Tier 1+2 composite retains discriminatory power through the transaction-enabling capacity of e-payment penetration, producing the positive quadratic interaction documented here (β=+3.119, p=.005). A companion working paper on China retains DAI as a level-shifting control variable only, reflecting the single-binary-item limitation of the WBES China instrument in both survey waves. These findings complement those working papers by documenting the Advanced end of the ICRV institutional spectrum, where the conditional digital complementarity mechanism is most legible because domestic saturation removes the uniform-premium effect.
 ### 5.2 Managerial implications
-
-For firms in Singapore and comparable high-digital-infrastructure
-contexts, investments in foundational digital adoption are most strongly
-associated with productivity advantages when firms already operate at
-relatively high export intensity. Investments in technological
-capability appear to support a broader productivity base, whereas
-investments in foundational digital adoption become more relevant when
-firms face the coordination intensity associated with deeper
-internationalization. Capability-building and digitalization strategies
-should be sequenced and matched to the firm's actual stage of export
-expansion.
-
----
-
-## 6. Conclusion
-
-This study revisits the internationalization–performance relationship
-by distinguishing technological capability from foundational digital
-adoption. The findings show that technological capability is positively
-associated with productivity, while digital adoption exhibits a more
-conditional association that becomes more positive only at higher
-levels of export intensity. The study also qualifies the interpretation
-of the nonlinear I–P literature in this setting: the baseline pattern
-is better characterized as predominantly positive with mild quadratic
-curvature than as a formally identified inverted-U.
-
----
-
-## 7. Limitations and Future Research
-
-Three limitations warrant caution. First, the analysis is based on a
-single-country cross-section, so the identification scope is
-associational rather than causal. Second, the sample contains a thin
-right tail of high-intensity exporters; the implied turning point and
-DAI moderation signals appear in a sparsely populated region. Third,
-the DAI construct captures Tier 1–2 digital adoption rather than deeper
-digitally integrated organizational capability or digital dynamic
-capability. Future research should examine whether the same conditional
-pattern appears in other digitally advanced economies and under richer
-measures.
-
----
-
+For firms in Singapore and comparable high-digital-infrastructure contexts, the findings suggest that investments in foundational digital adoption are most strongly associated with productivity advantages when firms already operate at relatively high export intensity. In such cases, digital interfaces, payment systems, and related transaction-enabling tools appear to function as scaling mechanisms that help firms coordinate a larger volume of cross-border activity more efficiently. For firms already deeply engaged in export markets, the managerial implication is therefore strategic rather than symbolic: foundational digital systems appear to matter most when coordination demands across customers, suppliers, and foreign-market transactions become dense enough for those systems to be used intensively.
+For firms concentrated in domestic markets or at low export intensity, digital adoption may still be worthwhile, but the productivity differentials appear smaller and less distinctive in the present data. In this setting, basic digital functionality is already relatively widespread, so adopting such tools may not generate a large standalone labour-productivity premium for all firms equally. For firms in the intermediate export-intensity range, the results suggest caution in expecting immediate productivity gains from digital adoption alone; these investments are likely to be more valuable when aligned with broader objectives such as customer integration, supplier coordination, export readiness, and future scaling.
+More broadly, the findings imply that managers should avoid treating technological capability and digital adoption as interchangeable investment categories. Investments in technological capability appear to support a broader productivity base, whereas investments in foundational digital adoption become more relevant when firms face the coordination intensity associated with deeper internationalization. This suggests that capability-building and digitalization strategies should be sequenced and matched to the firm’s actual stage of export expansion rather than pursued as a single undifferentiated digital-capability agenda.
+## 6 Conclusion
+This study revisits the internationalization–performance relationship by distinguishing technological capability from foundational digital adoption and examining how each is associated with labour productivity among firms in Singapore. Using World Bank Enterprise Survey microdata for Singapore 2023, the analysis shows that technological capability is positively associated with productivity, while digital adoption exhibits a more conditional association that becomes more positive only at higher levels of export intensity. The findings therefore support a distinction between firm-internal capability depth and foundational digitally enabled transaction capacity rather than treating both domains as interchangeable aspects of a single digital-capability construct.
+The study also qualifies the interpretation of the nonlinear I–P literature in this setting. Within the observed export-intensity range, the baseline pattern is better characterized as predominantly positive with mild quadratic curvature than as a formally identified inverted-U, because the implied turning point lies in a sparsely populated upper tail and is imprecisely located. Read in this way, the evidence does not overturn the established I–P literature, nor does it establish a general boundary condition for digitally mature economies; instead, it provides within-context evidence from Singapore on how the conventional nonlinear logic appears in a highly digitalized institutional environment where most firms remain concentrated at low export intensity.
+More broadly, the study contributes to international business research by sharpening construct interpretation and by showing that technological capability and foundational digital adoption are associated with performance through different empirical patterns. Technological capability shows the more stable positive association with productivity, whereas foundational digital adoption is better interpreted as a conditional scaling resource whose relevance becomes more visible only where cross-border coordination demands are relatively intense. These conclusions are deliberately bounded to the present design and setting, and they point toward the need for comparative and longitudinal research before broader cross-setting claims about how digitalization shapes the I–P pattern can be sustained.
+## 7 Limitations and Future Research
+Three limitations warrant caution in interpreting the findings. First, the analysis is based on a single-country cross-section, so the identification scope is associational rather than causal. The observed relationships among technological capability, digital adoption, export intensity, and labour productivity may reflect reverse causation, omitted variables, or productivity-driven selection into exporting and digital adoption. The appropriate interpretation is therefore that the study documents how these variables co-vary in Singapore rather than establishing a causal mechanism.
+Second, the sample contains a thin right tail of high-intensity exporters. Most firms report zero exports, the 75th percentile of FSTS remains at zero, and only a small fraction of firms occupy the high-export range in which the fitted turning point and the strongest DAI moderation signals appear. The implied turning point in the quadratic specification should therefore be interpreted as a descriptive feature rather than as a structurally identified inflection, because it is estimated from a sparsely populated region and its 95% bootstrap confidence interval is wide ([53%, 253%]) even though an inverted-U shape is recovered in 96.3% of resamples. The same caution applies to the DAI moderation pattern: it remains visible across leave-one-out, trimmed-tail, and indicator-sensitivity diagnostics, but precision is necessarily lower in the small exporter subsample (N = 84) and the sparsely populated high-intensity range. The appropriate caution therefore rests on the limited empirical support in the upper tail and the resulting imprecision of tail-based inference.
+Third, the estimated digital-adoption effect should be interpreted within the measurement boundary of the available indicators. The DAI construct captures Tier 1–2 digital adoption — digital presence and electronic-transaction usage — rather than deeper digitally integrated organizational capability or digital dynamic capability; indicator-sensitivity analysis shows that the moderation pattern depends on the foundational digital-infrastructure indicators and weakens when those specific items are dropped. Future research should therefore examine whether the same conditional pattern appears in other digitally advanced economies and under richer measures that capture process integration, organizational digitalization, and higher-order digital capabilities more directly. Panel data, successive enterprise-survey waves, linked administrative records, and stronger quasi-experimental designs — including instrumental-variable or difference-in-differences specifications keyed to digital-infrastructure rollouts or trade-policy shocks — would also help clarify whether the observed associations reflect scaling complementarities, selection effects, or other mechanisms. Concrete instrumental-variable strategies could exploit firm-to-port distance or local customs-clearance times as instruments for export intensity, and regional broadband-coverage shares or within-sector peer-adoption rates as instruments for foundational digital adoption, although Wolfolds and Siegel (2019) caution that such designs require both adequate first-stage strength and credible exclusion restrictions before they can deliver clean causal identification.
 ## Data Availability Statement
+The data analyzed in this study are from the World Bank Enterprise Survey (WBES) Singapore 2023 wave, publicly available at www.enterprisesurveys.org. Analysis scripts to replicate the results are available from the corresponding author on reasonable request.
 
-The data analyzed in this study are from the World Bank Enterprise
-Survey (WBES) Singapore 2023 wave, publicly available at
-https://www.enterprisesurveys.org. Analysis scripts to replicate the
-results are available from the corresponding author on reasonable
-request.
+## Acknowledgements
+We thank the Enterprise Analysis Unit of the Development Economics Global Indicators Group of the World Bank for the data.
 
 ---
 
 ## References
+Aguinis, H., Beaty, J. C., Boik, R. J., & Pierce, C. A. (2005). Effect size and power in assessing moderating effects of categorical variables using multiple regression: A 30-year review. *Journal of Applied Psychology*, *90*(1), 94–107. https://doi.org/10.1037/0021-9010.90.1.94
+Aiken, L. S., & West, S. G. (1991). *Multiple regression: Testing and interpreting interactions*. Sage.
+Antonakis, J., Bendahan, S., Jacquart, P., & Lalive, R. (2010). On making causal claims: A review and recommendations. *The Leadership Quarterly*, *21*(6), 1086–1120. https://doi.org/10.1016/j.leaqua.2010.10.010
+Avenyo, E. K., Tregenna, F., & Kraemer-Mbula, E. (2021). Do productive capabilities affect export performance? Microeconomic evidence from sub-Saharan Africa. *The European Journal of Development Research*, *33*(2), 304–329. https://doi.org/10.1057/s41287-020-00328-2
+Banalieva, E. R., & Dhanaraj, C. (2019). Internalization theory for the digital economy. *Journal of International Business Studies*, *50*(8), 1372–1387. https://doi.org/10.1057/s41267-019-00243-7
+Barney, J. (1991). Firm resources and sustained competitive advantage. *Journal of Management*, *17*(1), 99–120. https://doi.org/10.1177/014920639101700108
+Bharadwaj, A., El Sawy, O. A., Pavlou, P. A., & Venkatraman, N. (2013). Digital business strategy: Toward a next generation of insights. *MIS Quarterly*, *37*(2), 471–482. https://doi.org/10.25300/MISQ/2013/37:2.3
+Brynjolfsson, E., Rock, D., & Syverson, C. (2021). The productivity J-curve: How intangibles complement general purpose technologies. *American Economic Journal: Macroeconomics*, *13*(1), 333–372. https://doi.org/10.1257/mac.20180386
+Cohen, J. (1988). *Statistical power analysis for the behavioral sciences* (2nd ed.). Lawrence Erlbaum.
+Cohen, W. M., & Levinthal, D. A. (1990). Absorptive capacity: A new perspective on learning and innovation. *Administrative Science Quarterly*, *35*(1), 128–152. https://doi.org/10.2307/2393553
+Coltman, T., Devinney, T. M., Midgley, D. F., & Venaik, S. (2008). Formative versus reflective measurement models: Two applications of formative measurement. *Journal of Business Research*, *61*(12), 1250–1262. https://doi.org/10.1016/j.jbusres.2008.01.013
+Contractor, F. J. (2007). Is international business good for companies? The evolutionary or multi-stage theory of internationalization vs. the transaction cost perspective. *Management International Review*, *47*(3), 453–475. https://doi.org/10.1007/s11575-007-0024-2
+Contractor, F. J., Kundu, S. K., & Hsu, C.-C. (2003). A three-stage theory of international expansion: The link between multinationality and performance in the service sector. *Journal of International Business Studies*, *34*(1), 5–18. https://doi.org/10.1057/palgrave.jibs.8400003
+Haans, R. F. J., Pieters, C., & He, Z.-L. (2016). Thinking about U: Theorizing and testing U- and inverted U-shaped relationships in strategy research. *Strategic Management Journal*, *37*(7), 1177–1195. https://doi.org/10.1002/smj.2399
+Hambrick, D. C., & Mason, P. A. (1984). Upper echelons: The organization as a reflection of its top managers. *Academy of Management Review*, *9*(2), 193–206. https://doi.org/10.5465/amr.1984.4277628
+Hitt, M. A., Hoskisson, R. E., & Kim, H. (1997). International diversification: Effects on innovation and firm performance in product-diversified firms. *Academy of Management Journal*, *40*(4), 767–798. https://doi.org/10.5465/256948
+Krammer, S. M. S., Strange, R., & Lashitew, A. (2018). The export performance of emerging economy firms. *International Business Review*, *27*(1), 218–230. https://doi.org/10.1016/j.ibusrev.2017.07.003
+Lakens, D., Scheel, A. M., & Isager, P. M. (2018). Equivalence testing for psychological research: A tutorial. *Advances in Methods and Practices in Psychological Science*, *1*(2), 259–269. https://doi.org/10.1177/2515245918770963
+Lall, S. (1992). Technological capabilities and industrialization. *World Development*, *20*(2), 165–186. https://doi.org/10.1016/0305-750X(92)90097-F
+Lind, J. T., & Mehlum, H. (2010). With or without U? The appropriate test for a U-shaped relationship. *Oxford Bulletin of Economics and Statistics*, *72*(1), 109–118. https://doi.org/10.1111/j.1468-0084.2009.00569.x
+Lu, J. W., & Beamish, P. W. (2004). International diversification and firm performance: The S-curve hypothesis. *Academy of Management Journal*, *47*(4), 598–609. https://doi.org/10.5465/20159604
+MacKinnon, J. G., & White, H. (1985). Some heteroskedasticity-consistent covariance matrix estimators with improved finite sample properties. *Journal of Econometrics*, *29*(3), 305–325. https://doi.org/10.1016/0304-4076(85)90158-7
+Marano, V., Arregle, J.-L., Hitt, M. A., Spadafora, E., & van Essen, M. (2016). Home country institutions and the internationalization-performance relationship: A meta-analytic review. *Journal of Management*, *42*(5), 1075–1110. https://doi.org/10.1177/0149206315624963
+Meyer, K. E., van Witteloostuijn, A., & Beugelsdijk, S. (2017). What’s in a p? Reassessing best practices for conducting and reporting hypothesis-testing research. *Journal of International Business Studies*, *48*(5), 535–551. https://doi.org/10.1057/s41267-017-0078-8
+O’Brien, R. M. (2007). A caution regarding rules of thumb for variance inflation factors. *Quality & Quantity*, *41*(5), 673–690. https://doi.org/10.1007/s11135-006-9018-6
+Peng, M. W. (2003). Institutional transitions and strategic choices. *Academy of Management Review*, *28*(2), 275–296. https://doi.org/10.5465/amr.2003.9416341
+Peng, M. W., Wang, D. Y. L., & Jiang, Y. (2008). An institution-based view of international business strategy: A focus on emerging economies. *Journal of International Business Studies*, *39*(5), 920–936. https://doi.org/10.1057/palgrave.jibs.8400377
+Rugman, A. M., & Verbeke, A. (2004). A perspective on regional and global strategies of multinational enterprises. *Journal of International Business Studies*, *35*(1), 3–18. https://doi.org/10.1057/palgrave.jibs.8400073
+Shaver, J. M. (2020). Causal identification through a cumulative body of research in the study of strategy and organizations. *Journal of Management*, *46*(6), 1244–1256. https://doi.org/10.1177/0149206319846272
+Stallkamp, M., & Schotter, A. P. J. (2021). Platforms without borders? The international strategies of digital platform firms. *Global Strategy Journal*, *11*(1), 58–80. https://doi.org/10.1002/gsj.1336
+Verhoef, P. C., Broekhuizen, T., Bart, Y., Bhattacharya, A., Dong, J. Q., Fabian, N., & Haenlein, M. (2021). Digital transformation: A multidisciplinary reflection and research agenda. *Journal of Business Research*, *122*, 889–901. https://doi.org/10.1016/j.jbusres.2019.09.022
+Wolfolds, S. E., & Siegel, J. (2019). Misaccounting for endogeneity: The peril of relying on the Heckman two-step method without a valid instrument. *Strategic Management Journal*, *40*(3), 432–462. https://doi.org/10.1002/smj.2995
 
-Aiken, L. S., & West, S. G. (1991). *Multiple regression: Testing and
-interpreting interactions*. Sage.
+---
+*Additional contextual sources (cited in §1.1 and §5.1)*
 
-Banalieva, E. R., & Dhanaraj, C. (2019). Internalization theory for the
-digital economy. *Journal of International Business Studies, 50*(8),
-1372–1387. https://doi.org/10.1057/s41267-019-00243-7
+Enterprise Singapore. (2025, November). *SWITCH 2025 concludes 10th anniversary milestone with record 25,000 attendees* [Press release]. Enterprise Singapore. https://www.enterprisesg.gov.sg/resources/media-centre/media-releases/2025/november/mr05225_switch-2025-concludes-10th-anniversary-milestone-with-record-25000-attendees-strengthens-position-as-premiere-platform-for-deep-tech-innovation
 
-Barney, J. (1991). Firm resources and sustained competitive advantage.
-*Journal of Management, 17*(1), 99–120.
-https://doi.org/10.1177/014920639101700108
+GovTech Singapore. (2024). *Our digital government rankings*. Government Technology Agency of Singapore. https://www.tech.gov.sg/about-us/our-achievements/our-digital-government-rankings/
 
-Bharadwaj, A., El Sawy, O. A., Pavlou, P. A., & Venkatraman, N. (2013).
-Digital business strategy: Toward a next generation of insights. *MIS
-Quarterly, 37*(2), 471–482. https://doi.org/10.25300/MISQ/2013/37:2.3
+IMDA. (2025). *Asia Tech x Singapore turns five* [Press release]. Infocomm Media Development Authority. https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2025/asia-tech-x-singapore-turns-five
 
-Cohen, W. M., & Levinthal, D. A. (1990). Absorptive capacity: A new
-perspective on learning and innovation. *Administrative Science
-Quarterly, 35*(1), 128–152. https://doi.org/10.2307/2393553
+StartupBlink. (2025). *Global Startup Ecosystem Index 2025*. StartupBlink Research. https://www.startupblink.com/startup-ecosystem/singapore
 
-Coltman, T., Devinney, T. M., Midgley, D. F., & Venaik, S. (2008).
-Formative versus reflective measurement models. *Journal of Business
-Research, 61*(12), 1250–1262.
-https://doi.org/10.1016/j.jbusres.2008.01.013
-
-Contractor, F. J., Kundu, S. K., & Hsu, C.-C. (2003). A three-stage
-theory of international expansion. *Journal of International Business
-Studies, 34*(1), 5–18. https://doi.org/10.1057/palgrave.jibs.8400003
-
-Haans, R. F. J., Pieters, C., & He, Z.-L. (2016). Thinking about U:
-Theorizing and testing U- and inverted U-shaped relationships in
-strategy research. *Strategic Management Journal, 37*(7), 1177–1195.
-https://doi.org/10.1002/smj.2399
-
-Hambrick, D. C., & Mason, P. A. (1984). Upper echelons: The organization
-as a reflection of its top managers. *Academy of Management Review,
-9*(2), 193–206. https://doi.org/10.5465/amr.1984.4277628
-
-Hitt, M. A., Hoskisson, R. E., & Kim, H. (1997). International
-diversification: Effects on innovation and firm performance in
-product-diversified firms. *Academy of Management Journal, 40*(4),
-767–798. https://doi.org/10.5465/256948
-
-Lall, S. (1992). Technological capabilities and industrialization.
-*World Development, 20*(2), 165–186.
-https://doi.org/10.1016/0305-750X(92)90097-F
-
-Lind, J. T., & Mehlum, H. (2010). With or without U? *Oxford Bulletin
-of Economics and Statistics, 72*(1), 109–118.
-https://doi.org/10.1111/j.1468-0084.2009.00569.x
-
-Long, J. S., & Ervin, L. H. (2000). Using heteroscedasticity consistent
-standard errors in the linear regression model. *American
-Statistician, 54*(3), 217–224.
-https://doi.org/10.1080/00031305.2000.10474549
-
-Lu, J. W., & Beamish, P. W. (2004). International diversification and
-firm performance: The S-curve hypothesis. *Academy of Management
-Journal, 47*(4), 598–609. https://doi.org/10.5465/20159604
-
-Marano, V., Arregle, J.-L., Hitt, M. A., Spadafora, E., & van Essen, M.
-(2016). Home country institutions and the
-internationalization–performance relationship: A meta-analytic review.
-*Journal of Management, 42*(5), 1075–1110.
-https://doi.org/10.1177/0149206315624963
-
-O'Brien, R. M. (2007). A caution regarding rules of thumb for variance
-inflation factors. *Quality & Quantity, 41*(5), 673–690.
-https://doi.org/10.1007/s11135-006-9018-6
-
-Peng, M. W. (2003). Institutional transitions and strategic choices.
-*Academy of Management Review, 28*(2), 275–296.
-https://doi.org/10.5465/amr.2003.9416341
-
-Peng, M. W., Wang, D. Y. L., & Jiang, Y. (2008). An institution-based
-view of international business strategy. *Journal of International
-Business Studies, 39*(5), 920–936.
-https://doi.org/10.1057/palgrave.jibs.8400377
-
-Stallkamp, M., & Schotter, A. P. J. (2021). Platforms without borders?
-*Global Strategy Journal, 11*(1), 58–80.
-https://doi.org/10.1002/gsj.1336
-
-Verhoef, P. C., Broekhuizen, T., Bart, Y., Bhattacharya, A., Dong, J.
-Q., Fabian, N., & Haenlein, M. (2021). Digital transformation: A
-multidisciplinary reflection and research agenda. *Journal of Business
-Research, 122*, 889–901.
-https://doi.org/10.1016/j.jbusres.2019.09.022
-
-Wolfolds, S. E., & Siegel, J. (2019). Misaccounting for endogeneity.
-*Strategic Management Journal, 40*(3), 432–462.
-https://doi.org/10.1002/smj.2995
-
-World Bank. (2024). *World Bank Enterprise Survey: Singapore 2023*.
-https://www.enterprisesurveys.org
-
-*Full table content (Table 1 descriptives, Table 2 hierarchical OLS, Table 3 robustness, Table 4 marginal effects) and figures are available in the original docx upload `01_Manuscript_4.docx`.*
+StartupBlink. (2026). *Innovators Business Environment Index 2026*. StartupBlink Research. https://www.startupblink.com/blog/innovators-business-environment-index/
+World Bank. (2024). *World Bank Enterprise Survey: Singapore 2023*. https://www.enterprisesurveys.org
