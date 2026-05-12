@@ -13,9 +13,9 @@
 
 | File | Bản gốc EN | Tạp chí mục tiêu | Sample |
 |---|---|---|---|
-| `p3_vietnam_vi_v11.md` | `manuscripts/p3_vietnam_en_clean.md` (v11) | *Asia Pacific Journal of Management* (APJM) | N=2.958 (3 wave WBES Việt Nam 2009/2015/2023) |
-| `p4_singapore_vi_v7.md` | `manuscripts/p4_singapore_en_clean.md` (v7) | *Management International Review* (MIR) | N=623/617 (WBES Singapore 2023) |
-| `p5_china_vi_v8.md` | `manuscripts/p5_china_en_clean.md` (v8) | *International Journal of Emerging Markets* (IJoEM) | N=4.559 (2 wave WBES Trung Quốc 2012+2024) |
+| `p3_vietnam_vi_v12.md` | `manuscripts/p3_vietnam_en_clean.md` (v12 Phase 9) | *Asia Pacific Journal of Management* (APJM) | N=2.958 (3 wave WBES Việt Nam 2009/2015/2023) |
+| `p4_singapore_vi_v8.md` | `manuscripts/p4_singapore_en_clean.md` (v8 Phase 9) | *Management International Review* (MIR) | N=623/617 (WBES Singapore 2023) |
+| `p5_china_vi_v9.md` | `manuscripts/p5_china_en_clean.md` (v2.0 Phase 9) | *International Journal of Emerging Markets* (IJoEM) | N=4.559 (2 wave WBES Trung Quốc 2012+2024) |
 
 ## Phương pháp dịch
 
@@ -45,9 +45,9 @@
 
 | Paper | EN canonical | VI version (folder này) | Status submission |
 |---|---|---|---|
-| P3 Vietnam | v11 ✅ canonical | v11 dịch xong (12/05/2026) | Ready for APJM submission |
-| P4 Singapore | v7 ✅ canonical | v7 dịch xong (12/05/2026) | Ready for MIR submission |
-| P5 China | v8 ✅ canonical | v8 dịch xong (12/05/2026) | Ready for IJoEM submission |
+| P3 Vietnam | v12 Phase 9 ✅ canonical | v12 Phase 10 dịch xong (12/05/2026) | Ready for APJM submission |
+| P4 Singapore | v8 Phase 9 ✅ canonical | v8 Phase 10 dịch xong (12/05/2026) | Ready for MIR submission |
+| P5 China | v2.0 Phase 9 ✅ canonical | v9 Phase 10 dịch xong (12/05/2026) | Ready for IJoEM submission |
 
 ## Hạn chế của bản dịch
 
@@ -60,6 +60,6 @@
 Khi bản EN có revision mới:
 ```bash
 # So sánh phiên bản VI vs EN canonical
-diff -u manuscripts/p3_vietnam_en_clean.md manuscripts/vi/p3_vietnam_vi_v11.md
+diff -u manuscripts/p3_vietnam_en_clean.md manuscripts/vi/p3_vietnam_vi_v12.md
 # Rerun translation pipeline nếu cần
 ```
