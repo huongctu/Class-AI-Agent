@@ -1,0 +1,121 @@
+region,country,year,tag,filename,rel_path,size_bytes,size_mb,md5_8,n_obs,n_vars,core_vars
+South Asia,Afghanistan,2014,fulldata,Afghanistan_2014.dta,raw/Afghanistan/Afghanistan_2014.dta,423632,0.4,8b5d1a4f,410,307,35
+South Asia,Afghanistan,2025,expansion,Afghanistan_2025_expansion.dta,raw/Afghanistan/Afghanistan_2025_expansion.dta,433275,0.41,29ee5f4a,54,336,30
+South Asia,Afghanistan,2025,fulldata,Afghanistan_2025.dta,raw/Afghanistan/Afghanistan_2025.dta,684633,0.65,2bb9edb3,426,336,30
+West Asia,Armenia,2009,fulldata,Armenia_2009.dta,raw/Armenia/Armenia_2009.dta,371459,0.35,9a6c4352,374,283,30
+West Asia,Armenia,2013,full_data,Armenia_2013_full_data.dta,raw/Armenia/Armenia_2013_full_data.dta,1160528,1.11,f2b19dc7,360,388,36
+West Asia,Armenia,2020,full_data,Armenia_2020_full_data.dta,raw/Armenia/Armenia_2020_full_data.dta,1167868,1.11,12e7b386,546,434,35
+West Asia,Armenia,2024,fulldata,Armenia_2024.dta,raw/Armenia/Armenia_2024.dta,632031,0.6,e99b1b8a,375,340,30
+West Asia,Bahrain,2024,fulldata,Bahrain_2024.dta,raw/Bahrain/Bahrain_2024.dta,298292,0.28,d258046a,150,339,30
+South Asia,Bangladesh,2013,fulldata,Bangladesh_2013.dta,raw/Bangladesh/Bangladesh_2013.dta,1108450,1.06,492e8175,1442,300,35
+South Asia,Bangladesh,2022,fulldata,Bangladesh_2022.dta,raw/Bangladesh/Bangladesh_2022.dta,1843053,1.76,7a8ab0bf,998,490,34
+South Asia,Bhutan,2009,fulldata,Bhutan_2009.dta,raw/Bhutan/Bhutan_2009.dta,225393,0.21,1e6dca21,250,213,29
+South Asia,Bhutan,2015,fulldata,Bhutan_2015.dta,raw/Bhutan/Bhutan_2015.dta,388220,0.37,0474ba2d,253,307,34
+South Asia,Bhutan,2024,fulldata,Bhutan_2024.dta,raw/Bhutan/Bhutan_2024.dta,299960,0.29,6a77a1ae,155,339,30
+Southeast Asia,Brunei,2025,fulldata,Brunei_2025.dta,raw/Brunei/Brunei_2025.dta,237289,0.23,a9208775,150,336,30
+Southeast Asia,Cambodia,2013,fulldata,Cambodia_2013.dta,raw/Cambodia/Cambodia_2013.dta,1130624,1.08,faf1f5fc,472,579,2
+Southeast Asia,Cambodia,2016,fulldata,Cambodia_2016.dta,raw/Cambodia/Cambodia_2016.dta,1896993,1.81,45478af9,373,353,36
+Southeast Asia,Cambodia,2023,fulldata,Cambodia_2023.dta,raw/Cambodia/Cambodia_2023.dta,755067,0.72,e8311a84,519,368,31
+Southeast Asia,Cambodia,2024,ISBSfulldata,Cambodia_2024_ISBSfulldata.dta,raw/Cambodia/Cambodia_2024_ISBSfulldata.dta,1022609,0.98,e8669102,1759,192,15
+East Asia,China,2012,fullESN2700data,China_2012_fullESN2700data.dta,raw/China/China_2012_fullESN2700data.dta,1920514,1.83,0cbb0a3e,2700,287,34
+East Asia,China,2024,fulldata,China_2024.dta,raw/China/China_2024.dta,3633538,3.47,03fccbed,2189,339,30
+West Asia,Cyprus,2024,fulldata,Cyprus_2024.dta,raw/Cyprus/Cyprus_2024.dta,340045,0.32,a3e13f45,246,339,30
+Pacific,Fiji,2009,full-data,Fiji_2009_full-data.dta,raw/Fiji/Fiji_2009_full-data.dta,166814,0.16,5c61fa79,164,188,31
+Pacific,Fiji,2025,full-data,Fiji_2025_full-data.dta,raw/Fiji/Fiji_2025_full-data.dta,314229,0.3,11e731bc,151,336,30
+West Asia,Georgia,2013,fulldata,Georgia_2013.dta,raw/Georgia/Georgia_2013.dta,1161579,1.11,0ca28b87,360,387,36
+West Asia,Georgia,2019,full_data,Georgia_2019_full_data.dta,raw/Georgia/Georgia_2019_full_data.dta,1225459,1.17,4fa7d9e4,581,437,35
+West Asia,Georgia,2023,fulldata,Georgia_2023.dta,raw/Georgia/Georgia_2023.dta,1206575,1.15,1b01bf3f,592,358,30
+East Asia,HongKong,2023,fulldata,HongKong_2023.dta,raw/HongKong/HongKong_2023.dta,862270,0.82,55e21047,598,356,31
+South Asia,India,2014,fulldata,India_2014.dta,raw/India/India_2014.dta,8422629,8.03,f63c5908,9281,301,35
+South Asia,India,2022,ESISfulldata,India_2022_ESISfulldata.dta,raw/India/India_2022_ESISfulldata.dta,4857363,4.63,fbebe690,10672,196,14
+South Asia,India,2022,fulldata,India_2022.dta,raw/India/India_2022.dta,16029354,15.29,eea3e89c,9376,331,34
+South Asia,India,2025,full-data,India_2025_full-data.dta,raw/India/India_2025_full-data.dta,13743808,13.11,dd460951,10479,339,30
+Southeast Asia,Indonesia,2009,fulldata,Indonesia_2009.dta,raw/Indonesia/Indonesia_2009.dta,1585392,1.51,ba47607e,1444,291,33
+Southeast Asia,Indonesia,2009-2015,panel,Indonesia_panel_2009-2015.dta,raw/Indonesia/Indonesia_panel_2009-2015.dta,14332518,13.67,1bcb7af3,2764,446,28
+Southeast Asia,Indonesia,2015,fulldata,Indonesia_2015.dta,raw/Indonesia/Indonesia_2015.dta,6033024,5.75,ecf24db5,1320,352,36
+Southeast Asia,Indonesia,2023,fulldata,Indonesia_2023.dta,raw/Indonesia/Indonesia_2023.dta,7246904,6.91,8bf66ba6,2955,431,31
+West Asia,Iraq,2011,fulldata,Iraq_2011.dta,raw/Iraq/Iraq_2011.dta,548468,0.52,43592dad,756,287,28
+West Asia,Iraq,2022,fulldata,Iraq_2022.dta,raw/Iraq/Iraq_2022.dta,2445076,2.33,a255e653,1019,509,34
+West Asia,Israel,2013,fulldata,Israel_2013.dta,raw/Israel/Israel_2013.dta,993524,0.95,1461299f,483,417,35
+West Asia,Israel,2024,fulldata,Israel_2024.dta,raw/Israel/Israel_2024.dta,600168,0.57,d6f4017a,388,339,30
+West Asia,Jordan,2013,fulldata,Jordan_2013.dta,raw/Jordan/Jordan_2013.dta,1028459,0.98,34bc12ec,573,416,35
+West Asia,Jordan,2019,full_data,Jordan_2019_full_data.dta,raw/Jordan/Jordan_2019_full_data.dta,1053633,1.0,12f7023c,601,437,35
+West Asia,Jordan,2024,fulldata,Jordan_2024.dta,raw/Jordan/Jordan_2024.dta,894959,0.85,e325c209,592,339,30
+Central Asia,Kazakhstan,2009,full_data,Kazakhstan_2009_full_data.dta,raw/Kazakhstan/Kazakhstan_2009_full_data.dta,880214,0.84,17f547f9,544,282,30
+Central Asia,Kazakhstan,2009,fulldata,Kazakhstan_2009.dta,raw/Kazakhstan/Kazakhstan_2009.dta,905362,0.86,eec0b2cb,544,283,30
+Central Asia,Kazakhstan,2013,fulldata,Kazakhstan_2013.dta,raw/Kazakhstan/Kazakhstan_2013.dta,1851247,1.77,f029474d,600,389,36
+Central Asia,Kazakhstan,2019,fulldata,Kazakhstan_2019.dta,raw/Kazakhstan/Kazakhstan_2019.dta,3332276,3.18,9903d720,1446,437,35
+Central Asia,Kazakhstan,2024,fulldata,Kazakhstan_2024.dta,raw/Kazakhstan/Kazakhstan_2024.dta,1510484,1.44,e5ce5339,1013,340,30
+Pacific,Kiribati,2025,full-data,Kiribati_2025_full-data.dta,raw/Kiribati/Kiribati_2025_full-data.dta,239393,0.23,ecb14b44,150,336,30
+East Asia,Korea,2024,fulldata,Korea_2024.dta,raw/Korea/Korea_2024.dta,2302880,2.2,0174e3fb,1518,339,30
+West Asia,Kuwait,2025,full-data,Kuwait_2025_full-data.dta,raw/Kuwait/Kuwait_2025_full-data.dta,265022,0.25,4e0a48ea,150,337,30
+Central Asia,KyrgyzRepublic,2009,fulldata,KyrgyzRepublic_2009.dta,raw/KyrgyzRepublic/KyrgyzRepublic_2009.dta,518046,0.49,57be686e,235,282,30
+Central Asia,KyrgyzRepublic,2013,fulldata,KyrgyzRepublic_2013.dta,raw/KyrgyzRepublic/KyrgyzRepublic_2013.dta,906805,0.86,9684008d,270,388,36
+Central Asia,KyrgyzRepublic,2019,fulldata,KyrgyzRepublic_2019.dta,raw/KyrgyzRepublic/KyrgyzRepublic_2019.dta,801674,0.76,a2430c53,360,437,35
+Central Asia,KyrgyzRepublic,2023,fulldata,KyrgyzRepublic_2023.dta,raw/KyrgyzRepublic/KyrgyzRepublic_2023.dta,721430,0.69,a3090544,354,355,30
+Southeast Asia,Laos,2009,fulldata,Laos_2009.dta,raw/Laos/Laos_2009.dta,274682,0.26,a677a42e,360,217,31
+Southeast Asia,Laos,2012,fulldata,Laos_2012.dta,raw/Laos/Laos_2012.dta,685999,0.65,60213bbb,379,479,33
+Southeast Asia,Laos,2016,fulldata,Laos_2016.dta,raw/Laos/Laos_2016.dta,1843977,1.76,ba057e7b,368,353,36
+Southeast Asia,Laos,2018,fulldata,Laos_2018.dta,raw/Laos/Laos_2018.dta,897137,0.86,43d4e4d7,332,347,35
+Southeast Asia,Laos,2019,fulldataLongForm,Laos_2019_fulldataLongForm.dta,raw/Laos/Laos_2019_fulldataLongForm.dta,751318,0.72,4aa596e1,361,206,15
+Southeast Asia,Laos,2024,fulldata,Laos_2024.dta,raw/Laos/Laos_2024.dta,598249,0.57,5b6bd761,363,339,30
+West Asia,Lebanon,2009,full-data,Lebanon_2009_full-data.dta,raw/Lebanon/Lebanon_2009_full-data.dta,895091,0.85,1fdccb20,382,651,1
+West Asia,Lebanon,2013,full-data,Lebanon_2013_full-data.dta,raw/Lebanon/Lebanon_2013_full-data.dta,1220495,1.16,dcfcea9a,561,416,35
+West Asia,Lebanon,2019,full-data,Lebanon_2019_full-data.dta,raw/Lebanon/Lebanon_2019_full-data.dta,1024323,0.98,22fbf6a7,532,433,35
+Southeast Asia,Malaysia,2015,fulldata,Malaysia_2015.dta,raw/Malaysia/Malaysia_2015.dta,4837148,4.61,236f5fce,1000,352,36
+Southeast Asia,Malaysia,2019,fulldata,Malaysia_2019.dta,raw/Malaysia/Malaysia_2019.dta,3093038,2.95,6aa96e65,1221,384,33
+Southeast Asia,Malaysia,2024,fulldata,Malaysia_2024.dta,raw/Malaysia/Malaysia_2024.dta,1456684,1.39,f436e750,979,339,30
+South Asia,Maldives,2025,full-data,Maldives_2025_full-data.dta,raw/Maldives/Maldives_2025_full-data.dta,306844,0.29,8b59921f,154,336,30
+East Asia,Mongolia,2009,full-data,Mongolia_2009_full-data.dta,raw/Mongolia/Mongolia_2009_full-data.dta,502681,0.48,64f4c66b,362,282,30
+East Asia,Mongolia,2009,fulldata,Mongolia_2009.dta,raw/Mongolia/Mongolia_2009.dta,502681,0.48,64f4c66b,362,282,30
+East Asia,Mongolia,2009-2013-2019,panel,Mongolia_panel_2009-2013-2019.dta,raw/Mongolia/Mongolia_panel_2009-2013-2019.dta,5591895,5.33,aadbca03,1082,682,29
+East Asia,Mongolia,2013,full-data,Mongolia_2013_full-data.dta,raw/Mongolia/Mongolia_2013_full-data.dta,1153156,1.1,39d8872d,360,387,36
+East Asia,Mongolia,2013,fulldata,Mongolia_2013.dta,raw/Mongolia/Mongolia_2013.dta,1153156,1.1,39d8872d,360,387,36
+East Asia,Mongolia,2019,full-data,Mongolia_2019_full-data.dta,raw/Mongolia/Mongolia_2019_full-data.dta,854980,0.82,e2f9032d,360,437,35
+East Asia,Mongolia,2025,full-data,Mongolia_2025_full-data.dta,raw/Mongolia/Mongolia_2025_full-data.dta,933519,0.89,d6970f6b,601,337,30
+Southeast Asia,Myanmar,2014,fulldata,Myanmar_2014.dta,raw/Myanmar/Myanmar_2014.dta,517962,0.49,00e73c94,632,298,36
+Southeast Asia,Myanmar,2016,fulldata,Myanmar_2016.dta,raw/Myanmar/Myanmar_2016.dta,3387122,3.23,e03240a4,607,328,35
+South Asia,Nepal,2009-2013-2023,panel,Nepal_panel_2009-2013-2023.dta,raw/Nepal/Nepal_panel_2009-2013-2023.dta,3891138,3.71,bd06f77f,1432,587,26
+South Asia,Nepal,2023,fulldata,Nepal_2023.dta,raw/Nepal/Nepal_2023.dta,1096771,1.05,53ac1b3b,582,359,32
+South Asia,Nepal,2024,ISESfulldata,Nepal_2024_ISESfulldata.dta,raw/Nepal/Nepal_2024_ISESfulldata.dta,3778065,3.6,0c42a3a5,2535,194,15
+South Asia,Nepal,2025,Micro-full-data,Nepal_2025_Micro-full-data.dta,raw/Nepal/Nepal_2025_Micro-full-data.dta,951993,0.91,e6efa150,1740,208,16
+South Asia,Nepal,2025,Microfulldata,Nepal_2025_Microfulldata.dta,raw/Nepal/Nepal_2025_Microfulldata.dta,951993,0.91,e6efa150,1740,208,16
+West Asia,Oman,2003,full-data,Oman_2003_full-data.dta,raw/Oman/Oman_2003_full-data.dta,563537,0.54,a8a8cd06,337,531,2
+South Asia,Pakistan,2007-2013-2022,panel,Pakistan_panel_2007-2013-2022.dta,raw/Pakistan/Pakistan_panel_2007-2013-2022.dta,32698150,31.18,ab2bbf29,3884,873,21
+South Asia,Pakistan,2013,fulldata,Pakistan_2013.dta,raw/Pakistan/Pakistan_2013.dta,1112141,1.06,5ceaa4a0,1247,301,36
+South Asia,Pakistan,2022,fulldata,Pakistan_2022.dta,raw/Pakistan/Pakistan_2022.dta,3135738,2.99,3e8461e9,1300,434,34
+Pacific,PapuaNewGuinea,2015,full-data,PapuaNewGuinea_2015_full-data.dta,raw/PapuaNewGuinea/PapuaNewGuinea_2015_full-data.dta,325986,0.31,4f542a2b,65,315,36
+Pacific,PapuaNewGuinea,2024,full-data,PapuaNewGuinea_2024_full-data.dta,raw/PapuaNewGuinea/PapuaNewGuinea_2024_full-data.dta,273493,0.26,b8cf8ed7,145,339,30
+Southeast Asia,Philippines,2009-2015,panel,Philippines_panel_2009-2015.dta,raw/Philippines/Philippines_panel_2009-2015.dta,14793495,14.11,04f0d27d,2661,466,30
+Southeast Asia,Philippines,2023,fulldata,Philippines_2023.dta,raw/Philippines/Philippines_2023.dta,2016490,1.92,1cb3f94a,1002,354,30
+West Asia,Qatar,2025,full-data,Qatar_2025_full-data.dta,raw/Qatar/Qatar_2025_full-data.dta,579658,0.55,e6e05f63,480,337,30
+Pacific,Samoa,2023,full-data,Samoa_2023_full-data.dta,raw/Samoa/Samoa_2023_full-data.dta,384826,0.37,6e0f83c2,157,354,30
+West Asia,SaudiArabia,2025,full-data,SaudiArabia_2025_full-data.dta,raw/SaudiArabia/SaudiArabia_2025_full-data.dta,1428681,1.36,db42e655,1002,336,30
+Southeast Asia,Singapore,2023,fulldata,Singapore_2023.dta,raw/Singapore/Singapore_2023.dta,1243500,1.19,e318d673,623,356,31
+Pacific,SolomonIslands,2025,full-data,SolomonIslands_2025_full-data.dta,raw/SolomonIslands/SolomonIslands_2025_full-data.dta,331575,0.32,3d442751,150,336,30
+South Asia,SriLanka,2011,fulldata,SriLanka_2011.dta,raw/SriLanka/SriLanka_2011.dta,639653,0.61,0e69114d,610,300,36
+South Asia,SriLanka,2025,full-data,SriLanka_2025_full-data.dta,raw/SriLanka/SriLanka_2025_full-data.dta,906965,0.86,3ae8ea5a,607,336,30
+South Asia,SriLanka,2025,fulldata,SriLanka_2025.dta,raw/SriLanka/SriLanka_2025.dta,906965,0.86,3ae8ea5a,607,336,30
+East Asia,Taiwan,2024,fulldata,Taiwan_2024.dta,raw/Taiwan/Taiwan_2024.dta,1117535,1.07,c8178e68,612,339,30
+Central Asia,Tajikistan,2013,fulldata,Tajikistan_2013.dta,raw/Tajikistan/Tajikistan_2013.dta,1160185,1.11,4648be1f,359,388,36
+Central Asia,Tajikistan,2019,full_data,Tajikistan_2019_full_data.dta,raw/Tajikistan/Tajikistan_2019_full_data.dta,667906,0.64,d1613759,352,437,35
+Central Asia,Tajikistan,2024,fulldata,Tajikistan_2024.dta,raw/Tajikistan/Tajikistan_2024.dta,592778,0.57,4c1d20f3,364,340,30
+Southeast Asia,Thailand,2016,full-data,Thailand_2016_full-data.dta,raw/Thailand/Thailand_2016_full-data.dta,4773662,4.55,992f8feb,1000,352,36
+Southeast Asia,Thailand,2016,fulldata,Thailand_2016.dta,raw/Thailand/Thailand_2016.dta,4773662,4.55,992f8feb,1000,352,36
+Southeast Asia,Thailand,2025,full-data,Thailand_2025_full-data.dta,raw/Thailand/Thailand_2025_full-data.dta,1286131,1.23,1d599c99,813,336,30
+Southeast Asia,Thailand,2025,fulldata,Thailand_2025.dta,raw/Thailand/Thailand_2025.dta,1286131,1.23,1d599c99,813,336,30
+Southeast Asia,TimorLeste,2009,fulldata,TimorLeste_2009.dta,raw/TimorLeste/TimorLeste_2009.dta,158547,0.15,1c697352,150,186,31
+Southeast Asia,TimorLeste,2015,fulldata,TimorLeste_2015.dta,raw/TimorLeste/TimorLeste_2015.dta,502416,0.48,bbbf361e,126,315,36
+Southeast Asia,TimorLeste,2021,fulldata,TimorLeste_2021.dta,raw/TimorLeste/TimorLeste_2021.dta,772449,0.74,5425dd1c,238,447,34
+Pacific,Tonga,2024,full-data,Tonga_2024_full-data.dta,raw/Tonga/Tonga_2024_full-data.dta,287318,0.27,88d8466e,150,339,30
+Central Asia,Turkmenistan,2024,fulldata,Turkmenistan_2024.dta,raw/Turkmenistan/Turkmenistan_2024.dta,488411,0.47,50d243af,311,341,30
+Central Asia,Uzbekistan,2013,fulldata,Uzbekistan_2013.dta,raw/Uzbekistan/Uzbekistan_2013.dta,1254926,1.2,817c586e,390,389,36
+Central Asia,Uzbekistan,2019,full_data,Uzbekistan_2019_full_data.dta,raw/Uzbekistan/Uzbekistan_2019_full_data.dta,2693650,2.57,51163881,1239,437,35
+Central Asia,Uzbekistan,2024,fulldata,Uzbekistan_2024.dta,raw/Uzbekistan/Uzbekistan_2024.dta,1369264,1.31,11a39256,1008,340,30
+Pacific,Vanuatu,2009,fulldata,Vanuatu_2009.dta,raw/Vanuatu/Vanuatu_2009.dta,246661,0.24,de25afc7,128,187,31
+Pacific,Vanuatu,2023,fulldata,Vanuatu_2023.dta,raw/Vanuatu/Vanuatu_2023.dta,268344,0.26,3e53b860,111,354,30
+Southeast Asia,Vietnam,2009,fulldata,Vietnam_2009.dta,raw/Vietnam/Vietnam_2009.dta,1132900,1.08,c270b589,1053,287,33
+Southeast Asia,Vietnam,2015,fulldata,Vietnam_2015.dta,raw/Vietnam/Vietnam_2015.dta,4371238,4.17,6c625ba2,996,352,36
+Southeast Asia,Vietnam,2023,fulldata,Vietnam_2023.dta,raw/Vietnam/Vietnam_2023.dta,2212899,2.11,4ffb2d48,1028,355,31
+West Asia,Yemen,2010,full-data,Yemen_2010_full-data.dta,raw/Yemen/Yemen_2010_full-data.dta,394969,0.38,9d923ca1,477,295,33
+West Asia,Yemen,2013,full-data,Yemen_2013_full-data.dta,raw/Yemen/Yemen_2013_full-data.dta,659338,0.63,6e5e8023,353,417,35
