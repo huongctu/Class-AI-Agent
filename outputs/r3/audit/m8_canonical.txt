@@ -1,0 +1,37 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  ln_lp   R-squared:                       0.211
+Model:                            OLS   Adj. R-squared:                  0.196
+Method:                 Least Squares   F-statistic:                     18.15
+Date:                Sat, 02 May 2026   Prob (F-statistic):           1.97e-31
+Time:                        08:43:49   Log-Likelihood:                -822.65
+No. Observations:                 617   AIC:                             1669.
+Df Residuals:                     605   BIC:                             1722.
+Df Model:                          11                                         
+Covariance Type:                  HC1                                         
+======================================================================================================
+                                         coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------
+Intercept                             11.3531      0.171     66.501      0.000      11.018      11.688
+C(broad_sector)[T.manufacturing]       0.1403      0.110      1.274      0.203      -0.076       0.356
+C(broad_sector)[T.retail_services]     0.3450      0.103      3.357      0.001       0.144       0.546
+fsts_c                                 2.4089      0.748      3.222      0.001       0.943       3.874
+fsts_c2                               -2.5426      1.045     -2.432      0.015      -4.592      -0.493
+TCI                                    0.1528      0.041      3.709      0.000       0.072       0.234
+DAI                                    0.0188      0.045      0.414      0.679      -0.070       0.108
+fsts_c_DAI                            -1.1666      0.686     -1.700      0.089      -2.512       0.178
+fsts_c2_DAI                            3.1185      1.124      2.776      0.006       0.916       5.321
+ln_empl                               -0.1684      0.038     -4.434      0.000      -0.243      -0.094
+firm_age                               0.0163      0.003      4.912      0.000       0.010       0.023
+foreign                                0.2842      0.090      3.155      0.002       0.108       0.461
+==============================================================================
+Omnibus:                       11.466   Durbin-Watson:                   1.949
+Prob(Omnibus):                  0.003   Jarque-Bera (JB):               11.755
+Skew:                           0.299   Prob(JB):                      0.00280
+Kurtosis:                       3.315   Cond. No.                     1.02e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+[2] The condition number is large, 1.02e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\centering
+\caption{Item-swap falsification: re-assign indicators between TCI and DAI.}
+\label{tab:item_swap}
+\begin{tabular}{lrrrrr}
+\toprule
+Spec & N & TCI & DAI & FSTS$^2\times$DAI & Joint F (p) \\
+\midrule
+Canonical (correct assignment) & 617 & +0.153*** & +0.019 & +3.119** & 4.56 (0.011) \\
+SWAP1: move c22b (website) → TCI & 617 & +0.131** & +0.063 & +1.800 & 1.88 (0.154) \\
+SWAP2: move h1 (foreign tech) → DAI & 617 & +0.169*** & +0.049 & +1.416 & 4.68 (0.010) \\
+SWAP3: move e6 (R&D) → DAI & 617 & +0.140*** & +0.047 & +2.065** & 4.23 (0.015) \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\footnotesize Note: SWAP rows test whether moderation pattern survives reassigning indicators between constructs. Significant joint F surviving SWAP implies the constructs are interchangeable (fungibility); a null swap result supports correct assignment.
+\end{table}
