@@ -6,6 +6,7 @@
   <h3>Cấu trúc dự án AI Agent chuẩn PRO</h3>
   <p>Tổng hợp Clean Code · System Design · Naming Conventions · Monitoring · Team Agents</p>
 
+  [![GitHub](https://img.shields.io/badge/GitHub-@thuyhuongctu--cell-181717?logo=github)](https://github.com/thuyhuongctu-cell)
   [![Facebook](https://img.shields.io/badge/Facebook-Code%20Web%20Không%20Khó-1877F2?logo=facebook)](https://www.facebook.com/codewebkhongkho)
   [![TikTok](https://img.shields.io/badge/TikTok-@code.web.khng.kh-000000?logo=tiktok)](https://www.tiktok.com/@code.web.khng.kh)
   [![Website](https://img.shields.io/badge/Website-codewebkhongkho.com-FF6B35?logo=google-chrome)](https://codewebkhongkho.com/portfolios)
@@ -196,6 +197,7 @@ npm run test:e2e
 
   | Platform | Link |
   |----------|------|
+  | 🐙 GitHub | [@thuyhuongctu-cell](https://github.com/thuyhuongctu-cell) |
   | 📘 Facebook | [facebook.com/codewebkhongkho](https://www.facebook.com/codewebkhongkho) |
   | 🎵 TikTok | [@code.web.khng.kh](https://www.tiktok.com/@code.web.khng.kh) |
   | 🌐 Website | [codewebkhongkho.com/portfolios](https://codewebkhongkho.com/portfolios) |
