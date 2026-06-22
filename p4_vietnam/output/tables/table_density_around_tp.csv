@@ -1,0 +1,5 @@
+sample,tp_raw,n_total,n_zero_FSTS,n_below_tp_minus_5pp,n_within_5pp_of_tp,n_above_tp_plus_5pp,share_within_5pp_of_tp
+VNM2009,0.4625,989,708,820,6,163,0.0061
+VNM2015,0.3932,956,758,825,11,120,0.0115
+VNM2023,0.416,1013,823,870,9,134,0.0089
+VNMpooled,0.3972,2958,2289,2506,29,423,0.0098
